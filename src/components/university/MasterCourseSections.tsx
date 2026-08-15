@@ -1,5 +1,6 @@
 import { useState } from "react";
 import type { CourseMaster, UniversityCourseMaster } from "@/lib/courseMaster";
+import { VerifiedStamp } from "@/components/common/Verification";
 
 /* ----------------------------- Curriculum ----------------------------- */
 
