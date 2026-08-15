@@ -113,6 +113,15 @@ export function UniCourseSectionBody({
           course={master.course}
           universityShort={u.shortName}
           universitySpecificNote={master.curriculumNote}
+          {...(master.universityCurriculum
+            ? {
+                verifiedSource: {
+                  sourceLabel: master.universityCurriculum.sourceLabel,
+                  sourceUrl: master.universityCurriculum.sourceUrl,
+                  verifiedOn: master.universityCurriculum.verifiedOn,
+                },
+              }
+            : {})}
         />
       ) : (
         <p>

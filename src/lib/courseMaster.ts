@@ -9,6 +9,7 @@
  * show a neutral fallback instead.
  */
 import master from "@/data/university-course-master-content.json";
+import { getUniversityCurriculum } from "@/data/university-curriculum";
 
 interface CourseCurriculumJson {
   title: string;
@@ -177,15 +178,20 @@ export function getUniversityResearch(siteSlug: string): UniversityResearch | un
  * for another course of the same university.
  */
 export function getUniversityCourse(siteSlug: string, programmeSlug: string) {
-  const course = getCourseMaster(programmeSlug);
+  const common = getCourseMaster(programmeSlug);
   const research = getUniversityResearch(siteSlug);
-  const isMba = course?.key === "online-mba";
+  const isMba = common?.key === "online-mba";
+  const uni = getUniversityCurriculum(siteSlug, common?.key);
+  // A hand-verified university syllabus always replaces the common structure.
+  const course =
+    common && uni ? { ...common, semesters: uni.semesters } : common;
   return {
     course,
     research,
+    universityCurriculum: uni,
     feeNote: isMba ? research?.feeNote : undefined,
     specialisations: isMba ? research?.specialisations : undefined,
-    curriculumNote: isMba ? research?.curriculumNote : undefined,
+    curriculumNote: uni ? uni.note : isMba ? research?.curriculumNote : undefined,
     examPattern: isMba ? research?.examPattern : undefined,
     eligibility: isMba ? research?.eligibility : undefined,
     scholarships: research?.scholarships,

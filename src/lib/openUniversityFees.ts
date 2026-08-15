@@ -184,12 +184,43 @@ const ksou: Record<string, OpenUniFee> = {
   mca: ksou_(9000, "semester", 2000),
 };
 
+const SHOOLINI_SRC = "Shoolini Online official programme fee page";
+
+/** Shoolini publishes a programme total plus a per-semester amount. */
+const shoolini: Record<string, OpenUniFee> = {
+  "master-of-business-administration-mba": row({
+    total: 200000,
+    perSemester: 25000,
+    perYear: 100000,
+    basis: "total",
+    source: SHOOLINI_SRC,
+    note: "Published regular programme fee ₹2,00,000; ₹1,50,000 payable with the university scholarship.",
+  }),
+  "bachelor-of-commerce-b-com": row({
+    total: 120000,
+    perSemester: 20000,
+    perYear: 40000,
+    basis: "total",
+    source: SHOOLINI_SRC,
+    note: "Published regular programme fee ₹1,20,000; ₹90,000 payable with the university scholarship.",
+  }),
+  "bachelor-of-business-administration-bba": row({
+    total: 100000,
+    perSemester: 12500,
+    perYear: 33333,
+    basis: "total",
+    source: SHOOLINI_SRC,
+    note: "Standard BBA track: ₹1,00,000 total, ₹12,500 per semester. The pay-after-placement track is published at ₹1,20,000 (₹10,500 per semester).",
+  }),
+};
+
 const table: Record<string, Record<string, OpenUniFee>> = {
   ignou,
   "du-sol": duSol,
   baou,
   nsou,
   "ksou-mysuru": ksou,
+  "shoolini-online": shoolini,
 };
 
 /** Verified open-university fee for a university × programme, if documented. */
