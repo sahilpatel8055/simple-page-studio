@@ -13,10 +13,14 @@ export function CurriculumSection({
   course,
   universityShort,
   universitySpecificNote,
+  verifiedSource,
 }: {
   course: CourseMaster;
   universityShort: string;
   universitySpecificNote?: string | undefined;
+  verifiedSource?:
+    | { sourceLabel: string; sourceUrl?: string | undefined; verifiedOn: string }
+    | undefined;
 }) {
   return (
     <div className="space-y-4">
@@ -25,7 +29,15 @@ export function CurriculumSection({
           ? universitySpecificNote
           : `Curriculum shown as the common ${course.title} course structure. The ${universityShort} syllabus may vary — confirm the current structure with the university.`}
       </p>
+      {verifiedSource ? (
+        <VerifiedStamp
+          status="verified_official"
+          lastVerified={verifiedSource.verifiedOn}
+          {...(verifiedSource.sourceUrl ? { sourceUrl: verifiedSource.sourceUrl } : {})}
+        />
+      ) : null}
       <p className="text-xs text-subtle">Indicative duration: {course.duration}</p>
+
 
       <div className="grid gap-3 sm:grid-cols-2">
         {course.semesters.map((sem) => (
