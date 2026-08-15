@@ -9,6 +9,7 @@
  * show a neutral fallback instead.
  */
 import master from "@/data/university-course-master-content.json";
+import { getUniversityCurriculum } from "@/data/university-curriculum";
 
 interface CourseCurriculumJson {
   title: string;
