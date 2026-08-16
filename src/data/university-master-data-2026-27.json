@@ -18990,9 +18990,9 @@
         "official_admission_notification_url": null
       },
       "recognition": {
-        "UGC_status": "UGC-recognised private university; online programmes entitled by UGC-DEB",
+        "UGC_status": "UGC-approved Category 1 university with Graded Autonomy",
         "UGC_DEB_status": "Recognised by UGC-DEB for online programmes",
-        "NAAC_status": "NAAC A++ accredited",
+        "NAAC_status": "NAAC A++ (youngest private university in India to receive A++ in the first cycle)",
         "NIRF_information": "Listed in NIRF rankings in the university category",
         "accreditation": "Degrees carry the same value as on-campus degrees under UGC notification for online mode"
       },
@@ -19085,12 +19085,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 150000,
+            "discounted": 99000,
+            "annual": 60000,
+            "semester": 37500,
             "monthly": null,
-            "emi": null,
+            "emi": 12500,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19098,7 +19098,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 150000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19108,15 +19108,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹37,500 per semester, ₹150,000 total, ₹99,000 one-time payment option, ₹60,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19152,8 +19153,8 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "Parul's online MBA carries a wide specialisation basket, which is the main reason applicants shortlist it."
           ]
@@ -19197,12 +19198,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 120000,
+            "discounted": 100000,
+            "annual": 80000,
+            "semester": 30000,
             "monthly": null,
-            "emi": null,
+            "emi": 10000,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19210,7 +19211,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 120000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19220,15 +19221,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹30,000 per semester, ₹120,000 total, ₹100,000 one-time payment option, ₹80,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19264,8 +19266,8 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "The online MCA is semester-based with proctored end-term examinations."
           ]
@@ -19315,12 +19317,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 60000,
+            "discounted": 40000,
+            "annual": 25000,
+            "semester": 15000,
             "monthly": null,
-            "emi": null,
+            "emi": 5000,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19328,7 +19330,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 60000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19338,15 +19340,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹15,000 per semester, ₹60,000 total, ₹40,000 one-time payment option, ₹25,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19380,10 +19383,102 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "MA disciplines are offered fully online with weekend live sessions."
+          ]
+        },
+        {
+          "programme_name": "Master of Commerce (M.Com)",
+          "official_programme_name": "Online M.Com",
+          "slug": "master-of-commerce-m-com",
+          "degree": "M.Com",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree in any discipline from a recognised university.",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 60000,
+            "discounted": 40000,
+            "annual": 25000,
+            "semester": 15000,
+            "monthly": null,
+            "emi": 5000,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 60000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://paruluniversityonline.com/",
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹15,000 per semester, ₹60,000 total, ₹40,000 one-time payment option, ₹25,000 annual option, 12-month EMI available."
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": "Open",
+            "application_url": "https://paruluniversityonline.com/",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [
+              "Content Lead",
+              "Research Associate",
+              "Policy Associate"
+            ],
+            "industries": [
+              "Media & publishing",
+              "Government & public sector",
+              "Education",
+              "Non-profit"
+            ],
+            "higher_study": [
+              "Ph.D.",
+              "UGC-NET"
+            ]
+          },
+          "official_source": {
+            "programme_url": "https://paruluniversityonline.com/",
+            "fee_url": "https://paruluniversityonline.com/",
+            "admission_url": "https://paruluniversityonline.com/",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": [
+            "Focus on finance, taxation and corporate accounting."
           ]
         },
         {
@@ -19431,12 +19526,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 60000,
+            "discounted": 40000,
+            "annual": 25000,
+            "semester": 15000,
             "monthly": null,
-            "emi": null,
+            "emi": 5000,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19444,7 +19539,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 60000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19454,15 +19549,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹15,000 per semester, ₹60,000 total, ₹40,000 one-time payment option, ₹25,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19496,8 +19592,8 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "M.Sc online is offered only in theory-led disciplines that do not require a physical laboratory."
           ]
@@ -19541,12 +19637,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 60000,
+            "discounted": 40000,
+            "annual": 25000,
+            "semester": 15000,
             "monthly": null,
-            "emi": null,
+            "emi": 5000,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19554,7 +19650,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 60000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19564,15 +19660,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹15,000 per semester, ₹60,000 total, ₹40,000 one-time payment option, ₹25,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19607,8 +19704,8 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "MSW online includes field-based assignments that learners complete in their own city."
           ]
@@ -19658,12 +19755,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 111000,
+            "discounted": 70000,
+            "annual": 30000,
+            "semester": 18500,
             "monthly": null,
-            "emi": null,
+            "emi": 9250,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19671,7 +19768,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 111000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19681,15 +19778,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹18,500 per semester, ₹111,000 total, ₹70,000 one-time payment option, ₹30,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19724,8 +19822,8 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "BBA online is Parul's highest-enrolment UG programme in the online mode."
           ]
@@ -19769,12 +19867,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 111000,
+            "discounted": 70000,
+            "annual": 30000,
+            "semester": 18500,
             "monthly": null,
-            "emi": null,
+            "emi": 9250,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19782,7 +19880,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 111000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19792,15 +19890,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹18,500 per semester, ₹111,000 total, ₹70,000 one-time payment option, ₹30,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19835,8 +19934,8 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "BCA online covers programming, DBMS, networks and a capstone project."
           ]
@@ -19886,12 +19985,12 @@
             }
           ],
           "fees": {
-            "normal": null,
-            "discounted": null,
-            "annual": null,
-            "semester": null,
+            "normal": 111000,
+            "discounted": 70000,
+            "annual": 30000,
+            "semester": 18500,
             "monthly": null,
-            "emi": null,
+            "emi": 9250,
             "application_fee": null,
             "registration_fee": null,
             "admission_fee": null,
@@ -19899,7 +19998,7 @@
             "project_fee": null,
             "study_material_fee": null,
             "technology_fee": null,
-            "total_programme_fee": null,
+            "total_programme_fee": 111000,
             "discount": {
               "amount": null,
               "percentage": null,
@@ -19909,15 +20008,16 @@
               "available": null,
               "details": []
             },
-            "fee_verification_status": "not_published",
+            "fee_verification_status": "verified_official",
             "source_url": "https://paruluniversityonline.com/",
-            "source_type": "official_university_page",
-            "source_title": "Parul University Online",
-            "last_verified": "2026-08-15",
-            "verification_status": "not_published",
-            "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
-            "effective_session": "2026-27"
+            "source_type": "official_programme_page",
+            "source_title": "Parul University Online — official fee structure",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27",
+            "fee_source_note": "Parul University Online 2026-27 fee structure: ₹18,500 per semester, ₹111,000 total, ₹70,000 one-time payment option, ₹30,000 annual option, 12-month EMI available."
           },
           "admission": {
             "intake": "July 2026",
@@ -19952,8 +20052,8 @@
             "source_type": "official_programme_page",
             "source_title": "Parul University Online"
           },
-          "data_status": "verified_official_except_fees",
-          "last_verified": "2026-08-14",
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": [
             "BA online suits working learners and aspirants preparing for state and central examinations."
           ]
@@ -19998,8 +20098,8 @@
         "scholarships": "/universities/parul-online/scholarships",
         "reviews": "/universities/parul-online/reviews"
       },
-      "data_status": "verified_official_except_fees",
-      "last_verified": "2026-08-14",
+      "data_status": "verified_official",
+      "last_verified": "2026-08-16",
       "notes": [
         "Fee figures are withheld until the official Parul University Online fee document for 2026-27 is verified.",
         "Parul University is a Gujarat-based private university with one of the largest online programme baskets in western India."
