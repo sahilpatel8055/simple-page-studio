@@ -126,7 +126,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -235,7 +235,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -320,7 +320,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -398,7 +398,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -537,7 +537,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -646,7 +646,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -732,12 +732,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://amityonline.com/programs",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -812,12 +812,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://amityonline.com/programs",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -890,12 +890,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://amityonline.com/programs",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -968,12 +968,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://amityonline.com/programs",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1170,7 +1170,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1267,7 +1267,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1345,7 +1345,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1423,7 +1423,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1532,7 +1532,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1610,7 +1610,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1687,7 +1687,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1765,7 +1765,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1843,7 +1843,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1921,7 +1921,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -1999,7 +1999,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2077,7 +2077,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2154,7 +2154,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2231,7 +2231,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2391,7 +2391,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2469,7 +2469,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2547,7 +2547,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2625,7 +2625,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2702,7 +2702,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2823,7 +2823,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2908,7 +2908,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -2986,7 +2986,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3064,7 +3064,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3292,12 +3292,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3370,12 +3370,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3448,12 +3448,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3526,12 +3526,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3604,12 +3604,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3682,12 +3682,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3760,12 +3760,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3838,12 +3838,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3916,12 +3916,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -3994,12 +3994,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4072,12 +4072,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4150,11 +4150,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4227,11 +4227,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4304,11 +4304,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://happenings.lpu.in/final-call-for-admissions-lpu-distance-and-online-education-admissions-for-february-2026-session-is-closing-soon/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4463,11 +4463,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4540,12 +4540,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4618,12 +4618,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4696,12 +4696,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4774,12 +4774,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4852,12 +4852,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -4930,12 +4930,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5008,12 +5008,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5086,12 +5086,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5164,12 +5164,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5242,12 +5242,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5320,12 +5320,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5398,12 +5398,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5476,12 +5476,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5554,12 +5554,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5632,12 +5632,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5710,12 +5710,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5788,12 +5788,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5866,12 +5866,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -5944,11 +5944,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6021,11 +6021,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6098,11 +6098,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6175,11 +6175,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6252,12 +6252,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6330,12 +6330,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6408,12 +6408,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6486,12 +6486,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6564,12 +6564,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://sol.du.ac.in/index.php/admission_23_24/PG_fee_structure.html",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "DU SOL programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6729,7 +6729,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "IGNOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6802,12 +6802,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ignou.ac.in/viewFile/services/Common_Prospectus/Common-Prospectus-January-2026-V-1-2.pdf",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "IGNOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6880,11 +6880,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ignou.ac.in/viewFile/services/Common_Prospectus/Common-Prospectus-January-2026-V-1-2.pdf",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -6957,12 +6957,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ignou.ac.in/viewFile/services/Common_Prospectus/Common-Prospectus-January-2026-V-1-2.pdf",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "IGNOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -7035,12 +7035,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ignou.ac.in/viewFile/services/Common_Prospectus/Common-Prospectus-January-2026-V-1-2.pdf",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "IGNOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -7113,12 +7113,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ignou.ac.in/viewFile/services/Common_Prospectus/Common-Prospectus-January-2026-V-1-2.pdf",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "IGNOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -7191,12 +7191,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ignou.ac.in/viewFile/services/Common_Prospectus/Common-Prospectus-January-2026-V-1-2.pdf",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "IGNOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -7363,7 +7363,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -7441,7 +7441,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -7562,7 +7562,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -7721,7 +7721,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -7797,7 +7797,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -7873,7 +7873,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -7952,11 +7952,11 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.onlinecu.in/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8035,11 +8035,11 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.onlinecu.in/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8115,7 +8115,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8198,7 +8198,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8274,7 +8274,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8357,7 +8357,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8440,7 +8440,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8523,7 +8523,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8606,7 +8606,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8689,7 +8689,7 @@
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_status": "verified_official",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "last_verified": "2026-08-15",
             "effective_session": "2026-27"
           },
@@ -8848,7 +8848,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -8923,12 +8923,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://dpu.edu.in/examination-time-table.aspx",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9025,7 +9025,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9105,7 +9105,7 @@
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9262,12 +9262,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9340,12 +9340,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9418,12 +9418,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9496,12 +9496,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9574,12 +9574,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9652,12 +9652,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9730,12 +9730,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9808,12 +9808,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure (wbnsou.ac.in fee structure PDF)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -9886,7 +9886,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -9964,7 +9964,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10042,7 +10042,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10120,7 +10120,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10198,7 +10198,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10276,7 +10276,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10354,7 +10354,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10432,7 +10432,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10510,7 +10510,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10588,7 +10588,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10666,7 +10666,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10744,7 +10744,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10822,7 +10822,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10900,7 +10900,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -10978,7 +10978,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11056,7 +11056,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11134,7 +11134,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11212,7 +11212,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11290,7 +11290,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11368,7 +11368,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11446,7 +11446,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11524,7 +11524,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11602,7 +11602,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11680,7 +11680,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11758,7 +11758,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11836,7 +11836,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -11914,7 +11914,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
@@ -12074,12 +12074,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12152,12 +12152,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12230,11 +12230,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12307,11 +12307,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12384,12 +12384,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12462,12 +12462,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12540,12 +12540,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12618,11 +12618,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12695,12 +12695,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12773,12 +12773,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12851,12 +12851,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -12929,12 +12929,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13007,11 +13007,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13084,12 +13084,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13162,12 +13162,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "KSOU official fee structure PDF (Karnataka State Open University, Mysuru)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13240,11 +13240,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13317,11 +13317,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13394,11 +13394,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13471,11 +13471,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13548,11 +13548,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13625,11 +13625,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13702,11 +13702,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.ksoumysuru.ac.in/index.php/prospectus/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13861,11 +13861,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://subhartidde.com/a25-fee-structure",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -13938,11 +13938,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://subhartidde.com/a25-fee-structure",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14015,11 +14015,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://subhartidde.com/a25-fee-structure",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14092,11 +14092,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://subhartidde.com/a25-fee-structure",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14251,12 +14251,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14329,12 +14329,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14407,12 +14407,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14485,11 +14485,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14562,12 +14562,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14640,11 +14640,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14717,11 +14717,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14794,12 +14794,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14872,11 +14872,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -14949,11 +14949,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -15026,11 +15026,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -15103,11 +15103,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -15180,12 +15180,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU programme fee sheet (supplied fee desk document)",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -15258,11 +15258,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -15335,7 +15335,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15413,7 +15413,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15491,7 +15491,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15569,7 +15569,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15647,7 +15647,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15725,7 +15725,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15803,7 +15803,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15881,7 +15881,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -15959,7 +15959,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16037,7 +16037,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16115,7 +16115,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16193,7 +16193,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16271,7 +16271,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16349,7 +16349,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16427,7 +16427,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16505,7 +16505,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16583,7 +16583,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16661,7 +16661,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16739,7 +16739,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16817,7 +16817,7 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-16",
             "verification_status": "verified_official",
             "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
@@ -16977,11 +16977,11 @@
             "fee_verification_status": "not_published",
             "source_url": "https://www.jain-online.com/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17054,12 +17054,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.jain-online.com/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17132,12 +17132,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.jain-online.com/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17210,12 +17210,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.jain-online.com/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17288,12 +17288,12 @@
             "fee_verification_status": "verified_official",
             "source_url": "https://www.jain-online.com/",
             "source_type": "official_programme_page",
-            "source_title": "Official programme/admission source; current fee not independently verified",
+            "source_title": "Official programme/admission source; manually researched from the official website",
             "last_verified": "2026-08-15",
             "verification_status": "verified_official",
             "fee_source_note": "AVEDU fee desk sheet cross-checked against the official university fee page",
             "verification_method": "manual_verification",
-            "verification_label": "Manually verified — official university website",
+            "verification_label": "Manually researched — source: official university website",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17505,7 +17505,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17624,7 +17624,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17743,7 +17743,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17855,7 +17855,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -17973,7 +17973,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -18090,7 +18090,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -18321,7 +18321,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -18434,7 +18434,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -18546,7 +18546,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -18656,7 +18656,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -18773,7 +18773,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -18884,7 +18884,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19115,7 +19115,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19227,7 +19227,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19345,7 +19345,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19461,7 +19461,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19571,7 +19571,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19688,7 +19688,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19799,7 +19799,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
@@ -19916,7 +19916,7 @@
             "last_verified": "2026-08-15",
             "verification_status": "not_published",
             "verification_method": "manual_verification",
-            "verification_label": "Fee not published by the university — check the official admission page",
+            "verification_label": "Fee not published by the university — manually researched; check the official admission page",
             "effective_session": "2026-27"
           },
           "admission": {
