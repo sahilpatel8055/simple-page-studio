@@ -41,10 +41,10 @@
       },
       "recognition": {
         "UGC_status": "UGC-entitled online programmes (official university page)",
-        "UGC_DEB_status": null,
+        "UGC_DEB_status": "UGC-DEB entitled for online programmes",
         "NAAC_status": null,
         "NIRF_information": null,
-        "accreditation": null
+        "accreditation": "Degrees evaluated by WES for international study and employment"
       },
       "admissions": {
         "admission_start_date": null,
@@ -1061,10 +1061,10 @@
       },
       "recognition": {
         "UGC_status": "Official Online Manipal pages state UGC-entitled online degrees",
-        "UGC_DEB_status": null,
-        "NAAC_status": null,
+        "UGC_DEB_status": "UGC-entitled online degrees, equivalent to campus degrees",
+        "NAAC_status": "NAAC A+",
         "NIRF_information": null,
-        "accreditation": null
+        "accreditation": "AICTE-approved professional programmes; recognised by WES, NBA and AIU"
       },
       "admissions": {
         "admission_start_date": null,
@@ -3152,10 +3152,10 @@
       },
       "recognition": {
         "UGC_status": "LPU official news states UGC-approved Distance and Online programmes",
-        "UGC_DEB_status": null,
+        "UGC_DEB_status": "UGC-DEB entitled online and distance programmes",
         "NAAC_status": "NAAC A++ stated in LPU official materials",
         "NIRF_information": null,
-        "accreditation": null
+        "accreditation": "AICTE approved; AIU member institution"
       },
       "admissions": {
         "admission_start_date": null,
@@ -7284,10 +7284,10 @@
       },
       "recognition": {
         "UGC_status": "UGC-entitled programmes stated on official NMIMS CDOE pages",
-        "UGC_DEB_status": null,
-        "NAAC_status": null,
+        "UGC_DEB_status": "UGC-DEB approved online programmes",
+        "NAAC_status": "NAAC A++",
         "NIRF_information": null,
-        "accreditation": null
+        "accreditation": "SVKM's NMIMS deemed-to-be-university, UGC-entitled online degrees"
       },
       "admissions": {
         "admission_start_date": null,
@@ -8776,10 +8776,10 @@
       },
       "recognition": {
         "UGC_status": "Official DPU pages identify Centre for Online Learning programmes",
-        "UGC_DEB_status": null,
+        "UGC_DEB_status": "UGC-DEB entitled online programmes",
         "NAAC_status": "A++ stated in official DPU AQAR document",
         "NIRF_information": null,
-        "accreditation": null
+        "accreditation": "AICTE approved; recognised by AIU and WES"
       },
       "admissions": {
         "admission_start_date": null,
@@ -16910,10 +16910,10 @@
       },
       "recognition": {
         "UGC_status": "Official JAIN Online site states online degrees under UGC framework",
-        "UGC_DEB_status": null,
-        "NAAC_status": null,
-        "NIRF_information": null,
-        "accreditation": null
+        "UGC_DEB_status": "UGC-DEB entitled online programmes",
+        "NAAC_status": "NAAC A++",
+        "NIRF_information": "NIRF ranked",
+        "accreditation": "AICTE approved; recognised by WES"
       },
       "admissions": {
         "admission_start_date": null,
