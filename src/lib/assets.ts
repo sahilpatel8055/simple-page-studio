@@ -25,6 +25,10 @@ import shooliniLogo from "@/logo/shoolni.png";
 import gnaLogo from "@/logo/gna.png";
 import avedu from "@/logo/avedu-logo.png";
 import manipalLogo from "@/assets/manipal-logo.jpg";
+import nsouLogo from "@/assets/nsou-logo (1).jpeg";
+import baouLogo from "@/assets/baou logo.png";
+import ksouLogo from "@/assets/ksou logo.jpg";
+import parulLogo from "@/assets/parul logo.jpg";
 
 import lpuCampus from "@/campus/lpu.png";
 import amityCampus from "@/campus/amity.jpg";
@@ -34,6 +38,10 @@ import manipalCampus from "@/campus/muj-campus.jpg";
 import smuCampus from "@/campus/smu-campus.jpg";
 import vguCampus from "@/campus/vgu.jpg";
 import uttaranchalCampus from "@/campus/uttaranchal.png";
+import nsouCampus from "@/assets/nsou campus.jpg";
+import baouCampus from "@/assets/baou campus.jpg";
+import ksouCampus from "@/assets/ksou campus.jpg";
+import parulCampus from "@/assets/parul university campus.jpg";
 
 import ugcIcon from "@/approvals/ugc-icon.png";
 import naacIcon from "@/approvals/naac-icon.png";
@@ -81,6 +89,10 @@ const logos: Record<string, string> = {
   "shoolini-online": shooliniLogo,
   "gna-online": gnaLogo,
   "manipal-university-jaipur": manipalLogo,
+  nsou: nsouLogo,
+  baou: baouLogo,
+  "ksou-mysuru": ksouLogo,
+  "parul-online": parulLogo,
 };
 
 /** Campus photography keyed by university slug. */
@@ -93,6 +105,10 @@ const campuses: Record<string, string> = {
   "smu-online": smuCampus,
   vgu: vguCampus,
   "uttaranchal-online": uttaranchalCampus,
+  nsou: nsouCampus,
+  baou: baouCampus,
+  "ksou-mysuru": ksouCampus,
+  "parul-online": parulCampus,
 };
 
 /** Approval / accreditation body icons. Keys are matched case-insensitively. */
