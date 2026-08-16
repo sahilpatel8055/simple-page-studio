@@ -1,6 +1,6 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { DetailLayout } from "@/components/templates/DetailLayout";
-import { KeyTakeaways, PostBody, PostByline, PostSources } from "@/components/post/PostArticle";
+import { KeyTakeaways, MobileToc, PostBody, PostByline, PostSources } from "@/components/post/PostArticle";
 import { ArticleCard } from "@/components/cards";
 import { RelatedContent } from "@/components/templates/DetailLayout";
 import { articles, news } from "@/lib/content";
@@ -119,6 +119,7 @@ function Page() {
       }
     >
       <KeyTakeaways items={post.keyTakeaways} />
+      <MobileToc sections={toc} />
       <PostBody post={post} />
       {post.sources?.length ? <PostSources items={post.sources} /> : null}
     </DetailLayout>

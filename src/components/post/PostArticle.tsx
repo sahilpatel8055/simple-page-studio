@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, CalendarClock, CheckCircle2, Info, PhoneCall, ShieldCheck, Sparkles, UserRound } from "lucide-react";
+import { ArrowRight, CalendarClock, ListTree, CheckCircle2, Info, PhoneCall, ShieldCheck, Sparkles, UserRound } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
 import { DataTable } from "@/components/common/Blocks";
 import { ContentSection } from "@/components/templates/DetailLayout";
@@ -53,6 +53,35 @@ export function KeyTakeaways({ items }: { items: string[] }) {
         ))}
       </ul>
     </section>
+  );
+}
+
+/* --------------------------- mobile contents --------------------------- */
+
+const anchor = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+/** Collapsible table of contents shown on phones (sidebar TOC is desktop-only). */
+export function MobileToc({ sections }: { sections: string[] }) {
+  return (
+    <details className="not-prose group rounded-2xl border border-border bg-card p-4 lg:hidden" open>
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-extrabold text-foreground">
+        <span className="inline-flex items-center gap-2">
+          <ListTree className="h-4 w-4 text-brand" aria-hidden="true" /> Table of contents
+        </span>
+        <span className="text-xs font-semibold text-muted-foreground group-open:hidden">Show</span>
+        <span className="hidden text-xs font-semibold text-muted-foreground group-open:inline">Hide</span>
+      </summary>
+      <ol className="mt-3 space-y-1.5 border-t border-border pt-3 text-sm">
+        {sections.map((s, i) => (
+          <li key={s} className="flex gap-2 leading-snug">
+            <span className="w-5 shrink-0 tabular-nums text-xs font-bold text-brand">{i + 1}.</span>
+            <a href={`#${anchor(s)}`} className="min-h-[1.75rem] text-muted-foreground hover:text-brand">
+              {s}
+            </a>
+          </li>
+        ))}
+      </ol>
+    </details>
   );
 }
 
