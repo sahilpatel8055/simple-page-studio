@@ -216,39 +216,44 @@ export function CollegeTable({ offers, courseName }: { offers: FamilyOffer[]; co
         </table>
       </div>
 
-      <ul className="space-y-2.5 lg:hidden">
-        {rows.map((o, i) => (
-          <li key={o.key} className="rounded-2xl border border-border bg-card p-3.5">
-            <div className="flex items-start gap-2.5">
-              <span className="grid h-6 w-6 shrink-0 place-items-center rounded-lg bg-brand text-[0.72rem] font-bold text-brand-foreground">
-                {i + 1}
-              </span>
-              <div className="min-w-0">
-                <p className="font-display text-[0.88rem] font-bold leading-snug text-foreground">{o.universityName}</p>
-                {o.location && <p className="text-[0.72rem] text-muted-foreground">{o.location}</p>}
-              </div>
-            </div>
-            <dl className="mt-2.5 divide-y divide-border border-y border-border">
-              <div className="flex justify-between gap-3 py-1.5">
-                <dt className="text-[0.75rem] font-semibold text-muted-foreground">Total fee</dt>
-                <dd className="text-[0.8rem] font-bold text-foreground">
+      <div className="overflow-hidden rounded-2xl border border-border lg:hidden">
+        <table className="w-full table-fixed border-collapse text-[0.72rem]">
+          <caption className="sr-only">Universities offering {courseName}</caption>
+          <thead>
+            <tr className="bg-brand text-left text-brand-foreground">
+              <th scope="col" className="w-[44%] px-2 py-2 font-semibold">
+                University
+              </th>
+              <th scope="col" className="px-2 py-2 font-semibold">
+                Total fee
+              </th>
+              <th scope="col" className="w-[24%] px-2 py-2 font-semibold">
+                Duration
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((o, i) => (
+              <tr key={o.key} className={i % 2 ? "bg-secondary/50" : "bg-card"}>
+                <th scope="row" className="px-2 py-2 text-left align-top font-semibold text-foreground">
+                  <AppLink to={o.path} className="text-brand hover:underline">
+                    {o.universityShortName || o.universityName}
+                  </AppLink>
+                  {o.location && (
+                    <span className="mt-0.5 block text-[0.62rem] font-normal leading-snug text-muted-foreground">
+                      {o.location}
+                    </span>
+                  )}
+                </th>
+                <td className="px-2 py-2 align-top font-semibold text-foreground">
                   {o.fees.total ? `₹${o.fees.total.toLocaleString("en-IN")}` : "Not specified"}
-                </dd>
-              </div>
-              <div className="flex justify-between gap-3 py-1.5">
-                <dt className="text-[0.75rem] font-semibold text-muted-foreground">Duration</dt>
-                <dd className="text-[0.8rem] text-foreground">{o.duration ?? "—"}</dd>
-              </div>
-            </dl>
-            <AppLink
-              to={o.path}
-              className="mt-2.5 inline-flex w-full items-center justify-center gap-1.5 rounded-xl bg-brand px-3 py-2 text-[0.78rem] font-bold text-brand-foreground"
-            >
-              View fees &amp; admission <ArrowRight className="h-3.5 w-3.5" aria-hidden="true" />
-            </AppLink>
-          </li>
-        ))}
-      </ul>
+                </td>
+                <td className="px-2 py-2 align-top text-muted-foreground">{o.duration ?? "—"}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </>
   );
 }
