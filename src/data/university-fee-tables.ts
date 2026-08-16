@@ -260,6 +260,19 @@ export const universityFeeTables: Record<string, UniversityFeeTable> = {
     ],
   },
 
+  "smu-online": {
+    note: "Semester fee and total course fee as published on the official Online Manipal pages for Sikkim Manipal University. A non-refundable application fee of ₹500 applies at admission.",
+    rows: [
+      { course: "BA", specialisation: "English, Sociology, Political Science", fee: "₹12,500 / semester · ₹75,000 total", duration: "3 Years" },
+      { course: "B.Com", fee: "₹12,500 / semester · ₹75,000 total", duration: "3 Years" },
+      { course: "BBA", fee: "₹15,000 / semester · ₹90,000 total", duration: "3 Years" },
+      { course: "MA", specialisation: "English, Sociology, Political Science", fee: "₹18,750 / semester · ₹75,000 total", duration: "2 Years" },
+      { course: "M.Com", fee: "₹18,750 / semester · ₹75,000 total", duration: "2 Years" },
+      { course: "MCA", fee: "₹27,500 / semester · ₹1,10,000 total", duration: "2 Years" },
+      { course: "MBA", fee: "₹30,000 / semester · ₹1,20,000 total", duration: "2 Years" },
+    ],
+  },
+
   baou: {
     note: "Course-wise fees as published by the university. Amounts are the annual programme fee unless the university states otherwise.",
     rows: [
