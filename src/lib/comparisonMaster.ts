@@ -143,7 +143,7 @@ export const feeLabel = (
     return `₹${side.fee_total.toLocaleString("en-IN")}`;
   const fromDataset = datasetFeeTotal(ctx?.universitySlug, ctx?.course);
   if (fromDataset) return `₹${fromDataset.toLocaleString("en-IN")}`;
-  return "Current fee not verified";
+  return "Fee not published — manually researched from the official website";
 };
 
 export const pairPath = (pair: PairComparison) => `/compare/${pair.comparison_id}`;

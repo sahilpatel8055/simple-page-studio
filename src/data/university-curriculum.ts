@@ -20,7 +20,7 @@ export interface UniversityCurriculum {
 }
 
 const V = "2026-08-14";
-const MANUAL = "Manually verified — official university website";
+const MANUAL = "Manually researched — source: official university website";
 
 export const universityCurricula: Record<string, UniversityCurriculum> = {
   "lpu-online::online-mca": {

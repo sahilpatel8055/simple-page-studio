@@ -474,7 +474,7 @@ export function ReviewList({ reviews }: { reviews: CourseReview[] }) {
     return (
       <p className="rounded-2xl border border-dashed border-border bg-card px-5 py-8 text-center text-sm text-muted-foreground">
         Student reviews will appear here as verified feedback becomes available. We do not publish
-        unverified testimonials.
+        testimonials we could not trace to a named learner.
       </p>
     );
   }
@@ -503,7 +503,7 @@ export function PlatformTrust({ family }: { family: CourseFamily }) {
     },
     {
       title: "Transparent fees",
-      detail: "Published figures only. Anything unverified is labelled, never estimated.",
+      detail: "Published figures only, manually researched from the official university website — never estimated.",
     },
     {
       title: "Official sources",

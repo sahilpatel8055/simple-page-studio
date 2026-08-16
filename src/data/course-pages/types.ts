@@ -298,5 +298,5 @@ export const defaultFeeNotes = (name: string): string[] => [
   "Most universities allow semester-wise payment, and many offer no-cost EMI through a financing partner.",
   "Registration, examination, study-material and technology charges may sit outside the advertised tuition fee — always ask for the all-inclusive total.",
   "Scholarships and category concessions, where available, apply to the tuition component and are subject to the university's own conditions.",
-  "Where we have not verified a figure from an official source, the table shows \"Not specified\" instead of an estimate.",
+  "Every figure is manually researched from the official university website; where a university does not publish one, the table shows \"Not specified\" instead of an estimate.",
 ];
