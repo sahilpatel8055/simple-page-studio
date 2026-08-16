@@ -4,8 +4,8 @@
  * "not published / verification required" note where the pack says so.
  */
 import { AppLink } from "@/components/common/AppLink";
-import {
 import { lastUpdatedLabel } from "@/components/common/Verification";
+import {
   isUnpublished,
   NOT_PUBLISHED_LABEL,
   PUB_SESSION,
