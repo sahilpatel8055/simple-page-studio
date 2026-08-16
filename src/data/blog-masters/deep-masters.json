@@ -822,19 +822,6 @@
       ]
      }
     ]
-   },
-   {
-    "heading": "Research Notes",
-    "blocks": [
-     {
-      "kind": "p",
-      "text": "The scope above was expanded using your attached source plus current 2026 search research. Your attached source already covered Marketing, Finance, HR, Entrepreneurship, Operations, Healthcare, Project Management, International Business, Business Analytics, IT and Digital Marketing. fileciteturn23file0L15-L57 Current search research additionally shows broad 2026 coverage of Finance, Marketing, HR, Business Analytics, Digital Marketing, Operations, Logistics & Supply Chain, Project Management, IT Management, International Business and Entrepreneurship. citeturn0search1turn0search7 Current university programme pages also show that some institutions offer much wider or more specialised combinations such as Banking & Finance, International Finance, Data Science & Analytics, Systems & Operations, Healthcare, Entrepreneurship and Digital Finance. citeturn0search11turn0search35"
-     },
-     {
-      "kind": "p",
-      "text": "Important: this article is a market-level guide. Do not turn every specialisation named here into a claim that every one of AVEDU's universities offers it. Availability belongs on university-specific course/specialisation pages and should be derived from the current programme data."
-     }
-    ]
    }
   ],
   "faqs": [
@@ -3858,27 +3845,6 @@
     ]
    },
    {
-    "heading": "AVEDU Content Architecture",
-    "blocks": [
-     {
-      "kind": "p",
-      "text": "This article should function as the broad informational resource. It should answer the user's general questions and then route them to more precise pages."
-     },
-     {
-      "kind": "list",
-      "items": [
-       "Online B.Com article → Online B.Com pillar",
-       "Online B.Com article → University-specific Online B.Com pages",
-       "Online B.Com article → B.Com specialisation pages",
-       "Online B.Com article → B.Com admission guide",
-       "Online B.Com article → B.Com fee guide",
-       "Online B.Com article → B.Com career guide",
-       "Online B.Com article → Online BBA vs Online B.Com comparison"
-      ]
-     }
-    ]
-   },
-   {
     "heading": "Editorial Accuracy Rules",
     "blocks": [
      {
@@ -5913,23 +5879,6 @@
        "Evaluate career/placement support realistically.",
        "Choose the programme that fits your target technology role."
       ]
-     }
-    ]
-   },
-   {
-    "heading": "AVEDU Content Architecture",
-    "blocks": [
-     {
-      "kind": "p",
-      "text": "This article should function as a general Online MCA pillar page. University-specific MCA pages should not simply copy this article. They should replace generic statements with researched university data: exact eligibility, fee, semester-wise curriculum, specialisations/electives, academic calendar, admission steps, examination pattern, learning platform, placement support and university-specific FAQs."
-     },
-     {
-      "kind": "p",
-      "text": "Use internal links from this pillar page to individual university MCA pages, MCA specialisation pages, fee comparisons, admission guides and relevant technology-career articles."
-     },
-     {
-      "kind": "p",
-      "text": "For every university-specific fact, store the underlying research record with source, retrieval date and academic-year context. Display a Last Updated date to users rather than presenting time-sensitive information as permanent."
      }
     ]
    },
