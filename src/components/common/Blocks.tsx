@@ -48,22 +48,41 @@ export function DataTable({
 }) {
   return (
     <>
-      {/* Mobile: each row becomes a stacked card — no horizontal scrolling. */}
-      <ul className="space-y-3 sm:hidden">
-        {rows.map((r, i) => (
-          <li key={i} className="overflow-hidden rounded-xl border border-border bg-card">
-            <div className="bg-brand px-3 py-2 text-sm font-bold text-brand-foreground">{r[0]}</div>
-            <dl className="divide-y divide-border">
-              {head.slice(1).map((h, j) => (
-                <div key={h} className="grid grid-cols-[42%_minmax(0,1fr)] gap-2 px-3 py-2">
-                  <dt className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{h}</dt>
-                  <dd className="min-w-0 text-sm font-medium">{r[j + 1]}</dd>
-                </div>
+      {/* Mobile: same columns, compact side-by-side table — no stacked cards. */}
+      <div className="overflow-hidden rounded-xl border border-border sm:hidden">
+        <table className="w-full table-fixed border-collapse text-[0.72rem]">
+          {caption && <caption className="sr-only">{caption}</caption>}
+          <thead>
+            <tr className="bg-brand text-left text-brand-foreground">
+              {head.map((h, i) => (
+                <th
+                  key={h}
+                  scope="col"
+                  className={`px-2 py-2 font-semibold leading-tight ${i === 0 ? "w-[40%]" : ""}`}
+                >
+                  {h}
+                </th>
               ))}
-            </dl>
-          </li>
-        ))}
-      </ul>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map((r, i) => (
+              <tr key={i} className={i % 2 ? "bg-secondary/50" : "bg-card"}>
+                {r.map((cell, j) => (
+                  <td
+                    key={j}
+                    className={`break-words px-2 py-2 align-top leading-snug ${
+                      j === 0 ? "font-semibold text-foreground" : "text-muted-foreground"
+                    }`}
+                  >
+                    {cell}
+                  </td>
+                ))}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
       <table className="hidden w-full border-collapse overflow-hidden rounded-xl border border-border text-sm sm:table">
         {caption && <caption className="sr-only">{caption}</caption>}
