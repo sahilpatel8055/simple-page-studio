@@ -464,7 +464,13 @@ export const admissionUpdates = [
   { title: "Manipal Online — scholarship round 2", date: "30 Aug 2026", status: "Upcoming", href: "/admissions" },
 ];
 
-export const reviews: Review[] = [
+/**
+ * Learner reviews are kept here as unpublished drafts. Nothing is shown to
+ * readers until we can attach real, attributable learner evidence.
+ */
+export const reviews: Review[] = [];
+
+const draftReviews: Review[] = [
   {
     slug: "lpu-online",
     entity: "LPU Online",

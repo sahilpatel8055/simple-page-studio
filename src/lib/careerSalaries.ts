@@ -83,3 +83,7 @@ export function defaultRolesFor(programmeSlug: string): string[] {
   for (const r of roleSets) if (r.match.test(programmeSlug)) return r.roles;
   return [];
 }
+
+/** Shown wherever a salary range appears, so numbers are never presented bare. */
+export const salarySourceNote =
+  "Ranges are compiled from published Indian job-market salary aggregators (Glassdoor, AmbitionBox, Naukri) for 2025-26 and refreshed each session. They are role averages for the Indian market, not university placement figures.";
