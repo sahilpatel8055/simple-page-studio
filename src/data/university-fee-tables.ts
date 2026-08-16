@@ -260,6 +260,21 @@ export const universityFeeTables: Record<string, UniversityFeeTable> = {
     ],
   },
 
+  "parul-online": {
+    note: "Parul University Online 2026-27 fee structure. Semester, annual, one-time and 12-month EMI payment options are published on the official online portal.",
+    rows: [
+      { course: "BBA", fee: "₹18,500 / semester · ₹1,11,000 total", duration: "3 Years" },
+      { course: "BCA", fee: "₹18,500 / semester · ₹1,11,000 total", duration: "3 Years" },
+      { course: "BA", specialisation: "Psychology, English, Journalism & Mass Communication", fee: "₹18,500 / semester · ₹1,11,000 total", duration: "3 Years" },
+      { course: "MBA", specialisation: "20+ specialisations (Finance, Marketing, HR, Operations)", fee: "₹37,500 / semester · ₹1,50,000 total", duration: "2 Years" },
+      { course: "MCA", fee: "₹30,000 / semester · ₹1,20,000 total", duration: "2 Years" },
+      { course: "M.Com", specialisation: "Finance, taxation & corporate accounting", fee: "₹15,000 / semester · ₹60,000 total", duration: "2 Years" },
+      { course: "M.Sc", specialisation: "Applied Mathematics", fee: "₹15,000 / semester · ₹60,000 total", duration: "2 Years" },
+      { course: "MSW", fee: "₹15,000 / semester · ₹60,000 total", duration: "2 Years" },
+      { course: "MA", specialisation: "English Language Teaching, Journalism & Mass Communication", fee: "₹15,000 / semester · ₹60,000 total", duration: "2 Years" },
+    ],
+  },
+
   "smu-online": {
     note: "Semester fee and total course fee as published on the official Online Manipal pages for Sikkim Manipal University. A non-refundable application fee of ₹500 applies at admission.",
     rows: [
