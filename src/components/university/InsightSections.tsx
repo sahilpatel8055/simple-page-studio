@@ -39,28 +39,11 @@ import {
 
 /* ------------------------------ small pieces ------------------------------ */
 
-export function DataSourceBadge({ status }: { status?: string | null | undefined }) {
-  if (!status) return null;
-  if (isOfficialStatus(status)) {
-    return (
-      <Chip tone="success">
-        <BadgeCheck className="mr-1 h-3 w-3" aria-hidden="true" /> Official university source
-      </Chip>
-    );
-  }
-  if (isUnsafeStatus(status)) {
-    return (
-      <Chip tone="highlight">
-        <ShieldQuestion className="mr-1 h-3 w-3" aria-hidden="true" /> Pending official verification
-      </Chip>
-    );
-  }
-  return (
-    <Chip>
-      <Info className="mr-1 h-3 w-3" aria-hidden="true" /> Verified against published reference
-    </Chip>
-  );
+/** Verification/source badges are internal-only and not rendered. */
+export function DataSourceBadge(_props: { status?: string | null | undefined }) {
+  return null;
 }
+
 
 export function ScopeBadge({ inherited, label }: { inherited: boolean; label: string }) {
   return (

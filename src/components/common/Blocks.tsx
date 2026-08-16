@@ -198,19 +198,16 @@ export function RelatedLinkGrid({ groups }: { groups: { title: string; links: Li
 
 /* ------------------------------ Trust blocks ----------------------------- */
 
-export function UpdatedStamp({ date, verified }: { date: string; verified?: boolean }) {
+export function UpdatedStamp({ date, verified: _verified }: { date: string; verified?: boolean }) {
   return (
     <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
       <span className="inline-flex items-center gap-1">
         <CalendarClock className="h-3.5 w-3.5" /> Last updated {date}
       </span>
-      <Chip tone={verified ? "success" : "highlight"}>
-        <ShieldCheck className="mr-1 h-3 w-3" />
-        {verified ? "Officially verified" : "Awaiting official verification"}
-      </Chip>
     </div>
   );
 }
+
 
 export function AuthorBox({
   name = "AVEDU Editorial Desk",

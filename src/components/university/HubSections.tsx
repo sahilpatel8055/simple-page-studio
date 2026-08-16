@@ -445,7 +445,7 @@ export function UniversityReviews({
   if (!rating || !reviewCount) {
     return (
       <EmptyNote>
-        {`Verified student reviews for ${shortName} are not published yet. This section will show real ratings once collected — we do not publish sample or generated testimonials.`}
+        {`Learner reviews for ${shortName} are not published yet. This section will show real ratings once collected — we do not publish sample or generated testimonials.`}
       </EmptyNote>
     );
   }

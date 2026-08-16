@@ -17,7 +17,7 @@ import rulesJson from "@/data/pub/rules.json";
 export const PUB_SESSION = "2026-27";
 
 /** Label required by the pack wherever a value is unavailable. */
-export const NOT_PUBLISHED_LABEL =
+export const NOT_PUBLISHED_LABEL_INTERNAL =
   "Not published by the university — manually researched from the official website";
 
 /* ---------- Phase 2: universities ---------- */
@@ -264,3 +264,7 @@ export function isUnpublished(value?: string | null): boolean {
   if (!value) return true;
   return /not (published|provided)|not independently verified|has not provided/i.test(value);
 }
+
+/** Consumer-facing wording; the internal label above is kept for the data layer. */
+export const NOT_PUBLISHED_LABEL =
+  "The university shares this detail directly with applicants — ask for it before you pay.";

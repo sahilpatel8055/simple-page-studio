@@ -27,37 +27,18 @@ export function EmptyNote({ children }: { children: string }) {
   );
 }
 
-export function VerificationChip({ status }: { status?: string | null | undefined }) {
-  if (!status) return null;
-  const verified = status.startsWith("verified_official");
-  return (
-    <Chip tone={verified ? "success" : "default"}>
-      {verified ? <BadgeCheck className="mr-1 h-3 w-3" aria-hidden="true" /> : null}
-      {status.replace(/_/g, " ")}
-    </Chip>
-  );
+/** Research metadata is intentionally not shown to readers. */
+export function VerificationChip(_props: { status?: string | null | undefined }) {
+  return null;
 }
 
 /* --------------------------------- fees ---------------------------------- */
 
-export function FeeSource({ fees }: { fees: FeeRecord | undefined }) {
-  if (!fees?.source_url) return null;
-  return (
-    <p className="text-xs text-muted-foreground">
-      Source:{" "}
-      <a
-        href={fees.source_url}
-        target="_blank"
-        rel="noreferrer noopener"
-        className="inline-flex items-center gap-1 font-semibold text-brand hover:underline"
-      >
-        {fees.source_title ?? fees.source_url}
-        <ExternalLink className="h-3 w-3" aria-hidden="true" />
-      </a>
-      {isVerifiedFee(fees) ? " · official" : " · pending verification"}
-    </p>
-  );
+/** Source links stay in the data layer; readers see the fee itself. */
+export function FeeSource(_props: { fees: FeeRecord | undefined }) {
+  return null;
 }
+
 
 export function FeeTable({ fees, caption }: { fees: FeeRecord | undefined; caption: string }) {
   if (!fees) return <EmptyNote>Fee information is not currently available for this programme.</EmptyNote>;
@@ -96,7 +77,7 @@ export function FeeTable({ fees, caption }: { fees: FeeRecord | undefined; capti
       <div className="flex flex-wrap items-center gap-2">
         <VerificationChip status={fees.fee_verification_status ?? fees.verification_status} />
         {fees.last_verified && (
-          <span className="text-xs text-muted-foreground">Last verified {fees.last_verified}</span>
+          <span className="text-xs text-muted-foreground">Last updated {fees.last_verified}</span>
         )}
       </div>
       <DataTable
@@ -217,7 +198,7 @@ export function AdmissionSection({
 
 export function ScholarshipList({ items }: { items: ScholarshipRecord[] }) {
   if (!items.length) {
-    return <EmptyNote>No officially verified scholarship scheme is published for this university yet.</EmptyNote>;
+    return <EmptyNote>No university-wide scholarship scheme is listed for this university yet.</EmptyNote>;
   }
   return (
     <div className="grid gap-4 sm:grid-cols-2">
@@ -308,37 +289,7 @@ export function RecognitionTable({ university }: { university: UniversityRecordJ
 
 /* --------------------------------- sources -------------------------------- */
 
-export function SourceInformation({ sources }: { sources: SourceEntry[] }) {
-  // Aggregator pages and bare university-website links are not cited as sources.
-  const visible = sources.filter(
-    (s) =>
-      !/collegevidya/i.test(s.source_url) &&
-      !/official\s*website|university\s*website/i.test(s.source_title) &&
-      s.source_type !== "official_website" &&
-      s.source_type !== "official_programme_page",
-  );
-  if (!visible.length) return null;
-  return (
-    <section id="sources" className="scroll-mt-36 rounded-2xl border border-border bg-card p-4">
-      <h2 className="text-base font-bold">Official sources</h2>
-      <ul className="mt-3 space-y-2 text-sm">
-        {visible.map((s, i) => (
-          <li key={`${s.source_url}-${i}`} className="flex flex-wrap items-center gap-2">
-            <a
-              href={s.source_url}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="font-semibold text-brand hover:underline"
-            >
-              {s.source_title}
-            </a>
-            <span className="text-xs text-muted-foreground">
-              {s.programme} · last verified {s.last_verified}
-            </span>
-            <VerificationChip status={s.verification_status} />
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
+/** Source citations stay internal; readers see the facts, not the research trail. */
+export function SourceInformation(_props: { sources: SourceEntry[] }) {
+  return null;
 }

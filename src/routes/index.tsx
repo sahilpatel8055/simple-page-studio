@@ -178,6 +178,7 @@ function HomePage() {
       </Section>
 
       {/* Reviews */}
+      {reviews.length > 0 && (
       <Section>
         <SectionHeader
           eyebrow="Student voices"
@@ -191,6 +192,7 @@ function HomePage() {
           ))}
         </div>
       </Section>
+      )}
 
 
       <div className="container-page py-4">

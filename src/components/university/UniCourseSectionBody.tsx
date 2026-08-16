@@ -56,16 +56,16 @@ export function UniCourseSectionBody({
             rows={[
               ["Programme fee band", p.feeRangeLabel],
               [
-                "Total (official figure)",
+                "Total programme fee",
                 offering.fee.total
                   ? `₹${offering.fee.total.toLocaleString("en-IN")}`
-                  : "Awaiting official confirmation",
+                  : "Shared by the university on request",
               ],
               [
                 "Per semester",
                 offering.fee.perSemester
                   ? `₹${offering.fee.perSemester.toLocaleString("en-IN")}`
-                  : "Awaiting official confirmation",
+                  : "Shared by the university on request",
               ],
               [
                 "EMI from",
