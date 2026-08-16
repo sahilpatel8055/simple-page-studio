@@ -221,39 +221,55 @@ const nsou: Record<string, OpenUniFee> = {
 
 /* ------------------------------------------------------------------- KSOU */
 
-const ksouNote =
-  "The KSOU fee structure publishes a per-cycle course fee (yearly or semester, as marked against the course) and does not publish a consolidated programme total, so no total is shown.";
-
-function ksou_(
-  amount: number,
-  basis: Exclude<FeeBasis, "total">,
-  exam: number,
-): OpenUniFee {
+/**
+ * KSOU publishes a year-wise "Total Fee for Other Students" in its Revised Fee
+ * Notification 2025-26 (July / January cycle, dated 07.01.2026). Each row below
+ * lists those yearly totals verbatim; the programme total is the sum of the
+ * university's own year-wise amounts.
+ */
+function ksouYears(years: number[], note?: string): OpenUniFee {
+  const total = years.reduce((a, b) => a + b, 0);
+  const label = years.map((y) => `₹${y.toLocaleString("en-IN")}`).join(" + ");
   return row({
-    total: null,
-    perYear: basis === "year" ? amount : null,
-    perSemester: basis === "semester" ? amount : null,
-    registrationFee: 500,
-    prospectusFee: 200,
-    examFee: exam,
-    basis,
+    total,
+    perYear: years[0] ?? null,
+    perSemester: null,
+    registrationFee: null,
+    examFee: null,
+    prospectusFee: null,
+    basis: years.length > 1 ? "year" : "total",
     source: KSOU_SRC,
-    note: ksouNote,
+    note:
+      note ??
+      `Revised Fee Notification 2025-26 (07.01.2026): year-wise total fee ${label} for general category students. BPL (women), defence and ex-servicemen, auto/cab drivers and their families, and KSRTC/BMTC/NWKRTC/KKRTC staff receive a 10% concession on tuition fee.`,
   });
 }
 
 const ksou: Record<string, OpenUniFee> = {
-  ba: ksou_(4000, "year", 1100),
-  "b-com": ksou_(4500, "year", 1200),
-  "b-sc-general": ksou_(6000, "semester", 1500),
-  bca: ksou_(8000, "semester", 1500),
-  "b-lib-i-sc": ksou_(5100, "year", 1500),
-  ma: ksou_(5000, "year", 1500),
-  "m-com": ksou_(5000, "year", 1500),
-  mba: ksou_(10000, "semester", 2000),
-  "m-sc": ksou_(5000, "semester", 1500),
-  msw: ksou_(5000, "year", 2000),
-  mca: ksou_(9000, "semester", 2000),
+  /* Undergraduate — year-wise total fee */
+  ba: ksouYears([9240, 8690, 8690]),
+  "b-com": ksouYears([9790, 9240, 9240]),
+  "b-sc-general": ksouYears([26290, 25740, 25740]),
+  "b-sc-information-technology": ksouYears([26290, 25740, 25740]),
+  bca: ksouYears([26290, 25740, 25740]),
+  bba: ksouYears([13640, 13090, 13090]),
+  bsw: ksouYears([14190, 13860, 13860]),
+  "b-lib-i-sc": ksouYears([13640]),
+  /* Postgraduate */
+  ma: ksouYears([11660, 11110]),
+  "m-com": ksouYears([13640, 13090]),
+  mba: ksouYears([32890, 32120]),
+  "m-sc": ksouYears([32670, 32120]),
+  mca: ksouYears([32670, 32120]),
+  msw: ksouYears([23430, 23100]),
+  "m-lib-i-sc": ksouYears([19965]),
+  /* Diploma programmes (10+2 based) — single published total fee */
+  "diploma-in-kannada": ksouYears([7040]),
+  "diploma-in-journalism": ksouYears([8690]),
+  "diploma-in-information-technology": ksouYears([8800]),
+  "diploma-in-computer-application": ksouYears([9240]),
+  "diploma-in-early-childhood-care-and-education": ksouYears([19360]),
+  "diploma-in-translation-studies": ksouYears([7810]),
 };
 
 const SHOOLINI_SRC = "Shoolini Online official programme fee page";
