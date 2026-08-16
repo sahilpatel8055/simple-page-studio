@@ -198,7 +198,7 @@ export function AdmissionSection({
 
 export function ScholarshipList({ items }: { items: ScholarshipRecord[] }) {
   if (!items.length) {
-    return <EmptyNote>No officially verified scholarship scheme is published for this university yet.</EmptyNote>;
+    return <EmptyNote>No university-wide scholarship scheme is listed for this university yet.</EmptyNote>;
   }
   return (
     <div className="grid gap-4 sm:grid-cols-2">
