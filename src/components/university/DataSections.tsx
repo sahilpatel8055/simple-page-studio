@@ -27,37 +27,18 @@ export function EmptyNote({ children }: { children: string }) {
   );
 }
 
-export function VerificationChip({ status }: { status?: string | null | undefined }) {
-  if (!status) return null;
-  const verified = status.startsWith("verified_official");
-  return (
-    <Chip tone={verified ? "success" : "default"}>
-      {verified ? <BadgeCheck className="mr-1 h-3 w-3" aria-hidden="true" /> : null}
-      {status.replace(/_/g, " ")}
-    </Chip>
-  );
+/** Research metadata is intentionally not shown to readers. */
+export function VerificationChip(_props: { status?: string | null | undefined }) {
+  return null;
 }
 
 /* --------------------------------- fees ---------------------------------- */
 
-export function FeeSource({ fees }: { fees: FeeRecord | undefined }) {
-  if (!fees?.source_url) return null;
-  return (
-    <p className="text-xs text-muted-foreground">
-      Source:{" "}
-      <a
-        href={fees.source_url}
-        target="_blank"
-        rel="noreferrer noopener"
-        className="inline-flex items-center gap-1 font-semibold text-brand hover:underline"
-      >
-        {fees.source_title ?? fees.source_url}
-        <ExternalLink className="h-3 w-3" aria-hidden="true" />
-      </a>
-      {isVerifiedFee(fees) ? " · official" : " · pending verification"}
-    </p>
-  );
+/** Source links stay in the data layer; readers see the fee itself. */
+export function FeeSource(_props: { fees: FeeRecord | undefined }) {
+  return null;
 }
+
 
 export function FeeTable({ fees, caption }: { fees: FeeRecord | undefined; caption: string }) {
   if (!fees) return <EmptyNote>Fee information is not currently available for this programme.</EmptyNote>;
