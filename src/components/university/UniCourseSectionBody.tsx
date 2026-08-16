@@ -124,10 +124,39 @@ export function UniCourseSectionBody({
             : {})}
         />
       ) : (
-        <p>
-          {u.shortName} has not published a semester-wise curriculum for the {p.name} in the
-          verified dataset yet.
-        </p>
+        <div className="space-y-3">
+          <p>
+            {u.shortName} does not publish a semester-wise subject list for its {p.name} on its
+            public pages, so nothing is reproduced here rather than filling the section with a
+            generic syllabus copied from another university.
+          </p>
+          <p>
+            What the university does state for this programme: a{" "}
+            {offering.durationLabel || p.durationYears + "-year"} duration
+            {p.level ? `, ${p.level} level` : ""}, delivered in{" "}
+            {p.mode.join(" / ").toLowerCase()} mode, with {p.eligibility.toLowerCase()} The
+            examination pattern and assessment weightage for this course are covered in the exam
+            pattern section of this page.
+          </p>
+          <p>
+            The detailed syllabus is shared in the {u.shortName} prospectus and inside the learning
+            management system after enrolment
+            {u.websiteUrl ? (
+              <>
+                {" "}— you can request the current copy from the official site at{" "}
+                <a
+                  href={u.websiteUrl}
+                  target="_blank"
+                  rel="nofollow noopener"
+                  className="font-semibold text-brand hover:underline"
+                >
+                  {u.websiteUrl.replace(/^https?:\/\//, "")}
+                </a>
+              </>
+            ) : null}
+            . We update this section the moment {u.shortName} publishes a semester table.
+          </p>
+        </div>
       );
     case "specialisations":
       return (
