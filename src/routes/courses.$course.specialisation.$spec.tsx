@@ -129,7 +129,7 @@ function Page() {
 
       <div className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14">
         <main className="min-w-0 space-y-8">
-          <SpecSection title={`What is an ${family.name} in ${specialisation.name}?`} tone="cream">
+          <SpecSection title={`General specialisation overview: what is an ${family.name} in ${specialisation.name}?`} tone="cream">
             <SpecProse paragraphs={rich.what} />
           </SpecSection>
 
@@ -137,7 +137,7 @@ function Page() {
             <HighlightTable items={rich.highlights} />
           </SpecSection>
 
-          <SpecSection title={`Scope of ${family.name} in ${specialisation.name}`}>
+          <SpecSection title={`General specialisation overview: scope of ${family.name} in ${specialisation.name}`}>
             <SpecProse paragraphs={rich.scope} />
             <div className="mt-5 grid grid-cols-2 gap-2.5 lg:grid-cols-3">
               {rich.scopeAreas.map((a) => (
@@ -162,7 +162,7 @@ function Page() {
             points={rich.whyOnline}
           />
 
-          <SpecSection title={`Syllabus of ${family.name} in ${specialisation.name}`} intro={rich.syllabusNote}>
+          <SpecSection title={`General specialisation overview: indicative syllabus of ${family.name} in ${specialisation.name}`} intro={rich.syllabusNote}>
             {rich.syllabus.length > 0 ? (
               <div className="grid gap-3 sm:grid-cols-2">
                 {rich.syllabus.map((sem) => (
@@ -185,7 +185,7 @@ function Page() {
             )}
           </SpecSection>
 
-          <SpecSection title={`Top colleges offering ${family.name} in ${specialisation.name}`} tone="brand">
+          <SpecSection title={`University-specific data: colleges offering ${family.name} in ${specialisation.name}`} tone="brand">
             <CollegeTable offers={offers.length ? offers : family.offers} courseName={`${family.name} in ${specialisation.name}`} />
           </SpecSection>
 
@@ -213,7 +213,7 @@ function Page() {
             )}
           </SpecSection>
 
-          <SpecSection title="Fees for this specialisation" tone="cream">
+          <SpecSection title="University-specific data: fees published by each university" tone="cream">
             <FeeSummaryTable offers={offers.length ? offers : family.offers} />
             <Note>
               Specialisation choice rarely changes the {family.name} fee — the figures above are the
