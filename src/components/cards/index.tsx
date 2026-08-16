@@ -285,7 +285,7 @@ export function AuthorCard({ item }: { item: Author }) {
 
 export function ToolCard({ item }: { item: Tool }) {
   return (
-    <AppLink to="/tools" className={cardBase}>
+    <AppLink to={item.to ?? "/tools"} className={cardBase}>
       <div className="flex items-start justify-between gap-3">
         <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-secondary text-brand">
           <Wrench className="h-5 w-5" />

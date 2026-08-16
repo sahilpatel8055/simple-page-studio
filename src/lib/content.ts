@@ -124,6 +124,8 @@ export interface Tool {
   description: string;
   icon: string;
   status: "Live" | "Beta" | "Coming soon";
+  /** Destination route when the tool has its own page. */
+  to?: string;
 }
 
 /**
@@ -665,12 +667,12 @@ export const tags: Taxonomy[] = [
 ];
 
 export const tools: Tool[] = [
-  { slug: "fee-calculator", name: "Fee & EMI calculator", description: "Estimate total programme cost and monthly EMI across universities.", icon: "calculator", status: "Live" },
-  { slug: "university-finder", name: "University finder", description: "Filter UGC-entitled universities by budget, mode and specialisation.", icon: "search", status: "Live" },
-  { slug: "eligibility-checker", name: "Eligibility checker", description: "Check whether your academic profile qualifies for a programme.", icon: "check", status: "Beta" },
-  { slug: "compare-builder", name: "Comparison builder", description: "Build a side-by-side comparison of any two universities.", icon: "columns", status: "Beta" },
-  { slug: "roi-estimator", name: "Degree ROI estimator", description: "Model payback period from fee, salary and time-to-promotion.", icon: "trending", status: "Coming soon" },
-  { slug: "deadline-tracker", name: "Deadline tracker", description: "Track admission windows for your shortlisted universities.", icon: "calendar", status: "Coming soon" },
+  { slug: "fee-emi-calculator", name: "Fee & EMI calculator", description: "Estimate total programme cost and monthly EMI on real 2026-27 university fees.", icon: "calculator", status: "Live", to: "/tools/fee-emi-calculator" },
+  { slug: "roi-calculator", name: "Degree ROI calculator", description: "Model payback period and net gain from fee, current salary and expected salary.", icon: "trending", status: "Live", to: "/tools/fee-emi-calculator" },
+  { slug: "salary-after-course", name: "Salary after course calculator", description: "Project your indicative salary band after an online UG or PG degree.", icon: "trending", status: "Live", to: "/tools/salary-after-course" },
+  { slug: "university-finder", name: "University finder", description: "Filter UGC-entitled universities by budget, mode and specialisation.", icon: "search", status: "Live", to: "/universities" },
+  { slug: "compare-builder", name: "Comparison builder", description: "Build a side-by-side comparison of any two universities.", icon: "columns", status: "Live", to: "/compare/universities" },
+  { slug: "eligibility-checker", name: "Eligibility checker", description: "Check whether your academic profile qualifies for a programme.", icon: "check", status: "Beta", to: "/counselling" },
 ];
 
 export const rankings = [
