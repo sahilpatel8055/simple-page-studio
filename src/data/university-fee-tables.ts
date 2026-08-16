@@ -288,6 +288,71 @@ export const universityFeeTables: Record<string, UniversityFeeTable> = {
     ],
   },
 
+  "ksou-mysuru": {
+    note:
+      "Karnataka State Open University Revised Fee Notification 2025-26 (July / January cycle, dated 07.01.2026). Amounts are the university's own year-wise total fee for general-category students and include admission processing, registration, study-material, library and alumni components. BPL (women), defence and ex-servicemen, auto/cab drivers and their families, and KSRTC/BMTC/NWKRTC/KKRTC staff pay 10% less on the tuition component.",
+    rows: [
+      { course: "BA", fee: "₹9,240 (1st yr) · ₹8,690 (2nd & 3rd yr) · ₹26,620 total", duration: "3 Years" },
+      { course: "B.Com", fee: "₹9,790 (1st yr) · ₹9,240 (2nd & 3rd yr) · ₹28,270 total", duration: "3 Years" },
+      { course: "BBA", fee: "₹13,640 (1st yr) · ₹13,090 (2nd & 3rd yr) · ₹39,820 total", duration: "3 Years" },
+      { course: "BCA", fee: "₹26,290 (1st yr) · ₹25,740 (2nd & 3rd yr) · ₹77,770 total", duration: "3 Years" },
+      {
+        course: "B.Sc",
+        specialisation: "General / Information Technology",
+        fee: "₹26,290 (1st yr) · ₹25,740 (2nd & 3rd yr) · ₹77,770 total",
+        duration: "3 Years",
+      },
+      { course: "BSW", fee: "₹14,190 (1st yr) · ₹13,860 (2nd & 3rd yr) · ₹41,910 total", duration: "3 Years" },
+      { course: "B.Lib.I.Sc", fee: "₹13,640 total", duration: "1 Year" },
+      { course: "B.Ed", fee: "₹39,270 (1st yr) · ₹38,500 (2nd yr) · ₹77,770 total", duration: "2 Years" },
+      { course: "MA", fee: "₹11,660 (1st yr) · ₹11,110 (2nd yr) · ₹22,770 total", duration: "2 Years" },
+      {
+        course: "MA",
+        specialisation: "Journalism & Mass Communication (MCJ)",
+        fee: "₹17,820 (1st yr) · ₹17,160 (2nd yr) · ₹34,980 total",
+        duration: "2 Years",
+      },
+      { course: "M.Com", fee: "₹13,640 (1st yr) · ₹13,090 (2nd yr) · ₹26,730 total", duration: "2 Years" },
+      { course: "MBA", fee: "₹32,890 (1st yr) · ₹32,120 (2nd yr) · ₹65,010 total", duration: "2 Years" },
+      { course: "MCA", fee: "₹32,670 (1st yr) · ₹32,120 (2nd yr) · ₹64,790 total", duration: "2 Years" },
+      { course: "M.Sc", fee: "₹32,670 (1st yr) · ₹32,120 (2nd yr) · ₹64,790 total", duration: "2 Years" },
+      { course: "MSW", fee: "₹23,430 (1st yr) · ₹23,100 (2nd yr) · ₹46,530 total", duration: "2 Years" },
+      { course: "M.Lib.I.Sc", fee: "₹19,965 total", duration: "1 Year" },
+      { course: "Diploma", specialisation: "Kannada", fee: "₹7,040 total", duration: "1 Year" },
+      { course: "Diploma", specialisation: "Journalism", fee: "₹8,690 total", duration: "1 Year" },
+      { course: "Diploma", specialisation: "Information Technology", fee: "₹8,800 total", duration: "1 Year" },
+      { course: "Diploma", specialisation: "Computer Application", fee: "₹9,240 total", duration: "1 Year" },
+      {
+        course: "Diploma",
+        specialisation: "Early Childhood Care & Education",
+        fee: "₹19,360 total",
+        duration: "1 Year",
+      },
+      { course: "Diploma", specialisation: "Translation Studies", fee: "₹7,810 total", duration: "1 Year" },
+      {
+        course: "PG Certificate",
+        specialisation: "English, Communicative English, Business Administration, Kuvempu Sahitya, Ambedkar Studies, Linguistics",
+        fee: "₹7,040 total",
+        duration: "6 Months",
+      },
+      {
+        course: "PG Certificate",
+        specialisation: "Human Resource Management, Financial Management, Information Technology",
+        fee: "₹11,990 total",
+        duration: "6 Months",
+      },
+      {
+        course: "PG Certificate",
+        specialisation: "Journalism & Mass Communication",
+        fee: "₹11,660 total",
+        duration: "6 Months",
+      },
+      { course: "PG Certificate", specialisation: "Business Law", fee: "₹10,890 total", duration: "6 Months" },
+      { course: "PG Certificate", specialisation: "Computer Application", fee: "₹12,430 total", duration: "6 Months" },
+      { course: "PG Certificate", specialisation: "Marketing Management", fee: "₹7,810 total", duration: "6 Months" },
+    ],
+  },
+
   baou: {
     note: "Course-wise fees as published by the university. Amounts are the annual programme fee unless the university states otherwise.",
     rows: [
