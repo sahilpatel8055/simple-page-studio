@@ -43,6 +43,7 @@ import { Route as NewsSlugRouteImport } from './routes/news.$slug'
 import { Route as ReviewsSlugRouteImport } from './routes/reviews.$slug'
 import { Route as ScholarshipsSlugRouteImport } from './routes/scholarships.$slug'
 import { Route as ToolsIndexRouteImport } from './routes/tools.index'
+import { Route as ToolsFeeEmiCalculatorRouteImport } from './routes/tools.fee-emi-calculator'
 import { Route as UniversitiesIndexRouteImport } from './routes/universities.index'
 import { Route as UniversitiesSlugRouteImport } from './routes/universities.$slug'
 import { Route as CompareCoursePairRouteImport } from './routes/compare.$course.$pair'
@@ -229,6 +230,11 @@ const ToolsIndexRoute = ToolsIndexRouteImport.update({
   path: '/',
   getParentRoute: () => ToolsRoute,
 } as any)
+const ToolsFeeEmiCalculatorRoute = ToolsFeeEmiCalculatorRouteImport.update({
+  id: '/fee-emi-calculator',
+  path: '/fee-emi-calculator',
+  getParentRoute: () => ToolsRoute,
+} as any)
 const UniversitiesIndexRoute = UniversitiesIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -343,6 +349,7 @@ export interface FileRoutesByFullPath {
   '/news/$slug': typeof NewsSlugRoute
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
+  '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
   '/compare/': typeof CompareIndexRoute
@@ -387,6 +394,7 @@ export interface FileRoutesByTo {
   '/news/$slug': typeof NewsSlugRoute
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
+  '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
   '/blogs': typeof BlogsIndexRoute
   '/compare': typeof CompareIndexRoute
   '/courses': typeof CoursesIndexRoute
@@ -438,6 +446,7 @@ export interface FileRoutesById {
   '/news/$slug': typeof NewsSlugRoute
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
+  '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
   '/compare/': typeof CompareIndexRoute
@@ -491,6 +500,7 @@ export interface FileRouteTypes {
     | '/news/$slug'
     | '/reviews/$slug'
     | '/scholarships/$slug'
+    | '/tools/fee-emi-calculator'
     | '/universities/$slug'
     | '/blogs/'
     | '/compare/'
@@ -535,6 +545,7 @@ export interface FileRouteTypes {
     | '/news/$slug'
     | '/reviews/$slug'
     | '/scholarships/$slug'
+    | '/tools/fee-emi-calculator'
     | '/blogs'
     | '/compare'
     | '/courses'
@@ -585,6 +596,7 @@ export interface FileRouteTypes {
     | '/news/$slug'
     | '/reviews/$slug'
     | '/scholarships/$slug'
+    | '/tools/fee-emi-calculator'
     | '/universities/$slug'
     | '/blogs/'
     | '/compare/'
@@ -873,6 +885,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsIndexRouteImport
       parentRoute: typeof ToolsRoute
     }
+    '/tools/fee-emi-calculator': {
+      id: '/tools/fee-emi-calculator'
+      path: '/fee-emi-calculator'
+      fullPath: '/tools/fee-emi-calculator'
+      preLoaderRoute: typeof ToolsFeeEmiCalculatorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
     '/universities/': {
       id: '/universities/'
       path: '/'
@@ -1086,10 +1105,12 @@ const ScholarshipsRouteWithChildren = ScholarshipsRoute._addFileChildren(
 )
 
 interface ToolsRouteChildren {
+  ToolsFeeEmiCalculatorRoute: typeof ToolsFeeEmiCalculatorRoute
   ToolsIndexRoute: typeof ToolsIndexRoute
 }
 
 const ToolsRouteChildren: ToolsRouteChildren = {
+  ToolsFeeEmiCalculatorRoute: ToolsFeeEmiCalculatorRoute,
   ToolsIndexRoute: ToolsIndexRoute,
 }
 
