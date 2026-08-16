@@ -85,6 +85,12 @@ function Block({ block }: { block: PostBlock }) {
       ) : (
         <DataTable head={block.head} rows={block.rows} />
       );
+    case "h3":
+      return (
+        <h3 className="mt-2 scroll-mt-36 border-l-4 border-brand pl-3 font-display text-[1.05rem] font-extrabold leading-snug text-foreground sm:text-lg">
+          {block.text}
+        </h3>
+      );
     case "note":
       return (
         <div className="flex gap-3 rounded-xl border border-border bg-secondary/60 p-4">
