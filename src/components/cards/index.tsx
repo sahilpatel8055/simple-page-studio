@@ -152,11 +152,6 @@ export function ReviewCard({ item }: { item: Review }) {
     <AppLink to={`/reviews/${item.slug}`} className={cardBase}>
       <div className="flex items-center justify-between gap-3">
         <Rating value={item.rating} />
-        {item.verified && (
-          <Chip tone="success">
-            <BadgeCheck className="mr-1 h-3 w-3" /> Verified
-          </Chip>
-        )}
       </div>
       <p className="mt-4 line-clamp-4 text-sm leading-relaxed">“{item.summary}”</p>
       <div className="mt-5 border-t border-border pt-4">
