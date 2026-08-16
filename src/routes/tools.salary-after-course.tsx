@@ -91,10 +91,10 @@ const field =
 const label = "mb-1.5 block text-[0.7rem] font-bold uppercase tracking-wide text-muted-foreground";
 
 function Page() {
-  const [familySlug, setFamilySlug] = useState(courseSalaryBaselines[0].familySlug);
+  const [familySlug, setFamilySlug] = useState(courseSalaryBaselines[0]!.familySlug);
   const [years, setYears] = useState(2);
-  const [city, setCity] = useState(CITY[0].key);
-  const [move, setMove] = useState(MOVE[0].key);
+  const [city, setCity] = useState(CITY[0]!.key);
+  const [move, setMove] = useState(MOVE[0]!.key);
   const [currentSalary, setCurrentSalary] = useState(360000);
 
   const baseline = courseSalaryBaselines.find((b) => b.familySlug === familySlug)!;

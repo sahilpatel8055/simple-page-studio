@@ -44,6 +44,7 @@ import { Route as ReviewsSlugRouteImport } from './routes/reviews.$slug'
 import { Route as ScholarshipsSlugRouteImport } from './routes/scholarships.$slug'
 import { Route as ToolsIndexRouteImport } from './routes/tools.index'
 import { Route as ToolsFeeEmiCalculatorRouteImport } from './routes/tools.fee-emi-calculator'
+import { Route as ToolsSalaryAfterCourseRouteImport } from './routes/tools.salary-after-course'
 import { Route as UniversitiesIndexRouteImport } from './routes/universities.index'
 import { Route as UniversitiesSlugRouteImport } from './routes/universities.$slug'
 import { Route as CompareCoursePairRouteImport } from './routes/compare.$course.$pair'
@@ -235,6 +236,11 @@ const ToolsFeeEmiCalculatorRoute = ToolsFeeEmiCalculatorRouteImport.update({
   path: '/fee-emi-calculator',
   getParentRoute: () => ToolsRoute,
 } as any)
+const ToolsSalaryAfterCourseRoute = ToolsSalaryAfterCourseRouteImport.update({
+  id: '/salary-after-course',
+  path: '/salary-after-course',
+  getParentRoute: () => ToolsRoute,
+} as any)
 const UniversitiesIndexRoute = UniversitiesIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -350,6 +356,7 @@ export interface FileRoutesByFullPath {
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
   '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
+  '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
   '/compare/': typeof CompareIndexRoute
@@ -395,6 +402,7 @@ export interface FileRoutesByTo {
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
   '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
+  '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/blogs': typeof BlogsIndexRoute
   '/compare': typeof CompareIndexRoute
   '/courses': typeof CoursesIndexRoute
@@ -447,6 +455,7 @@ export interface FileRoutesById {
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
   '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
+  '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
   '/compare/': typeof CompareIndexRoute
@@ -501,6 +510,7 @@ export interface FileRouteTypes {
     | '/reviews/$slug'
     | '/scholarships/$slug'
     | '/tools/fee-emi-calculator'
+    | '/tools/salary-after-course'
     | '/universities/$slug'
     | '/blogs/'
     | '/compare/'
@@ -546,6 +556,7 @@ export interface FileRouteTypes {
     | '/reviews/$slug'
     | '/scholarships/$slug'
     | '/tools/fee-emi-calculator'
+    | '/tools/salary-after-course'
     | '/blogs'
     | '/compare'
     | '/courses'
@@ -597,6 +608,7 @@ export interface FileRouteTypes {
     | '/reviews/$slug'
     | '/scholarships/$slug'
     | '/tools/fee-emi-calculator'
+    | '/tools/salary-after-course'
     | '/universities/$slug'
     | '/blogs/'
     | '/compare/'
@@ -892,6 +904,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsFeeEmiCalculatorRouteImport
       parentRoute: typeof ToolsRoute
     }
+    '/tools/salary-after-course': {
+      id: '/tools/salary-after-course'
+      path: '/salary-after-course'
+      fullPath: '/tools/salary-after-course'
+      preLoaderRoute: typeof ToolsSalaryAfterCourseRouteImport
+      parentRoute: typeof ToolsRoute
+    }
     '/universities/': {
       id: '/universities/'
       path: '/'
@@ -1106,11 +1125,13 @@ const ScholarshipsRouteWithChildren = ScholarshipsRoute._addFileChildren(
 
 interface ToolsRouteChildren {
   ToolsFeeEmiCalculatorRoute: typeof ToolsFeeEmiCalculatorRoute
+  ToolsSalaryAfterCourseRoute: typeof ToolsSalaryAfterCourseRoute
   ToolsIndexRoute: typeof ToolsIndexRoute
 }
 
 const ToolsRouteChildren: ToolsRouteChildren = {
   ToolsFeeEmiCalculatorRoute: ToolsFeeEmiCalculatorRoute,
+  ToolsSalaryAfterCourseRoute: ToolsSalaryAfterCourseRoute,
   ToolsIndexRoute: ToolsIndexRoute,
 }
 
