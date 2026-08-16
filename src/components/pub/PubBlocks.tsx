@@ -1,4 +1,5 @@
 /**
+import { lastUpdatedLabel } from "@/components/common/Verification";
  * Presentation blocks for the Phase 1–7 publication-ready research pack.
  * Every block renders the researched text verbatim and shows an explicit
  * "not published / verification required" note where the pack says so.
@@ -178,7 +179,7 @@ export function PubCourseResearch({
 
       {c.specialisations.length > 0 && (
         <div>
-          <h3 className="font-display text-base font-bold text-foreground">Verified specialisations</h3>
+          <h3 className="font-display text-base font-bold text-foreground">Specialisations</h3>
           <ul className="mt-2 flex flex-wrap gap-2">
             {c.specialisations.map((s) => (
               <li
@@ -197,15 +198,9 @@ export function PubCourseResearch({
         <FactBlock label="Who should reconsider" value={c.who_should_reconsider} />
       </div>
 
-      <div>
-        <h3 className="font-display text-base font-bold text-foreground">Official sources</h3>
-        <div className="mt-2">
-          <SourceList sources={c.sources} />
-        </div>
-        <p className="mt-2 text-xs text-muted-foreground">
-          Session {PUB_SESSION} · last verified {c.last_verified}.
-        </p>
-      </div>
+      <p className="text-xs text-muted-foreground">
+        {PUB_SESSION} session · Last updated: {lastUpdatedLabel(c.last_verified) ?? "recently"}.
+      </p>
     </div>
   );
 }
