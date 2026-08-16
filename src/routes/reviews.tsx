@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/templates/PageShell";
 import { FilterBar, SimplePagination, CTASection } from "@/components/common/Primitives";
 import { ReviewCard } from "@/components/cards";
+import { WriteReview } from "@/components/common/WriteReview";
 import { reviews } from "@/lib/content";
 import { canonical, collectionSchema, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
@@ -51,6 +52,7 @@ function Page() {
           </div>
         </div>
       )}
+      <div className="mt-14"><WriteReview /></div>
       <div className="mt-16"><CTASection /></div>
     </PageShell>
   );
