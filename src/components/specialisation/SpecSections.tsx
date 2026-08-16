@@ -128,7 +128,7 @@ export function SalaryTable({ roles }: { roles: SpecRole[] }) {
                 Job role
               </th>
               <th scope="col" className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide">
-                Average annual package
+                Indicative annual salary range
               </th>
               <th scope="col" className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide">
                 What the role does
