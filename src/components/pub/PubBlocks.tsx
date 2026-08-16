@@ -1,11 +1,11 @@
 /**
-import { lastUpdatedLabel } from "@/components/common/Verification";
  * Presentation blocks for the Phase 1–7 publication-ready research pack.
  * Every block renders the researched text verbatim and shows an explicit
  * "not published / verification required" note where the pack says so.
  */
 import { AppLink } from "@/components/common/AppLink";
 import {
+import { lastUpdatedLabel } from "@/components/common/Verification";
   isUnpublished,
   NOT_PUBLISHED_LABEL,
   PUB_SESSION,
