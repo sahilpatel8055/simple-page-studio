@@ -990,6 +990,249 @@
     "canonical_url": "/universities/nsou/courses/b-a-in-economics-hons"
   },
   {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Com. (Hons.)",
+    "programme_slug": "b-com-hons",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-com-hons"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Sc. in Mathematics (Hons.)",
+    "programme_slug": "b-sc-in-mathematics-hons",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-sc-in-mathematics-hons"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Sc. in Physics (Hons.)",
+    "programme_slug": "b-sc-in-physics-hons",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-sc-in-physics-hons"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Sc. in Chemistry (Hons.)",
+    "programme_slug": "b-sc-in-chemistry-hons",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-sc-in-chemistry-hons"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Sc. in Zoology (Hons.)",
+    "programme_slug": "b-sc-in-zoology-hons",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-sc-in-zoology-hons"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Sc. in Botany (Hons.)",
+    "programme_slug": "b-sc-in-botany-hons",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-sc-in-botany-hons"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Sc. in Geography (Hons.)",
+    "programme_slug": "b-sc-in-geography-hons",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-sc-in-geography-hons"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "Bachelor of Library and Information Science (B.Lib.I.Sc.)",
+    "programme_slug": "b-lib-i-sc",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-lib-i-sc"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "B.Ed. Special Education – ODL (ID/HI/VI)",
+    "programme_slug": "b-ed-special-education-odl",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/b-ed-special-education-odl"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in Bengali",
+    "programme_slug": "m-a-in-bengali",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-bengali"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in English",
+    "programme_slug": "m-a-in-english",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-english"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in English Language Teaching",
+    "programme_slug": "m-a-in-english-language-teaching",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-english-language-teaching"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in Journalism and Mass Communication",
+    "programme_slug": "m-a-in-journalism-and-mass-communication",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-journalism-and-mass-communication"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in History",
+    "programme_slug": "m-a-in-history",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-history"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in Political Science",
+    "programme_slug": "m-a-in-political-science",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-political-science"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in Public Administration",
+    "programme_slug": "m-a-in-public-administration",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-public-administration"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in Education",
+    "programme_slug": "m-a-in-education",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-education"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.A. in Economics",
+    "programme_slug": "m-a-in-economics",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-a-in-economics"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.Sc. in Mathematics",
+    "programme_slug": "m-sc-in-mathematics",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-sc-in-mathematics"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.Sc. in Zoology",
+    "programme_slug": "m-sc-in-zoology",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-sc-in-zoology"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.Sc. in Geography",
+    "programme_slug": "m-sc-in-geography",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-sc-in-geography"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "M.Sc. in Environmental Science",
+    "programme_slug": "m-sc-in-environmental-science",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-sc-in-environmental-science"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "Master of Commerce (M.Com.)",
+    "programme_slug": "m-com",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-com"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "Master of Social Work (MSW)",
+    "programme_slug": "msw",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/msw"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "Master of Library and Information Science (M.Lib.I.Sc.)",
+    "programme_slug": "m-lib-i-sc",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-lib-i-sc"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "Master of Education Special Education – ODL (ID/HI)",
+    "programme_slug": "m-ed-special-education-odl",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/m-ed-special-education-odl"
+  },
+  {
+    "university_name": "Netaji Subhas Open University",
+    "university_slug": "nsou",
+    "programme_name": "Master of Business Administration (MBA)",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/nsou/courses/master-of-business-administration-mba"
+  },
+  {
     "university_name": "Karnataka State Open University (KSOU), Mysuru",
     "university_slug": "ksou-mysuru",
     "programme_name": "BA",
@@ -1350,6 +1593,186 @@
     "canonical_url": "/universities/baou/courses/bachelor-of-business-administration-bba"
   },
   {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Bachelor of Arts (BA)",
+    "programme_slug": "bachelor-of-arts-ba",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/bachelor-of-arts-ba"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Bachelor of Science (B.Sc.)",
+    "programme_slug": "bachelor-of-science-b-sc",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/bachelor-of-science-b-sc"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Bachelor of Library and Information Science (BLISc)",
+    "programme_slug": "bachelor-of-library-and-information-science-blisc",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/bachelor-of-library-and-information-science-blisc"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Bachelor of Education (B.Ed.)",
+    "programme_slug": "bachelor-of-education-b-ed",
+    "level": "UG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/bachelor-of-education-b-ed"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Arts in History",
+    "programme_slug": "master-of-arts-in-history",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-arts-in-history"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Arts in Economics",
+    "programme_slug": "master-of-arts-in-economics",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-arts-in-economics"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Arts in Political Science",
+    "programme_slug": "master-of-arts-in-political-science",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-arts-in-political-science"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Arts in Public Administration",
+    "programme_slug": "master-of-arts-in-public-administration",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-arts-in-public-administration"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Arts in Telugu",
+    "programme_slug": "master-of-arts-in-telugu",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-arts-in-telugu"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Arts in Urdu",
+    "programme_slug": "master-of-arts-in-urdu",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-arts-in-urdu"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Commerce (M.Com.)",
+    "programme_slug": "master-of-commerce-m-com",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-commerce-m-com"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Science in Psychology",
+    "programme_slug": "master-of-science-in-psychology",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-science-in-psychology"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Science in Botany",
+    "programme_slug": "master-of-science-in-botany",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-science-in-botany"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Science in Physics",
+    "programme_slug": "master-of-science-in-physics",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-science-in-physics"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Science in Zoology",
+    "programme_slug": "master-of-science-in-zoology",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-science-in-zoology"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Science in Mathematics",
+    "programme_slug": "master-of-science-in-mathematics",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-science-in-mathematics"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Science in Environmental Science",
+    "programme_slug": "master-of-science-in-environmental-science",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-science-in-environmental-science"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Science in Chemistry",
+    "programme_slug": "master-of-science-in-chemistry",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-science-in-chemistry"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Business Administration (MBA)",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Dr. Babasaheb Ambedkar Open University",
+    "university_slug": "baou",
+    "programme_name": "Master of Business Administration (Hospital & Healthcare Management)",
+    "programme_slug": "master-of-business-administration-hospital-healthcare-management",
+    "level": "PG",
+    "mode": "ODL",
+    "canonical_url": "/universities/baou/courses/master-of-business-administration-hospital-healthcare-management"
+  },
+  {
     "university_name": "JAIN Online / JAIN University",
     "university_slug": "jain-online",
     "programme_name": "Online Bachelor of Business Administration",
@@ -1393,5 +1816,275 @@
     "level": "PG",
     "mode": "Online",
     "canonical_url": "/universities/jain-online/courses/online-master-of-computer-applications"
+  },
+  {
+    "university_name": "Uttaranchal University Online",
+    "university_slug": "uttaranchal-online",
+    "programme_name": "Master of Business Administration (MBA)",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/uttaranchal-online/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Uttaranchal University Online",
+    "university_slug": "uttaranchal-online",
+    "programme_name": "Master of Computer Applications (MCA)",
+    "programme_slug": "master-of-computer-applications-mca",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/uttaranchal-online/courses/master-of-computer-applications-mca"
+  },
+  {
+    "university_name": "Uttaranchal University Online",
+    "university_slug": "uttaranchal-online",
+    "programme_name": "Bachelor of Business Administration (BBA)",
+    "programme_slug": "bachelor-of-business-administration-bba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/uttaranchal-online/courses/bachelor-of-business-administration-bba"
+  },
+  {
+    "university_name": "Uttaranchal University Online",
+    "university_slug": "uttaranchal-online",
+    "programme_name": "Bachelor of Computer Applications (BCA)",
+    "programme_slug": "bachelor-of-computer-applications-bca",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/uttaranchal-online/courses/bachelor-of-computer-applications-bca"
+  },
+  {
+    "university_name": "Uttaranchal University Online",
+    "university_slug": "uttaranchal-online",
+    "programme_name": "Bachelor of Arts (BA)",
+    "programme_slug": "bachelor-of-arts-ba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/uttaranchal-online/courses/bachelor-of-arts-ba"
+  },
+  {
+    "university_name": "Uttaranchal University Online",
+    "university_slug": "uttaranchal-online",
+    "programme_name": "Master of Arts (MA)",
+    "programme_slug": "master-of-arts-ma",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/uttaranchal-online/courses/master-of-arts-ma"
+  },
+  {
+    "university_name": "Shoolini University Online",
+    "university_slug": "shoolini-online",
+    "programme_name": "Master of Business Administration (MBA)",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/shoolini-online/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Shoolini University Online",
+    "university_slug": "shoolini-online",
+    "programme_name": "Master of Computer Applications (MCA)",
+    "programme_slug": "master-of-computer-applications-mca",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/shoolini-online/courses/master-of-computer-applications-mca"
+  },
+  {
+    "university_name": "Shoolini University Online",
+    "university_slug": "shoolini-online",
+    "programme_name": "Master of Arts (MA)",
+    "programme_slug": "master-of-arts-ma",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/shoolini-online/courses/master-of-arts-ma"
+  },
+  {
+    "university_name": "Shoolini University Online",
+    "university_slug": "shoolini-online",
+    "programme_name": "Bachelor of Commerce (B.Com)",
+    "programme_slug": "bachelor-of-commerce-b-com",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/shoolini-online/courses/bachelor-of-commerce-b-com"
+  },
+  {
+    "university_name": "Shoolini University Online",
+    "university_slug": "shoolini-online",
+    "programme_name": "Bachelor of Business Administration (BBA)",
+    "programme_slug": "bachelor-of-business-administration-bba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/shoolini-online/courses/bachelor-of-business-administration-bba"
+  },
+  {
+    "university_name": "Shoolini University Online",
+    "university_slug": "shoolini-online",
+    "programme_name": "Bachelor of Computer Applications (BCA)",
+    "programme_slug": "bachelor-of-computer-applications-bca",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/shoolini-online/courses/bachelor-of-computer-applications-bca"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Master of Business Administration (MBA)",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Master of Computer Applications (MCA)",
+    "programme_slug": "master-of-computer-applications-mca",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/master-of-computer-applications-mca"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Master of Arts (MA)",
+    "programme_slug": "master-of-arts-ma",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/master-of-arts-ma"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Master of Commerce (M.Com)",
+    "programme_slug": "master-of-commerce-m-com",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/master-of-commerce-m-com"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Master of Science (M.Sc)",
+    "programme_slug": "master-of-science-m-sc",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/master-of-science-m-sc"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Master of Social Work (MSW)",
+    "programme_slug": "master-of-social-work-msw",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/master-of-social-work-msw"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Bachelor of Business Administration (BBA)",
+    "programme_slug": "bachelor-of-business-administration-bba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/bachelor-of-business-administration-bba"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Bachelor of Computer Applications (BCA)",
+    "programme_slug": "bachelor-of-computer-applications-bca",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/bachelor-of-computer-applications-bca"
+  },
+  {
+    "university_name": "Parul University Online",
+    "university_slug": "parul-online",
+    "programme_name": "Bachelor of Arts (BA)",
+    "programme_slug": "bachelor-of-arts-ba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/parul-online/courses/bachelor-of-arts-ba"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Bachelor of Arts (BA)",
+    "programme_slug": "bachelor-of-arts-ba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/bachelor-of-arts-ba"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Bachelor of Commerce (B.Com)",
+    "programme_slug": "bachelor-of-commerce-b-com",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/bachelor-of-commerce-b-com"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Bachelor of Business Administration (BBA)",
+    "programme_slug": "bachelor-of-business-administration-bba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/bachelor-of-business-administration-bba"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Master of Arts in English",
+    "programme_slug": "master-of-arts-in-english",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/master-of-arts-in-english"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Master of Arts in Sociology",
+    "programme_slug": "master-of-arts-in-sociology",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/master-of-arts-in-sociology"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Master of Arts in Political Science",
+    "programme_slug": "master-of-arts-in-political-science",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/master-of-arts-in-political-science"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Master of Commerce (M.Com)",
+    "programme_slug": "master-of-commerce-m-com",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/master-of-commerce-m-com"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Master of Computer Applications (MCA)",
+    "programme_slug": "master-of-computer-applications-mca",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/master-of-computer-applications-mca"
+  },
+  {
+    "university_name": "Sikkim Manipal University (Online)",
+    "university_slug": "smu-online",
+    "programme_name": "Master of Business Administration (MBA)",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/smu-online/courses/master-of-business-administration-mba"
   }
 ]
