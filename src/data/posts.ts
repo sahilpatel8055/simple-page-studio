@@ -14,6 +14,8 @@ export type PostBlock =
   | { kind: "list"; items: string[]; ordered?: boolean }
   | { kind: "table"; caption?: string; head: string[]; rows: string[][] }
   | { kind: "note"; text: string }
+  /** Sub-heading inside a section — renders as an h3 and keeps long guides scannable. */
+  | { kind: "h3"; text: string }
   | {
       /** Simple horizontal bar chart rendered inline — no chart library needed. */
       kind: "chart";
@@ -58,8 +60,9 @@ const base = { reviewer: REVIEWER, reviewerRole: REVIEWER_ROLE };
 import { courseGuidePosts } from "./posts-course-guides";
 import { deepMasterPosts } from "./posts-deep-masters";
 import { universityBlogPosts } from "./university-blogs";
+import { applyDeepMasters } from "./posts-blog-masters";
 
-export const postContent: Record<string, PostContent> = {
+const rawPostContent: Record<string, PostContent> = {
   ...courseGuidePosts,
   ...deepMasterPosts,
   ...universityBlogPosts,
@@ -979,5 +982,7 @@ export const postContent: Record<string, PostContent> = {
     ],
   },
 };
+
+export const postContent: Record<string, PostContent> = applyDeepMasters(rawPostContent);
 
 export const getPostContent = (slug: string): PostContent | undefined => postContent[slug];
