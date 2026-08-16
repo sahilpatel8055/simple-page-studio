@@ -27,7 +27,6 @@ import {
   FeeComponents,
   LearningSupport,
   ProgrammeDecision,
-  ProgrammeSources,
   RequiredDocuments,
 } from "@/components/university/CourseDecisionSections";
 import { NextStep } from "@/components/common/NextStep";
@@ -230,7 +229,6 @@ function Page() {
           "Scholarships",
           "Learning experience",
           "Who should choose it",
-          "Sources & last verified",
           "FAQs",
           "Related links",
         ]}
@@ -431,16 +429,6 @@ function Page() {
             question="Still deciding between universities for this course?"
             actionLabel="Open the comparison"
             href={`/compare/${p.slug}`}
-          />
-        </ContentSection>
-
-        <ContentSection title="Sources & last verified">
-          <ProgrammeSources
-            universitySlug={u.slug}
-            universityShort={u.shortName}
-            websiteUrl={u.websiteUrl}
-            lastVerified={offering.lastUpdated}
-            status={offering.verified ? "verified_official" : "partial_verification"}
           />
         </ContentSection>
 

@@ -50,7 +50,6 @@ import { SectionBanner } from "@/components/common/SectionBanner";
 import { HiringPartners } from "@/components/university/HiringPartners";
 import { sectionLabels, universitySectionPages } from "@/lib/insightsData";
 import {
-  OfficialDocumentsAndSources,
   StudentsShouldVerify,
   UniversityResearchIntro,
   UniversityVsProgrammeFacts,
@@ -233,7 +232,6 @@ function Page() {
           "Compare universities",
           "Who may consider this university",
           "What to verify before applying",
-          "Official documents & sources",
           "FAQs",
           "Related links",
         ]}
@@ -379,14 +377,6 @@ function Page() {
 
         <ContentSection title="Researched university record">
           <PubUniversityResearch slug={slug} />
-        </ContentSection>
-
-        <ContentSection title="Official documents & sources">
-          <OfficialDocumentsAndSources
-            slug={slug}
-            shortName={u.shortName}
-            websiteUrl={u.websiteUrl}
-          />
         </ContentSection>
 
         {blogsForUniversity(slug).length > 0 && (

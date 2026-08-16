@@ -417,26 +417,6 @@ export function CoursePageTemplate({
               <div className="mt-3">
                 <TickList items={content.verifyChecklist} />
               </div>
-              <p className="mt-4 text-[0.82rem] text-muted-foreground">
-                Official sources:{" "}
-                <a
-                  href="https://deb.ugc.ac.in/"
-                  rel="nofollow noopener"
-                  target="_blank"
-                  className="font-semibold text-brand hover:underline"
-                >
-                  UGC-DEB
-                </a>{" "}
-                ·{" "}
-                <a
-                  href="https://www.ugc.gov.in/"
-                  rel="nofollow noopener"
-                  target="_blank"
-                  className="font-semibold text-brand hover:underline"
-                >
-                  University Grants Commission
-                </a>
-              </p>
             </div>
           </Section>
 

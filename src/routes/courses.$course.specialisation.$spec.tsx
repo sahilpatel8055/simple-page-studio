@@ -190,7 +190,7 @@ function Page() {
           </SpecSection>
 
           <SpecSection
-            title={`Career prospects & average salary ${SPEC_YEAR}`}
+            title={`Career prospects & indicative salary range ${SPEC_YEAR}`}
             intro={rich.salaryNote}
             tone="exam"
           >
