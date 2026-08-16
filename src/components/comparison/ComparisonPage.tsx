@@ -75,7 +75,7 @@ function CompareRows({
 const list = (items: string[] | undefined, empty: string) =>
   items && items.length > 0 ? items.join(", ") : empty;
 
-const val = (v: string | number | null | undefined, empty = "Manually researched — official website") =>
+const val = (v: string | number | null | undefined, empty = "Not published") =>
   v === null || v === undefined || v === "" ? empty : String(v);
 
 export function ComparisonPage({ pair, course }: { pair: PairComparison; course?: string }) {
@@ -213,8 +213,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           rows={[
             {
               label: "Degrees published",
-              a: list(uniA?.degrees_available, "Manually researched — official website"),
-              b: list(uniB?.degrees_available, "Manually researched — official website"),
+              a: list(uniA?.degrees_available, "Not published"),
+              b: list(uniB?.degrees_available, "Not published"),
             },
           ]}
         />
@@ -238,8 +238,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           bName={bName}
           rows={["UGC_status", "UGC_DEB_status", "NAAC_status", "NIRF_information", "accreditation"].map((k) => ({
             label: k.replace(/_/g, " ").replace("information", "info"),
-            a: val(uniA?.recognition?.[k], "Manually researched — official website"),
-            b: val(uniB?.recognition?.[k], "Manually researched — official website"),
+            a: val(uniA?.recognition?.[k], "Not published"),
+            b: val(uniB?.recognition?.[k], "Not published"),
           }))}
         />
       </ContentSection>
