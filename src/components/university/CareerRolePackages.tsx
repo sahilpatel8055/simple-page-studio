@@ -1,5 +1,5 @@
 import { IndianRupee } from "lucide-react";
-import { averagePackageFor } from "@/lib/careerSalaries";
+import { averagePackageFor, salarySourceNote } from "@/lib/careerSalaries";
 import { HiringPartners } from "@/components/university/HiringPartners";
 
 /**
@@ -55,7 +55,7 @@ export function CareerRolePackages({
       {roles.length > 0 && (
       <p className="text-xs text-subtle">
         Average packages are indicative market ranges for these roles in India, not {universityShort} placement
-        guarantees.
+        guarantees. {salarySourceNote}
       </p>
       )}
       <HiringPartners universitySlug={universitySlug} universityShort={universityShort} />

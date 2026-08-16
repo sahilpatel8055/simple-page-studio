@@ -470,7 +470,7 @@ export const admissionUpdates = [
  */
 export const reviews: Review[] = [];
 
-const draftReviews: Review[] = [
+export const unpublishedReviews: Review[] = [
   {
     slug: "lpu-online",
     entity: "LPU Online",
