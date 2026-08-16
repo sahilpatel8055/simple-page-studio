@@ -311,7 +311,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
             ]}
           />
         ) : (
-          <p>Choose a course to see the verified university-specific specialisations for that programme.</p>
+          <p>Choose a course to see the university-specific specialisations for that programme.</p>
         )}
         <p className="mt-3 text-sm text-muted-foreground">
           Where a university does not publish a detailed syllabus, treat the common course curriculum as a
@@ -366,7 +366,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         <p>
           Both universities offer placement or career assistance — resume support, interview preparation and
           access to hiring drives. Career assistance is not a placement guarantee, and neither university
-          publishes verified salary or placement percentages for online cohorts in this dataset.
+          publishes salary or placement percentages for online cohorts in this dataset.
         </p>
       </ContentSection>
 

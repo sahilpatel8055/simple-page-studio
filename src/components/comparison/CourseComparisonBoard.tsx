@@ -132,7 +132,7 @@ function highlights(offers: FamilyOffer[]) {
   const priced = offers.filter((o) => o.fees.verified && typeof o.fees.total === "number");
   if (priced.length > 1) {
     const low = priced.reduce((a, b) => ((a.fees.total ?? 0) <= (b.fees.total ?? 0) ? a : b));
-    out.push({ label: "Lowest verified fee", value: `${low.universityShortName} — ${formatFee(low.fees.total)}` });
+    out.push({ label: "Lowest published fee", value: `${low.universityShortName} — ${formatFee(low.fees.total)}` });
   }
   const withSpecs = offers.filter((o) => o.specialisations.length);
   if (withSpecs.length > 1) {
@@ -362,7 +362,7 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
                     {o.specialisations.length > 4
                       ? "a wide specialisation choice"
                       : o.fees.verified && typeof o.fees.total === "number"
-                        ? "a verified, published total fee"
+                        ? "a published total fee"
                         : "this university's published programme structure"}
                     {o.entranceExam ? ". Note that an entrance requirement is published for this programme." : "."}{" "}
                     Verify the current figures on the programme page before applying.

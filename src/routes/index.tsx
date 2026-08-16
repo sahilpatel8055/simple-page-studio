@@ -38,7 +38,7 @@ import { canonical, collectionSchema, faqSchema, jsonLd, pageMeta } from "@/lib/
 
 const title = "Online & Distance Education Research, Reviews and Comparisons";
 const description =
-  "Independent research on UGC-entitled online and distance universities in India — compare fees, approvals, placements, scholarships and read verified student reviews.";
+  "Independent research on UGC-entitled online and distance universities in India — compare fees, approvals, placements, scholarships and read learner reviews.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -146,7 +146,7 @@ function HomePage() {
             Unlock Excellence with <span className="text-shine">Top Universities</span>
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground sm:text-base">
-            UGC-approved universities, verified by us and reviewed by learners on 30+ factors.
+            UGC-approved universities, researched by our team and reviewed by learners on 30+ factors.
           </p>
         </div>
         <UniversityGrid items={universityRecords.slice(0, 12)} />
@@ -183,7 +183,7 @@ function HomePage() {
         <SectionHeader
           eyebrow="Student voices"
           title="Top reviews"
-          description="Verified feedback from learners currently enrolled or recently graduated."
+          description="Learner reviews from students currently enrolled or recently graduated."
           href="/reviews"
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
