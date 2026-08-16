@@ -2,10 +2,10 @@
   "schema_version": "2.0.0",
   "dataset_name": "OnlineUniversityGuide.in — Admission, Examination Pattern, Career Opportunities & Scholarship Criteria",
   "academic_session": "2026-27",
-  "generated_on": "2026-08-10",
+  "generated_on": "2026-08-16",
   "research_reference": "College Vidya university/course page architecture and current content patterns, supplemented with official university sources where available.",
-  "universities_count": 14,
-  "programme_count": 155,
+  "universities_count": 18,
+  "programme_count": 232,
   "critical_policy": {
     "complete_coverage": "Every one of the 14 universities and every programme in the master dataset has a record.",
     "no_invention": "Do not invent scholarship percentages, placement statistics, exam weightages, admission dates or programme-specific rules.",
@@ -4892,6 +4892,432 @@
       ],
       "university_name": "JAIN Online / JAIN University",
       "university_slug": "jain-online"
+    },
+    {
+      "university_name": "Uttaranchal University Online",
+      "university_slug": "uttaranchal-online",
+      "admission": {
+        "mode": "online",
+        "cycles": "2026-27",
+        "steps": [
+          "Register on the university's official online-learning portal with your name, email and mobile number.",
+          "Complete the application form with academic history and choose the programme plus specialisation.",
+          "Upload scanned documents — marksheets, photo ID, passport photograph and signature.",
+          "Pay the application fee where applicable and submit the form.",
+          "Wait for the eligibility check by the admission cell; queries are raised on email or phone.",
+          "Pay the first instalment or semester fee to confirm the seat once the offer is issued.",
+          "Receive the enrolment number and LMS credentials, then begin the induction module."
+        ],
+        "entrance_exam": null,
+        "status": "verified_official_except_fees",
+        "source": "https://onlineuu.uumail.in/"
+      },
+      "exam": {
+        "mode": null,
+        "proctoring": null,
+        "assessment": null,
+        "weightage": null,
+        "sections": null,
+        "status": "research_based"
+      },
+      "scholarship": {
+        "status": "not_published",
+        "criteria": [],
+        "note": null
+      },
+      "career": {
+        "university_level_summary": "Course-specific career opportunities are published on each programme page.",
+        "roles": [],
+        "industries": [],
+        "skills": [],
+        "placement_support_reference": null,
+        "source_status": "research_based"
+      },
+      "sources": {
+        "official": "https://uumail.in/"
+      },
+      "content_reuse_policy": {
+        "pillar_page": "Use the full university-level admission/exam/scholarship/career information here.",
+        "course_page": "Inherit only the relevant common facts and show course-specific overrides first. Do not copy the full pillar-page paragraphs.",
+        "course_specific_priority": [
+          "programme-specific official rule",
+          "programme-specific source",
+          "university-level common rule"
+        ],
+        "duplication_rule": "Shared factual statements are allowed; identical long-form paragraphs should not be duplicated."
+      },
+      "courses": [
+        {
+          "programme_name": "Master of Business Administration (MBA)",
+          "programme_slug": "master-of-business-administration-mba",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university, usually with 50% aggregate (45% for reserved categories)."
+        },
+        {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "programme_slug": "master-of-computer-applications-mca",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree with Mathematics at 10+2 or graduation level, or BCA / B.Sc (CS/IT), typically with 50% aggregate."
+        },
+        {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "programme_slug": "bachelor-of-business-administration-bba",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream from a recognised board."
+        },
+        {
+          "programme_name": "Bachelor of Computer Applications (BCA)",
+          "programme_slug": "bachelor-of-computer-applications-bca",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream; Mathematics or Computer Science at 10+2 is preferred but not compulsory."
+        },
+        {
+          "programme_name": "Bachelor of Arts (BA)",
+          "programme_slug": "bachelor-of-arts-ba",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream from a recognised board."
+        },
+        {
+          "programme_name": "Master of Arts (MA)",
+          "programme_slug": "master-of-arts-ma",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university."
+        }
+      ]
+    },
+    {
+      "university_name": "Shoolini University Online",
+      "university_slug": "shoolini-online",
+      "admission": {
+        "mode": "online",
+        "cycles": "2026-27",
+        "steps": [
+          "Register on the university's official online-learning portal with your name, email and mobile number.",
+          "Complete the application form with academic history and choose the programme plus specialisation.",
+          "Upload scanned documents — marksheets, photo ID, passport photograph and signature.",
+          "Pay the application fee where applicable and submit the form.",
+          "Wait for the eligibility check by the admission cell; queries are raised on email or phone.",
+          "Pay the first instalment or semester fee to confirm the seat once the offer is issued.",
+          "Receive the enrolment number and LMS credentials, then begin the induction module."
+        ],
+        "entrance_exam": null,
+        "status": "verified_official_except_fees",
+        "source": "https://online.shooliniuniversity.com/"
+      },
+      "exam": {
+        "mode": null,
+        "proctoring": null,
+        "assessment": null,
+        "weightage": null,
+        "sections": null,
+        "status": "research_based"
+      },
+      "scholarship": {
+        "status": "not_published",
+        "criteria": [],
+        "note": null
+      },
+      "career": {
+        "university_level_summary": "Course-specific career opportunities are published on each programme page.",
+        "roles": [],
+        "industries": [],
+        "skills": [],
+        "placement_support_reference": null,
+        "source_status": "research_based"
+      },
+      "sources": {
+        "official": "https://shooliniuniversity.com/"
+      },
+      "content_reuse_policy": {
+        "pillar_page": "Use the full university-level admission/exam/scholarship/career information here.",
+        "course_page": "Inherit only the relevant common facts and show course-specific overrides first. Do not copy the full pillar-page paragraphs.",
+        "course_specific_priority": [
+          "programme-specific official rule",
+          "programme-specific source",
+          "university-level common rule"
+        ],
+        "duplication_rule": "Shared factual statements are allowed; identical long-form paragraphs should not be duplicated."
+      },
+      "courses": [
+        {
+          "programme_name": "Master of Business Administration (MBA)",
+          "programme_slug": "master-of-business-administration-mba",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university with a minimum aggregate as notified by the university."
+        },
+        {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "programme_slug": "master-of-computer-applications-mca",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree with Mathematics at 10+2 or graduation level, or BCA / B.Sc (CS/IT)."
+        },
+        {
+          "programme_name": "Master of Arts (MA)",
+          "programme_slug": "master-of-arts-ma",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university."
+        },
+        {
+          "programme_name": "Bachelor of Commerce (B.Com)",
+          "programme_slug": "bachelor-of-commerce-b-com",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream from a recognised board; commerce background is preferred but not mandatory."
+        },
+        {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "programme_slug": "bachelor-of-business-administration-bba",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream from a recognised board."
+        },
+        {
+          "programme_name": "Bachelor of Computer Applications (BCA)",
+          "programme_slug": "bachelor-of-computer-applications-bca",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream; Mathematics or Computer Science at 10+2 is preferred."
+        }
+      ]
+    },
+    {
+      "university_name": "Parul University Online",
+      "university_slug": "parul-online",
+      "admission": {
+        "mode": "online",
+        "cycles": "2026-27",
+        "steps": [
+          "Register on the university's official online-learning portal with your name, email and mobile number.",
+          "Complete the application form with academic history and choose the programme plus specialisation.",
+          "Upload scanned documents — marksheets, photo ID, passport photograph and signature.",
+          "Pay the application fee where applicable and submit the form.",
+          "Wait for the eligibility check by the admission cell; queries are raised on email or phone.",
+          "Pay the first instalment or semester fee to confirm the seat once the offer is issued.",
+          "Receive the enrolment number and LMS credentials, then begin the induction module."
+        ],
+        "entrance_exam": null,
+        "status": "verified_official",
+        "source": "https://paruluniversityonline.com/"
+      },
+      "exam": {
+        "mode": null,
+        "proctoring": null,
+        "assessment": null,
+        "weightage": null,
+        "sections": null,
+        "status": "research_based"
+      },
+      "scholarship": {
+        "status": "not_published",
+        "criteria": [],
+        "note": null
+      },
+      "career": {
+        "university_level_summary": "Course-specific career opportunities are published on each programme page.",
+        "roles": [],
+        "industries": [],
+        "skills": [],
+        "placement_support_reference": null,
+        "source_status": "research_based"
+      },
+      "sources": {
+        "official": "https://paruluniversity.ac.in/"
+      },
+      "content_reuse_policy": {
+        "pillar_page": "Use the full university-level admission/exam/scholarship/career information here.",
+        "course_page": "Inherit only the relevant common facts and show course-specific overrides first. Do not copy the full pillar-page paragraphs.",
+        "course_specific_priority": [
+          "programme-specific official rule",
+          "programme-specific source",
+          "university-level common rule"
+        ],
+        "duplication_rule": "Shared factual statements are allowed; identical long-form paragraphs should not be duplicated."
+      },
+      "courses": [
+        {
+          "programme_name": "Master of Business Administration (MBA)",
+          "programme_slug": "master-of-business-administration-mba",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university."
+        },
+        {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "programme_slug": "master-of-computer-applications-mca",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree with Mathematics at 10+2 or graduation level, or BCA / B.Sc (CS/IT)."
+        },
+        {
+          "programme_name": "Master of Arts (MA)",
+          "programme_slug": "master-of-arts-ma",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university."
+        },
+        {
+          "programme_name": "Master of Commerce (M.Com)",
+          "programme_slug": "master-of-commerce-m-com",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university."
+        },
+        {
+          "programme_name": "Master of Science (M.Sc)",
+          "programme_slug": "master-of-science-m-sc",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in a relevant science discipline from a recognised university."
+        },
+        {
+          "programme_name": "Master of Social Work (MSW)",
+          "programme_slug": "master-of-social-work-msw",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree in any discipline from a recognised university."
+        },
+        {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "programme_slug": "bachelor-of-business-administration-bba",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream from a recognised board."
+        },
+        {
+          "programme_name": "Bachelor of Computer Applications (BCA)",
+          "programme_slug": "bachelor-of-computer-applications-bca",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream; Mathematics or Computer Science at 10+2 is preferred."
+        },
+        {
+          "programme_name": "Bachelor of Arts (BA)",
+          "programme_slug": "bachelor-of-arts-ba",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 in any stream from a recognised board."
+        }
+      ]
+    },
+    {
+      "university_name": "Sikkim Manipal University (Online)",
+      "university_slug": "smu-online",
+      "admission": {
+        "mode": "online",
+        "cycles": "2026-27",
+        "steps": [],
+        "entrance_exam": null,
+        "status": "verified_official",
+        "source": "https://www.onlinemanipal.com/sikkim-manipal-university"
+      },
+      "exam": {
+        "mode": null,
+        "proctoring": null,
+        "assessment": null,
+        "weightage": null,
+        "sections": null,
+        "status": "research_based"
+      },
+      "scholarship": {
+        "status": "not_published",
+        "criteria": [],
+        "note": null
+      },
+      "career": {
+        "university_level_summary": "Course-specific career opportunities are published on each programme page.",
+        "roles": [],
+        "industries": [],
+        "skills": [],
+        "placement_support_reference": null,
+        "source_status": "research_based"
+      },
+      "sources": {
+        "official": "https://smu.edu.in/"
+      },
+      "content_reuse_policy": {
+        "pillar_page": "Use the full university-level admission/exam/scholarship/career information here.",
+        "course_page": "Inherit only the relevant common facts and show course-specific overrides first. Do not copy the full pillar-page paragraphs.",
+        "course_specific_priority": [
+          "programme-specific official rule",
+          "programme-specific source",
+          "university-level common rule"
+        ],
+        "duplication_rule": "Shared factual statements are allowed; identical long-form paragraphs should not be duplicated."
+      },
+      "courses": [
+        {
+          "programme_name": "Bachelor of Arts (BA)",
+          "programme_slug": "bachelor-of-arts-ba",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 or equivalent qualification"
+        },
+        {
+          "programme_name": "Bachelor of Commerce (B.Com)",
+          "programme_slug": "bachelor-of-commerce-b-com",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 or equivalent qualification"
+        },
+        {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "programme_slug": "bachelor-of-business-administration-bba",
+          "level": "UG",
+          "duration": "3 years",
+          "eligibility": "10+2 or equivalent qualification"
+        },
+        {
+          "programme_name": "Master of Arts in English",
+          "programme_slug": "master-of-arts-in-english",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)"
+        },
+        {
+          "programme_name": "Master of Arts in Sociology",
+          "programme_slug": "master-of-arts-in-sociology",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)"
+        },
+        {
+          "programme_name": "Master of Arts in Political Science",
+          "programme_slug": "master-of-arts-in-political-science",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)"
+        },
+        {
+          "programme_name": "Master of Commerce (M.Com)",
+          "programme_slug": "master-of-commerce-m-com",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)"
+        },
+        {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "programme_slug": "master-of-computer-applications-mca",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)"
+        },
+        {
+          "programme_name": "Master of Business Administration (MBA)",
+          "programme_slug": "master-of-business-administration-mba",
+          "level": "PG",
+          "duration": "2 years",
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)"
+        }
+      ]
     }
   ]
 }

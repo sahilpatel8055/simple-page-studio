@@ -503,11 +503,11 @@ export function PlatformTrust({ family }: { family: CourseFamily }) {
     },
     {
       title: "Transparent fees",
-      detail: "Published figures only, manually researched from the official university website — never estimated.",
+      detail: "Published figures only, manually researched — never estimated.",
     },
     {
-      title: "Official sources",
-      detail: "Fee and approval data is linked back to the university's own pages.",
+      title: "Research-based information",
+      detail: "Fee and approval details are researched from what each university publishes.",
     },
     {
       title: "Admission guidance",

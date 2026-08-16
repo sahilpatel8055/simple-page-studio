@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "dataset_name": "OnlineUniversityGuide.in — University Comparison Master Content",
   "academic_session": "2026-27",
-  "generated_on": "2026-08-12",
+  "generated_on": "2026-08-16",
   "purpose": "Single source of truth for university-vs-university and university-vs-university-course comparison pages.",
   "research_basis": {
     "competitor_reference": [
@@ -2499,6 +2499,587 @@
       "last_verified": "2026-08-10",
       "notes": [
         "Official JAIN Online site states two main intakes and that current fee structures are listed on programme pages. Current programme-wise INR fees were not reliably exposed in the accessible search result, so fees are pending verification."
+      ]
+    },
+    {
+      "university_name": "Uttaranchal University Online",
+      "short_name": "Uttaranchal University",
+      "slug": "uttaranchal-online",
+      "mode": "Online",
+      "location": "Dehradun, Uttarakhand",
+      "recognition": {
+        "UGC_status": "UGC-recognised state private university; online programmes entitled by UGC-DEB",
+        "UGC_DEB_status": "Recognised by UGC-DEB for online programmes",
+        "NAAC_status": "NAAC A+ accredited",
+        "NIRF_information": "Listed in NIRF rankings in the university category",
+        "accreditation": "Degrees carry the same value as on-campus degrees under UGC notification for online mode"
+      },
+      "programme_count": 6,
+      "degrees_available": [
+        "BA",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "programme_map": {
+        "MBA": {
+          "programme_name": "Master of Business Administration (MBA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Marketing Management",
+            "Human Resource Management",
+            "Finance",
+            "Information Technology",
+            "Logistics & Supply Chain Management",
+            "Business Analytics"
+          ],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university, usually with 50% aggregate (45% for reserved categories).",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "MCA": {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Artificial Intelligence & Machine Learning",
+            "Data Science",
+            "Cyber Security",
+            "Cloud Computing"
+          ],
+          "eligibility": "Bachelor's degree with Mathematics at 10+2 or graduation level, or BCA / B.Sc (CS/IT), typically with 50% aggregate.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "BBA": {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Marketing",
+            "Human Resource Management",
+            "Finance",
+            "Digital Marketing"
+          ],
+          "eligibility": "10+2 in any stream from a recognised board.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "BCA": {
+          "programme_name": "Bachelor of Computer Applications (BCA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Data Science",
+            "Cloud & Cyber Security",
+            "Full-stack Development"
+          ],
+          "eligibility": "10+2 in any stream; Mathematics or Computer Science at 10+2 is preferred but not compulsory.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "BA": {
+          "programme_name": "Bachelor of Arts (BA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "English",
+            "Political Science",
+            "Sociology",
+            "Economics"
+          ],
+          "eligibility": "10+2 in any stream from a recognised board.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "MA": {
+          "programme_name": "Master of Arts (MA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "English",
+            "Political Science",
+            "Sociology",
+            "Economics"
+          ],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        }
+      },
+      "official_sources": [
+        "https://uumail.in/",
+        "https://onlineuu.uumail.in/"
+      ],
+      "data_status": "verified_official_except_fees",
+      "last_verified": "2026-08-14",
+      "notes": [
+        "Fee figures are withheld until the official Uttaranchal University Online fee document for 2026-27 is verified.",
+        "Uttaranchal University runs its online programmes through its dedicated centre for online learning in Dehradun."
+      ]
+    },
+    {
+      "university_name": "Shoolini University Online",
+      "short_name": "Shoolini Online",
+      "slug": "shoolini-online",
+      "mode": "Online",
+      "location": "Solan, Himachal Pradesh",
+      "recognition": {
+        "UGC_status": "UGC-recognised private university; online degrees entitled by UGC-DEB",
+        "UGC_DEB_status": "Recognised by UGC-DEB for online programmes",
+        "NAAC_status": "NAAC accredited",
+        "NIRF_information": "Ranked among India's leading private research universities in national and international rankings",
+        "accreditation": "Degrees carry the same value as on-campus degrees under UGC notification for online mode"
+      },
+      "programme_count": 6,
+      "degrees_available": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "programme_map": {
+        "MBA": {
+          "programme_name": "Master of Business Administration (MBA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Marketing",
+            "Finance",
+            "Human Resource Management",
+            "Business Analytics",
+            "Operations & Supply Chain",
+            "Healthcare & Hospital Management"
+          ],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university with a minimum aggregate as notified by the university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "MCA": {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Data Science",
+            "Artificial Intelligence",
+            "Cyber Security"
+          ],
+          "eligibility": "Bachelor's degree with Mathematics at 10+2 or graduation level, or BCA / B.Sc (CS/IT).",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "MA": {
+          "programme_name": "Master of Arts (MA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "English",
+            "Political Science",
+            "Psychology"
+          ],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "B.Com": {
+          "programme_name": "Bachelor of Commerce (B.Com)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Accounting & Finance",
+            "Banking & Insurance",
+            "Corporate Accounting"
+          ],
+          "eligibility": "10+2 in any stream from a recognised board; commerce background is preferred but not mandatory.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "BBA": {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Marketing",
+            "Finance",
+            "Human Resource Management",
+            "Entrepreneurship"
+          ],
+          "eligibility": "10+2 in any stream from a recognised board.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        },
+        "BCA": {
+          "programme_name": "Bachelor of Computer Applications (BCA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": null,
+          "fee_status": "not_published",
+          "specialisations": [
+            "Data Science",
+            "Cloud Computing",
+            "Web & Mobile Development"
+          ],
+          "eligibility": "10+2 in any stream; Mathematics or Computer Science at 10+2 is preferred.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-14"
+        }
+      },
+      "official_sources": [
+        "https://shooliniuniversity.com/",
+        "https://online.shooliniuniversity.com/"
+      ],
+      "data_status": "verified_official_except_fees",
+      "last_verified": "2026-08-14",
+      "notes": [
+        "Fee figures are withheld until the official Shoolini Online fee document for 2026-27 is verified.",
+        "Shoolini is a research-intensive private university in Himachal Pradesh; its online school runs the same academic calendar as the campus."
+      ]
+    },
+    {
+      "university_name": "Parul University Online",
+      "short_name": "Parul University",
+      "slug": "parul-online",
+      "mode": "Online",
+      "location": "Vadodara, Gujarat",
+      "recognition": {
+        "UGC_status": "UGC-approved Category 1 university with Graded Autonomy",
+        "UGC_DEB_status": "Recognised by UGC-DEB for online programmes",
+        "NAAC_status": "NAAC A++ (youngest private university in India to receive A++ in the first cycle)",
+        "NIRF_information": "Listed in NIRF rankings in the university category",
+        "accreditation": "Degrees carry the same value as on-campus degrees under UGC notification for online mode"
+      },
+      "programme_count": 9,
+      "degrees_available": [
+        "BA",
+        "BBA",
+        "BCA",
+        "M.Com",
+        "M.Sc",
+        "MA",
+        "MBA",
+        "MCA",
+        "MSW"
+      ],
+      "programme_map": {
+        "MBA": {
+          "programme_name": "Master of Business Administration (MBA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 150000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "Marketing",
+            "Finance",
+            "Human Resource Management",
+            "Business Analytics",
+            "International Business",
+            "Operations Management"
+          ],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "MCA": {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 120000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "Artificial Intelligence & Machine Learning",
+            "Data Science",
+            "Cyber Security"
+          ],
+          "eligibility": "Bachelor's degree with Mathematics at 10+2 or graduation level, or BCA / B.Sc (CS/IT).",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "MA": {
+          "programme_name": "Master of Arts (MA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 60000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "English",
+            "Political Science",
+            "Economics",
+            "Sociology"
+          ],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "M.Com": {
+          "programme_name": "Master of Commerce (M.Com)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 60000,
+          "fee_status": "verified_official",
+          "specialisations": [],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "M.Sc": {
+          "programme_name": "Master of Science (M.Sc)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 60000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "Mathematics",
+            "Chemistry",
+            "Physics",
+            "Data Science"
+          ],
+          "eligibility": "Bachelor's degree in a relevant science discipline from a recognised university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "MSW": {
+          "programme_name": "Master of Social Work (MSW)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 60000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "Community Development",
+            "Medical & Psychiatric Social Work",
+            "Human Resource Management"
+          ],
+          "eligibility": "Bachelor's degree in any discipline from a recognised university.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "BBA": {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": 111000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "Marketing",
+            "Finance",
+            "Human Resource Management",
+            "Digital Marketing"
+          ],
+          "eligibility": "10+2 in any stream from a recognised board.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "BCA": {
+          "programme_name": "Bachelor of Computer Applications (BCA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": 111000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "Data Science",
+            "Cloud Computing",
+            "Full-stack Development"
+          ],
+          "eligibility": "10+2 in any stream; Mathematics or Computer Science at 10+2 is preferred.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "BA": {
+          "programme_name": "Bachelor of Arts (BA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": 111000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "English",
+            "Political Science",
+            "Economics",
+            "Sociology"
+          ],
+          "eligibility": "10+2 in any stream from a recognised board.",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        }
+      },
+      "official_sources": [
+        "https://paruluniversity.ac.in/",
+        "https://paruluniversityonline.com/"
+      ],
+      "data_status": "verified_official",
+      "last_verified": "2026-08-16",
+      "notes": [
+        "Fee figures are withheld until the official Parul University Online fee document for 2026-27 is verified.",
+        "Parul University is a Gujarat-based private university with one of the largest online programme baskets in western India."
+      ]
+    },
+    {
+      "university_name": "Sikkim Manipal University (Online)",
+      "short_name": "SMU Online",
+      "slug": "smu-online",
+      "mode": "Online",
+      "location": "Gangtok, Sikkim",
+      "recognition": {
+        "UGC_status": "UGC-entitled online degrees",
+        "UGC_DEB_status": "Online programmes offered through the UGC-recognised Centre for Online Education",
+        "NAAC_status": "NAAC A+ accredited",
+        "NIRF_information": null,
+        "accreditation": "WES (World Education Services) evaluated"
+      },
+      "programme_count": 9,
+      "degrees_available": [
+        "B.Com",
+        "BA",
+        "BBA",
+        "M.Com",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "programme_map": {
+        "BA": {
+          "programme_name": "Bachelor of Arts (BA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": 75000,
+          "fee_status": "verified_official",
+          "specialisations": [
+            "English",
+            "Sociology",
+            "Political Science"
+          ],
+          "eligibility": "10+2 or equivalent qualification",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "B.Com": {
+          "programme_name": "Bachelor of Commerce (B.Com)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": 75000,
+          "fee_status": "verified_official",
+          "specialisations": [],
+          "eligibility": "10+2 or equivalent qualification",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "BBA": {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "duration": "3 years",
+          "semesters": 6,
+          "fee_total": 90000,
+          "fee_status": "verified_official",
+          "specialisations": [],
+          "eligibility": "10+2 or equivalent qualification",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "MA": {
+          "programme_name": "Master of Arts in Political Science",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 75000,
+          "fee_status": "verified_official",
+          "specialisations": [],
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "M.Com": {
+          "programme_name": "Master of Commerce (M.Com)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 75000,
+          "fee_status": "verified_official",
+          "specialisations": [],
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "MCA": {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 110000,
+          "fee_status": "verified_official",
+          "specialisations": [],
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        },
+        "MBA": {
+          "programme_name": "Master of Business Administration (MBA)",
+          "duration": "2 years",
+          "semesters": 4,
+          "fee_total": 120000,
+          "fee_status": "verified_official",
+          "specialisations": [],
+          "eligibility": "Bachelor's degree from a recognised university (10+2+3)",
+          "entrance_exam": null,
+          "mode": "Online",
+          "last_verified": "2026-08-16"
+        }
+      },
+      "official_sources": [
+        "https://smu.edu.in/",
+        "https://www.onlinemanipal.com/sikkim-manipal-university"
+      ],
+      "data_status": "verified_official",
+      "last_verified": "2026-08-16",
+      "notes": [
+        "Sikkim Manipal University delivers its online degrees through the Centre for Online Education on the Online Manipal platform."
       ]
     }
   ],
@@ -7673,6 +8254,121 @@
       }
     },
     {
+      "comparison_id": "amity-online-vs-uttaranchal-online",
+      "university_a": "Amity Online",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/amity-online-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/amity-online-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Amity Online vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "Amity Online vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Amity Online and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Amity Online vs Uttaranchal University",
+        "secondary_intents": [
+          "Amity Online vs Uttaranchal University online courses",
+          "Amity Online vs Uttaranchal University fees",
+          "Amity Online vs Uttaranchal University admission",
+          "Amity Online vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "amity-online-vs-shoolini-online",
+      "university_a": "Amity Online",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/amity-online-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/amity-online-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Amity Online vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "Amity Online vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Amity Online and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Amity Online vs Shoolini Online",
+        "secondary_intents": [
+          "Amity Online vs Shoolini Online online courses",
+          "Amity Online vs Shoolini Online fees",
+          "Amity Online vs Shoolini Online admission",
+          "Amity Online vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "amity-online-vs-parul-online",
+      "university_a": "Amity Online",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/amity-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/amity-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "M.Com",
+        "M.Sc",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Amity Online vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "Amity Online vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Amity Online and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Amity Online vs Parul University",
+        "secondary_intents": [
+          "Amity Online vs Parul University online courses",
+          "Amity Online vs Parul University fees",
+          "Amity Online vs Parul University admission",
+          "Amity Online vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "amity-online-vs-smu-online",
+      "university_a": "Amity Online",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/amity-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/amity-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BA",
+        "BBA",
+        "M.Com",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Amity Online vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "Amity Online vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Amity Online and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Amity Online vs SMU Online",
+        "secondary_intents": [
+          "Amity Online vs SMU Online online courses",
+          "Amity Online vs SMU Online fees",
+          "Amity Online vs SMU Online admission",
+          "Amity Online vs SMU Online online degree"
+        ]
+      }
+    },
+    {
       "comparison_id": "manipal-university-jaipur-vs-vgu",
       "university_a": "Online Manipal",
       "university_b": "VGU",
@@ -10198,115 +10894,6 @@
       }
     },
     {
-      "comparison_id": "manipal-university-jaipur-vs-nsou",
-      "university_a": "Online Manipal",
-      "university_b": "NSOU",
-      "canonical_university_comparison_url": "/compare/manipal-university-jaipur-vs-nsou/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/manipal-university-jaipur-vs-nsou/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "Online Manipal vs NSOU – Online University Comparison 2026-27",
-        "course_title_template": "Online Manipal vs NSOU Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare Online Manipal and NSOU for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "Online Manipal vs NSOU",
-        "secondary_intents": [
-          "Online Manipal vs NSOU online courses",
-          "Online Manipal vs NSOU fees",
-          "Online Manipal vs NSOU admission",
-          "Online Manipal vs NSOU online MBA",
-          "Online Manipal vs NSOU online degree"
-        ]
-      },
-      "content": {
-        "intro": "Online Manipal vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "Online Manipal vs NSOU: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
-      ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
-    },
-    {
       "comparison_id": "manipal-university-jaipur-vs-ksou-mysuru",
       "university_a": "Online Manipal",
       "university_b": "KSOU",
@@ -11903,6 +12490,118 @@
             "Which university should a working professional choose for MCA?"
           ]
         }
+      }
+    },
+    {
+      "comparison_id": "manipal-university-jaipur-vs-uttaranchal-online",
+      "university_a": "Online Manipal",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/manipal-university-jaipur-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/manipal-university-jaipur-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Online Manipal vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "Online Manipal vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Online Manipal and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Online Manipal vs Uttaranchal University",
+        "secondary_intents": [
+          "Online Manipal vs Uttaranchal University online courses",
+          "Online Manipal vs Uttaranchal University fees",
+          "Online Manipal vs Uttaranchal University admission",
+          "Online Manipal vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "manipal-university-jaipur-vs-shoolini-online",
+      "university_a": "Online Manipal",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/manipal-university-jaipur-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/manipal-university-jaipur-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Online Manipal vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "Online Manipal vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Online Manipal and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Online Manipal vs Shoolini Online",
+        "secondary_intents": [
+          "Online Manipal vs Shoolini Online online courses",
+          "Online Manipal vs Shoolini Online fees",
+          "Online Manipal vs Shoolini Online admission",
+          "Online Manipal vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "manipal-university-jaipur-vs-parul-online",
+      "university_a": "Online Manipal",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/manipal-university-jaipur-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/manipal-university-jaipur-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "M.Com",
+        "M.Sc",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Online Manipal vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "Online Manipal vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Online Manipal and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Online Manipal vs Parul University",
+        "secondary_intents": [
+          "Online Manipal vs Parul University online courses",
+          "Online Manipal vs Parul University fees",
+          "Online Manipal vs Parul University admission",
+          "Online Manipal vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "manipal-university-jaipur-vs-smu-online",
+      "university_a": "Online Manipal",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/manipal-university-jaipur-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/manipal-university-jaipur-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "M.Com",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Online Manipal vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "Online Manipal vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Online Manipal and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Online Manipal vs SMU Online",
+        "secondary_intents": [
+          "Online Manipal vs SMU Online online courses",
+          "Online Manipal vs SMU Online fees",
+          "Online Manipal vs SMU Online admission",
+          "Online Manipal vs SMU Online online degree"
+        ]
       }
     },
     {
@@ -15478,6 +16177,117 @@
       }
     },
     {
+      "comparison_id": "vgu-vs-uttaranchal-online",
+      "university_a": "VGU",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/vgu-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/vgu-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "VGU vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "VGU vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare VGU and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "VGU vs Uttaranchal University",
+        "secondary_intents": [
+          "VGU vs Uttaranchal University online courses",
+          "VGU vs Uttaranchal University fees",
+          "VGU vs Uttaranchal University admission",
+          "VGU vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "vgu-vs-shoolini-online",
+      "university_a": "VGU",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/vgu-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/vgu-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "VGU vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "VGU vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare VGU and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "VGU vs Shoolini Online",
+        "secondary_intents": [
+          "VGU vs Shoolini Online online courses",
+          "VGU vs Shoolini Online fees",
+          "VGU vs Shoolini Online admission",
+          "VGU vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "vgu-vs-parul-online",
+      "university_a": "VGU",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/vgu-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/vgu-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "M.Sc",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "VGU vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "VGU vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare VGU and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "VGU vs Parul University",
+        "secondary_intents": [
+          "VGU vs Parul University online courses",
+          "VGU vs Parul University fees",
+          "VGU vs Parul University admission",
+          "VGU vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "vgu-vs-smu-online",
+      "university_a": "VGU",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/vgu-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/vgu-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "VGU vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "VGU vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare VGU and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "VGU vs SMU Online",
+        "secondary_intents": [
+          "VGU vs SMU Online online courses",
+          "VGU vs SMU Online fees",
+          "VGU vs SMU Online admission",
+          "VGU vs SMU Online online degree"
+        ]
+      }
+    },
+    {
       "comparison_id": "lpu-online-vs-du-sol",
       "university_a": "LPU Online",
       "university_b": "DU SOL",
@@ -18994,6 +19804,121 @@
       }
     },
     {
+      "comparison_id": "lpu-online-vs-uttaranchal-online",
+      "university_a": "LPU Online",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/lpu-online-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/lpu-online-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "LPU Online vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "LPU Online vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare LPU Online and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "LPU Online vs Uttaranchal University",
+        "secondary_intents": [
+          "LPU Online vs Uttaranchal University online courses",
+          "LPU Online vs Uttaranchal University fees",
+          "LPU Online vs Uttaranchal University admission",
+          "LPU Online vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "lpu-online-vs-shoolini-online",
+      "university_a": "LPU Online",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/lpu-online-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/lpu-online-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "LPU Online vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "LPU Online vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare LPU Online and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "LPU Online vs Shoolini Online",
+        "secondary_intents": [
+          "LPU Online vs Shoolini Online online courses",
+          "LPU Online vs Shoolini Online fees",
+          "LPU Online vs Shoolini Online admission",
+          "LPU Online vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "lpu-online-vs-parul-online",
+      "university_a": "LPU Online",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/lpu-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/lpu-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "M.Com",
+        "M.Sc",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "LPU Online vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "LPU Online vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare LPU Online and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "LPU Online vs Parul University",
+        "secondary_intents": [
+          "LPU Online vs Parul University online courses",
+          "LPU Online vs Parul University fees",
+          "LPU Online vs Parul University admission",
+          "LPU Online vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "lpu-online-vs-smu-online",
+      "university_a": "LPU Online",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/lpu-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/lpu-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BA",
+        "BBA",
+        "M.Com",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "LPU Online vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "LPU Online vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare LPU Online and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "LPU Online vs SMU Online",
+        "secondary_intents": [
+          "LPU Online vs SMU Online online courses",
+          "LPU Online vs SMU Online fees",
+          "LPU Online vs SMU Online admission",
+          "LPU Online vs SMU Online online degree"
+        ]
+      }
+    },
+    {
       "comparison_id": "du-sol-vs-ignou",
       "university_a": "DU SOL",
       "university_b": "IGNOU",
@@ -19656,115 +20581,6 @@
       }
     },
     {
-      "comparison_id": "du-sol-vs-nsou",
-      "university_a": "DU SOL",
-      "university_b": "NSOU",
-      "canonical_university_comparison_url": "/compare/du-sol-vs-nsou/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/du-sol-vs-nsou/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "DU SOL vs NSOU – Online University Comparison 2026-27",
-        "course_title_template": "DU SOL vs NSOU Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare DU SOL and NSOU for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "DU SOL vs NSOU",
-        "secondary_intents": [
-          "DU SOL vs NSOU online courses",
-          "DU SOL vs NSOU fees",
-          "DU SOL vs NSOU admission",
-          "DU SOL vs NSOU online MBA",
-          "DU SOL vs NSOU online degree"
-        ]
-      },
-      "content": {
-        "intro": "DU SOL vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "DU SOL vs NSOU: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
-      ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
-    },
-    {
       "comparison_id": "du-sol-vs-ksou-mysuru",
       "university_a": "DU SOL",
       "university_b": "KSOU",
@@ -19931,224 +20747,6 @@
       }
     },
     {
-      "comparison_id": "du-sol-vs-subharti-university",
-      "university_a": "DU SOL",
-      "university_b": "Subharti University",
-      "canonical_university_comparison_url": "/compare/du-sol-vs-subharti-university/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/du-sol-vs-subharti-university/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "DU SOL vs Subharti University – Online University Comparison 2026-27",
-        "course_title_template": "DU SOL vs Subharti University Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare DU SOL and Subharti University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "DU SOL vs Subharti University",
-        "secondary_intents": [
-          "DU SOL vs Subharti University online courses",
-          "DU SOL vs Subharti University fees",
-          "DU SOL vs Subharti University admission",
-          "DU SOL vs Subharti University online MBA",
-          "DU SOL vs Subharti University online degree"
-        ]
-      },
-      "content": {
-        "intro": "DU SOL vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "DU SOL vs Subharti University: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
-      ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
-    },
-    {
-      "comparison_id": "du-sol-vs-baou",
-      "university_a": "DU SOL",
-      "university_b": "BAOU",
-      "canonical_university_comparison_url": "/compare/du-sol-vs-baou/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/du-sol-vs-baou/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "DU SOL vs BAOU – Online University Comparison 2026-27",
-        "course_title_template": "DU SOL vs BAOU Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare DU SOL and BAOU for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "DU SOL vs BAOU",
-        "secondary_intents": [
-          "DU SOL vs BAOU online courses",
-          "DU SOL vs BAOU fees",
-          "DU SOL vs BAOU admission",
-          "DU SOL vs BAOU online MBA",
-          "DU SOL vs BAOU online degree"
-        ]
-      },
-      "content": {
-        "intro": "DU SOL vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "DU SOL vs BAOU: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
-      ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
-    },
-    {
       "comparison_id": "du-sol-vs-jain-online",
       "university_a": "DU SOL",
       "university_b": "JAIN Online",
@@ -20312,6 +20910,98 @@
             "Which university should a working professional choose for MBA?"
           ]
         }
+      }
+    },
+    {
+      "comparison_id": "du-sol-vs-uttaranchal-online",
+      "university_a": "DU SOL",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/du-sol-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/du-sol-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "DU SOL vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "DU SOL vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DU SOL and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DU SOL vs Uttaranchal University",
+        "secondary_intents": [
+          "DU SOL vs Uttaranchal University online courses",
+          "DU SOL vs Uttaranchal University fees",
+          "DU SOL vs Uttaranchal University admission",
+          "DU SOL vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "du-sol-vs-shoolini-online",
+      "university_a": "DU SOL",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/du-sol-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/du-sol-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "DU SOL vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "DU SOL vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DU SOL and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DU SOL vs Shoolini Online",
+        "secondary_intents": [
+          "DU SOL vs Shoolini Online online courses",
+          "DU SOL vs Shoolini Online fees",
+          "DU SOL vs Shoolini Online admission",
+          "DU SOL vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "du-sol-vs-parul-online",
+      "university_a": "DU SOL",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/du-sol-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/du-sol-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "DU SOL vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "DU SOL vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DU SOL and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DU SOL vs Parul University",
+        "secondary_intents": [
+          "DU SOL vs Parul University online courses",
+          "DU SOL vs Parul University fees",
+          "DU SOL vs Parul University admission",
+          "DU SOL vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "du-sol-vs-smu-online",
+      "university_a": "DU SOL",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/du-sol-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/du-sol-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "DU SOL vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "DU SOL vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DU SOL and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DU SOL vs SMU Online",
+        "secondary_intents": [
+          "DU SOL vs SMU Online online courses",
+          "DU SOL vs SMU Online fees",
+          "DU SOL vs SMU Online admission",
+          "DU SOL vs SMU Online online degree"
+        ]
       }
     },
     {
@@ -22515,6 +23205,112 @@
       }
     },
     {
+      "comparison_id": "ignou-vs-uttaranchal-online",
+      "university_a": "IGNOU",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/ignou-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ignou-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BCA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "IGNOU vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "IGNOU vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare IGNOU and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "IGNOU vs Uttaranchal University",
+        "secondary_intents": [
+          "IGNOU vs Uttaranchal University online courses",
+          "IGNOU vs Uttaranchal University fees",
+          "IGNOU vs Uttaranchal University admission",
+          "IGNOU vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "ignou-vs-shoolini-online",
+      "university_a": "IGNOU",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/ignou-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ignou-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BCA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "IGNOU vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "IGNOU vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare IGNOU and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "IGNOU vs Shoolini Online",
+        "secondary_intents": [
+          "IGNOU vs Shoolini Online online courses",
+          "IGNOU vs Shoolini Online fees",
+          "IGNOU vs Shoolini Online admission",
+          "IGNOU vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "ignou-vs-parul-online",
+      "university_a": "IGNOU",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/ignou-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ignou-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BCA",
+        "M.Com",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "IGNOU vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "IGNOU vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare IGNOU and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "IGNOU vs Parul University",
+        "secondary_intents": [
+          "IGNOU vs Parul University online courses",
+          "IGNOU vs Parul University fees",
+          "IGNOU vs Parul University admission",
+          "IGNOU vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "ignou-vs-smu-online",
+      "university_a": "IGNOU",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/ignou-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ignou-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BA",
+        "M.Com",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "IGNOU vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "IGNOU vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare IGNOU and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "IGNOU vs SMU Online",
+        "secondary_intents": [
+          "IGNOU vs SMU Online online courses",
+          "IGNOU vs SMU Online fees",
+          "IGNOU vs SMU Online admission",
+          "IGNOU vs SMU Online online degree"
+        ]
+      }
+    },
+    {
       "comparison_id": "nmims-online-vs-chandigarh-university-online",
       "university_a": "NMIMS Online",
       "university_b": "Chandigarh University",
@@ -22951,115 +23747,6 @@
           ]
         }
       }
-    },
-    {
-      "comparison_id": "nmims-online-vs-nsou",
-      "university_a": "NMIMS Online",
-      "university_b": "NSOU",
-      "canonical_university_comparison_url": "/compare/nmims-online-vs-nsou/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/nmims-online-vs-nsou/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "NMIMS Online vs NSOU – Online University Comparison 2026-27",
-        "course_title_template": "NMIMS Online vs NSOU Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare NMIMS Online and NSOU for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "NMIMS Online vs NSOU",
-        "secondary_intents": [
-          "NMIMS Online vs NSOU online courses",
-          "NMIMS Online vs NSOU fees",
-          "NMIMS Online vs NSOU admission",
-          "NMIMS Online vs NSOU online MBA",
-          "NMIMS Online vs NSOU online degree"
-        ]
-      },
-      "content": {
-        "intro": "NMIMS Online vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "NMIMS Online vs NSOU: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
-      ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
     },
     {
       "comparison_id": "nmims-online-vs-ksou-mysuru",
@@ -24053,6 +24740,104 @@
             "Which university should a working professional choose for MBA?"
           ]
         }
+      }
+    },
+    {
+      "comparison_id": "nmims-online-vs-uttaranchal-online",
+      "university_a": "NMIMS Online",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/nmims-online-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/nmims-online-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "NMIMS Online vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "NMIMS Online vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare NMIMS Online and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "NMIMS Online vs Uttaranchal University",
+        "secondary_intents": [
+          "NMIMS Online vs Uttaranchal University online courses",
+          "NMIMS Online vs Uttaranchal University fees",
+          "NMIMS Online vs Uttaranchal University admission",
+          "NMIMS Online vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "nmims-online-vs-shoolini-online",
+      "university_a": "NMIMS Online",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/nmims-online-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/nmims-online-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "NMIMS Online vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "NMIMS Online vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare NMIMS Online and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "NMIMS Online vs Shoolini Online",
+        "secondary_intents": [
+          "NMIMS Online vs Shoolini Online online courses",
+          "NMIMS Online vs Shoolini Online fees",
+          "NMIMS Online vs Shoolini Online admission",
+          "NMIMS Online vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "nmims-online-vs-parul-online",
+      "university_a": "NMIMS Online",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/nmims-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/nmims-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "NMIMS Online vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "NMIMS Online vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare NMIMS Online and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "NMIMS Online vs Parul University",
+        "secondary_intents": [
+          "NMIMS Online vs Parul University online courses",
+          "NMIMS Online vs Parul University fees",
+          "NMIMS Online vs Parul University admission",
+          "NMIMS Online vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "nmims-online-vs-smu-online",
+      "university_a": "NMIMS Online",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/nmims-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/nmims-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "MBA"
+      ],
+      "seo": {
+        "title_template": "NMIMS Online vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "NMIMS Online vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare NMIMS Online and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "NMIMS Online vs SMU Online",
+        "secondary_intents": [
+          "NMIMS Online vs SMU Online online courses",
+          "NMIMS Online vs SMU Online fees",
+          "NMIMS Online vs SMU Online admission",
+          "NMIMS Online vs SMU Online online degree"
+        ]
       }
     },
     {
@@ -25888,113 +26673,115 @@
       }
     },
     {
-      "comparison_id": "dpu-online-vs-nsou",
-      "university_a": "DPU Online",
-      "university_b": "NSOU",
-      "canonical_university_comparison_url": "/compare/dpu-online-vs-nsou/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/dpu-online-vs-nsou/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "DPU Online vs NSOU – Online University Comparison 2026-27",
-        "course_title_template": "DPU Online vs NSOU Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare DPU Online and NSOU for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "DPU Online vs NSOU",
-        "secondary_intents": [
-          "DPU Online vs NSOU online courses",
-          "DPU Online vs NSOU fees",
-          "DPU Online vs NSOU admission",
-          "DPU Online vs NSOU online MBA",
-          "DPU Online vs NSOU online degree"
-        ]
-      },
-      "content": {
-        "intro": "DPU Online vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "DPU Online vs NSOU: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
+      "comparison_id": "chandigarh-university-online-vs-uttaranchal-online",
+      "university_a": "Chandigarh University",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/chandigarh-university-online-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/chandigarh-university-online-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
       ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
+      "seo": {
+        "title_template": "Chandigarh University vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "Chandigarh University vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Chandigarh University and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Chandigarh University vs Uttaranchal University",
+        "secondary_intents": [
+          "Chandigarh University vs Uttaranchal University online courses",
+          "Chandigarh University vs Uttaranchal University fees",
+          "Chandigarh University vs Uttaranchal University admission",
+          "Chandigarh University vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "chandigarh-university-online-vs-shoolini-online",
+      "university_a": "Chandigarh University",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/chandigarh-university-online-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/chandigarh-university-online-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Chandigarh University vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "Chandigarh University vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Chandigarh University and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Chandigarh University vs Shoolini Online",
+        "secondary_intents": [
+          "Chandigarh University vs Shoolini Online online courses",
+          "Chandigarh University vs Shoolini Online fees",
+          "Chandigarh University vs Shoolini Online admission",
+          "Chandigarh University vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "chandigarh-university-online-vs-parul-online",
+      "university_a": "Chandigarh University",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/chandigarh-university-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/chandigarh-university-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "M.Sc",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Chandigarh University vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "Chandigarh University vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Chandigarh University and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Chandigarh University vs Parul University",
+        "secondary_intents": [
+          "Chandigarh University vs Parul University online courses",
+          "Chandigarh University vs Parul University fees",
+          "Chandigarh University vs Parul University admission",
+          "Chandigarh University vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "chandigarh-university-online-vs-smu-online",
+      "university_a": "Chandigarh University",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/chandigarh-university-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/chandigarh-university-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Chandigarh University vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "Chandigarh University vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Chandigarh University and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Chandigarh University vs SMU Online",
+        "secondary_intents": [
+          "Chandigarh University vs SMU Online online courses",
+          "Chandigarh University vs SMU Online fees",
+          "Chandigarh University vs SMU Online admission",
+          "Chandigarh University vs SMU Online online degree"
+        ]
+      }
     },
     {
       "comparison_id": "dpu-online-vs-ksou-mysuru",
@@ -26936,6 +27723,106 @@
       }
     },
     {
+      "comparison_id": "dpu-online-vs-uttaranchal-online",
+      "university_a": "DPU Online",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/dpu-online-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/dpu-online-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "DPU Online vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "DPU Online vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DPU Online and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DPU Online vs Uttaranchal University",
+        "secondary_intents": [
+          "DPU Online vs Uttaranchal University online courses",
+          "DPU Online vs Uttaranchal University fees",
+          "DPU Online vs Uttaranchal University admission",
+          "DPU Online vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "dpu-online-vs-shoolini-online",
+      "university_a": "DPU Online",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/dpu-online-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/dpu-online-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "DPU Online vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "DPU Online vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DPU Online and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DPU Online vs Shoolini Online",
+        "secondary_intents": [
+          "DPU Online vs Shoolini Online online courses",
+          "DPU Online vs Shoolini Online fees",
+          "DPU Online vs Shoolini Online admission",
+          "DPU Online vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "dpu-online-vs-parul-online",
+      "university_a": "DPU Online",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/dpu-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/dpu-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "DPU Online vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "DPU Online vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DPU Online and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DPU Online vs Parul University",
+        "secondary_intents": [
+          "DPU Online vs Parul University online courses",
+          "DPU Online vs Parul University fees",
+          "DPU Online vs Parul University admission",
+          "DPU Online vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "dpu-online-vs-smu-online",
+      "university_a": "DPU Online",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/dpu-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/dpu-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "DPU Online vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "DPU Online vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare DPU Online and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "DPU Online vs SMU Online",
+        "secondary_intents": [
+          "DPU Online vs SMU Online online courses",
+          "DPU Online vs SMU Online fees",
+          "DPU Online vs SMU Online admission",
+          "DPU Online vs SMU Online online degree"
+        ]
+      }
+    },
+    {
       "comparison_id": "nsou-vs-ksou-mysuru",
       "university_a": "NSOU",
       "university_b": "KSOU",
@@ -27268,222 +28155,73 @@
       }
     },
     {
-      "comparison_id": "nsou-vs-baou",
+      "comparison_id": "nsou-vs-uttaranchal-online",
       "university_a": "NSOU",
-      "university_b": "BAOU",
-      "canonical_university_comparison_url": "/compare/nsou-vs-baou/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/nsou-vs-baou/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "NSOU vs BAOU – Online University Comparison 2026-27",
-        "course_title_template": "NSOU vs BAOU Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare NSOU and BAOU for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "NSOU vs BAOU",
-        "secondary_intents": [
-          "NSOU vs BAOU online courses",
-          "NSOU vs BAOU fees",
-          "NSOU vs BAOU admission",
-          "NSOU vs BAOU online MBA",
-          "NSOU vs BAOU online degree"
-        ]
-      },
-      "content": {
-        "intro": "NSOU vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "NSOU vs BAOU: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/nsou-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/nsou-vs-uttaranchal-online/",
+      "default_course": "BA",
+      "common_courses": [
+        "BA"
       ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
+      "seo": {
+        "title_template": "NSOU vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "NSOU vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare NSOU and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "NSOU vs Uttaranchal University",
+        "secondary_intents": [
+          "NSOU vs Uttaranchal University online courses",
+          "NSOU vs Uttaranchal University fees",
+          "NSOU vs Uttaranchal University admission",
+          "NSOU vs Uttaranchal University online degree"
+        ]
+      }
     },
     {
-      "comparison_id": "nsou-vs-jain-online",
+      "comparison_id": "nsou-vs-parul-online",
       "university_a": "NSOU",
-      "university_b": "JAIN Online",
-      "canonical_university_comparison_url": "/compare/nsou-vs-jain-online/",
-      "course_comparison_url_pattern": "/compare/{course-slug}/nsou-vs-jain-online/",
-      "default_course": null,
-      "common_courses": [],
-      "seo": {
-        "title_template": "NSOU vs JAIN Online – Online University Comparison 2026-27",
-        "course_title_template": "NSOU vs JAIN Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
-        "meta_description_template": "Compare NSOU and JAIN Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
-        "primary_intent": "NSOU vs JAIN Online",
-        "secondary_intents": [
-          "NSOU vs JAIN Online online courses",
-          "NSOU vs JAIN Online fees",
-          "NSOU vs JAIN Online admission",
-          "NSOU vs JAIN Online online MBA",
-          "NSOU vs JAIN Online online degree"
-        ]
-      },
-      "content": {
-        "intro": "NSOU vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
-        "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
-        "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
-      },
-      "comparison_sections": [
-        {
-          "id": "overview",
-          "heading": "NSOU vs JAIN Online: Overview"
-        },
-        {
-          "id": "quick-comparison",
-          "heading": "Quick Comparison"
-        },
-        {
-          "id": "courses",
-          "heading": "Courses Offered by Both Universities"
-        },
-        {
-          "id": "recognition",
-          "heading": "Recognition, Accreditation & Mode"
-        },
-        {
-          "id": "fees",
-          "heading": "Fees & Payment Considerations"
-        },
-        {
-          "id": "eligibility",
-          "heading": "Eligibility & Admission Requirements"
-        },
-        {
-          "id": "specialisations",
-          "heading": "Specialisations & Curriculum"
-        },
-        {
-          "id": "admission",
-          "heading": "Admission Process"
-        },
-        {
-          "id": "exams",
-          "heading": "Examination Pattern & Assessment"
-        },
-        {
-          "id": "scholarships",
-          "heading": "Scholarships & Financial Support"
-        },
-        {
-          "id": "learning",
-          "heading": "Learning Experience & Student Support"
-        },
-        {
-          "id": "degree",
-          "heading": "Degree & Academic Value"
-        },
-        {
-          "id": "career",
-          "heading": "Career Opportunities & Placement Support"
-        },
-        {
-          "id": "pros-cons",
-          "heading": "Strengths, Limitations & Fit"
-        },
-        {
-          "id": "verdict",
-          "heading": "Which University May Suit You?"
-        },
-        {
-          "id": "faq",
-          "heading": "Frequently Asked Questions"
-        },
-        {
-          "id": "sources",
-          "heading": "Sources & Last Verified"
-        }
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/nsou-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/nsou-vs-parul-online/",
+      "default_course": "BA",
+      "common_courses": [
+        "BA"
       ],
-      "rendering_rules": {
-        "facts_first": true,
-        "never_invent": true,
-        "never_rank_without_methodology": true,
-        "never_guarantee_jobs_or_salary": true,
-        "never_copy_competitor_claims": true,
-        "show_unavailable_state_for_unverified_data": true,
-        "course_selector": true,
-        "only_compare_like_for_like_courses": true
-      },
-      "course_snapshots": {}
+      "seo": {
+        "title_template": "NSOU vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "NSOU vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare NSOU and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "NSOU vs Parul University",
+        "secondary_intents": [
+          "NSOU vs Parul University online courses",
+          "NSOU vs Parul University fees",
+          "NSOU vs Parul University admission",
+          "NSOU vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "nsou-vs-smu-online",
+      "university_a": "NSOU",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/nsou-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/nsou-vs-smu-online/",
+      "default_course": "BA",
+      "common_courses": [
+        "BA"
+      ],
+      "seo": {
+        "title_template": "NSOU vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "NSOU vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare NSOU and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "NSOU vs SMU Online",
+        "secondary_intents": [
+          "NSOU vs SMU Online online courses",
+          "NSOU vs SMU Online fees",
+          "NSOU vs SMU Online admission",
+          "NSOU vs SMU Online online degree"
+        ]
+      }
     },
     {
       "comparison_id": "ksou-mysuru-vs-subharti-university",
@@ -28644,6 +29382,122 @@
       }
     },
     {
+      "comparison_id": "ksou-mysuru-vs-uttaranchal-online",
+      "university_a": "KSOU",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/ksou-mysuru-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ksou-mysuru-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "KSOU vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "KSOU vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare KSOU and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "KSOU vs Uttaranchal University",
+        "secondary_intents": [
+          "KSOU vs Uttaranchal University online courses",
+          "KSOU vs Uttaranchal University fees",
+          "KSOU vs Uttaranchal University admission",
+          "KSOU vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "ksou-mysuru-vs-shoolini-online",
+      "university_a": "KSOU",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/ksou-mysuru-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ksou-mysuru-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "KSOU vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "KSOU vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare KSOU and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "KSOU vs Shoolini Online",
+        "secondary_intents": [
+          "KSOU vs Shoolini Online online courses",
+          "KSOU vs Shoolini Online fees",
+          "KSOU vs Shoolini Online admission",
+          "KSOU vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "ksou-mysuru-vs-parul-online",
+      "university_a": "KSOU",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/ksou-mysuru-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ksou-mysuru-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "M.Com",
+        "M.Sc",
+        "MA",
+        "MBA",
+        "MCA",
+        "MSW"
+      ],
+      "seo": {
+        "title_template": "KSOU vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "KSOU vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare KSOU and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "KSOU vs Parul University",
+        "secondary_intents": [
+          "KSOU vs Parul University online courses",
+          "KSOU vs Parul University fees",
+          "KSOU vs Parul University admission",
+          "KSOU vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "ksou-mysuru-vs-smu-online",
+      "university_a": "KSOU",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/ksou-mysuru-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/ksou-mysuru-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BA",
+        "BBA",
+        "M.Com",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "KSOU vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "KSOU vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare KSOU and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "KSOU vs SMU Online",
+        "secondary_intents": [
+          "KSOU vs SMU Online online courses",
+          "KSOU vs SMU Online fees",
+          "KSOU vs SMU Online admission",
+          "KSOU vs SMU Online online degree"
+        ]
+      }
+    },
+    {
       "comparison_id": "subharti-university-vs-baou",
       "university_a": "Subharti University",
       "university_b": "BAOU",
@@ -29086,6 +29940,103 @@
       }
     },
     {
+      "comparison_id": "subharti-university-vs-uttaranchal-online",
+      "university_a": "Subharti University",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/subharti-university-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/subharti-university-vs-uttaranchal-online/",
+      "default_course": "BA",
+      "common_courses": [
+        "BA",
+        "BBA"
+      ],
+      "seo": {
+        "title_template": "Subharti University vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "Subharti University vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Subharti University and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Subharti University vs Uttaranchal University",
+        "secondary_intents": [
+          "Subharti University vs Uttaranchal University online courses",
+          "Subharti University vs Uttaranchal University fees",
+          "Subharti University vs Uttaranchal University admission",
+          "Subharti University vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "subharti-university-vs-shoolini-online",
+      "university_a": "Subharti University",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/subharti-university-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/subharti-university-vs-shoolini-online/",
+      "default_course": "B.Com",
+      "common_courses": [
+        "B.Com",
+        "BBA"
+      ],
+      "seo": {
+        "title_template": "Subharti University vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "Subharti University vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Subharti University and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Subharti University vs Shoolini Online",
+        "secondary_intents": [
+          "Subharti University vs Shoolini Online online courses",
+          "Subharti University vs Shoolini Online fees",
+          "Subharti University vs Shoolini Online admission",
+          "Subharti University vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "subharti-university-vs-parul-online",
+      "university_a": "Subharti University",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/subharti-university-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/subharti-university-vs-parul-online/",
+      "default_course": "BA",
+      "common_courses": [
+        "BA",
+        "BBA"
+      ],
+      "seo": {
+        "title_template": "Subharti University vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "Subharti University vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Subharti University and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Subharti University vs Parul University",
+        "secondary_intents": [
+          "Subharti University vs Parul University online courses",
+          "Subharti University vs Parul University fees",
+          "Subharti University vs Parul University admission",
+          "Subharti University vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "subharti-university-vs-smu-online",
+      "university_a": "Subharti University",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/subharti-university-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/subharti-university-vs-smu-online/",
+      "default_course": "B.Com",
+      "common_courses": [
+        "B.Com",
+        "BA",
+        "BBA"
+      ],
+      "seo": {
+        "title_template": "Subharti University vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "Subharti University vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Subharti University and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Subharti University vs SMU Online",
+        "secondary_intents": [
+          "Subharti University vs SMU Online online courses",
+          "Subharti University vs SMU Online fees",
+          "Subharti University vs SMU Online admission",
+          "Subharti University vs SMU Online online degree"
+        ]
+      }
+    },
+    {
       "comparison_id": "baou-vs-jain-online",
       "university_a": "BAOU",
       "university_b": "JAIN Online",
@@ -29414,6 +30365,382 @@
             "Which university should a working professional choose for MCA?"
           ]
         }
+      }
+    },
+    {
+      "comparison_id": "baou-vs-uttaranchal-online",
+      "university_a": "BAOU",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/baou-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/baou-vs-uttaranchal-online/",
+      "default_course": "BBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "BAOU vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "BAOU vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare BAOU and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "BAOU vs Uttaranchal University",
+        "secondary_intents": [
+          "BAOU vs Uttaranchal University online courses",
+          "BAOU vs Uttaranchal University fees",
+          "BAOU vs Uttaranchal University admission",
+          "BAOU vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "baou-vs-shoolini-online",
+      "university_a": "BAOU",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/baou-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/baou-vs-shoolini-online/",
+      "default_course": "B.Com",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "MA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "BAOU vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "BAOU vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare BAOU and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "BAOU vs Shoolini Online",
+        "secondary_intents": [
+          "BAOU vs Shoolini Online online courses",
+          "BAOU vs Shoolini Online fees",
+          "BAOU vs Shoolini Online admission",
+          "BAOU vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "baou-vs-parul-online",
+      "university_a": "BAOU",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/baou-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/baou-vs-parul-online/",
+      "default_course": "BBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "M.Sc",
+        "MA",
+        "MCA",
+        "MSW"
+      ],
+      "seo": {
+        "title_template": "BAOU vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "BAOU vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare BAOU and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "BAOU vs Parul University",
+        "secondary_intents": [
+          "BAOU vs Parul University online courses",
+          "BAOU vs Parul University fees",
+          "BAOU vs Parul University admission",
+          "BAOU vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "baou-vs-smu-online",
+      "university_a": "BAOU",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/baou-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/baou-vs-smu-online/",
+      "default_course": "B.Com",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "MA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "BAOU vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "BAOU vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare BAOU and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "BAOU vs SMU Online",
+        "secondary_intents": [
+          "BAOU vs SMU Online online courses",
+          "BAOU vs SMU Online fees",
+          "BAOU vs SMU Online admission",
+          "BAOU vs SMU Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "jain-online-vs-uttaranchal-online",
+      "university_a": "JAIN Online",
+      "university_b": "Uttaranchal University",
+      "canonical_university_comparison_url": "/compare/jain-online-vs-uttaranchal-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/jain-online-vs-uttaranchal-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "JAIN Online vs Uttaranchal University – Online University Comparison 2026-27",
+        "course_title_template": "JAIN Online vs Uttaranchal University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare JAIN Online and Uttaranchal University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "JAIN Online vs Uttaranchal University",
+        "secondary_intents": [
+          "JAIN Online vs Uttaranchal University online courses",
+          "JAIN Online vs Uttaranchal University fees",
+          "JAIN Online vs Uttaranchal University admission",
+          "JAIN Online vs Uttaranchal University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "jain-online-vs-shoolini-online",
+      "university_a": "JAIN Online",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/jain-online-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/jain-online-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "BCA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "JAIN Online vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "JAIN Online vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare JAIN Online and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "JAIN Online vs Shoolini Online",
+        "secondary_intents": [
+          "JAIN Online vs Shoolini Online online courses",
+          "JAIN Online vs Shoolini Online fees",
+          "JAIN Online vs Shoolini Online admission",
+          "JAIN Online vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "jain-online-vs-parul-online",
+      "university_a": "JAIN Online",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/jain-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/jain-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "JAIN Online vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "JAIN Online vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare JAIN Online and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "JAIN Online vs Parul University",
+        "secondary_intents": [
+          "JAIN Online vs Parul University online courses",
+          "JAIN Online vs Parul University fees",
+          "JAIN Online vs Parul University admission",
+          "JAIN Online vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "jain-online-vs-smu-online",
+      "university_a": "JAIN Online",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/jain-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/jain-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "JAIN Online vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "JAIN Online vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare JAIN Online and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "JAIN Online vs SMU Online",
+        "secondary_intents": [
+          "JAIN Online vs SMU Online online courses",
+          "JAIN Online vs SMU Online fees",
+          "JAIN Online vs SMU Online admission",
+          "JAIN Online vs SMU Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "uttaranchal-online-vs-shoolini-online",
+      "university_a": "Uttaranchal University",
+      "university_b": "Shoolini Online",
+      "canonical_university_comparison_url": "/compare/uttaranchal-online-vs-shoolini-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/uttaranchal-online-vs-shoolini-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Uttaranchal University vs Shoolini Online – Online University Comparison 2026-27",
+        "course_title_template": "Uttaranchal University vs Shoolini Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Uttaranchal University and Shoolini Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Uttaranchal University vs Shoolini Online",
+        "secondary_intents": [
+          "Uttaranchal University vs Shoolini Online online courses",
+          "Uttaranchal University vs Shoolini Online fees",
+          "Uttaranchal University vs Shoolini Online admission",
+          "Uttaranchal University vs Shoolini Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "uttaranchal-online-vs-parul-online",
+      "university_a": "Uttaranchal University",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/uttaranchal-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/uttaranchal-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Uttaranchal University vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "Uttaranchal University vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Uttaranchal University and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Uttaranchal University vs Parul University",
+        "secondary_intents": [
+          "Uttaranchal University vs Parul University online courses",
+          "Uttaranchal University vs Parul University fees",
+          "Uttaranchal University vs Parul University admission",
+          "Uttaranchal University vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "uttaranchal-online-vs-smu-online",
+      "university_a": "Uttaranchal University",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/uttaranchal-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/uttaranchal-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Uttaranchal University vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "Uttaranchal University vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Uttaranchal University and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Uttaranchal University vs SMU Online",
+        "secondary_intents": [
+          "Uttaranchal University vs SMU Online online courses",
+          "Uttaranchal University vs SMU Online fees",
+          "Uttaranchal University vs SMU Online admission",
+          "Uttaranchal University vs SMU Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "shoolini-online-vs-parul-online",
+      "university_a": "Shoolini Online",
+      "university_b": "Parul University",
+      "canonical_university_comparison_url": "/compare/shoolini-online-vs-parul-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/shoolini-online-vs-parul-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BBA",
+        "BCA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Shoolini Online vs Parul University – Online University Comparison 2026-27",
+        "course_title_template": "Shoolini Online vs Parul University Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Shoolini Online and Parul University for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Shoolini Online vs Parul University",
+        "secondary_intents": [
+          "Shoolini Online vs Parul University online courses",
+          "Shoolini Online vs Parul University fees",
+          "Shoolini Online vs Parul University admission",
+          "Shoolini Online vs Parul University online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "shoolini-online-vs-smu-online",
+      "university_a": "Shoolini Online",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/shoolini-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/shoolini-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "B.Com",
+        "BBA",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Shoolini Online vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "Shoolini Online vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Shoolini Online and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Shoolini Online vs SMU Online",
+        "secondary_intents": [
+          "Shoolini Online vs SMU Online online courses",
+          "Shoolini Online vs SMU Online fees",
+          "Shoolini Online vs SMU Online admission",
+          "Shoolini Online vs SMU Online online degree"
+        ]
+      }
+    },
+    {
+      "comparison_id": "parul-online-vs-smu-online",
+      "university_a": "Parul University",
+      "university_b": "SMU Online",
+      "canonical_university_comparison_url": "/compare/parul-online-vs-smu-online/",
+      "course_comparison_url_pattern": "/compare/{course-slug}/parul-online-vs-smu-online/",
+      "default_course": "MBA",
+      "common_courses": [
+        "BA",
+        "BBA",
+        "M.Com",
+        "MA",
+        "MBA",
+        "MCA"
+      ],
+      "seo": {
+        "title_template": "Parul University vs SMU Online – Online University Comparison 2026-27",
+        "course_title_template": "Parul University vs SMU Online Online {Course} – Fees, Eligibility & Comparison 2026-27",
+        "meta_description_template": "Compare Parul University and SMU Online for online {Course}: fees, eligibility, duration, specialisations, admission, exams, scholarships and career support.",
+        "primary_intent": "Parul University vs SMU Online",
+        "secondary_intents": [
+          "Parul University vs SMU Online online courses",
+          "Parul University vs SMU Online fees",
+          "Parul University vs SMU Online admission",
+          "Parul University vs SMU Online online degree"
+        ]
       }
     }
   ],

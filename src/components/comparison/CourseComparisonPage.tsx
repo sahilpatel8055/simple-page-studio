@@ -48,7 +48,7 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
       ]}
       eyebrow={`${academicSessionLabel} comparison`}
       title={`${family.name} University Comparison`}
-      description={`Compare ${family.offers.length} universities offering ${family.name} on verified fees, eligibility, duration, specialisations, admission, examinations and learner support — side by side, on any screen.`}
+      description={`Compare ${family.offers.length} universities offering ${family.name} on fees, eligibility, duration, specialisations, admission, examinations and learner support — side by side, on any screen.`}
     >
       <div className="space-y-12">
         <section aria-labelledby="how-it-works">
