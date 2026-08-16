@@ -41,8 +41,8 @@ const statusTone: Record<string, string> = {
 };
 
 const statusLabel: Record<string, string> = {
-  verified_official: "Manually researched — official website",
-  verified_regulatory: "Manually researched — regulator source",
+  verified_official: "Verified — official website",
+  verified_regulatory: "Verified — regulator source",
   partial_verification: "Manually researched — official website",
   conflicting: "Sources conflict",
   outdated: "Being re-checked",
