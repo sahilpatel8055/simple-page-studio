@@ -254,7 +254,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
               { label: "Total programme fee", a: feeLabel(sa, { universitySlug: uniA?.slug, course }), b: feeLabel(sb, { universitySlug: uniB?.slug, course }) },
               { label: "Fee status", a: val(sa?.fee_status), b: val(sb?.fee_status) },
               { label: "Semesters", a: val(sa?.semesters), b: val(sb?.semesters) },
-              { label: "Last verified", a: val(sa?.last_verified), b: val(sb?.last_verified) },
+              { label: "Last updated", a: val(sa?.last_verified), b: val(sb?.last_verified) },
             ]}
           />
         ) : (

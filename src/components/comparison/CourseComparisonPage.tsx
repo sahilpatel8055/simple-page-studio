@@ -32,7 +32,7 @@ export function courseComparisonFaqs(family: CourseFamily): FaqItem[] {
     },
     {
       question: "How current is this comparison?",
-      answer: `Figures reflect the ${academicSessionLabel} session as last verified. Fees, admission rules, curriculum and support can change between sessions, so re-check the official page linked from each programme before applying.`,
+      answer: `Figures reflect the ${academicSessionLabel} session. Fees, admission rules, curriculum and support can change between sessions, so re-check the official page linked from each programme before applying.`,
     },
   ];
 }
@@ -115,7 +115,7 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
             <li>Missing data is shown as "Not published" and is never interpreted as a negative.</li>
             <li>This is a factual comparison of published data, not a universal ranking.</li>
             <li>
-              Last verified across the compared programmes:{" "}
+              Last updated across the compared programmes:{" "}
               <span className="font-semibold text-foreground">{family.lastVerified ?? "recently"}</span> ({academicSessionLabel} session).
             </li>
           </ul>

@@ -108,12 +108,12 @@ export function PubUniversityResearch({ slug }: { slug: string }) {
       {u.career.university_level_summary && <Prose>{u.career.university_level_summary}</Prose>}
 
       <div>
-        <h3 className="font-display text-base font-bold text-foreground">Sources & last verified</h3>
+        <h3 className="font-display text-base font-bold text-foreground">Official university links</h3>
         <div className="mt-2">
-          <SourceList sources={{ ...u.sources, official_website: u.hero.official_website }} />
+          <SourceList sources={{ official_website: u.hero.official_website }} />
         </div>
         <p className="mt-2 text-xs text-muted-foreground">
-          Session {PUB_SESSION} · last verified {u.last_verified}.
+          {PUB_SESSION} session · Last updated: {lastUpdatedLabel(u.last_verified) ?? "recently"}.
         </p>
       </div>
     </div>

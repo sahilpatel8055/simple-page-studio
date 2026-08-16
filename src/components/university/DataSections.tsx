@@ -77,7 +77,7 @@ export function FeeTable({ fees, caption }: { fees: FeeRecord | undefined; capti
       <div className="flex flex-wrap items-center gap-2">
         <VerificationChip status={fees.fee_verification_status ?? fees.verification_status} />
         {fees.last_verified && (
-          <span className="text-xs text-muted-foreground">Last verified {fees.last_verified}</span>
+          <span className="text-xs text-muted-foreground">Last updated {fees.last_verified}</span>
         )}
       </div>
       <DataTable

@@ -48,7 +48,7 @@ export function WhoMayConsiderUniversity({ shortName }: { shortName: string }) {
     <div className="space-y-3">
       <p>{section.content}</p>
       <p className="text-sm text-muted-foreground">
-        Use the verified programme pages for {shortName} to check availability, fee structure and
+        Use the programme pages for {shortName} to check availability, fee structure and
         admission requirements before deciding.
       </p>
     </div>
