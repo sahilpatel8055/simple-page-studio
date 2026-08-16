@@ -20004,6 +20004,806 @@
         "Fee figures are withheld until the official Parul University Online fee document for 2026-27 is verified.",
         "Parul University is a Gujarat-based private university with one of the largest online programme baskets in western India."
       ]
+    },
+    {
+      "university_name": "Sikkim Manipal University (Online)",
+      "short_name": "SMU Online",
+      "slug": "smu-online",
+      "mode": "Online",
+      "basic_information": {
+        "official_website": "https://smu.edu.in/",
+        "official_online_portal": "https://www.onlinemanipal.com/sikkim-manipal-university",
+        "official_admission_portal": "https://www.onlinemanipal.com/sikkim-manipal-university",
+        "location": "Gangtok, Sikkim",
+        "state": "Sikkim",
+        "established_year": null,
+        "official_contact": null,
+        "official_prospectus_url": null,
+        "official_admission_notification_url": null
+      },
+      "recognition": {
+        "UGC_status": "UGC-entitled online degrees",
+        "UGC_DEB_status": "Online programmes offered through the UGC-recognised Centre for Online Education",
+        "NAAC_status": "NAAC A+ accredited",
+        "NIRF_information": null,
+        "accreditation": "WES (World Education Services) evaluated"
+      },
+      "admissions": {
+        "admission_start_date": null,
+        "admission_end_date": null,
+        "next_expected_intake": "July 2026",
+        "admission_cycle": "2026-27",
+        "application_fee": null,
+        "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+        "admission_steps": [],
+        "required_documents": [],
+        "selection_process": null,
+        "entrance_exam": null,
+        "direct_admission": null,
+        "official_admission_notification": null
+      },
+      "scholarships": [],
+      "programmes": [
+        {
+          "programme_name": "Bachelor of Arts (BA)",
+          "official_programme_name": "Bachelor of Arts (BA)",
+          "slug": "bachelor-of-arts-ba",
+          "degree": "BA",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "10+2 or equivalent qualification",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [
+            {
+              "specialisation_name": "English",
+              "slug": "english",
+              "description": null
+            },
+            {
+              "specialisation_name": "Sociology",
+              "slug": "sociology",
+              "description": null
+            },
+            {
+              "specialisation_name": "Political Science",
+              "slug": "political-science",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": 75000,
+            "discounted": null,
+            "annual": 25000,
+            "semester": 12500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 75000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Bachelor of Commerce (B.Com)",
+          "official_programme_name": "Bachelor of Commerce (B.Com)",
+          "slug": "bachelor-of-commerce-b-com",
+          "degree": "B.Com",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "10+2 or equivalent qualification",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 75000,
+            "discounted": null,
+            "annual": 25000,
+            "semester": 12500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 75000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Bachelor of Business Administration (BBA)",
+          "official_programme_name": "Bachelor of Business Administration (BBA)",
+          "slug": "bachelor-of-business-administration-bba",
+          "degree": "BBA",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "10+2 or equivalent qualification",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 90000,
+            "discounted": null,
+            "annual": 30000,
+            "semester": 15000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 90000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in English",
+          "official_programme_name": "Master of Arts in English",
+          "slug": "master-of-arts-in-english",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university (10+2+3)",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 75000,
+            "discounted": null,
+            "annual": 37500,
+            "semester": 18750,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 75000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in Sociology",
+          "official_programme_name": "Master of Arts in Sociology",
+          "slug": "master-of-arts-in-sociology",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university (10+2+3)",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 75000,
+            "discounted": null,
+            "annual": 37500,
+            "semester": 18750,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 75000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in Political Science",
+          "official_programme_name": "Master of Arts in Political Science",
+          "slug": "master-of-arts-in-political-science",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university (10+2+3)",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 75000,
+            "discounted": null,
+            "annual": 37500,
+            "semester": 18750,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 75000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Commerce (M.Com)",
+          "official_programme_name": "Master of Commerce (M.Com)",
+          "slug": "master-of-commerce-m-com",
+          "degree": "M.Com",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university (10+2+3)",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 75000,
+            "discounted": null,
+            "annual": 37500,
+            "semester": 18750,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 75000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Computer Applications (MCA)",
+          "official_programme_name": "Master of Computer Applications (MCA)",
+          "slug": "master-of-computer-applications-mca",
+          "degree": "MCA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university (10+2+3)",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 110000,
+            "discounted": null,
+            "annual": 55000,
+            "semester": 27500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 110000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Business Administration (MBA)",
+          "official_programme_name": "Master of Business Administration (MBA)",
+          "slug": "master-of-business-administration-mba",
+          "degree": "MBA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university (10+2+3)",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 120000,
+            "discounted": null,
+            "annual": 60000,
+            "semester": 30000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": 500,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 120000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University — Online Manipal official programme page",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee and total course fee as published on the official Online Manipal SMU programme page; ₹500 non-refundable application fee.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "fee_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "admission_url": "https://www.onlinemanipal.com/sikkim-manipal-university",
+            "prospectus_url": null,
+            "source_type": "official_programme_page",
+            "source_title": "Sikkim Manipal University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        }
+      ],
+      "seo": {
+        "university_slug": "manipal-university-jaipur",
+        "primary_keywords": [
+          "Online Manipal online courses",
+          "Online Manipal admission",
+          "Online Manipal fees"
+        ],
+        "secondary_keywords": [
+          "Online Manipal online degree",
+          "Online Manipal eligibility"
+        ],
+        "long_tail_keywords": [
+          "Online Manipal online MBA fees 2026",
+          "Online Manipal online admission 2026"
+        ],
+        "admission_keywords": [
+          "Online Manipal admission 2026"
+        ],
+        "fee_keywords": [
+          "Online Manipal fees 2026"
+        ],
+        "course_keywords": [
+          "Online Manipal courses"
+        ],
+        "comparison_keywords": [
+          "Online Manipal vs online university"
+        ]
+      },
+      "url_architecture": {
+        "university": "/universities/manipal-university-jaipur",
+        "courses": "/universities/manipal-university-jaipur/courses/{course-slug}",
+        "admission": "/universities/manipal-university-jaipur/admission",
+        "fees": "/universities/manipal-university-jaipur/fees",
+        "scholarships": "/universities/manipal-university-jaipur/scholarships",
+        "reviews": "/universities/manipal-university-jaipur/reviews"
+      },
+      "data_status": "verified_official",
+      "last_verified": "2026-08-16",
+      "notes": [
+        "Sikkim Manipal University delivers its online degrees through the Centre for Online Education on the Online Manipal platform."
+      ]
     }
   ],
   "audit": {
