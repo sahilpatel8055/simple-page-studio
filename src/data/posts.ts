@@ -56,11 +56,14 @@ const REVIEWER_ROLE = "Education Research Lead, AVEDU";
 const base = { reviewer: REVIEWER, reviewerRole: REVIEWER_ROLE };
 
 import { courseGuidePosts } from "./posts-course-guides";
+import { deepMasterPosts } from "./posts-deep-masters";
 import { universityBlogPosts } from "./university-blogs";
 
 export const postContent: Record<string, PostContent> = {
   ...courseGuidePosts,
+  ...deepMasterPosts,
   ...universityBlogPosts,
+
 
   /* ------------------------------- blogs -------------------------------- */
 
