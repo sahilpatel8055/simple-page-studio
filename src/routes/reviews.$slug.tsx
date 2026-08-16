@@ -53,7 +53,6 @@ function Page() {
     >
       <div className="surface-card flex flex-wrap items-center gap-4 p-5">
         <span className="text-base font-bold text-foreground">{item.rating}/5</span>
-        {item.verified && <Chip tone="success">Verified learner</Chip>}
         <span className="text-sm text-muted-foreground">
           Shared by {item.author} · batch {item.batch}
         </span>
