@@ -236,6 +236,49 @@ export const universityFeeTables: Record<string, UniversityFeeTable> = {
       },
     ],
   },
+
+  nsou: {
+    note:
+      "Programme fees exactly as published in the Netaji Subhas Open University fee structure (wbnsou.ac.in). Year-wise amounts are the university's own instalments; the programme fee is the university's stated total.",
+    rows: [
+      { course: "BA (Hons.)", specialisation: "Bengali, English, History, Political Science, Public Administration, Sociology, Economics, Education", fee: "₹3,300 / year · ₹9,900 total", duration: "3 Years" },
+      { course: "B.Com (Hons.)", fee: "₹3,300 / year · ₹9,900 total", duration: "3 Years" },
+      { course: "B.Sc (Hons.)", specialisation: "Mathematics", fee: "₹4,600 / year · ₹13,800 total", duration: "3 Years" },
+      { course: "B.Sc (Hons.)", specialisation: "Physics, Chemistry, Zoology", fee: "₹5,200 / year · ₹15,600 total", duration: "3 Years" },
+      { course: "B.Sc (Hons.)", specialisation: "Botany, Geography", fee: "₹5,000 / year · ₹15,000 total", duration: "3 Years" },
+      { course: "B.Lib.I.Sc", fee: "₹5,000 total", duration: "1 Year" },
+      { course: "B.Ed Special Education (ODL)", specialisation: "ID / HI / VI", fee: "₹20,000 / year · ₹40,000 total", duration: "2 Years" },
+      { course: "MA", specialisation: "Bengali, English, English Language Teaching, History, Political Science, Public Administration, Education, Economics", fee: "₹3,800 / year · ₹7,600 total", duration: "2 Years" },
+      { course: "MA", specialisation: "Journalism and Mass Communication", fee: "₹13,000 / year · ₹26,000 total", duration: "2 Years" },
+      { course: "M.Sc", specialisation: "Mathematics", fee: "₹5,200 / year · ₹10,400 total", duration: "2 Years" },
+      { course: "M.Sc", specialisation: "Zoology, Geography, Environmental Science", fee: "₹18,000 / year · ₹36,000 total", duration: "2 Years" },
+      { course: "M.Com", fee: "₹3,800 / year · ₹7,600 total", duration: "2 Years" },
+      { course: "MSW", fee: "₹5,200 / year · ₹10,400 total", duration: "2 Years" },
+      { course: "M.Lib.I.Sc", fee: "₹10,000 total", duration: "1 Year" },
+      { course: "M.Ed Special Education (ODL)", specialisation: "ID / HI", fee: "₹17,000 / semester · ₹85,000 total", duration: "5 Semesters" },
+      { course: "MBA", fee: "₹25,000 / semester · ₹1,00,000 total", duration: "2 Years" },
+    ],
+  },
+
+  baou: {
+    note: "Course-wise fees as published by the university. Amounts are the annual programme fee unless the university states otherwise.",
+    rows: [
+      { course: "BA", fee: "₹3,200", duration: "3 Years" },
+      { course: "B.Com", fee: "₹3,200", duration: "3 Years" },
+      { course: "B.Sc", fee: "₹3,200", duration: "3 Years" },
+      { course: "BLISc", fee: "₹5,300", duration: "1 Year" },
+      { course: "B.Ed", fee: "₹40,000", duration: "2 Years" },
+      { course: "MA", specialisation: "History, Economics, Political Science, Public Administration, Sociology, English, Telugu, Hindi, Urdu", fee: "₹5,300", duration: "2 Years" },
+      { course: "MA", specialisation: "Journalism & Mass Communication", fee: "₹7,800", duration: "2 Years" },
+      { course: "M.Com", fee: "₹7,800", duration: "2 Years" },
+      { course: "M.Sc", specialisation: "Psychology, Botany, Physics, Zoology, Environmental Science", fee: "₹15,300", duration: "2 Years" },
+      { course: "M.Sc", specialisation: "Mathematics", fee: "₹7,800", duration: "2 Years" },
+      { course: "M.Sc", specialisation: "Chemistry", fee: "₹18,300", duration: "2 Years" },
+      { course: "MLISc", fee: "₹10,300", duration: "1 Year" },
+      { course: "MBA", fee: "₹15,300", duration: "2 Years" },
+      { course: "MBA", specialisation: "Hospital & Healthcare Management", fee: "₹1,20,000", duration: "2 Years" },
+    ],
+  },
 };
 
 export const feeTableFor = (slug: string): UniversityFeeTable | undefined => universityFeeTables[slug];
