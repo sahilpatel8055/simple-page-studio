@@ -85,10 +85,9 @@ export function OfficialDocumentsAndSources({
       )}
       {(research.length > 0 || gaps.length > 0) && (
         <VerificationNote>
-          <p className="font-semibold text-foreground">Awaiting official verification</p>
+          <p className="font-semibold text-foreground">Confirm these directly with the university</p>
           <p className="mt-1">
-            These details are not published on this page until they are confirmed against the current
-            official source for the 2026-27 session:
+            The university shares these details directly with applicants for the 2026-27 session:
           </p>
           <ul className="mt-2 grid gap-1 sm:grid-cols-2">
             {Array.from(new Set([...research, ...gaps])).map((item) => (

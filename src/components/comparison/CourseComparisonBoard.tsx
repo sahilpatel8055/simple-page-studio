@@ -57,17 +57,6 @@ function buildGroups(): Group[] {
         { label: "Registration / admission fee", value: (o) => money(o.fees.registration) },
         { label: "Examination fee", value: (o) => money(o.fees.examination) },
         { label: "Application fee", value: (o) => money(o.fees.application) },
-        {
-          label: "Fee verification",
-          value: (o) =>
-            o.fees.verified ? (
-              <span className="inline-flex items-center gap-1 text-emerald-600 dark:text-emerald-400">
-                <Check className="h-3.5 w-3.5" aria-hidden /> Verified from official source
-              </span>
-            ) : (
-              <span className="text-muted-foreground">Awaiting official verification</span>
-            ),
-        },
       ],
     },
     {
@@ -123,7 +112,7 @@ function buildGroups(): Group[] {
               text(null)
             ),
         },
-        { label: "Last verified", value: (o) => text(o.lastVerified) },
+        { label: "Last updated", value: (o) => text(o.lastVerified) },
         {
           label: "Programme page",
           value: (o) => (

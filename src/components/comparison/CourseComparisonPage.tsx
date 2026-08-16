@@ -116,7 +116,7 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
             <li>This is a factual comparison of published data, not a universal ranking.</li>
             <li>
               Last verified across the compared programmes:{" "}
-              <span className="font-semibold text-foreground">{family.lastVerified ?? "Not published"}</span> ({academicSessionLabel} session).
+              <span className="font-semibold text-foreground">{family.lastVerified ?? "recently"}</span> ({academicSessionLabel} session).
             </li>
           </ul>
         </section>

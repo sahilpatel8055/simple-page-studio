@@ -395,7 +395,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
 
       <AuthorBox />
 
-      <ContentSection title="Sources & Last Verified">
+      <ContentSection title="Helpful official links">
         <References
           items={[
             ...(sa?.official_source?.programme_url
@@ -407,7 +407,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
             { label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" },
           ]}
         />
-        <p className="mt-2 text-sm text-muted-foreground">Dataset last generated: 12 August 2026 (session 2026-27).</p>
+        <p className="mt-2 text-sm text-muted-foreground">Last updated: August 2026 (2026-27 session).</p>
       </ContentSection>
     </DetailLayout>
   );
