@@ -487,5 +487,6 @@ export function getUniversityCurriculum(
   courseKey: string | undefined,
 ): UniversityCurriculum | undefined {
   if (!courseKey) return undefined;
-  return universityCurricula[`${universitySlug}::${courseKey}`];
+  const key = `${universitySlug}::${courseKey}`;
+  return universityCurricula[key] ?? pdfCurricula[key] ?? blogCurricula[key];
 }
