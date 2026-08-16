@@ -19,6 +19,9 @@ export interface UniversityCurriculum {
   verifiedOn: string;
 }
 
+import { pdfCurricula } from "./university-curriculum-pdf";
+import { blogCurricula } from "./university-curriculum-blogs";
+
 const V = "2026-08-14";
 const MANUAL = "Manually researched — source: official university website";
 
@@ -487,5 +490,6 @@ export function getUniversityCurriculum(
   courseKey: string | undefined,
 ): UniversityCurriculum | undefined {
   if (!courseKey) return undefined;
-  return universityCurricula[`${universitySlug}::${courseKey}`];
+  const key = `${universitySlug}::${courseKey}`;
+  return universityCurricula[key] ?? pdfCurricula[key] ?? blogCurricula[key];
 }
