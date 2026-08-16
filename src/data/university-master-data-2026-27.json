@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "dataset_name": "OnlineUniversityGuide.in University Master Data",
   "academic_session": "2026-27",
-  "last_master_verification": "2026-08-15",
+  "last_master_verification": "2026-08-16",
   "currency": "INR",
   "data_policy": {
     "never_invent_fee": true,
@@ -9839,6 +9839,2112 @@
           "data_status": "verified_official",
           "last_verified": "2026-08-15",
           "notes": []
+        },
+        {
+          "programme_name": "B.Com. (Hons.)",
+          "official_programme_name": "B.Com. (Hons.)",
+          "slug": "b-com-hons",
+          "degree": "B.Com",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 9900,
+            "discounted": null,
+            "annual": 3300,
+            "semester": 1650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 9900,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "B.Sc. in Mathematics (Hons.)",
+          "official_programme_name": "B.Sc. in Mathematics (Hons.)",
+          "slug": "b-sc-in-mathematics-hons",
+          "degree": "B.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 13800,
+            "discounted": null,
+            "annual": 4600,
+            "semester": 2300,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 13800,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "B.Sc. in Physics (Hons.)",
+          "official_programme_name": "B.Sc. in Physics (Hons.)",
+          "slug": "b-sc-in-physics-hons",
+          "degree": "B.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 15600,
+            "discounted": null,
+            "annual": 5200,
+            "semester": 2600,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 15600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "B.Sc. in Chemistry (Hons.)",
+          "official_programme_name": "B.Sc. in Chemistry (Hons.)",
+          "slug": "b-sc-in-chemistry-hons",
+          "degree": "B.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 15600,
+            "discounted": null,
+            "annual": 5200,
+            "semester": 2600,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 15600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "B.Sc. in Zoology (Hons.)",
+          "official_programme_name": "B.Sc. in Zoology (Hons.)",
+          "slug": "b-sc-in-zoology-hons",
+          "degree": "B.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 15600,
+            "discounted": null,
+            "annual": 5200,
+            "semester": 2600,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 15600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "B.Sc. in Botany (Hons.)",
+          "official_programme_name": "B.Sc. in Botany (Hons.)",
+          "slug": "b-sc-in-botany-hons",
+          "degree": "B.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 15000,
+            "discounted": null,
+            "annual": 5000,
+            "semester": 2500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 15000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "B.Sc. in Geography (Hons.)",
+          "official_programme_name": "B.Sc. in Geography (Hons.)",
+          "slug": "b-sc-in-geography-hons",
+          "degree": "B.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 15000,
+            "discounted": null,
+            "annual": 5000,
+            "semester": 2500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 15000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Bachelor of Library and Information Science (B.Lib.I.Sc.)",
+          "official_programme_name": "Bachelor of Library and Information Science (B.Lib.I.Sc.)",
+          "slug": "b-lib-i-sc",
+          "degree": "B.Lib.I.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "1 year",
+          "minimum_duration": "1 year",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 5000,
+            "discounted": null,
+            "annual": 5000,
+            "semester": 2500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 5000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "B.Ed. Special Education – ODL (ID/HI/VI)",
+          "official_programme_name": "B.Ed. Special Education – ODL (ID/HI/VI)",
+          "slug": "b-ed-special-education-odl",
+          "degree": "B.Ed",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 40000,
+            "discounted": null,
+            "annual": 20000,
+            "semester": 10000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 40000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in Bengali",
+          "official_programme_name": "M.A. in Bengali",
+          "slug": "m-a-in-bengali",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in English",
+          "official_programme_name": "M.A. in English",
+          "slug": "m-a-in-english",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in English Language Teaching",
+          "official_programme_name": "M.A. in English Language Teaching",
+          "slug": "m-a-in-english-language-teaching",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in Journalism and Mass Communication",
+          "official_programme_name": "M.A. in Journalism and Mass Communication",
+          "slug": "m-a-in-journalism-and-mass-communication",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 26000,
+            "discounted": null,
+            "annual": 13000,
+            "semester": 6500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 26000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in History",
+          "official_programme_name": "M.A. in History",
+          "slug": "m-a-in-history",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in Political Science",
+          "official_programme_name": "M.A. in Political Science",
+          "slug": "m-a-in-political-science",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in Public Administration",
+          "official_programme_name": "M.A. in Public Administration",
+          "slug": "m-a-in-public-administration",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in Education",
+          "official_programme_name": "M.A. in Education",
+          "slug": "m-a-in-education",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.A. in Economics",
+          "official_programme_name": "M.A. in Economics",
+          "slug": "m-a-in-economics",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.Sc. in Mathematics",
+          "official_programme_name": "M.Sc. in Mathematics",
+          "slug": "m-sc-in-mathematics",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10400,
+            "discounted": null,
+            "annual": 5200,
+            "semester": 2600,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10400,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.Sc. in Zoology",
+          "official_programme_name": "M.Sc. in Zoology",
+          "slug": "m-sc-in-zoology",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 36000,
+            "discounted": null,
+            "annual": 18000,
+            "semester": 9000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 36000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.Sc. in Geography",
+          "official_programme_name": "M.Sc. in Geography",
+          "slug": "m-sc-in-geography",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 36000,
+            "discounted": null,
+            "annual": 18000,
+            "semester": 9000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 36000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "M.Sc. in Environmental Science",
+          "official_programme_name": "M.Sc. in Environmental Science",
+          "slug": "m-sc-in-environmental-science",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 36000,
+            "discounted": null,
+            "annual": 18000,
+            "semester": 9000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 36000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Commerce (M.Com.)",
+          "official_programme_name": "Master of Commerce (M.Com.)",
+          "slug": "m-com",
+          "degree": "M.Com",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 7600,
+            "discounted": null,
+            "annual": 3800,
+            "semester": 1900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 7600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Social Work (MSW)",
+          "official_programme_name": "Master of Social Work (MSW)",
+          "slug": "msw",
+          "degree": "MSW",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10400,
+            "discounted": null,
+            "annual": 5200,
+            "semester": 2600,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10400,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Library and Information Science (M.Lib.I.Sc.)",
+          "official_programme_name": "Master of Library and Information Science (M.Lib.I.Sc.)",
+          "slug": "m-lib-i-sc",
+          "degree": "M.Lib.I.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "1 year",
+          "minimum_duration": "1 year",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10000,
+            "discounted": null,
+            "annual": 10000,
+            "semester": 5000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Education Special Education – ODL (ID/HI)",
+          "official_programme_name": "Master of Education Special Education – ODL (ID/HI)",
+          "slug": "m-ed-special-education-odl",
+          "degree": "M.Ed",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2.5 years",
+          "minimum_duration": "2.5 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 85000,
+            "discounted": null,
+            "annual": 34000,
+            "semester": 17000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 85000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Business Administration (MBA)",
+          "official_programme_name": "Master of Business Administration (MBA)",
+          "slug": "master-of-business-administration-mba",
+          "degree": "MBA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 100000,
+            "discounted": null,
+            "annual": 50000,
+            "semester": 25000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 100000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "NSOU official fee structure PDF (Netaji Subhas Open University, wbnsou.ac.in)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "fee_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "admission_url": "https://www.wbnsou.ac.in/student_zone/admissions/admission_information/admission_information_2026.shtml",
+            "prospectus_url": null,
+            "source_type": "official_admission_page",
+            "source_title": "NSOU Admission Information 2026"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
         }
       ],
       "seo": {
@@ -13181,6 +15287,1566 @@
           },
           "data_status": "fee_pending_verification",
           "last_verified": "2026-08-10",
+          "notes": []
+        },
+        {
+          "programme_name": "Bachelor of Arts (BA)",
+          "official_programme_name": "Bachelor of Arts (BA)",
+          "slug": "bachelor-of-arts-ba",
+          "degree": "BA",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 9600,
+            "discounted": null,
+            "annual": 3200,
+            "semester": 1600,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 9600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Bachelor of Science (B.Sc.)",
+          "official_programme_name": "Bachelor of Science (B.Sc.)",
+          "slug": "bachelor-of-science-b-sc",
+          "degree": "B.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "3 years",
+          "minimum_duration": "3 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 9600,
+            "discounted": null,
+            "annual": 3200,
+            "semester": 1600,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 9600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Bachelor of Library and Information Science (BLISc)",
+          "official_programme_name": "Bachelor of Library and Information Science (BLISc)",
+          "slug": "bachelor-of-library-and-information-science-blisc",
+          "degree": "B.Lib.I.Sc",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "1 year",
+          "minimum_duration": "1 year",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 5300,
+            "discounted": null,
+            "annual": 5300,
+            "semester": 2650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 5300,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Bachelor of Education (B.Ed.)",
+          "official_programme_name": "Bachelor of Education (B.Ed.)",
+          "slug": "bachelor-of-education-b-ed",
+          "degree": "B.Ed",
+          "level": "UG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "10+2 or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 40000,
+            "discounted": null,
+            "annual": 40000,
+            "semester": 20000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 40000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in History",
+          "official_programme_name": "Master of Arts in History",
+          "slug": "master-of-arts-in-history",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10600,
+            "discounted": null,
+            "annual": 5300,
+            "semester": 2650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in Economics",
+          "official_programme_name": "Master of Arts in Economics",
+          "slug": "master-of-arts-in-economics",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10600,
+            "discounted": null,
+            "annual": 5300,
+            "semester": 2650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in Political Science",
+          "official_programme_name": "Master of Arts in Political Science",
+          "slug": "master-of-arts-in-political-science",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10600,
+            "discounted": null,
+            "annual": 5300,
+            "semester": 2650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in Public Administration",
+          "official_programme_name": "Master of Arts in Public Administration",
+          "slug": "master-of-arts-in-public-administration",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10600,
+            "discounted": null,
+            "annual": 5300,
+            "semester": 2650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in Telugu",
+          "official_programme_name": "Master of Arts in Telugu",
+          "slug": "master-of-arts-in-telugu",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10600,
+            "discounted": null,
+            "annual": 5300,
+            "semester": 2650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Arts in Urdu",
+          "official_programme_name": "Master of Arts in Urdu",
+          "slug": "master-of-arts-in-urdu",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 10600,
+            "discounted": null,
+            "annual": 5300,
+            "semester": 2650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 10600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Commerce (M.Com.)",
+          "official_programme_name": "Master of Commerce (M.Com.)",
+          "slug": "master-of-commerce-m-com",
+          "degree": "M.Com",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 15600,
+            "discounted": null,
+            "annual": 7800,
+            "semester": 3900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 15600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Science in Psychology",
+          "official_programme_name": "Master of Science in Psychology",
+          "slug": "master-of-science-in-psychology",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 30600,
+            "discounted": null,
+            "annual": 15300,
+            "semester": 7650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 30600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Science in Botany",
+          "official_programme_name": "Master of Science in Botany",
+          "slug": "master-of-science-in-botany",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 30600,
+            "discounted": null,
+            "annual": 15300,
+            "semester": 7650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 30600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Science in Physics",
+          "official_programme_name": "Master of Science in Physics",
+          "slug": "master-of-science-in-physics",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 30600,
+            "discounted": null,
+            "annual": 15300,
+            "semester": 7650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 30600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Science in Zoology",
+          "official_programme_name": "Master of Science in Zoology",
+          "slug": "master-of-science-in-zoology",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 30600,
+            "discounted": null,
+            "annual": 15300,
+            "semester": 7650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 30600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Science in Mathematics",
+          "official_programme_name": "Master of Science in Mathematics",
+          "slug": "master-of-science-in-mathematics",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 15600,
+            "discounted": null,
+            "annual": 7800,
+            "semester": 3900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 15600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Science in Environmental Science",
+          "official_programme_name": "Master of Science in Environmental Science",
+          "slug": "master-of-science-in-environmental-science",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 30600,
+            "discounted": null,
+            "annual": 15300,
+            "semester": 7650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 30600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Science in Chemistry",
+          "official_programme_name": "Master of Science in Chemistry",
+          "slug": "master-of-science-in-chemistry",
+          "degree": "M.Sc",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 36600,
+            "discounted": null,
+            "annual": 18300,
+            "semester": 9150,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 36600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Business Administration (MBA)",
+          "official_programme_name": "Master of Business Administration (MBA)",
+          "slug": "master-of-business-administration-mba",
+          "degree": "MBA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 30600,
+            "discounted": null,
+            "annual": 15300,
+            "semester": 7650,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 30600,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
+          "notes": []
+        },
+        {
+          "programme_name": "Master of Business Administration (Hospital & Healthcare Management)",
+          "official_programme_name": "Master of Business Administration (Hospital & Healthcare Management)",
+          "slug": "master-of-business-administration-hospital-healthcare-management",
+          "degree": "MBA",
+          "level": "PG",
+          "mode": "ODL",
+          "duration": "2 years",
+          "minimum_duration": "2 years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree or equivalent",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": null
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 240000,
+            "discounted": null,
+            "annual": 120000,
+            "semester": 60000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 240000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "source_type": "official_programme_page",
+            "source_title": "Official programme/admission source; current fee not independently verified",
+            "last_verified": "2026-08-16",
+            "verification_status": "verified_official",
+            "fee_source_note": "BAOU published course fee list (annual programme fee); programme total is the annual fee across the standard duration.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "July 2026",
+            "application_status": null,
+            "application_url": null,
+            "steps": [],
+            "documents": []
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "fee_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "admission_url": "https://baou.edu.in/newsannouncement/public-notice-regarding-precautions-to-be-taken-by-the-students-before-enrolling-in-programmes-",
+            "prospectus_url": null,
+            "source_type": "official_university_page",
+            "source_title": "BAOU UGC / Mandatory Disclosure"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-16",
           "notes": []
         }
       ],
