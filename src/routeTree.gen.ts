@@ -42,6 +42,9 @@ import { Route as NewsIndexRouteImport } from './routes/news.index'
 import { Route as NewsSlugRouteImport } from './routes/news.$slug'
 import { Route as ReviewsSlugRouteImport } from './routes/reviews.$slug'
 import { Route as ScholarshipsSlugRouteImport } from './routes/scholarships.$slug'
+import { Route as ToolsIndexRouteImport } from './routes/tools.index'
+import { Route as ToolsFeeEmiCalculatorRouteImport } from './routes/tools.fee-emi-calculator'
+import { Route as ToolsSalaryAfterCourseRouteImport } from './routes/tools.salary-after-course'
 import { Route as UniversitiesIndexRouteImport } from './routes/universities.index'
 import { Route as UniversitiesSlugRouteImport } from './routes/universities.$slug'
 import { Route as CompareCoursePairRouteImport } from './routes/compare.$course.$pair'
@@ -223,6 +226,21 @@ const ScholarshipsSlugRoute = ScholarshipsSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => ScholarshipsRoute,
 } as any)
+const ToolsIndexRoute = ToolsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsFeeEmiCalculatorRoute = ToolsFeeEmiCalculatorRouteImport.update({
+  id: '/fee-emi-calculator',
+  path: '/fee-emi-calculator',
+  getParentRoute: () => ToolsRoute,
+} as any)
+const ToolsSalaryAfterCourseRoute = ToolsSalaryAfterCourseRouteImport.update({
+  id: '/salary-after-course',
+  path: '/salary-after-course',
+  getParentRoute: () => ToolsRoute,
+} as any)
 const UniversitiesIndexRoute = UniversitiesIndexRouteImport.update({
   id: '/',
   path: '/',
@@ -327,7 +345,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tags': typeof TagsRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
-  '/tools': typeof ToolsRoute
+  '/tools': typeof ToolsRouteWithChildren
   '/universities': typeof UniversitiesRouteWithChildren
   '/blogs/$slug': typeof BlogsSlugRoute
   '/career/$slug': typeof CareerSlugRoute
@@ -337,11 +355,14 @@ export interface FileRoutesByFullPath {
   '/news/$slug': typeof NewsSlugRoute
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
+  '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
+  '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
   '/compare/': typeof CompareIndexRoute
   '/courses/': typeof CoursesIndexRoute
   '/news/': typeof NewsIndexRoute
+  '/tools/': typeof ToolsIndexRoute
   '/universities/': typeof UniversitiesIndexRoute
   '/compare/$course/$pair': typeof CompareCoursePairRoute
   '/courses/$course/$section': typeof CoursesCourseSectionRoute
@@ -373,7 +394,6 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tags': typeof TagsRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
-  '/tools': typeof ToolsRoute
   '/blogs/$slug': typeof BlogsSlugRoute
   '/career/$slug': typeof CareerSlugRoute
   '/compare/$comparison': typeof CompareComparisonRoute
@@ -381,10 +401,13 @@ export interface FileRoutesByTo {
   '/news/$slug': typeof NewsSlugRoute
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
+  '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
+  '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/blogs': typeof BlogsIndexRoute
   '/compare': typeof CompareIndexRoute
   '/courses': typeof CoursesIndexRoute
   '/news': typeof NewsIndexRoute
+  '/tools': typeof ToolsIndexRoute
   '/universities': typeof UniversitiesIndexRoute
   '/compare/$course/$pair': typeof CompareCoursePairRoute
   '/courses/$course/$section': typeof CoursesCourseSectionRoute
@@ -421,7 +444,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tags': typeof TagsRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
-  '/tools': typeof ToolsRoute
+  '/tools': typeof ToolsRouteWithChildren
   '/universities': typeof UniversitiesRouteWithChildren
   '/blogs/$slug': typeof BlogsSlugRoute
   '/career/$slug': typeof CareerSlugRoute
@@ -431,11 +454,14 @@ export interface FileRoutesById {
   '/news/$slug': typeof NewsSlugRoute
   '/reviews/$slug': typeof ReviewsSlugRoute
   '/scholarships/$slug': typeof ScholarshipsSlugRoute
+  '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
+  '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
   '/compare/': typeof CompareIndexRoute
   '/courses/': typeof CoursesIndexRoute
   '/news/': typeof NewsIndexRoute
+  '/tools/': typeof ToolsIndexRoute
   '/universities/': typeof UniversitiesIndexRoute
   '/compare/$course/$pair': typeof CompareCoursePairRoute
   '/courses/$course/$section': typeof CoursesCourseSectionRoute
@@ -483,11 +509,14 @@ export interface FileRouteTypes {
     | '/news/$slug'
     | '/reviews/$slug'
     | '/scholarships/$slug'
+    | '/tools/fee-emi-calculator'
+    | '/tools/salary-after-course'
     | '/universities/$slug'
     | '/blogs/'
     | '/compare/'
     | '/courses/'
     | '/news/'
+    | '/tools/'
     | '/universities/'
     | '/compare/$course/$pair'
     | '/courses/$course/$section'
@@ -519,7 +548,6 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/tags'
     | '/terms-and-conditions'
-    | '/tools'
     | '/blogs/$slug'
     | '/career/$slug'
     | '/compare/$comparison'
@@ -527,10 +555,13 @@ export interface FileRouteTypes {
     | '/news/$slug'
     | '/reviews/$slug'
     | '/scholarships/$slug'
+    | '/tools/fee-emi-calculator'
+    | '/tools/salary-after-course'
     | '/blogs'
     | '/compare'
     | '/courses'
     | '/news'
+    | '/tools'
     | '/universities'
     | '/compare/$course/$pair'
     | '/courses/$course/$section'
@@ -576,11 +607,14 @@ export interface FileRouteTypes {
     | '/news/$slug'
     | '/reviews/$slug'
     | '/scholarships/$slug'
+    | '/tools/fee-emi-calculator'
+    | '/tools/salary-after-course'
     | '/universities/$slug'
     | '/blogs/'
     | '/compare/'
     | '/courses/'
     | '/news/'
+    | '/tools/'
     | '/universities/'
     | '/compare/$course/$pair'
     | '/courses/$course/$section'
@@ -617,7 +651,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TagsRoute: typeof TagsRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
-  ToolsRoute: typeof ToolsRoute
+  ToolsRoute: typeof ToolsRouteWithChildren
   UniversitiesRoute: typeof UniversitiesRouteWithChildren
   OnlineCoursesLevelCourseRoute: typeof OnlineCoursesLevelCourseRoute
   UniversitySlugCourseRoute: typeof UniversitySlugCourseRoute
@@ -856,6 +890,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ScholarshipsSlugRouteImport
       parentRoute: typeof ScholarshipsRoute
     }
+    '/tools/': {
+      id: '/tools/'
+      path: '/'
+      fullPath: '/tools/'
+      preLoaderRoute: typeof ToolsIndexRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/fee-emi-calculator': {
+      id: '/tools/fee-emi-calculator'
+      path: '/fee-emi-calculator'
+      fullPath: '/tools/fee-emi-calculator'
+      preLoaderRoute: typeof ToolsFeeEmiCalculatorRouteImport
+      parentRoute: typeof ToolsRoute
+    }
+    '/tools/salary-after-course': {
+      id: '/tools/salary-after-course'
+      path: '/salary-after-course'
+      fullPath: '/tools/salary-after-course'
+      preLoaderRoute: typeof ToolsSalaryAfterCourseRouteImport
+      parentRoute: typeof ToolsRoute
+    }
     '/universities/': {
       id: '/universities/'
       path: '/'
@@ -1068,6 +1123,20 @@ const ScholarshipsRouteWithChildren = ScholarshipsRoute._addFileChildren(
   ScholarshipsRouteChildren,
 )
 
+interface ToolsRouteChildren {
+  ToolsFeeEmiCalculatorRoute: typeof ToolsFeeEmiCalculatorRoute
+  ToolsSalaryAfterCourseRoute: typeof ToolsSalaryAfterCourseRoute
+  ToolsIndexRoute: typeof ToolsIndexRoute
+}
+
+const ToolsRouteChildren: ToolsRouteChildren = {
+  ToolsFeeEmiCalculatorRoute: ToolsFeeEmiCalculatorRoute,
+  ToolsSalaryAfterCourseRoute: ToolsSalaryAfterCourseRoute,
+  ToolsIndexRoute: ToolsIndexRoute,
+}
+
+const ToolsRouteWithChildren = ToolsRoute._addFileChildren(ToolsRouteChildren)
+
 interface UniversitiesSlugCoursesCourseRouteChildren {
   UniversitiesSlugCoursesCourseSectionRoute: typeof UniversitiesSlugCoursesCourseSectionRoute
 }
@@ -1140,7 +1209,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TagsRoute: TagsRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
-  ToolsRoute: ToolsRoute,
+  ToolsRoute: ToolsRouteWithChildren,
   UniversitiesRoute: UniversitiesRouteWithChildren,
   OnlineCoursesLevelCourseRoute: OnlineCoursesLevelCourseRoute,
   UniversitySlugCourseRoute: UniversitySlugCourseRoute,
