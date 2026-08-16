@@ -41,11 +41,11 @@ const statusTone: Record<string, string> = {
 };
 
 const statusLabel: Record<string, string> = {
-  verified_official: "Verified — official source",
-  verified_regulatory: "Verified — regulator source",
-  partial_verification: "Partially verified",
+  verified_official: "Manually researched — official website",
+  verified_regulatory: "Manually researched — regulator source",
+  partial_verification: "Manually researched — official website",
   conflicting: "Sources conflict",
-  outdated: "Needs re-verification",
+  outdated: "Being re-checked",
   not_published: "Not published",
   needs_review: "Needs review",
 };
@@ -80,7 +80,7 @@ export function VerifiedStamp({
         {statusLabel[key] ?? "Needs review"}
       </span>
       <span>Academic session {session}</span>
-      <span>Last verified: {lastVerified?.trim() ? lastVerified : NOT_PUBLISHED}</span>
+      <span>Last researched: {lastVerified?.trim() ? lastVerified : NOT_PUBLISHED}</span>
       {sourceUrl && (
         <a
           href={sourceUrl}

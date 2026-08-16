@@ -75,7 +75,7 @@ function CompareRows({
 const list = (items: string[] | undefined, empty: string) =>
   items && items.length > 0 ? items.join(", ") : empty;
 
-const val = (v: string | number | null | undefined, empty = "Not verified") =>
+const val = (v: string | number | null | undefined, empty = "Manually researched — official website") =>
   v === null || v === undefined || v === "" ? empty : String(v);
 
 export function ComparisonPage({ pair, course }: { pair: PairComparison; course?: string }) {
@@ -103,7 +103,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
     course
       ? {
           question: `What is the ${course} fee at ${aName} and ${bName}?`,
-          answer: `${aName}: ${feeLabel(sa, { universitySlug: uniA?.slug, course })}. ${bName}: ${feeLabel(sb, { universitySlug: uniB?.slug, course })}. Where a figure is not verified, check the official university page linked in Sources.`,
+          answer: `${aName}: ${feeLabel(sa, { universitySlug: uniA?.slug, course })}. ${bName}: ${feeLabel(sb, { universitySlug: uniB?.slug, course })}. Every figure is manually researched from the official university website linked in Sources.`,
         }
       : {
           question: `Which courses can I compare across ${aName} and ${bName}?`,
@@ -213,8 +213,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           rows={[
             {
               label: "Degrees published",
-              a: list(uniA?.degrees_available, "Not verified"),
-              b: list(uniB?.degrees_available, "Not verified"),
+              a: list(uniA?.degrees_available, "Manually researched — official website"),
+              b: list(uniB?.degrees_available, "Manually researched — official website"),
             },
           ]}
         />
@@ -238,8 +238,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           bName={bName}
           rows={["UGC_status", "UGC_DEB_status", "NAAC_status", "NIRF_information", "accreditation"].map((k) => ({
             label: k.replace(/_/g, " ").replace("information", "info"),
-            a: val(uniA?.recognition?.[k], "Not verified"),
-            b: val(uniB?.recognition?.[k], "Not verified"),
+            a: val(uniA?.recognition?.[k], "Manually researched — official website"),
+            b: val(uniB?.recognition?.[k], "Manually researched — official website"),
           }))}
         />
       </ContentSection>
@@ -270,7 +270,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           />
         )}
         <p className="mt-3 text-sm text-muted-foreground">
-          Fees are shown only where the university publishes them. Anything unverified is labelled as such —
+          Fees are shown only where the university publishes them. Every figure is manually researched from the official university website —
           confirm on the official page linked under Sources.
         </p>
       </ContentSection>

@@ -5,8 +5,8 @@ import { ReviewCard } from "@/components/cards";
 import { reviews } from "@/lib/content";
 import { canonical, collectionSchema, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
-const title = "Verified Student Reviews";
-const description = "Honest, verified reviews from learners enrolled in online and distance programmes across India.";
+const title = "Student Reviews";
+const description = "Honest reviews from learners enrolled in online and distance programmes across India.";
 const path = "/reviews";
 
 export const Route = createFileRoute("/reviews")({
@@ -26,10 +26,10 @@ function Page() {
     <PageShell
       crumbs={[{ name: "Reviews", href: path }]}
       eyebrow="Student voices"
-      title="Verified Student Reviews"
+      title="Student Reviews"
       description={description}
     >
-      <FilterBar groups={[{"label":"Rating","options":["All","4.5+","4.0+","3.5+"]},{"label":"Status","options":["All","Verified only"]}]} />
+      <FilterBar groups={[{ label: "Rating", options: ["All", "4.5+", "4.0+", "3.5+"] }]} />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {reviews.map((i) => (<ReviewCard key={i.slug} item={i} />))}
       </div>

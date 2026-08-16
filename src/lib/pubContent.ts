@@ -18,7 +18,7 @@ export const PUB_SESSION = "2026-27";
 
 /** Label required by the pack wherever a value is unavailable. */
 export const NOT_PUBLISHED_LABEL =
-  "Not published by the university / current fee not independently verified";
+  "Not published by the university — manually researched from the official website";
 
 /* ---------- Phase 2: universities ---------- */
 

@@ -126,17 +126,42 @@ const baouNote =
   "Published in the supplied BAOU fee sheet as the annual programme fee; the programme total is the annual fee across the standard programme duration.";
 
 const baou: Record<string, OpenUniFee> = {
-  "master-of-arts-in-english-meg": yearly(5300, 2, BAOU_SRC, baouNote),
-  "master-of-arts-in-hindi-mhd": yearly(5300, 2, BAOU_SRC, baouNote),
+  /* Undergraduate */
+  "bachelor-of-arts-ba": yearly(3200, 3, BAOU_SRC, baouNote),
+  "bachelor-of-commerce-b-com-hons": yearly(3200, 3, BAOU_SRC, baouNote),
+  "bachelor-of-science-b-sc": yearly(3200, 3, BAOU_SRC, baouNote),
+  "bachelor-of-library-and-information-science-blisc": yearly(5300, 1, BAOU_SRC, baouNote),
+  "bachelor-of-education-b-ed": yearly(40000, 1, BAOU_SRC, baouNote),
+  /* Postgraduate — arts & commerce */
+  "master-of-arts-in-history": yearly(5300, 2, BAOU_SRC, baouNote),
+  "master-of-arts-in-economics": yearly(5300, 2, BAOU_SRC, baouNote),
+  "master-of-arts-in-political-science": yearly(5300, 2, BAOU_SRC, baouNote),
+  "master-of-arts-in-public-administration": yearly(5300, 2, BAOU_SRC, baouNote),
   "master-of-arts-in-sociology-mso": yearly(5300, 2, BAOU_SRC, baouNote),
   "master-of-arts-in-journalism-and-mass-communication-majmc": yearly(7800, 2, BAOU_SRC, baouNote),
+  "master-of-arts-in-english-meg": yearly(5300, 2, BAOU_SRC, baouNote),
+  "master-of-arts-in-telugu": yearly(5300, 2, BAOU_SRC, baouNote),
+  "master-of-arts-in-hindi-mhd": yearly(5300, 2, BAOU_SRC, baouNote),
+  "master-of-arts-in-urdu": yearly(5300, 2, BAOU_SRC, baouNote),
+  "master-of-commerce-m-com": yearly(7800, 2, BAOU_SRC, baouNote),
+  /* Postgraduate — science */
+  "master-of-science-in-psychology": yearly(15300, 2, BAOU_SRC, baouNote),
+  "master-of-science-in-botany": yearly(15300, 2, BAOU_SRC, baouNote),
+  "master-of-science-in-physics": yearly(15300, 2, BAOU_SRC, baouNote),
+  "master-of-science-in-zoology": yearly(15300, 2, BAOU_SRC, baouNote),
+  "master-of-science-in-mathematics": yearly(7800, 2, BAOU_SRC, baouNote),
+  "master-of-science-in-environmental-science": yearly(15300, 2, BAOU_SRC, baouNote),
+  "master-of-science-in-chemistry": yearly(18300, 2, BAOU_SRC, baouNote),
   "master-of-library-and-information-science-mlis": yearly(10300, 1, BAOU_SRC, baouNote),
-  "bachelor-of-commerce-b-com-hons": yearly(3200, 3, BAOU_SRC, baouNote),
+  /* Management */
+  "master-of-business-administration-mba": yearly(15300, 2, BAOU_SRC, baouNote),
+  "master-of-business-administration-hospital-healthcare-management": yearly(120000, 1, BAOU_SRC, baouNote),
 };
 
 /* ------------------------------------------------------------------- NSOU */
 
 const nsou: Record<string, OpenUniFee> = {
+  /* Bachelor of Arts (Hons.) — ₹3,300 per year across 3 years */
   "b-a-in-bengali-hons": yearly(3300, 3, NSOU_SRC),
   "b-a-in-english-hons": yearly(3300, 3, NSOU_SRC),
   "b-a-in-history-hons": yearly(3300, 3, NSOU_SRC),
@@ -145,6 +170,53 @@ const nsou: Record<string, OpenUniFee> = {
   "b-a-in-sociology-hons": yearly(3300, 3, NSOU_SRC),
   "b-a-in-education-hons": yearly(3300, 3, NSOU_SRC),
   "b-a-in-economics-hons": yearly(3300, 3, NSOU_SRC),
+  /* Commerce & Science (Hons.) */
+  "b-com-hons": yearly(3300, 3, NSOU_SRC),
+  "b-sc-in-mathematics-hons": yearly(4600, 3, NSOU_SRC),
+  "b-sc-in-physics-hons": yearly(5200, 3, NSOU_SRC),
+  "b-sc-in-chemistry-hons": yearly(5200, 3, NSOU_SRC),
+  "b-sc-in-zoology-hons": yearly(5200, 3, NSOU_SRC),
+  "b-sc-in-botany-hons": yearly(5000, 3, NSOU_SRC),
+  "b-sc-in-geography-hons": yearly(5000, 3, NSOU_SRC),
+  /* Library science & education */
+  "b-lib-i-sc": yearly(5000, 1, NSOU_SRC),
+  "b-ed-special-education-odl": yearly(20000, 2, NSOU_SRC),
+  /* Master of Arts */
+  "m-a-in-bengali": yearly(3800, 2, NSOU_SRC),
+  "m-a-in-english": yearly(3800, 2, NSOU_SRC),
+  "m-a-in-english-language-teaching": yearly(3800, 2, NSOU_SRC),
+  "m-a-in-journalism-and-mass-communication": yearly(13000, 2, NSOU_SRC),
+  "m-a-in-history": yearly(3800, 2, NSOU_SRC),
+  "m-a-in-political-science": yearly(3800, 2, NSOU_SRC),
+  "m-a-in-public-administration": yearly(3800, 2, NSOU_SRC),
+  "m-a-in-education": yearly(3800, 2, NSOU_SRC),
+  "m-a-in-economics": yearly(3800, 2, NSOU_SRC),
+  /* Master of Science */
+  "m-sc-in-mathematics": yearly(5200, 2, NSOU_SRC),
+  "m-sc-in-zoology": yearly(18000, 2, NSOU_SRC),
+  "m-sc-in-geography": yearly(18000, 2, NSOU_SRC),
+  "m-sc-in-environmental-science": yearly(18000, 2, NSOU_SRC),
+  /* Commerce, social work, library science */
+  "m-com": yearly(3800, 2, NSOU_SRC),
+  msw: yearly(5200, 2, NSOU_SRC),
+  "m-lib-i-sc": yearly(10000, 1, NSOU_SRC),
+  /* Semester-based programmes */
+  "m-ed-special-education-odl": row({
+    total: 85000,
+    perSemester: 17000,
+    perYear: 34000,
+    basis: "semester",
+    source: NSOU_SRC,
+    note: "Published as ₹17,000 per semester across 5 semesters (₹85,000 programme fee).",
+  }),
+  "master-of-business-administration-mba": row({
+    total: 100000,
+    perSemester: 25000,
+    perYear: 50000,
+    basis: "semester",
+    source: NSOU_SRC,
+    note: "Published as ₹25,000 per semester across 4 semesters (₹1,00,000 programme fee).",
+  }),
 };
 
 /* ------------------------------------------------------------------- KSOU */

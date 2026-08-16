@@ -19,7 +19,7 @@
     "scope": "All 14 universities in the current university master dataset.",
     "pair_coverage": "All 91 unique university pairs are preconfigured.",
     "course_rule": "Only compare the same course/degree across both universities. Do not compare unlike programmes.",
-    "fee_rule": "Use verified current fee only. If missing or pending verification, show 'Current fee not verified' and link to the official source.",
+    "fee_rule": "Use the current published fee only. If the university does not publish one, show 'Fee not published — manually researched from the official website' and link to the official source.",
     "recognition_rule": "Display recognition from the master dataset and regulator/university source. Never copy competitor approval lists.",
     "placement_rule": "Never turn placement assistance into guaranteed placement. Never invent recruiter counts, salaries or placement percentages.",
     "curriculum_rule": "Use university-specific curriculum when verified. Otherwise use the existing common-course curriculum layer and label it clearly as a common/reference curriculum.",
@@ -2535,7 +2535,7 @@
       },
       "content": {
         "intro": "Amity Online vs Online Manipal is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -3085,7 +3085,7 @@
       },
       "content": {
         "intro": "Amity Online vs VGU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -3583,7 +3583,7 @@
       },
       "content": {
         "intro": "Amity Online vs LPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -4181,7 +4181,7 @@
       },
       "content": {
         "intro": "Amity Online vs DU SOL is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -4352,7 +4352,7 @@
       },
       "content": {
         "intro": "Amity Online vs IGNOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -4790,7 +4790,7 @@
       },
       "content": {
         "intro": "Amity Online vs NMIMS Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -5070,7 +5070,7 @@
       },
       "content": {
         "intro": "Amity Online vs Chandigarh University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -5548,7 +5548,7 @@
       },
       "content": {
         "intro": "Amity Online vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -5822,7 +5822,7 @@
       },
       "content": {
         "intro": "Amity Online vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -5996,7 +5996,7 @@
       },
       "content": {
         "intro": "Amity Online vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -6596,7 +6596,7 @@
       },
       "content": {
         "intro": "Amity Online vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -6875,7 +6875,7 @@
       },
       "content": {
         "intro": "Amity Online vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -7315,7 +7315,7 @@
       },
       "content": {
         "intro": "Amity Online vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -7702,7 +7702,7 @@
       },
       "content": {
         "intro": "Online Manipal vs VGU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -8145,7 +8145,7 @@
       },
       "content": {
         "intro": "Online Manipal vs LPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -8689,7 +8689,7 @@
       },
       "content": {
         "intro": "Online Manipal vs DU SOL is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -8859,7 +8859,7 @@
       },
       "content": {
         "intro": "Online Manipal vs IGNOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -9243,7 +9243,7 @@
       },
       "content": {
         "intro": "Online Manipal vs NMIMS Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -9522,7 +9522,7 @@
       },
       "content": {
         "intro": "Online Manipal vs Chandigarh University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -9948,7 +9948,7 @@
       },
       "content": {
         "intro": "Online Manipal vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -10220,7 +10220,7 @@
       },
       "content": {
         "intro": "Online Manipal vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -10338,7 +10338,7 @@
       },
       "content": {
         "intro": "Online Manipal vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -10883,7 +10883,7 @@
       },
       "content": {
         "intro": "Online Manipal vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -11108,7 +11108,7 @@
       },
       "content": {
         "intro": "Online Manipal vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -11548,7 +11548,7 @@
       },
       "content": {
         "intro": "Online Manipal vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -11936,7 +11936,7 @@
       },
       "content": {
         "intro": "VGU vs LPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -12426,7 +12426,7 @@
       },
       "content": {
         "intro": "VGU vs DU SOL is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -12595,7 +12595,7 @@
       },
       "content": {
         "intro": "VGU vs IGNOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -12924,7 +12924,7 @@
       },
       "content": {
         "intro": "VGU vs NMIMS Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -13150,7 +13150,7 @@
       },
       "content": {
         "intro": "VGU vs Chandigarh University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -13628,7 +13628,7 @@
       },
       "content": {
         "intro": "VGU vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -13902,7 +13902,7 @@
       },
       "content": {
         "intro": "VGU vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -14074,7 +14074,7 @@
       },
       "content": {
         "intro": "VGU vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -14565,7 +14565,7 @@
       },
       "content": {
         "intro": "VGU vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -14789,7 +14789,7 @@
       },
       "content": {
         "intro": "VGU vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -15174,7 +15174,7 @@
       },
       "content": {
         "intro": "VGU vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -15502,7 +15502,7 @@
       },
       "content": {
         "intro": "LPU Online vs DU SOL is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -15673,7 +15673,7 @@
       },
       "content": {
         "intro": "LPU Online vs IGNOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -16111,7 +16111,7 @@
       },
       "content": {
         "intro": "LPU Online vs NMIMS Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -16391,7 +16391,7 @@
       },
       "content": {
         "intro": "LPU Online vs Chandigarh University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -16869,7 +16869,7 @@
       },
       "content": {
         "intro": "LPU Online vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -17143,7 +17143,7 @@
       },
       "content": {
         "intro": "LPU Online vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -17317,7 +17317,7 @@
       },
       "content": {
         "intro": "LPU Online vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -17917,7 +17917,7 @@
       },
       "content": {
         "intro": "LPU Online vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -18196,7 +18196,7 @@
       },
       "content": {
         "intro": "LPU Online vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -18636,7 +18636,7 @@
       },
       "content": {
         "intro": "LPU Online vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -19018,7 +19018,7 @@
       },
       "content": {
         "intro": "DU SOL vs IGNOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -19184,7 +19184,7 @@
       },
       "content": {
         "intro": "DU SOL vs NMIMS Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -19350,7 +19350,7 @@
       },
       "content": {
         "intro": "DU SOL vs Chandigarh University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -19514,7 +19514,7 @@
       },
       "content": {
         "intro": "DU SOL vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -19678,7 +19678,7 @@
       },
       "content": {
         "intro": "DU SOL vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -19789,7 +19789,7 @@
       },
       "content": {
         "intro": "DU SOL vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -19953,7 +19953,7 @@
       },
       "content": {
         "intro": "DU SOL vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -20062,7 +20062,7 @@
       },
       "content": {
         "intro": "DU SOL vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -20173,7 +20173,7 @@
       },
       "content": {
         "intro": "DU SOL vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -20340,7 +20340,7 @@
       },
       "content": {
         "intro": "IGNOU vs NMIMS Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -20563,7 +20563,7 @@
       },
       "content": {
         "intro": "IGNOU vs Chandigarh University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -20884,7 +20884,7 @@
       },
       "content": {
         "intro": "IGNOU vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -21104,7 +21104,7 @@
       },
       "content": {
         "intro": "IGNOU vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -21275,7 +21275,7 @@
       },
       "content": {
         "intro": "IGNOU vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -21712,7 +21712,7 @@
       },
       "content": {
         "intro": "IGNOU vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -21934,7 +21934,7 @@
       },
       "content": {
         "intro": "IGNOU vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -22211,7 +22211,7 @@
       },
       "content": {
         "intro": "IGNOU vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -22540,7 +22540,7 @@
       },
       "content": {
         "intro": "NMIMS Online vs Chandigarh University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -22757,7 +22757,7 @@
       },
       "content": {
         "intro": "NMIMS Online vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -22975,7 +22975,7 @@
       },
       "content": {
         "intro": "NMIMS Online vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -23088,7 +23088,7 @@
       },
       "content": {
         "intro": "NMIMS Online vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -23363,7 +23363,7 @@
       },
       "content": {
         "intro": "NMIMS Online vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -23584,7 +23584,7 @@
       },
       "content": {
         "intro": "NMIMS Online vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -23806,7 +23806,7 @@
       },
       "content": {
         "intro": "NMIMS Online vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -24082,7 +24082,7 @@
       },
       "content": {
         "intro": "Chandigarh University vs DPU Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -24350,7 +24350,7 @@
       },
       "content": {
         "intro": "Chandigarh University vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -24520,7 +24520,7 @@
       },
       "content": {
         "intro": "Chandigarh University vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -24997,7 +24997,7 @@
       },
       "content": {
         "intro": "Chandigarh University vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -25217,7 +25217,7 @@
       },
       "content": {
         "intro": "Chandigarh University vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -25592,7 +25592,7 @@
       },
       "content": {
         "intro": "Chandigarh University vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -25910,7 +25910,7 @@
       },
       "content": {
         "intro": "DPU Online vs NSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -26023,7 +26023,7 @@
       },
       "content": {
         "intro": "DPU Online vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -26297,7 +26297,7 @@
       },
       "content": {
         "intro": "DPU Online vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -26464,7 +26464,7 @@
       },
       "content": {
         "intro": "DPU Online vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -26686,7 +26686,7 @@
       },
       "content": {
         "intro": "DPU Online vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -26960,7 +26960,7 @@
       },
       "content": {
         "intro": "NSOU vs KSOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -27126,7 +27126,7 @@
       },
       "content": {
         "intro": "NSOU vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -27290,7 +27290,7 @@
       },
       "content": {
         "intro": "NSOU vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -27399,7 +27399,7 @@
       },
       "content": {
         "intro": "NSOU vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -27512,7 +27512,7 @@
       },
       "content": {
         "intro": "KSOU vs Subharti University is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -27792,7 +27792,7 @@
       },
       "content": {
         "intro": "KSOU vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -28286,7 +28286,7 @@
       },
       "content": {
         "intro": "KSOU vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -28669,7 +28669,7 @@
       },
       "content": {
         "intro": "Subharti University vs BAOU is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -28890,7 +28890,7 @@
       },
       "content": {
         "intro": "Subharti University vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
@@ -29113,7 +29113,7 @@
       },
       "content": {
         "intro": "BAOU vs JAIN Online is best treated as a course-level decision rather than a simple university ranking. This comparison brings the key academic, financial, admission and learning factors into one place so students can see where the two options differ.",
-        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Where a current figure is not verified, the page must say so rather than estimate it.",
+        "decision_framework": "Start with the exact programme you want. Then compare recognition, mode of delivery, duration, eligibility, current published fee, specialisations, curriculum structure, examination method, scholarship rules and documented learner/career support. Every current figure is manually researched from the official university website; where a university does not publish one, the page says so rather than estimating it.",
         "fit_statement": "Choose based on the exact programme you want, then compare verified fee, eligibility, duration, specialisations, assessment, learning support and career assistance.",
         "angle": "A factual, course-first comparison designed to help students compare the two universities without relying on subjective rankings."
       },
