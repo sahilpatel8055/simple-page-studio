@@ -127,12 +127,12 @@ export function CounsellingForm({
       <form
         className="mx-auto mt-4 grid w-full max-w-md gap-2.5 sm:max-w-none sm:grid-cols-2 sm:gap-3"
         onChange={(e) => {
-          const t = e.target as HTMLInputElement | HTMLSelectElement;
-          if (t?.name) savePartialLead({ [t.name]: t.value });
+          const t = e.target as unknown as { name?: string; value?: string };
+          if (t.name) savePartialLead({ [t.name]: t.value ?? "" });
         }}
         onBlur={(e) => {
-          const t = e.target as HTMLInputElement | HTMLSelectElement;
-          if (t?.name && t.value) savePartialLead({ [t.name]: t.value });
+          const t = e.target as unknown as { name?: string; value?: string };
+          if (t.name && t.value) savePartialLead({ [t.name]: t.value });
         }}
         onSubmit={(e) => {
           e.preventDefault();
