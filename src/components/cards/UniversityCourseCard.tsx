@@ -15,7 +15,6 @@ import { usePopupSurface } from "@/components/common/PopupManager";
  * missing figure is stated, never invented.
  */
 export function UniversityCourseCard({
-  const { openCounselling } = usePopupSurface();
   offering,
   universitySlug,
   feeFallback = "Fee pending verification",
@@ -24,6 +23,7 @@ export function UniversityCourseCard({
   universitySlug: string;
   feeFallback?: string;
 }) {
+  const { openCounselling } = usePopupSurface();
   const programme = getProgramme(offering.programmeSlug);
   const fullName = programme?.name ?? offering.programmeSlug;
   const name = getCourse(offering.programmeSlug)?.displayName ?? fullName;
