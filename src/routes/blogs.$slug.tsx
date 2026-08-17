@@ -6,6 +6,7 @@ import { RelatedContent } from "@/components/templates/DetailLayout";
 import { articles, news } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
 import { blogBanner } from "@/lib/blogBanners";
+import { familyDefs } from "@/lib/courseFamily";
 
 import {
   articleSchema,
@@ -74,9 +75,14 @@ export const Route = createFileRoute("/blogs/$slug")({
 
 function Page() {
   const { item, post } = Route.useLoaderData();
+  const familySlug = familyDefs.find((f) =>
+    new RegExp(`(^|-)${f.shortName.toLowerCase().replace(/[^a-z]/g, "")}(-|$)`).test(item.slug),
+  )?.slug;
   const toc = [
     "Key takeaways",
-    ...post.sections.map((s) => s.heading),
+    ...post.sections.flatMap((s, i) =>
+      familySlug && i === 0 ? [s.heading, "Universities"] : [s.heading],
+    ),
     ...(post.sources?.length ? ["Sources & references"] : []),
     "FAQs",
   ];
@@ -120,7 +126,7 @@ function Page() {
     >
       <KeyTakeaways items={post.keyTakeaways} />
       <MobileToc sections={toc} />
-      <PostBody post={post} />
+      <PostBody post={post} familySlug={familySlug} />
       {post.sources?.length ? <PostSources items={post.sources} /> : null}
     </DetailLayout>
   );
