@@ -16,6 +16,7 @@ import { chandigarhOnlineArticles, chandigarhOnlinePosts } from "./chandigarh-un
 import { duSolArticles, duSolPosts } from "./du-sol";
 import { ignouArticles, ignouPosts } from "./ignou";
 import { lpuOnlineArticles, lpuOnlinePosts } from "./lpu-online";
+import { lpuProgramArticles, lpuProgramPosts } from "./lpu-program-blogs";
 import { nsouArticles, nsouPosts } from "./nsou";
 import { shooliniOnlineArticles, shooliniOnlinePosts } from "./shoolini-online";
 
@@ -41,7 +42,12 @@ export const universityBlogGroups: UniversityBlogGroup[] = [
     articles: chandigarhOnlineArticles,
     posts: chandigarhOnlinePosts,
   },
-  { slug: "lpu-online", label: "LPU Online", articles: lpuOnlineArticles, posts: lpuOnlinePosts },
+  {
+    slug: "lpu-online",
+    label: "LPU Online",
+    articles: [...lpuProgramArticles, ...lpuOnlineArticles],
+    posts: { ...lpuOnlinePosts, ...lpuProgramPosts },
+  },
   {
     slug: "shoolini-online",
     label: "Shoolini Online",

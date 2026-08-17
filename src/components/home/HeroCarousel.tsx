@@ -18,9 +18,9 @@ const desktopBanners: Banner[] = [
 ];
 
 const mobileBanners: Banner[] = [
-  { src: mobile1, alt: "Compare India's top online universities on fees and approvals", to: "/compare", height: "aspect-[112/100]" },
-  { src: mobile2, alt: "Explore UGC-entitled online degree programmes", to: "/courses", height: "aspect-[112/100]" },
-  { src: mobile3, alt: "Free, unbiased admission guidance from AVEDU Insights", to: "/contact", height: "aspect-[112/100]" },
+  { src: mobile1, alt: "Compare India's top online universities on fees and approvals", to: "/compare", height: "aspect-square" },
+  { src: mobile2, alt: "Explore UGC-entitled online degree programmes", to: "/courses", height: "aspect-square" },
+  { src: mobile3, alt: "Free, unbiased admission guidance from AVEDU Insights", to: "/contact", height: "aspect-[1190/1194]" },
 ];
 
 function Carousel({ banners, variant }: { banners: Banner[]; variant: "mobile" | "desktop" }) {
@@ -78,7 +78,7 @@ function Carousel({ banners, variant }: { banners: Banner[]; variant: "mobile" |
                 decoding={i === 0 ? "sync" : "async"}
                 className={
                   variant === "mobile"
-                    ? "h-full w-full object-cover"
+                    ? "h-full w-full object-contain"
                     : "h-auto w-full max-w-full object-contain"
                 }
               />
