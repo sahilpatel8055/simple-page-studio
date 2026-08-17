@@ -298,10 +298,25 @@ function CounsellingScheduler() {
     window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("mouseleave", onLeave);
 
+    // Mobile exit intent: the first back press keeps the visitor on the page
+    // and shows the counselling form instead of losing the lead.
+    let backTrap = false;
+    const onPop = () => {
+      if (window.innerWidth >= 768 || done) return;
+      fire();
+    };
+    if (window.innerWidth < 768 && read("session", "avedu-back-trap") !== "1") {
+      write("session", "avedu-back-trap", "1");
+      backTrap = true;
+      window.history.pushState({ avedu: true }, "");
+      window.addEventListener("popstate", onPop);
+    }
+
     function cleanup() {
       if (secondView) window.clearTimeout(secondView);
       window.removeEventListener("scroll", onScroll);
       document.removeEventListener("mouseleave", onLeave);
+      if (backTrap) window.removeEventListener("popstate", onPop);
     }
     return cleanup;
     // eslint-disable-next-line react-hooks/exhaustive-deps
