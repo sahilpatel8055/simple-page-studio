@@ -10,6 +10,9 @@ import {
 } from "react";
 import { AdmissionPopup } from "@/components/common/AdmissionPopup";
 import { CounsellingForm } from "@/components/common/CounsellingForm";
+import { WhatsAppFeeBar } from "@/components/common/WhatsAppFeeBar";
+import { rememberContext } from "@/lib/leadContext";
+import { universities } from "@/lib/content";
 import { X } from "lucide-react";
 import { useRouterState } from "@tanstack/react-router";
 
@@ -154,13 +157,37 @@ export function PopupProvider({ children }: { children: ReactNode }) {
   return (
     <PopupCtx.Provider value={value}>
       {children}
+      <ContextTracker />
       <AdmissionScheduler />
       <CounsellingScheduler />
+      <WhatsAppFeeBar />
       {active === "counselling" && (
         <CounsellingModal onClose={() => release("counselling", false)} />
       )}
     </PopupCtx.Provider>
   );
+}
+
+const titleCase = (s: string) =>
+  s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()).replace(/\bMba|\bMca|\bBba|\bBca|\bMcom|\bBcom|\bMsc\b/gi, (m) => m.toUpperCase());
+
+/** Records the last university / course the visitor looked at. */
+function ContextTracker() {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const parts = pathname.split("/").filter(Boolean);
+    if (parts[0] === "universities" && parts[1]) {
+      const uni = universities.find((u) => u.slug === parts[1]);
+      if (uni) rememberContext({ universitySlug: uni.slug, universityName: uni.name, path: pathname });
+    }
+    if (parts[0] === "courses" && parts[1]) {
+      rememberContext({ courseLabel: titleCase(parts[1]), path: pathname });
+    }
+  }, [pathname]);
+
+  return null;
 }
 
 /**
