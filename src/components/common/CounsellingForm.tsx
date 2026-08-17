@@ -3,7 +3,7 @@ import { CheckCircle2, ShieldCheck } from "lucide-react";
 import { universities } from "@/lib/content";
 import { universityLogo } from "@/lib/assets";
 import { markLeadSubmitted } from "@/components/common/PopupManager";
-import { CALL_SLOTS, savePartialLead } from "@/lib/leadContext";
+import { savePartialLead } from "@/lib/leadContext";
 
 const COURSES = [
   "Online MBA",
@@ -26,7 +26,7 @@ const STATES = [
 ];
 
 const field =
-  "h-10 w-full rounded-xl border border-[#7f1813]/50 bg-background px-3 text-[0.88rem] outline-none transition-colors focus-visible:border-[#7f1813] focus-visible:ring-2 focus-visible:ring-[#7f1813]/25 sm:h-11 sm:px-3.5 sm:text-[0.9rem]";
+  "h-10 w-full rounded-xl border-[1.5px] border-[#7f1813]/80 bg-background px-3 text-[0.88rem] outline-none transition-colors focus-visible:border-[#7f1813] focus-visible:ring-2 focus-visible:ring-[#7f1813]/25 sm:h-11 sm:px-3.5 sm:text-[0.9rem]";
 
 const label = "mb-1 block text-[0.68rem] font-bold uppercase tracking-wide text-black sm:text-[0.72rem]";
 
@@ -198,16 +198,6 @@ export function CounsellingForm({
             </select>
           </label>
         </div>
-        <label className="block sm:col-span-2">
-          <span className={label}>Best time to call :</span>
-          <select name="callTime" defaultValue={CALL_SLOTS[0]} className={field}>
-            {CALL_SLOTS.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
-            ))}
-          </select>
-        </label>
         <button
           type="submit"
           className="h-11 rounded-xl bg-[#7f1813] text-sm font-bold text-white transition-opacity hover:opacity-90 sm:col-span-2 sm:h-12"

@@ -102,7 +102,7 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
             loading="lazy"
             width={1024}
             height={1536}
-            className="pointer-events-none absolute right-1 top-4 h-[30%] w-auto select-none object-contain object-top sm:top-5 sm:h-[34%]"
+            className="pointer-events-none absolute right-0 top-12 h-[40%] w-auto select-none object-contain object-top sm:top-14 sm:h-[46%]"
           />
 
           <div className="relative z-10 w-[62%] sm:w-[64%]">
