@@ -281,7 +281,7 @@ export function StickyMobileCTA({
     { to: "/", icon: Home, label: "Home" },
     { to: "/universities", icon: Building2, label: "Universities" },
     { to: "/courses", icon: BookOpen, label: "Courses" },
-    { to: "/compare", icon: Search, label: "Compare" },
+    { to: "/compare/universities", icon: Search, label: "Compare" },
   ];
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 lg:hidden">

@@ -11,6 +11,7 @@ import type { PostContent } from "@/data/posts";
 import type { Article } from "@/lib/content";
 
 import { amityOnlineArticles, amityOnlinePosts } from "./amity-online";
+import { amityCourseArticles, amityCoursePosts } from "./amity-course-blogs";
 import { chandigarhOnlineArticles, chandigarhOnlinePosts } from "./chandigarh-university-online";
 import { duSolArticles, duSolPosts } from "./du-sol";
 import { ignouArticles, ignouPosts } from "./ignou";
@@ -31,8 +32,8 @@ export const universityBlogGroups: UniversityBlogGroup[] = [
   {
     slug: "amity-online",
     label: "Amity Online",
-    articles: amityOnlineArticles,
-    posts: amityOnlinePosts,
+    articles: [...amityCourseArticles, ...amityOnlineArticles],
+    posts: { ...amityOnlinePosts, ...amityCoursePosts },
   },
   {
     slug: "chandigarh-university-online",
