@@ -102,20 +102,22 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
             loading="lazy"
             width={1024}
             height={1536}
-            className="pointer-events-none absolute bottom-8 right-0 h-[86%] w-auto select-none object-contain object-top sm:bottom-12 sm:h-[96%]"
+            className="pointer-events-none absolute right-1 top-4 h-[30%] w-auto select-none object-contain object-top sm:top-5 sm:h-[34%]"
           />
 
-          <div className="relative z-10 max-w-[64%] sm:max-w-[58%]">
+          <div className="relative z-10 w-[62%] sm:w-[64%]">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-[#7f1813]/10 px-3 py-1.5 text-[0.68rem] font-bold text-[#7f1813] sm:text-[0.75rem]">
               <CalendarDays className="h-3.5 w-3.5" /> Last Date: {lastDate}
             </span>
 
-            <h2 className="mt-3 font-display text-[1.35rem] font-extrabold leading-[1.15] text-[#111] sm:text-3xl">
+            <h2 className="mt-3 break-words font-display text-[1.15rem] font-extrabold leading-[1.18] text-[#111] sm:text-2xl">
               <span className="block text-[#7f1813]">Don&apos;t Miss!</span>
               {headline}
             </h2>
+          </div>
 
-            <div className="mt-4 rounded-2xl bg-white/90 p-3 shadow-[0_10px_30px_-18px_rgba(127,24,19,0.7)] ring-1 ring-[#7f1813]/12 sm:p-4">
+          <div className="relative z-10 mt-4">
+            <div className="rounded-2xl bg-white/95 p-3 shadow-[0_10px_30px_-18px_rgba(127,24,19,0.7)] ring-1 ring-[#7f1813]/12 sm:p-4">
               <p className="text-[0.72rem] font-bold text-[#333] sm:text-[0.85rem]">
                 Offer ends tonight at <span className="text-[#7f1813]">12:00 AM</span>
               </p>
@@ -127,15 +129,15 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
                 ].map((u, i) => (
                   <div key={u.l} className="flex items-center gap-1.5 sm:gap-2">
                     {i > 0 && (
-                      <span className="animate-pulse text-lg font-extrabold text-[#7f1813]">:</span>
+                      <span className="animate-pulse text-base font-extrabold text-[#7f1813]">:</span>
                     )}
-                    <div className="relative min-w-[3rem] overflow-hidden rounded-xl bg-gradient-to-b from-[#a11f19] to-[#69100c] px-2 py-1.5 text-center text-white shadow-lg ring-1 ring-white/15 sm:min-w-[3.6rem] sm:py-2">
+                    <div className="relative min-w-[2.6rem] overflow-hidden rounded-xl bg-gradient-to-b from-[#a11f19] to-[#69100c] px-2 py-1 text-center text-white shadow-lg ring-1 ring-white/15 sm:min-w-[3rem] sm:py-1.5">
                       <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-white/12" />
                       <span className="pointer-events-none absolute inset-x-0 top-1/2 h-px bg-black/25" />
-                      <span className="relative block font-display text-lg font-extrabold leading-none tabular-nums sm:text-2xl">
+                      <span className="relative block font-display text-base font-extrabold leading-none tabular-nums sm:text-xl">
                         {u.v}
                       </span>
-                      <span className="relative mt-1 block text-[0.55rem] font-bold tracking-wider text-white/80 sm:text-[0.62rem]">
+                      <span className="relative mt-0.5 block text-[0.5rem] font-bold tracking-wider text-white/80 sm:text-[0.58rem]">
                         {u.l}
                       </span>
                     </div>
@@ -154,7 +156,7 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
             </div>
           </div>
 
-          <div className="relative z-10 mt-4 flex w-full max-w-[22rem] flex-col gap-2 sm:mt-5">
+          <div className="relative z-10 mt-4 flex w-full flex-col gap-2 sm:mt-5">
             <button
               type="button"
               onClick={() => {
