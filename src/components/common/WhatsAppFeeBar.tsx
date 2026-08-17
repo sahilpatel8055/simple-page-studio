@@ -54,8 +54,10 @@ export function WhatsAppFeeBar() {
 
     const onScroll = () => {
       const y = window.scrollY;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const depth = max <= 0 ? 1 : y / max;
       if (!appearedAt) {
-        if (y > 700) {
+        if (depth >= 0.2) {
           appearedAt = y;
           setShow(true);
           hideTimer = window.setTimeout(finish, 20000);
