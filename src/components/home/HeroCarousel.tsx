@@ -67,7 +67,7 @@ function Carousel({ banners, variant }: { banners: Banner[]; variant: "mobile" |
             <AppLink
               key={b.src}
               to={b.to}
-              className={`flex w-full shrink-0 items-center ${variant === "mobile" ? b.height : ""}`}
+              className={`flex w-full shrink-0 items-center ${variant === "mobile" ? `${b.height} max-h-[54svh]` : ""}`}
               aria-hidden={i !== index}
             >
               <img

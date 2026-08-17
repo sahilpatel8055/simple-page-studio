@@ -6,6 +6,7 @@ import { getProgramme as getProgrammeRecord, specialisationsOf } from "@/lib/uni
 import { courseImage } from "@/lib/course-images";
 import { universityLogo } from "@/lib/assets";
 import type { Offering } from "@/data";
+import { usePopupSurface } from "@/components/common/PopupManager";
 
 /**
  * Programme card used in the "Courses & fees" section of a university page.
@@ -22,6 +23,7 @@ export function UniversityCourseCard({
   universitySlug: string;
   feeFallback?: string;
 }) {
+  const { openCounselling } = usePopupSurface();
   const programme = getProgramme(offering.programmeSlug);
   const fullName = programme?.name ?? offering.programmeSlug;
   const name = getCourse(offering.programmeSlug)?.displayName ?? fullName;
@@ -101,13 +103,14 @@ export function UniversityCourseCard({
           <AppLink to={href} className="text-xs font-bold text-foreground hover:text-brand sm:text-sm">
             View Details ›
           </AppLink>
-          <AppLink
-            to="/contact"
+          <button
+            type="button"
+            onClick={openCounselling}
             className="rounded-lg bg-brand px-3 py-2 text-xs font-bold text-brand-foreground hover:opacity-90 sm:text-sm"
             aria-label={`Enquire about ${name} at this university`}
           >
             Enquire Now
-          </AppLink>
+          </button>
         </div>
       </div>
     </article>

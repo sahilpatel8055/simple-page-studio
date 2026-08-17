@@ -87,6 +87,37 @@ export function useTimedSurface(id: SurfaceId, fromMs: number, untilMs: number) 
   return { shown: shown && active === id, close };
 }
 
+const LEAD_KEY = "avedu-lead-submitted";
+const COUNSEL_COOLDOWN_KEY = "avedu-counselling-cooldown";
+const COUNSEL_COOLDOWN_MS = 20 * 60 * 1000;
+const PAGEVIEW_KEY = "avedu-pageviews";
+
+const read = (store: "local" | "session", key: string) => {
+  try {
+    return (store === "local" ? localStorage : sessionStorage).getItem(key);
+  } catch {
+    return null;
+  }
+};
+const write = (store: "local" | "session", key: string, value: string) => {
+  try {
+    (store === "local" ? localStorage : sessionStorage).setItem(key, value);
+  } catch {
+    /* ignore */
+  }
+};
+
+/** A lead was captured — never auto-open the counselling form again. */
+export const markLeadSubmitted = () => write("local", LEAD_KEY, "1");
+const leadSubmitted = () => read("local", LEAD_KEY) === "1";
+
+/** Scroll depth of the document, 0..1. */
+const scrollDepth = () => {
+  const h = document.documentElement;
+  const max = h.scrollHeight - window.innerHeight;
+  return max <= 0 ? 1 : Math.min(1, (h.scrollTop || window.scrollY) / max);
+};
+
 export function PopupProvider({ children }: { children: ReactNode }) {
   const [active, setActive] = useState<SurfaceId | null>(null);
   const activeRef = useRef<SurfaceId | null>(null);
@@ -124,6 +155,7 @@ export function PopupProvider({ children }: { children: ReactNode }) {
     <PopupCtx.Provider value={value}>
       {children}
       <AdmissionScheduler />
+      <CounsellingScheduler />
       {active === "counselling" && (
         <CounsellingModal onClose={() => release("counselling", false)} />
       )}
@@ -131,7 +163,12 @@ export function PopupProvider({ children }: { children: ReactNode }) {
   );
 }
 
-/** Admission banner: once per session, 60s after load, highest priority. */
+/**
+ * Admission banner scheduling (never on the home page):
+ * - first inside page of the session: 5s, or earlier on desktop exit-intent
+ *   / 50% scroll on mobile;
+ * - every later inside page: 10s after landing, even if it was closed before.
+ */
 function AdmissionScheduler() {
   const { request, release, active } = usePopupSurface();
   const [open, setOpen] = useState(false);
@@ -139,34 +176,118 @@ function AdmissionScheduler() {
   const isHome = pathname === "/";
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    if (isHome) return;
-    try {
-      if (sessionStorage.getItem("avedu-admission-popup") === "seen") return;
-    } catch {
-      /* ignore */
+    if (typeof window === "undefined" || isHome) return;
+    const seen = read("session", "avedu-admission-popup") === "seen";
+    const delay = seen ? 10000 : 5000;
+    let done = false;
+
+    const fire = () => {
+      if (done) return;
+      if (!request("admission")) return;
+      done = true;
+      setOpen(true);
+      write("session", "avedu-admission-popup", "seen");
+      cleanup();
+    };
+
+    const onScroll = () => {
+      if (window.innerWidth < 768 && scrollDepth() >= 0.5) fire();
+    };
+    const onLeave = (e: MouseEvent) => {
+      if (window.innerWidth >= 768 && e.clientY <= 0) fire();
+    };
+
+    const timer = window.setTimeout(fire, delay);
+    const poll = window.setInterval(() => !done && fire(), 6000);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("mouseleave", onLeave);
+
+    function cleanup() {
+      window.clearTimeout(timer);
+      window.clearInterval(poll);
+      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("mouseleave", onLeave);
     }
-    // Any inside page — direct landing or after the homepage — shows it at 5s.
-    const id = window.setTimeout(() => {
-      if (request("admission")) setOpen(true);
-    }, 5000);
-    return () => window.clearTimeout(id);
+    return cleanup;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isHome]);
+  }, [pathname, isHome]);
+
+  useEffect(() => setOpen(false), [pathname]);
 
   const close = () => {
     setOpen(false);
-    release("admission");
-    try {
-      sessionStorage.setItem("avedu-admission-popup", "seen");
-    } catch {
-      /* ignore */
-    }
+    release("admission", false);
+    write("session", "avedu-admission-popup", "seen");
   };
 
   if (!open || active !== "admission") return null;
   return <AdmissionPopup onClose={close} />;
 }
+
+/**
+ * Counselling form is intent-based, never a blunt timer:
+ * - from the second page view of the session (short settle delay);
+ * - 35% scroll on any page reached by navigating inside the site;
+ * - 60s + 50% scroll on a fee / eligibility / admission page;
+ * - exit-intent on a course or university page.
+ * Capped by a 20-minute localStorage cooldown after a dismissal and
+ * suppressed for good once a lead has been submitted.
+ */
+function CounsellingScheduler() {
+  const { request, active } = usePopupSurface();
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (leadSubmitted()) return;
+    const until = Number(read("local", COUNSEL_COOLDOWN_KEY) ?? 0);
+    if (Date.now() < until) return;
+
+    const views = Number(read("session", PAGEVIEW_KEY) ?? 0) + 1;
+    write("session", PAGEVIEW_KEY, String(views));
+
+    const deep = /fee|eligibilit|admission/.test(pathname);
+    const detail = /^\/(courses|universities|compare)\//.test(pathname);
+    const landedAt = Date.now();
+    let done = false;
+
+    const fire = () => {
+      if (done || leadSubmitted()) return;
+      if (!request("counselling")) return;
+      done = true;
+      cleanup();
+    };
+
+    const onScroll = () => {
+      const d = scrollDepth();
+      if (views >= 2 && d >= 0.35) fire();
+      if (deep && d >= 0.5 && Date.now() - landedAt >= 60000) fire();
+    };
+    const onLeave = (e: MouseEvent) => {
+      if (detail && window.innerWidth >= 768 && e.clientY <= 0) fire();
+    };
+
+    const secondView = views >= 2 ? window.setTimeout(fire, 8000) : 0;
+    window.addEventListener("scroll", onScroll, { passive: true });
+    document.addEventListener("mouseleave", onLeave);
+
+    function cleanup() {
+      if (secondView) window.clearTimeout(secondView);
+      window.removeEventListener("scroll", onScroll);
+      document.removeEventListener("mouseleave", onLeave);
+    }
+    return cleanup;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
+
+  useEffect(() => {
+    if (active !== "counselling") return;
+    return () => write("local", COUNSEL_COOLDOWN_KEY, String(Date.now() + COUNSEL_COOLDOWN_MS));
+  }, [active]);
+
+  return null;
+}
+
 
 function CounsellingModal({ onClose }: { onClose: () => void }) {
   useEffect(() => {
