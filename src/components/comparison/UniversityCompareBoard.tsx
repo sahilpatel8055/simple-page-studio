@@ -233,12 +233,13 @@ export function UniversityCompareBoard() {
                   View {u.shortName} <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </AppLink>
               ))}
-              <AppLink
-                to="/contact"
+              <button
+                type="button"
+                onClick={openCounselling}
                 className="inline-flex min-h-11 items-center rounded-xl border border-border bg-card px-4 text-sm font-bold text-brand"
               >
                 Get guidance
-              </AppLink>
+              </button>
             </div>
           </section>
         </>

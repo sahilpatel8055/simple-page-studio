@@ -132,9 +132,9 @@ export function Header() {
           >
             {mounted && theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
-          <AppLink to="/contact" className="btn btn-primary hidden sm:inline-flex">
+          <button type="button" onClick={openCounselling} className="btn btn-primary hidden sm:inline-flex">
             Get guidance
-          </AppLink>
+          </button>
           <ContactQuickMenu />
           <button
             type="button"
@@ -172,9 +172,16 @@ export function Header() {
               ))}
             </ul>
             <div className="mt-4 grid gap-2 sm:grid-cols-2">
-              <AppLink to="/contact" onClick={() => setOpen(false)} className="btn btn-primary w-full">
+              <button
+                type="button"
+                onClick={() => {
+                  setOpen(false);
+                  openCounselling();
+                }}
+                className="btn btn-primary w-full"
+              >
                 Get guidance
-              </AppLink>
+              </button>
               <button type="button" onClick={toggle} className="btn btn-secondary w-full sm:hidden">
                 {mounted && theme === "dark" ? "Light mode" : "Dark mode"}
               </button>

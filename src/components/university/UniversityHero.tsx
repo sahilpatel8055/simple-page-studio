@@ -125,12 +125,13 @@ export function UniversityHero({ university }: { university: University }) {
           >
             Compare
           </AppLink>
-          <AppLink
-            to="/contact"
+          <button
+            type="button"
+            onClick={openCounselling}
             className="inline-flex min-h-11 items-center rounded-xl border border-border bg-card px-4 text-sm font-bold text-brand"
           >
             Get guidance
-          </AppLink>
+          </button>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { CheckCircle2, ShieldCheck } from "lucide-react";
 import { universities } from "@/lib/content";
 import { universityLogo } from "@/lib/assets";
+import { markLeadSubmitted } from "@/components/common/PopupManager";
 
 const COURSES = [
   "Online MBA",
@@ -126,6 +127,7 @@ export function CounsellingForm({
         className="mx-auto mt-4 grid w-full max-w-md gap-2.5 sm:max-w-none sm:grid-cols-2 sm:gap-3"
         onSubmit={(e) => {
           e.preventDefault();
+          markLeadSubmitted();
           setSent(true);
         }}
       >
