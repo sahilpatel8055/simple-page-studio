@@ -327,7 +327,7 @@ function isLong(blocks: PostBlock[]) {
   return weight > 8;
 }
 
-export function PostBody({ post, familySlug }: { post: PostContent; familySlug?: string }) {
+export function PostBody({ post, familySlug }: { post: PostContent; familySlug?: string | undefined }) {
   const family = familySlug ? getCourseFamily(familySlug) : undefined;
   const pillarAt = post.sections.length > 4 ? Math.floor(post.sections.length / 2) : -1;
   return (
