@@ -56,13 +56,12 @@ export function getPartialLead(): PartialLead {
 /** Merge-and-store: called on every keystroke pause in a lead form. */
 export function savePartialLead(patch: PartialLead) {
   if (typeof window === "undefined") return;
-  const next: PartialLead = {
+  writeJson(PARTIAL_KEY, {
     ...getPartialLead(),
     ...patch,
-    path: typeof location !== "undefined" ? location.pathname : undefined,
+    path: location.pathname,
     updatedAt: new Date().toISOString(),
-  };
-  writeJson(PARTIAL_KEY, next);
+  } satisfies PartialLead);
 }
 
 export function getLeadContext(): LeadContext {
