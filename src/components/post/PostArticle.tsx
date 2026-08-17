@@ -254,15 +254,105 @@ function PromoBannerBlock({ block }: { block: Extract<PostBlock, { kind: "promo"
   );
 }
 
-export function PostBody({ post }: { post: PostContent }) {
+/**
+ * Editorial table: compacts rupee amounts for phones (₹1.75L / ₹85k), keeps one
+ * row per university and links the university column to its own page.
+ */
+function BlogTable({ block }: { block: Extract<PostBlock, { kind: "table" }> }) {
+  const isUniTable = /universit|college|institut/i.test(block.head[0] ?? "");
+  const source = isUniTable ? dedupeByFirstCell(block.rows) : block.rows;
+  const rows: ReactNode[][] = source.map((r) =>
+    r.map((cell, ci) => {
+      const text = compactMoney(String(cell ?? ""));
+      if (isUniTable && ci === 0) {
+        const slug = universitySlugForLabel(String(cell ?? ""));
+        if (slug)
+          return (
+            <AppLink key={ci} to={`/universities/${slug}`} className="font-semibold text-brand hover:underline">
+              {text}
+            </AppLink>
+          );
+      }
+      return text;
+    }),
+  );
+  return block.caption ? (
+    <DataTable caption={block.caption} head={block.head} rows={rows} />
+  ) : (
+    <DataTable head={block.head} rows={rows} />
+  );
+}
+
+/**
+ * Long sections are clamped to roughly one screen with a "See more" control so
+ * scrolling stays manageable on phones and laptops.
+ */
+function Clamped({ children, clamp }: { children: ReactNode; clamp: boolean }) {
+  const [open, setOpen] = useState(false);
+  if (!clamp) return <>{children}</>;
+  return (
+    <div>
+      <div className={`relative ${open ? "" : "max-h-[26rem] overflow-hidden sm:max-h-[34rem]"}`}>
+        {children}
+        {!open && (
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-background to-transparent"
+          />
+        )}
+      </div>
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className="mt-3 inline-flex min-h-10 items-center gap-1.5 rounded-full border border-brand/40 px-5 text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-brand-foreground"
+      >
+        {open ? "See less" : "See more"} <ArrowRight className={`h-4 w-4 ${open ? "-rotate-90" : "rotate-90"}`} />
+      </button>
+    </div>
+  );
+}
+
+/** Rough content weight used to decide whether a section needs clamping. */
+function isLong(blocks: PostBlock[]) {
+  let weight = 0;
+  for (const b of blocks) {
+    if (b.kind === "p") weight += Math.ceil(b.text.length / 220);
+    else if (b.kind === "list") weight += b.items.length * 0.6;
+    else if (b.kind === "table") weight += b.rows.length * 0.8;
+    else weight += 1.5;
+  }
+  return weight > 8;
+}
+
+export function PostBody({ post, familySlug }: { post: PostContent; familySlug?: string }) {
+  const family = familySlug ? getCourseFamily(familySlug) : undefined;
+  const pillarAt = post.sections.length > 4 ? Math.floor(post.sections.length / 2) : -1;
   return (
     <>
-      {post.sections.map((s) => (
-        <ContentSection key={s.heading} title={s.heading}>
-          {s.blocks.map((b, i) => (
-            <Block key={i} block={b} />
-          ))}
-        </ContentSection>
+      {post.sections.map((s, si) => (
+        <div key={s.heading} className="contents">
+          <ContentSection title={s.heading}>
+            <Clamped clamp={isLong(s.blocks)}>
+              <div className="space-y-4">
+                {s.blocks.map((b, i) => (
+                  <Block key={i} block={b} />
+                ))}
+              </div>
+            </Clamped>
+          </ContentSection>
+          {family && si === 0 && <BlogUniversities familySlug={family.slug} />}
+          {family && si === pillarAt && (
+            <PromoBannerBlock
+              block={{
+                kind: "promo",
+                title: `Want the full ${family.name} comparison?`,
+                body: `Fees, eligibility, specialisations and placement support for every university offering an ${family.name}, side by side.`,
+                ctaLabel: `Open the ${family.name} guide`,
+                href: `/courses/${family.slug}`,
+              }}
+            />
+          )}
+        </div>
       ))}
     </>
   );
