@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react";
 import { X, CalendarDays, Clock, ShieldCheck } from "lucide-react";
 import { usePopupSurface } from "@/components/common/PopupManager";
+import { getLeadContext, whatsappLink } from "@/lib/leadContext";
+/** Tonight's midnight — the actual offer cut-off shown on the clock. */
+function nextMidnight(now = Date.now()) {
+  const d = new Date(now);
+  d.setHours(24, 0, 0, 0);
+  return d.getTime();
+}
+
 
 
 /** Fixed 3-day admission cycle anchored to a stable epoch, in the user's local time. */
@@ -26,16 +34,19 @@ const MONTHS = [
 
 export function AdmissionPopup({ onClose }: { onClose: () => void }) {
   const { openCounselling } = usePopupSurface();
-  const [deadline, setDeadline] = useState(() => nextDeadline());
-  const [left, setLeft] = useState(() => nextDeadline() - Date.now());
+  const [deadline, setDeadline] = useState(() => nextMidnight());
+  const [left, setLeft] = useState(() => nextMidnight() - Date.now());
+  const [ctx, setCtx] = useState<{ universityName?: string; courseLabel?: string }>({});
+
+  useEffect(() => setCtx(getLeadContext()), []);
 
   useEffect(() => {
     const tick = () => {
       const now = Date.now();
       let end = deadline;
-      // Countdown finished — roll forward to the next 3-day deadline automatically.
+      // Countdown finished — roll over to the following midnight automatically.
       if (now >= end) {
-        end = nextDeadline(now);
+        end = nextMidnight(now);
         setDeadline(end);
       }
       setLeft(end - now);
@@ -56,8 +67,14 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
   const mins = Math.floor((total % 3600) / 60);
   const secs = total % 60;
 
-  const d = new Date(deadline);
+  const d = new Date(nextDeadline());
   const lastDate = `${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+  const dayFraction = Math.min(1, Math.max(0, total / 86400));
+  const headline = ctx.universityName
+    ? `${ctx.universityName} 2026 admissions closing soon.`
+    : ctx.courseLabel
+      ? `${ctx.courseLabel} 2026 batch admissions closing soon.`
+      : "2026 Batch Admissions Closing Soon.";
 
   return (
     <div className="fixed inset-0 z-[90] flex items-center justify-center overflow-y-auto bg-black/55 p-3 backdrop-blur-sm sm:p-6">
@@ -95,31 +112,41 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
 
             <h2 className="mt-3 font-display text-[1.35rem] font-extrabold leading-[1.15] text-[#111] sm:text-3xl">
               <span className="block text-[#7f1813]">Don&apos;t Miss!</span>
-              2026 Batch Admissions Closing Soon.
+              {headline}
             </h2>
 
-            <div className="mt-4 rounded-2xl bg-white/85 p-3 ring-1 ring-[#7f1813]/12 sm:p-4">
+            <div className="mt-4 rounded-2xl bg-white/90 p-3 shadow-[0_10px_30px_-18px_rgba(127,24,19,0.7)] ring-1 ring-[#7f1813]/12 sm:p-4">
               <p className="text-[0.72rem] font-bold text-[#333] sm:text-[0.85rem]">
-                Offer ends today at <span className="text-[#7f1813]">12:00 AM</span>
+                Offer ends tonight at <span className="text-[#7f1813]">12:00 AM</span>
               </p>
-              <div className="mt-2 flex items-center gap-1.5 sm:gap-2">
+              <div className="mt-2.5 flex items-center gap-1.5 sm:gap-2">
                 {[
                   { v: pad(hrs), l: "HRS" },
                   { v: pad(mins), l: "MINS" },
                   { v: pad(secs), l: "SECS" },
                 ].map((u, i) => (
                   <div key={u.l} className="flex items-center gap-1.5 sm:gap-2">
-                    {i > 0 && <span className="text-lg font-extrabold text-[#7f1813]">:</span>}
-                    <div className="min-w-[3rem] rounded-xl bg-[#7f1813] px-2 py-1.5 text-center text-white sm:min-w-[3.6rem] sm:py-2">
-                      <span className="block font-display text-lg font-extrabold leading-none tabular-nums sm:text-2xl">
+                    {i > 0 && (
+                      <span className="animate-pulse text-lg font-extrabold text-[#7f1813]">:</span>
+                    )}
+                    <div className="relative min-w-[3rem] overflow-hidden rounded-xl bg-gradient-to-b from-[#a11f19] to-[#69100c] px-2 py-1.5 text-center text-white shadow-lg ring-1 ring-white/15 sm:min-w-[3.6rem] sm:py-2">
+                      <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-white/12" />
+                      <span className="pointer-events-none absolute inset-x-0 top-1/2 h-px bg-black/25" />
+                      <span className="relative block font-display text-lg font-extrabold leading-none tabular-nums sm:text-2xl">
                         {u.v}
                       </span>
-                      <span className="mt-1 block text-[0.55rem] font-bold tracking-wider sm:text-[0.62rem]">
+                      <span className="relative mt-1 block text-[0.55rem] font-bold tracking-wider text-white/80 sm:text-[0.62rem]">
                         {u.l}
                       </span>
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="mt-3 h-1.5 w-full overflow-hidden rounded-full bg-[#7f1813]/12">
+                <div
+                  className="h-full rounded-full bg-gradient-to-r from-[#a11f19] to-[#e0a24a] transition-[width] duration-1000 ease-linear"
+                  style={{ width: `${Math.round(dayFraction * 100)}%` }}
+                />
               </div>
               <p className="mt-2.5 flex items-center gap-1.5 border-t border-[#7f1813]/10 pt-2.5 text-[0.7rem] font-semibold text-[#555] sm:text-[0.78rem]">
                 <Clock className="h-3.5 w-3.5 text-[#7f1813]" /> Hurry! Seats are filling fast.
@@ -127,16 +154,31 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
             </div>
           </div>
 
-          <button
-            type="button"
-            onClick={() => {
-              onClose();
-              openCounselling();
-            }}
-            className="relative z-10 mt-4 flex h-12 w-full max-w-[22rem] items-center justify-center gap-2 rounded-xl bg-[#7f1813] text-[0.95rem] font-bold text-white shadow-lg transition-opacity hover:opacity-90 sm:mt-5"
-          >
-            Secure Your Seat Now <span aria-hidden="true">›</span>
-          </button>
+          <div className="relative z-10 mt-4 flex w-full max-w-[22rem] flex-col gap-2 sm:mt-5">
+            <button
+              type="button"
+              onClick={() => {
+                onClose();
+                openCounselling();
+              }}
+              className="flex h-12 items-center justify-center gap-2 rounded-xl bg-[#7f1813] text-[0.95rem] font-bold text-white shadow-lg transition-opacity hover:opacity-90"
+            >
+              Secure Your Seat Now <span aria-hidden="true">›</span>
+            </button>
+            <a
+              href={whatsappLink(
+                ctx.universityName
+                  ? `Hi, I want 2026 admission details and fees for ${ctx.universityName}.`
+                  : "Hi, I want 2026 admission details and fees.",
+              )}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={onClose}
+              className="flex h-11 items-center justify-center gap-2 rounded-xl border border-[#7f1813]/25 bg-white text-[0.9rem] font-bold text-[#7f1813]"
+            >
+              <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> Get fees on WhatsApp
+            </a>
+          </div>
         </div>
 
         <div className="flex items-center justify-center gap-3 border-t border-[#7f1813]/10 bg-[#fdf3f3] px-4 py-3 text-center">
