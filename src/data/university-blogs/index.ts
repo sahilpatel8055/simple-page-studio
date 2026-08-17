@@ -13,6 +13,7 @@ import type { Article } from "@/lib/content";
 import { amityOnlineArticles, amityOnlinePosts } from "./amity-online";
 import { amityCourseArticles, amityCoursePosts } from "./amity-course-blogs";
 import { chandigarhOnlineArticles, chandigarhOnlinePosts } from "./chandigarh-university-online";
+import { cuProgramArticles, cuProgramPosts } from "./cu-program-blogs";
 import { duSolArticles, duSolPosts } from "./du-sol";
 import { ignouArticles, ignouPosts } from "./ignou";
 import { lpuOnlineArticles, lpuOnlinePosts } from "./lpu-online";
@@ -39,8 +40,8 @@ export const universityBlogGroups: UniversityBlogGroup[] = [
   {
     slug: "chandigarh-university-online",
     label: "Chandigarh University Online",
-    articles: chandigarhOnlineArticles,
-    posts: chandigarhOnlinePosts,
+    articles: [...cuProgramArticles, ...chandigarhOnlineArticles],
+    posts: { ...chandigarhOnlinePosts, ...cuProgramPosts },
   },
   {
     slug: "lpu-online",
