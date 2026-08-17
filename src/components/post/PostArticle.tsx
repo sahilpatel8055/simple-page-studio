@@ -109,11 +109,7 @@ function Block({ block }: { block: PostBlock }) {
         </ul>
       );
     case "table":
-      return block.caption ? (
-        <DataTable caption={block.caption} head={block.head} rows={block.rows} />
-      ) : (
-        <DataTable head={block.head} rows={block.rows} />
-      );
+      return <BlogTable block={block} />;
     case "h3":
       return (
         <h3 className="mt-2 scroll-mt-36 border-l-4 border-brand pl-3 font-display text-[1.05rem] font-extrabold leading-snug text-foreground sm:text-lg">
