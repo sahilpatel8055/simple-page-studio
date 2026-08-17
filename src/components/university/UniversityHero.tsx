@@ -3,6 +3,7 @@ import { AppLink } from "@/components/common/AppLink";
 import { approvalIcon, campusImage, universityLogo } from "@/lib/assets";
 import type { University } from "@/data";
 import { formatFee, programmesOf } from "@/lib/universityData";
+import { usePopupSurface } from "@/components/common/PopupManager";
 
 /**
  * Decision-first university header: identity, approvals, rating, key facts and
@@ -10,6 +11,7 @@ import { formatFee, programmesOf } from "@/lib/universityData";
  * missing fields are simply not rendered.
  */
 export function UniversityHero({ university }: { university: University }) {
+  const { openCounselling } = usePopupSurface();
   const u = university;
   const logo = universityLogo(u.slug);
   const campus = campusImage(u.slug);

@@ -11,6 +11,7 @@ import {
   type CompareUniversity,
 } from "@/lib/universityCompare";
 import { cn } from "@/lib/utils";
+import { usePopupSurface } from "@/components/common/PopupManager";
 
 const MAX = 4;
 
@@ -19,6 +20,7 @@ const MAX = 4;
  * existing /compare/* pSEO comparison pages — it only reads shared data.
  */
 export function UniversityCompareBoard() {
+  const { openCounselling } = usePopupSurface();
   const universe = useMemo(() => compareUniverse(), []);
   const [selected, setSelected] = useState<string[]>(() => universe.slice(0, 2).map((u) => u.slug));
   const [compared, setCompared] = useState(true);

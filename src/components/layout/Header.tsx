@@ -5,6 +5,7 @@ import { mobileNav, primaryNav, type NavItem } from "@/lib/navigation";
 import { useTheme } from "@/hooks/use-theme";
 import { SearchBox } from "./SearchBox";
 import { ContactQuickMenu } from "@/components/common/ContactQuickMenu";
+import { usePopupSurface } from "@/components/common/PopupManager";
 
 function MegaMenu({ item }: { item: NavItem }) {
   if (!item.columns) return null;
@@ -53,6 +54,7 @@ function MegaMenu({ item }: { item: NavItem }) {
 }
 
 export function Header() {
+  const { openCounselling } = usePopupSurface();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const { theme, toggle, mounted } = useTheme();

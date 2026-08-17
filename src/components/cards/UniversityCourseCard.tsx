@@ -6,6 +6,7 @@ import { getProgramme as getProgrammeRecord, specialisationsOf } from "@/lib/uni
 import { courseImage } from "@/lib/course-images";
 import { universityLogo } from "@/lib/assets";
 import type { Offering } from "@/data";
+import { usePopupSurface } from "@/components/common/PopupManager";
 
 /**
  * Programme card used in the "Courses & fees" section of a university page.
@@ -14,6 +15,7 @@ import type { Offering } from "@/data";
  * missing figure is stated, never invented.
  */
 export function UniversityCourseCard({
+  const { openCounselling } = usePopupSurface();
   offering,
   universitySlug,
   feeFallback = "Fee pending verification",
