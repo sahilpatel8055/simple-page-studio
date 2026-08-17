@@ -56,6 +56,8 @@ import {
   providerLinks,
 } from "@/lib/entities";
 import { specLandingPath } from "@/lib/courseFamily";
+import { BlogStrip } from "@/components/common/UniversityBlogs";
+import { blogsForUniversity } from "@/data/university-blogs";
 import {
   breadcrumbSchema,
   canonical,
@@ -172,6 +174,16 @@ function Page() {
   const u = university.record;
   const p = programme.record;
   const master = getUniversityCourse(u.slug, p.slug);
+  const key = p.shortName.toLowerCase().replace(/[^a-z]/g, "");
+  const uniBlogs = blogsForUniversity(u.slug);
+  const courseBlogs = (() => {
+    const matched = uniBlogs.filter(
+      (a) =>
+        a.slug.replace(/[^a-z]/g, "").includes(key) ||
+        a.tags.some((t) => t.toLowerCase().replace(/[^a-z]/g, "") === key),
+    );
+    return (matched.length ? matched : uniBlogs).slice(0, 3);
+  })();
 
   const faqs = [
     {
@@ -229,6 +241,7 @@ function Page() {
           "Scholarships",
           "Learning experience",
           "Who should choose it",
+          `${u.shortName} ${p.shortName} guides`,
           "FAQs",
           "Related links",
         ]}
@@ -435,6 +448,17 @@ function Page() {
         <ContentSection title="Researched programme record">
           <PubCourseResearch universitySlug={u.slug} programmeSlug={p.slug} />
         </ContentSection>
+
+        {courseBlogs.length > 0 && (
+          <ContentSection title={`${u.shortName} ${p.shortName} guides`}>
+            <BlogStrip
+              items={courseBlogs}
+              title={`${u.shortName} guides`}
+              intro={`In-depth editorial guides on ${u.shortName} ${p.shortName} — fees, admission, curriculum and careers.`}
+              allHref="/blogs"
+            />
+          </ContentSection>
+        )}
 
         <SectionUrlGrid
           base={`/universities/${u.slug}/courses/${p.slug}`}
