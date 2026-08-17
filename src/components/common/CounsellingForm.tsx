@@ -3,7 +3,7 @@ import { CheckCircle2, ShieldCheck } from "lucide-react";
 import { universities } from "@/lib/content";
 import { universityLogo } from "@/lib/assets";
 import { markLeadSubmitted } from "@/components/common/PopupManager";
-import { CALL_SLOTS, savePartialLead, whatsappLink } from "@/lib/leadContext";
+import { CALL_SLOTS, savePartialLead } from "@/lib/leadContext";
 
 const COURSES = [
   "Online MBA",
@@ -214,14 +214,6 @@ export function CounsellingForm({
         >
           Get free counselling
         </button>
-        <a
-          href={whatsappLink()}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex h-11 items-center justify-center gap-2 rounded-xl border border-[#128C7E]/40 bg-[#128C7E]/5 text-sm font-bold text-[#0f6f64] sm:col-span-2"
-        >
-          <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> Chat on WhatsApp instead
-        </a>
       </form>
 
       <p className="mt-3 flex items-center justify-center gap-1.5 text-center text-[0.72rem] font-medium text-muted-foreground">

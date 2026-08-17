@@ -339,12 +339,13 @@ function CounsellingModal({ onClose }: { onClose: () => void }) {
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 z-[80] flex items-center justify-center overflow-y-auto bg-black/50 p-3 backdrop-blur-sm sm:p-6">
+    <div className="fixed inset-0 z-[80] overflow-y-auto bg-black/50 backdrop-blur-sm">
+      <div className="flex min-h-full items-center justify-center p-4 sm:p-8">
       <div
         role="dialog"
         aria-modal="true"
         aria-label="Free counselling"
-        className="relative w-full max-w-xl overflow-hidden rounded-3xl border border-border bg-card shadow-2xl"
+        className="relative my-auto w-full max-w-lg overflow-hidden rounded-3xl border border-border bg-card shadow-2xl"
       >
         <button
           type="button"
@@ -355,6 +356,7 @@ function CounsellingModal({ onClose }: { onClose: () => void }) {
           <X className="h-4 w-4" />
         </button>
         <CounsellingForm compact onDone={onClose} />
+      </div>
       </div>
     </div>
   );
