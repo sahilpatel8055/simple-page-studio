@@ -235,9 +235,16 @@ export function pillarCtrMeta(programmeSlug: string, year = 2026): CtrMeta | nul
     description: clampDesc(
       `${p.name} explained for Indian students — ${providers} universities compared, ${p.feeRangeLabel} published fee range, eligibility, specialisations and how to pick the right one.`,
     ),
-    keywords: [p.name, `${p.name} universities`, `${p.name} fee range`, `${p.name} eligibility`],
+    keywords: [
+      ...new Set([
+        ...ownedCourseKeywords(programmeSlug, "coursePillar", 8),
+        p.name,
+        `${p.name} universities`,
+      ]),
+    ],
   };
 }
+
 
 /** Comparison: owns “A vs B”; never claims a winner. */
 export function comparisonCtrMeta(leftShort: string, rightShort: string, year = 2026): CtrMeta {
