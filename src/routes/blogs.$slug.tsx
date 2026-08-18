@@ -131,7 +131,7 @@ function Page() {
     >
       <KeyTakeaways items={post.keyTakeaways} />
       <MobileToc sections={toc} />
-      <PostBody post={post} familySlug={familySlug} />
+      <PostBody post={post} familySlug={familySlug} showUniversities={showUniversities} />
       {post.sources?.length ? <PostSources items={post.sources} /> : null}
     </DetailLayout>
   );
