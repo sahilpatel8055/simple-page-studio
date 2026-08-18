@@ -16,6 +16,7 @@ import {
   programmes,
   universities,
 } from "@/data";
+import { ownedCourseKeywords, ownedUniversityKeywords } from "@/lib/keywordClusters";
 import type { SearchIntent } from "@/lib/searchIntent";
 
 export type PageKind =
