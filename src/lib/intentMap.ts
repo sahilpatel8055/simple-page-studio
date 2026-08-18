@@ -16,6 +16,8 @@ import {
   programmes,
   universities,
 } from "@/data";
+import { articles } from "@/lib/content";
+import { universityPairs } from "@/lib/entities";
 import { ownedCourseKeywords, ownedUniversityKeywords } from "@/lib/keywordClusters";
 import type { SearchIntent } from "@/lib/searchIntent";
 
