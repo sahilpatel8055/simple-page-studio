@@ -30,7 +30,7 @@ import {
   RequiredDocuments,
 } from "@/components/university/CourseDecisionSections";
 import { NextStep } from "@/components/common/NextStep";
-import { PubCourseResearch } from "@/components/pub/PubBlocks";
+import { PubCourseCurriculum, hasPubCurriculum } from "@/components/pub/PubBlocks";
 import { courseKeyForProgramme, getUniversityCourse, masterResearchDate, siteSlugForMasterSlug } from "@/lib/courseMaster";
 import {
   CurriculumSection,
@@ -321,7 +321,7 @@ function Page() {
           />
         </ContentSection>
 
-        {master.course && (
+        {master.course ? (
           <ContentSection title="Curriculum">
             <CurriculumSection
               course={master.course}
@@ -329,7 +329,11 @@ function Page() {
               universitySpecificNote={master.curriculumNote}
             />
           </ContentSection>
-        )}
+        ) : hasPubCurriculum(u.slug, p.slug) ? (
+          <ContentSection title="Curriculum">
+            <PubCourseCurriculum universitySlug={u.slug} programmeSlug={p.slug} universityShort={u.shortName} />
+          </ContentSection>
+        ) : null}
 
         {degreeSample(u.slug) && (
           <ContentSection title="Sample degree">
@@ -445,9 +449,7 @@ function Page() {
           />
         </ContentSection>
 
-        <ContentSection title="Researched programme record">
-          <PubCourseResearch universitySlug={u.slug} programmeSlug={p.slug} />
-        </ContentSection>
+
 
         {courseBlogs.length > 0 && (
           <ContentSection title={`${u.shortName} ${p.shortName} guides`}>

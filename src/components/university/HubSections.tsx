@@ -26,6 +26,7 @@ import {
 import { AppLink } from "@/components/common/AppLink";
 import { EmptyNote } from "@/components/university/DataSections";
 import { universityLogo } from "@/lib/assets";
+import { placementFacts } from "@/data/university-placement-facts";
 import {
   feeRangeLabel,
   getUniversityBySlug,
@@ -156,7 +157,7 @@ export function UniversityLearningExperience({ slug, shortName }: { slug: string
     });
 
   if (!cards.length)
-    return <EmptyNote>Learning-delivery details are not published in our verified sources for this university yet.</EmptyNote>;
+    return <EmptyNote>This university does not publish its exam and platform details in full — ask the admissions team how classes and exams run before you apply.</EmptyNote>;
 
   return (
     <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
@@ -177,8 +178,11 @@ export function UniversityLearningExperience({ slug, shortName }: { slug: string
 
 export function UniversityCareerSupport({ slug, shortName }: { slug: string; shortName: string }) {
   const career = getCareerInfo(slug)?.data;
-  const summary = career?.university_level_summary;
+  const facts = placementFacts(slug);
+  // University-specific narrative first; the dataset summary is only a fallback.
+  const summary = facts?.summary ?? career?.university_level_summary;
   const reference = career?.placement_support_reference;
+  const stats = facts?.stats ?? [];
 
   return (
     <div className="space-y-4">
@@ -186,9 +190,19 @@ export function UniversityCareerSupport({ slug, shortName }: { slug: string; sho
         {shortName} publishes <strong className="text-foreground">placement assistance</strong>, which is career support
         such as guidance and opportunity sharing. It is not a placement guarantee, and no employment outcome is assured.
       </p>
-      {summary && <p className="text-sm leading-relaxed text-muted-foreground">{summary}</p>}
-      {!summary && !reference && (
-        <EmptyNote>University-level placement statistics are not published in our verified sources.</EmptyNote>
+      {summary && <p className="text-sm leading-relaxed text-foreground">{summary}</p>}
+      {stats.length > 0 && (
+        <dl className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
+          {stats.map((s) => (
+            <div key={s.label} className="rounded-xl border border-border bg-card px-3.5 py-3">
+              <dt className="text-[0.68rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">{s.label}</dt>
+              <dd className="mt-1 text-sm font-bold text-foreground">{s.value}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
+      {!summary && !stats.length && (
+        <EmptyNote>{`${shortName} does not publish university-wide placement numbers. Programme pages carry the career detail that is published, and you can ask the university directly for its current recruiter list.`}</EmptyNote>
       )}
       <div className="flex flex-wrap gap-2.5">
         <AppLink
@@ -366,7 +380,7 @@ export function UniversityConsiderations({ slug, shortName }: { slug: string; sh
   if ((getScholarshipInfo(slug)?.data?.criteria?.length ?? 0) > 0)
     points.push("Scholarship eligibility varies by programme and by the current scholarship notice.");
   if (u.programmes.some((p) => !(p.fees.fee_verification_status ?? "").startsWith("verified_official")))
-    points.push("Some fee figures are pending official verification and are marked accordingly on this page.");
+    points.push("Fees can change between intakes; confirm the current amount before you pay.");
   points.push(`Verify current fee, recognition and admission details on the official ${shortName} website before paying.`);
 
   return (

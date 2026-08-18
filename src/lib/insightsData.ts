@@ -11,6 +11,7 @@
  * can hide it.
  */
 import dataset from "@/data/university-admission-exam-career-scholarship-2026-27.json";
+import { consumerLink, consumerList, consumerText } from "@/lib/consumerText";
 
 /* --------------------------------- types --------------------------------- */
 
@@ -166,6 +167,42 @@ export function isUnsafeStatus(status?: string | null): boolean {
   return /not_safely_verified|pending|reference_only|unresolved/.test(status);
 }
 
+/* ------------------------- reader-facing sanitising ----------------------- */
+/*
+ * The JSON keeps internal editorial notes and aggregator references. They stay
+ * on disk (audit/traceability) but are stripped from every resolved value so no
+ * page can render them.
+ */
+
+const cleanAdmission = (a: UniversityAdmissionInfo): UniversityAdmissionInfo => ({
+  ...a,
+  cycles: consumerText(a.cycles) ?? null,
+  entrance_exam: consumerText(a.entrance_exam) ?? null,
+  steps: a.steps?.length ? consumerList(a.steps) : (a.steps ?? null),
+});
+
+const cleanExam = (e: ExamPatternInfo): ExamPatternInfo => ({
+  ...e,
+  proctoring: consumerText(e.proctoring) ?? null,
+  assessment: consumerText(e.assessment) ?? null,
+  weightage: consumerText(e.weightage) ?? null,
+  sections: consumerText(e.sections) ?? null,
+  note: consumerText(e.note) ?? null,
+});
+
+const cleanCareer = (c: CareerInfo): CareerInfo => ({
+  ...c,
+  university_level_summary: consumerText(c.university_level_summary) ?? null,
+  placement_support_reference: consumerLink(c.placement_support_reference) ?? null,
+});
+
+const cleanScholarship = (s: ScholarshipInfo): ScholarshipInfo => {
+  const criteria = (s.criteria ?? [])
+    .map((c) => ({ name: c.name ?? null, criterion: consumerText(c.criterion) ?? null }))
+    .filter((c) => c.name || c.criterion);
+  return { ...s, criteria, note: consumerText(s.note) ?? null };
+};
+
 /* -------------------------------- resolvers ------------------------------- */
 
 export function getAdmissionInfo(
@@ -177,11 +214,11 @@ export function getAdmissionInfo(
   const course = courseSlug ? getCourseInfo(universitySlug, courseSlug) : undefined;
   const override = course?.admission?.course_specific_override;
   if (override && hasAdmissionContent(override)) {
-    return { data: { ...uni.admission, ...override }, origin: "course", inherited: false, ...(course?.admission?.intake ? { intake: course.admission.intake } : {}) };
+    return { data: cleanAdmission({ ...uni.admission, ...override }), origin: "course", inherited: false, ...(course?.admission?.intake ? { intake: course.admission.intake } : {}) };
   }
   if (!hasAdmissionContent(uni.admission)) return undefined;
   return {
-    data: uni.admission,
+    data: cleanAdmission(uni.admission),
     origin: "university",
     inherited: Boolean(courseSlug),
     ...(course?.admission?.intake ? { intake: course.admission.intake } : {}),
@@ -194,10 +231,10 @@ export function getExamPattern(universitySlug: string, courseSlug?: string): Res
   const course = courseSlug ? getCourseInfo(universitySlug, courseSlug) : undefined;
   const override = course?.exam_pattern?.course_specific_override;
   if (override && hasExamContent(override)) {
-    return { data: { ...uni.exam, ...override }, origin: "course", inherited: false };
+    return { data: cleanExam({ ...uni.exam, ...override }), origin: "course", inherited: false };
   }
   if (!hasExamContent(uni.exam)) return undefined;
-  return { data: uni.exam, origin: "university", inherited: Boolean(courseSlug) };
+  return { data: cleanExam(uni.exam), origin: "university", inherited: Boolean(courseSlug) };
 }
 
 export function getCareerInfo(universitySlug: string, courseSlug?: string): Resolved<CareerInfo> | undefined {
@@ -213,11 +250,11 @@ export function getCareerInfo(universitySlug: string, courseSlug?: string): Reso
       ...(c.relevant_skills?.length ? { skills: c.relevant_skills } : {}),
     };
     if (hasCareerContent(courseData) || courseData.university_level_summary) {
-      return { data: courseData, origin: "course", inherited: false };
+      return { data: cleanCareer(courseData), origin: "course", inherited: false };
     }
   }
   if (!hasCareerContent(uni.career)) return undefined;
-  return { data: uni.career, origin: "university", inherited: Boolean(courseSlug) };
+  return { data: cleanCareer(uni.career), origin: "university", inherited: Boolean(courseSlug) };
 }
 
 export function getScholarshipInfo(
@@ -229,10 +266,10 @@ export function getScholarshipInfo(
   const course = courseSlug ? getCourseInfo(universitySlug, courseSlug) : undefined;
   const override = course?.scholarship?.course_specific_override;
   if (override && hasScholarshipContent(override)) {
-    return { data: override, origin: "course", inherited: false };
+    return { data: cleanScholarship(override), origin: "course", inherited: false };
   }
   if (!hasScholarshipContent(uni.scholarship) && !uni.scholarship?.note) return undefined;
-  return { data: uni.scholarship, origin: "university", inherited: Boolean(courseSlug) };
+  return { data: cleanScholarship(uni.scholarship), origin: "university", inherited: Boolean(courseSlug) };
 }
 
 export function insightSources(universitySlug: string): InsightSources | undefined {
