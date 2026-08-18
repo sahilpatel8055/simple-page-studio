@@ -18,6 +18,7 @@ import { duSolArticles, duSolPosts } from "./du-sol";
 import { ignouArticles, ignouPosts } from "./ignou";
 import { lpuOnlineArticles, lpuOnlinePosts } from "./lpu-online";
 import { lpuProgramArticles, lpuProgramPosts } from "./lpu-program-blogs";
+import { lpuDeepArticles, lpuDeepPosts } from "./lpu-deep-blogs";
 import { nsouArticles, nsouPosts } from "./nsou";
 import { nsouCourseArticles, nsouCoursePosts } from "./nsou-course-blogs";
 import { parulOnlineArticles, parulOnlinePosts } from "./parul-online";
@@ -51,8 +52,8 @@ export const universityBlogGroups: UniversityBlogGroup[] = [
   {
     slug: "lpu-online",
     label: "LPU Online",
-    articles: [...lpuProgramArticles, ...lpuOnlineArticles],
-    posts: { ...lpuOnlinePosts, ...lpuProgramPosts },
+    articles: [...lpuDeepArticles, ...lpuProgramArticles, ...lpuOnlineArticles],
+    posts: { ...lpuOnlinePosts, ...lpuProgramPosts, ...lpuDeepPosts },
   },
   {
     slug: "shoolini-online",
