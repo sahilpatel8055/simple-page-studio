@@ -308,7 +308,11 @@ export function siteIntentClaims(): IntentClaim[] {
     claims.push({ path: `/blogs/${a.slug}`, kind: "blog", primaryQuery: a.title });
   }
   for (const pair of universityPairs()) {
-    claims.push({ path: `/compare/${pair.slug}`, kind: "comparison", primaryQuery: `${pair.left.shortName} vs ${pair.right.shortName}` });
+    claims.push({
+      path: pair.path,
+      kind: "comparison",
+      primaryQuery: `${pair.left.record.shortName} vs ${pair.right.record.shortName}`,
+    });
   }
 
   return claims;
