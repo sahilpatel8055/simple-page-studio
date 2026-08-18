@@ -182,6 +182,8 @@ function Page() {
   const u = university.record;
   const p = programme.record;
   const master = getUniversityCourse(u.slug, p.slug);
+  const narrative = offeringNarrative(u.slug, p.slug);
+
   const key = p.shortName.toLowerCase().replace(/[^a-z]/g, "");
   const uniBlogs = blogsForUniversity(u.slug);
   const courseBlogs = (() => {
