@@ -62,7 +62,6 @@ import {
   sourcesForUniversity,
 } from "@/lib/universityData";
 import {
-  OfferingValueCheck as _OfferingValueCheck,
   UniversityDecisionGuide,
   UniversityFeeValueAnalysis,
   universityDecisionHeading,
@@ -189,6 +188,9 @@ function Page() {
   const json = getUniversityBySlug(slug);
   const hasFeeTable = Boolean(feeTableFor(slug));
   const hasDegreeSample = Boolean(degreeSample(slug));
+  const headings = universityHeadings(u);
+  const decisionHeading = universityDecisionHeading(slug);
+  const hasFeeValue = Boolean(universityFeeValue(slug));
 
   const faqs = [
     {
@@ -217,8 +219,8 @@ function Page() {
           { name: u.shortName, href: path },
         ]}
         hero={<UniversityHero university={u} />}
-        eyebrow={`${u.type ? `${u.type} university · ` : ""}${u.modes.join(" / ")}`}
-        title={`${u.name}: Fees, Courses, Approvals & Admission 2026`}
+        eyebrow={`${u.type ? `${u.type} university · ` : ""}${u.modes.join(" / ")} · ${headings.eyebrowNote}`}
+        title={headings.h1}
         subtitle={u.summary}
         meta={<UpdatedStamp date={u.lastUpdated} verified={u.verified} />}
         tocSections={[
@@ -227,6 +229,7 @@ function Page() {
           "Approvals & recognition",
           "Courses & fees",
           ...(hasFeeTable ? ["Fee structure"] : []),
+          ...(hasFeeValue ? ["Fee vs other universities"] : []),
           "Admission process",
           "Examination pattern",
           "Specialisations",
@@ -239,7 +242,7 @@ function Page() {
           "Who it suits",
           "Student reviews",
           "Compare universities",
-          "Who may consider this university",
+          ...(decisionHeading ? [decisionHeading] : ["Who may consider this university"]),
           "What to verify before applying",
           "FAQs",
           "Related links",
@@ -302,6 +305,12 @@ function Page() {
         {hasFeeTable && (
           <ContentSection title="Fee structure">
             <FeeStructureTable universitySlug={slug} universityShort={u.shortName} />
+          </ContentSection>
+        )}
+
+        {hasFeeValue && (
+          <ContentSection title="Fee vs other universities">
+            <UniversityFeeValueAnalysis slug={slug} />
           </ContentSection>
         )}
 
@@ -373,8 +382,12 @@ function Page() {
         </ContentSection>
 
 
-        <ContentSection title="Who may consider this university">
-          <WhoMayConsiderUniversity shortName={u.shortName} />
+        <ContentSection title={decisionHeading ?? "Who may consider this university"}>
+          {decisionHeading ? (
+            <UniversityDecisionGuide slug={slug} />
+          ) : (
+            <WhoMayConsiderUniversity shortName={u.shortName} />
+          )}
         </ContentSection>
 
         <ContentSection title="What to verify before applying">
