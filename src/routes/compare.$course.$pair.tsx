@@ -1,8 +1,15 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ComparisonPage } from "@/components/comparison/ComparisonPage";
 import { AppLink } from "@/components/common/AppLink";
-import { comparableCourses, courseFromSlug, masterPairBySlug } from "@/lib/comparisonMaster";
-import { breadcrumbSchema, canonical, jsonLd, pageMeta } from "@/lib/seo";
+import {
+  comparableCourses,
+  courseFromSlug,
+  courseSlug,
+  masterPairBySlug,
+  pairUniversities,
+} from "@/lib/comparisonMaster";
+import { packFor } from "@/data/comparison-packs";
+import { breadcrumbSchema, canonical, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
 
 export const Route = createFileRoute("/compare/$course/$pair")({
   loader: ({ params }) => {
@@ -10,15 +17,30 @@ export const Route = createFileRoute("/compare/$course/$pair")({
     if (!pair) throw notFound();
     const course = courseFromSlug(pair, params.course);
     if (!course || !comparableCourses(pair).includes(course)) throw notFound();
-    return { a: pair.university_a, b: pair.university_b, course, description: pair.seo.meta_description_template };
+    const { a: uniA, b: uniB } = pairUniversities(pair);
+    const pack = uniA?.slug && uniB?.slug ? packFor(courseSlug(course), uniA.slug, uniB.slug) : undefined;
+    return {
+      a: pair.university_a,
+      b: pair.university_b,
+      course,
+      description: pair.seo.meta_description_template,
+      packTitle: pack?.title ?? null,
+      packDescription: pack?.metaDescription ?? null,
+      packFaqs: pack?.faqs ?? [],
+
+    };
   },
+
   head: ({ params, loaderData }) => {
     const path = `/compare/${params.course}/${params.pair}`;
     if (!loaderData) {
       return { meta: [{ title: "Comparison not found" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${loaderData.a} vs ${loaderData.b} Online ${loaderData.course} – Fees, Eligibility & Comparison 2026-27`;
-    const description = loaderData.description.replace(/\{Course\}/g, loaderData.course);
+    const title =
+      loaderData.packTitle ??
+      `${loaderData.a} vs ${loaderData.b} Online ${loaderData.course} – Fees, Eligibility & Comparison 2026-27`;
+    const description =
+      loaderData.packDescription ?? loaderData.description.replace(/\{Course\}/g, loaderData.course);
     return {
       meta: pageMeta({ title, description, path, author: "AVEDU Editorial Desk" }),
       links: canonical(path),
@@ -31,7 +53,9 @@ export const Route = createFileRoute("/compare/$course/$pair")({
             { name: loaderData.course, href: path },
           ]),
         ),
+        ...(loaderData.packFaqs.length ? [jsonLd(faqSchema(loaderData.packFaqs))] : []),
       ],
+
     };
   },
   component: Page,

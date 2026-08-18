@@ -12,6 +12,9 @@ import {
   type CourseSnapshotSide,
   type PairComparison,
 } from "@/lib/comparisonMaster";
+import { packFor } from "@/data/comparison-packs";
+import { EditorialComparison } from "./EditorialComparison";
+
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
@@ -87,11 +90,25 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
   const sa: CourseSnapshotSide | undefined = snapshot?.university_a;
   const sb: CourseSnapshotSide | undefined = snapshot?.university_b;
 
+  /** Hand-researched editorial pack for this course + pair, when we have one. */
+  const pack = course && uniA?.slug && uniB?.slug ? packFor(courseSlug(course), uniA.slug, uniB.slug) : undefined;
+  const packLinks = pack
+    ? [
+        { label: `${pack.aLabel} — university profile`, href: `/universities/${pack.aSlug}` },
+        { label: `${pack.bLabel} — university profile`, href: `/universities/${pack.bSlug}` },
+        { label: `Online ${course} — fees, eligibility & universities`, href: `/courses/online-${pack.course}` },
+        { label: `Compare more online ${course} universities`, href: `/compare/online-${pack.course}` },
+      ]
+    : undefined;
+
+
   const title = course
     ? `${aName} vs ${bName} Online ${course}: Fees, Eligibility & Full Comparison`
     : `${aName} vs ${bName}: Online University Comparison ${"2026-27"}`;
 
   const faqs = [
+    ...(pack?.faqs ?? []),
+
     {
       question: `${aName} vs ${bName} — which is better${course ? ` for online ${course}` : ""}?`,
       answer: pair.content.fit_statement,
@@ -184,26 +201,31 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         <p>{pair.content.decision_framework}</p>
       </ContentSection>
 
-      <ContentSection title="Quick Comparison">
-        <CompareRows
-          caption={`${aName} vs ${bName} quick comparison`}
-          aName={aName}
-          bName={bName}
-          rows={[
-            { label: "Full name", a: val(uniA?.university_name), b: val(uniB?.university_name) },
-            { label: "Location", a: val(uniA?.location), b: val(uniB?.location) },
-            { label: "Mode", a: val(uniA?.mode), b: val(uniB?.mode) },
-            { label: "Programmes tracked", a: val(uniA?.programme_count), b: val(uniB?.programme_count) },
-            { label: "Overlapping courses", a: String(courses.length), b: String(courses.length) },
-            ...(course
-              ? [
-                  { label: `${course} fee`, a: feeLabel(sa, { universitySlug: uniA?.slug, course }), b: feeLabel(sb, { universitySlug: uniB?.slug, course }) },
-                  { label: "Duration", a: val(sa?.duration), b: val(sb?.duration) },
-                ]
-              : []),
-          ]}
-        />
-      </ContentSection>
+      {pack ? (
+        <EditorialComparison pack={pack} links={packLinks} />
+      ) : (
+        <ContentSection title="Quick Comparison">
+          <CompareRows
+            caption={`${aName} vs ${bName} quick comparison`}
+            aName={aName}
+            bName={bName}
+            rows={[
+              { label: "Full name", a: val(uniA?.university_name), b: val(uniB?.university_name) },
+              { label: "Location", a: val(uniA?.location), b: val(uniB?.location) },
+              { label: "Mode", a: val(uniA?.mode), b: val(uniB?.mode) },
+              { label: "Programmes tracked", a: val(uniA?.programme_count), b: val(uniB?.programme_count) },
+              { label: "Overlapping courses", a: String(courses.length), b: String(courses.length) },
+              ...(course
+                ? [
+                    { label: `${course} fee`, a: feeLabel(sa, { universitySlug: uniA?.slug, course }), b: feeLabel(sb, { universitySlug: uniB?.slug, course }) },
+                    { label: "Duration", a: val(sa?.duration), b: val(sb?.duration) },
+                  ]
+                : []),
+            ]}
+          />
+        </ContentSection>
+      )}
+
 
       <ContentSection title="Courses Offered by Both Universities">
         <CompareRows

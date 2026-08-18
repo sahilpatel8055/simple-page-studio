@@ -18,8 +18,14 @@ import { duSolArticles, duSolPosts } from "./du-sol";
 import { ignouArticles, ignouPosts } from "./ignou";
 import { lpuOnlineArticles, lpuOnlinePosts } from "./lpu-online";
 import { lpuProgramArticles, lpuProgramPosts } from "./lpu-program-blogs";
+import { lpuDeepArticles, lpuDeepPosts } from "./lpu-deep-blogs";
 import { nsouArticles, nsouPosts } from "./nsou";
+import { nsouCourseArticles, nsouCoursePosts } from "./nsou-course-blogs";
+import { parulOnlineArticles, parulOnlinePosts } from "./parul-online";
 import { shooliniOnlineArticles, shooliniOnlinePosts } from "./shoolini-online";
+import { shooliniCourseArticles, shooliniCoursePosts } from "./shoolini-course-blogs";
+import { uttaranchalOnlineArticles, uttaranchalOnlinePosts } from "./uttaranchal-online";
+
 
 export interface UniversityBlogGroup {
   /** University slug used by /universities/{slug}. */
@@ -46,19 +52,37 @@ export const universityBlogGroups: UniversityBlogGroup[] = [
   {
     slug: "lpu-online",
     label: "LPU Online",
-    articles: [...lpuProgramArticles, ...lpuOnlineArticles],
-    posts: { ...lpuOnlinePosts, ...lpuProgramPosts },
+    articles: [...lpuDeepArticles, ...lpuProgramArticles, ...lpuOnlineArticles],
+    posts: { ...lpuOnlinePosts, ...lpuProgramPosts, ...lpuDeepPosts },
   },
   {
     slug: "shoolini-online",
     label: "Shoolini Online",
-    articles: shooliniOnlineArticles,
-    posts: shooliniOnlinePosts,
+    articles: [...shooliniCourseArticles, ...shooliniOnlineArticles],
+    posts: { ...shooliniOnlinePosts, ...shooliniCoursePosts },
+  },
+  {
+    slug: "uttaranchal-online",
+    label: "Uttaranchal University Online",
+    articles: uttaranchalOnlineArticles,
+    posts: uttaranchalOnlinePosts,
+  },
+  {
+    slug: "parul-online",
+    label: "Parul University Online",
+    articles: parulOnlineArticles,
+    posts: parulOnlinePosts,
   },
   { slug: "ignou", label: "IGNOU", articles: ignouArticles, posts: ignouPosts },
   { slug: "du-sol", label: "DU SOL", articles: duSolArticles, posts: duSolPosts },
-  { slug: "nsou", label: "NSOU", articles: nsouArticles, posts: nsouPosts },
+  {
+    slug: "nsou",
+    label: "NSOU",
+    articles: [...nsouCourseArticles, ...nsouArticles],
+    posts: { ...nsouPosts, ...nsouCoursePosts },
+  },
 ];
+
 
 /** Every university blog card, newest university group first. */
 export const universityBlogArticles: Article[] = universityBlogGroups.flatMap((g) => g.articles);

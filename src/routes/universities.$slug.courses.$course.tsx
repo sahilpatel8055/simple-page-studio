@@ -1,3 +1,4 @@
+import { UniversityPackLinks } from "@/components/comparison/PackHeadToHead";
 import { QuickEnquiry } from "@/components/common/QuickEnquiry";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
@@ -500,6 +501,9 @@ function Page() {
           />
         </ContentSection>
 
+        <ContentSection title={`${u.shortName} ${p.shortName} head-to-head comparisons`}>
+          <UniversityPackLinks slug={u.slug} course={p.shortName.toLowerCase().replace(/[^a-z]/g, "")} />
+        </ContentSection>
 
 
         {courseBlogs.length > 0 && (
