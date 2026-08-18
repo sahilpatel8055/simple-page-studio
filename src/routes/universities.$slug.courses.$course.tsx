@@ -13,6 +13,7 @@ import {
   UpdatedStamp,
 } from "@/components/common/Blocks";
 import { AppLink } from "@/components/common/AppLink";
+import { OfferingValueCheck } from "@/components/university/DifferentiationSections";
 import { ApprovalMarquee, SpecialisationBoxes } from "@/components/common/BoxMarquee";
 import { getSpecialisation, listOfferingsByUniversity } from "@/data";
 import {
