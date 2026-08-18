@@ -61,6 +61,13 @@ import {
   scholarshipsOf,
   sourcesForUniversity,
 } from "@/lib/universityData";
+import {
+  OfferingValueCheck as _OfferingValueCheck,
+  UniversityDecisionGuide,
+  UniversityFeeValueAnalysis,
+  universityDecisionHeading,
+} from "@/components/university/DifferentiationSections";
+import { universityFeeValue, universityHeadings } from "@/lib/pageDifferentiation";
 
 import {
   approvalText,
@@ -90,6 +97,7 @@ export const Route = createFileRoute("/universities/$slug/")({
       slug: u.slug,
       name: u.name,
       shortName: u.shortName,
+      type: u.type,
       summary: u.summary,
       lastUpdated: u.lastUpdated,
       city: u.city,
@@ -105,8 +113,9 @@ export const Route = createFileRoute("/universities/$slug/")({
     if (!loaderData) {
       return { meta: [{ title: "University not found" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${loaderData.shortName} — Fees, Courses, Approvals & Admission 2026`;
-    const description = `${loaderData.name}: UGC approval status, programme-wise fees, eligibility, admission process, placements, pros and cons, and verified student ratings.`;
+    const headings = universityHeadings(loaderData);
+    const title = headings.title;
+    const description = headings.description;
     return {
       meta: pageMeta({
         title,
