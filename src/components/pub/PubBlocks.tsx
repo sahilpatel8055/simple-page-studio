@@ -122,6 +122,10 @@ export function PubUniversityResearch({ slug }: { slug: string }) {
 
 /* ---------- Phase 3 ---------- */
 
+export function hasPubCurriculum(universitySlug: string, programmeSlug: string): boolean {
+  return (pubCoursePage(universitySlug, programmeSlug)?.publication_content.curriculum.semesters.length ?? 0) > 0;
+}
+
 export function PubCourseCurriculum({
   universitySlug,
   programmeSlug,
