@@ -178,7 +178,7 @@ const cleanAdmission = (a: UniversityAdmissionInfo): UniversityAdmissionInfo => 
   ...a,
   cycles: consumerText(a.cycles) ?? null,
   entrance_exam: consumerText(a.entrance_exam) ?? null,
-  steps: a.steps?.length ? consumerList(a.steps) : a.steps,
+  steps: a.steps?.length ? consumerList(a.steps) : (a.steps ?? null),
 });
 
 const cleanExam = (e: ExamPatternInfo): ExamPatternInfo => ({
