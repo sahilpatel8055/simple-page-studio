@@ -327,7 +327,16 @@ function isLong(blocks: PostBlock[]) {
   return weight > 8;
 }
 
-export function PostBody({ post, familySlug }: { post: PostContent; familySlug?: string | undefined }) {
+export function PostBody({
+  post,
+  familySlug,
+  showUniversities = true,
+}: {
+  post: PostContent;
+  familySlug?: string | undefined;
+  /** University-specific blogs hide the "Universities offering this course" strip. */
+  showUniversities?: boolean;
+}) {
   const family = familySlug ? getCourseFamily(familySlug) : undefined;
   const pillarAt = post.sections.length > 4 ? Math.floor(post.sections.length / 2) : -1;
   return (
@@ -343,7 +352,8 @@ export function PostBody({ post, familySlug }: { post: PostContent; familySlug?:
               </div>
             </Clamped>
           </ContentSection>
-          {family && si === 0 && <BlogUniversities familySlug={family.slug} />}
+          {family && showUniversities && si === 0 && <BlogUniversities familySlug={family.slug} />}
+
           {family && si === pillarAt && (
             <PromoBannerBlock
               block={{
