@@ -222,25 +222,36 @@ export function ownedUniversityKeywords(universitySlug: string, limit = 6): stri
 
 const NAV_HINT = /\b(login|portal|official|website)\b/i;
 
+/** Ordered signal patterns — the first match wins, most specific first. */
+const CLUSTER_SIGNALS: Array<[ClusterId, RegExp]> = [
+  ["comparison", /\b(vs|versus|compare|comparison|better|best)\b/i],
+  ["informational", /\b(is|are|worth|who should|should i|can i|why|advantages|disadvantages|after graduation|working professional)\b/i],
+  ["fees", /\b(fee|fees|cost|price|emi|fee structure)\b/i],
+  ["eligibility", /\b(eligibility|eligible|qualification|criteria)\b/i],
+  ["admission", /\b(admission|apply|application|form|last date)\b/i],
+  ["duration", /\b(duration|how many years|years)\b/i],
+  ["syllabus", /\b(syllabus|subjects|curriculum|semester)\b/i],
+  ["specialisation", /\b(specialis|specializ|elective|stream)\b/i],
+  ["salary", /\b(salary|package|ctc)\b/i],
+  ["placement", /\b(placement|recruiter|hiring)\b/i],
+  ["career", /\b(job|jobs|career|scope)\b/i],
+];
+
+const CLUSTER_INTENT = Object.fromEntries(COURSE_CLUSTERS.map((c) => [c.id, c.intent])) as Record<ClusterId, KeywordIntent>;
+
 /** Classifies a raw query into the Phase 5 intent taxonomy. */
 export function classifyKeyword(query: string): { intent: KeywordIntent; cluster: ClusterId } {
   const q = query.toLowerCase();
   const named = universities.some((u) => q.includes(u.shortName.toLowerCase()) || q.includes(u.name.toLowerCase()));
-  const hit = COURSE_CLUSTERS.find((c) =>
-    c.templates.some((t) => {
-      const tail = t.replace(/\[course\]/g, "").trim();
-      return tail.length > 3 && q.includes(tail.split(" ").slice(-2).join(" "));
-    }),
-  );
   if (NAV_HINT.test(q) && named) return { intent: "navigational", cluster: "core" };
-  if (hit) {
-    // A named university turns discovery intent into a transactional decision.
-    if (named && (hit.id === "admission" || hit.id === "fees")) return { intent: "transactional", cluster: hit.id };
-    return { intent: hit.intent, cluster: hit.id };
-  }
-  if (named) return { intent: "navigational", cluster: "core" };
-  return { intent: "informational", cluster: "informational" };
+  const hit = CLUSTER_SIGNALS.find(([, re]) => re.test(q));
+  if (!hit) return { intent: named ? "navigational" : "commercial-investigation", cluster: "core" };
+  const [cluster] = hit;
+  // A named university turns fee/admission research into a transactional decision.
+  if (named && (cluster === "fees" || cluster === "admission")) return { intent: "transactional", cluster };
+  return { intent: CLUSTER_INTENT[cluster], cluster };
 }
+
 
 /** Full site keyword map — used by the audit script, not rendered anywhere. */
 export function siteKeywordMap() {
