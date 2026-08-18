@@ -25,7 +25,7 @@ export interface IntentProfile {
   secondaryCta: string;
 }
 
-const PROFILES: Record<SearchIntent, Omit<IntentProfile, "question">> = {
+const PROFILES: Record<SearchIntent, Pick<IntentProfile, "cta" | "secondaryCta">> = {
   informational: {
     cta: "Read the admission guide",
     secondaryCta: "Check official source",
@@ -45,7 +45,7 @@ const PROFILES: Record<SearchIntent, Omit<IntentProfile, "question">> = {
 };
 
 export function intentProfile(intent: SearchIntent, question: string): IntentProfile {
-  return { intent, question, ...PROFILES[intent] };
+  return { ...PROFILES[intent], intent, question };
 }
 
 /** Page-type defaults. Individual pages can override where the data justifies it. */
