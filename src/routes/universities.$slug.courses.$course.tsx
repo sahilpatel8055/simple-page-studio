@@ -57,6 +57,7 @@ import {
   providerLinks,
 } from "@/lib/entities";
 import { specLandingPath } from "@/lib/courseFamily";
+import { offeringCtrMeta } from "@/lib/intentMap";
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForUniversity } from "@/data/university-blogs";
 import {
@@ -113,8 +114,14 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
     if (!loaderData) {
       return { meta: [{ title: "Programme not found" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${loaderData.universityShort} ${loaderData.programmeName}: Fees, Eligibility & Admission 2026`;
-    const description = `${loaderData.programmeName} at ${loaderData.universityName} — ${loaderData.duration} duration, ${loaderData.feeRange} fee range, specialisations, eligibility, admission steps and placement support.`;
+    // This page owns every "<University> <Course> + fees/eligibility/syllabus"
+    // query (see src/lib/intentMap.ts); the pillar and comparison pages defer.
+    const ctr = offeringCtrMeta(params.slug, params.course);
+    const title =
+      ctr?.title ?? `${loaderData.universityShort} ${loaderData.programmeName}: Fees, Eligibility & Admission 2026`;
+    const description =
+      ctr?.description ??
+      `${loaderData.programmeName} at ${loaderData.universityName} — ${loaderData.duration} duration, ${loaderData.feeRange} fee range, specialisations, eligibility, admission steps and placement support.`;
     return {
       meta: pageMeta({
         title,
@@ -122,7 +129,7 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
         path,
         modifiedTime: loaderData.lastUpdated,
         author: "AVEDU Editorial Desk",
-        keywords: [
+        keywords: ctr?.keywords ?? [
           `${loaderData.universityShort} ${loaderData.programmeName} fees`,
           `${loaderData.universityShort} ${loaderData.programmeName} admission`,
           `${loaderData.programmeName} eligibility`,

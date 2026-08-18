@@ -16,6 +16,7 @@ import { ComparisonPage } from "@/components/comparison/ComparisonPage";
 import { CourseComparisonPage, courseComparisonFaqs } from "@/components/comparison/CourseComparisonPage";
 import { getCourseFamily } from "@/lib/courseFamily";
 import { masterPairBySlug } from "@/lib/comparisonMaster";
+import { comparisonCtrMeta } from "@/lib/intentMap";
 
 import {
   approvalText,
@@ -81,7 +82,7 @@ export const Route = createFileRoute("/compare/$comparison")({
     if (loaderData.kind === "course") {
       const family = getCourseFamily(params.comparison)!;
       const title = `${family.name} University Comparison 2026-27 — Fees, Eligibility, Curriculum & Exams`;
-      const description = `Compare ${family.name.toLowerCase()} universities for 2026-27 by verified fees, eligibility, duration, curriculum, specialisations, admission, exams and learner support.`;
+      const description = `Compare ${family.name.toLowerCase()} universities for 2026-27 on published fees, eligibility, duration, curriculum, specialisations, admission, exams and learner support — facts side by side, no ranking.`;
       return {
         meta: pageMeta({
           title,
@@ -113,8 +114,11 @@ export const Route = createFileRoute("/compare/$comparison")({
         ],
       };
     }
-    const title = `${loaderData.leftShort} vs ${loaderData.rightShort}: Fees, Approvals & Which Is Better (2026)`;
-    const description = `Side-by-side comparison of ${loaderData.leftName} and ${loaderData.rightName} on fees, UGC approvals, programmes, delivery model, placements and learner ratings.`;
+    // Comparison pages own "A vs B" only — fee/admission depth stays on the
+    // university + course pages (src/lib/intentMap.ts).
+    const ctr = comparisonCtrMeta(loaderData.leftShort, loaderData.rightShort);
+    const title = ctr.title;
+    const description = ctr.description;
 
     return {
       meta: pageMeta({
@@ -122,10 +126,7 @@ export const Route = createFileRoute("/compare/$comparison")({
         description,
         path,
         author: "AVEDU Editorial Desk",
-        keywords: [
-          `${loaderData.leftShort} vs ${loaderData.rightShort}`,
-          `${loaderData.leftShort} or ${loaderData.rightShort} which is better`,
-        ],
+        keywords: ctr.keywords,
       }),
       links: canonical(path),
       scripts: [
