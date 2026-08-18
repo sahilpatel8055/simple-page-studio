@@ -9,7 +9,7 @@ import {
   pairUniversities,
 } from "@/lib/comparisonMaster";
 import { packFor } from "@/data/comparison-packs";
-import { breadcrumbSchema, canonical, jsonLd, pageMeta } from "@/lib/seo";
+import { breadcrumbSchema, canonical, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
 
 export const Route = createFileRoute("/compare/$course/$pair")({
   loader: ({ params }) => {
