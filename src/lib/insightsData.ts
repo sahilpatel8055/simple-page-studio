@@ -167,6 +167,42 @@ export function isUnsafeStatus(status?: string | null): boolean {
   return /not_safely_verified|pending|reference_only|unresolved/.test(status);
 }
 
+/* ------------------------- reader-facing sanitising ----------------------- */
+/*
+ * The JSON keeps internal editorial notes and aggregator references. They stay
+ * on disk (audit/traceability) but are stripped from every resolved value so no
+ * page can render them.
+ */
+
+const cleanAdmission = (a: UniversityAdmissionInfo): UniversityAdmissionInfo => ({
+  ...a,
+  cycles: consumerText(a.cycles) ?? null,
+  entrance_exam: consumerText(a.entrance_exam) ?? null,
+  steps: a.steps?.length ? consumerList(a.steps) : a.steps,
+});
+
+const cleanExam = (e: ExamPatternInfo): ExamPatternInfo => ({
+  ...e,
+  proctoring: consumerText(e.proctoring) ?? null,
+  assessment: consumerText(e.assessment) ?? null,
+  weightage: consumerText(e.weightage) ?? null,
+  sections: consumerText(e.sections) ?? null,
+  note: consumerText(e.note) ?? null,
+});
+
+const cleanCareer = (c: CareerInfo): CareerInfo => ({
+  ...c,
+  university_level_summary: consumerText(c.university_level_summary) ?? null,
+  placement_support_reference: consumerLink(c.placement_support_reference) ?? null,
+});
+
+const cleanScholarship = (s: ScholarshipInfo): ScholarshipInfo => {
+  const criteria = (s.criteria ?? [])
+    .map((c) => ({ name: c.name ?? null, criterion: consumerText(c.criterion) ?? null }))
+    .filter((c) => c.name || c.criterion);
+  return { ...s, criteria, note: consumerText(s.note) ?? null };
+};
+
 /* -------------------------------- resolvers ------------------------------- */
 
 export function getAdmissionInfo(
