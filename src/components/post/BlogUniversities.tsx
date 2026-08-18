@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { ArrowRight, BadgeCheck } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
-import { getCourseFamily, type CourseFamily, type FamilyOffer } from "@/lib/courseFamily";
+import { courseFamilyList, getCourseFamily, type CourseFamily, type FamilyOffer } from "@/lib/courseFamily";
+import { getUniversity } from "@/data";
 
 /** Compact rupee display used inside blog cards: ₹1.75L / ₹85k. */
 function money(v: number | null | undefined) {
