@@ -26,6 +26,7 @@ import {
 import { AppLink } from "@/components/common/AppLink";
 import { EmptyNote } from "@/components/university/DataSections";
 import { universityLogo } from "@/lib/assets";
+import { placementFacts } from "@/data/university-placement-facts";
 import {
   feeRangeLabel,
   getUniversityBySlug,
@@ -201,10 +202,7 @@ export function UniversityCareerSupport({ slug, shortName }: { slug: string; sho
         </dl>
       )}
       {!summary && !stats.length && (
-        <EmptyNote>
-          {shortName} does not publish university-wide placement numbers. Programme pages carry the career detail that is
-          published, and you can ask the university directly for its current recruiter list.
-        </EmptyNote>
+        <EmptyNote>{`${shortName} does not publish university-wide placement numbers. Programme pages carry the career detail that is published, and you can ask the university directly for its current recruiter list.`}</EmptyNote>
       )}
       <div className="flex flex-wrap gap-2.5">
         <AppLink
