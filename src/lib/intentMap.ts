@@ -8,7 +8,14 @@
  * It never invents facts: every string it produces is built from the page's own
  * entity names plus the intent modifier the searcher used.
  */
-import { getProgramme, getUniversity, listOfferingsByProgramme, listOfferingsByUniversity } from "@/data";
+import {
+  getProgramme,
+  getUniversity,
+  listOfferingsByProgramme,
+  listOfferingsByUniversity,
+  programmes,
+  universities,
+} from "@/data";
 import type { SearchIntent } from "@/lib/searchIntent";
 
 export type PageKind =
@@ -184,24 +191,8 @@ function programmeMatch(q: string): string | null {
   return best?.slug ?? null;
 }
 
-let uniSlugCache: string[] | null = null;
-let progSlugCache: string[] | null = null;
-
-function universitySlugs(): string[] {
-  if (!uniSlugCache) {
-    const { universities } = require("@/data") as { universities: Array<{ slug: string }> };
-    uniSlugCache = universities.map((u) => u.slug);
-  }
-  return uniSlugCache;
-}
-
-function programmeSlugs(): string[] {
-  if (!progSlugCache) {
-    const { programmes } = require("@/data") as { programmes: Array<{ slug: string }> };
-    progSlugCache = programmes.map((p) => p.slug);
-  }
-  return progSlugCache;
-}
+const universitySlugs = (): string[] => universities.map((u) => u.slug);
+const programmeSlugs = (): string[] => programmes.map((p) => p.slug);
 
 /* ---------------------------- CTR meta builders --------------------------- */
 
