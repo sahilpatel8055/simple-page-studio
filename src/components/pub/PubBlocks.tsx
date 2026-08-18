@@ -122,84 +122,37 @@ export function PubUniversityResearch({ slug }: { slug: string }) {
 
 /* ---------- Phase 3 ---------- */
 
-export function PubCourseResearch({
+export function PubCourseCurriculum({
   universitySlug,
   programmeSlug,
+  universityShort,
 }: {
   universitySlug: string;
   programmeSlug: string;
+  universityShort: string;
 }) {
   const rec = pubCoursePage(universitySlug, programmeSlug);
-  if (!rec) return null;
-  const c = rec.publication_content;
+  const semesters = rec?.publication_content.curriculum.semesters ?? [];
+  if (!semesters.length) return null;
   return (
-    <div className="space-y-6">
-      <Prose>{c.hero}</Prose>
-      <Prose>{c.overview}</Prose>
-
+    <div className="space-y-3">
+      <p className="text-sm leading-relaxed text-muted-foreground">
+        {`Semester-wise subjects as published by ${universityShort} for this programme.`}
+      </p>
       <div className="grid gap-3 sm:grid-cols-2">
-        {Object.entries(c.quick_facts).map(([k, v]) => (
-          <FactBlock key={k} label={k.replace(/_/g, " ")} value={v == null ? null : String(v)} />
+        {semesters.map((s) => (
+          <div key={s.semester} className="rounded-xl border border-border bg-card p-3">
+            <p className="text-sm font-semibold text-foreground">Semester {s.semester}</p>
+            <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-muted-foreground">
+              {s.subjects.map((sub) => (
+                <li key={sub}>{sub}</li>
+              ))}
+            </ul>
+          </div>
         ))}
       </div>
-
-      <div className="grid gap-3">
-        <FactBlock label="Fees" value={c.fees} />
-        <FactBlock label="Eligibility" value={c.eligibility} />
-        <FactBlock label="Admission" value={c.admission} />
-        <FactBlock label="Examination" value={c.examination} />
-        <FactBlock label="Scholarships" value={c.scholarships} />
-        <FactBlock label="Career" value={c.career} />
-      </div>
-
-      <div>
-        <h3 className="font-display text-base font-bold text-foreground">
-          University-specific curriculum
-        </h3>
-        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{c.curriculum.intro}</p>
-        {c.curriculum.semesters.length ? (
-          <div className="mt-3 grid gap-3 sm:grid-cols-2">
-            {c.curriculum.semesters.map((s) => (
-              <div key={s.semester} className="rounded-xl border border-border bg-card p-3">
-                <p className="text-sm font-semibold text-foreground">Semester {s.semester}</p>
-                <ul className="mt-2 list-inside list-disc space-y-1 text-sm text-muted-foreground">
-                  {s.subjects.map((sub) => (
-                    <li key={sub}>{sub}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        ) : (
-          <div className="mt-3">
-            <VerificationNote text="Semester-wise subjects are not published in the verified record for this programme — verification required before publication." />
-          </div>
-        )}
-      </div>
-
-      {c.specialisations.length > 0 && (
-        <div>
-          <h3 className="font-display text-base font-bold text-foreground">Specialisations</h3>
-          <ul className="mt-2 flex flex-wrap gap-2">
-            {c.specialisations.map((s) => (
-              <li
-                key={s.specialisation_name}
-                className="rounded-full border border-border bg-secondary px-3 py-1 text-xs font-medium text-foreground"
-              >
-                {s.official_name ?? s.specialisation_name}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      <div className="grid gap-3 sm:grid-cols-2">
-        <FactBlock label="Who should choose it" value={c.who_should_choose} />
-        <FactBlock label="Who should reconsider" value={c.who_should_reconsider} />
-      </div>
-
       <p className="text-xs text-muted-foreground">
-        {PUB_SESSION} session · Last updated: {lastUpdatedLabel(c.last_verified) ?? "recently"}.
+        {PUB_SESSION} session · Last updated: {lastUpdatedLabel(rec?.publication_content.last_verified) ?? "recently"}.
       </p>
     </div>
   );
