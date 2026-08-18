@@ -124,7 +124,7 @@ export function EditorialComparison({
   links,
 }: {
   pack: ComparisonPack;
-  links?: { label: string; href: string }[];
+  links?: { label: string; href: string }[] | undefined;
 }) {
   return (
     <>
