@@ -4,6 +4,7 @@ import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
 import { courseFamilyList, familyForProgrammeSlug } from "@/lib/courseFamily";
 import { webPageSchema } from "@/lib/seo";
+import { pillarCtrMeta } from "@/lib/intentMap";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
 import { SectionUrlGrid } from "@/components/course/SectionHub";
 import { PromoBanner } from "@/components/course/PromoBanner";
@@ -108,8 +109,13 @@ export const Route = createFileRoute("/courses/$course/")({
     if (loaderData.kind !== "programme") {
       return { meta: [{ title: loaderData.name }] };
     }
-    const title = `${loaderData.name}: Fees, Eligibility, Specialisations & Best Universities 2026`;
-    const description = `${loaderData.name} in India — ${loaderData.durationYears}-year ${loaderData.level} degree, ${loaderData.feeRangeLabel} fee range, ${loaderData.providers} universities compared, specialisations, eligibility and career scope.`;
+    // Pillar owns the head term ("online <course>"); fee/admission specifics are
+    // owned by each university + course page (src/lib/intentMap.ts).
+    const ctr = pillarCtrMeta(params.course);
+    const title = ctr?.title ?? `${loaderData.name} in India 2026: Universities, Fee Range & How to Choose`;
+    const description =
+      ctr?.description ??
+      `${loaderData.name} in India — ${loaderData.durationYears}-year ${loaderData.level} degree, ${loaderData.feeRangeLabel} fee range, ${loaderData.providers} universities compared, specialisations, eligibility and career scope.`;
     return {
       meta: pageMeta({
         title,
