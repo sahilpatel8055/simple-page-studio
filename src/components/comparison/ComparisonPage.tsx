@@ -107,6 +107,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
     : `${aName} vs ${bName}: Online University Comparison ${"2026-27"}`;
 
   const faqs = [
+    ...(pack?.faqs ?? []),
+
     {
       question: `${aName} vs ${bName} — which is better${course ? ` for online ${course}` : ""}?`,
       answer: pair.content.fit_statement,
