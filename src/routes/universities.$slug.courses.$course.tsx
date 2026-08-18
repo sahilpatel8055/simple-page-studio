@@ -310,6 +310,12 @@ function Page() {
         <ContentSection title="Fee structure">
           <FeeHighlight fee={offering.fee} duration={offering.durationLabel} />
           <FeeComponents fee={offering.fee} />
+          <OfferingValueCheck
+            universitySlug={u.slug}
+            programmeSlug={p.slug}
+            universityShort={u.shortName}
+            programmeName={p.name}
+          />
           <p className="text-xs">
             Figures are published only after verification against the university's own fee schedule — nothing on this
             page is estimated.
