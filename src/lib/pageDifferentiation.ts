@@ -20,8 +20,10 @@ import { intentProfile, pageIntent, type IntentProfile } from "@/lib/searchInten
 
 export type Archetype = "open" | "central" | "state" | "deemed" | "private";
 
+const OPEN_NAME = /(open university|school of open learning|open learning)/i;
+
 export function archetypeOf(u: University): Archetype {
-  if (u.type === "Open") return "open";
+  if (u.type === "Open" || OPEN_NAME.test(u.name)) return "open";
   if (u.type === "Central") return "central";
   if (u.type === "State") return "state";
   if (u.type === "Deemed") return "deemed";
@@ -251,7 +253,11 @@ export function universityHeadings(input: {
   type?: University["type"];
   feeRangeLabel?: string;
 }) {
-  const research = input.type === "Open" || input.type === "Central" || input.type === "State";
+  const research =
+    input.type === "Open" ||
+    input.type === "Central" ||
+    input.type === "State" ||
+    OPEN_NAME.test(input.name);
   if (research) {
     return {
       title: `${input.shortName} Online & Distance Programmes 2026: Fees, Approvals, Admission`,
