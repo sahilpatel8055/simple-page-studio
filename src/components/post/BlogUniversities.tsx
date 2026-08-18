@@ -118,23 +118,78 @@ export function BlogEntityLinks({
   const family = familySlug ? courseFamilyList().find((f) => f.slug === familySlug) : undefined;
   const uni = universitySlug ? getUniversity(universitySlug) : undefined;
   const offer = family && universitySlug ? family.offers.find((o) => o.universitySlug === universitySlug) : undefined;
-  const links: { label: string; href: string }[] = [];
-  if (uni) links.push({ label: `${uni.shortName} — fees, approvals & admission`, href: `/universities/${uni.slug}` });
-  if (offer) links.push({ label: `${offer.universityShortName} ${offer.programmeName} — fee structure & eligibility`, href: offer.path });
-  if (family) links.push({ label: `${family.name} — universities, fees & specialisations`, href: family.path });
+  const links: { label: string; href: string; note?: string }[] = [];
+  if (uni)
+    links.push({
+      label: `${uni.shortName} — fees, approvals & admission`,
+      href: `/universities/${uni.slug}`,
+      note: "Every programme this university publishes, with the recognition record.",
+    });
+  if (offer)
+    links.push({
+      label: `${offer.universityShortName} ${offer.programmeName} — fee structure & eligibility`,
+      href: offer.path,
+      note: "The exact record this article discusses, with semester fees and documents.",
+    });
+  if (family)
+    links.push({
+      label: `${family.name} — universities, fees & specialisations`,
+      href: family.path,
+      note: `Compare every university publishing an ${family.name} side by side.`,
+    });
+
+  // Peer universities publishing the same degree — the natural next read for
+  // someone who arrived on an informational article and now wants options.
+  const peers = family
+    ? family.offers
+        .filter((o) => o.universitySlug !== universitySlug)
+        .filter((o, i, list) => list.findIndex((x) => x.universitySlug === o.universitySlug) === i)
+        .slice(0, 4)
+    : [];
+
   if (links.length === 0) return null;
   return (
     <div className="mt-8 rounded-2xl border border-border bg-secondary/40 p-4">
-      <h2 className="text-sm font-bold">Check the data pages referenced in this article</h2>
-      <ul className="mt-2 space-y-1.5">
+      <h2 className="text-sm font-bold">Where to go next with this</h2>
+      <ul className="mt-2 space-y-2.5">
         {links.map((l) => (
           <li key={l.href}>
             <AppLink to={l.href} className="text-sm font-semibold text-brand hover:underline">
               {l.label} →
             </AppLink>
+            {l.note && <p className="mt-0.5 text-[0.78rem] leading-relaxed text-muted-foreground">{l.note}</p>}
           </li>
         ))}
       </ul>
+      {peers.length > 0 && family && (
+        <div className="mt-4 border-t border-border pt-3">
+          <p className="text-[0.8rem] leading-relaxed text-muted-foreground">
+            Other universities publishing an {family.name}:{" "}
+            {peers.map((o, i) => (
+              <span key={o.key}>
+                {i > 0 && ", "}
+                <AppLink to={o.path} className="font-semibold text-brand hover:underline">
+                  {o.universityShortName} {family.shortName}
+                </AppLink>
+              </span>
+            ))}
+            .
+          </p>
+          {uni && peers[0] && (
+            <p className="mt-1.5 text-[0.8rem] leading-relaxed text-muted-foreground">
+              Weighing two of them?{" "}
+              <AppLink
+                to={`/compare/${[uni.slug, peers[0].universitySlug].sort().join("-vs-")}`}
+                className="font-semibold text-brand hover:underline"
+              >
+                {uni.shortName} vs {peers[0].universityShortName} on fees and approvals
+              </AppLink>
+              .
+            </p>
+          )}
+        </div>
+      )}
     </div>
   );
 }
+

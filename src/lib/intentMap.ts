@@ -287,9 +287,12 @@ export function siteIntentClaims(): IntentClaim[] {
     }
   }
   for (const slug of programmeSlugs()) {
+    // Only the canonical slug claims the query; duplicates 301 to it.
+    if (canonicalProgrammeSlug(slug) !== slug) continue;
     const p = getProgramme(slug)!;
     claims.push({ path: `/courses/${slug}`, kind: "coursePillar", primaryQuery: p.name });
   }
+
   return claims;
 }
 

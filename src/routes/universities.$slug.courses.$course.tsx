@@ -58,6 +58,8 @@ import {
 } from "@/lib/entities";
 import { specLandingPath } from "@/lib/courseFamily";
 import { offeringCtrMeta } from "@/lib/intentMap";
+import { offeringNarrative } from "@/lib/pageNarrative";
+
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForUniversity } from "@/data/university-blogs";
 import {
@@ -182,6 +184,8 @@ function Page() {
   const u = university.record;
   const p = programme.record;
   const master = getUniversityCourse(u.slug, p.slug);
+  const narrative = offeringNarrative(u.slug, p.slug);
+
   const key = p.shortName.toLowerCase().replace(/[^a-z]/g, "");
   const uniBlogs = blogsForUniversity(u.slug);
   const courseBlogs = (() => {
@@ -289,9 +293,11 @@ function Page() {
             {p.summary} At {u.name}, it runs for {offering.durationLabel} and is delivered {p.mode.join(" / ")}, with{" "}
             {approvalText(u)} backing the award.
           </p>
+          {narrative?.paragraphs.map((text) => <p key={text.slice(0, 40)}>{text}</p>)}
           <p>{u.verdict}</p>
           <ApprovalMarquee approvals={u.approvals} />
         </ContentSection>
+
 
         <ContentSection title="Specialisations">
           <SpecialisationBoxes
@@ -456,6 +462,37 @@ function Page() {
             eligibility={p.eligibility}
             hasVerifiedFee={offering.verified && offering.fee.total != null}
           />
+          {narrative && (narrative.suits.length > 0 || narrative.notFor.length > 0) && (
+            <div className="mt-5 grid gap-4 sm:grid-cols-2">
+              {narrative.suits.length > 0 && (
+                <div className="rounded-2xl border border-border bg-secondary/40 p-4">
+                  <h3 className="font-display text-base font-bold">
+                    Choose {u.shortName} for this course if
+                  </h3>
+                  <ul className="mt-2 space-y-1.5">
+                    {narrative.suits.map((s) => (
+                      <li key={s} className="text-[0.88rem] leading-relaxed text-muted-foreground">
+                        • {s}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {narrative.notFor.length > 0 && (
+                <div className="rounded-2xl border border-border bg-card p-4">
+                  <h3 className="font-display text-base font-bold">Look elsewhere if</h3>
+                  <ul className="mt-2 space-y-1.5">
+                    {narrative.notFor.map((s) => (
+                      <li key={s} className="text-[0.88rem] leading-relaxed text-muted-foreground">
+                        • {s}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
           <NextStep
             question="Still deciding between universities for this course?"
             actionLabel="Open the comparison"

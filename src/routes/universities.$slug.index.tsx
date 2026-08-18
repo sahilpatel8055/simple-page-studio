@@ -67,6 +67,8 @@ import {
   universityDecisionHeading,
 } from "@/components/university/DifferentiationSections";
 import { universityFeeValue, universityHeadings } from "@/lib/pageDifferentiation";
+import { universityIntro } from "@/lib/pageNarrative";
+
 
 import {
   approvalText,
@@ -273,7 +275,9 @@ function Page() {
 
         <ContentSection title="Overview">
           <UniversityResearchIntro slug={slug} />
+          {universityIntro(slug) && <p>{universityIntro(slug)}</p>}
           {u.verdict && <p>{u.verdict}</p>}
+
           <ul className="grid gap-2 sm:grid-cols-2">
             {u.highlights.map((h) => (
               <li key={h} className="rounded-lg bg-secondary px-3 py-2 text-sm text-foreground">
