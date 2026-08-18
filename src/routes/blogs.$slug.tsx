@@ -7,6 +7,8 @@ import { articles, news } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
 import { blogBanner } from "@/lib/blogBanners";
 import { familyDefs } from "@/lib/courseFamily";
+import { universityByBlogSlug } from "@/data/university-blogs";
+
 
 import {
   articleSchema,
@@ -78,14 +80,17 @@ function Page() {
   const familySlug = familyDefs.find((f) =>
     new RegExp(`(^|-)${f.shortName.toLowerCase().replace(/[^a-z]/g, "")}(-|$)`).test(item.slug),
   )?.slug;
+  // Blogs that belong to one university never show the multi-university strip.
+  const showUniversities = !universityByBlogSlug[item.slug];
   const toc = [
     "Key takeaways",
     ...post.sections.flatMap((s, i) =>
-      familySlug && i === 0 ? [s.heading, "Universities"] : [s.heading],
+      familySlug && showUniversities && i === 0 ? [s.heading, "Universities"] : [s.heading],
     ),
     ...(post.sources?.length ? ["Sources & references"] : []),
     "FAQs",
   ];
+
   const related = all.filter((a) => a.slug !== item.slug && a.categorySlug === item.categorySlug).slice(0, 2);
 
   const banner = blogBanner(post.banner);
@@ -126,7 +131,7 @@ function Page() {
     >
       <KeyTakeaways items={post.keyTakeaways} />
       <MobileToc sections={toc} />
-      <PostBody post={post} familySlug={familySlug} />
+      <PostBody post={post} familySlug={familySlug} showUniversities={showUniversities} />
       {post.sources?.length ? <PostSources items={post.sources} /> : null}
     </DetailLayout>
   );

@@ -287,14 +287,15 @@ function CounsellingScheduler() {
 
     const onScroll = () => {
       const d = scrollDepth();
-      if (views >= 2 && d >= 0.35) fire();
-      if (deep && d >= 0.5 && Date.now() - landedAt >= 60000) fire();
+      if (d >= 0.3) fire();
+      if (deep && d >= 0.5 && Date.now() - landedAt >= 30000) fire();
     };
     const onLeave = (e: MouseEvent) => {
       if (detail && window.innerWidth >= 768 && e.clientY <= 0) fire();
     };
 
-    const secondView = views >= 2 ? window.setTimeout(fire, 8000) : 0;
+    const secondView = window.setTimeout(fire, views >= 2 ? 6000 : 12000);
+
     window.addEventListener("scroll", onScroll, { passive: true });
     document.addEventListener("mouseleave", onLeave);
 
