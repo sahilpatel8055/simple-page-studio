@@ -157,7 +157,7 @@ export function UniversityLearningExperience({ slug, shortName }: { slug: string
     });
 
   if (!cards.length)
-    return <EmptyNote>Learning-delivery details are not published in our verified sources for this university yet.</EmptyNote>;
+    return <EmptyNote>This university does not publish its exam and platform details in full — ask the admissions team how classes and exams run before you apply.</EmptyNote>;
 
   return (
     <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
@@ -380,7 +380,7 @@ export function UniversityConsiderations({ slug, shortName }: { slug: string; sh
   if ((getScholarshipInfo(slug)?.data?.criteria?.length ?? 0) > 0)
     points.push("Scholarship eligibility varies by programme and by the current scholarship notice.");
   if (u.programmes.some((p) => !(p.fees.fee_verification_status ?? "").startsWith("verified_official")))
-    points.push("Some fee figures are pending official verification and are marked accordingly on this page.");
+    points.push("Fees can change between intakes; confirm the current amount before you pay.");
   points.push(`Verify current fee, recognition and admission details on the official ${shortName} website before paying.`);
 
   return (
