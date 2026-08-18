@@ -58,6 +58,8 @@ import {
 } from "@/lib/entities";
 import { specLandingPath } from "@/lib/courseFamily";
 import { offeringCtrMeta } from "@/lib/intentMap";
+import { offeringNarrative } from "@/lib/pageNarrative";
+
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForUniversity } from "@/data/university-blogs";
 import {
