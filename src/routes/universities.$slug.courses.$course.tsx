@@ -13,6 +13,7 @@ import {
   UpdatedStamp,
 } from "@/components/common/Blocks";
 import { AppLink } from "@/components/common/AppLink";
+import { OfferingValueCheck } from "@/components/university/DifferentiationSections";
 import { ApprovalMarquee, SpecialisationBoxes } from "@/components/common/BoxMarquee";
 import { getSpecialisation, listOfferingsByUniversity } from "@/data";
 import {
@@ -310,6 +311,12 @@ function Page() {
         <ContentSection title="Fee structure">
           <FeeHighlight fee={offering.fee} duration={offering.durationLabel} />
           <FeeComponents fee={offering.fee} />
+          <OfferingValueCheck
+            universitySlug={u.slug}
+            programmeSlug={p.slug}
+            universityShort={u.shortName}
+            programmeName={p.name}
+          />
           <p className="text-xs">
             Figures are published only after verification against the university's own fee schedule — nothing on this
             page is estimated.

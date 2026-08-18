@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { ArrowRight, BadgeCheck } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
-import { getCourseFamily, type CourseFamily, type FamilyOffer } from "@/lib/courseFamily";
+import { courseFamilyList, getCourseFamily, type CourseFamily, type FamilyOffer } from "@/lib/courseFamily";
+import { getUniversity } from "@/data";
 
 /** Compact rupee display used inside blog cards: ₹1.75L / ₹85k. */
 function money(v: number | null | undefined) {
@@ -99,5 +100,41 @@ export function BlogUniversities({ familySlug }: { familySlug: string }) {
         </AppLink>
       </div>
     </section>
+  );
+}
+
+/**
+ * Contextual links from an article to the exact entity pages it discusses.
+ * Renders only when the article maps to a university (and, where detected, to
+ * that university's programme page) — never as a generic link block.
+ */
+export function BlogEntityLinks({
+  universitySlug,
+  familySlug,
+}: {
+  universitySlug?: string | undefined;
+  familySlug?: string | undefined;
+}) {
+  const family = familySlug ? courseFamilyList().find((f) => f.slug === familySlug) : undefined;
+  const uni = universitySlug ? getUniversity(universitySlug) : undefined;
+  const offer = family && universitySlug ? family.offers.find((o) => o.universitySlug === universitySlug) : undefined;
+  const links: { label: string; href: string }[] = [];
+  if (uni) links.push({ label: `${uni.shortName} — fees, approvals & admission`, href: `/universities/${uni.slug}` });
+  if (offer) links.push({ label: `${offer.universityShortName} ${offer.programmeName} — fee structure & eligibility`, href: offer.path });
+  if (family) links.push({ label: `${family.name} — universities, fees & specialisations`, href: family.path });
+  if (links.length === 0) return null;
+  return (
+    <div className="mt-8 rounded-2xl border border-border bg-secondary/40 p-4">
+      <h2 className="text-sm font-bold">Check the data pages referenced in this article</h2>
+      <ul className="mt-2 space-y-1.5">
+        {links.map((l) => (
+          <li key={l.href}>
+            <AppLink to={l.href} className="text-sm font-semibold text-brand hover:underline">
+              {l.label} →
+            </AppLink>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }

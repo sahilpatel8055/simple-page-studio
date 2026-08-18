@@ -8,6 +8,7 @@ import { getPostContent } from "@/data/posts";
 import { blogBanner } from "@/lib/blogBanners";
 import { familyDefs } from "@/lib/courseFamily";
 import { universityByBlogSlug } from "@/data/university-blogs";
+import { BlogEntityLinks } from "@/components/post/BlogUniversities";
 
 
 import {
@@ -132,6 +133,7 @@ function Page() {
       <KeyTakeaways items={post.keyTakeaways} />
       <MobileToc sections={toc} />
       <PostBody post={post} familySlug={familySlug} showUniversities={showUniversities} />
+      <BlogEntityLinks universitySlug={universityByBlogSlug[item.slug]} familySlug={familySlug} />
       {post.sources?.length ? <PostSources items={post.sources} /> : null}
     </DetailLayout>
   );
