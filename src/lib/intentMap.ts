@@ -222,7 +222,9 @@ export function offeringCtrMeta(universitySlug: string, programmeSlug: string, y
       `${u.shortName} ${p.name} fees`,
       `${u.shortName} ${p.name} eligibility`,
       `${u.shortName} ${p.name} admission`,
+      ...ownedUniversityKeywords(universitySlug, 2),
     ],
+
   };
 }
 
