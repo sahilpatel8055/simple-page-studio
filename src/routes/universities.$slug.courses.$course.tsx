@@ -500,6 +500,9 @@ function Page() {
           />
         </ContentSection>
 
+        <ContentSection title={`${u.shortName} ${p.shortName} head-to-head comparisons`}>
+          <UniversityPackLinks slug={u.slug} course={p.shortName.toLowerCase().replace(/[^a-z]/g, "")} />
+        </ContentSection>
 
 
         {courseBlogs.length > 0 && (
