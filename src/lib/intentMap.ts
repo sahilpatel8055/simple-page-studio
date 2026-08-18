@@ -302,9 +302,16 @@ export function siteIntentClaims(): IntentClaim[] {
     const p = getProgramme(slug)!;
     claims.push({ path: `/courses/${slug}`, kind: "coursePillar", primaryQuery: p.name });
   }
+  for (const a of articles) {
+    claims.push({ path: `/blogs/${a.slug}`, kind: "blog", primaryQuery: a.title });
+  }
+  for (const pair of universityPairs()) {
+    claims.push({ path: `/compare/${pair.slug}`, kind: "comparison", primaryQuery: `${pair.left.shortName} vs ${pair.right.shortName}` });
+  }
 
   return claims;
 }
+
 
 /**
  * When the dataset carries two slugs for the same programme name, only the
