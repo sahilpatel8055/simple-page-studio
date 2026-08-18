@@ -184,26 +184,31 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         <p>{pair.content.decision_framework}</p>
       </ContentSection>
 
-      <ContentSection title="Quick Comparison">
-        <CompareRows
-          caption={`${aName} vs ${bName} quick comparison`}
-          aName={aName}
-          bName={bName}
-          rows={[
-            { label: "Full name", a: val(uniA?.university_name), b: val(uniB?.university_name) },
-            { label: "Location", a: val(uniA?.location), b: val(uniB?.location) },
-            { label: "Mode", a: val(uniA?.mode), b: val(uniB?.mode) },
-            { label: "Programmes tracked", a: val(uniA?.programme_count), b: val(uniB?.programme_count) },
-            { label: "Overlapping courses", a: String(courses.length), b: String(courses.length) },
-            ...(course
-              ? [
-                  { label: `${course} fee`, a: feeLabel(sa, { universitySlug: uniA?.slug, course }), b: feeLabel(sb, { universitySlug: uniB?.slug, course }) },
-                  { label: "Duration", a: val(sa?.duration), b: val(sb?.duration) },
-                ]
-              : []),
-          ]}
-        />
-      </ContentSection>
+      {pack ? (
+        <EditorialComparison pack={pack} links={packLinks} />
+      ) : (
+        <ContentSection title="Quick Comparison">
+          <CompareRows
+            caption={`${aName} vs ${bName} quick comparison`}
+            aName={aName}
+            bName={bName}
+            rows={[
+              { label: "Full name", a: val(uniA?.university_name), b: val(uniB?.university_name) },
+              { label: "Location", a: val(uniA?.location), b: val(uniB?.location) },
+              { label: "Mode", a: val(uniA?.mode), b: val(uniB?.mode) },
+              { label: "Programmes tracked", a: val(uniA?.programme_count), b: val(uniB?.programme_count) },
+              { label: "Overlapping courses", a: String(courses.length), b: String(courses.length) },
+              ...(course
+                ? [
+                    { label: `${course} fee`, a: feeLabel(sa, { universitySlug: uniA?.slug, course }), b: feeLabel(sb, { universitySlug: uniB?.slug, course }) },
+                    { label: "Duration", a: val(sa?.duration), b: val(sb?.duration) },
+                  ]
+                : []),
+            ]}
+          />
+        </ContentSection>
+      )}
+
 
       <ContentSection title="Courses Offered by Both Universities">
         <CompareRows
