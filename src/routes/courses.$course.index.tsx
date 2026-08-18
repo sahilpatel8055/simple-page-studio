@@ -4,7 +4,7 @@ import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
 import { courseFamilyList, familyForProgrammeSlug } from "@/lib/courseFamily";
 import { webPageSchema } from "@/lib/seo";
-import { pillarCtrMeta } from "@/lib/intentMap";
+import { canonicalProgrammeSlug, pillarCtrMeta } from "@/lib/intentMap";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
 import { SectionUrlGrid } from "@/components/course/SectionHub";
 import { PromoBanner } from "@/components/course/PromoBanner";
@@ -49,6 +49,11 @@ export const Route = createFileRoute("/courses/$course/")({
     const profile = programmeProfile(params.course);
     if (!profile) {
       throw notFound();
+    }
+    // One canonical pillar per programme name — duplicates 301 instead of competing.
+    const canonicalSlug = canonicalProgrammeSlug(params.course);
+    if (canonicalSlug !== params.course) {
+      throw redirect({ to: "/courses/$course", params: { course: canonicalSlug }, statusCode: 301 });
     }
 
     const p = profile.record;

@@ -292,3 +292,17 @@ export function siteIntentClaims(): IntentClaim[] {
   }
   return claims;
 }
+
+/**
+ * When the dataset carries two slugs for the same programme name, only the
+ * shortest one may rank; the other 301s to it (cannibalisation control).
+ */
+export function canonicalProgrammeSlug(slug: string): string {
+  const p = getProgramme(slug);
+  if (!p) return slug;
+  const same = programmes
+    .filter((x) => x.name.trim().toLowerCase() === p.name.trim().toLowerCase())
+    .map((x) => x.slug)
+    .sort((a, b) => a.length - b.length || a.localeCompare(b));
+  return same[0] ?? slug;
+}
