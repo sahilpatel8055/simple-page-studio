@@ -19,7 +19,12 @@ import { ignouArticles, ignouPosts } from "./ignou";
 import { lpuOnlineArticles, lpuOnlinePosts } from "./lpu-online";
 import { lpuProgramArticles, lpuProgramPosts } from "./lpu-program-blogs";
 import { nsouArticles, nsouPosts } from "./nsou";
+import { nsouCourseArticles, nsouCoursePosts } from "./nsou-course-blogs";
+import { parulOnlineArticles, parulOnlinePosts } from "./parul-online";
 import { shooliniOnlineArticles, shooliniOnlinePosts } from "./shoolini-online";
+import { shooliniCourseArticles, shooliniCoursePosts } from "./shoolini-course-blogs";
+import { uttaranchalOnlineArticles, uttaranchalOnlinePosts } from "./uttaranchal-online";
+
 
 export interface UniversityBlogGroup {
   /** University slug used by /universities/{slug}. */
