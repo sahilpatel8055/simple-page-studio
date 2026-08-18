@@ -10,8 +10,18 @@ export const Route = createFileRoute("/compare/$course/$pair")({
     if (!pair) throw notFound();
     const course = courseFromSlug(pair, params.course);
     if (!course || !comparableCourses(pair).includes(course)) throw notFound();
-    return { a: pair.university_a, b: pair.university_b, course, description: pair.seo.meta_description_template };
+    const { a: uniA, b: uniB } = pairUniversities(pair);
+    const pack = uniA?.slug && uniB?.slug ? packFor(courseSlug(course), uniA.slug, uniB.slug) : undefined;
+    return {
+      a: pair.university_a,
+      b: pair.university_b,
+      course,
+      description: pair.seo.meta_description_template,
+      packTitle: pack?.title ?? null,
+      packDescription: pack?.metaDescription ?? null,
+    };
   },
+
   head: ({ params, loaderData }) => {
     const path = `/compare/${params.course}/${params.pair}`;
     if (!loaderData) {
