@@ -11,6 +11,7 @@
  * can hide it.
  */
 import dataset from "@/data/university-admission-exam-career-scholarship-2026-27.json";
+import { consumerLink, consumerList, consumerText } from "@/lib/consumerText";
 
 /* --------------------------------- types --------------------------------- */
 
