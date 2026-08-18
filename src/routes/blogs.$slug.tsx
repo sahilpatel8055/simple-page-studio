@@ -7,6 +7,8 @@ import { articles, news } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
 import { blogBanner } from "@/lib/blogBanners";
 import { familyDefs } from "@/lib/courseFamily";
+import { universityByBlogSlug } from "@/data/university-blogs";
+
 
 import {
   articleSchema,
