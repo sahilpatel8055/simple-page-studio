@@ -237,3 +237,33 @@ export function courseFeeSpread(programmeSlug: string) {
     count: list.length,
   };
 }
+
+/* ------------------------------- headings -------------------------------- */
+
+/**
+ * Title/H1 wording that matches the page's search intent instead of one shared
+ * template. Research-intent universities lead with recognition and cost;
+ * commercial-intent universities lead with fees and the value question.
+ */
+export function universityHeadings(input: {
+  name: string;
+  shortName: string;
+  type?: University["type"];
+  feeRangeLabel?: string;
+}) {
+  const research = input.type === "Open" || input.type === "Central" || input.type === "State";
+  if (research) {
+    return {
+      title: `${input.shortName} Online & Distance Programmes 2026: Fees, Approvals, Admission`,
+      description: `${input.name} — programme-wise published fees, UGC-DEB recognition, eligibility, admission steps, examination pattern and what students should verify before enrolling.`,
+      h1: `${input.name}: Programmes, Published Fees & Admission 2026`,
+      eyebrowNote: "Student research guide",
+    };
+  }
+  return {
+    title: `${input.shortName} Online 2026: Fees, Courses, Approvals & Is It Worth It`,
+    description: `${input.name}: programme-wise fees against the market median, UGC entitlement, admission process, learning platform, placement support and who the university actually suits.`,
+    h1: `${input.name}: Fees, Courses, Approvals & Admission 2026`,
+    eyebrowNote: "Fee & value review",
+  };
+}
