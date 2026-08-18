@@ -16,6 +16,9 @@ import {
   programmes,
   universities,
 } from "@/data";
+import { articles } from "@/lib/content";
+import { universityPairs } from "@/lib/entities";
+import { ownedCourseKeywords, ownedUniversityKeywords } from "@/lib/keywordClusters";
 import type { SearchIntent } from "@/lib/searchIntent";
 
 export type PageKind =
@@ -221,7 +224,9 @@ export function offeringCtrMeta(universitySlug: string, programmeSlug: string, y
       `${u.shortName} ${p.name} fees`,
       `${u.shortName} ${p.name} eligibility`,
       `${u.shortName} ${p.name} admission`,
+      ...ownedUniversityKeywords(universitySlug, 2),
     ],
+
   };
 }
 
@@ -235,9 +240,16 @@ export function pillarCtrMeta(programmeSlug: string, year = 2026): CtrMeta | nul
     description: clampDesc(
       `${p.name} explained for Indian students — ${providers} universities compared, ${p.feeRangeLabel} published fee range, eligibility, specialisations and how to pick the right one.`,
     ),
-    keywords: [p.name, `${p.name} universities`, `${p.name} fee range`, `${p.name} eligibility`],
+    keywords: [
+      ...new Set([
+        ...ownedCourseKeywords(programmeSlug, "coursePillar", 8),
+        p.name,
+        `${p.name} universities`,
+      ]),
+    ],
   };
 }
+
 
 /** Comparison: owns “A vs B”; never claims a winner. */
 export function comparisonCtrMeta(leftShort: string, rightShort: string, year = 2026): CtrMeta {
@@ -292,9 +304,20 @@ export function siteIntentClaims(): IntentClaim[] {
     const p = getProgramme(slug)!;
     claims.push({ path: `/courses/${slug}`, kind: "coursePillar", primaryQuery: p.name });
   }
+  for (const a of articles) {
+    claims.push({ path: `/blogs/${a.slug}`, kind: "blog", primaryQuery: a.title });
+  }
+  for (const pair of universityPairs()) {
+    claims.push({
+      path: pair.path,
+      kind: "comparison",
+      primaryQuery: `${pair.left.record.shortName} vs ${pair.right.record.shortName}`,
+    });
+  }
 
   return claims;
 }
+
 
 /**
  * When the dataset carries two slugs for the same programme name, only the
