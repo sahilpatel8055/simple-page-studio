@@ -26,6 +26,8 @@ export const Route = createFileRoute("/compare/$course/$pair")({
       description: pair.seo.meta_description_template,
       packTitle: pack?.title ?? null,
       packDescription: pack?.metaDescription ?? null,
+      packFaqs: pack?.faqs ?? [],
+
     };
   },
 
@@ -51,7 +53,9 @@ export const Route = createFileRoute("/compare/$course/$pair")({
             { name: loaderData.course, href: path },
           ]),
         ),
+        ...(loaderData.packFaqs.length ? [jsonLd(faqSchema(loaderData.packFaqs))] : []),
       ],
+
     };
   },
   component: Page,
