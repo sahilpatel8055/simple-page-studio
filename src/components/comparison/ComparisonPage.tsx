@@ -12,6 +12,9 @@ import {
   type CourseSnapshotSide,
   type PairComparison,
 } from "@/lib/comparisonMaster";
+import { packFor } from "@/data/comparison-packs";
+import { EditorialComparison } from "./EditorialComparison";
+
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
@@ -86,6 +89,18 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
   const snapshot = course ? pair.course_snapshots?.[course] : undefined;
   const sa: CourseSnapshotSide | undefined = snapshot?.university_a;
   const sb: CourseSnapshotSide | undefined = snapshot?.university_b;
+
+  /** Hand-researched editorial pack for this course + pair, when we have one. */
+  const pack = course && uniA?.slug && uniB?.slug ? packFor(courseSlug(course), uniA.slug, uniB.slug) : undefined;
+  const packLinks = pack
+    ? [
+        { label: `${pack.aLabel} — university profile`, href: `/universities/${pack.aSlug}` },
+        { label: `${pack.bLabel} — university profile`, href: `/universities/${pack.bSlug}` },
+        { label: `Online ${course} — fees, eligibility & universities`, href: `/courses/online-${pack.course}` },
+        { label: `Compare more online ${course} universities`, href: `/compare/online-${pack.course}` },
+      ]
+    : undefined;
+
 
   const title = course
     ? `${aName} vs ${bName} Online ${course}: Fees, Eligibility & Full Comparison`
