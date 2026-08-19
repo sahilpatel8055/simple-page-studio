@@ -29,6 +29,9 @@ import nsouLogo from "@/assets/nsou-logo (1).jpeg";
 import baouLogo from "@/assets/baou logo.png";
 import ksouLogo from "@/assets/ksou logo.jpg";
 import parulLogo from "@/assets/parul logo.jpg";
+import shardaLogo from "@/assets/sharda-logo.png";
+import kukLogo from "@/assets/kuk-logo.png";
+import ycmouLogo from "@/assets/ycmou-logo.png";
 
 import lpuCampus from "@/campus/lpu.png";
 import amityCampus from "@/campus/amity.jpg";
@@ -42,6 +45,9 @@ import nsouCampus from "@/assets/nsou campus.jpg";
 import baouCampus from "@/assets/baou campus.jpg";
 import ksouCampus from "@/assets/ksou campus.jpg";
 import parulCampus from "@/assets/parul university campus.jpg";
+import shardaCampus from "@/assets/sharda-campus.jpg";
+import kukCampus from "@/assets/kuk-campus.jpg";
+import ycmouCampus from "@/assets/ycmou-campus.jpg";
 
 import ugcIcon from "@/approvals/ugc-icon.png";
 import naacIcon from "@/approvals/naac-icon.png";
@@ -63,6 +69,9 @@ import lpuDegree from "@/degree/lpu.png";
 import manipalDegree from "@/degree/manipal.jpg";
 import nmimsDegree from "@/degree/nmims.jpg";
 import vguDegree from "@/degree/vgu.jpg";
+import shardaDegree from "@/assets/sharda-degree.jpg";
+import kukDegree from "@/assets/kuk-degree.jpg";
+import ycmouDegree from "@/assets/ycmou-degree.jpg";
 
 import cuHiring from "@/assets/hiring-partners/cu-hiring-partner.jpg";
 import manipalHiring from "@/assets/hiring-partners/manipal-university-hiring-partners.webp";
@@ -93,6 +102,9 @@ const logos: Record<string, string> = {
   baou: baouLogo,
   "ksou-mysuru": ksouLogo,
   "parul-online": parulLogo,
+  "sharda-online": shardaLogo,
+  "kurukshetra-university": kukLogo,
+  ycmou: ycmouLogo,
 };
 
 /** Campus photography keyed by university slug. */
@@ -109,6 +121,9 @@ const campuses: Record<string, string> = {
   baou: baouCampus,
   "ksou-mysuru": ksouCampus,
   "parul-online": parulCampus,
+  "sharda-online": shardaCampus,
+  "kurukshetra-university": kukCampus,
+  ycmou: ycmouCampus,
 };
 
 /** Approval / accreditation body icons. Keys are matched case-insensitively. */
@@ -148,6 +163,9 @@ const degreeSamples: Record<string, string> = {
   "manipal-university-jaipur": manipalDegree,
   "nmims-online": nmimsDegree,
   vgu: vguDegree,
+  "sharda-online": shardaDegree,
+  "kurukshetra-university": kukDegree,
+  ycmou: ycmouDegree,
 };
 
 export const degreeSample = (slug: string): string | undefined => degreeSamples[slug];

@@ -138,6 +138,33 @@
       "source_title": "JAIN Online",
       "verification_status": "verified_official",
       "last_verified": "2026-08-10"
+    },
+    {
+      "university": "Sharda University Online",
+      "programme": "programme / admissions overview",
+      "source_type": "official_online_portal",
+      "source_url": "https://online.sharda.ac.in/",
+      "source_title": "Sharda University Online",
+      "verification_status": "verified_official",
+      "last_verified": "2026-08-19"
+    },
+    {
+      "university": "Kurukshetra University (CDOE)",
+      "programme": "programme / admissions overview",
+      "source_type": "official_online_portal",
+      "source_url": "https://www.kuk.ac.in/cdoe/",
+      "source_title": "Kurukshetra University (CDOE)",
+      "verification_status": "verified_official",
+      "last_verified": "2026-08-19"
+    },
+    {
+      "university": "Yashwantrao Chavan Maharashtra Open University",
+      "programme": "programme / admissions overview",
+      "source_type": "official_online_portal",
+      "source_url": "https://ycmou.ac.in/admissions",
+      "source_title": "Yashwantrao Chavan Maharashtra Open University",
+      "verification_status": "verified_official",
+      "last_verified": "2026-08-19"
     }
   ],
   "notes": [

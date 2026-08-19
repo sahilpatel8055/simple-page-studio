@@ -20904,6 +20904,2350 @@
       "notes": [
         "Sikkim Manipal University delivers its online degrees through the Centre for Online Education on the Online Manipal platform."
       ]
+    },
+    {
+      "university_name": "Sharda University Online",
+      "short_name": "Sharda Online",
+      "slug": "sharda-online",
+      "mode": "Online",
+      "basic_information": {
+        "official_website": "https://www.sharda.ac.in/",
+        "official_online_portal": "https://online.sharda.ac.in/",
+        "official_admission_portal": "https://online.sharda.ac.in/",
+        "location": "Greater Noida, Uttar Pradesh",
+        "state": "Uttar Pradesh",
+        "established_year": 2009,
+        "official_contact": null,
+        "official_prospectus_url": null,
+        "official_admission_notification_url": null
+      },
+      "recognition": {
+        "UGC_status": "UGC-entitled Higher Educational Institution; online programmes listed as UGC-entitled",
+        "UGC_DEB_status": "Programme-level UGC-DEB entitlement should be verified for the active academic session (not a blanket 'UGC approved' claim)",
+        "NAAC_status": "NAAC A+",
+        "NIRF_information": "NIRF 2025 rank 87 in University category; Sharda University has a presence in NIRF rankings",
+        "accreditation": "NAAC A+; QS I-GAUGE E-LEAD Certificate (mentioned for MBA)"
+      },
+      "admissions": {
+        "admission_start_date": null,
+        "admission_end_date": null,
+        "next_expected_intake": "2026 intake",
+        "admission_cycle": "2026-27",
+        "application_fee": null,
+        "application_url": "https://online.sharda.ac.in/",
+        "admission_steps": [
+          "Visit the official Sharda University Online admission portal",
+          "Register using a valid email address and mobile number",
+          "Fill the application form with personal, academic and contact details and select the desired programme/specialisation",
+          "Upload required documents (mark sheets/certificates, ID proof, photograph, etc.)",
+          "Pay the applicable registration/application fee online",
+          "Document verification by the university",
+          "Pay applicable programme fee and complete admission confirmation"
+        ],
+        "required_documents": [
+          "Class 10 certificate/mark sheet",
+          "Class 12 certificate/mark sheet",
+          "Graduation degree/provisional certificate and marksheets (for PG programmes)",
+          "Government-issued identity proof",
+          "Recent passport-size photograph",
+          "Valid email address and active mobile number",
+          "Category/concession documents, where applicable",
+          "Other documents requested by the university during application"
+        ],
+        "selection_process": null,
+        "entrance_exam": "No entrance examination required for BBA, BCA, or MBA (admission based on merit/eligibility); MCA eligibility depends on academic background, no entrance exam stated",
+        "direct_admission": null,
+        "official_admission_notification": null
+      },
+      "scholarships": [
+        {
+          "name": "Merit-based scholarships/concessions",
+          "criterion": "Merit-based scholarships/concessions"
+        },
+        {
+          "name": "Defence personnel and dependent benefits/concessions",
+          "criterion": "Defence personnel and dependent benefits/concessions"
+        },
+        {
+          "name": "Concessions for differently-abled students (MCA)",
+          "criterion": "Concessions for differently-abled students (MCA)"
+        },
+        {
+          "name": "Support for economically weaker sections (MCA)",
+          "criterion": "Support for economically weaker sections (MCA)"
+        },
+        {
+          "name": "Alumni concessions/benefits",
+          "criterion": "Alumni concessions/benefits"
+        },
+        {
+          "name": "Corporate associate benefits (BCA)",
+          "criterion": "Corporate associate benefits (BCA)"
+        },
+        {
+          "name": "EMI/payment-plan options where available",
+          "criterion": "EMI/payment-plan options where available"
+        }
+      ],
+      "programmes": [
+        {
+          "programme_name": "Bachelor of Business Administration",
+          "official_programme_name": "Bachelor of Business Administration",
+          "slug": "bachelor-of-business-administration-bba",
+          "degree": "BBA",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 Years",
+          "minimum_duration": "3 Years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "Passed 10+2 or equivalent from a recognised board/university (State Board/CBSE/NIOS/IGCSE/IB/ICSE); no work experience required.",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "No entrance examination required for BBA, BCA, or MBA (admission based on merit/eligibility); MCA eligibility depends on academic background, no entrance exam stated"
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 105000,
+            "discounted": null,
+            "annual": 35000,
+            "semester": 17500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 105000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://online.sharda.ac.in/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Domestic (Indian/SAARC) fee per Sharda's published 2025-26 fee documents: ₹17,500/semester, ₹35,000/year, ₹1,05,000 total. International fee: $300/semester, $600/year, $1,800 total. 135 credits.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://online.sharda.ac.in/",
+            "steps": [
+              "Visit the official Sharda University Online admission portal",
+              "Register using a valid email address and mobile number",
+              "Fill the application form with personal, academic and contact details and select the desired programme/specialisation",
+              "Upload required documents (mark sheets/certificates, ID proof, photograph, etc.)",
+              "Pay the applicable registration/application fee online",
+              "Document verification by the university",
+              "Pay applicable programme fee and complete admission confirmation"
+            ],
+            "documents": [
+              "Class 10 certificate/mark sheet",
+              "Class 12 certificate/mark sheet",
+              "Graduation degree/provisional certificate and marksheets (for PG programmes)",
+              "Government-issued identity proof",
+              "Recent passport-size photograph",
+              "Valid email address and active mobile number",
+              "Category/concession documents, where applicable",
+              "Other documents requested by the university during application"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Marketing Executive",
+              "Sales Executive",
+              "Marketing Coordinator",
+              "HR Executive",
+              "HR Coordinator",
+              "Recruitment Associate",
+              "Finance Executive",
+              "Accounts Executive",
+              "Financial Operations Associate",
+              "Operations Executive",
+              "Process Associate",
+              "Business Development Executive",
+              "Sales Associate",
+              "Digital Marketing Executive",
+              "Business Support Executive",
+              "Startup Founder",
+              "Customer Success Associate",
+              "Client Relationship Executive"
+            ],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://online.sharda.ac.in/",
+            "fee_url": "https://online.sharda.ac.in/",
+            "admission_url": "https://online.sharda.ac.in/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Domestic (Indian/SAARC) fee per Sharda's published 2025-26 fee documents: ₹17,500/semester, ₹35,000/year, ₹1,05,000 total. International fee: $300/semester, $600/year, $1,800 total. 135 credits."
+          ]
+        },
+        {
+          "programme_name": "Bachelor of Computer Applications",
+          "official_programme_name": "Bachelor of Computer Applications",
+          "slug": "bachelor-of-computer-applications-bca",
+          "degree": "BCA",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 Years",
+          "minimum_duration": "3 Years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "Passed Class 12/10+2 from a recognised board (State Board/CBSE/NIOS/IGCSE/IB/ICSE); no minimum percentage or work experience required (per supplied content, should be rechecked); no entrance exam required.",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "No entrance examination required for BBA, BCA, or MBA (admission based on merit/eligibility); MCA eligibility depends on academic background, no entrance exam stated"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Artificial Intelligence",
+              "slug": "artificial-intelligence",
+              "description": null
+            },
+            {
+              "specialisation_name": "Cloud Computing",
+              "slug": "cloud-computing",
+              "description": null
+            },
+            {
+              "specialisation_name": "Cyber Security",
+              "slug": "cyber-security",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": 105000,
+            "discounted": null,
+            "annual": 35000,
+            "semester": 17500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 105000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://online.sharda.ac.in/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Official 2025-26 admission notice (Indian/SAARC): ₹17,500/semester, ₹35,000/year, ₹1,05,000 total. International: $300/semester, $600/year, $1,800 total. CIQA report lists BCA as 120-credit undergraduate degree. Note: source material also contained a conflicting ₹1,20,000 figure; ₹1,05,000 treated as reference figure.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://online.sharda.ac.in/",
+            "steps": [
+              "Visit the official Sharda University Online admission portal",
+              "Register using a valid email address and mobile number",
+              "Fill the application form with personal, academic and contact details and select the desired programme/specialisation",
+              "Upload required documents (mark sheets/certificates, ID proof, photograph, etc.)",
+              "Pay the applicable registration/application fee online",
+              "Document verification by the university",
+              "Pay applicable programme fee and complete admission confirmation"
+            ],
+            "documents": [
+              "Class 10 certificate/mark sheet",
+              "Class 12 certificate/mark sheet",
+              "Graduation degree/provisional certificate and marksheets (for PG programmes)",
+              "Government-issued identity proof",
+              "Recent passport-size photograph",
+              "Valid email address and active mobile number",
+              "Category/concession documents, where applicable",
+              "Other documents requested by the university during application"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Junior Software Developer",
+              "Web Developer",
+              "IT Support Executive",
+              "Database Assistant",
+              "QA / Testing Associate",
+              "Technical Support Engineer",
+              "Junior System Administrator",
+              "Cloud Support Associate",
+              "Cybersecurity Support Associate",
+              "Data / MIS Executive"
+            ],
+            "industries": [
+              "IT & Technology",
+              "BFSI",
+              "Healthcare",
+              "Retail & E-Commerce",
+              "Consulting",
+              "Education & EdTech",
+              "Startups"
+            ],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://online.sharda.ac.in/",
+            "fee_url": "https://online.sharda.ac.in/",
+            "admission_url": "https://online.sharda.ac.in/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Official 2025-26 admission notice (Indian/SAARC): ₹17,500/semester, ₹35,000/year, ₹1,05,000 total. International: $300/semester, $600/year, $1,800 total. CIQA report lists BCA as 120-credit undergraduate degree. Note: source material also contained a conflicting ₹1,20,000 figure; ₹1,05,000 treated as reference figure."
+          ]
+        },
+        {
+          "programme_name": "Master of Business Administration",
+          "official_programme_name": "Master of Business Administration",
+          "slug": "master-of-business-administration-mba",
+          "degree": "MBA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 Years",
+          "minimum_duration": "2 Years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised institution (10+2+3 pattern); no upper age limit; no entrance test required, admission based on merit.",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "No entrance examination required for BBA, BCA, or MBA (admission based on merit/eligibility); MCA eligibility depends on academic background, no entrance exam stated"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Data Science & Analytics",
+              "slug": "data-science-and-analytics",
+              "description": null
+            },
+            {
+              "specialisation_name": "Marketing",
+              "slug": "marketing",
+              "description": null
+            },
+            {
+              "specialisation_name": "Finance",
+              "slug": "finance",
+              "description": null
+            },
+            {
+              "specialisation_name": "Healthcare & Hospital Administration",
+              "slug": "healthcare-and-hospital-administration",
+              "description": null
+            },
+            {
+              "specialisation_name": "Human Resource Management",
+              "slug": "human-resource-management",
+              "description": null
+            },
+            {
+              "specialisation_name": "Strategic Human Resource Management",
+              "slug": "strategic-human-resource-management",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": null,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": 500,
+            "admission_fee": null,
+            "examination_fee": 3500,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "not_published",
+            "source_url": "https://online.sharda.ac.in/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "not_published",
+            "fee_source_note": "Fee varies by specialisation: ₹1,40,000–₹1,96,000 total. Data Science & Analytics: ₹49,000/semester, ₹1,96,000 total. Marketing, Healthcare & Hospital Administration, Human Resource Management, Strategic HRM, Finance: ₹35,000/semester, ₹1,40,000 total each. Additional: University Registration Fee ₹500, Examination Fee ₹3,500/year. EMI starting: Data Science & Analytics ₹10,175/month; other specialisations ₹7,375/month.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://online.sharda.ac.in/",
+            "steps": [
+              "Visit the official Sharda University Online admission portal",
+              "Register using a valid email address and mobile number",
+              "Fill the application form with personal, academic and contact details and select the desired programme/specialisation",
+              "Upload required documents (mark sheets/certificates, ID proof, photograph, etc.)",
+              "Pay the applicable registration/application fee online",
+              "Document verification by the university",
+              "Pay applicable programme fee and complete admission confirmation"
+            ],
+            "documents": [
+              "Class 10 certificate/mark sheet",
+              "Class 12 certificate/mark sheet",
+              "Graduation degree/provisional certificate and marksheets (for PG programmes)",
+              "Government-issued identity proof",
+              "Recent passport-size photograph",
+              "Valid email address and active mobile number",
+              "Category/concession documents, where applicable",
+              "Other documents requested by the university during application"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Business Analytics",
+              "Data-Driven Management",
+              "Business Intelligence",
+              "Digital Marketing",
+              "Brand Management",
+              "Sales",
+              "Customer Experience",
+              "Financial Analysis",
+              "Corporate Finance",
+              "Banking",
+              "Investment",
+              "Hospital Administration",
+              "Healthcare Operations",
+              "Healthcare Management",
+              "Recruitment",
+              "Talent Management",
+              "HR Operations",
+              "Employee Relations",
+              "Strategic HR",
+              "HR Analytics",
+              "Organisational Development",
+              "HR Leadership"
+            ],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://online.sharda.ac.in/",
+            "fee_url": "https://online.sharda.ac.in/",
+            "admission_url": "https://online.sharda.ac.in/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Fee varies by specialisation: ₹1,40,000–₹1,96,000 total. Data Science & Analytics: ₹49,000/semester, ₹1,96,000 total. Marketing, Healthcare & Hospital Administration, Human Resource Management, Strategic HRM, Finance: ₹35,000/semester, ₹1,40,000 total each. Additional: University Registration Fee ₹500, Examination Fee ₹3,500/year. EMI starting: Data Science & Analytics ₹10,175/month; other specialisations ₹7,375/month."
+          ]
+        },
+        {
+          "programme_name": "Master of Computer Applications",
+          "official_programme_name": "Master of Computer Applications",
+          "slug": "master-of-computer-applications-mca",
+          "degree": "MCA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 Years",
+          "minimum_duration": "2 Years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Indian students: BCA, B.Sc. in Computer Science/IT, B.Com./B.A. with Mathematics at 10+2 or graduation level, or equivalent recognised undergraduate qualification (bridge coursework may be required for non-matching backgrounds). International students: recognised undergraduate qualification equivalent to Indian bachelor's degree, Mathematics proficiency, AIU-related equivalence documentation where required.",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "No entrance examination required for BBA, BCA, or MBA (admission based on merit/eligibility); MCA eligibility depends on academic background, no entrance exam stated"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Computer Science & IT",
+              "slug": "computer-science-and-it",
+              "description": null
+            },
+            {
+              "specialisation_name": "Data Science",
+              "slug": "data-science",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": 120000,
+            "discounted": null,
+            "annual": 60000,
+            "semester": 30000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": 500,
+            "admission_fee": null,
+            "examination_fee": 3500,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 120000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://online.sharda.ac.in/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Indian/SAARC: ₹30,000/semester, ₹60,000/year, ₹1,20,000 total; Registration ₹500; Examination ₹3,500/year; Starting EMI ~₹6,375/month. Foreign students: $540/semester, $1,080/year, $2,160 total; Registration $10; Examination $60/year.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://online.sharda.ac.in/",
+            "steps": [
+              "Visit the official Sharda University Online admission portal",
+              "Register using a valid email address and mobile number",
+              "Fill the application form with personal, academic and contact details and select the desired programme/specialisation",
+              "Upload required documents (mark sheets/certificates, ID proof, photograph, etc.)",
+              "Pay the applicable registration/application fee online",
+              "Document verification by the university",
+              "Pay applicable programme fee and complete admission confirmation"
+            ],
+            "documents": [
+              "Class 10 certificate/mark sheet",
+              "Class 12 certificate/mark sheet",
+              "Graduation degree/provisional certificate and marksheets (for PG programmes)",
+              "Government-issued identity proof",
+              "Recent passport-size photograph",
+              "Valid email address and active mobile number",
+              "Category/concession documents, where applicable",
+              "Other documents requested by the university during application"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Software Developer",
+              "Application Developer",
+              "Data Analyst",
+              "BI Analyst",
+              "ML-oriented roles",
+              "AI Associate",
+              "Cloud Support / Cloud Technology Roles",
+              "IT Consultant",
+              "Technology Analyst",
+              "Database / Data Management Roles",
+              "Systems and Application Support",
+              "Technology Project / IT Operations Roles"
+            ],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://online.sharda.ac.in/",
+            "fee_url": "https://online.sharda.ac.in/",
+            "admission_url": "https://online.sharda.ac.in/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Sharda University Online — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Indian/SAARC: ₹30,000/semester, ₹60,000/year, ₹1,20,000 total; Registration ₹500; Examination ₹3,500/year; Starting EMI ~₹6,375/month. Foreign students: $540/semester, $1,080/year, $2,160 total; Registration $10; Examination $60/year."
+          ]
+        }
+      ],
+      "seo": {
+        "university_slug": "sharda-online",
+        "primary_keywords": [
+          "Sharda Online courses",
+          "Sharda Online admission",
+          "Sharda Online fees"
+        ],
+        "secondary_keywords": [
+          "Sharda Online online degree",
+          "Sharda Online eligibility"
+        ],
+        "long_tail_keywords": [
+          "Sharda Online MBA fees 2026",
+          "Sharda Online admission 2026"
+        ],
+        "admission_keywords": [
+          "Sharda Online admission 2026"
+        ],
+        "fee_keywords": [
+          "Sharda Online fees 2026"
+        ],
+        "course_keywords": [
+          "Sharda Online courses"
+        ],
+        "comparison_keywords": [
+          "Sharda Online vs online university"
+        ]
+      },
+      "url_architecture": {
+        "university": "/universities/sharda-online",
+        "courses": "/universities/sharda-online/courses/{course-slug}",
+        "admission": "/universities/sharda-online/admission",
+        "fees": "/universities/sharda-online/fees",
+        "scholarships": "/universities/sharda-online/scholarships",
+        "reviews": "/universities/sharda-online/reviews"
+      },
+      "data_status": "verified_official",
+      "last_verified": "2026-08-19",
+      "notes": [
+        "Programme fees, eligibility, recognition and admission details can change by academic session; latest official information should be verified before admission.",
+        "Placement/career support should be understood as assistance, not a guaranteed job or salary outcome.",
+        "Sharda University's online portfolio includes MBA, MCA, BBA, BCA, BA and M.Com.",
+        "University reports international exposure with students from 95+ countries and partnerships with 250+ universities worldwide.",
+        "BCA source material contained a syllabus table with several BBA/commerce subjects mislabelled as BCA; that table should not be treated as the BCA syllabus.",
+        "MBA fee source material lists BBA/BCA fee figures separately from MBA figures; per-specialisation fee differences are documented only for MBA and Indian/SAARC vs international fees for BBA/BCA/MCA.",
+        "Sharda University Online offers UGC-entitled, NAAC A+ accredited degrees (BBA, BCA, MBA, MCA) delivered through a digital learning ecosystem with live and recorded lectures, e-library access and project-based learning. It stands out for offering six MBA specialisations and two MCA specialisations (Computer Science & IT, Data Science) with specialisation-linked fee differences, alongside an international ecosystem citing students from 95+ countries and partnerships with 250+ universities."
+      ]
+    },
+    {
+      "university_name": "Kurukshetra University (CDOE)",
+      "short_name": "KUK CDOE",
+      "slug": "kurukshetra-university",
+      "mode": "Both",
+      "basic_information": {
+        "official_website": "https://www.kuk.ac.in/",
+        "official_online_portal": "https://www.kuk.ac.in/cdoe/",
+        "official_admission_portal": "https://www.kuk.ac.in/cdoe/",
+        "location": "Kurukshetra, Haryana",
+        "state": "Haryana",
+        "established_year": 1956,
+        "official_contact": null,
+        "official_prospectus_url": null,
+        "official_admission_notification_url": null
+      },
+      "recognition": {
+        "UGC_status": "Recognised by the University Grants Commission (UGC); online programmes described as UGC-entitled, subject to verification for the specific programme/session",
+        "UGC_DEB_status": null,
+        "NAAC_status": "A++ Grade from NAAC",
+        "NIRF_information": null,
+        "accreditation": "Category-I University; NAAC A++ accredited public university"
+      },
+      "admissions": {
+        "admission_start_date": null,
+        "admission_end_date": null,
+        "next_expected_intake": "2026 intake",
+        "admission_cycle": "2026-27",
+        "application_fee": null,
+        "application_url": "https://www.kuk.ac.in/cdoe/",
+        "admission_steps": [
+          "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+          "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+          "Complete the Application Form with personal, communication and academic details",
+          "Upload Required Documents",
+          "Pay the Applicable Fee through the authorised online payment method",
+          "Verification of submitted information and documents by the university",
+          "Admission Confirmation via applicable university communication channel",
+          "Access Learning Resources once admission and LMS onboarding is completed"
+        ],
+        "required_documents": [
+          "Completed online application form",
+          "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+          "Graduation degree/provisional certificate (for postgraduate programmes)",
+          "Passport-size photograph in digital format",
+          "Valid government-issued photo identity proof (e.g., Aadhaar)",
+          "Government Gazette notification where applicable for name change",
+          "Online fee payment receipt"
+        ],
+        "selection_process": null,
+        "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)",
+        "direct_admission": null,
+        "official_admission_notification": null
+      },
+      "scholarships": [
+        {
+          "name": "Category-based financial support (availability/eligibility varies by session)",
+          "criterion": "Category-based financial support (availability/eligibility varies by session)"
+        },
+        {
+          "name": "Merit-based opportunities",
+          "criterion": "Merit-based opportunities"
+        },
+        {
+          "name": "Government scholarship schemes",
+          "criterion": "Government scholarship schemes"
+        },
+        {
+          "name": "Support for eligible students from financially weaker backgrounds",
+          "criterion": "Support for eligible students from financially weaker backgrounds"
+        },
+        {
+          "name": "Special incentives/schemes announced for specific student categories",
+          "criterion": "Special incentives/schemes announced for specific student categories"
+        }
+      ],
+      "programmes": [
+        {
+          "programme_name": "Bachelor of Arts",
+          "official_programme_name": "Bachelor of Arts",
+          "slug": "bachelor-of-arts-b-a",
+          "degree": "B.A.",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 Years",
+          "minimum_duration": "3 Years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "Completion of required senior-secondary (10+2) qualification from a recognised board, subject to programme-specific rules",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)"
+          },
+          "specializations": [],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": 12000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.kuk.ac.in/cdoe/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee ₹12,000 (indicative); approximate 3-year tuition ≈ ₹72,000 if unchanged across semesters",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.kuk.ac.in/cdoe/",
+            "steps": [
+              "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+              "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+              "Complete the Application Form with personal, communication and academic details",
+              "Upload Required Documents",
+              "Pay the Applicable Fee through the authorised online payment method",
+              "Verification of submitted information and documents by the university",
+              "Admission Confirmation via applicable university communication channel",
+              "Access Learning Resources once admission and LMS onboarding is completed"
+            ],
+            "documents": [
+              "Completed online application form",
+              "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+              "Graduation degree/provisional certificate (for postgraduate programmes)",
+              "Passport-size photograph in digital format",
+              "Valid government-issued photo identity proof (e.g., Aadhaar)",
+              "Government Gazette notification where applicable for name change",
+              "Online fee payment receipt"
+            ]
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.kuk.ac.in/cdoe/",
+            "fee_url": "https://www.kuk.ac.in/cdoe/",
+            "admission_url": "https://www.kuk.ac.in/cdoe/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Semester fee ₹12,000 (indicative); approximate 3-year tuition ≈ ₹72,000 if unchanged across semesters"
+          ]
+        },
+        {
+          "programme_name": "Bachelor of Business Administration",
+          "official_programme_name": "Bachelor of Business Administration",
+          "slug": "bachelor-of-business-administration-b-b-a",
+          "degree": "B.B.A.",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 Years",
+          "minimum_duration": "3 Years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "Class 12 / 10+2 from a recognised board, any stream (Arts, Commerce, Science or equivalent); no entrance exam required; no upper age limit stated",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Broad-based management programme (no formal elective specialisation tracks); exposure across Management, Accounting, Finance, Marketing, HR, Economics, Entrepreneurship, Business Law, Organisational Behaviour, E-commerce",
+              "slug": "broad-based-management-programme-no-formal-elective-specialisation-tracks-exposure-across-management-accounting-finance-marketing-hr-economics-entrepreneurship-business-law-organisational-behaviour-e-commerce",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": 72661,
+            "discounted": null,
+            "annual": null,
+            "semester": 12000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": 1000,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 72661,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.kuk.ac.in/cdoe/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "General fee table lists ₹12,000/semester; BBA-specific detailed source states lump-sum ₹72,661 for 6 semesters (Indian students), semester-wise: ₹12,661 in Semester 1 (includes ₹1,000 non-refundable registration fee) and ₹12,000 from Semester 2 onwards. Current official fee portal is final authority.",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.kuk.ac.in/cdoe/",
+            "steps": [
+              "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+              "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+              "Complete the Application Form with personal, communication and academic details",
+              "Upload Required Documents",
+              "Pay the Applicable Fee through the authorised online payment method",
+              "Verification of submitted information and documents by the university",
+              "Admission Confirmation via applicable university communication channel",
+              "Access Learning Resources once admission and LMS onboarding is completed"
+            ],
+            "documents": [
+              "Completed online application form",
+              "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+              "Graduation degree/provisional certificate (for postgraduate programmes)",
+              "Passport-size photograph in digital format",
+              "Valid government-issued photo identity proof (e.g., Aadhaar)",
+              "Government Gazette notification where applicable for name change",
+              "Online fee payment receipt"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Marketing/Sales roles",
+              "HR roles",
+              "Finance roles",
+              "Entrepreneurship"
+            ],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.kuk.ac.in/cdoe/",
+            "fee_url": "https://www.kuk.ac.in/cdoe/",
+            "admission_url": "https://www.kuk.ac.in/cdoe/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "General fee table lists ₹12,000/semester; BBA-specific detailed source states lump-sum ₹72,661 for 6 semesters (Indian students), semester-wise: ₹12,661 in Semester 1 (includes ₹1,000 non-refundable registration fee) and ₹12,000 from Semester 2 onwards. Current official fee portal is final authority."
+          ]
+        },
+        {
+          "programme_name": "Bachelor of Commerce",
+          "official_programme_name": "Bachelor of Commerce",
+          "slug": "bachelor-of-commerce-b-com",
+          "degree": "B.Com.",
+          "level": "UG",
+          "mode": "Online",
+          "duration": "3 Years",
+          "minimum_duration": "3 Years",
+          "maximum_duration": null,
+          "semesters": 6,
+          "eligibility": {
+            "summary": "Completion of required senior-secondary (10+2) qualification from a recognised board, subject to programme-specific rules",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)"
+          },
+          "specializations": [],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": 12000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.kuk.ac.in/cdoe/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee ₹12,000 (indicative); approximate 3-year tuition ≈ ₹72,000 if unchanged across semesters",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.kuk.ac.in/cdoe/",
+            "steps": [
+              "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+              "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+              "Complete the Application Form with personal, communication and academic details",
+              "Upload Required Documents",
+              "Pay the Applicable Fee through the authorised online payment method",
+              "Verification of submitted information and documents by the university",
+              "Admission Confirmation via applicable university communication channel",
+              "Access Learning Resources once admission and LMS onboarding is completed"
+            ],
+            "documents": [
+              "Completed online application form",
+              "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+              "Graduation degree/provisional certificate (for postgraduate programmes)",
+              "Passport-size photograph in digital format",
+              "Valid government-issued photo identity proof (e.g., Aadhaar)",
+              "Government Gazette notification where applicable for name change",
+              "Online fee payment receipt"
+            ]
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.kuk.ac.in/cdoe/",
+            "fee_url": "https://www.kuk.ac.in/cdoe/",
+            "admission_url": "https://www.kuk.ac.in/cdoe/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Semester fee ₹12,000 (indicative); approximate 3-year tuition ≈ ₹72,000 if unchanged across semesters"
+          ]
+        },
+        {
+          "programme_name": "Master of Arts",
+          "official_programme_name": "Master of Arts",
+          "slug": "master-of-arts-m-a",
+          "degree": "M.A.",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 Years",
+          "minimum_duration": "2 Years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Graduation from a recognised university; January 2026 notice included M.A. in English, Political Science and Mass Communication",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "English",
+              "slug": "english",
+              "description": null
+            },
+            {
+              "specialisation_name": "Political Science",
+              "slug": "political-science",
+              "description": null
+            },
+            {
+              "specialisation_name": "Mass Communication",
+              "slug": "mass-communication",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": 15000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.kuk.ac.in/cdoe/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee ₹15,000 (indicative); approximate 2-year tuition ≈ ₹60,000 if unchanged across semesters",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.kuk.ac.in/cdoe/",
+            "steps": [
+              "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+              "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+              "Complete the Application Form with personal, communication and academic details",
+              "Upload Required Documents",
+              "Pay the Applicable Fee through the authorised online payment method",
+              "Verification of submitted information and documents by the university",
+              "Admission Confirmation via applicable university communication channel",
+              "Access Learning Resources once admission and LMS onboarding is completed"
+            ],
+            "documents": [
+              "Completed online application form",
+              "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+              "Graduation degree/provisional certificate (for postgraduate programmes)",
+              "Passport-size photograph in digital format",
+              "Valid government-issued photo identity proof (e.g., Aadhaar)",
+              "Government Gazette notification where applicable for name change",
+              "Online fee payment receipt"
+            ]
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.kuk.ac.in/cdoe/",
+            "fee_url": "https://www.kuk.ac.in/cdoe/",
+            "admission_url": "https://www.kuk.ac.in/cdoe/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Semester fee ₹15,000 (indicative); approximate 2-year tuition ≈ ₹60,000 if unchanged across semesters"
+          ]
+        },
+        {
+          "programme_name": "Master of Commerce",
+          "official_programme_name": "Master of Commerce",
+          "slug": "master-of-commerce-m-com",
+          "degree": "M.Com.",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 Years",
+          "minimum_duration": "2 Years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Graduation from a recognised university",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)"
+          },
+          "specializations": [],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": 15000,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.kuk.ac.in/cdoe/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee ₹15,000 (indicative); approximate 2-year tuition ≈ ₹60,000 if unchanged across semesters",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.kuk.ac.in/cdoe/",
+            "steps": [
+              "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+              "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+              "Complete the Application Form with personal, communication and academic details",
+              "Upload Required Documents",
+              "Pay the Applicable Fee through the authorised online payment method",
+              "Verification of submitted information and documents by the university",
+              "Admission Confirmation via applicable university communication channel",
+              "Access Learning Resources once admission and LMS onboarding is completed"
+            ],
+            "documents": [
+              "Completed online application form",
+              "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+              "Graduation degree/provisional certificate (for postgraduate programmes)",
+              "Passport-size photograph in digital format",
+              "Valid government-issued photo identity proof (e.g., Aadhaar)",
+              "Government Gazette notification where applicable for name change",
+              "Online fee payment receipt"
+            ]
+          },
+          "career": {
+            "roles": [],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.kuk.ac.in/cdoe/",
+            "fee_url": "https://www.kuk.ac.in/cdoe/",
+            "admission_url": "https://www.kuk.ac.in/cdoe/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Semester fee ₹15,000 (indicative); approximate 2-year tuition ≈ ₹60,000 if unchanged across semesters"
+          ]
+        },
+        {
+          "programme_name": "Master of Business Administration",
+          "official_programme_name": "Master of Business Administration",
+          "slug": "master-of-business-administration-mba",
+          "degree": "MBA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 Years",
+          "minimum_duration": "2 Years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "10+2 or equivalent; Bachelor's degree from a recognised university; minimum marks/other conditions as per university norms; no entrance exam required; no upper age limit stated",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Business Analytics",
+              "slug": "business-analytics",
+              "description": null
+            },
+            {
+              "specialisation_name": "Finance",
+              "slug": "finance",
+              "description": null
+            },
+            {
+              "specialisation_name": "Human Resource Management",
+              "slug": "human-resource-management",
+              "description": null
+            },
+            {
+              "specialisation_name": "Information Technology Management",
+              "slug": "information-technology-management",
+              "description": null
+            },
+            {
+              "specialisation_name": "Marketing Management",
+              "slug": "marketing-management",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": 102000,
+            "discounted": null,
+            "annual": null,
+            "semester": 25500,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 102000,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.kuk.ac.in/cdoe/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Semester fee ₹25,500 (indicative); approximate 4-semester tuition ≈ ₹1,02,000 if unchanged across semesters (arithmetic projection, not official schedule)",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.kuk.ac.in/cdoe/",
+            "steps": [
+              "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+              "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+              "Complete the Application Form with personal, communication and academic details",
+              "Upload Required Documents",
+              "Pay the Applicable Fee through the authorised online payment method",
+              "Verification of submitted information and documents by the university",
+              "Admission Confirmation via applicable university communication channel",
+              "Access Learning Resources once admission and LMS onboarding is completed"
+            ],
+            "documents": [
+              "Completed online application form",
+              "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+              "Graduation degree/provisional certificate (for postgraduate programmes)",
+              "Passport-size photograph in digital format",
+              "Valid government-issued photo identity proof (e.g., Aadhaar)",
+              "Government Gazette notification where applicable for name change",
+              "Online fee payment receipt"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Business Analyst",
+              "Operations Analyst",
+              "Management Analyst",
+              "Strategy Analyst",
+              "Finance Executive",
+              "Accounts Manager",
+              "Financial Analyst",
+              "HR Executive",
+              "Talent Acquisition Specialist",
+              "HR Operations Manager",
+              "Training Coordinator",
+              "IT Manager",
+              "Systems Coordinator",
+              "Technology Operations Manager",
+              "Business-IT Analyst",
+              "Marketing Executive",
+              "Brand Manager",
+              "Sales Manager",
+              "Market Research Analyst"
+            ],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.kuk.ac.in/cdoe/",
+            "fee_url": "https://www.kuk.ac.in/cdoe/",
+            "admission_url": "https://www.kuk.ac.in/cdoe/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Semester fee ₹25,500 (indicative); approximate 4-semester tuition ≈ ₹1,02,000 if unchanged across semesters (arithmetic projection, not official schedule)"
+          ]
+        },
+        {
+          "programme_name": "Master of Computer Applications",
+          "official_programme_name": "Master of Computer Applications",
+          "slug": "master-of-computer-applications-mca",
+          "degree": "MCA",
+          "level": "PG",
+          "mode": "Online",
+          "duration": "2 Years",
+          "minimum_duration": "2 Years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Graduation from a recognised university; minimum marks 50% General, 47.5% SC/ST/Differently Abled; no entrance exam required; no upper age limit stated",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Core-based MCA (broad exposure across Programming, Operating Systems, Web Technologies, Databases, AI, Machine Learning, Networking, Algorithms, Cybersecurity, Big Data, Data Analytics, Blockchain, Software Design; no formal elective tracks)",
+              "slug": "core-based-mca-broad-exposure-across-programming-operating-systems-web-technologies-databases-ai-machine-learning-networking-algorithms-cybersecurity-big-data-data-analytics-blockchain-software-design-no-formal-elective-tracks",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": 76647,
+            "discounted": null,
+            "annual": null,
+            "semester": 18900,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": 1000,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 76647,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://www.kuk.ac.in/cdoe/",
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Indian students: ₹19,947 in Semester 1, ₹18,900 from Semester 2 onwards; lumpsum programme fee ₹76,647. International students: ₹48,817 in Semester 1, ₹47,600 from Semester 2 onwards; lumpsum ₹1,91,617; Registration Fee ₹1,500, Re-appear Examination Fee ₹1,000 per subject (international).",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://www.kuk.ac.in/cdoe/",
+            "steps": [
+              "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+              "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+              "Complete the Application Form with personal, communication and academic details",
+              "Upload Required Documents",
+              "Pay the Applicable Fee through the authorised online payment method",
+              "Verification of submitted information and documents by the university",
+              "Admission Confirmation via applicable university communication channel",
+              "Access Learning Resources once admission and LMS onboarding is completed"
+            ],
+            "documents": [
+              "Completed online application form",
+              "Academic certificates/marksheets (Class 10, Class 12/graduation as applicable)",
+              "Graduation degree/provisional certificate (for postgraduate programmes)",
+              "Passport-size photograph in digital format",
+              "Valid government-issued photo identity proof (e.g., Aadhaar)",
+              "Government Gazette notification where applicable for name change",
+              "Online fee payment receipt"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Software development",
+              "Application programming",
+              "IT support",
+              "Systems administration",
+              "Web application roles",
+              "Database-related roles",
+              "Data and analytics",
+              "Network and cybersecurity roles",
+              "Technical roles in public and private organisations",
+              "Research and academic pathways"
+            ],
+            "industries": [],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://www.kuk.ac.in/cdoe/",
+            "fee_url": "https://www.kuk.ac.in/cdoe/",
+            "admission_url": "https://www.kuk.ac.in/cdoe/",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Kurukshetra University (CDOE) — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Indian students: ₹19,947 in Semester 1, ₹18,900 from Semester 2 onwards; lumpsum programme fee ₹76,647. International students: ₹48,817 in Semester 1, ₹47,600 from Semester 2 onwards; lumpsum ₹1,91,617; Registration Fee ₹1,500, Re-appear Examination Fee ₹1,000 per subject (international)."
+          ]
+        }
+      ],
+      "seo": {
+        "university_slug": "kurukshetra-university",
+        "primary_keywords": [
+          "KUK CDOE courses",
+          "KUK CDOE admission",
+          "KUK CDOE fees"
+        ],
+        "secondary_keywords": [
+          "KUK CDOE online degree",
+          "KUK CDOE eligibility"
+        ],
+        "long_tail_keywords": [
+          "KUK CDOE MBA fees 2026",
+          "KUK CDOE admission 2026"
+        ],
+        "admission_keywords": [
+          "KUK CDOE admission 2026"
+        ],
+        "fee_keywords": [
+          "KUK CDOE fees 2026"
+        ],
+        "course_keywords": [
+          "KUK CDOE courses"
+        ],
+        "comparison_keywords": [
+          "KUK CDOE vs online university"
+        ]
+      },
+      "url_architecture": {
+        "university": "/universities/kurukshetra-university",
+        "courses": "/universities/kurukshetra-university/courses/{course-slug}",
+        "admission": "/universities/kurukshetra-university/admission",
+        "fees": "/universities/kurukshetra-university/fees",
+        "scholarships": "/universities/kurukshetra-university/scholarships",
+        "reviews": "/universities/kurukshetra-university/reviews"
+      },
+      "data_status": "verified_official",
+      "last_verified": "2026-08-19",
+      "notes": [
+        "Programme availability, specialisations, fees and admission dates can change; verify against the current session's official notice.",
+        "KUK follows two broad admission sessions: January to June, and July to December.",
+        "Online and ODL offerings are not necessarily identical; mode, entitlement and eligibility should be checked per programme.",
+        "Fee figures differ slightly between the general course-fee table and course-specific fee pages (e.g., BBA and MCA); the current official fee portal is the final authority.",
+        "EMI/instalment payment options may be available as per current guidelines.",
+        "Kurukshetra University Online is delivered by a Category-I, NAAC A++ accredited public university established in 1956 through its Centre for Distance and Online Education, offering both ODL and online modes across UG, PG, diploma and certificate levels. Its online MBA and MCA are UGC-entitled degrees with no entrance exam requirement, positioning KUK as an accessible option for working professionals seeking a recognised public-university qualification without relocation."
+      ]
+    },
+    {
+      "university_name": "Yashwantrao Chavan Maharashtra Open University",
+      "short_name": "YCMOU",
+      "slug": "ycmou",
+      "mode": "Distance",
+      "basic_information": {
+        "official_website": "https://ycmou.ac.in/",
+        "official_online_portal": "https://ycmou.ac.in/admissions",
+        "official_admission_portal": "https://ycmou.ac.in/admissions",
+        "location": "Nashik, Maharashtra",
+        "state": "Maharashtra",
+        "established_year": 1989,
+        "official_contact": null,
+        "official_prospectus_url": null,
+        "official_admission_notification_url": null
+      },
+      "recognition": {
+        "UGC_status": "Recognised under Section 12(B) of the University Grants Commission Act, 1956",
+        "UGC_DEB_status": "YCMOU has published a UGC-DEB programme recognition application for the 2026–27 August session; programme-level recognition should be verified for the specific programme and session",
+        "NAAC_status": "Accredited 'A' Grade by NAAC in its first cycle in 2022",
+        "NIRF_information": null,
+        "accreditation": "Recognised under Section 12(B) UGC Act, 1956; NAAC 'A' Grade (2022); Commonwealth of Learning (COL), Canada Award of Excellence for Institutional Achievement (2002) and Award of Institutional Excellence (2019); MBA programme also lists AICTE among recognitions"
+      },
+      "admissions": {
+        "admission_start_date": null,
+        "admission_end_date": null,
+        "next_expected_intake": "2026 intake",
+        "admission_cycle": "2026-27",
+        "application_fee": null,
+        "application_url": "https://ycmou.ac.in/admissions",
+        "admission_steps": [
+          "Visit the official YCMOU admission portal (https://ycmou.ac.in/admissions)",
+          "Select the relevant admission session/cycle",
+          "Read the current programme-specific prospectus",
+          "Select the desired programme and confirm it is open for fresh admission",
+          "Register/create an account with mobile number and email",
+          "Create ABC ID and DEB ID (required for ODL/online programmes)",
+          "Fill the application form with personal, academic and programme details",
+          "Select a Learner Support Centre/Study Centre after confirming programme availability",
+          "Upload required documents in specified format and size",
+          "Pay the prescribed/applicable fee online",
+          "Review the application (name, DOB, marks, programme, centre, documents)",
+          "Submit the application and save the confirmation, reference number and payment receipt"
+        ],
+        "required_documents": [
+          "Class 10 marksheet/certificate",
+          "Class 12 marksheet",
+          "Graduation marksheets and degree/certificate (for PG programmes)",
+          "Passport-size photograph",
+          "Signature",
+          "Government/valid ID proof",
+          "Category certificate (where applicable)",
+          "Domicile certificate (where applicable)",
+          "Income certificate (for scholarship purposes, where applicable)",
+          "ABC ID",
+          "DEB ID",
+          "Migration/Transfer certificate (where required, e.g. MCA)",
+          "Programme-specific documents (e.g. entrance exam scorecard for MBA)"
+        ],
+        "selection_process": null,
+        "entrance_exam": "MBA-CET (mandatory for MBA admission, per supplied MBA source); other programmes' entrance requirements are programme-specific and should be verified from current notification",
+        "direct_admission": null,
+        "official_admission_notification": null
+      },
+      "scholarships": [
+        {
+          "name": "Government-run scholarship schemes for SC, ST, OBC, VJ/NT, SBC and EWS categories (stated for MBA), applicable via the MahaDBT scholarship platform where eligible",
+          "criterion": "Government-run scholarship schemes for SC, ST, OBC, VJ/NT, SBC and EWS categories (stated for MBA), applicable via the MahaDBT scholarship platform where eligible"
+        }
+      ],
+      "programmes": [
+        {
+          "programme_name": "Master of Business Administration",
+          "official_programme_name": "Master of Business Administration",
+          "slug": "master-of-business-administration-mba",
+          "degree": "MBA",
+          "level": "PG",
+          "mode": "Distance",
+          "duration": "2 Years",
+          "minimum_duration": "2 Years",
+          "maximum_duration": null,
+          "semesters": 4,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university with minimum 50% marks or equivalent (45% for backward-class categories and persons with disabilities belonging to Maharashtra state); must qualify YCMOU MBA-CET",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "MBA-CET (mandatory for MBA admission, per supplied MBA source); other programmes' entrance requirements are programme-specific and should be verified from current notification"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Finance",
+              "slug": "finance",
+              "description": null
+            },
+            {
+              "specialisation_name": "Marketing",
+              "slug": "marketing",
+              "description": null
+            },
+            {
+              "specialisation_name": "Human Resource Management",
+              "slug": "human-resource-management",
+              "description": null
+            },
+            {
+              "specialisation_name": "Manufacturing",
+              "slug": "manufacturing",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": 39036,
+            "discounted": null,
+            "annual": null,
+            "semester": null,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 39036,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://ycmou.ac.in/admissions",
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "First-Year Fee ₹17,928, Second-Year Fee ₹21,108, Total Programme Fee ₹39,036 (includes stated exam/other charges); an earlier source section gives a conflicting approximate range of ₹25,000–₹35,000",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://ycmou.ac.in/admissions",
+            "steps": [
+              "Visit the official YCMOU admission portal (https://ycmou.ac.in/admissions)",
+              "Select the relevant admission session/cycle",
+              "Read the current programme-specific prospectus",
+              "Select the desired programme and confirm it is open for fresh admission",
+              "Register/create an account with mobile number and email",
+              "Create ABC ID and DEB ID (required for ODL/online programmes)",
+              "Fill the application form with personal, academic and programme details",
+              "Select a Learner Support Centre/Study Centre after confirming programme availability",
+              "Upload required documents in specified format and size",
+              "Pay the prescribed/applicable fee online",
+              "Review the application (name, DOB, marks, programme, centre, documents)",
+              "Submit the application and save the confirmation, reference number and payment receipt"
+            ],
+            "documents": [
+              "Class 10 marksheet/certificate",
+              "Class 12 marksheet",
+              "Graduation marksheets and degree/certificate (for PG programmes)",
+              "Passport-size photograph",
+              "Signature",
+              "Government/valid ID proof",
+              "Category certificate (where applicable)",
+              "Domicile certificate (where applicable)",
+              "Income certificate (for scholarship purposes, where applicable)",
+              "ABC ID",
+              "DEB ID",
+              "Migration/Transfer certificate (where required, e.g. MCA)",
+              "Programme-specific documents (e.g. entrance exam scorecard for MBA)"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Brand Manager",
+              "HR Manager",
+              "Supply Chain Manager",
+              "Business Development Manager",
+              "Market Research Analyst",
+              "Purchase Manager",
+              "Financial Analyst"
+            ],
+            "industries": [
+              "Management",
+              "Marketing",
+              "Finance",
+              "Human Resources",
+              "Operations",
+              "Business"
+            ],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://ycmou.ac.in/admissions",
+            "fee_url": "https://ycmou.ac.in/admissions",
+            "admission_url": "https://ycmou.ac.in/admissions",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "First-Year Fee ₹17,928, Second-Year Fee ₹21,108, Total Programme Fee ₹39,036 (includes stated exam/other charges); an earlier source section gives a conflicting approximate range of ₹25,000–₹35,000"
+          ]
+        },
+        {
+          "programme_name": "Master of Computer Applications",
+          "official_programme_name": "Master of Computer Applications",
+          "slug": "master-of-computer-applications-mca",
+          "degree": "MCA",
+          "level": "PG",
+          "mode": "Distance",
+          "duration": "As per current YCMOU MCA programme structure/prospectus (source conflicts: 2-year general PG reference vs 3-year fee calculation)",
+          "minimum_duration": "As per current YCMOU MCA programme structure/prospectus (source conflicts: 2-year general PG reference vs 3-year fee calculation)",
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Bachelor's degree from a recognised university; Mathematics/Statistics at 10+2 or graduation level may be required, otherwise a Certificate in Mathematics (D125) may be needed",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "MBA-CET (mandatory for MBA admission, per supplied MBA source); other programmes' entrance requirements are programme-specific and should be verified from current notification"
+          },
+          "specializations": [],
+          "fees": {
+            "normal": 75300,
+            "discounted": null,
+            "annual": 25100,
+            "semester": null,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": 75300,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "verified_official",
+            "source_url": "https://ycmou.ac.in/admissions",
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "verified_official",
+            "fee_source_note": "Year-wise fee: Examination Fee ₹2,650, Tuition Fee ₹1,650, Registration Fee ₹100, Other Fee ₹200, Development Fund ₹5,500, University Programme Fees (UPF) ₹10,100, Study Centre Fee (SCF) ₹15,000 = ₹25,100/year; over 3 years = ₹75,300 (plus ₹3,600 D125 fee if applicable = ₹78,900); prospectus reportedly mentions a 10% annual fee increase for BCA and MCA",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://ycmou.ac.in/admissions",
+            "steps": [
+              "Visit the official YCMOU admission portal (https://ycmou.ac.in/admissions)",
+              "Select the relevant admission session/cycle",
+              "Read the current programme-specific prospectus",
+              "Select the desired programme and confirm it is open for fresh admission",
+              "Register/create an account with mobile number and email",
+              "Create ABC ID and DEB ID (required for ODL/online programmes)",
+              "Fill the application form with personal, academic and programme details",
+              "Select a Learner Support Centre/Study Centre after confirming programme availability",
+              "Upload required documents in specified format and size",
+              "Pay the prescribed/applicable fee online",
+              "Review the application (name, DOB, marks, programme, centre, documents)",
+              "Submit the application and save the confirmation, reference number and payment receipt"
+            ],
+            "documents": [
+              "Class 10 marksheet/certificate",
+              "Class 12 marksheet",
+              "Graduation marksheets and degree/certificate (for PG programmes)",
+              "Passport-size photograph",
+              "Signature",
+              "Government/valid ID proof",
+              "Category certificate (where applicable)",
+              "Domicile certificate (where applicable)",
+              "Income certificate (for scholarship purposes, where applicable)",
+              "ABC ID",
+              "DEB ID",
+              "Migration/Transfer certificate (where required, e.g. MCA)",
+              "Programme-specific documents (e.g. entrance exam scorecard for MBA)"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Software Engineer",
+              "Web Developer",
+              "Backend Developer",
+              "Mobile App Developer",
+              "QA Tester",
+              "Data Analyst",
+              "Database Administrator",
+              "System Administrator",
+              "IT Support Specialist"
+            ],
+            "industries": [
+              "Information Technology",
+              "Software Development",
+              "Government/PSU roles (where MCA qualifies)"
+            ],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://ycmou.ac.in/admissions",
+            "fee_url": "https://ycmou.ac.in/admissions",
+            "admission_url": "https://ycmou.ac.in/admissions",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "Year-wise fee: Examination Fee ₹2,650, Tuition Fee ₹1,650, Registration Fee ₹100, Other Fee ₹200, Development Fund ₹5,500, University Programme Fees (UPF) ₹10,100, Study Centre Fee (SCF) ₹15,000 = ₹25,100/year; over 3 years = ₹75,300 (plus ₹3,600 D125 fee if applicable = ₹78,900); prospectus reportedly mentions a 10% annual fee increase for BCA and MCA"
+          ]
+        },
+        {
+          "programme_name": "Master of Arts",
+          "official_programme_name": "Master of Arts",
+          "slug": "master-of-arts-ma",
+          "degree": "MA",
+          "level": "PG",
+          "mode": "Distance",
+          "duration": null,
+          "minimum_duration": null,
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Recognised bachelor's degree; programme/subject-specific requirements may apply",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "MBA-CET (mandatory for MBA admission, per supplied MBA source); other programmes' entrance requirements are programme-specific and should be verified from current notification"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "English",
+              "slug": "english",
+              "description": null
+            },
+            {
+              "specialisation_name": "Marathi",
+              "slug": "marathi",
+              "description": null
+            },
+            {
+              "specialisation_name": "Hindi",
+              "slug": "hindi",
+              "description": null
+            },
+            {
+              "specialisation_name": "Economics",
+              "slug": "economics",
+              "description": null
+            },
+            {
+              "specialisation_name": "History",
+              "slug": "history",
+              "description": null
+            },
+            {
+              "specialisation_name": "Education",
+              "slug": "education",
+              "description": null
+            },
+            {
+              "specialisation_name": "Public Administration",
+              "slug": "public-administration",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": null,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "not_published",
+            "source_url": "https://ycmou.ac.in/admissions",
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "not_published",
+            "fee_source_note": "No programme-wise numerical fee provided in supplied source material; fees vary by programme and should be checked before payment",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://ycmou.ac.in/admissions",
+            "steps": [
+              "Visit the official YCMOU admission portal (https://ycmou.ac.in/admissions)",
+              "Select the relevant admission session/cycle",
+              "Read the current programme-specific prospectus",
+              "Select the desired programme and confirm it is open for fresh admission",
+              "Register/create an account with mobile number and email",
+              "Create ABC ID and DEB ID (required for ODL/online programmes)",
+              "Fill the application form with personal, academic and programme details",
+              "Select a Learner Support Centre/Study Centre after confirming programme availability",
+              "Upload required documents in specified format and size",
+              "Pay the prescribed/applicable fee online",
+              "Review the application (name, DOB, marks, programme, centre, documents)",
+              "Submit the application and save the confirmation, reference number and payment receipt"
+            ],
+            "documents": [
+              "Class 10 marksheet/certificate",
+              "Class 12 marksheet",
+              "Graduation marksheets and degree/certificate (for PG programmes)",
+              "Passport-size photograph",
+              "Signature",
+              "Government/valid ID proof",
+              "Category certificate (where applicable)",
+              "Domicile certificate (where applicable)",
+              "Income certificate (for scholarship purposes, where applicable)",
+              "ABC ID",
+              "DEB ID",
+              "Migration/Transfer certificate (where required, e.g. MCA)",
+              "Programme-specific documents (e.g. entrance exam scorecard for MBA)"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Teaching (subject to requirements)",
+              "Content and communication roles",
+              "Research-related progression"
+            ],
+            "industries": [
+              "Education",
+              "Public sector",
+              "Private sector"
+            ],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://ycmou.ac.in/admissions",
+            "fee_url": "https://ycmou.ac.in/admissions",
+            "admission_url": "https://ycmou.ac.in/admissions",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "No programme-wise numerical fee provided in supplied source material; fees vary by programme and should be checked before payment"
+          ]
+        },
+        {
+          "programme_name": "Master of Commerce",
+          "official_programme_name": "Master of Commerce",
+          "slug": "master-of-commerce-mcom",
+          "degree": "MCom",
+          "level": "PG",
+          "mode": "Distance",
+          "duration": null,
+          "minimum_duration": null,
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Recognised bachelor's degree; programme-specific requirements may apply",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "MBA-CET (mandatory for MBA admission, per supplied MBA source); other programmes' entrance requirements are programme-specific and should be verified from current notification"
+          },
+          "specializations": [],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": null,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "not_published",
+            "source_url": "https://ycmou.ac.in/admissions",
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "not_published",
+            "fee_source_note": "No programme-wise numerical fee provided in supplied source material",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://ycmou.ac.in/admissions",
+            "steps": [
+              "Visit the official YCMOU admission portal (https://ycmou.ac.in/admissions)",
+              "Select the relevant admission session/cycle",
+              "Read the current programme-specific prospectus",
+              "Select the desired programme and confirm it is open for fresh admission",
+              "Register/create an account with mobile number and email",
+              "Create ABC ID and DEB ID (required for ODL/online programmes)",
+              "Fill the application form with personal, academic and programme details",
+              "Select a Learner Support Centre/Study Centre after confirming programme availability",
+              "Upload required documents in specified format and size",
+              "Pay the prescribed/applicable fee online",
+              "Review the application (name, DOB, marks, programme, centre, documents)",
+              "Submit the application and save the confirmation, reference number and payment receipt"
+            ],
+            "documents": [
+              "Class 10 marksheet/certificate",
+              "Class 12 marksheet",
+              "Graduation marksheets and degree/certificate (for PG programmes)",
+              "Passport-size photograph",
+              "Signature",
+              "Government/valid ID proof",
+              "Category certificate (where applicable)",
+              "Domicile certificate (where applicable)",
+              "Income certificate (for scholarship purposes, where applicable)",
+              "ABC ID",
+              "DEB ID",
+              "Migration/Transfer certificate (where required, e.g. MCA)",
+              "Programme-specific documents (e.g. entrance exam scorecard for MBA)"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Accounting",
+              "Finance-related work",
+              "Banking-related roles",
+              "Teaching (subject to requirements)"
+            ],
+            "industries": [
+              "Commerce",
+              "Banking",
+              "Finance"
+            ],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://ycmou.ac.in/admissions",
+            "fee_url": "https://ycmou.ac.in/admissions",
+            "admission_url": "https://ycmou.ac.in/admissions",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "No programme-wise numerical fee provided in supplied source material"
+          ]
+        },
+        {
+          "programme_name": "Master of Science",
+          "official_programme_name": "Master of Science",
+          "slug": "master-of-science-msc",
+          "degree": "MSc",
+          "level": "PG",
+          "mode": "Distance",
+          "duration": null,
+          "minimum_duration": null,
+          "maximum_duration": null,
+          "semesters": null,
+          "eligibility": {
+            "summary": "Recognised bachelor's degree relevant to the chosen science discipline; eligibility depends strongly on subject selected",
+            "minimum_marks": null,
+            "required_subjects": [],
+            "age_requirement": null,
+            "entrance_exam": "MBA-CET (mandatory for MBA admission, per supplied MBA source); other programmes' entrance requirements are programme-specific and should be verified from current notification"
+          },
+          "specializations": [
+            {
+              "specialisation_name": "Mathematics",
+              "slug": "mathematics",
+              "description": null
+            },
+            {
+              "specialisation_name": "Environmental Science",
+              "slug": "environmental-science",
+              "description": null
+            },
+            {
+              "specialisation_name": "Physics",
+              "slug": "physics",
+              "description": null
+            },
+            {
+              "specialisation_name": "Chemistry",
+              "slug": "chemistry",
+              "description": null
+            },
+            {
+              "specialisation_name": "Zoology",
+              "slug": "zoology",
+              "description": null
+            },
+            {
+              "specialisation_name": "Botany",
+              "slug": "botany",
+              "description": null
+            }
+          ],
+          "fees": {
+            "normal": null,
+            "discounted": null,
+            "annual": null,
+            "semester": null,
+            "monthly": null,
+            "emi": null,
+            "application_fee": null,
+            "registration_fee": null,
+            "admission_fee": null,
+            "examination_fee": null,
+            "project_fee": null,
+            "study_material_fee": null,
+            "technology_fee": null,
+            "total_programme_fee": null,
+            "discount": {
+              "amount": null,
+              "percentage": null,
+              "valid_until": null
+            },
+            "scholarship": {
+              "available": null,
+              "details": []
+            },
+            "fee_verification_status": "not_published",
+            "source_url": "https://ycmou.ac.in/admissions",
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — programme fee documentation",
+            "last_verified": "2026-08-19",
+            "verification_status": "not_published",
+            "fee_source_note": "No programme-wise numerical fee provided in supplied source material",
+            "verification_method": "manual_research",
+            "verification_label": "Manually researched — source: official university website",
+            "effective_session": "2026-27"
+          },
+          "admission": {
+            "intake": "2026-27 session",
+            "application_status": null,
+            "application_url": "https://ycmou.ac.in/admissions",
+            "steps": [
+              "Visit the official YCMOU admission portal (https://ycmou.ac.in/admissions)",
+              "Select the relevant admission session/cycle",
+              "Read the current programme-specific prospectus",
+              "Select the desired programme and confirm it is open for fresh admission",
+              "Register/create an account with mobile number and email",
+              "Create ABC ID and DEB ID (required for ODL/online programmes)",
+              "Fill the application form with personal, academic and programme details",
+              "Select a Learner Support Centre/Study Centre after confirming programme availability",
+              "Upload required documents in specified format and size",
+              "Pay the prescribed/applicable fee online",
+              "Review the application (name, DOB, marks, programme, centre, documents)",
+              "Submit the application and save the confirmation, reference number and payment receipt"
+            ],
+            "documents": [
+              "Class 10 marksheet/certificate",
+              "Class 12 marksheet",
+              "Graduation marksheets and degree/certificate (for PG programmes)",
+              "Passport-size photograph",
+              "Signature",
+              "Government/valid ID proof",
+              "Category certificate (where applicable)",
+              "Domicile certificate (where applicable)",
+              "Income certificate (for scholarship purposes, where applicable)",
+              "ABC ID",
+              "DEB ID",
+              "Migration/Transfer certificate (where required, e.g. MCA)",
+              "Programme-specific documents (e.g. entrance exam scorecard for MBA)"
+            ]
+          },
+          "career": {
+            "roles": [
+              "Subject-specific industry roles",
+              "Laboratory/research-related work",
+              "Teaching (subject to requirements)"
+            ],
+            "industries": [
+              "Science and research",
+              "Education"
+            ],
+            "higher_study": []
+          },
+          "official_source": {
+            "programme_url": "https://ycmou.ac.in/admissions",
+            "fee_url": "https://ycmou.ac.in/admissions",
+            "admission_url": "https://ycmou.ac.in/admissions",
+            "prospectus_url": null,
+            "source_type": "official_programme_documentation",
+            "source_title": "Yashwantrao Chavan Maharashtra Open University — official programme page"
+          },
+          "data_status": "verified_official",
+          "last_verified": "2026-08-19",
+          "notes": [
+            "No programme-wise numerical fee provided in supplied source material"
+          ]
+        }
+      ],
+      "seo": {
+        "university_slug": "ycmou",
+        "primary_keywords": [
+          "YCMOU courses",
+          "YCMOU admission",
+          "YCMOU fees"
+        ],
+        "secondary_keywords": [
+          "YCMOU online degree",
+          "YCMOU eligibility"
+        ],
+        "long_tail_keywords": [
+          "YCMOU MBA fees 2026",
+          "YCMOU admission 2026"
+        ],
+        "admission_keywords": [
+          "YCMOU admission 2026"
+        ],
+        "fee_keywords": [
+          "YCMOU fees 2026"
+        ],
+        "course_keywords": [
+          "YCMOU courses"
+        ],
+        "comparison_keywords": [
+          "YCMOU vs online university"
+        ]
+      },
+      "url_architecture": {
+        "university": "/universities/ycmou",
+        "courses": "/universities/ycmou/courses/{course-slug}",
+        "admission": "/universities/ycmou/admission",
+        "fees": "/universities/ycmou/fees",
+        "scholarships": "/universities/ycmou/scholarships",
+        "reviews": "/universities/ycmou/reviews"
+      },
+      "data_status": "verified_official",
+      "last_verified": "2026-08-19",
+      "notes": [
+        "YCMOU publishes no single university-wide fee; fees depend on programme, academic year, University Share Fee (USF) and Learner Support Centre Fee (LSCF), examination charges and other components",
+        "Programme availability, fees, eligibility and admission windows can change by academic session; students should verify current prospectus/admission notification before applying",
+        "MCA duration is inconsistent in source material: general PG references describe 2 years, while a separate MCA fee calculation uses 3 years; treat as unverified until confirmed via current prospectus",
+        "MCA fee source states a possible 10% annual increase for BCA and MCA programmes",
+        "MBA total fee figure has two conflicting source values (₹25,000–₹35,000 broad range vs. detailed ₹39,036 figure); the more detailed figure is used as primary reference",
+        "PG (MA, MCom, MSc) programme-wise numerical fees are not provided in the supplied source material",
+        "YCMOU is a statutory state open university (established 1989, NAAC 'A' Grade in 2022) serving Maharashtra through Open and Distance Learning, with programmes spanning UG, PG, diploma and certificate levels and no single university-wide fee, instead using University Share Fee (USF) and Learner Support Centre Fee (LSCF) components. Its distance MBA (₹39,036 total, per detailed source) and MCA are positioned as affordable alternatives to conventional full-time programmes but require MBA-CET qualification and Mathematics/Statistics background respectively."
+      ]
     }
   ],
   "audit": {
