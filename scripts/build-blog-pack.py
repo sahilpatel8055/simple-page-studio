@@ -221,8 +221,17 @@ DATE = "2026-08-19"
 
 # headings / blocks that are internal editorial notes, never published
 DROP_HEADING = re.compile(
-    r"seo (metadata|notes?|plan)|meta (title|description)|keyword|internal note|content brief"
-    r"|writer note|editor note|suggested (url|slug)|schema markup|word count",
+    r"seo (foundation|metadata|notes?|plan|implementation)|meta (title|description)|keyword"
+    r"|internal note|content brief|content architecture|internal linking|conversion[- ]focused"
+    r"|editorial (&|and) data|data integrity|source-derived|final content positioning"
+    r"|recommended page title|page title|search intent|writer note|editor note"
+    r"|suggested (url|slug)|schema markup|word count|implementation file|cta structure",
+    re.I,
+)
+# paragraphs that are planning scaffolding rather than reader-facing prose
+DROP_PARA = re.compile(
+    r"^(the page should answer|primary keyword|secondary keywords|target audience"
+    r"|search intent|meta description|word count|tone)\b",
     re.I,
 )
 DROP_LINE = re.compile(
@@ -338,7 +347,7 @@ def parse_sections(md: str) -> list[dict]:
             return
         if mode == "p":
             text = clean_inline(" ".join(buf))
-            if text and not DROP_LINE.match(" ".join(buf).strip()):
+            if text and not DROP_LINE.match(" ".join(buf).strip()) and not DROP_PARA.match(text):
                 cur["blocks"].append({"kind": "p", "text": text})
         elif mode in ("ul", "ol"):
             items = [clean_inline(re.sub(r"^\s*([-*]|\d+[.)])\s+", "", b)) for b in buf]
@@ -512,7 +521,7 @@ def extract_sources(md: str) -> list[dict]:
 def intro_text(sections: list[dict]) -> tuple[str, list[dict]]:
     for s in sections:
         for i, b in enumerate(s["blocks"]):
-            if b["kind"] == "p" and len(b["text"].split()) > 25:
+            if b["kind"] == "p" and len(b["text"].split()) > 25 and not DROP_PARA.match(b["text"]):
                 s["blocks"] = s["blocks"][:i] + s["blocks"][i + 1:]
                 return b["text"], sections
     return "", sections
