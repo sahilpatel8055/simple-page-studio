@@ -377,6 +377,7 @@ def parse_sections(md: str) -> list[dict]:
         if m:
             flush()
             level, text = len(m.group(1)), clean_inline(m.group(2))
+            text = re.sub(r"^\d{1,2}[.)]\s+", "", text)
             if level <= section_level:
                 cur = {"heading": text, "blocks": [], "_drop": bool(DROP_HEADING.search(text))}
                 sections.append(cur)
@@ -534,6 +535,11 @@ def build(entry: dict) -> dict:
     takeaways = key_takeaways(sections)
     intro, sections = intro_text(sections)
     sections = [s for s in sections if s["blocks"]]
+    if sections:
+        first = sections[0]["heading"].lower()
+        stem = entry["title"].split(":")[0].lower()
+        if first.startswith(stem[:24]) or "complete" in first or "guide" in first:
+            sections[0]["heading"] = "Overview"
     words = word_count(sections)
     minutes = max(4, round(words / 220))
     return {
