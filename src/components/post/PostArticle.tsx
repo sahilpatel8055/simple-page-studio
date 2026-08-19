@@ -342,7 +342,7 @@ export function PostBody({
   return (
     <>
       {post.sections.map((s, si) => (
-        <div key={s.heading} className="contents">
+        <Fragment key={s.heading}>
           <ContentSection title={s.heading}>
             <Clamped clamp={isLong(s.blocks)}>
               <div className="space-y-4">
@@ -365,8 +365,9 @@ export function PostBody({
               }}
             />
           )}
-        </div>
+        </Fragment>
       ))}
+
     </>
   );
 }
