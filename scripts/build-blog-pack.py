@@ -368,7 +368,7 @@ def parse_sections(md: str) -> list[dict]:
         if m:
             flush()
             level, text = len(m.group(1)), clean_inline(m.group(2))
-            if level <= 2:
+            if level <= section_level:
                 cur = {"heading": text, "blocks": [], "_drop": bool(DROP_HEADING.search(text))}
                 sections.append(cur)
             else:
