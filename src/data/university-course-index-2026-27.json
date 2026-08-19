@@ -2086,5 +2086,149 @@
     "level": "PG",
     "mode": "Online",
     "canonical_url": "/universities/smu-online/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Sharda University Online",
+    "university_slug": "sharda-online",
+    "programme_name": "Bachelor of Business Administration",
+    "programme_slug": "bachelor-of-business-administration-bba",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/sharda-online/courses/bachelor-of-business-administration-bba"
+  },
+  {
+    "university_name": "Sharda University Online",
+    "university_slug": "sharda-online",
+    "programme_name": "Bachelor of Computer Applications",
+    "programme_slug": "bachelor-of-computer-applications-bca",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/sharda-online/courses/bachelor-of-computer-applications-bca"
+  },
+  {
+    "university_name": "Sharda University Online",
+    "university_slug": "sharda-online",
+    "programme_name": "Master of Business Administration",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/sharda-online/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Sharda University Online",
+    "university_slug": "sharda-online",
+    "programme_name": "Master of Computer Applications",
+    "programme_slug": "master-of-computer-applications-mca",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/sharda-online/courses/master-of-computer-applications-mca"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "university_slug": "kurukshetra-university",
+    "programme_name": "Bachelor of Arts",
+    "programme_slug": "bachelor-of-arts-b-a",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/kurukshetra-university/courses/bachelor-of-arts-b-a"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "university_slug": "kurukshetra-university",
+    "programme_name": "Bachelor of Business Administration",
+    "programme_slug": "bachelor-of-business-administration-b-b-a",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/kurukshetra-university/courses/bachelor-of-business-administration-b-b-a"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "university_slug": "kurukshetra-university",
+    "programme_name": "Bachelor of Commerce",
+    "programme_slug": "bachelor-of-commerce-b-com",
+    "level": "UG",
+    "mode": "Online",
+    "canonical_url": "/universities/kurukshetra-university/courses/bachelor-of-commerce-b-com"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "university_slug": "kurukshetra-university",
+    "programme_name": "Master of Arts",
+    "programme_slug": "master-of-arts-m-a",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/kurukshetra-university/courses/master-of-arts-m-a"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "university_slug": "kurukshetra-university",
+    "programme_name": "Master of Commerce",
+    "programme_slug": "master-of-commerce-m-com",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/kurukshetra-university/courses/master-of-commerce-m-com"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "university_slug": "kurukshetra-university",
+    "programme_name": "Master of Business Administration",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/kurukshetra-university/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "university_slug": "kurukshetra-university",
+    "programme_name": "Master of Computer Applications",
+    "programme_slug": "master-of-computer-applications-mca",
+    "level": "PG",
+    "mode": "Online",
+    "canonical_url": "/universities/kurukshetra-university/courses/master-of-computer-applications-mca"
+  },
+  {
+    "university_name": "Yashwantrao Chavan Maharashtra Open University",
+    "university_slug": "ycmou",
+    "programme_name": "Master of Business Administration",
+    "programme_slug": "master-of-business-administration-mba",
+    "level": "PG",
+    "mode": "Distance",
+    "canonical_url": "/universities/ycmou/courses/master-of-business-administration-mba"
+  },
+  {
+    "university_name": "Yashwantrao Chavan Maharashtra Open University",
+    "university_slug": "ycmou",
+    "programme_name": "Master of Computer Applications",
+    "programme_slug": "master-of-computer-applications-mca",
+    "level": "PG",
+    "mode": "Distance",
+    "canonical_url": "/universities/ycmou/courses/master-of-computer-applications-mca"
+  },
+  {
+    "university_name": "Yashwantrao Chavan Maharashtra Open University",
+    "university_slug": "ycmou",
+    "programme_name": "Master of Arts",
+    "programme_slug": "master-of-arts-ma",
+    "level": "PG",
+    "mode": "Distance",
+    "canonical_url": "/universities/ycmou/courses/master-of-arts-ma"
+  },
+  {
+    "university_name": "Yashwantrao Chavan Maharashtra Open University",
+    "university_slug": "ycmou",
+    "programme_name": "Master of Commerce",
+    "programme_slug": "master-of-commerce-mcom",
+    "level": "PG",
+    "mode": "Distance",
+    "canonical_url": "/universities/ycmou/courses/master-of-commerce-mcom"
+  },
+  {
+    "university_name": "Yashwantrao Chavan Maharashtra Open University",
+    "university_slug": "ycmou",
+    "programme_name": "Master of Science",
+    "programme_slug": "master-of-science-msc",
+    "level": "PG",
+    "mode": "Distance",
+    "canonical_url": "/universities/ycmou/courses/master-of-science-msc"
   }
 ]

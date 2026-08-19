@@ -1065,5 +1065,234 @@
       "scholarship": null
     },
     "last_verified": "2026-08-10"
+  },
+  {
+    "university_name": "Sharda University Online",
+    "slug": "sharda-online",
+    "page_url": "/universities/sharda-online",
+    "mode": "Online",
+    "location": "Greater Noida, Uttar Pradesh",
+    "hero": {
+      "title": "Sharda University Online",
+      "subtitle": "Sharda University Online courses, fees, admission and eligibility for 2026-27",
+      "description": "Sharda University Online offers UGC-entitled, NAAC A+ accredited degrees (BBA, BCA, MBA, MCA) delivered through a digital learning ecosystem with live and recorded lectures, e-library access and project-based learning. It stands out for offering six MBA specialisations and two MCA specialisations (Computer Science & IT, Data Science) with specialisation-linked fee differences, alongside an international ecosystem citing students from 95+ countries and partnerships with 250+ universities.",
+      "official_website": "https://www.sharda.ac.in/",
+      "official_online_portal": "https://online.sharda.ac.in/",
+      "official_admission_portal": "https://online.sharda.ac.in/"
+    },
+    "recognition": {
+      "UGC_status": "UGC-entitled Higher Educational Institution; online programmes listed as UGC-entitled",
+      "UGC_DEB_status": "Programme-level UGC-DEB entitlement should be verified for the active academic session (not a blanket 'UGC approved' claim)",
+      "NAAC_status": "NAAC A+",
+      "NIRF_information": "NIRF 2025 rank 87 in University category; Sharda University has a presence in NIRF rankings",
+      "accreditation": "NAAC A+; QS I-GAUGE E-LEAD Certificate (mentioned for MBA)"
+    },
+    "admission": {
+      "mode": "online",
+      "cycles": "Intake schedule varies by programme; verify from the current official notification.",
+      "steps": [
+        "Visit the official Sharda University Online admission portal",
+        "Register using a valid email address and mobile number",
+        "Fill the application form with personal, academic and contact details and select the desired programme/specialisation",
+        "Upload required documents (mark sheets/certificates, ID proof, photograph, etc.)",
+        "Pay the applicable registration/application fee online",
+        "Document verification by the university",
+        "Pay applicable programme fee and complete admission confirmation"
+      ],
+      "entrance_exam": "No entrance examination required for BBA, BCA, or MBA (admission based on merit/eligibility); MCA eligibility depends on academic background, no entrance exam stated",
+      "status": "verified_official",
+      "source": "https://online.sharda.ac.in/"
+    },
+    "scholarship": {
+      "status": "researched",
+      "criteria": [
+        {
+          "name": "Merit-based scholarships/concessions",
+          "criterion": "Merit-based scholarships/concessions"
+        },
+        {
+          "name": "Defence personnel and dependent benefits/concessions",
+          "criterion": "Defence personnel and dependent benefits/concessions"
+        },
+        {
+          "name": "Concessions for differently-abled students (MCA)",
+          "criterion": "Concessions for differently-abled students (MCA)"
+        },
+        {
+          "name": "Support for economically weaker sections (MCA)",
+          "criterion": "Support for economically weaker sections (MCA)"
+        },
+        {
+          "name": "Alumni concessions/benefits",
+          "criterion": "Alumni concessions/benefits"
+        },
+        {
+          "name": "Corporate associate benefits (BCA)",
+          "criterion": "Corporate associate benefits (BCA)"
+        },
+        {
+          "name": "EMI/payment-plan options where available",
+          "criterion": "EMI/payment-plan options where available"
+        }
+      ],
+      "note": "Scholarship terms change every cycle — confirm before paying."
+    },
+    "career": {
+      "university_level_summary": "Sharda University Online offers UGC-entitled, NAAC A+ accredited degrees (BBA, BCA, MBA, MCA) delivered through a digital learning ecosystem with live and recorded lectures, e-library access and project-based learning. It stands out for offering six MBA specialisations and two MCA specialisations (Computer Science & IT, Data Science) with specialisation-linked fee differences, alongside an international ecosystem citing students from 95+ countries and partnerships with 250+ universities.",
+      "roles": [],
+      "industries": [],
+      "skills": [],
+      "placement_support_reference": "https://online.sharda.ac.in/",
+      "source_status": "researched_from_official_documentation"
+    },
+    "sources": {
+      "official_website": "https://www.sharda.ac.in/",
+      "official_portal": "https://online.sharda.ac.in/"
+    },
+    "last_verified": "2026-08-19"
+  },
+  {
+    "university_name": "Kurukshetra University (CDOE)",
+    "slug": "kurukshetra-university",
+    "page_url": "/universities/kurukshetra-university",
+    "mode": "Both",
+    "location": "Kurukshetra, Haryana",
+    "hero": {
+      "title": "Kurukshetra University (CDOE)",
+      "subtitle": "Kurukshetra University (CDOE) courses, fees, admission and eligibility for 2026-27",
+      "description": "Kurukshetra University Online is delivered by a Category-I, NAAC A++ accredited public university established in 1956 through its Centre for Distance and Online Education, offering both ODL and online modes across UG, PG, diploma and certificate levels. Its online MBA and MCA are UGC-entitled degrees with no entrance exam requirement, positioning KUK as an accessible option for working professionals seeking a recognised public-university qualification without relocation.",
+      "official_website": "https://www.kuk.ac.in/",
+      "official_online_portal": "https://www.kuk.ac.in/cdoe/",
+      "official_admission_portal": "https://www.kuk.ac.in/cdoe/"
+    },
+    "recognition": {
+      "UGC_status": "Recognised by the University Grants Commission (UGC); online programmes described as UGC-entitled, subject to verification for the specific programme/session",
+      "UGC_DEB_status": null,
+      "NAAC_status": "A++ Grade from NAAC",
+      "NIRF_information": null,
+      "accreditation": "Category-I University; NAAC A++ accredited public university"
+    },
+    "admission": {
+      "mode": "online",
+      "cycles": "Intake schedule varies by programme; verify from the current official notification.",
+      "steps": [
+        "Check the Programme: select the online programme and verify eligibility, duration, fee and mode",
+        "Open the Admission Portal: visit the official Kurukshetra University admission/online education portal",
+        "Complete the Application Form with personal, communication and academic details",
+        "Upload Required Documents",
+        "Pay the Applicable Fee through the authorised online payment method",
+        "Verification of submitted information and documents by the university",
+        "Admission Confirmation via applicable university communication channel",
+        "Access Learning Resources once admission and LMS onboarding is completed"
+      ],
+      "entrance_exam": "Not required, as per the supplied admission information (admission based on eligibility, application, document verification and fee payment)",
+      "status": "verified_official",
+      "source": "https://www.kuk.ac.in/cdoe/"
+    },
+    "scholarship": {
+      "status": "researched",
+      "criteria": [
+        {
+          "name": "Category-based financial support (availability/eligibility varies by session)",
+          "criterion": "Category-based financial support (availability/eligibility varies by session)"
+        },
+        {
+          "name": "Merit-based opportunities",
+          "criterion": "Merit-based opportunities"
+        },
+        {
+          "name": "Government scholarship schemes",
+          "criterion": "Government scholarship schemes"
+        },
+        {
+          "name": "Support for eligible students from financially weaker backgrounds",
+          "criterion": "Support for eligible students from financially weaker backgrounds"
+        },
+        {
+          "name": "Special incentives/schemes announced for specific student categories",
+          "criterion": "Special incentives/schemes announced for specific student categories"
+        }
+      ],
+      "note": "Scholarship terms change every cycle — confirm before paying."
+    },
+    "career": {
+      "university_level_summary": "Kurukshetra University Online is delivered by a Category-I, NAAC A++ accredited public university established in 1956 through its Centre for Distance and Online Education, offering both ODL and online modes across UG, PG, diploma and certificate levels. Its online MBA and MCA are UGC-entitled degrees with no entrance exam requirement, positioning KUK as an accessible option for working professionals seeking a recognised public-university qualification without relocation.",
+      "roles": [],
+      "industries": [],
+      "skills": [],
+      "placement_support_reference": "https://www.kuk.ac.in/cdoe/",
+      "source_status": "researched_from_official_documentation"
+    },
+    "sources": {
+      "official_website": "https://www.kuk.ac.in/",
+      "official_portal": "https://www.kuk.ac.in/cdoe/"
+    },
+    "last_verified": "2026-08-19"
+  },
+  {
+    "university_name": "Yashwantrao Chavan Maharashtra Open University",
+    "slug": "ycmou",
+    "page_url": "/universities/ycmou",
+    "mode": "Distance",
+    "location": "Nashik, Maharashtra",
+    "hero": {
+      "title": "Yashwantrao Chavan Maharashtra Open University",
+      "subtitle": "Yashwantrao Chavan Maharashtra Open University courses, fees, admission and eligibility for 2026-27",
+      "description": "YCMOU is a statutory state open university (established 1989, NAAC 'A' Grade in 2022) serving Maharashtra through Open and Distance Learning, with programmes spanning UG, PG, diploma and certificate levels and no single university-wide fee, instead using University Share Fee (USF) and Learner Support Centre Fee (LSCF) components. Its distance MBA (₹39,036 total, per detailed source) and MCA are positioned as affordable alternatives to conventional full-time programmes but require MBA-CET qualification and Mathematics/Statistics background respectively.",
+      "official_website": "https://ycmou.ac.in/",
+      "official_online_portal": "https://ycmou.ac.in/admissions",
+      "official_admission_portal": "https://ycmou.ac.in/admissions"
+    },
+    "recognition": {
+      "UGC_status": "Recognised under Section 12(B) of the University Grants Commission Act, 1956",
+      "UGC_DEB_status": "YCMOU has published a UGC-DEB programme recognition application for the 2026–27 August session; programme-level recognition should be verified for the specific programme and session",
+      "NAAC_status": "Accredited 'A' Grade by NAAC in its first cycle in 2022",
+      "NIRF_information": null,
+      "accreditation": "Recognised under Section 12(B) UGC Act, 1956; NAAC 'A' Grade (2022); Commonwealth of Learning (COL), Canada Award of Excellence for Institutional Achievement (2002) and Award of Institutional Excellence (2019); MBA programme also lists AICTE among recognitions"
+    },
+    "admission": {
+      "mode": "online",
+      "cycles": "Intake schedule varies by programme; verify from the current official notification.",
+      "steps": [
+        "Visit the official YCMOU admission portal (https://ycmou.ac.in/admissions)",
+        "Select the relevant admission session/cycle",
+        "Read the current programme-specific prospectus",
+        "Select the desired programme and confirm it is open for fresh admission",
+        "Register/create an account with mobile number and email",
+        "Create ABC ID and DEB ID (required for ODL/online programmes)",
+        "Fill the application form with personal, academic and programme details",
+        "Select a Learner Support Centre/Study Centre after confirming programme availability",
+        "Upload required documents in specified format and size",
+        "Pay the prescribed/applicable fee online",
+        "Review the application (name, DOB, marks, programme, centre, documents)",
+        "Submit the application and save the confirmation, reference number and payment receipt"
+      ],
+      "entrance_exam": "MBA-CET (mandatory for MBA admission, per supplied MBA source); other programmes' entrance requirements are programme-specific and should be verified from current notification",
+      "status": "verified_official",
+      "source": "https://ycmou.ac.in/admissions"
+    },
+    "scholarship": {
+      "status": "researched",
+      "criteria": [
+        {
+          "name": "Government-run scholarship schemes for SC, ST, OBC, VJ/NT, SBC and EWS categories (stated for MBA), applicable via the MahaDBT scholarship platform where eligible",
+          "criterion": "Government-run scholarship schemes for SC, ST, OBC, VJ/NT, SBC and EWS categories (stated for MBA), applicable via the MahaDBT scholarship platform where eligible"
+        }
+      ],
+      "note": "Scholarship terms change every cycle — confirm before paying."
+    },
+    "career": {
+      "university_level_summary": "YCMOU is a statutory state open university (established 1989, NAAC 'A' Grade in 2022) serving Maharashtra through Open and Distance Learning, with programmes spanning UG, PG, diploma and certificate levels and no single university-wide fee, instead using University Share Fee (USF) and Learner Support Centre Fee (LSCF) components. Its distance MBA (₹39,036 total, per detailed source) and MCA are positioned as affordable alternatives to conventional full-time programmes but require MBA-CET qualification and Mathematics/Statistics background respectively.",
+      "roles": [],
+      "industries": [],
+      "skills": [],
+      "placement_support_reference": "https://ycmou.ac.in/admissions",
+      "source_status": "researched_from_official_documentation"
+    },
+    "sources": {
+      "official_website": "https://ycmou.ac.in/",
+      "official_portal": "https://ycmou.ac.in/admissions"
+    },
+    "last_verified": "2026-08-19"
   }
 ]
