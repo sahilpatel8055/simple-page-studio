@@ -455,11 +455,15 @@ def extract_faqs(sections: list[dict]) -> tuple[list[dict], list[dict]]:
                 q, answer = b["text"], []
             elif b["kind"] in ("p", "note"):
                 t = b["text"]
-                m = re.match(r"^(?:Q\d*[.:)]\s*)?(.+\?)\s*(.*)$", t)
+                t = re.sub(r"^\*\*\s*Q\s*\d*[.:)]?\s*", "**", t).strip()
+                bare = t.strip("*").strip()
+                m = re.match(r"^(?:Q\s*\d*[.:)]\s*)?(.+\?)\s*(.*)$", bare)
                 if m and (q is None or answer):
                     if q and answer:
                         faqs.append({"question": q, "answer": " ".join(answer)})
                     q, answer = m.group(1).strip(), ([m.group(2).strip()] if m.group(2).strip() else [])
+                elif re.match(r"^\*\*\s*A[.:)]", b["text"]) and q:
+                    answer.append(re.sub(r"^\*\*\s*A[.:)]\s*\*{0,2}", "", b["text"]).strip())
                 elif q:
                     answer.append(t)
             elif b["kind"] == "list" and q:
@@ -479,7 +483,8 @@ def key_takeaways(sections: list[dict]) -> list[str]:
             if b["kind"] == "table" and len(b["head"]) == 2 and (
                 HIGHLIGHT.search(s["heading"]) or re.search(r"parameter|particular|feature", b["head"][0], re.I)
             ):
-                out = [f"{r[0]}: {r[1]}" for r in b["rows"] if r[0] and r[1]]
+                out = [f"{r[0]}: {r[1]}" for r in b["rows"]
+                       if r[0].strip("—-: ") and r[1].strip("—-: ")]
                 if len(out) >= 4:
                     return out[:6]
     for s in sections:
@@ -514,7 +519,7 @@ def intro_text(sections: list[dict]) -> tuple[str, list[dict]]:
 
 
 def build(entry: dict) -> dict:
-    md = to_gfm(entry["file"])
+    md = normalise_headings(to_gfm(entry["file"]))
     sections = parse_sections(md)
     sections, faqs = extract_faqs(sections)
     takeaways = key_takeaways(sections)
