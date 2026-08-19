@@ -10574,7 +10574,7 @@
     "university_slug": "sharda-online",
     "programme": "Bachelor of Business Administration",
     "programme_slug": "bachelor-of-business-administration-bba",
-    "course_family": null,
+    "course_family": "online-bba",
     "canonical_url": "/universities/sharda-online/courses/bachelor-of-business-administration-bba",
     "publication_content": {
       "seo": {
@@ -10644,7 +10644,7 @@
     "university_slug": "sharda-online",
     "programme": "Bachelor of Computer Applications",
     "programme_slug": "bachelor-of-computer-applications-bca",
-    "course_family": null,
+    "course_family": "online-bca",
     "canonical_url": "/universities/sharda-online/courses/bachelor-of-computer-applications-bca",
     "publication_content": {
       "seo": {
@@ -10734,7 +10734,7 @@
     "university_slug": "sharda-online",
     "programme": "Master of Business Administration",
     "programme_slug": "master-of-business-administration-mba",
-    "course_family": null,
+    "course_family": "online-mba",
     "canonical_url": "/universities/sharda-online/courses/master-of-business-administration-mba",
     "publication_content": {
       "seo": {
@@ -10973,7 +10973,7 @@
     "university_slug": "sharda-online",
     "programme": "Master of Computer Applications",
     "programme_slug": "master-of-computer-applications-mca",
-    "course_family": null,
+    "course_family": "online-mca",
     "canonical_url": "/universities/sharda-online/courses/master-of-computer-applications-mca",
     "publication_content": {
       "seo": {
@@ -11099,7 +11099,7 @@
     "university_slug": "kurukshetra-university",
     "programme": "Bachelor of Arts",
     "programme_slug": "bachelor-of-arts-b-a",
-    "course_family": null,
+    "course_family": "online-ba",
     "canonical_url": "/universities/kurukshetra-university/courses/bachelor-of-arts-b-a",
     "publication_content": {
       "seo": {
@@ -11150,7 +11150,7 @@
     "university_slug": "kurukshetra-university",
     "programme": "Bachelor of Business Administration",
     "programme_slug": "bachelor-of-business-administration-b-b-a",
-    "course_family": null,
+    "course_family": "online-bba",
     "canonical_url": "/universities/kurukshetra-university/courses/bachelor-of-business-administration-b-b-a",
     "publication_content": {
       "seo": {
@@ -11282,7 +11282,7 @@
     "university_slug": "kurukshetra-university",
     "programme": "Bachelor of Commerce",
     "programme_slug": "bachelor-of-commerce-b-com",
-    "course_family": null,
+    "course_family": "online-bcom",
     "canonical_url": "/universities/kurukshetra-university/courses/bachelor-of-commerce-b-com",
     "publication_content": {
       "seo": {
@@ -11333,7 +11333,7 @@
     "university_slug": "kurukshetra-university",
     "programme": "Master of Arts",
     "programme_slug": "master-of-arts-m-a",
-    "course_family": null,
+    "course_family": "online-ma",
     "canonical_url": "/universities/kurukshetra-university/courses/master-of-arts-m-a",
     "publication_content": {
       "seo": {
@@ -11403,7 +11403,7 @@
     "university_slug": "kurukshetra-university",
     "programme": "Master of Commerce",
     "programme_slug": "master-of-commerce-m-com",
-    "course_family": null,
+    "course_family": "online-mcom",
     "canonical_url": "/universities/kurukshetra-university/courses/master-of-commerce-m-com",
     "publication_content": {
       "seo": {
@@ -11454,7 +11454,7 @@
     "university_slug": "kurukshetra-university",
     "programme": "Master of Business Administration",
     "programme_slug": "master-of-business-administration-mba",
-    "course_family": null,
+    "course_family": "online-mba",
     "canonical_url": "/universities/kurukshetra-university/courses/master-of-business-administration-mba",
     "publication_content": {
       "seo": {
@@ -11571,7 +11571,7 @@
     "university_slug": "kurukshetra-university",
     "programme": "Master of Computer Applications",
     "programme_slug": "master-of-computer-applications-mca",
-    "course_family": null,
+    "course_family": "online-mca",
     "canonical_url": "/universities/kurukshetra-university/courses/master-of-computer-applications-mca",
     "publication_content": {
       "seo": {
@@ -11681,7 +11681,7 @@
     "university_slug": "ycmou",
     "programme": "Master of Business Administration",
     "programme_slug": "master-of-business-administration-mba",
-    "course_family": null,
+    "course_family": "online-mba",
     "canonical_url": "/universities/ycmou/courses/master-of-business-administration-mba",
     "publication_content": {
       "seo": {
@@ -11795,7 +11795,7 @@
     "university_slug": "ycmou",
     "programme": "Master of Computer Applications",
     "programme_slug": "master-of-computer-applications-mca",
-    "course_family": null,
+    "course_family": "online-mca",
     "canonical_url": "/universities/ycmou/courses/master-of-computer-applications-mca",
     "publication_content": {
       "seo": {
@@ -11846,7 +11846,7 @@
     "university_slug": "ycmou",
     "programme": "Master of Arts",
     "programme_slug": "master-of-arts-ma",
-    "course_family": null,
+    "course_family": "online-ma",
     "canonical_url": "/universities/ycmou/courses/master-of-arts-ma",
     "publication_content": {
       "seo": {
@@ -11940,7 +11940,7 @@
     "university_slug": "ycmou",
     "programme": "Master of Commerce",
     "programme_slug": "master-of-commerce-mcom",
-    "course_family": null,
+    "course_family": "online-mcom",
     "canonical_url": "/universities/ycmou/courses/master-of-commerce-mcom",
     "publication_content": {
       "seo": {
@@ -11991,7 +11991,7 @@
     "university_slug": "ycmou",
     "programme": "Master of Science",
     "programme_slug": "master-of-science-msc",
-    "course_family": null,
+    "course_family": "online-msc",
     "canonical_url": "/universities/ycmou/courses/master-of-science-msc",
     "publication_content": {
       "seo": {
