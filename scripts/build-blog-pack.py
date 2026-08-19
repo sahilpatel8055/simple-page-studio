@@ -221,8 +221,17 @@ DATE = "2026-08-19"
 
 # headings / blocks that are internal editorial notes, never published
 DROP_HEADING = re.compile(
-    r"seo (metadata|notes?|plan)|meta (title|description)|keyword|internal note|content brief"
-    r"|writer note|editor note|suggested (url|slug)|schema markup|word count",
+    r"seo (foundation|metadata|notes?|plan|implementation)|meta (title|description)|keyword"
+    r"|internal note|content brief|content architecture|internal linking|conversion[- ]focused"
+    r"|editorial (&|and) data|data integrity|source-derived|final content positioning"
+    r"|recommended page title|page title|search intent|writer note|editor note"
+    r"|suggested (url|slug)|schema markup|word count|implementation file|cta structure",
+    re.I,
+)
+# paragraphs that are planning scaffolding rather than reader-facing prose
+DROP_PARA = re.compile(
+    r"^(the page should answer|primary keyword|secondary keywords|target audience"
+    r"|search intent|meta description|word count|tone)\b",
     re.I,
 )
 DROP_LINE = re.compile(
@@ -241,6 +250,56 @@ def to_gfm(path: Path) -> str:
     ).stdout
 
 
+BOLD_ONLY = re.compile(r"^\*\*(.{3,140}?)\*\*[ \t]*$")
+TOC_LINE = re.compile(r"^(table of contents|contents)\s*:?\s*$", re.I)
+
+
+def normalise_headings(md: str) -> str:
+    """
+    Some sources (notably the YCMOU eligibility docx) carry no real headings:
+    section titles are bold-only paragraphs and a numbered table of contents
+    sits under the document title. Promote those bold lines to h2 and drop the
+    TOC block so the article does not collapse into one 'Overview' section.
+    """
+    if re.search(r"^#{1,3} ", md, re.M):
+        return md
+
+    out: list[str] = []
+    lines = md.splitlines()
+    i = 0
+    seen_heading = False
+    while i < len(lines):
+        line = lines[i].rstrip()
+        stripped = line.strip()
+
+        if TOC_LINE.match(re.sub(r"\*", "", stripped)):
+            i += 1
+            while i < len(lines) and (
+                not lines[i].strip() or re.match(r"^\s*(\d+[.)]|[-*])\s+", lines[i])
+            ):
+                i += 1
+            continue
+
+        m = BOLD_ONLY.match(stripped)
+        if m:
+            text = m.group(1).strip()
+            words = len(text.split())
+            if words <= 12 and not text.endswith("."):
+                if not seen_heading and re.match(r"^\s*[^0-9]", text):
+                    # document title — its body belongs to the opening section
+                    seen_heading = True
+                    i += 1
+                    continue
+                seen_heading = True
+                out.append(f"## {re.sub(r'^\\s*\\d+[.)]\\s*', '', text)}")
+                i += 1
+                continue
+        out.append(line)
+        i += 1
+    return "\n".join(out)
+
+
+
 # --------------------------------------------------------------------------- #
 # markdown -> blocks
 # --------------------------------------------------------------------------- #
@@ -256,7 +315,11 @@ def parse_table(lines: list[str]) -> dict | None:
         for ln in lines
         if ln.strip().startswith("|")
     ]
-    rows = [r for r in rows if not all(re.fullmatch(r":?-{2,}:?", c.strip() or "-") for c in r)]
+    rows = [
+        r for r in rows
+        if not all(re.fullmatch(r"[:\-—]{1,}", c.strip() or "-") for c in r)
+    ]
+
     if len(rows) < 2:
         return None
     head, body = rows[0], rows[1:]
@@ -267,7 +330,12 @@ def parse_table(lines: list[str]) -> dict | None:
 
 def parse_sections(md: str) -> list[dict]:
     lines = md.splitlines()
+    # Sources that use h1 for sections keep their h2s as in-section sub-headings
+    # (this is also what makes FAQ questions parseable), otherwise h2 is the
+    # section level. This caps section counts instead of fragmenting the page.
+    section_level = 1 if re.search(r"^# ", md, re.M) else 2
     sections: list[dict] = []
+
     cur: dict | None = None
     buf: list[str] = []
     mode = None  # None | "p" | "ul" | "ol" | "table" | "quote"
@@ -279,7 +347,7 @@ def parse_sections(md: str) -> list[dict]:
             return
         if mode == "p":
             text = clean_inline(" ".join(buf))
-            if text and not DROP_LINE.match(" ".join(buf).strip()):
+            if text and not DROP_LINE.match(" ".join(buf).strip()) and not DROP_PARA.match(text):
                 cur["blocks"].append({"kind": "p", "text": text})
         elif mode in ("ul", "ol"):
             items = [clean_inline(re.sub(r"^\s*([-*]|\d+[.)])\s+", "", b)) for b in buf]
@@ -309,7 +377,8 @@ def parse_sections(md: str) -> list[dict]:
         if m:
             flush()
             level, text = len(m.group(1)), clean_inline(m.group(2))
-            if level <= 2:
+            text = re.sub(r"^\d{1,2}[.)]\s+", "", text)
+            if level <= section_level:
                 cur = {"heading": text, "blocks": [], "_drop": bool(DROP_HEADING.search(text))}
                 sections.append(cur)
             else:
@@ -396,11 +465,15 @@ def extract_faqs(sections: list[dict]) -> tuple[list[dict], list[dict]]:
                 q, answer = b["text"], []
             elif b["kind"] in ("p", "note"):
                 t = b["text"]
-                m = re.match(r"^(?:Q\d*[.:)]\s*)?(.+\?)\s*(.*)$", t)
+                t = re.sub(r"^\*\*\s*Q\s*\d*[.:)]?\s*", "**", t).strip()
+                bare = t.strip("*").strip()
+                m = re.match(r"^(?:Q\s*\d*[.:)]\s*)?(.+\?)\s*(.*)$", bare)
                 if m and (q is None or answer):
                     if q and answer:
                         faqs.append({"question": q, "answer": " ".join(answer)})
                     q, answer = m.group(1).strip(), ([m.group(2).strip()] if m.group(2).strip() else [])
+                elif re.match(r"^\*\*\s*A[.:)]", b["text"]) and q:
+                    answer.append(re.sub(r"^\*\*\s*A[.:)]\s*\*{0,2}", "", b["text"]).strip())
                 elif q:
                     answer.append(t)
             elif b["kind"] == "list" and q:
@@ -420,7 +493,8 @@ def key_takeaways(sections: list[dict]) -> list[str]:
             if b["kind"] == "table" and len(b["head"]) == 2 and (
                 HIGHLIGHT.search(s["heading"]) or re.search(r"parameter|particular|feature", b["head"][0], re.I)
             ):
-                out = [f"{r[0]}: {r[1]}" for r in b["rows"] if r[0] and r[1]]
+                out = [f"{r[0]}: {r[1]}" for r in b["rows"]
+                       if r[0].strip("—-: ") and r[1].strip("—-: ")]
                 if len(out) >= 4:
                     return out[:6]
     for s in sections:
@@ -448,19 +522,24 @@ def extract_sources(md: str) -> list[dict]:
 def intro_text(sections: list[dict]) -> tuple[str, list[dict]]:
     for s in sections:
         for i, b in enumerate(s["blocks"]):
-            if b["kind"] == "p" and len(b["text"].split()) > 25:
+            if b["kind"] == "p" and len(b["text"].split()) > 25 and not DROP_PARA.match(b["text"]):
                 s["blocks"] = s["blocks"][:i] + s["blocks"][i + 1:]
                 return b["text"], sections
     return "", sections
 
 
 def build(entry: dict) -> dict:
-    md = to_gfm(entry["file"])
+    md = normalise_headings(to_gfm(entry["file"]))
     sections = parse_sections(md)
     sections, faqs = extract_faqs(sections)
     takeaways = key_takeaways(sections)
     intro, sections = intro_text(sections)
     sections = [s for s in sections if s["blocks"]]
+    if sections:
+        first = sections[0]["heading"].lower()
+        stem = entry["title"].split(":")[0].lower()
+        if first.startswith(stem[:24]) or "complete" in first or "guide" in first:
+            sections[0]["heading"] = "Overview"
     words = word_count(sections)
     minutes = max(4, round(words / 220))
     return {

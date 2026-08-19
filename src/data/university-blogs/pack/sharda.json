@@ -98,14 +98,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-",
-                  "—-",
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
-                [
                   "UG",
                   "Online BBA",
                   "3 Years",
@@ -249,57 +241,51 @@
             {
               "kind": "p",
               "text": "The admission process is conducted online. Candidates need to complete the application, submit required documents and complete the applicable fee payment."
-            }
-          ]
-        },
-        {
-          "heading": "Step 01: Visit Sharda Online Website",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 01: Visit Sharda Online Website"
+            },
             {
               "kind": "p",
               "text": "Visit the Sharda University Online admission portal."
-            }
-          ]
-        },
-        {
-          "heading": "Step 02: Sharda Online Registration",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 02: Sharda Online Registration"
+            },
             {
               "kind": "p",
               "text": "Create an account using a valid email ID and mobile number."
-            }
-          ]
-        },
-        {
-          "heading": "Step 03: Fill Application Form",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 03: Fill Application Form"
+            },
             {
               "kind": "p",
               "text": "Enter personal and academic information and select the desired programme."
-            }
-          ]
-        },
-        {
-          "heading": "Step 04: Upload Documents",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 04: Upload Documents"
+            },
             {
               "kind": "p",
               "text": "Upload academic certificates, identity proof and photograph as required."
-            }
-          ]
-        },
-        {
-          "heading": "Step 05: Pay Application Fee",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 05: Pay Application Fee"
+            },
             {
               "kind": "p",
               "text": "Pay the applicable fee through the available online payment options."
-            }
-          ]
-        },
-        {
-          "heading": "Step 06: Admission Confirmation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 06: Admission Confirmation"
+            },
             {
               "kind": "p",
               "text": "After document verification and fee payment, the university confirms admission."
@@ -312,30 +298,27 @@
             {
               "kind": "p",
               "text": "Sharda University Online programmes follow a semester-based evaluation structure. The supplied content states that students are assessed through internal assessments and end-semester examinations according to the academic schedule."
-            }
-          ]
-        },
-        {
-          "heading": "Step 01: Register & Schedule",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 01: Register & Schedule"
+            },
             {
               "kind": "p",
               "text": "Complete the examination process through the university portal and check the schedule in advance."
-            }
-          ]
-        },
-        {
-          "heading": "Step 02: Appear & Submit",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 02: Appear & Submit"
+            },
             {
               "kind": "p",
               "text": "Take online examinations or complete assignment-based evaluations according to programme guidelines and deadlines."
-            }
-          ]
-        },
-        {
-          "heading": "Step 03: Check Results & Re-evaluate",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 03: Check Results & Re-evaluate"
+            },
             {
               "kind": "p",
               "text": "Check results online and, where applicable, apply for re-evaluation or reattempts according to university norms."
@@ -399,7 +382,7 @@
       "author": "Kartik Ahuja",
       "authorSlug": "kartik-ahuja",
       "date": "2026-08-19",
-      "readingTime": "13 min",
+      "readingTime": "11 min",
       "kind": "blog"
     },
     "variant": "course",
@@ -408,17 +391,17 @@
     "post": {
       "intro": "Choosing an online MBA is no longer only about studying management from home. For many graduates and working professionals, the decision also depends on the university’s academic recognition, specialisation options, fee structure, learning experience, admission process, and career support.",
       "keyTakeaways": [
-        "—-: —-",
         "Course Name: Master of Business Administration (MBA)",
         "Course Level: Postgraduate (PG)",
         "Course Provider: Sharda University Online",
         "Mode of Learning: Online",
-        "Duration: 2 Years"
+        "Duration: 2 Years",
+        "Number of Semesters: 4"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Sharda University Online MBA 2026",
+          "heading": "Overview",
           "blocks": [
             {
               "kind": "p",
@@ -431,12 +414,11 @@
             {
               "kind": "p",
               "text": "This guide covers the major details a prospective learner may want to check before applying, including eligibility, syllabus, specialisations, fees, additional charges, EMI options, admission steps, placement support and hiring partners."
-            }
-          ]
-        },
-        {
-          "heading": "Sharda University Online MBA: Key Highlights",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Sharda University Online MBA: Key Highlights"
+            },
             {
               "kind": "p",
               "text": "The following table provides a quick overview of the programme."
@@ -448,10 +430,6 @@
                 "Sharda University Online MBA Details"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Course Name",
                   "Master of Business Administration (MBA)"
@@ -497,12 +475,11 @@
             {
               "kind": "p",
               "text": "**Note:** Programme details and fees can change between academic sessions. Applicants should verify the latest fee and admission information before completing registration."
-            }
-          ]
-        },
-        {
-          "heading": "Is Sharda University Online MBA Valid and Recognised?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Is Sharda University Online MBA Valid and Recognised?"
+            },
             {
               "kind": "p",
               "text": "Sharda University Online MBA is presented as a university-issued postgraduate programme. The supplied programme information lists **UGC recognition, NAAC A+ accreditation, NIRF ranking presence and a QS I-GAUGE E-LEAD Certificate** among the university’s recognitions."
@@ -514,12 +491,11 @@
             {
               "kind": "p",
               "text": "The programme is therefore positioned for learners who want to pursue a university-level MBA without attending a conventional full-time campus programme."
-            }
-          ]
-        },
-        {
-          "heading": "Sharda University Online MBA Eligibility Criteria 2026",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Sharda University Online MBA Eligibility Criteria 2026"
+            },
             {
               "kind": "p",
               "text": "Admission to the programme requires applicants to satisfy the prescribed academic requirements."
@@ -561,12 +537,11 @@
             {
               "kind": "p",
               "text": "One of the major features of the programme is the availability of multiple specialisation pathways. The choice of specialisation can influence both the curriculum and the overall programme fee."
-            }
-          ]
-        },
-        {
-          "heading": "1. Data Science & Analytics",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Data Science & Analytics"
+            },
             {
               "kind": "p",
               "text": "This specialisation combines management education with data-oriented business decision-making. Subjects include statistical methods, SQL, Python, data visualisation and predictive analytics."
@@ -574,12 +549,11 @@
             {
               "kind": "p",
               "text": "**Suitable for:** Learners interested in analytics, business intelligence, data-driven management and technology-enabled decision-making."
-            }
-          ]
-        },
-        {
-          "heading": "2. Marketing",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Marketing"
+            },
             {
               "kind": "p",
               "text": "The Marketing specialisation focuses on customer behaviour, sales, distribution, international marketing, service marketing, CRM, advertising and digital marketing."
@@ -587,12 +561,11 @@
             {
               "kind": "p",
               "text": "**Suitable for:** Learners targeting marketing, sales, brand management, customer experience and digital marketing roles."
-            }
-          ]
-        },
-        {
-          "heading": "3. Healthcare & Hospital Administration",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Healthcare & Hospital Administration"
+            },
             {
               "kind": "p",
               "text": "This pathway applies management concepts to healthcare organisations. It includes hospital planning, healthcare quality, medical records, healthcare project management and hospital information systems."
@@ -600,12 +573,11 @@
             {
               "kind": "p",
               "text": "**Suitable for:** Graduates interested in healthcare administration, hospital operations and healthcare management."
-            }
-          ]
-        },
-        {
-          "heading": "4. Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Human Resource Management"
+            },
             {
               "kind": "p",
               "text": "The HR specialisation covers areas such as international HRM, talent acquisition, retention, performance management and compensation."
@@ -613,12 +585,11 @@
             {
               "kind": "p",
               "text": "**Suitable for:** Learners targeting HR, recruitment, talent management, employee relations and organisational development."
-            }
-          ]
-        },
-        {
-          "heading": "5. Strategic Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Strategic Human Resource Management"
+            },
             {
               "kind": "p",
               "text": "This pathway goes deeper into strategic HR leadership, HR planning, analytics, international HR and change management."
@@ -626,12 +597,11 @@
             {
               "kind": "p",
               "text": "**Suitable for:** Professionals interested in strategic HR roles, leadership and organisational transformation."
-            }
-          ]
-        },
-        {
-          "heading": "6. Finance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Finance"
+            },
             {
               "kind": "p",
               "text": "The Finance specialisation includes fintech, taxation, financial derivatives, risk management, mergers and acquisitions, international financial management and portfolio management."
@@ -648,21 +618,17 @@
             {
               "kind": "p",
               "text": "The online MBA is structured over four semesters. The first two semesters focus largely on management fundamentals, while later semesters combine core management subjects with the selected specialisation."
-            }
-          ]
-        },
-        {
-          "heading": "Semester I",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester I"
+            },
             {
               "kind": "table",
               "head": [
                 "Subject"
               ],
               "rows": [
-                [
-                  "————————————————-"
-                ],
                 [
                   "Managerial Communication"
                 ],
@@ -682,21 +648,17 @@
                   "Quantitative Techniques for Business Decision"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Semester II",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester II"
+            },
             {
               "kind": "table",
               "head": [
                 "Subject"
               ],
               "rows": [
-                [
-                  "—————————————"
-                ],
                 [
                   "Technology and Analytics for Business"
                 ],
@@ -720,8 +682,12 @@
           ]
         },
         {
-          "heading": "Data Science & Analytics",
+          "heading": "Semester III: Specialisation-Wise Subjects",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Data Science & Analytics"
+            },
             {
               "kind": "list",
               "items": [
@@ -732,12 +698,11 @@
                 "Python for Data Science",
                 "Production and Operations Management"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Marketing",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Marketing"
+            },
             {
               "kind": "list",
               "items": [
@@ -748,12 +713,11 @@
                 "Cross-Functional Elective",
                 "Production and Operations Management"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Healthcare & Hospital Administration",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Healthcare & Hospital Administration"
+            },
             {
               "kind": "list",
               "items": [
@@ -764,12 +728,11 @@
                 "Quality Management in Healthcare",
                 "Material and Equipment Management in Healthcare"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Human Resource Management"
+            },
             {
               "kind": "list",
               "items": [
@@ -780,12 +743,11 @@
                 "Entrepreneurship and Startup Ideation",
                 "Cross-Functional Elective"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Finance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Finance"
+            },
             {
               "kind": "list",
               "items": [
@@ -796,12 +758,11 @@
                 "Cross-Functional Elective",
                 "Financial Derivatives and Risk Management"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Strategic Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Strategic Human Resource Management"
+            },
             {
               "kind": "list",
               "items": [
@@ -817,8 +778,12 @@
           ]
         },
         {
-          "heading": "Data Science & Analytics",
+          "heading": "Semester IV: Specialisation-Wise Subjects",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Data Science & Analytics"
+            },
             {
               "kind": "list",
               "items": [
@@ -828,12 +793,11 @@
                 "Research Project",
                 "Predictive Analytics using Machine Learning"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Marketing",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Marketing"
+            },
             {
               "kind": "list",
               "items": [
@@ -843,12 +807,11 @@
                 "Research Project",
                 "Digital Marketing and Marketing Analytics"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Healthcare & Hospital Administration",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Healthcare & Hospital Administration"
+            },
             {
               "kind": "list",
               "items": [
@@ -858,12 +821,11 @@
                 "Research Project",
                 "Hospital Management Information Systems"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Human Resource Management"
+            },
             {
               "kind": "list",
               "items": [
@@ -873,12 +835,11 @@
                 "Research Project",
                 "Industrial Relations and Labour Legislation"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Finance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Finance"
+            },
             {
               "kind": "list",
               "items": [
@@ -888,12 +849,11 @@
                 "Security Analysis and Portfolio Management",
                 "Research Project"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Strategic Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Strategic Human Resource Management"
+            },
             {
               "kind": "list",
               "items": [
@@ -922,11 +882,6 @@
                 "Total Fee"
               ],
               "rows": [
-                [
-                  "————————————--",
-                  "————-:",
-                  "———-:"
-                ],
                 [
                   "Data Science & Analytics",
                   "₹49,000",
@@ -988,10 +943,6 @@
               ],
               "rows": [
                 [
-                  "—————————--",
-                  "——-:"
-                ],
-                [
                   "University Registration Fee",
                   "₹500"
                 ],
@@ -1021,10 +972,6 @@
                 "EMI Starting Per Month"
               ],
               "rows": [
-                [
-                  "————————————--",
-                  "———————--:"
-                ],
                 [
                   "Data Science & Analytics",
                   "₹10,175"
@@ -1222,9 +1169,6 @@
               ],
               "rows": [
                 [
-                  "——————-"
-                ],
-                [
                   "Adani Wilmar"
                 ],
                 [
@@ -1283,10 +1227,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-"
-                ],
-                [
                   "Data Science & Analytics",
                   "Business Analytics, Data-Driven Management, Business Intelligence"
                 ],
@@ -1315,62 +1255,60 @@
           ]
         },
         {
-          "heading": "1. Multiple Specialisation Options",
+          "heading": "Why Choose Sharda University Online MBA?",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Multiple Specialisation Options"
+            },
             {
               "kind": "p",
               "text": "Learners can choose from six management pathways rather than following a single general MBA curriculum."
-            }
-          ]
-        },
-        {
-          "heading": "2. University-Level Qualification",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "University-Level Qualification"
+            },
             {
               "kind": "p",
               "text": "The programme is offered by Sharda University Online and carries the academic recognition associated with the university’s stated approvals and accreditations."
-            }
-          ]
-        },
-        {
-          "heading": "3. Flexible Online Learning",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Flexible Online Learning"
+            },
             {
               "kind": "p",
               "text": "Online delivery can help students study without relocating or attending a conventional daily campus programme."
-            }
-          ]
-        },
-        {
-          "heading": "4. Industry-Oriented Curriculum",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Industry-Oriented Curriculum"
+            },
             {
               "kind": "p",
               "text": "Subjects such as predictive analytics, digital marketing, fintech, HR analytics, healthcare project management and portfolio management connect management education with contemporary business functions."
-            }
-          ]
-        },
-        {
-          "heading": "5. Project-Based Exposure",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Project-Based Exposure"
+            },
             {
               "kind": "p",
               "text": "Research projects, live industry projects and capstone work provide opportunities to apply concepts beyond textbook learning."
-            }
-          ]
-        },
-        {
-          "heading": "6. Career Preparation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Career Preparation"
+            },
             {
               "kind": "p",
               "text": "Resume development, profile building, expert guidance and mock interviews can help learners prepare for recruitment."
-            }
-          ]
-        },
-        {
-          "heading": "7. Flexible Payment Options",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Flexible Payment Options"
+            },
             {
               "kind": "p",
               "text": "The programme provides published EMI starting amounts, allowing eligible learners to consider monthly payment options."
@@ -1423,8 +1361,12 @@
           ]
         },
         {
-          "heading": "Potential Advantages",
+          "heading": "Sharda University Online MBA: Pros and Considerations",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Potential Advantages"
+            },
             {
               "kind": "list",
               "items": [
@@ -1437,12 +1379,11 @@
                 "EMI/payment options",
                 "No upper age limit stated in the supplied eligibility information"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "What Students Should Check Before Applying",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "What Students Should Check Before Applying"
+            },
             {
               "kind": "list",
               "items": [
@@ -1467,10 +1408,6 @@
                 "A Relevant Choice"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Data and technology-oriented management",
                   "Data Science & Analytics"
@@ -1500,96 +1437,6 @@
           ]
         },
         {
-          "heading": "Is Sharda University Online MBA valid?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied programme information states that Sharda University Online MBA is associated with UGC recognition and NAAC A+ accreditation. Students should verify the current programme-specific status before admission."
-            }
-          ]
-        },
-        {
-          "heading": "What is the duration of Sharda University Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The programme duration is **2 years**, divided into **4 semesters**."
-            }
-          ]
-        },
-        {
-          "heading": "What is the Sharda University Online MBA fee?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied fee structure ranges from **₹1,40,000 to ₹1,96,000**, depending on the specialisation. Data Science & Analytics is listed at ₹1,96,000, while Marketing, Finance, Healthcare & Hospital Administration, Human Resource Management and Strategic Human Resource Management are listed at ₹1,40,000."
-            }
-          ]
-        },
-        {
-          "heading": "Is there an entrance exam for Sharda Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied eligibility information states that **no entrance test is required** and admission is based on merit."
-            }
-          ]
-        },
-        {
-          "heading": "What is the minimum qualification for Sharda Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Candidates should hold a **bachelor’s degree from a recognised institution**, with the academic pattern specified as **10+2+3**."
-            }
-          ]
-        },
-        {
-          "heading": "Is there an age limit for Sharda Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied information states that there is **no upper age limit**."
-            }
-          ]
-        },
-        {
-          "heading": "How many specialisations are available?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied programme information lists **six specialisations**: Data Science & Analytics, Marketing, Healthcare & Hospital Administration, Human Resource Management, Strategic Human Resource Management and Finance."
-            }
-          ]
-        },
-        {
-          "heading": "Does Sharda Online MBA provide placement support?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The supplied information lists career support such as resume and profile building, expert guidance, industry-relevant support and mock interview preparation."
-            }
-          ]
-        },
-        {
-          "heading": "Can working professionals pursue the programme?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The online format is suitable for learners who need to balance professional responsibilities with higher education."
-            }
-          ]
-        },
-        {
-          "heading": "What additional fees should students consider?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied information lists a **₹500 university registration fee** and **₹3,500 examination fee per year**, in addition to programme tuition."
-            }
-          ]
-        },
-        {
           "heading": "Final Takeaway",
           "blocks": [
             {
@@ -1603,12 +1450,7 @@
             {
               "kind": "p",
               "text": "Before applying, prospective students should compare the latest official fee, eligibility, curriculum, examination rules, recognition status and admission terms for the specific academic session."
-            }
-          ]
-        },
-        {
-          "heading": "Content & SEO Implementation Notes",
-          "blocks": [
+            },
             {
               "kind": "list",
               "items": [
@@ -1624,7 +1466,48 @@
           ]
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Is Sharda University Online MBA valid?",
+          "answer": "The supplied programme information states that Sharda University Online MBA is associated with UGC recognition and NAAC A+ accreditation. Students should verify the current programme-specific status before admission."
+        },
+        {
+          "question": "What is the duration of Sharda University Online MBA?",
+          "answer": "The programme duration is **2 years**, divided into **4 semesters**."
+        },
+        {
+          "question": "What is the Sharda University Online MBA fee?",
+          "answer": "The supplied fee structure ranges from **₹1,40,000 to ₹1,96,000**, depending on the specialisation. Data Science & Analytics is listed at ₹1,96,000, while Marketing, Finance, Healthcare & Hospital Administration, Human Resource Management and Strategic Human Resource Management are listed at ₹1,40,000."
+        },
+        {
+          "question": "Is there an entrance exam for Sharda Online MBA?",
+          "answer": "The supplied eligibility information states that **no entrance test is required** and admission is based on merit."
+        },
+        {
+          "question": "What is the minimum qualification for Sharda Online MBA?",
+          "answer": "Candidates should hold a **bachelor’s degree from a recognised institution**, with the academic pattern specified as **10+2+3**."
+        },
+        {
+          "question": "Is there an age limit for Sharda Online MBA?",
+          "answer": "The supplied information states that there is **no upper age limit**."
+        },
+        {
+          "question": "How many specialisations are available?",
+          "answer": "The supplied programme information lists **six specialisations**: Data Science & Analytics, Marketing, Healthcare & Hospital Administration, Human Resource Management, Strategic Human Resource Management and Finance."
+        },
+        {
+          "question": "Does Sharda Online MBA provide placement support?",
+          "answer": "Yes. The supplied information lists career support such as resume and profile building, expert guidance, industry-relevant support and mock interview preparation."
+        },
+        {
+          "question": "Can working professionals pursue the programme?",
+          "answer": "Yes. The online format is suitable for learners who need to balance professional responsibilities with higher education."
+        },
+        {
+          "question": "What additional fees should students consider?",
+          "answer": "The supplied information lists a **₹500 university registration fee** and **₹3,500 examination fee per year**, in addition to programme tuition."
+        }
+      ],
       "sources": [],
       "related": [
         {
@@ -1658,7 +1541,7 @@
       "author": "Kartik Ahuja",
       "authorSlug": "kartik-ahuja",
       "date": "2026-08-19",
-      "readingTime": "15 min",
+      "readingTime": "13 min",
       "kind": "blog"
     },
     "variant": "course",
@@ -1667,18 +1550,22 @@
     "post": {
       "intro": "Sharda University Online MCA is a two-year postgraduate degree programme designed for learners who want advanced knowledge in computer applications while retaining the flexibility of online education. The programme combines core computing, programming, software development, databases, networking, cloud technologies, data science and practical project work.",
       "keyTakeaways": [
-        ":—: :—",
         "University: Sharda University",
         "Programme: Online Master of Computer Applications (MCA)",
         "Level: Postgraduate",
         "Duration: 2 Years / 4 Semesters",
-        "Learning Mode: Online"
+        "Learning Mode: Online",
+        "Specialisations: Computer Science & IT; Data Science"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Sharda University Online MCA Overview",
+          "heading": "Overview",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Sharda University Online MCA Overview"
+            },
             {
               "kind": "p",
               "text": "The programme is positioned for fresh graduates, IT learners and working professionals who want to strengthen their technical qualifications without leaving employment or relocating for a conventional campus programme."
@@ -1694,10 +1581,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—"
-                ],
                 [
                   "University",
                   "Sharda University"
@@ -1759,19 +1642,18 @@
             {
               "kind": "p",
               "text": "*Payment terms and EMI availability should be confirmed for the active admission cycle."
-            }
-          ]
-        },
-        {
-          "heading": "Why Choose Sharda University Online MCA?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Why Choose Sharda University Online MCA?"
+            },
             {
               "kind": "p",
               "text": "Sharda University Online MCA is designed around the combination of academic qualification, technical skill development and flexible digital learning."
             },
             {
               "kind": "h3",
-              "text": "1. Flexible Online Learning"
+              "text": "Flexible Online Learning"
             },
             {
               "kind": "p",
@@ -1779,7 +1661,7 @@
             },
             {
               "kind": "h3",
-              "text": "2. Strong Technical Foundation"
+              "text": "Strong Technical Foundation"
             },
             {
               "kind": "p",
@@ -1787,7 +1669,7 @@
             },
             {
               "kind": "h3",
-              "text": "3. Technology-Oriented Specialisations"
+              "text": "Technology-Oriented Specialisations"
             },
             {
               "kind": "p",
@@ -1795,7 +1677,7 @@
             },
             {
               "kind": "h3",
-              "text": "4. Practical Learning"
+              "text": "Practical Learning"
             },
             {
               "kind": "p",
@@ -1803,7 +1685,7 @@
             },
             {
               "kind": "h3",
-              "text": "5. Career-Focused Learning"
+              "text": "Career-Focused Learning"
             },
             {
               "kind": "p",
@@ -1811,7 +1693,7 @@
             },
             {
               "kind": "h3",
-              "text": "6. Suitable for Working Professionals"
+              "text": "Suitable for Working Professionals"
             },
             {
               "kind": "p",
@@ -1863,10 +1745,6 @@
               ],
               "rows": [
                 [
-                  ":—",
-                  ":—"
-                ],
-                [
                   "UGC / Online Status",
                   "Verify current programme-level entitlement for the active session"
                 ],
@@ -1896,12 +1774,11 @@
             {
               "kind": "p",
               "text": "The supplied programme material lists two major specialisation pathways."
-            }
-          ]
-        },
-        {
-          "heading": "1. Computer Science & IT",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Computer Science & IT"
+            },
             {
               "kind": "p",
               "text": "This pathway is focused on core and advanced computing. It is suitable for learners interested in software development, IT infrastructure, cloud technologies, security, systems and technology management."
@@ -1938,12 +1815,11 @@
             {
               "kind": "p",
               "text": "This pathway can align with roles such as software developer, application developer, systems professional, cloud support professional, IT consultant and technology project professional, depending on the learner’s additional skills and experience."
-            }
-          ]
-        },
-        {
-          "heading": "2. Data Science",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Data Science"
+            },
             {
               "kind": "p",
               "text": "The Data Science pathway combines computing fundamentals with statistics, data visualisation, analytics, machine learning and data-oriented project work."
@@ -1992,11 +1868,6 @@
                 "Data Science"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—",
-                  ":—"
-                ],
                 [
                   "Core Focus",
                   "Software, systems and IT",
@@ -2115,12 +1986,11 @@
             {
               "kind": "p",
               "text": "The supplied fee structure lists the following amounts for the Computer Science & IT and Data Science pathways."
-            }
-          ]
-        },
-        {
-          "heading": "Indian & SAARC Fee Structure",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Indian & SAARC Fee Structure"
+            },
             {
               "kind": "table",
               "head": [
@@ -2128,10 +1998,6 @@
                 "Amount"
               ],
               "rows": [
-                [
-                  ":—————————-",
-                  "———————-:"
-                ],
                 [
                   "Semester Fee",
                   "₹30,000"
@@ -2161,12 +2027,11 @@
             {
               "kind": "p",
               "text": "*Confirm current EMI terms and eligibility before payment."
-            }
-          ]
-        },
-        {
-          "heading": "Foreign Student Fee Structure",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Foreign Student Fee Structure"
+            },
             {
               "kind": "table",
               "head": [
@@ -2174,10 +2039,6 @@
                 "Amount"
               ],
               "rows": [
-                [
-                  ":————————-",
-                  "——--:"
-                ],
                 [
                   "Semester Fee",
                   "$540"
@@ -2361,12 +2222,11 @@
             {
               "kind": "p",
               "text": "The supplied curriculum follows a four-semester structure and combines foundational computing with advanced technical and specialisation-oriented learning."
-            }
-          ]
-        },
-        {
-          "heading": "Computer Science & IT Specialisation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Computer Science & IT Specialisation"
+            },
             {
               "kind": "table",
               "head": [
@@ -2375,11 +2235,6 @@
                 "Learning Focus"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—",
-                  ":—"
-                ],
                 [
                   "Semester I",
                   "Mathematics, C Programming, OS & Unix, Computer Architecture, Networks, Introduction to Computers",
@@ -2409,12 +2264,11 @@
             {
               "kind": "p",
               "text": "Students can build foundations in programming, software development, databases and networking, followed by advanced exposure to Python, algorithms, cloud computing, security and object-oriented design. The project and capstone components provide opportunities to apply these skills to practical IT problems."
-            }
-          ]
-        },
-        {
-          "heading": "Data Science Specialisation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Data Science Specialisation"
+            },
             {
               "kind": "table",
               "head": [
@@ -2423,11 +2277,6 @@
                 "Learning Focus"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—",
-                  ":—"
-                ],
                 [
                   "Semester I",
                   "Mathematics Foundations, C Programming, OS & Unix, Computer Architecture, Networks, Introduction to Computing",
@@ -2466,57 +2315,51 @@
             {
               "kind": "p",
               "text": "The programme uses a digital-first learning model designed to combine academic structure with flexibility."
-            }
-          ]
-        },
-        {
-          "heading": "Live Lectures & Webinars",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Live Lectures & Webinars"
+            },
             {
               "kind": "p",
               "text": "Real-time sessions provide opportunities to interact with faculty and clarify concepts."
-            }
-          ]
-        },
-        {
-          "heading": "Recorded Sessions",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Recorded Sessions"
+            },
             {
               "kind": "p",
               "text": "Recorded material allows learners to revisit difficult topics and catch up when professional or personal commitments prevent live attendance."
-            }
-          ]
-        },
-        {
-          "heading": "Project-Based Learning",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Project-Based Learning"
+            },
             {
               "kind": "p",
               "text": "Assignments, practical work and capstone projects help move learning beyond theory."
-            }
-          ]
-        },
-        {
-          "heading": "Digital Learning Resources",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Digital Learning Resources"
+            },
             {
               "kind": "p",
               "text": "The supplied university material highlights e-learning resources, self-paced modules, e-books and digital library access."
-            }
-          ]
-        },
-        {
-          "heading": "Industry & Community Connect",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Industry & Community Connect"
+            },
             {
               "kind": "p",
               "text": "Learners can gain exposure to professional scenarios and interact with peers through online academic communities."
-            }
-          ]
-        },
-        {
-          "heading": "Capstone Project",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Capstone Project"
+            },
             {
               "kind": "p",
               "text": "The capstone provides an opportunity to combine technical knowledge, problem-solving and project execution into a substantial final project."
@@ -2537,10 +2380,6 @@
                 "Indicative Weight / Role"
               ],
               "rows": [
-                [
-                  ":———————--",
-                  ":—————————————"
-                ],
                 [
                   "Assignments & Quizzes",
                   "Around 30–40% in the supplied material"
@@ -2652,10 +2491,6 @@
               ],
               "rows": [
                 [
-                  ":———————",
-                  ":——————————————"
-                ],
-                [
                   "Software Development",
                   "Software Developer, Application Developer"
                 ],
@@ -2736,11 +2571,6 @@
               ],
               "rows": [
                 [
-                  ":—",
-                  "—:",
-                  "—:"
-                ],
-                [
                   "Tuition",
                   "₹2–4 lakh*",
                   "₹1,20,000 listed programme fee"
@@ -2778,44 +2608,44 @@
           ]
         },
         {
-          "heading": "BCA / Computer Science Graduates",
+          "heading": "Who Should Choose Sharda University Online MCA?",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "BCA / Computer Science Graduates"
+            },
             {
               "kind": "p",
               "text": "Learners with a BCA or computer-related bachelor’s degree can use the MCA to move toward advanced computing, software, data and technology roles."
-            }
-          ]
-        },
-        {
-          "heading": "Graduates With Mathematics Background",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Graduates With Mathematics Background"
+            },
             {
               "kind": "p",
               "text": "Candidates from eligible non-BCA backgrounds may consider the programme where the university’s current eligibility rules permit admission."
-            }
-          ]
-        },
-        {
-          "heading": "Working IT Professionals",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Working IT Professionals"
+            },
             {
               "kind": "p",
               "text": "Professionals can pursue postgraduate education while continuing employment, provided they can manage the academic schedule and assessments."
-            }
-          ]
-        },
-        {
-          "heading": "Learners Interested in Data Science",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Learners Interested in Data Science"
+            },
             {
               "kind": "p",
               "text": "Students interested in analytics, statistics, machine learning and data-driven careers may prefer the Data Science pathway."
-            }
-          ]
-        },
-        {
-          "heading": "Learners Targeting Software & IT Careers",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Learners Targeting Software & IT Careers"
+            },
             {
               "kind": "p",
               "text": "Students interested in programming, software development, cloud, security and IT infrastructure may find the Computer Science & IT pathway more aligned with their goals."
@@ -2833,11 +2663,6 @@
                 "Regular MCA"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—",
-                  ":—"
-                ],
                 [
                   "Learning Mode",
                   "Online",
@@ -2892,8 +2717,12 @@
           ]
         },
         {
-          "heading": "Potential Advantages",
+          "heading": "Sharda Online MCA: Pros & Considerations",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Potential Advantages"
+            },
             {
               "kind": "list",
               "items": [
@@ -2907,12 +2736,11 @@
                 "Scholarship and concession categories",
                 "No relocation required for online study"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "What Students Should Check Before Admission",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "What Students Should Check Before Admission"
+            },
             {
               "kind": "list",
               "items": [
@@ -2941,10 +2769,6 @@
                 "Consider"
               ],
               "rows": [
-                [
-                  ":——————————————",
-                  ":———————-"
-                ],
                 [
                   "Software development",
                   "Computer Science & IT"
@@ -2990,114 +2814,6 @@
           ]
         },
         {
-          "heading": "Is Sharda University Online MCA valid?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied material describes the programme as a university-issued online MCA associated with UGC recognition and Sharda University’s NAAC A+ accreditation. Students should verify the current programme-level UGC-DEB entitlement for the relevant academic session before admission."
-            }
-          ]
-        },
-        {
-          "heading": "What is the duration of Sharda Online MCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The programme is structured as a **2-year postgraduate degree divided into 4 semesters**."
-            }
-          ]
-        },
-        {
-          "heading": "What is the Sharda Online MCA fee?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied fee structure lists **₹30,000 per semester and ₹1,20,000 for the complete programme**, with additional registration and examination charges."
-            }
-          ]
-        },
-        {
-          "heading": "What are the Sharda Online MCA specialisations?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied programme material lists **Computer Science & IT** and **Data Science**."
-            }
-          ]
-        },
-        {
-          "heading": "Who can apply for Sharda Online MCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Eligible graduates may include BCA, B.Sc. Computer Science/IT and other qualifying bachelor’s degree holders, including certain B.A./B.Com. candidates with Mathematics at the required level. Exact eligibility must be checked for the active admission cycle."
-            }
-          ]
-        },
-        {
-          "heading": "Can working professionals pursue Sharda Online MCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes, the online format is designed to provide flexibility for learners balancing education with professional responsibilities. Students must still meet academic, class and examination requirements."
-            }
-          ]
-        },
-        {
-          "heading": "What is the examination pattern?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied material describes assignments and quizzes, mid-term examinations, project-based learning and end-term examinations. Exact weightage and examination rules should be confirmed from the current university schedule."
-            }
-          ]
-        },
-        {
-          "heading": "Does Sharda Online MCA offer placement support?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied material lists career guidance, resume building, mock interviews, expert mentorship and industry-oriented support. These services should not be presented as a guaranteed placement."
-            }
-          ]
-        },
-        {
-          "heading": "Which Sharda MCA specialisation is better: Computer Science & IT or Data Science?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "There is no universal winner. Choose Computer Science & IT for software, systems, cloud and IT-oriented goals. Choose Data Science if your interests are analytics, statistics, machine learning and data-driven decision-making."
-            }
-          ]
-        },
-        {
-          "heading": "Is Sharda Online MCA suitable after BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes, BCA is among the academic backgrounds identified in the supplied eligibility material, subject to the university’s current admission rules."
-            }
-          ]
-        },
-        {
-          "heading": "What should I learn alongside an Online MCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Build practical strength in programming, DSA, databases, Git, projects, communication and the technology stack relevant to your target role."
-            }
-          ]
-        },
-        {
-          "heading": "Does the programme include a project?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied curriculum includes project-oriented learning and a capstone project, particularly in the final stage of the programme."
-            }
-          ]
-        },
-        {
           "heading": "Final Takeaway",
           "blocks": [
             {
@@ -3111,12 +2827,11 @@
             {
               "kind": "p",
               "text": "For prospective students, the most important step before admission is to verify the **current academic-session eligibility, programme availability, fee, examination rules and UGC-DEB status** through the relevant official sources. The value of an Online MCA ultimately depends not only on the degree but also on the technical portfolio, projects, practical skills and professional experience built alongside it."
-            }
-          ]
-        },
-        {
-          "heading": "SEO & Editorial Metadata",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "SEO & Editorial Metadata"
+            },
             {
               "kind": "p",
               "text": "**Long-Tail Search Themes:** - Sharda University Online MCA eligibility 2026 - Sharda University Online MCA fees and syllabus - Sharda Online MCA Computer Science and IT - Sharda Online MCA Data Science - Sharda Online MCA admission process - Sharda Online MCA subjects semester wise - Is Sharda University Online MCA valid - Sharda Online MCA for BCA graduates - Sharda Online MCA for working professionals"
@@ -3128,7 +2843,56 @@
           ]
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Is Sharda University Online MCA valid?",
+          "answer": "The supplied material describes the programme as a university-issued online MCA associated with UGC recognition and Sharda University’s NAAC A+ accreditation. Students should verify the current programme-level UGC-DEB entitlement for the relevant academic session before admission."
+        },
+        {
+          "question": "What is the duration of Sharda Online MCA?",
+          "answer": "The programme is structured as a **2-year postgraduate degree divided into 4 semesters**."
+        },
+        {
+          "question": "What is the Sharda Online MCA fee?",
+          "answer": "The supplied fee structure lists **₹30,000 per semester and ₹1,20,000 for the complete programme**, with additional registration and examination charges."
+        },
+        {
+          "question": "What are the Sharda Online MCA specialisations?",
+          "answer": "The supplied programme material lists **Computer Science & IT** and **Data Science**."
+        },
+        {
+          "question": "Who can apply for Sharda Online MCA?",
+          "answer": "Eligible graduates may include BCA, B.Sc. Computer Science/IT and other qualifying bachelor’s degree holders, including certain B.A./B.Com. candidates with Mathematics at the required level. Exact eligibility must be checked for the active admission cycle."
+        },
+        {
+          "question": "Can working professionals pursue Sharda Online MCA?",
+          "answer": "Yes, the online format is designed to provide flexibility for learners balancing education with professional responsibilities. Students must still meet academic, class and examination requirements."
+        },
+        {
+          "question": "What is the examination pattern?",
+          "answer": "The supplied material describes assignments and quizzes, mid-term examinations, project-based learning and end-term examinations. Exact weightage and examination rules should be confirmed from the current university schedule."
+        },
+        {
+          "question": "Does Sharda Online MCA offer placement support?",
+          "answer": "The supplied material lists career guidance, resume building, mock interviews, expert mentorship and industry-oriented support. These services should not be presented as a guaranteed placement."
+        },
+        {
+          "question": "Which Sharda MCA specialisation is better: Computer Science & IT or Data Science?",
+          "answer": "There is no universal winner. Choose Computer Science & IT for software, systems, cloud and IT-oriented goals. Choose Data Science if your interests are analytics, statistics, machine learning and data-driven decision-making."
+        },
+        {
+          "question": "Is Sharda Online MCA suitable after BCA?",
+          "answer": "Yes, BCA is among the academic backgrounds identified in the supplied eligibility material, subject to the university’s current admission rules."
+        },
+        {
+          "question": "What should I learn alongside an Online MCA?",
+          "answer": "Build practical strength in programming, DSA, databases, Git, projects, communication and the technology stack relevant to your target role."
+        },
+        {
+          "question": "Does the programme include a project?",
+          "answer": "The supplied curriculum includes project-oriented learning and a capstone project, particularly in the final stage of the programme."
+        }
+      ],
       "sources": [],
       "related": [
         {
@@ -3162,7 +2926,7 @@
       "author": "Kartik Ahuja",
       "authorSlug": "kartik-ahuja",
       "date": "2026-08-19",
-      "readingTime": "14 min",
+      "readingTime": "12 min",
       "kind": "blog"
     },
     "variant": "course",
@@ -3171,27 +2935,26 @@
     "post": {
       "intro": "Choosing an undergraduate management degree is no longer limited to a traditional classroom. Students today increasingly look for programmes that combine a recognised university qualification with flexible learning, structured academics and practical business exposure. Sharda University Online BBA is positioned for learners who want to build a foundation in business administration while studying through an online academic environment.",
       "keyTakeaways": [
-        "—-: —-",
         "Course Name: Bachelor of Business Administration (BBA)",
         "Programme Level: Undergraduate",
         "Mode: Online",
         "Duration: 3 Years",
-        "Academic Structure: 6 Semesters"
+        "Academic Structure: 6 Semesters",
+        "Credits: 135 credits"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Sharda University Online BBA 2026",
+          "heading": "Overview",
           "blocks": [
             {
               "kind": "p",
               "text": "The programme is delivered through Sharda University’s online learning ecosystem and is designed around business fundamentals, professional skills and flexible digital learning. It can be relevant for students progressing directly after Class 12 as well as learners who want a university-level management qualification without relocating to a campus."
-            }
-          ]
-        },
-        {
-          "heading": "Sharda University Online BBA at a Glance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Sharda University Online BBA at a Glance"
+            },
             {
               "kind": "table",
               "head": [
@@ -3199,10 +2962,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Course Name",
                   "Bachelor of Business Administration (BBA)"
@@ -3311,10 +3070,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-"
-                ],
-                [
                   "UGC Entitled",
                   "The programme is offered under the university’s UGC-recognised online education framework."
                 ],
@@ -3348,57 +3103,51 @@
             {
               "kind": "p",
               "text": "An online BBA is most useful when flexibility does not come at the expense of academic structure. Sharda Online combines the convenience of digital learning with a university-managed academic framework."
-            }
-          ]
-        },
-        {
-          "heading": "1. University-Issued Undergraduate Qualification",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "University-Issued Undergraduate Qualification"
+            },
             {
               "kind": "p",
               "text": "Students receive a degree from Sharda University after completing the required academic requirements. This gives learners a formal undergraduate qualification rather than a short-term business certificate."
-            }
-          ]
-        },
-        {
-          "heading": "2. Structured Three-Year Academic Journey",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Structured Three-Year Academic Journey"
+            },
             {
               "kind": "p",
               "text": "The BBA is designed as a three-year undergraduate programme with six semesters and 135 credits. A semester-based structure helps students progress through foundational and progressively advanced business subjects."
-            }
-          ]
-        },
-        {
-          "heading": "3. Flexible Digital Learning",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Flexible Digital Learning"
+            },
             {
               "kind": "p",
               "text": "Online delivery allows students to access learning material without relocating to Greater Noida. This can be particularly useful for learners managing internships, employment, family responsibilities or other commitments."
-            }
-          ]
-        },
-        {
-          "heading": "4. Business-Oriented Foundation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Business-Oriented Foundation"
+            },
             {
               "kind": "p",
               "text": "A BBA introduces students to the core areas of business administration, helping them understand how organisations function across management, marketing, finance, human resources and related areas."
-            }
-          ]
-        },
-        {
-          "heading": "5. Practical and Professional Orientation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Practical and Professional Orientation"
+            },
             {
               "kind": "p",
               "text": "Online learning can include assignments, projects, case-based learning, discussions and other activities that encourage students to apply management concepts rather than relying only on theoretical study."
-            }
-          ]
-        },
-        {
-          "heading": "6. Suitable for Different Learner Profiles",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Suitable for Different Learner Profiles"
+            },
             {
               "kind": "p",
               "text": "The programme can work for recent Class 12 graduates as well as learners who prefer a flexible undergraduate route. Work experience is not required."
@@ -3466,12 +3215,11 @@
             {
               "kind": "p",
               "text": "Sharda University’s published 2025–26 admission documentation lists the domestic BBA fee at **₹17,500 per semester**, **₹35,000 annually**, and **₹1,05,000 for the total programme**."
-            }
-          ]
-        },
-        {
-          "heading": "Domestic Fee Structure",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Domestic Fee Structure"
+            },
             {
               "kind": "table",
               "head": [
@@ -3479,10 +3227,6 @@
                 "Amount"
               ],
               "rows": [
-                [
-                  "—————--",
-                  "———-:"
-                ],
                 [
                   "Semester-wise",
                   "₹17,500"
@@ -3496,12 +3240,11 @@
                   "₹1,05,000"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "International Fee Reference",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "International Fee Reference"
+            },
             {
               "kind": "p",
               "text": "The same published fee document lists:"
@@ -3513,10 +3256,6 @@
                 "International Fee"
               ],
               "rows": [
-                [
-                  "—————--",
-                  "——————:"
-                ],
                 [
                   "Semester-wise",
                   "$300"
@@ -3569,39 +3308,35 @@
             {
               "kind": "p",
               "text": "The Sharda Online admission journey is designed to be completed digitally."
-            }
-          ]
-        },
-        {
-          "heading": "Step 1: Visit the Sharda Online Website",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 1: Visit the Sharda Online Website"
+            },
             {
               "kind": "p",
               "text": "Open the official Sharda University Online admission portal and review the available BBA programme information."
-            }
-          ]
-        },
-        {
-          "heading": "Step 2: Register Online",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 2: Register Online"
+            },
             {
               "kind": "p",
               "text": "Create an applicant account using a valid email address and mobile number."
-            }
-          ]
-        },
-        {
-          "heading": "Step 3: Fill the Application Form",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 3: Fill the Application Form"
+            },
             {
               "kind": "p",
               "text": "Enter personal information, communication details and academic qualifications. Select BBA as the preferred programme."
-            }
-          ]
-        },
-        {
-          "heading": "Step 4: Upload Required Documents",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 4: Upload Required Documents"
+            },
             {
               "kind": "p",
               "text": "Upload the documents requested by the university, such as:"
@@ -3615,21 +3350,19 @@
                 "Recent photograph",
                 "Other documents requested during application"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Step 5: Pay Applicable Fees",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 5: Pay Applicable Fees"
+            },
             {
               "kind": "p",
               "text": "Complete the applicable registration/application or programme fee payment using the available online payment method."
-            }
-          ]
-        },
-        {
-          "heading": "Step 6: Document Verification and Admission Confirmation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 6: Document Verification and Admission Confirmation"
+            },
             {
               "kind": "p",
               "text": "The university verifies the submitted information and documents. After successful verification and completion of the required payment formalities, admission is confirmed."
@@ -3650,10 +3383,6 @@
                 "Purpose"
               ],
               "rows": [
-                [
-                  "————————————--",
-                  "——————————"
-                ],
                 [
                   "Class 10 Mark Sheet/Certificate",
                   "Academic verification"
@@ -3696,12 +3425,11 @@
             {
               "kind": "p",
               "text": "The academic journey generally moves from foundational business knowledge to more applied and professional management learning."
-            }
-          ]
-        },
-        {
-          "heading": "Academic Progression",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Academic Progression"
+            },
             {
               "kind": "h3",
               "text": "Year 1: Business Foundations"
@@ -3772,48 +3500,43 @@
             {
               "kind": "p",
               "text": "The digital learning model is built to make academic resources accessible remotely."
-            }
-          ]
-        },
-        {
-          "heading": "Live and Recorded Learning",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Live and Recorded Learning"
+            },
             {
               "kind": "p",
               "text": "Students can use scheduled academic sessions alongside recorded resources, allowing revision and flexible study."
-            }
-          ]
-        },
-        {
-          "heading": "Digital Study Material",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Digital Study Material"
+            },
             {
               "kind": "p",
               "text": "Learning resources can be accessed digitally, reducing dependence on physical classroom attendance."
-            }
-          ]
-        },
-        {
-          "heading": "Online Assignments and Assessments",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Online Assignments and Assessments"
+            },
             {
               "kind": "p",
               "text": "Students can complete academic activities and assessments through the university’s digital learning ecosystem."
-            }
-          ]
-        },
-        {
-          "heading": "Discussion and Interaction",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Discussion and Interaction"
+            },
             {
               "kind": "p",
               "text": "Online discussion mechanisms can help learners interact with faculty and peers, ask questions and exchange ideas."
-            }
-          ]
-        },
-        {
-          "heading": "Digital Academic Support",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Digital Academic Support"
+            },
             {
               "kind": "p",
               "text": "The online model is designed to provide students with access to academic information, schedules, assessments and other programme resources through centralised digital systems."
@@ -3857,30 +3580,27 @@
             {
               "kind": "p",
               "text": "Sharda University Online programmes follow a semester-based academic evaluation framework. Students are evaluated through internal academic activities and end-semester examinations according to the university’s schedule and rules."
-            }
-          ]
-        },
-        {
-          "heading": "Step 1: Register and Check the Schedule",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 1: Register and Check the Schedule"
+            },
             {
               "kind": "p",
               "text": "Students should complete the required examination formalities and check the examination timetable in advance."
-            }
-          ]
-        },
-        {
-          "heading": "Step 2: Appear for the Examination / Submit Evaluations",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 2: Appear for the Examination / Submit Evaluations"
+            },
             {
               "kind": "p",
               "text": "Students complete the applicable online examination, assignment or evaluation components according to university instructions."
-            }
-          ]
-        },
-        {
-          "heading": "Step 3: Results and Further Options",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 3: Results and Further Options"
+            },
             {
               "kind": "p",
               "text": "Results are made available through the university’s designated system. Where permitted by university rules, students may have options related to re-evaluation or reattempts."
@@ -3909,10 +3629,6 @@
                 "Potential Roles"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Marketing",
                   "Marketing Executive, Sales Executive, Marketing Coordinator"
@@ -4017,44 +3733,44 @@
           ]
         },
         {
-          "heading": "1. Class 12 Graduates",
+          "heading": "Who Should Choose Sharda University Online BBA?",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Class 12 Graduates"
+            },
             {
               "kind": "p",
               "text": "Students who want a business degree without committing to a conventional campus environment can consider the programme."
-            }
-          ]
-        },
-        {
-          "heading": "2. Aspiring Entrepreneurs",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Aspiring Entrepreneurs"
+            },
             {
               "kind": "p",
               "text": "Learners planning to start a business or join a family business can use BBA to understand marketing, finance, operations and management."
-            }
-          ]
-        },
-        {
-          "heading": "3. Students Seeking Flexible Education",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Students Seeking Flexible Education"
+            },
             {
               "kind": "p",
               "text": "Students who want to study from their home city can pursue the degree without relocating to a university campus."
-            }
-          ]
-        },
-        {
-          "heading": "4. Learners Combining Study with Internships",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Learners Combining Study with Internships"
+            },
             {
               "kind": "p",
               "text": "An online schedule may make it easier to gain work exposure alongside academic study, provided the student can manage both commitments."
-            }
-          ]
-        },
-        {
-          "heading": "5. Working Learners",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Working Learners"
+            },
             {
               "kind": "p",
               "text": "Professionals who need an undergraduate qualification or want formal business education may benefit from the flexible format."
@@ -4128,39 +3844,35 @@
             {
               "kind": "p",
               "text": "A balanced university guide should also explain what students should evaluate before enrolling."
-            }
-          ]
-        },
-        {
-          "heading": "Less Physical Campus Interaction",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Less Physical Campus Interaction"
+            },
             {
               "kind": "p",
               "text": "Students who strongly prefer face-to-face classroom interaction, campus clubs and daily peer engagement may find an online format different from a regular BBA."
-            }
-          ]
-        },
-        {
-          "heading": "Self-Discipline Is Important",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Self-Discipline Is Important"
+            },
             {
               "kind": "p",
               "text": "Online education provides flexibility, but students must manage deadlines, lectures, assignments and examinations independently."
-            }
-          ]
-        },
-        {
-          "heading": "Practical Exposure Depends on the Learner Too",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Practical Exposure Depends on the Learner Too"
+            },
             {
               "kind": "p",
               "text": "The degree provides academic foundations, but students should actively pursue internships, projects, competitions and certifications to build a strong professional profile."
-            }
-          ]
-        },
-        {
-          "heading": "Fees and Curriculum Can Change",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Fees and Curriculum Can Change"
+            },
             {
               "kind": "p",
               "text": "Fee plans, subjects, examination rules and programme structures can be updated by the university. The latest official notice should always be treated as the final reference."
@@ -4178,11 +3890,6 @@
                 "Regular Campus BBA"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Learning Location",
                   "Remote",
@@ -4254,96 +3961,6 @@
           ]
         },
         {
-          "heading": "Is Sharda University Online BBA valid?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. Sharda University offers the BBA through its recognised online education framework. Its published regulatory documentation identifies the BBA as a three-year undergraduate degree and records UGC recognition."
-            }
-          ]
-        },
-        {
-          "heading": "What is the duration of Sharda University Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The programme duration is three years, divided into six semesters."
-            }
-          ]
-        },
-        {
-          "heading": "What is the eligibility for Sharda Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Candidates must have passed 10+2 or an equivalent examination from a recognised board/university. Accepted boards include recognised State Boards, CBSE, NIOS, IGCSE, IB and ICSE."
-            }
-          ]
-        },
-        {
-          "heading": "Is work experience required for Sharda Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "No. Work experience is not required for admission to the undergraduate BBA."
-            }
-          ]
-        },
-        {
-          "heading": "What is the Sharda Online BBA fee?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Sharda University’s published 2025–26 fee document lists ₹17,500 per semester, ₹35,000 annually and ₹1,05,000 for the total domestic programme fee. Fees should be verified for the current admission session."
-            }
-          ]
-        },
-        {
-          "heading": "Can I pursue Sharda Online BBA from another city?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The online format is designed to allow students to study remotely without relocating to the university campus."
-            }
-          ]
-        },
-        {
-          "heading": "Is Sharda Online BBA suitable after Class 12?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The programme is an undergraduate degree and accepts eligible 10+2 candidates."
-            }
-          ]
-        },
-        {
-          "heading": "What can I do after an Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Graduates can explore entry-level roles in marketing, sales, HR, operations, finance, business development and related business functions. They can also pursue an MBA or other higher studies subject to eligibility."
-            }
-          ]
-        },
-        {
-          "heading": "Does Sharda Online BBA have examinations?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. Online programmes follow a semester-based evaluation framework involving academic assessments and end-semester examinations according to university rules."
-            }
-          ]
-        },
-        {
-          "heading": "Is Sharda Online BBA good for working students?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The online format can be useful for working learners because it reduces the need for daily campus attendance. However, students must independently manage academic schedules and deadlines."
-            }
-          ]
-        },
-        {
           "heading": "Editorial / Data Accuracy Notes for Website Implementation",
           "blocks": [
             {
@@ -4365,7 +3982,48 @@
           ]
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Is Sharda University Online BBA valid?",
+          "answer": "Yes. Sharda University offers the BBA through its recognised online education framework. Its published regulatory documentation identifies the BBA as a three-year undergraduate degree and records UGC recognition."
+        },
+        {
+          "question": "What is the duration of Sharda University Online BBA?",
+          "answer": "The programme duration is three years, divided into six semesters."
+        },
+        {
+          "question": "What is the eligibility for Sharda Online BBA?",
+          "answer": "Candidates must have passed 10+2 or an equivalent examination from a recognised board/university. Accepted boards include recognised State Boards, CBSE, NIOS, IGCSE, IB and ICSE."
+        },
+        {
+          "question": "Is work experience required for Sharda Online BBA?",
+          "answer": "No. Work experience is not required for admission to the undergraduate BBA."
+        },
+        {
+          "question": "What is the Sharda Online BBA fee?",
+          "answer": "Sharda University’s published 2025–26 fee document lists ₹17,500 per semester, ₹35,000 annually and ₹1,05,000 for the total domestic programme fee. Fees should be verified for the current admission session."
+        },
+        {
+          "question": "Can I pursue Sharda Online BBA from another city?",
+          "answer": "Yes. The online format is designed to allow students to study remotely without relocating to the university campus."
+        },
+        {
+          "question": "Is Sharda Online BBA suitable after Class 12?",
+          "answer": "Yes. The programme is an undergraduate degree and accepts eligible 10+2 candidates."
+        },
+        {
+          "question": "What can I do after an Online BBA?",
+          "answer": "Graduates can explore entry-level roles in marketing, sales, HR, operations, finance, business development and related business functions. They can also pursue an MBA or other higher studies subject to eligibility."
+        },
+        {
+          "question": "Does Sharda Online BBA have examinations?",
+          "answer": "Yes. Online programmes follow a semester-based evaluation framework involving academic assessments and end-semester examinations according to university rules."
+        },
+        {
+          "question": "Is Sharda Online BBA good for working students?",
+          "answer": "The online format can be useful for working learners because it reduces the need for daily campus attendance. However, students must independently manage academic schedules and deadlines."
+        }
+      ],
       "sources": [],
       "related": [
         {
@@ -4399,7 +4057,7 @@
       "author": "Kartik Ahuja",
       "authorSlug": "kartik-ahuja",
       "date": "2026-08-19",
-      "readingTime": "21 min",
+      "readingTime": "19 min",
       "kind": "blog"
     },
     "variant": "course",
@@ -4408,27 +4066,26 @@
     "post": {
       "intro": "The technology industry is moving beyond traditional software development. Cloud computing, artificial intelligence, cybersecurity, data analytics, web applications, automation and digital platforms are now part of everyday business operations. For students entering this environment, a BCA can provide the academic foundation needed to understand computing while leaving room to build specialised skills.",
       "keyTakeaways": [
-        "—-: —-",
         "University: Sharda University",
         "Programme: Bachelor of Computer Applications (BCA)",
         "Level: Undergraduate",
         "Mode: Online",
-        "Duration: 3 Years"
+        "Duration: 3 Years",
+        "Semesters: 6"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Sharda University Online BCA 2026: Course, Fees, Eligibility, Syllabus, Admission, Learning & Career Guide",
+          "heading": "Overview",
           "blocks": [
             {
               "kind": "note",
               "text": "**Editorial note:** Programme fees, eligibility, recognition and admission details can change by academic session. The final website version should display the latest official information available at the time of publication."
-            }
-          ]
-        },
-        {
-          "heading": "Introduction to Sharda University Online BCA",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Introduction to Sharda University Online BCA"
+            },
             {
               "kind": "p",
               "text": "**Sharda University Online BCA** is a three-year undergraduate online programme designed around computer applications, software, digital technologies and practical learning. The programme is intended for learners who want a recognised university qualification without following a conventional campus-based study schedule."
@@ -4452,10 +4109,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "University",
                   "Sharda University"
@@ -4543,10 +4196,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-"
-                ],
-                [
                   "UGC",
                   "Online BCA listed as an entitled programme"
                 ],
@@ -4591,7 +4240,7 @@
             },
             {
               "kind": "h3",
-              "text": "1. University-Issued Qualification"
+              "text": "University-Issued Qualification"
             },
             {
               "kind": "p",
@@ -4599,7 +4248,7 @@
             },
             {
               "kind": "h3",
-              "text": "2. Flexible Online Learning"
+              "text": "Flexible Online Learning"
             },
             {
               "kind": "p",
@@ -4607,7 +4256,7 @@
             },
             {
               "kind": "h3",
-              "text": "3. Technology-Oriented Curriculum"
+              "text": "Technology-Oriented Curriculum"
             },
             {
               "kind": "p",
@@ -4615,7 +4264,7 @@
             },
             {
               "kind": "h3",
-              "text": "4. Practical Learning Orientation"
+              "text": "Practical Learning Orientation"
             },
             {
               "kind": "p",
@@ -4623,7 +4272,7 @@
             },
             {
               "kind": "h3",
-              "text": "5. Elective-Based Skill Direction"
+              "text": "Elective-Based Skill Direction"
             },
             {
               "kind": "p",
@@ -4631,7 +4280,7 @@
             },
             {
               "kind": "h3",
-              "text": "6. Digital Academic Infrastructure"
+              "text": "Digital Academic Infrastructure"
             },
             {
               "kind": "p",
@@ -4639,7 +4288,7 @@
             },
             {
               "kind": "h3",
-              "text": "7. Suitable for Different Learner Profiles"
+              "text": "Suitable for Different Learner Profiles"
             },
             {
               "kind": "p",
@@ -4701,12 +4350,11 @@
             {
               "kind": "p",
               "text": "Rather than treating every learner as someone with the same career objective, elective learning can help students explore a specific technology domain and build a more relevant skill profile."
-            }
-          ]
-        },
-        {
-          "heading": "Why Electives Matter in BCA",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Why Electives Matter in BCA"
+            },
             {
               "kind": "p",
               "text": "Electives can help students:"
@@ -4721,12 +4369,11 @@
                 "Prepare for professional certifications.",
                 "Build a foundation for higher studies such as MCA."
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Artificial Intelligence",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Artificial Intelligence"
+            },
             {
               "kind": "p",
               "text": "An AI-oriented elective can introduce learners to concepts surrounding intelligent systems, machine learning, automation and data-driven decision-making."
@@ -4734,12 +4381,11 @@
             {
               "kind": "p",
               "text": "It can be useful for students interested in: - AI applications - Automation - Machine learning foundations - Data-driven technology - Intelligent software systems"
-            }
-          ]
-        },
-        {
-          "heading": "Cloud Computing",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Cloud Computing"
+            },
             {
               "kind": "p",
               "text": "Cloud-focused learning introduces concepts related to cloud platforms, virtualisation, deployment and cloud service management."
@@ -4747,12 +4393,11 @@
             {
               "kind": "p",
               "text": "It can support future interest in: - Cloud operations - Cloud support - DevOps foundations - Infrastructure - Digital platforms"
-            }
-          ]
-        },
-        {
-          "heading": "Cyber Security",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Cyber Security"
+            },
             {
               "kind": "p",
               "text": "Cybersecurity learning focuses on protecting systems, networks and digital information."
@@ -4796,7 +4441,7 @@
             },
             {
               "kind": "h3",
-              "text": "1. Foundation Across IT Disciplines"
+              "text": "Foundation Across IT Disciplines"
             },
             {
               "kind": "p",
@@ -4804,7 +4449,7 @@
             },
             {
               "kind": "h3",
-              "text": "2. Programming and Problem Solving"
+              "text": "Programming and Problem Solving"
             },
             {
               "kind": "p",
@@ -4812,7 +4457,7 @@
             },
             {
               "kind": "h3",
-              "text": "3. Database and Data Understanding"
+              "text": "Database and Data Understanding"
             },
             {
               "kind": "p",
@@ -4820,7 +4465,7 @@
             },
             {
               "kind": "h3",
-              "text": "4. Web and Application Development"
+              "text": "Web and Application Development"
             },
             {
               "kind": "p",
@@ -4828,7 +4473,7 @@
             },
             {
               "kind": "h3",
-              "text": "5. Practical and Project-Based Learning"
+              "text": "Practical and Project-Based Learning"
             },
             {
               "kind": "p",
@@ -4836,7 +4481,7 @@
             },
             {
               "kind": "h3",
-              "text": "6. Professional Skills"
+              "text": "Professional Skills"
             },
             {
               "kind": "p",
@@ -4862,10 +4507,6 @@
                 "How It Helps"
               ],
               "rows": [
-                [
-                  "————————--",
-                  "———————————————"
-                ],
                 [
                   "Live Classes",
                   "Real-time interaction and academic guidance"
@@ -4962,11 +4603,6 @@
               ],
               "rows": [
                 [
-                  "—————--",
-                  "————————:",
-                  "———————--:"
-                ],
-                [
                   "Per Semester",
                   "₹17,500",
                   "US$300"
@@ -4986,12 +4622,11 @@
             {
               "kind": "note",
               "text": "**Important:** The source material supplied for this page also contained a ₹1,20,000 fee structure and other fee figures. The official Sharda admission notice is the stronger reference for the published 2025–26 fee, so the ₹1,05,000 figure should be treated as the reference figure for that session. Always verify the latest fee before publishing or accepting an application."
-            }
-          ]
-        },
-        {
-          "heading": "Is Sharda Online BCA Affordable?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Is Sharda Online BCA Affordable?"
+            },
             {
               "kind": "p",
               "text": "For students comparing online BCA options, affordability should be assessed beyond tuition alone."
@@ -5083,53 +4718,52 @@
           ]
         },
         {
-          "heading": "1. Class 12 Students",
+          "heading": "Who Should Choose Sharda University Online BCA?",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Class 12 Students"
+            },
             {
               "kind": "p",
               "text": "Students who have completed Class 12 and want a technology-focused undergraduate qualification can use the BCA as a foundation for software and digital careers."
-            }
-          ]
-        },
-        {
-          "heading": "2. Students from Non-Science Backgrounds",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Students from Non-Science Backgrounds"
+            },
             {
               "kind": "p",
               "text": "Learners from commerce or arts backgrounds who want to enter technology can use the BCA to develop structured computing knowledge. The amount of programming practice required should be understood before enrolling."
-            }
-          ]
-        },
-        {
-          "heading": "3. Working Professionals",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Working Professionals"
+            },
             {
               "kind": "p",
               "text": "Professionals can study without necessarily leaving their existing employment. The online model makes it possible to combine work and academic learning."
-            }
-          ]
-        },
-        {
-          "heading": "4. Career Switchers",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Career Switchers"
+            },
             {
               "kind": "p",
               "text": "Someone working in finance, administration, sales, education, operations or another non-technical field can use a BCA as one possible route towards technology."
-            }
-          ]
-        },
-        {
-          "heading": "5. Entrepreneurs",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Entrepreneurs"
+            },
             {
               "kind": "p",
               "text": "Business owners can gain a better understanding of software, digital systems, databases, websites and technology-driven operations."
-            }
-          ]
-        },
-        {
-          "heading": "6. Students Planning MCA",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Students Planning MCA"
+            },
             {
               "kind": "p",
               "text": "A BCA can provide the undergraduate foundation required for many MCA pathways, subject to the admission rules of the institution where the student later applies."
@@ -5263,10 +4897,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-"
-                ],
-                [
                   "Junior Software Developer",
                   "Builds and maintains software applications"
                 ],
@@ -5321,11 +4951,6 @@
                 "Longer-Term Development"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Fresh Graduate",
                   "Web development, IT support, junior development",
@@ -5493,11 +5118,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
-                [
                   "Learning Mode",
                   "Online",
                   "Campus-based"
@@ -5570,11 +5190,6 @@
                 "Short-Term Coding Course"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Qualification",
                   "Undergraduate degree",
@@ -5726,8 +5341,12 @@
           ]
         },
         {
-          "heading": "Advantages",
+          "heading": "Sharda Online BCA: Pros and Considerations",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Advantages"
+            },
             {
               "kind": "list",
               "items": [
@@ -5742,12 +5361,11 @@
                 "Suitable for working learners.",
                 "Foundation for MCA and other higher studies."
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Points to Consider",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Points to Consider"
+            },
             {
               "kind": "list",
               "items": [
@@ -5784,114 +5402,6 @@
                 "Career and placement support.",
                 "Any additional examination or registration charges."
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Is Sharda University Online BCA valid?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Sharda University’s online BCA is listed in its official online-learning regulatory documentation as a UGC-entitled three-year undergraduate programme. The latest programme recognition should always be checked for the admission session in which you enrol. citeturn0search24"
-            }
-          ]
-        },
-        {
-          "heading": "What is the duration of Sharda Online BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The programme duration is three years, divided into six semesters."
-            }
-          ]
-        },
-        {
-          "heading": "What is the Sharda Online BCA fee?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The official 2025–26 admission notice lists ₹17,500 per semester, ₹35,000 annually and ₹1,05,000 for the complete programme for Indian/SAARC students. citeturn0search25"
-            }
-          ]
-        },
-        {
-          "heading": "What is the eligibility for Sharda Online BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Candidates need to pass 10+2 from a recognised board or equivalent recognised pathway. The exact current eligibility should be checked in the admission notice."
-            }
-          ]
-        },
-        {
-          "heading": "Is Mathematics compulsory for Sharda Online BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The official online BCA documentation should be checked for the current admission cycle. Do not publish a Mathematics requirement unless it appears in the latest programme-specific eligibility notice."
-            }
-          ]
-        },
-        {
-          "heading": "Is work experience required?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "No work experience is generally required for an undergraduate BCA."
-            }
-          ]
-        },
-        {
-          "heading": "Is there an entrance exam?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied online BCA admission material states that no entrance examination is required for the online programme. Verify the current admission route before applying."
-            }
-          ]
-        },
-        {
-          "heading": "What electives are available?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied programme material identifies Artificial Intelligence, Cloud Computing and Cyber Security as elective areas. Availability can depend on the academic session."
-            }
-          ]
-        },
-        {
-          "heading": "Can I pursue MCA after Sharda Online BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "A recognised BCA can provide an academic foundation for MCA, subject to the eligibility and admission rules of the university offering the MCA."
-            }
-          ]
-        },
-        {
-          "heading": "Can working professionals pursue Sharda Online BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The online format is designed to provide flexibility for learners who need to combine study with employment or other responsibilities."
-            }
-          ]
-        },
-        {
-          "heading": "Does Sharda guarantee placement after Online BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "No university should be presented as guaranteeing a job solely because a student completes an online degree. Career outcomes depend on skills, experience, portfolio quality, interview performance and the employer."
-            }
-          ]
-        },
-        {
-          "heading": "Is Sharda Online BCA better than regular BCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "There is no universal winner. Sharda Online BCA can be attractive for flexibility, while regular BCA can be better for students who prioritise campus life and face-to-face interaction."
             }
           ]
         },
@@ -5953,7 +5463,56 @@
           ]
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Is Sharda University Online BCA valid?",
+          "answer": "Sharda University’s online BCA is listed in its official online-learning regulatory documentation as a UGC-entitled three-year undergraduate programme. The latest programme recognition should always be checked for the admission session in which you enrol. citeturn0search24"
+        },
+        {
+          "question": "What is the duration of Sharda Online BCA?",
+          "answer": "The programme duration is three years, divided into six semesters."
+        },
+        {
+          "question": "What is the Sharda Online BCA fee?",
+          "answer": "The official 2025–26 admission notice lists ₹17,500 per semester, ₹35,000 annually and ₹1,05,000 for the complete programme for Indian/SAARC students. citeturn0search25"
+        },
+        {
+          "question": "What is the eligibility for Sharda Online BCA?",
+          "answer": "Candidates need to pass 10+2 from a recognised board or equivalent recognised pathway. The exact current eligibility should be checked in the admission notice."
+        },
+        {
+          "question": "Is Mathematics compulsory for Sharda Online BCA?",
+          "answer": "The official online BCA documentation should be checked for the current admission cycle. Do not publish a Mathematics requirement unless it appears in the latest programme-specific eligibility notice."
+        },
+        {
+          "question": "Is work experience required?",
+          "answer": "No work experience is generally required for an undergraduate BCA."
+        },
+        {
+          "question": "Is there an entrance exam?",
+          "answer": "The supplied online BCA admission material states that no entrance examination is required for the online programme. Verify the current admission route before applying."
+        },
+        {
+          "question": "What electives are available?",
+          "answer": "The supplied programme material identifies Artificial Intelligence, Cloud Computing and Cyber Security as elective areas. Availability can depend on the academic session."
+        },
+        {
+          "question": "Can I pursue MCA after Sharda Online BCA?",
+          "answer": "A recognised BCA can provide an academic foundation for MCA, subject to the eligibility and admission rules of the university offering the MCA."
+        },
+        {
+          "question": "Can working professionals pursue Sharda Online BCA?",
+          "answer": "Yes. The online format is designed to provide flexibility for learners who need to combine study with employment or other responsibilities."
+        },
+        {
+          "question": "Does Sharda guarantee placement after Online BCA?",
+          "answer": "No university should be presented as guaranteeing a job solely because a student completes an online degree. Career outcomes depend on skills, experience, portfolio quality, interview performance and the employer."
+        },
+        {
+          "question": "Is Sharda Online BCA better than regular BCA?",
+          "answer": "There is no universal winner. Sharda Online BCA can be attractive for flexibility, while regular BCA can be better for students who prioritise campus life and face-to-face interaction."
+        }
+      ],
       "sources": [],
       "related": [
         {

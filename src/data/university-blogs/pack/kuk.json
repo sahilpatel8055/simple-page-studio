@@ -15,7 +15,7 @@
       "author": "Kartik Ahuja",
       "authorSlug": "kartik-ahuja",
       "date": "2026-08-19",
-      "readingTime": "20 min",
+      "readingTime": "18 min",
       "kind": "blog"
     },
     "variant": "university",
@@ -24,18 +24,22 @@
     "post": {
       "intro": "Kurukshetra University Online is the digital education offering of Kurukshetra University, Kurukshetra, Haryana. Established in 1956, the university is a Category-I institution and carries an **A++ grade from NAAC**. Its Centre for Distance and Online Education (CDOE) offers programmes through both Open & Distance Learning (ODL) and online modes.",
       "keyTakeaways": [
-        "—-: —-",
         "University: Kurukshetra University",
         "Location: Kurukshetra, Haryana",
         "Established: 1956",
         "University Category: Category-I University",
-        "NAAC: A++ Grade"
+        "NAAC: A++ Grade",
+        "Online/Distance Education Unit: Centre for Distance and Online Education (CDOE)"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Kurukshetra University Online: Complete Overview",
+          "heading": "Overview",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University Online: Complete Overview"
+            },
             {
               "kind": "p",
               "text": "For learners who want a recognised university qualification without relocating or attending a conventional campus every day, online education can provide a practical alternative. Kurukshetra University’s online programmes combine instructor-led and self-paced learning, virtual/live sessions, digital study resources, online examinations and academic support."
@@ -47,12 +51,11 @@
             {
               "kind": "note",
               "text": "**Important:** Online and ODL offerings are not necessarily identical. Students should check the mode, programme entitlement, eligibility, fee and current admission notice for the exact course they intend to join."
-            }
-          ]
-        },
-        {
-          "heading": "Kurukshetra University at a Glance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University at a Glance"
+            },
             {
               "kind": "table",
               "head": [
@@ -60,10 +63,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "University",
                   "Kurukshetra University"
@@ -328,13 +327,6 @@
                 "EMI"
               ],
               "rows": [
-                [
-                  "——--",
-                  "—————--",
-                  "———:",
-                  "————-:",
-                  "—--"
-                ],
                 [
                   "B.A.",
                   "Bachelor Degree",
@@ -622,12 +614,11 @@
             {
               "kind": "p",
               "text": "The university’s January 2026 CDOE notice stated that applications for online programmes could be made through the university website or the dedicated KUK online portal."
-            }
-          ]
-        },
-        {
-          "heading": "Kurukshetra University Online Admission Process",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University Online Admission Process"
+            },
             {
               "kind": "h3",
               "text": "Step 1: Check the Programme"
@@ -800,66 +791,59 @@
             {
               "kind": "p",
               "text": "The online learning experience is designed around digital access rather than daily campus attendance."
-            }
-          ]
-        },
-        {
-          "heading": "Learning Management System",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Learning Management System"
+            },
             {
               "kind": "p",
               "text": "Students receive access to an LMS where academic resources, learning activities and other course-related information can be managed."
-            }
-          ]
-        },
-        {
-          "heading": "Live Interactive Sessions",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Live Interactive Sessions"
+            },
             {
               "kind": "p",
               "text": "Live online sessions can provide real-time interaction between learners and instructors."
-            }
-          ]
-        },
-        {
-          "heading": "Self-Paced Learning",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Self-Paced Learning"
+            },
             {
               "kind": "p",
               "text": "Digital resources allow learners to revisit academic material according to their own study schedule."
-            }
-          ]
-        },
-        {
-          "heading": "E-Books & Study Material",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "E-Books & Study Material"
+            },
             {
               "kind": "p",
               "text": "Students can access digital learning resources, e-books and study guides to support their coursework."
-            }
-          ]
-        },
-        {
-          "heading": "Assignments & Practice",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Assignments & Practice"
+            },
             {
               "kind": "p",
               "text": "Assignments, quizzes and practice activities can help students assess their understanding before examinations."
-            }
-          ]
-        },
-        {
-          "heading": "Discussion Forums",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Discussion Forums"
+            },
             {
               "kind": "p",
               "text": "Online discussion spaces allow learners to raise questions, exchange ideas and interact with peers."
-            }
-          ]
-        },
-        {
-          "heading": "Additional Web Resources",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Additional Web Resources"
+            },
             {
               "kind": "p",
               "text": "Digital resources can be used for supplementary reading, research and academic reference."
@@ -1017,10 +1001,6 @@
               ],
               "rows": [
                 [
-                  "—————————",
-                  "————————--:"
-                ],
-                [
                   "Infosys Technologies Ltd.",
                   "₹6 LPA"
                 ],
@@ -1062,10 +1042,6 @@
                 "Potential Career Areas"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Online B.A.",
                   "Administration, content, communication, education support, public-sector preparation"
@@ -1161,75 +1137,67 @@
             {
               "kind": "p",
               "text": "There are several reasons KUK Online may be worth considering."
-            }
-          ]
-        },
-        {
-          "heading": "1. Established University",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Established University"
+            },
             {
               "kind": "p",
               "text": "Kurukshetra University has been operating since 1956 and has a long academic history."
-            }
-          ]
-        },
-        {
-          "heading": "2. NAAC A++ Accreditation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "NAAC A++ Accreditation"
+            },
             {
               "kind": "p",
               "text": "The university holds an A++ NAAC grade."
-            }
-          ]
-        },
-        {
-          "heading": "3. Flexible Digital Learning",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Flexible Digital Learning"
+            },
             {
               "kind": "p",
               "text": "Students can access academic resources without daily campus attendance."
-            }
-          ]
-        },
-        {
-          "heading": "4. Multiple UG & PG Options",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Multiple UG & PG Options"
+            },
             {
               "kind": "p",
               "text": "KUK’s online portfolio includes programmes in arts, commerce, business administration, management and computer applications."
-            }
-          ]
-        },
-        {
-          "heading": "5. Affordable Fee Structure",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Affordable Fee Structure"
+            },
             {
               "kind": "p",
               "text": "The supplied semester fees are comparatively accessible, especially for learners looking for a lower-cost online degree."
-            }
-          ]
-        },
-        {
-          "heading": "6. EMI/Instalment Support",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "EMI/Instalment Support"
+            },
             {
               "kind": "p",
               "text": "The supplied course table indicates EMI availability for the listed programmes, subject to applicable terms."
-            }
-          ]
-        },
-        {
-          "heading": "7. Digital Academic Resources",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Digital Academic Resources"
+            },
             {
               "kind": "p",
               "text": "LMS access, e-books, study guides, discussion forums and online learning resources support the learning journey."
-            }
-          ]
-        },
-        {
-          "heading": "8. Career Support",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Career Support"
+            },
             {
               "kind": "p",
               "text": "Career counselling, resume assistance and interview preparation can support students preparing for employment."
@@ -1237,8 +1205,12 @@
           ]
         },
         {
-          "heading": "Advantages",
+          "heading": "Kurukshetra University Online: Pros & Considerations",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Advantages"
+            },
             {
               "kind": "list",
               "items": [
@@ -1253,12 +1225,11 @@
                 "Online examinations for listed online programmes.",
                 "Career guidance and job assistance."
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Things Students Should Check Before Admission",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Things Students Should Check Before Admission"
+            },
             {
               "kind": "list",
               "items": [
@@ -1286,11 +1257,6 @@
                 "Regular Campus Programme"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Location",
                   "Study remotely",
@@ -1480,123 +1446,6 @@
           ]
         },
         {
-          "heading": "Is Kurukshetra University Online recognised?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Kurukshetra University is a recognised university and is NAAC A++ accredited. For online degrees, students should verify the current entitlement/status of the exact programme and mode for their admission session."
-            }
-          ]
-        },
-        {
-          "heading": "Is Kurukshetra University NAAC A++?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. Kurukshetra University is identified by the university as an **A++ Grade NAAC Accredited** institution."
-            }
-          ]
-        },
-        {
-          "heading": "What online courses does Kurukshetra University offer?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The January 2026 CDOE notice lists online B.A., B.Com., B.B.A., M.A., M.Com., MBA and MCA programmes, along with selected diploma and certificate programmes."
-            }
-          ]
-        },
-        {
-          "heading": "What is the duration of KUK online courses?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied course data lists undergraduate programmes at 3 years and postgraduate programmes at 2 years."
-            }
-          ]
-        },
-        {
-          "heading": "What is the fee for KUK Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied fee table lists ₹12,000 per semester for BBA, subject to the current fee structure."
-            }
-          ]
-        },
-        {
-          "heading": "What is the fee for KUK Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied fee table lists ₹25,500 per semester for MBA, subject to current university fees and applicable charges."
-            }
-          ]
-        },
-        {
-          "heading": "What is the fee for KUK Online MCA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied fee table lists ₹18,900 per semester for MCA, subject to current university fees and applicable charges."
-            }
-          ]
-        },
-        {
-          "heading": "Can working professionals join KUK Online?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The flexible online learning format can be suitable for working professionals, subject to the eligibility requirements of the selected programme."
-            }
-          ]
-        },
-        {
-          "heading": "Does KUK Online provide EMI?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied course table indicates EMI availability for the listed programmes. Current EMI terms should be confirmed before payment."
-            }
-          ]
-        },
-        {
-          "heading": "Are KUK Online exams conducted online?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied online-programme material describes online examinations. The exact examination pattern and schedule depend on the programme and current academic regulations."
-            }
-          ]
-        },
-        {
-          "heading": "Does KUK Online provide placement assistance?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied material mentions career counselling, job assistance, resume support and interview preparation. Placement assistance should not be treated as a guaranteed job."
-            }
-          ]
-        },
-        {
-          "heading": "What is the admission process for KUK Online?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The process generally involves selecting the programme, completing the online application, submitting documents, paying the applicable fee, undergoing verification and receiving admission confirmation."
-            }
-          ]
-        },
-        {
-          "heading": "Is Kurukshetra University good for online education?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "KUK can be considered by learners who value an established university, NAAC A++ accreditation, flexible digital learning and relatively accessible fee structures. The best choice still depends on the programme, eligibility, budget and career objective."
-            }
-          ]
-        },
-        {
           "heading": "Final Verdict: Is Kurukshetra University Online Worth Considering in 2026?",
           "blocks": [
             {
@@ -1614,12 +1463,7 @@
             {
               "kind": "p",
               "text": "If the programme aligns with your educational and professional goals, Kurukshetra University Online can be a practical route to continue higher education without the restrictions of a conventional daily campus schedule."
-            }
-          ]
-        },
-        {
-          "heading": "Recommended Internal Linking Structure",
-          "blocks": [
+            },
             {
               "kind": "p",
               "text": "Use this university overview as the **pillar page** and connect it to dedicated course pages."
@@ -1676,12 +1520,11 @@
             {
               "kind": "p",
               "text": "Avoid creating thin pages that repeat the same university-level information. Course pages should go substantially deeper into course-specific intent such as syllabus, specialisations, eligibility, fees, admission, exams and career scope."
-            }
-          ]
-        },
-        {
-          "heading": "Editorial & Accuracy Notes",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Editorial & Accuracy Notes"
+            },
             {
               "kind": "list",
               "items": [
@@ -1694,12 +1537,11 @@
                 "Avoid claims such as “guaranteed placement”, “guaranteed salary”, or “automatically equal to every regular programme” unless supported by the relevant current official rules."
               ],
               "ordered": true
-            }
-          ]
-        },
-        {
-          "heading": "Source & Verification References",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Source & Verification References"
+            },
             {
               "kind": "list",
               "items": [
@@ -1716,7 +1558,60 @@
           ]
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Is Kurukshetra University Online recognised?",
+          "answer": "Kurukshetra University is a recognised university and is NAAC A++ accredited. For online degrees, students should verify the current entitlement/status of the exact programme and mode for their admission session."
+        },
+        {
+          "question": "Is Kurukshetra University NAAC A++?",
+          "answer": "Yes. Kurukshetra University is identified by the university as an **A++ Grade NAAC Accredited** institution."
+        },
+        {
+          "question": "What online courses does Kurukshetra University offer?",
+          "answer": "The January 2026 CDOE notice lists online B.A., B.Com., B.B.A., M.A., M.Com., MBA and MCA programmes, along with selected diploma and certificate programmes."
+        },
+        {
+          "question": "What is the duration of KUK online courses?",
+          "answer": "The supplied course data lists undergraduate programmes at 3 years and postgraduate programmes at 2 years."
+        },
+        {
+          "question": "What is the fee for KUK Online BBA?",
+          "answer": "The supplied fee table lists ₹12,000 per semester for BBA, subject to the current fee structure."
+        },
+        {
+          "question": "What is the fee for KUK Online MBA?",
+          "answer": "The supplied fee table lists ₹25,500 per semester for MBA, subject to current university fees and applicable charges."
+        },
+        {
+          "question": "What is the fee for KUK Online MCA?",
+          "answer": "The supplied fee table lists ₹18,900 per semester for MCA, subject to current university fees and applicable charges."
+        },
+        {
+          "question": "Can working professionals join KUK Online?",
+          "answer": "Yes. The flexible online learning format can be suitable for working professionals, subject to the eligibility requirements of the selected programme."
+        },
+        {
+          "question": "Does KUK Online provide EMI?",
+          "answer": "The supplied course table indicates EMI availability for the listed programmes. Current EMI terms should be confirmed before payment."
+        },
+        {
+          "question": "Are KUK Online exams conducted online?",
+          "answer": "The supplied online-programme material describes online examinations. The exact examination pattern and schedule depend on the programme and current academic regulations."
+        },
+        {
+          "question": "Does KUK Online provide placement assistance?",
+          "answer": "The supplied material mentions career counselling, job assistance, resume support and interview preparation. Placement assistance should not be treated as a guaranteed job."
+        },
+        {
+          "question": "What is the admission process for KUK Online?",
+          "answer": "The process generally involves selecting the programme, completing the online application, submitting documents, paying the applicable fee, undergoing verification and receiving admission confirmation."
+        },
+        {
+          "question": "Is Kurukshetra University good for online education?",
+          "answer": "KUK can be considered by learners who value an established university, NAAC A++ accreditation, flexible digital learning and relatively accessible fee structures. The best choice still depends on the programme, eligibility, budget and career objective."
+        }
+      ],
       "sources": [
         {
           "label": "Official source — kuk.ac.in",
@@ -1759,7 +1654,7 @@
       "author": "Kartik Ahuja",
       "authorSlug": "kartik-ahuja",
       "date": "2026-08-19",
-      "readingTime": "14 min",
+      "readingTime": "13 min",
       "kind": "blog"
     },
     "variant": "course",
@@ -1768,18 +1663,22 @@
     "post": {
       "intro": "Kurukshetra University Online MBA is a postgraduate management programme delivered through the university’s official online education framework. The programme spans **2 years and 4 semesters** and combines core management education with elective-based specialisations.",
       "keyTakeaways": [
-        ":—: :—",
         "University: Kurukshetra University",
         "University Type: Public University",
         "Programme: Master of Business Administration (MBA)",
         "Level: Postgraduate",
-        "Duration: 2 Years / 4 Semesters"
+        "Duration: 2 Years / 4 Semesters",
+        "Learning Mode: 100% Online"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Kurukshetra University Online MBA: Overview",
+          "heading": "Overview",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University Online MBA: Overview"
+            },
             {
               "kind": "p",
               "text": "The curriculum is designed around managerial reasoning, analytical decision-making, organisational understanding, business research, functional management and applied learning. Students can access academic resources through the official KUK Online Learning Management System (LMS), including recorded lectures, digital study material, assignments, internal assessments and online examinations."
@@ -1799,10 +1698,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—"
-                ],
                 [
                   "University",
                   "Kurukshetra University"
@@ -1852,12 +1747,11 @@
                   "No upper age limit, as per the supplied admission information"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Recognition and Credibility of Kurukshetra University Online MBA",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Recognition and Credibility of Kurukshetra University Online MBA"
+            },
             {
               "kind": "p",
               "text": "Kurukshetra University is a public university with an established higher-education framework. The Online MBA is delivered through the university’s official online education platform and follows university-approved curriculum, evaluation and degree-certification processes."
@@ -1879,19 +1773,18 @@
                 "Degree awarded by Kurukshetra University",
                 "Official KUK Online learning and assessment platform"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Why Choose Kurukshetra University Online MBA?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Why Choose Kurukshetra University Online MBA?"
+            },
             {
               "kind": "p",
               "text": "The programme combines the credibility of a public university with the flexibility of online delivery."
             },
             {
               "kind": "h3",
-              "text": "1. University-Awarded MBA Degree"
+              "text": "University-Awarded MBA Degree"
             },
             {
               "kind": "p",
@@ -1899,7 +1792,7 @@
             },
             {
               "kind": "h3",
-              "text": "2. Flexible Online Learning"
+              "text": "Flexible Online Learning"
             },
             {
               "kind": "p",
@@ -1907,7 +1800,7 @@
             },
             {
               "kind": "h3",
-              "text": "3. Elective-Based Specialisation"
+              "text": "Elective-Based Specialisation"
             },
             {
               "kind": "p",
@@ -1915,7 +1808,7 @@
             },
             {
               "kind": "h3",
-              "text": "4. Structured Academic Delivery"
+              "text": "Structured Academic Delivery"
             },
             {
               "kind": "p",
@@ -1923,7 +1816,7 @@
             },
             {
               "kind": "h3",
-              "text": "5. Public University Framework"
+              "text": "Public University Framework"
             },
             {
               "kind": "p",
@@ -1931,17 +1824,16 @@
             },
             {
               "kind": "h3",
-              "text": "6. Accessible Across India"
+              "text": "Accessible Across India"
             },
             {
               "kind": "p",
               "text": "Students can pursue the programme without relocation, making it useful for working professionals and learners with geographical constraints."
-            }
-          ]
-        },
-        {
-          "heading": "Kurukshetra University Online MBA Eligibility 2026",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University Online MBA Eligibility 2026"
+            },
             {
               "kind": "p",
               "text": "The Online MBA follows a postgraduate admission framework requiring applicants to meet the prescribed academic requirements."
@@ -1975,10 +1867,6 @@
               ],
               "rows": [
                 [
-                  ":———————",
-                  ":————————————————"
-                ],
-                [
                   "Programme Level",
                   "Postgraduate MBA"
                 ],
@@ -2011,12 +1899,11 @@
             {
               "kind": "note",
               "text": "**Important:** Eligibility requirements can be revised by the university. Students should verify the latest admission notification before applying."
-            }
-          ]
-        },
-        {
-          "heading": "Documents Required for Kurukshetra University Online MBA Admission",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Documents Required for Kurukshetra University Online MBA Admission"
+            },
             {
               "kind": "p",
               "text": "Applicants may be required to upload the following documents during online admission:"
@@ -2037,12 +1924,11 @@
             {
               "kind": "p",
               "text": "Documents should be uploaded according to the specifications displayed on the official KUK Online admission portal."
-            }
-          ]
-        },
-        {
-          "heading": "Is There an Entrance Exam for Kurukshetra University Online MBA?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Is There an Entrance Exam for Kurukshetra University Online MBA?"
+            },
             {
               "kind": "p",
               "text": "As per the supplied programme information, **no entrance examination is required** for admission to the Online MBA."
@@ -2064,12 +1950,11 @@
             {
               "kind": "p",
               "text": "This makes the admission route comparatively straightforward for eligible graduates."
-            }
-          ]
-        },
-        {
-          "heading": "Age Limit for Kurukshetra University Online MBA",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Age Limit for Kurukshetra University Online MBA"
+            },
             {
               "kind": "p",
               "text": "The supplied admission information states that Kurukshetra University does not prescribe an upper age limit for the Online MBA."
@@ -2087,12 +1972,11 @@
                 "Professionals seeking managerial upskilling",
                 "Learners pursuing higher education alongside professional commitments"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Kurukshetra University Online MBA Admission Process",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University Online MBA Admission Process"
+            },
             {
               "kind": "p",
               "text": "The admission process is conducted through the university’s online admission framework."
@@ -2164,12 +2048,11 @@
                 "Marketing Management"
               ],
               "ordered": true
-            }
-          ]
-        },
-        {
-          "heading": "Online MBA in Business Analytics",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Online MBA in Business Analytics"
+            },
             {
               "kind": "p",
               "text": "The Business Analytics elective develops data-oriented managerial decision-making. It introduces learners to business analysis, data interpretation, optimisation, econometrics, predictive analysis and business intelligence concepts."
@@ -2200,12 +2083,11 @@
                 "Management Analyst",
                 "Strategy Analyst"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Online MBA in Finance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Online MBA in Finance"
+            },
             {
               "kind": "p",
               "text": "The Finance specialisation focuses on financial management, corporate finance, banking, investment and financial decision-making."
@@ -2236,12 +2118,11 @@
                 "Financial Analyst",
                 "Banking and Finance Roles"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Online MBA in Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Online MBA in Human Resource Management"
+            },
             {
               "kind": "p",
               "text": "The HRM specialisation focuses on managing people and organisational talent through recruitment, workforce planning, performance management, training and employee relations."
@@ -2274,12 +2155,11 @@
                 "HR Operations Manager",
                 "Training Coordinator"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Online MBA in Information Technology Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Online MBA in Information Technology Management"
+            },
             {
               "kind": "p",
               "text": "This elective combines management principles with technology, digital systems and business operations."
@@ -2312,12 +2192,11 @@
                 "Technology Operations Manager",
                 "Business-IT Analyst"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Online MBA in Marketing Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Online MBA in Marketing Management"
+            },
             {
               "kind": "p",
               "text": "Marketing Management covers market research, consumer behaviour, branding, advertising, digital marketing and strategic marketing."
@@ -2359,12 +2238,11 @@
             {
               "kind": "p",
               "text": "The Online MBA is structured across four semesters. The first two semesters establish core management knowledge, while later semesters introduce specialisation-oriented learning, project work and advanced subjects."
-            }
-          ]
-        },
-        {
-          "heading": "Semester I — Core Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester I — Core Management"
+            },
             {
               "kind": "table",
               "head": [
@@ -2372,10 +2250,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—"
-                ],
                 [
                   "Management Process and Organisational Behaviour",
                   "Management fundamentals and organisational understanding"
@@ -2401,12 +2275,11 @@
                   "Indian business and economic context"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Semester II — Functional Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester II — Functional Management"
+            },
             {
               "kind": "table",
               "head": [
@@ -2414,10 +2287,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  ":————————————-",
-                  ":———————————--"
-                ],
                 [
                   "Human Resource Management",
                   "Workforce and people management"
@@ -2447,8 +2316,12 @@
           ]
         },
         {
-          "heading": "Business Analytics",
+          "heading": "Semester III & IV Specialisation Curriculum",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Business Analytics"
+            },
             {
               "kind": "h3",
               "text": "Semester III"
@@ -2480,12 +2353,11 @@
                 "Predictive Analysis for Business Decision",
                 "Comprehensive Viva-Voce"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Finance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Finance"
+            },
             {
               "kind": "h3",
               "text": "Semester III"
@@ -2517,12 +2389,11 @@
                 "Project Planning and Management",
                 "Comprehensive Viva-Voce"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Human Resource Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Human Resource Management"
+            },
             {
               "kind": "h3",
               "text": "Semester III"
@@ -2554,12 +2425,11 @@
                 "Change Management & Organisational Development",
                 "Comprehensive Viva-Voce"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Information Technology Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Information Technology Management"
+            },
             {
               "kind": "h3",
               "text": "Semester III"
@@ -2591,12 +2461,11 @@
                 "Information Security and Cyber Laws",
                 "Comprehensive Viva-Voce"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Marketing Management",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Marketing Management"
+            },
             {
               "kind": "h3",
               "text": "Semester III"
@@ -2732,10 +2601,6 @@
               ],
               "rows": [
                 [
-                  ":————————-",
-                  ":—————————————--"
-                ],
-                [
                   "Assignments",
                   "Conceptual understanding and application"
                 ],
@@ -2769,12 +2634,11 @@
             {
               "kind": "p",
               "text": "The supplied programme information gives the following fee structure."
-            }
-          ]
-        },
-        {
-          "heading": "Indian Students",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Indian Students"
+            },
             {
               "kind": "table",
               "head": [
@@ -2782,10 +2646,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  ":————————--",
-                  ":————————--"
-                ],
                 [
                   "Duration",
                   "2 Years / 4 Semesters"
@@ -2815,12 +2675,11 @@
                   "Included in programme fee"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "International Students",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "International Students"
+            },
             {
               "kind": "table",
               "head": [
@@ -2828,10 +2687,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  ":————————--",
-                  ":———————-"
-                ],
                 [
                   "Duration",
                   "2 Years / 4 Semesters"
@@ -2911,11 +2766,6 @@
                 "Kurukshetra University Online MBA"
               ],
               "rows": [
-                [
-                  ":—",
-                  ":—",
-                  ":—"
-                ],
                 [
                   "Tuition",
                   "Generally higher depending on institution",
@@ -3183,8 +3033,12 @@
           ]
         },
         {
-          "heading": "Advantages",
+          "heading": "Key Advantages and Limitations",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Advantages"
+            },
             {
               "kind": "list",
               "items": [
@@ -3199,12 +3053,11 @@
                 "No regular campus relocation requirement",
                 "Suitable for working professionals"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Points to Consider",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Points to Consider"
+            },
             {
               "kind": "list",
               "items": [
@@ -3235,105 +3088,6 @@
           ]
         },
         {
-          "heading": "Is Kurukshetra University Online MBA valid?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied programme information identifies the programme as a UGC-entitled MBA awarded by Kurukshetra University. Validity for specific employment, higher education or regulatory purposes remains subject to prevailing norms."
-            }
-          ]
-        },
-        {
-          "heading": "What is the duration of Kurukshetra University Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The programme duration is **2 years divided into 4 semesters**."
-            }
-          ]
-        },
-        {
-          "heading": "Is Kurukshetra University Online MBA fully online?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The programme is described as a **100% online** learning programme delivered through the official KUK Online LMS."
-            }
-          ]
-        },
-        {
-          "heading": "Is an entrance exam required for Kurukshetra University Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "As per the supplied admission information, **no entrance examination is required**."
-            }
-          ]
-        },
-        {
-          "heading": "What is the eligibility for Kurukshetra University Online MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Applicants should have completed 10+2 and hold a bachelor’s degree from a recognised university, subject to the latest university norms."
-            }
-          ]
-        },
-        {
-          "heading": "Is there an age limit?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied information states that there is **no upper age limit**."
-            }
-          ]
-        },
-        {
-          "heading": "What are the Kurukshetra University Online MBA specialisations?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied curriculum covers **Business Analytics, Finance, Human Resource Management, Information Technology Management and Marketing Management**."
-            }
-          ]
-        },
-        {
-          "heading": "What is the Kurukshetra University Online MBA fee?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "For Indian students, the supplied fee information lists **₹25,500 per semester**, with a stated programme fee of **₹1,02,000**, plus the applicable first-semester registration fee. Fees should be verified for the current admission cycle."
-            }
-          ]
-        },
-        {
-          "heading": "Does the programme include examinations?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The evaluation framework includes assignments, internal assessment, project work, end-semester examinations and viva-voce."
-            }
-          ]
-        },
-        {
-          "heading": "Can working professionals pursue this MBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The online structure is particularly suited to learners who need to balance employment and higher education."
-            }
-          ]
-        },
-        {
-          "heading": "Does Kurukshetra University Online MBA guarantee placement?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "No. Career outcomes and employment depend on individual skills, experience, performance and market conditions. Placement should not be treated as guaranteed."
-            }
-          ]
-        },
-        {
           "heading": "Developer Implementation Notes",
           "blocks": [
             {
@@ -3357,7 +3111,52 @@
           ]
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Is Kurukshetra University Online MBA valid?",
+          "answer": "The supplied programme information identifies the programme as a UGC-entitled MBA awarded by Kurukshetra University. Validity for specific employment, higher education or regulatory purposes remains subject to prevailing norms."
+        },
+        {
+          "question": "What is the duration of Kurukshetra University Online MBA?",
+          "answer": "The programme duration is **2 years divided into 4 semesters**."
+        },
+        {
+          "question": "Is Kurukshetra University Online MBA fully online?",
+          "answer": "Yes. The programme is described as a **100% online** learning programme delivered through the official KUK Online LMS."
+        },
+        {
+          "question": "Is an entrance exam required for Kurukshetra University Online MBA?",
+          "answer": "As per the supplied admission information, **no entrance examination is required**."
+        },
+        {
+          "question": "What is the eligibility for Kurukshetra University Online MBA?",
+          "answer": "Applicants should have completed 10+2 and hold a bachelor’s degree from a recognised university, subject to the latest university norms."
+        },
+        {
+          "question": "Is there an age limit?",
+          "answer": "The supplied information states that there is **no upper age limit**."
+        },
+        {
+          "question": "What are the Kurukshetra University Online MBA specialisations?",
+          "answer": "The supplied curriculum covers **Business Analytics, Finance, Human Resource Management, Information Technology Management and Marketing Management**."
+        },
+        {
+          "question": "What is the Kurukshetra University Online MBA fee?",
+          "answer": "For Indian students, the supplied fee information lists **₹25,500 per semester**, with a stated programme fee of **₹1,02,000**, plus the applicable first-semester registration fee. Fees should be verified for the current admission cycle."
+        },
+        {
+          "question": "Does the programme include examinations?",
+          "answer": "Yes. The evaluation framework includes assignments, internal assessment, project work, end-semester examinations and viva-voce."
+        },
+        {
+          "question": "Can working professionals pursue this MBA?",
+          "answer": "Yes. The online structure is particularly suited to learners who need to balance employment and higher education."
+        },
+        {
+          "question": "Does Kurukshetra University Online MBA guarantee placement?",
+          "answer": "No. Career outcomes and employment depend on individual skills, experience, performance and market conditions. Placement should not be treated as guaranteed."
+        }
+      ],
       "sources": [],
       "related": [
         {
@@ -3400,18 +3199,22 @@
     "post": {
       "intro": "Kurukshetra University Online MCA is a two-year postgraduate programme delivered through the university’s official online learning ecosystem. The programme is structured across four semesters and focuses on computer applications, programming, databases, web technologies, artificial intelligence, machine learning, cybersecurity, data analytics, emerging technologies and application-oriented computing.",
       "keyTakeaways": [
-        "—-: —-",
         "University: Kurukshetra University",
         "University Type: Public University",
         "Programme: Master of Computer Applications (MCA)",
         "Level: Postgraduate",
-        "Duration: 2 Years / 4 Semesters"
+        "Duration: 2 Years / 4 Semesters",
+        "Learning Mode: Fully Online"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Kurukshetra University Online MCA – Quick Overview",
+          "heading": "Overview",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University Online MCA – Quick Overview"
+            },
             {
               "kind": "table",
               "head": [
@@ -3419,10 +3222,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "University",
                   "Kurukshetra University"
@@ -3480,12 +3279,11 @@
                   "Assignments, internal assessment, practicals and end-semester examinations"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "About Kurukshetra University Online",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "About Kurukshetra University Online"
+            },
             {
               "kind": "p",
               "text": "Kurukshetra University was established in 1956 and is a public university located in Kurukshetra, Haryana. Its online education initiative provides learners with access to undergraduate and postgraduate programmes without requiring relocation to the physical campus."
@@ -3505,10 +3303,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  "——————-",
-                  "——————————————--"
-                ],
                 [
                   "Established",
                   "1956"
@@ -3538,12 +3332,11 @@
                   "Flexible, career-oriented digital learning"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Kurukshetra University Online MCA Recognition & Credibility",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Kurukshetra University Online MCA Recognition & Credibility"
+            },
             {
               "kind": "p",
               "text": "The credibility of an online postgraduate degree depends heavily on the university’s regulatory status and the framework under which the programme is delivered. Kurukshetra University Online MCA is offered through the university’s official online education platform."
@@ -3600,12 +3393,11 @@
             {
               "kind": "p",
               "text": "The online MCA admission framework requires applicants to meet the prescribed postgraduate eligibility conditions."
-            }
-          ]
-        },
-        {
-          "heading": "Academic Eligibility",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Academic Eligibility"
+            },
             {
               "kind": "p",
               "text": "Candidates should:"
@@ -3630,10 +3422,6 @@
               ],
               "rows": [
                 [
-                  "————————-",
-                  "————--:"
-                ],
-                [
                   "General",
                   "50%"
                 ],
@@ -3654,10 +3442,6 @@
                 "Requirement"
               ],
               "rows": [
-                [
-                  "———————--",
-                  "——————————————--"
-                ],
                 [
                   "Programme Level",
                   "Postgraduate"
@@ -3683,21 +3467,19 @@
                   "Fully Online"
                 ]
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Is Mathematics or a BCA Degree Mandatory?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Is Mathematics or a BCA Degree Mandatory?"
+            },
             {
               "kind": "p",
               "text": "The supplied admission framework specifies graduation from a recognised university and the prescribed marks requirement. Applicants should verify any programme-specific subject requirement with the current KUK Online admission notification before applying."
-            }
-          ]
-        },
-        {
-          "heading": "Age Limit",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Age Limit"
+            },
             {
               "kind": "p",
               "text": "The programme does not prescribe an upper age limit in the supplied eligibility framework. This makes it suitable for fresh graduates, working professionals and learners returning to higher education after a career gap."
@@ -3759,62 +3541,60 @@
           ]
         },
         {
-          "heading": "Step 1: Check Eligibility",
+          "heading": "Kurukshetra University Online MCA Admission Process",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Step 1: Check Eligibility"
+            },
             {
               "kind": "p",
               "text": "Confirm that you hold a recognised Bachelor’s degree and meet the applicable minimum marks requirement."
-            }
-          ]
-        },
-        {
-          "heading": "Step 2: Register Online",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 2: Register Online"
+            },
             {
               "kind": "p",
               "text": "Create an account through the official KUK Online admission portal using valid contact details."
-            }
-          ]
-        },
-        {
-          "heading": "Step 3: Complete the Application",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 3: Complete the Application"
+            },
             {
               "kind": "p",
               "text": "Enter personal, academic and communication details accurately and select the MCA programme."
-            }
-          ]
-        },
-        {
-          "heading": "Step 4: Upload Documents",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 4: Upload Documents"
+            },
             {
               "kind": "p",
               "text": "Upload academic certificates, identity proof, photograph and other required documents."
-            }
-          ]
-        },
-        {
-          "heading": "Step 5: Pay the Applicable Fee",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 5: Pay the Applicable Fee"
+            },
             {
               "kind": "p",
               "text": "Complete the required registration/programme fee payment through the authorised online payment method."
-            }
-          ]
-        },
-        {
-          "heading": "Step 6: Document Verification",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 6: Document Verification"
+            },
             {
               "kind": "p",
               "text": "The university verifies the submitted information and documents."
-            }
-          ]
-        },
-        {
-          "heading": "Step 7: Admission Confirmation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 7: Admission Confirmation"
+            },
             {
               "kind": "p",
               "text": "After successful verification and fee completion, the admission is confirmed according to university norms."
@@ -3837,12 +3617,6 @@
                 "Lumpsum Programme Fee"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—:",
-                  "—:"
-                ],
                 [
                   "Indian Students",
                   "2 Years / 4 Semesters",
@@ -3869,11 +3643,6 @@
                 "International Students"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—:",
-                  "—:"
-                ],
                 [
                   "Registration Fee",
                   "₹1,000",
@@ -3928,11 +3697,6 @@
                 "KUK Online MCA"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Tuition",
                   "Generally higher",
@@ -4009,12 +3773,11 @@
             {
               "kind": "p",
               "text": "The programme is organised into four semesters and progressively moves from computing fundamentals to advanced technology areas."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 1",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 1"
+            },
             {
               "kind": "table",
               "head": [
@@ -4022,10 +3785,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Operating System & Linux",
                   "Operating systems and Linux fundamentals"
@@ -4071,12 +3830,11 @@
             {
               "kind": "p",
               "text": "Students develop a foundation in programming, operating systems, data structures, web technologies and computational problem-solving."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 2",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 2"
+            },
             {
               "kind": "table",
               "head": [
@@ -4084,10 +3842,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Database Management Systems",
                   "Database concepts and management"
@@ -4137,12 +3891,11 @@
             {
               "kind": "p",
               "text": "Students move into databases, networking, AI, server-side technologies and industry-oriented learning."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 3",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 3"
+            },
             {
               "kind": "table",
               "head": [
@@ -4150,10 +3903,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Design and Analysis of Algorithms",
                   "Advanced algorithmic thinking"
@@ -4191,12 +3940,11 @@
             {
               "kind": "p",
               "text": "The semester expands into advanced algorithms, machine learning, cybersecurity, big data and analytics."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 4",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 4"
+            },
             {
               "kind": "table",
               "head": [
@@ -4204,10 +3952,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Blockchain Technology",
                   "Distributed ledger and blockchain concepts"
@@ -4245,7 +3989,7 @@
           "blocks": [
             {
               "kind": "h3",
-              "text": "1. Broad Computer Applications Foundation"
+              "text": "Broad Computer Applications Foundation"
             },
             {
               "kind": "p",
@@ -4253,7 +3997,7 @@
             },
             {
               "kind": "h3",
-              "text": "2. Emerging Technology Exposure"
+              "text": "Emerging Technology Exposure"
             },
             {
               "kind": "p",
@@ -4261,7 +4005,7 @@
             },
             {
               "kind": "h3",
-              "text": "3. Practical Components"
+              "text": "Practical Components"
             },
             {
               "kind": "p",
@@ -4269,7 +4013,7 @@
             },
             {
               "kind": "h3",
-              "text": "4. Analytical Development"
+              "text": "Analytical Development"
             },
             {
               "kind": "p",
@@ -4277,7 +4021,7 @@
             },
             {
               "kind": "h3",
-              "text": "5. University-Regulated Academic Structure"
+              "text": "University-Regulated Academic Structure"
             },
             {
               "kind": "p",
@@ -4329,10 +4073,6 @@
                 "Primary Purpose"
               ],
               "rows": [
-                [
-                  "————————--",
-                  "——————————————"
-                ],
                 [
                   "Assignments",
                   "Conceptual understanding and application"
@@ -4393,8 +4133,12 @@
           ]
         },
         {
-          "heading": "Software & Application Development",
+          "heading": "How to Align the Online MCA With Different Career Goals",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Software & Application Development"
+            },
             {
               "kind": "p",
               "text": "Focus on programming, data structures, algorithms, web technologies and software design."
@@ -4402,12 +4146,11 @@
             {
               "kind": "p",
               "text": "Potential progression: **Junior Developer → Software Engineer → Senior Developer / Technical Lead**"
-            }
-          ]
-        },
-        {
-          "heading": "IT Support, Systems & Networking",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "IT Support, Systems & Networking"
+            },
             {
               "kind": "p",
               "text": "Build strength in operating systems, networks, troubleshooting and system administration."
@@ -4415,12 +4158,11 @@
             {
               "kind": "p",
               "text": "Potential progression: **Technical Support → System Specialist → IT Administrator / Manager**"
-            }
-          ]
-        },
-        {
-          "heading": "Data & Analytics",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Data & Analytics"
+            },
             {
               "kind": "p",
               "text": "Use the curriculum’s data management, algorithms, machine learning, big data and Excel analytics components as a foundation."
@@ -4428,12 +4170,11 @@
             {
               "kind": "p",
               "text": "Potential progression: **Data Support Role → Data Analyst → Data Specialist**"
-            }
-          ]
-        },
-        {
-          "heading": "Cybersecurity",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Cybersecurity"
+            },
             {
               "kind": "p",
               "text": "Use ethical hacking, computer networks and cybersecurity fundamentals as an academic foundation."
@@ -4441,12 +4182,11 @@
             {
               "kind": "p",
               "text": "Potential progression: **Technical Associate → Security / Network Specialist → Security Professional**"
-            }
-          ]
-        },
-        {
-          "heading": "Higher Studies & Research",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Higher Studies & Research"
+            },
             {
               "kind": "p",
               "text": "The postgraduate degree can provide an academic foundation for further research or doctoral studies, subject to the eligibility requirements of the institution and programme concerned."
@@ -4498,12 +4238,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
-                [
                   "Fresh Graduates",
                   "Undergraduate degree",
                   "Entry-level IT roles",
@@ -4542,11 +4276,6 @@
                 "Long-Term Growth"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Software Development",
                   "Junior Developer",
@@ -4591,10 +4320,6 @@
               ],
               "rows": [
                 [
-                  "——————",
-                  "—————————————————"
-                ],
-                [
                   "Credential",
                   "Master of Computer Applications"
                 ],
@@ -4636,12 +4361,11 @@
             {
               "kind": "p",
               "text": "The value of the programme should be assessed beyond short-term placement claims."
-            }
-          ]
-        },
-        {
-          "heading": "Academic & Technical Value",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Academic & Technical Value"
+            },
             {
               "kind": "p",
               "text": "The programme develops:"
@@ -4657,12 +4381,11 @@
                 "Problem-solving",
                 "Application-oriented technical skills"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Institutional Value",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Institutional Value"
+            },
             {
               "kind": "list",
               "items": [
@@ -4671,12 +4394,11 @@
                 "University-regulated academic framework",
                 "Qualification suitable for employment and higher-study consideration subject to prevailing norms"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Long-Term Career Progression",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Long-Term Career Progression"
+            },
             {
               "kind": "table",
               "head": [
@@ -4684,10 +4406,6 @@
                 "Illustrative Roles"
               ],
               "rows": [
-                [
-                  "—————-",
-                  "————————————-"
-                ],
                 [
                   "0–3 Years",
                   "Junior Developer, Technical Support"
@@ -4788,11 +4506,6 @@
               ],
               "rows": [
                 [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
-                [
                   "Qualification Level",
                   "Postgraduate degree",
                   "Certificate"
@@ -4849,15 +4562,18 @@
             {
               "kind": "p",
               "text": "For a learner who wants to pursue postgraduate computer education while avoiding relocation and maintaining flexibility, Kurukshetra University Online MCA can be a relevant option to evaluate alongside other recognised online MCA programmes."
-            }
-          ]
-        },
-        {
-          "heading": "Important Information Note",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Important Information Note"
+            },
             {
               "kind": "p",
               "text": "Fees, eligibility rules, course structure, examination policies and online programme regulations may be revised by Kurukshetra University. The latest official KUK Online admission and academic notifications should be treated as the final authority before application or payment."
+            },
+            {
+              "kind": "p",
+              "text": "**Search-intent topics covered:** fees, eligibility, admission process, documents, entrance exam, age limit, syllabus, semester subjects, examinations, LMS, curriculum, career scope, ROI, higher studies, online vs regular MCA, and who should choose the programme."
             }
           ]
         }
@@ -4896,7 +4612,7 @@
       "author": "Kartik Ahuja",
       "authorSlug": "kartik-ahuja",
       "date": "2026-08-19",
-      "readingTime": "21 min",
+      "readingTime": "20 min",
       "kind": "blog"
     },
     "variant": "course",
@@ -4905,17 +4621,17 @@
     "post": {
       "intro": "Kurukshetra University Online BBA is a three-year undergraduate management programme designed for learners who want to build a formal foundation in business administration without attending regular on-campus classes. The programme is delivered through the university’s online learning framework and follows a semester-based academic structure.",
       "keyTakeaways": [
-        "—-: —-",
         "University: Kurukshetra University",
         "University Type: Public University",
         "Location: Kurukshetra, Haryana",
         "Established: 1956",
-        "Programme: Bachelor of Business Administration (BBA)"
+        "Programme: Bachelor of Business Administration (BBA)",
+        "Level: Undergraduate"
       ],
       "updated": "2026-08-19",
       "sections": [
         {
-          "heading": "Kurukshetra University Online BBA 2026: Complete Overview",
+          "heading": "Overview",
           "blocks": [
             {
               "kind": "p",
@@ -4941,10 +4657,6 @@
                 "Details"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "University",
                   "Kurukshetra University"
@@ -5073,12 +4785,11 @@
                 "**Public university status:** Kurukshetra University is a public university established in 1956.",
                 "**University-issued degree:** Successful students receive the BBA degree through Kurukshetra University’s academic framework."
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Why recognition matters for an online BBA",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Why recognition matters for an online BBA"
+            },
             {
               "kind": "p",
               "text": "A recognised university degree can support:"
@@ -5144,12 +4855,11 @@
             {
               "kind": "p",
               "text": "The supplied admission material describes an accessible eligibility structure for the online BBA."
-            }
-          ]
-        },
-        {
-          "heading": "Academic Eligibility",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Academic Eligibility"
+            },
             {
               "kind": "p",
               "text": "Applicants should:"
@@ -5162,12 +4872,11 @@
                 "Be eligible from Arts, Commerce, Science or an equivalent stream.",
                 "Meet any additional document or university-specific requirements applicable to the admission session."
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Is Commerce compulsory for Online BBA?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Is Commerce compulsory for Online BBA?"
+            },
             {
               "kind": "p",
               "text": "No. According to the supplied eligibility information, students from any stream can apply. Therefore, Arts, Commerce and Science students can consider the programme if they fulfil the university’s Class 12 eligibility requirement."
@@ -5175,21 +4884,19 @@
             {
               "kind": "p",
               "text": "Students without a commerce background may need to spend additional time understanding accounting, business mathematics and economics, but these subjects are part of the undergraduate curriculum and can be learned progressively."
-            }
-          ]
-        },
-        {
-          "heading": "Is an entrance exam required?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Is an entrance exam required?"
+            },
             {
               "kind": "p",
               "text": "The supplied admission information states that **no entrance examination is required** for the online BBA. Admission is based on eligibility fulfilment, application and document verification."
-            }
-          ]
-        },
-        {
-          "heading": "Is there an age limit?",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Is there an age limit?"
+            },
             {
               "kind": "p",
               "text": "The supplied programme material states that Kurukshetra University Online does not prescribe an upper age limit for the BBA."
@@ -5242,12 +4949,11 @@
             {
               "kind": "p",
               "text": "The admission process is designed as a digital application workflow."
-            }
-          ]
-        },
-        {
-          "heading": "Step 1: Online Application",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 1: Online Application"
+            },
             {
               "kind": "p",
               "text": "Visit the relevant official KUK Online admission portal and complete the application form."
@@ -5264,30 +4970,27 @@
                 "Academic information",
                 "Programme preference"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Step 2: Submit Documents",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 2: Submit Documents"
+            },
             {
               "kind": "p",
               "text": "Upload the required academic and identity documents according to the portal instructions."
-            }
-          ]
-        },
-        {
-          "heading": "Step 3: Eligibility Verification",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 3: Eligibility Verification"
+            },
             {
               "kind": "p",
               "text": "The university verifies the submitted academic information and documents against the programme eligibility requirements."
-            }
-          ]
-        },
-        {
-          "heading": "Step 4: Fee Payment",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 4: Fee Payment"
+            },
             {
               "kind": "p",
               "text": "Pay the applicable programme/admission fee through the permitted online payment method."
@@ -5295,21 +4998,19 @@
             {
               "kind": "p",
               "text": "Always retain the payment receipt for future reference."
-            }
-          ]
-        },
-        {
-          "heading": "Step 5: Document Verification",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 5: Document Verification"
+            },
             {
               "kind": "p",
               "text": "The submitted information and documents are reviewed by the university."
-            }
-          ]
-        },
-        {
-          "heading": "Step 6: Admission Confirmation",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Step 6: Admission Confirmation"
+            },
             {
               "kind": "p",
               "text": "After successful verification and completion of the required formalities, the learner receives admission/enrolment confirmation according to the university process."
@@ -5326,12 +5027,11 @@
             {
               "kind": "p",
               "text": "The supplied source material contains more than one fee representation for KUK Online programmes. For the BBA-specific detailed fee structure, the supplied programme file states the following:"
-            }
-          ]
-        },
-        {
-          "heading": "Indian Students",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Indian Students"
+            },
             {
               "kind": "table",
               "head": [
@@ -5340,11 +5040,6 @@
                 "Fee"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—:",
-                  "—:"
-                ],
                 [
                   "Lump-sum payment",
                   "3 Years / 6 Semesters",
@@ -5368,12 +5063,11 @@
                 "Re-appear examination fee is stated as **₹500 per subject**.",
                 "Fee revisions may be made according to university norms."
               ]
-            }
-          ]
-        },
-        {
-          "heading": "Why different fee figures may appear online",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Why different fee figures may appear online"
+            },
             {
               "kind": "p",
               "text": "A broader KUK course-fee table in the supplied material lists the BBA semester fee as **₹12,000 per semester**, while the BBA-specific detailed source gives **₹12,661 for the first semester** and ₹12,000 thereafter and separately identifies the registration component."
@@ -5459,8 +5153,12 @@
           ]
         },
         {
-          "heading": "Semester 1",
+          "heading": "Kurukshetra University Online BBA Semester-Wise Subjects",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "Semester 1"
+            },
             {
               "kind": "table",
               "head": [
@@ -5468,10 +5166,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "——————————————-",
-                  "——————————"
-                ],
                 [
                   "Financial Accounting",
                   "Accounting fundamentals"
@@ -5513,12 +5207,11 @@
             {
               "kind": "p",
               "text": "The first semester establishes the student’s basic understanding of accounting, management, organisation, quantitative skills, digital tools and communication."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 2",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 2"
+            },
             {
               "kind": "table",
               "head": [
@@ -5526,10 +5219,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Business Statistics",
                   "Data interpretation"
@@ -5571,12 +5260,11 @@
             {
               "kind": "p",
               "text": "The second semester introduces data analysis, economics and organisational behaviour while strengthening communication and professional skills."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 3",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 3"
+            },
             {
               "kind": "table",
               "head": [
@@ -5584,10 +5272,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Managerial Accounting",
                   "Management-oriented accounting"
@@ -5629,12 +5313,11 @@
             {
               "kind": "p",
               "text": "Students begin studying functional management areas, particularly marketing, HR and managerial accounting, while gaining exposure to applied communication and optional functional learning."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 4",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 4"
+            },
             {
               "kind": "table",
               "head": [
@@ -5642,10 +5325,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Capital Markets",
                   "Financial market understanding"
@@ -5683,12 +5362,11 @@
             {
               "kind": "p",
               "text": "The fourth semester expands the learner’s understanding of markets, research, business regulations, consumer protection and financial literacy."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 5",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 5"
+            },
             {
               "kind": "table",
               "head": [
@@ -5696,10 +5374,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "———————————",
-                  "———————————"
-                ],
                 [
                   "Corporate Finance",
                   "Corporate financial decisions"
@@ -5733,12 +5407,11 @@
             {
               "kind": "p",
               "text": "The fifth semester moves towards corporate and industry-oriented learning, combining finance, international business, legal knowledge, corporate practices and internship exposure."
-            }
-          ]
-        },
-        {
-          "heading": "Semester 6",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Semester 6"
+            },
             {
               "kind": "table",
               "head": [
@@ -5746,10 +5419,6 @@
                 "Academic Focus"
               ],
               "rows": [
-                [
-                  "———————————-",
-                  "——————————"
-                ],
                 [
                   "Analysis of Financial Statements",
                   "Financial interpretation"
@@ -5801,11 +5470,6 @@
                 "Purpose"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "AEC",
                   "Ability Enhancement Course",
@@ -5867,8 +5531,12 @@
           ]
         },
         {
-          "heading": "For Marketing and Sales",
+          "heading": "How to Align the BBA With Different Career Goals",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "For Marketing and Sales"
+            },
             {
               "kind": "p",
               "text": "Students can strengthen:"
@@ -5883,12 +5551,11 @@
                 "Communication",
                 "Market analysis"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "For HR",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "For HR"
+            },
             {
               "kind": "p",
               "text": "Students can focus on:"
@@ -5902,12 +5569,11 @@
                 "Business ethics",
                 "Coordination and interpersonal skills"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "For Finance",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "For Finance"
+            },
             {
               "kind": "p",
               "text": "Students can build knowledge in:"
@@ -5922,12 +5588,11 @@
                 "Financial Statement Analysis",
                 "Financial Literacy"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "For Entrepreneurship",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "For Entrepreneurship"
+            },
             {
               "kind": "p",
               "text": "Relevant areas include:"
@@ -5943,12 +5608,11 @@
                 "E-Commerce",
                 "Business Law"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "For Higher Studies",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "For Higher Studies"
+            },
             {
               "kind": "p",
               "text": "The broad curriculum can provide a foundation for:"
@@ -6062,15 +5726,14 @@
             {
               "kind": "p",
               "text": "The broader KUK Online material describes online examinations through a secure platform, with time-limited sections and online monitoring as applicable."
-            }
-          ]
-        },
-        {
-          "heading": "How the evaluation works",
-          "blocks": [
+            },
             {
               "kind": "h3",
-              "text": "1. Continuous Learning"
+              "text": "How the evaluation works"
+            },
+            {
+              "kind": "h3",
+              "text": "Continuous Learning"
             },
             {
               "kind": "p",
@@ -6078,7 +5741,7 @@
             },
             {
               "kind": "h3",
-              "text": "2. End-Semester Examination"
+              "text": "End-Semester Examination"
             },
             {
               "kind": "p",
@@ -6086,7 +5749,7 @@
             },
             {
               "kind": "h3",
-              "text": "3. Internship Evaluation"
+              "text": "Internship Evaluation"
             },
             {
               "kind": "p",
@@ -6094,7 +5757,7 @@
             },
             {
               "kind": "h3",
-              "text": "4. Final Academic Evaluation"
+              "text": "Final Academic Evaluation"
             },
             {
               "kind": "p",
@@ -6193,10 +5856,6 @@
                 "Typical Work"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Business Development Executive",
                   "Identifies leads, develops business opportunities and supports revenue growth"
@@ -6309,10 +5968,6 @@
               ],
               "rows": [
                 [
-                  "—————————",
-                  "—————————————:"
-                ],
-                [
                   "Infosys Technologies Ltd.",
                   "₹6 LPA"
                 ],
@@ -6350,12 +6005,11 @@
             {
               "kind": "p",
               "text": "For an online BBA, ROI can be considered across four areas:"
-            }
-          ]
-        },
-        {
-          "heading": "1. Academic Value",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Academic Value"
+            },
             {
               "kind": "p",
               "text": "Students gain structured knowledge of:"
@@ -6372,12 +6026,11 @@
                 "Business law",
                 "Entrepreneurship"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "2. Cost Efficiency",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Cost Efficiency"
+            },
             {
               "kind": "p",
               "text": "Online learning can reduce:"
@@ -6390,21 +6043,19 @@
                 "Daily commuting",
                 "Some campus-related living expenses"
               ]
-            }
-          ]
-        },
-        {
-          "heading": "3. Career Flexibility",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Career Flexibility"
+            },
             {
               "kind": "p",
               "text": "The broad BBA curriculum can support entry-level roles across several business functions rather than restricting learners to one narrow area."
-            }
-          ]
-        },
-        {
-          "heading": "4. Higher-Study Pathway",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Higher-Study Pathway"
+            },
             {
               "kind": "p",
               "text": "Students can use the bachelor’s degree as a foundation for MBA and other postgraduate programmes, subject to the next institution’s eligibility requirements."
@@ -6422,11 +6073,6 @@
                 "KUK Online BBA"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Physical attendance",
                   "Generally required",
@@ -6481,44 +6127,44 @@
           ]
         },
         {
-          "heading": "12th Pass Students",
+          "heading": "Who Should Choose Kurukshetra University Online BBA?",
           "blocks": [
+            {
+              "kind": "h3",
+              "text": "12th Pass Students"
+            },
             {
               "kind": "p",
               "text": "Students who want a business degree after Class 12 and prefer online education can consider the programme."
-            }
-          ]
-        },
-        {
-          "heading": "Working Professionals",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Working Professionals"
+            },
             {
               "kind": "p",
               "text": "Professionals who want to continue working while completing an undergraduate degree may benefit from the online format."
-            }
-          ]
-        },
-        {
-          "heading": "Students From Any Stream",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Students From Any Stream"
+            },
             {
               "kind": "p",
               "text": "The supplied eligibility information allows students from Arts, Commerce and Science backgrounds to apply."
-            }
-          ]
-        },
-        {
-          "heading": "Aspiring Entrepreneurs",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Aspiring Entrepreneurs"
+            },
             {
               "kind": "p",
               "text": "Students interested in entrepreneurship can use the broad business curriculum as a foundation for understanding management, finance, marketing and business operations."
-            }
-          ]
-        },
-        {
-          "heading": "Learners Planning an MBA",
-          "blocks": [
+            },
+            {
+              "kind": "h3",
+              "text": "Learners Planning an MBA"
+            },
             {
               "kind": "p",
               "text": "The BBA provides undergraduate exposure to management subjects before postgraduate specialisation."
@@ -6557,7 +6203,7 @@
           "blocks": [
             {
               "kind": "h3",
-              "text": "1. Public University Background"
+              "text": "Public University Background"
             },
             {
               "kind": "p",
@@ -6565,7 +6211,7 @@
             },
             {
               "kind": "h3",
-              "text": "2. Online Flexibility"
+              "text": "Online Flexibility"
             },
             {
               "kind": "p",
@@ -6573,7 +6219,7 @@
             },
             {
               "kind": "h3",
-              "text": "3. Broad Business Curriculum"
+              "text": "Broad Business Curriculum"
             },
             {
               "kind": "p",
@@ -6581,7 +6227,7 @@
             },
             {
               "kind": "h3",
-              "text": "4. Accessible Eligibility"
+              "text": "Accessible Eligibility"
             },
             {
               "kind": "p",
@@ -6589,7 +6235,7 @@
             },
             {
               "kind": "h3",
-              "text": "5. No Entrance Test"
+              "text": "No Entrance Test"
             },
             {
               "kind": "p",
@@ -6597,7 +6243,7 @@
             },
             {
               "kind": "h3",
-              "text": "6. Internship Exposure"
+              "text": "Internship Exposure"
             },
             {
               "kind": "p",
@@ -6605,7 +6251,7 @@
             },
             {
               "kind": "h3",
-              "text": "7. Higher Study Foundation"
+              "text": "Higher Study Foundation"
             },
             {
               "kind": "p",
@@ -6676,10 +6322,6 @@
                 "What to Check"
               ],
               "rows": [
-                [
-                  "——————-",
-                  "—————————————————--"
-                ],
                 [
                   "Recognition",
                   "UGC entitlement/recognition for the exact programme"
@@ -6801,11 +6443,6 @@
                 "Why"
               ],
               "rows": [
-                [
-                  "—-",
-                  "—-",
-                  "—-"
-                ],
                 [
                   "Class 12 student",
                   "High",
@@ -6950,150 +6587,6 @@
           ]
         },
         {
-          "heading": "Is Kurukshetra University Online BBA valid?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied programme information presents it as a recognised university-governed online BBA degree. Students should verify the current recognition/entitlement applicable to their admission session."
-            }
-          ]
-        },
-        {
-          "heading": "What is the duration of KUK Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The programme duration is 3 years, divided into 6 semesters."
-            }
-          ]
-        },
-        {
-          "heading": "What is the eligibility for Kurukshetra University Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Students should have passed Class 12/10+2 from a recognised board. The supplied information states that students from any stream can apply."
-            }
-          ]
-        },
-        {
-          "heading": "Is there an entrance exam for KUK Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "No entrance examination is stated as required in the supplied admission information."
-            }
-          ]
-        },
-        {
-          "heading": "Is there an age limit for KUK Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied programme information states that there is no upper age limit."
-            }
-          ]
-        },
-        {
-          "heading": "What is the KUK Online BBA fee?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The detailed BBA source supplied for this article states ₹72,661 for lump-sum payment or ₹12,661 in Semester 1 followed by ₹12,000 per semester from Semester 2 onwards. Fee figures can change, so verify the current university fee notice."
-            }
-          ]
-        },
-        {
-          "heading": "Does KUK Online BBA offer EMI?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The broader KUK Online fee material indicates EMI options may be available. Current terms should be confirmed before payment."
-            }
-          ]
-        },
-        {
-          "heading": "What subjects are taught in KUK Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Subjects include financial accounting, principles of management, business organisation, business mathematics, statistics, economics, organisational behaviour, marketing, HR, finance, capital markets, business research, international business, business laws, entrepreneurship, e-commerce and advertising."
-            }
-          ]
-        },
-        {
-          "heading": "Does the BBA include an internship?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes. The supplied curriculum includes an internship component, particularly in Semester V."
-            }
-          ]
-        },
-        {
-          "heading": "Does KUK Online BBA have specialisations?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied BBA material describes a broad-based curriculum rather than traditional elective specialisation tracks."
-            }
-          ]
-        },
-        {
-          "heading": "Can I pursue an MBA after KUK Online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "A recognised bachelor’s degree can generally provide the academic foundation for MBA applications, but the target university’s current eligibility criteria should always be checked."
-            }
-          ]
-        },
-        {
-          "heading": "Can I study KUK Online BBA while working?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The online format is designed to provide flexibility and can be suitable for working learners, subject to their ability to manage academic deadlines."
-            }
-          ]
-        },
-        {
-          "heading": "Is BBA available for students from Arts stream?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Yes, the supplied eligibility information states that students from any stream can apply."
-            }
-          ]
-        },
-        {
-          "heading": "What careers can I pursue after online BBA?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "Potential entry-level areas include marketing, sales, HR, finance, operations, business development, administration and entrepreneurship."
-            }
-          ]
-        },
-        {
-          "heading": "Does an online BBA guarantee a job?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "No. A degree can improve academic eligibility, but employment depends on skills, experience, internships, communication, employer requirements and performance."
-            }
-          ]
-        },
-        {
-          "heading": "Does KUK provide placement support?",
-          "blocks": [
-            {
-              "kind": "p",
-              "text": "The supplied broader KUK Online material describes career guidance, resume building, interview preparation and hiring-partner support. The extent of support should be confirmed for the specific online BBA batch."
-            }
-          ]
-        },
-        {
           "heading": "Final Verdict: Is Kurukshetra University Online BBA Worth Considering?",
           "blocks": [
             {
@@ -7167,12 +6660,7 @@
             {
               "kind": "p",
               "text": "Do not publish salary, placement, recognition, ranking, fee or admission-deadline claims as permanent facts without periodic review. These are high-change fields and should be updated whenever the university releases a new admission cycle or policy."
-            }
-          ]
-        },
-        {
-          "heading": "Suggested Internal Linking Opportunities",
-          "blocks": [
+            },
             {
               "kind": "p",
               "text": "Link this article naturally to:"
@@ -7191,11 +6679,96 @@
                 "Online MBA After BBA",
                 "Online vs Regular BBA"
               ]
+            },
+            {
+              "kind": "h3",
+              "text": "Suggested FAQ Schema Questions"
+            },
+            {
+              "kind": "list",
+              "items": [
+                "Is Kurukshetra University Online BBA valid?",
+                "What is the fee of Kurukshetra University Online BBA?",
+                "What is the eligibility for KUK Online BBA?",
+                "Is there an entrance exam for KUK Online BBA?",
+                "What is the duration of Kurukshetra University Online BBA?",
+                "Does KUK Online BBA offer specialisations?",
+                "Can I pursue an MBA after KUK Online BBA?",
+                "Is KUK Online BBA suitable for working professionals?",
+                "What are the subjects in KUK Online BBA?",
+                "Does Kurukshetra University Online BBA provide placement support?"
+              ],
+              "ordered": true
             }
           ]
         }
       ],
-      "faqs": [],
+      "faqs": [
+        {
+          "question": "Is Kurukshetra University Online BBA valid?",
+          "answer": "The supplied programme information presents it as a recognised university-governed online BBA degree. Students should verify the current recognition/entitlement applicable to their admission session."
+        },
+        {
+          "question": "What is the duration of KUK Online BBA?",
+          "answer": "The programme duration is 3 years, divided into 6 semesters."
+        },
+        {
+          "question": "What is the eligibility for Kurukshetra University Online BBA?",
+          "answer": "Students should have passed Class 12/10+2 from a recognised board. The supplied information states that students from any stream can apply."
+        },
+        {
+          "question": "Is there an entrance exam for KUK Online BBA?",
+          "answer": "No entrance examination is stated as required in the supplied admission information."
+        },
+        {
+          "question": "Is there an age limit for KUK Online BBA?",
+          "answer": "The supplied programme information states that there is no upper age limit."
+        },
+        {
+          "question": "What is the KUK Online BBA fee?",
+          "answer": "The detailed BBA source supplied for this article states ₹72,661 for lump-sum payment or ₹12,661 in Semester 1 followed by ₹12,000 per semester from Semester 2 onwards. Fee figures can change, so verify the current university fee notice."
+        },
+        {
+          "question": "Does KUK Online BBA offer EMI?",
+          "answer": "The broader KUK Online fee material indicates EMI options may be available. Current terms should be confirmed before payment."
+        },
+        {
+          "question": "What subjects are taught in KUK Online BBA?",
+          "answer": "Subjects include financial accounting, principles of management, business organisation, business mathematics, statistics, economics, organisational behaviour, marketing, HR, finance, capital markets, business research, international business, business laws, entrepreneurship, e-commerce and advertising."
+        },
+        {
+          "question": "Does the BBA include an internship?",
+          "answer": "Yes. The supplied curriculum includes an internship component, particularly in Semester V."
+        },
+        {
+          "question": "Does KUK Online BBA have specialisations?",
+          "answer": "The supplied BBA material describes a broad-based curriculum rather than traditional elective specialisation tracks."
+        },
+        {
+          "question": "Can I pursue an MBA after KUK Online BBA?",
+          "answer": "A recognised bachelor’s degree can generally provide the academic foundation for MBA applications, but the target university’s current eligibility criteria should always be checked."
+        },
+        {
+          "question": "Can I study KUK Online BBA while working?",
+          "answer": "The online format is designed to provide flexibility and can be suitable for working learners, subject to their ability to manage academic deadlines."
+        },
+        {
+          "question": "Is BBA available for students from Arts stream?",
+          "answer": "Yes, the supplied eligibility information states that students from any stream can apply."
+        },
+        {
+          "question": "What careers can I pursue after online BBA?",
+          "answer": "Potential entry-level areas include marketing, sales, HR, finance, operations, business development, administration and entrepreneurship."
+        },
+        {
+          "question": "Does an online BBA guarantee a job?",
+          "answer": "No. A degree can improve academic eligibility, but employment depends on skills, experience, internships, communication, employer requirements and performance."
+        },
+        {
+          "question": "Does KUK provide placement support?",
+          "answer": "The supplied broader KUK Online material describes career guidance, resume building, interview preparation and hiring-partner support. The extent of support should be confirmed for the specific online BBA batch."
+        }
+      ],
       "sources": [],
       "related": [
         {
