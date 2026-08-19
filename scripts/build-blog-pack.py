@@ -321,7 +321,12 @@ def parse_table(lines: list[str]) -> dict | None:
 
 def parse_sections(md: str) -> list[dict]:
     lines = md.splitlines()
+    # Sources that use h1 for sections keep their h2s as in-section sub-headings
+    # (this is also what makes FAQ questions parseable), otherwise h2 is the
+    # section level. This caps section counts instead of fragmenting the page.
+    section_level = 1 if re.search(r"^# ", md, re.M) else 2
     sections: list[dict] = []
+
     cur: dict | None = None
     buf: list[str] = []
     mode = None  # None | "p" | "ul" | "ol" | "table" | "quote"
