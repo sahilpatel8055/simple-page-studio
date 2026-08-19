@@ -306,7 +306,11 @@ def parse_table(lines: list[str]) -> dict | None:
         for ln in lines
         if ln.strip().startswith("|")
     ]
-    rows = [r for r in rows if not all(re.fullmatch(r":?-{2,}:?", c.strip() or "-") for c in r)]
+    rows = [
+        r for r in rows
+        if not all(re.fullmatch(r"[:\-—]{1,}", c.strip() or "-") for c in r)
+    ]
+
     if len(rows) < 2:
         return None
     head, body = rows[0], rows[1:]
