@@ -372,6 +372,50 @@ export const universityFeeTables: Record<string, UniversityFeeTable> = {
       { course: "MBA", specialisation: "Hospital & Healthcare Management", fee: "₹1,20,000", duration: "2 Years" },
     ],
   },
+
+  "sharda-online": {
+    note: "Fees as published by Sharda University Online for Indian/SAARC students (2025-26). International fees and one-time registration/examination charges are listed separately by the university.",
+    rows: [
+      { course: "BBA", specialisation: "General", fee: "₹17,500 / semester · ₹1,05,000 total", duration: "3 Years" },
+      { course: "BCA", specialisation: "General", fee: "₹17,500 / semester · ₹1,05,000 total", duration: "3 Years" },
+      {
+        course: "MBA",
+        specialisation: "Marketing, Finance, Human Resource Management, Strategic HRM, Healthcare & Hospital Administration",
+        fee: "₹35,000 / semester · ₹1,40,000 total",
+        duration: "2 Years",
+      },
+      { course: "MBA", specialisation: "Data Science & Analytics", fee: "₹49,000 / semester · ₹1,96,000 total", duration: "2 Years" },
+      { course: "MCA", specialisation: "General", fee: "₹30,000 / semester · ₹1,20,000 total", duration: "2 Years" },
+    ],
+  },
+
+  "kurukshetra-university": {
+    note: "Fees published by Kurukshetra University's Centre for Distance and Online Education. Semester amounts are indicative; the live fee portal is the final authority.",
+    rows: [
+      { course: "BA", fee: "₹12,000 / semester · ≈ ₹72,000 total", duration: "3 Years" },
+      { course: "B.Com", fee: "₹12,000 / semester · ≈ ₹72,000 total", duration: "3 Years" },
+      { course: "BBA", fee: "₹12,661 (Sem 1, incl. ₹1,000 registration), ₹12,000 / semester thereafter · ₹72,661 lump sum", duration: "3 Years" },
+      { course: "MA", specialisation: "English, Political Science, Mass Communication", fee: "₹15,000 / semester · ≈ ₹60,000 total", duration: "2 Years" },
+      { course: "M.Com", fee: "₹15,000 / semester · ≈ ₹60,000 total", duration: "2 Years" },
+      { course: "MBA", fee: "₹25,500 / semester · ≈ ₹1,02,000 total", duration: "2 Years" },
+      { course: "MCA", fee: "₹19,947 (Sem 1), ₹18,900 / semester thereafter · ₹76,647 lump sum", duration: "2 Years" },
+    ],
+  },
+
+  ycmou: {
+    note: "Fees as published by Yashwantrao Chavan Maharashtra Open University. Where the university does not publish a programme-wise amount, no figure is shown — confirm at the study centre before paying.",
+    rows: [
+      { course: "MBA", fee: "₹17,928 (Year 1) + ₹21,108 (Year 2) · ₹39,036 total", duration: "2 Years" },
+      {
+        course: "MCA",
+        fee: "₹25,100 / year (tuition, exam, registration, development fund, UPF and study-centre fee) · ₹75,300 over 3 years",
+        duration: "As per current programme structure",
+      },
+      { course: "MA", fee: "Not published programme-wise", duration: "2 Years" },
+      { course: "M.Com", fee: "Not published programme-wise", duration: "2 Years" },
+      { course: "M.Sc", fee: "Not published programme-wise", duration: "2 Years" },
+    ],
+  },
 };
 
 export const feeTableFor = (slug: string): UniversityFeeTable | undefined => universityFeeTables[slug];
