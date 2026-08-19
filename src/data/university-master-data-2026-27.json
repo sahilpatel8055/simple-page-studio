@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "dataset_name": "OnlineUniversityGuide.in University Master Data",
   "academic_session": "2026-27",
-  "last_master_verification": "2026-08-16",
+  "last_master_verification": "2026-08-19",
   "currency": "INR",
   "data_policy": {
     "never_invent_fee": true,
@@ -34,7 +34,7 @@
         "official_admission_portal": null,
         "location": "Noida, Uttar Pradesh",
         "state": "Uttar Pradesh",
-        "established_year": null,
+        "established_year": 2005,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -1054,7 +1054,7 @@
         "official_admission_portal": null,
         "location": "Jaipur, Rajasthan",
         "state": "Rajasthan",
-        "established_year": null,
+        "established_year": 2011,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -3145,7 +3145,7 @@
         "official_admission_portal": null,
         "location": "Phagwara, Punjab",
         "state": "Punjab",
-        "established_year": null,
+        "established_year": 2005,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -4389,7 +4389,7 @@
         "official_admission_portal": null,
         "location": "Delhi",
         "state": "Delhi",
-        "established_year": null,
+        "established_year": 1922,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -7277,7 +7277,7 @@
         "official_admission_portal": null,
         "location": "Mumbai, Maharashtra",
         "state": "Maharashtra",
-        "established_year": null,
+        "established_year": 1981,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -9188,7 +9188,7 @@
         "official_admission_portal": null,
         "location": "Kolkata, West Bengal",
         "state": "West Bengal",
-        "established_year": null,
+        "established_year": 1997,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -12000,7 +12000,7 @@
         "official_admission_portal": null,
         "location": "Mysuru, Karnataka",
         "state": "Karnataka",
-        "established_year": null,
+        "established_year": 1996,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -13787,7 +13787,7 @@
         "official_admission_portal": null,
         "location": "Meerut, Uttar Pradesh",
         "state": "Uttar Pradesh",
-        "established_year": null,
+        "established_year": 2008,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
@@ -14177,7 +14177,7 @@
         "official_admission_portal": null,
         "location": "Ahmedabad, Gujarat",
         "state": "Gujarat",
-        "established_year": null,
+        "established_year": 1994,
         "official_contact": null,
         "official_prospectus_url": null,
         "official_admission_notification_url": null
