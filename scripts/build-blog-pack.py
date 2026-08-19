@@ -241,6 +241,56 @@ def to_gfm(path: Path) -> str:
     ).stdout
 
 
+BOLD_ONLY = re.compile(r"^\*\*(.{3,140}?)\*\*[ \t]*$")
+TOC_LINE = re.compile(r"^(table of contents|contents)\s*:?\s*$", re.I)
+
+
+def normalise_headings(md: str) -> str:
+    """
+    Some sources (notably the YCMOU eligibility docx) carry no real headings:
+    section titles are bold-only paragraphs and a numbered table of contents
+    sits under the document title. Promote those bold lines to h2 and drop the
+    TOC block so the article does not collapse into one 'Overview' section.
+    """
+    if re.search(r"^#{1,3} ", md, re.M):
+        return md
+
+    out: list[str] = []
+    lines = md.splitlines()
+    i = 0
+    seen_heading = False
+    while i < len(lines):
+        line = lines[i].rstrip()
+        stripped = line.strip()
+
+        if TOC_LINE.match(re.sub(r"\*", "", stripped)):
+            i += 1
+            while i < len(lines) and (
+                not lines[i].strip() or re.match(r"^\s*(\d+[.)]|[-*])\s+", lines[i])
+            ):
+                i += 1
+            continue
+
+        m = BOLD_ONLY.match(stripped)
+        if m:
+            text = m.group(1).strip()
+            words = len(text.split())
+            if words <= 12 and not text.endswith("."):
+                if not seen_heading and re.match(r"^\s*[^0-9]", text):
+                    # document title — its body belongs to the opening section
+                    seen_heading = True
+                    i += 1
+                    continue
+                seen_heading = True
+                out.append(f"## {re.sub(r'^\\s*\\d+[.)]\\s*', '', text)}")
+                i += 1
+                continue
+        out.append(line)
+        i += 1
+    return "\n".join(out)
+
+
+
 # --------------------------------------------------------------------------- #
 # markdown -> blocks
 # --------------------------------------------------------------------------- #
