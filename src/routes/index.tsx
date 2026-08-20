@@ -36,9 +36,9 @@ import {
 } from "@/lib/content";
 import { canonical, collectionSchema, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
 
-const title = "Online & Distance Education Research, Reviews and Comparisons";
+const title = "Top Online Universities: Compare Fees, Programs and EMI - DegreeKhojo";
 const description =
-  "Independent research on UGC-entitled online and distance universities in India — compare fees, approvals, placements, scholarships and read learner reviews.";
+  "Explore and compare top online and distance universities in India based on fees, courses, admissions, approvals, placements and EMI options. Make an informed choice with DegreeKhojo.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
