@@ -106,7 +106,7 @@ function Page() {
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-[#7f1813]/10 blur-3xl" />
           <img
-            src="/course-counselling-illustration.png"
+            src={counsellingArt}
             alt="Online degree counselling illustration"
             className="relative z-10 w-full rounded-3xl"
             loading="lazy"
