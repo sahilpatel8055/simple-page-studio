@@ -71,6 +71,7 @@ export const Route = createFileRoute("/courses/$course/")({
       feeRangeLabel: p.feeRangeLabel,
       durationYears: p.durationYears,
       providers: profile.offerings.length,
+      modes: programmeModes(params.course),
     };
   },
   head: ({ params, loaderData }) => {
@@ -90,7 +91,7 @@ export const Route = createFileRoute("/courses/$course/")({
               name: family.name,
               description,
               path,
-              mode: "online",
+              modes: familyModes(family.offers.map((o) => o.programmeSlug)),
               level: family.level === "PG" ? "Postgraduate" : "Undergraduate",
             }),
           ),
@@ -148,7 +149,7 @@ export const Route = createFileRoute("/courses/$course/")({
             description: loaderData.summary,
             path,
             level: loaderData.level,
-            mode: "online",
+            modes: loaderData.modes,
           }),
         ),
         jsonLd(

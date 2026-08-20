@@ -117,6 +117,7 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
       level: profile.programme.record.level,
       admissionProcess: profile.university.record.admissionProcess,
       summary: profile.programme.record.summary,
+      modes: offeringModes(params.slug, params.course),
     };
   },
   head: ({ params, loaderData }) => {
@@ -154,7 +155,7 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
             description: loaderData.summary,
             provider: loaderData.universityName,
             path,
-            mode: "online",
+            modes: loaderData.modes,
             level: loaderData.level,
           }),
         ),
