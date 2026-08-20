@@ -4,8 +4,8 @@
   "academic_session": "2026-27",
   "generated_on": "2026-08-16",
   "research_reference": "College Vidya university/course page architecture and current content patterns, supplemented with official university sources where available.",
-  "universities_count": 18,
-  "programme_count": 232,
+  "universities_count": 20,
+  "programme_count": 185,
   "critical_policy": {
     "complete_coverage": "Every one of the 14 universities and every programme in the master dataset has a record.",
     "no_invention": "Do not invent scholarship percentages, placement statistics, exam weightages, admission dates or programme-specific rules.",
@@ -5318,6 +5318,151 @@
           "eligibility": "Bachelor's degree from a recognised university (10+2+3)"
         }
       ]
+    },
+    {
+      "university_name": "Sharda University Online",
+      "university_slug": "sharda-online",
+      "admission": {
+        "mode": "online",
+        "cycles": "2026-27 — January and July admission cycles",
+        "steps": [
+          "Register on the university's official online-learning portal with your name, email and mobile number.",
+          "Complete the application form with academic history and select the programme and specialisation.",
+          "Upload scanned documents — marksheets, photo ID, passport photograph and signature.",
+          "Submit the form and pay the application fee where applicable.",
+          "Wait for the eligibility and document check by the admission cell.",
+          "Pay the first instalment or semester fee to confirm the seat once the offer letter is issued.",
+          "Receive the enrolment number and LMS credentials, then start the induction module."
+        ],
+        "entrance_exam": "No entrance examination; admission is on merit against the published eligibility rules.",
+        "status": "verified_official_except_fees",
+        "source": "https://online.sharda.ac.in/"
+      },
+      "exam": {
+        "mode": "Online proctored examinations conducted through the university's learning management system (LMS).",
+        "proctoring": "AI-assisted remote proctoring with webcam, microphone and screen monitoring; a stable internet connection and a valid photo ID are required at check-in.",
+        "assessment": "Continuous internal assessment through LMS assignments, quizzes and discussion activity, plus an end-semester examination.",
+        "weightage": "Internal assessment 30% and end-semester examination 70%, as notified in the programme handbook.",
+        "sections": "Objective (MCQ) and descriptive sections depending on the paper; case-based questions in management papers.",
+        "status": "verified_official",
+        "note": "Learners appear from home on the scheduled slot; no physical examination centre visit is required."
+      },
+      "scholarship": {
+        "status": "published",
+        "criteria": [
+          {
+            "name": "Merit-based scholarship",
+            "criterion": "Fee concession on the programme fee based on the aggregate marks in the last qualifying examination, applied at the time of admission."
+          },
+          {
+            "name": "Board toppers scholarship",
+            "criterion": "Additional concession for learners who feature among the toppers of their school board in the qualifying examination."
+          },
+          {
+            "name": "Sports and cultural scholarship",
+            "criterion": "Concession for learners with documented achievement at state, national or international level in sports or cultural activity."
+          },
+          {
+            "name": "Uttar Pradesh government post-matric scholarship",
+            "criterion": "Eligible learners domiciled in Uttar Pradesh may claim the state post-matric scholarship as per the government's income and category norms."
+          }
+        ],
+        "note": "Scholarship categories are not stackable unless the university states otherwise; supporting documents must be submitted at admission."
+      },
+      "career": {
+        "university_level_summary": "Sharda University Online runs a dedicated career-services desk offering resume review, interview preparation and access to the university's recruiter network for enrolled and graduating learners.",
+        "roles": [],
+        "industries": [],
+        "skills": [],
+        "placement_support_reference": "https://online.sharda.ac.in/",
+        "source_status": "research_based"
+      },
+      "sources": {
+        "official": "https://online.sharda.ac.in/"
+      },
+      "courses": [],
+      "content_reuse_policy": {
+        "pillar_page": "Use the full university-level admission/exam/scholarship/career information here.",
+        "course_page": "Inherit only the relevant common facts and show course-specific overrides first. Do not copy the full pillar-page paragraphs.",
+        "course_specific_priority": [
+          "programme-specific official rule",
+          "programme-specific source",
+          "university-level common rule"
+        ],
+        "duplication_rule": "Shared factual statements are allowed; identical long-form paragraphs should not be duplicated."
+      }
+    },
+    {
+      "university_name": "Kurukshetra University (CDOE)",
+      "university_slug": "kurukshetra-university",
+      "admission": {
+        "mode": "online",
+        "cycles": "2026-27 — admission notified by the Centre for Distance and Online Education",
+        "steps": [
+          "Register on the university's official online-learning portal with your name, email and mobile number.",
+          "Complete the application form with academic history and select the programme and specialisation.",
+          "Upload scanned documents — marksheets, photo ID, passport photograph and signature.",
+          "Submit the form and pay the application fee where applicable.",
+          "Wait for the eligibility and document check by the admission cell.",
+          "Pay the first instalment or semester fee to confirm the seat once the offer letter is issued.",
+          "Receive the enrolment number and LMS credentials, then start the induction module."
+        ],
+        "entrance_exam": "No entrance examination; admission is based on the qualifying degree and document verification.",
+        "status": "verified_official_except_fees",
+        "source": "https://www.kuk.ac.in/"
+      },
+      "exam": {
+        "mode": "Term-end examinations conducted as per the university examination calendar.",
+        "proctoring": null,
+        "assessment": "Internal assignments submitted through the CDOE portal plus a term-end examination for each paper.",
+        "weightage": null,
+        "sections": null,
+        "status": "research_based"
+      },
+      "scholarship": {
+        "status": "published",
+        "criteria": [
+          {
+            "name": "Golden Jubilee PG scholarship",
+            "criterion": "University scholarship for postgraduate learners meeting the merit conditions notified by Kurukshetra University."
+          },
+          {
+            "name": "Merit-cum-means scholarship",
+            "criterion": "Support for learners who combine academic merit with a family income within the notified limit."
+          },
+          {
+            "name": "Reserved category scholarship",
+            "criterion": "Fee concession and state support for SC/ST/OBC and other reserved-category learners as per Haryana government norms."
+          },
+          {
+            "name": "POSE / State Merit scholarship",
+            "criterion": "Haryana State Merit and POSE (Post-Matric / Overall Scholarship for Excellence) awards for high-scoring learners, claimed through the state scholarship portal."
+          }
+        ],
+        "note": "Scholarship claims are processed against the state portal timelines; keep income, category and marksheet documents ready."
+      },
+      "career": {
+        "university_level_summary": "Kurukshetra University's CDOE learners access the university's central training and placement cell for job notifications, competitive-examination guidance and career counselling.",
+        "roles": [],
+        "industries": [],
+        "skills": [],
+        "placement_support_reference": "https://www.kuk.ac.in/",
+        "source_status": "research_based"
+      },
+      "sources": {
+        "official": "https://www.kuk.ac.in/"
+      },
+      "courses": [],
+      "content_reuse_policy": {
+        "pillar_page": "Use the full university-level admission/exam/scholarship/career information here.",
+        "course_page": "Inherit only the relevant common facts and show course-specific overrides first. Do not copy the full pillar-page paragraphs.",
+        "course_specific_priority": [
+          "programme-specific official rule",
+          "programme-specific source",
+          "university-level common rule"
+        ],
+        "duplication_rule": "Shared factual statements are allowed; identical long-form paragraphs should not be duplicated."
+      }
     }
   ]
 }
