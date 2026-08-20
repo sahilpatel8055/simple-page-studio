@@ -90,27 +90,84 @@ export function compareUniverse(): CompareUniversity[] {
     .sort((a, b) => a.shortName.localeCompare(b.shortName));
 }
 
-const durations = (u: CompareUniversity) => {
-  const list = [
-    ...new Set((u.json?.programmes ?? []).map((p) => p.duration).filter(Boolean)),
-  ] as string[];
-  return list.length ? list.slice(0, 3).join(", ") : null;
+const list = (values: (string | null | undefined)[], max = 3) => {
+  const clean = [...new Set(values.filter((v): v is string => !!v && v.trim().length > 0))];
+  if (!clean.length) return null;
+  return clean.length > max ? `${clean.slice(0, max).join(", ")} +${clean.length - max} more` : clean.join(", ");
 };
 
-const eligibility = (u: CompareUniversity) => {
-  const first = (u.json?.programmes ?? []).find((p) => p.eligibility.summary);
-  return first?.eligibility.summary ?? null;
-};
+const programmes = (u: CompareUniversity) => u.json?.programmes ?? [];
+
+const durations = (u: CompareUniversity) => list(programmes(u).map((p) => p.duration));
+
+const eligibility = (u: CompareUniversity) =>
+  programmes(u).find((p) => p.eligibility.summary)?.eligibility.summary ?? null;
 
 const entranceExam = (u: CompareUniversity) =>
   u.json?.admissions.entrance_exam ??
-  (u.json?.programmes ?? []).find((p) => p.eligibility.entrance_exam)?.eligibility.entrance_exam ??
+  programmes(u).find((p) => p.eligibility.entrance_exam)?.eligibility.entrance_exam ??
   null;
+
+const countByLevel = (u: CompareUniversity, level: string) =>
+  programmes(u).filter((p) => String(p.level).toUpperCase() === level).length;
+
+const lowestFeeForLevel = (u: CompareUniversity, level: string) => {
+  const totals = programmes(u)
+    .filter((p) => String(p.level).toUpperCase() === level)
+    .map((p) => p.fees.total_programme_fee ?? p.fees.normal)
+    .filter((v): v is number => typeof v === "number" && v > 0);
+  return totals.length ? Math.min(...totals) : null;
+};
+
+const feeSpread = (u: CompareUniversity) => {
+  const totals = programmes(u)
+    .map((p) => p.fees.total_programme_fee ?? p.fees.normal)
+    .filter((v): v is number => typeof v === "number" && v > 0);
+  if (!totals.length) return null;
+  return `${formatFee(Math.min(...totals))} – ${formatFee(Math.max(...totals))}`;
+};
+
+const emiFrom = (u: CompareUniversity) => {
+  const emis = programmes(u)
+    .map((p) => p.fees.emi ?? p.fees.monthly)
+    .filter((v): v is number => typeof v === "number" && v > 0);
+  return emis.length ? `${formatFee(Math.min(...emis))} / month` : null;
+};
+
+const topSpecialisations = (u: CompareUniversity) =>
+  list(
+    programmes(u).flatMap((p) => p.specializations.map((s) => s.specialisation_name)),
+    4,
+  );
+
+const semesterRange = (u: CompareUniversity) => {
+  const sems = programmes(u)
+    .map((p) => p.semesters)
+    .filter((v): v is number => typeof v === "number" && v > 0);
+  if (!sems.length) return null;
+  const min = Math.min(...sems);
+  const max = Math.max(...sems);
+  return min === max ? `${min} semesters` : `${min}–${max} semesters`;
+};
+
+const uniqueFrom = (u: CompareUniversity, pick: (p: ReturnType<typeof programmes>[number]) => string[]) => {
+  const set = new Set<string>();
+  for (const p of programmes(u)) for (const v of pick(p)) if (v) set.add(v);
+  return set;
+};
+
+const verifiedSources = (u: CompareUniversity) =>
+  new Set(
+    programmes(u)
+      .map((p) => p.official_source.programme_url ?? p.official_source.fee_url)
+      .filter((v): v is string => !!v),
+  ).size;
 
 export const compareGroups: CompareGroup[] = [
   {
     id: "identity",
     title: "Basics",
+    blurb: "Who the university is and how it teaches.",
     rows: [
       { label: "Rating", value: (u) => (u.rating ? `${u.rating}/5` : null) },
       {
@@ -123,44 +180,32 @@ export const compareGroups: CompareGroup[] = [
       },
       { label: "Type", value: (u) => u.record.type ?? null },
       { label: "Learning mode", value: (u) => u.record.modes.join(" / ") || null },
+      { label: "Official website", value: (u) => u.json?.basic_information.official_website ?? null },
     ],
   },
   {
     id: "recognition",
-    title: "Recognition",
+    title: "Recognition & approvals",
+    blurb: "Regulatory position — always verify at programme level before paying.",
     rows: [
       { label: "UGC status", value: (u) => u.json?.recognition.UGC_status ?? null },
       { label: "UGC-DEB", value: (u) => u.json?.recognition.UGC_DEB_status ?? null },
       { label: "NAAC", value: (u) => u.json?.recognition.NAAC_status ?? null },
       { label: "NIRF", value: (u) => u.json?.recognition.NIRF_information ?? null },
       { label: "Accreditation", value: (u) => u.json?.recognition.accreditation ?? null },
-    ],
-  },
-  {
-    id: "academics",
-    title: "Academics",
-    rows: [
-      { label: "Duration", value: durations },
       {
-        label: "Programmes",
-        value: (u) => (u.programmeCount ? String(u.programmeCount) : null),
+        label: "Approvals listed",
+        value: (u) => (u.record.approvals.length ? u.record.approvals.join(", ") : null),
         better: "higher",
-        numeric: (u) => u.programmeCount || null,
-        hint: "More choice",
+        numeric: (u) => u.record.approvals.length || null,
+        hint: "More approvals",
       },
-      {
-        label: "Specialisations",
-        value: (u) => (u.specialisationCount ? String(u.specialisationCount) : null),
-        better: "higher",
-        numeric: (u) => u.specialisationCount || null,
-        hint: "More options",
-      },
-      { label: "Eligibility", value: eligibility },
     ],
   },
   {
     id: "fees",
-    title: "Fees",
+    title: "Fees & affordability",
+    blurb: "Published figures only. Session-dependent — check the current prospectus.",
     rows: [
       {
         label: "Lowest total fee",
@@ -169,10 +214,14 @@ export const compareGroups: CompareGroup[] = [
         numeric: (u) => u.lowestFee,
         hint: "Lower fee",
       },
+      { label: "Fee range", value: feeSpread },
       { label: "Fee band", value: (u) => u.record.feeRangeLabel || null },
       {
         label: "Application fee",
         value: (u) => formatFee(u.json?.admissions.application_fee ?? null),
+        better: "lower",
+        numeric: (u) => u.json?.admissions.application_fee ?? null,
+        hint: "Cheaper to apply",
       },
       {
         label: "Scholarships",
@@ -187,44 +236,133 @@ export const compareGroups: CompareGroup[] = [
     ],
   },
   {
+    id: "academics",
+    title: "Programmes & specialisations",
+    blurb: "The full UG and PG portfolio, not one cherry-picked course.",
+    locked: true,
+    rows: [
+      {
+        label: "Programmes",
+        value: (u) => (u.programmeCount ? String(u.programmeCount) : null),
+        better: "higher",
+        numeric: (u) => u.programmeCount || null,
+        hint: "More choice",
+      },
+      {
+        label: "UG programmes",
+        value: (u) => (countByLevel(u, "UG") ? String(countByLevel(u, "UG")) : null),
+        better: "higher",
+        numeric: (u) => countByLevel(u, "UG") || null,
+        hint: "Wider UG menu",
+      },
+      {
+        label: "PG programmes",
+        value: (u) => (countByLevel(u, "PG") ? String(countByLevel(u, "PG")) : null),
+        better: "higher",
+        numeric: (u) => countByLevel(u, "PG") || null,
+        hint: "Wider PG menu",
+      },
+      {
+        label: "Specialisations",
+        value: (u) => (u.specialisationCount ? String(u.specialisationCount) : null),
+        better: "higher",
+        numeric: (u) => u.specialisationCount || null,
+        hint: "More options",
+      },
+      { label: "Popular specialisations", value: topSpecialisations },
+      { label: "Duration", value: durations },
+      { label: "Semesters", value: semesterRange },
+      { label: "Lowest UG fee", value: (u) => formatFee(lowestFeeForLevel(u, "UG")) },
+      { label: "Lowest PG fee", value: (u) => formatFee(lowestFeeForLevel(u, "PG")) },
+      { label: "EMI starts at", value: emiFrom },
+    ],
+  },
+  {
     id: "admission",
-    title: "Admission",
+    title: "Admission & eligibility",
+    blurb: "Cycle, selection route and the paperwork you need ready.",
+    locked: true,
     rows: [
       { label: "Next intake", value: (u) => u.json?.admissions.next_expected_intake ?? null },
       { label: "Admission cycle", value: (u) => u.json?.admissions.admission_cycle ?? null },
+      { label: "Admission window", value: (u) => list([u.json?.admissions.admission_start_date, u.json?.admissions.admission_end_date], 2) },
       { label: "Selection process", value: (u) => u.json?.admissions.selection_process ?? null },
       { label: "Entrance exam", value: entranceExam },
+      { label: "Eligibility", value: eligibility },
       {
         label: "Admission steps",
         value: (u) =>
           u.record.admissionProcess.length ? `${u.record.admissionProcess.length} steps` : null,
       },
+      {
+        label: "Documents required",
+        value: (u) => list(u.record.documentsRequired, 4),
+      },
+      { label: "Examination pattern", value: (u) => u.record.examPattern ?? null },
     ],
   },
   {
     id: "career",
-    title: "Career",
+    title: "Career outcomes",
+    blurb: "Roles and industries the university itself lists. No salary guesses.",
+    locked: true,
     rows: [
       {
         label: "Career roles listed",
         value: (u) => {
-          const roles = new Set<string>();
-          for (const p of u.json?.programmes ?? []) for (const r of p.career.roles) roles.add(r);
-          return roles.size ? String(roles.size) : null;
+          const n = uniqueFrom(u, (p) => p.career.roles).size;
+          return n ? String(n) : null;
         },
+        better: "higher",
+        numeric: (u) => uniqueFrom(u, (p) => p.career.roles).size || null,
+        hint: "More roles",
       },
+      { label: "Example roles", value: (u) => list([...uniqueFrom(u, (p) => p.career.roles)], 4) },
+      { label: "Industries", value: (u) => list([...uniqueFrom(u, (p) => p.career.industries)], 4) },
       {
         label: "Higher study paths",
         value: (u) => {
-          const paths = new Set<string>();
-          for (const p of u.json?.programmes ?? [])
-            for (const r of p.career.higher_study) paths.add(r);
-          return paths.size ? String(paths.size) : null;
+          const n = uniqueFrom(u, (p) => p.career.higher_study).size;
+          return n ? String(n) : null;
         },
       },
     ],
   },
+  {
+    id: "editorial",
+    title: "DegreeKhojo editorial view",
+    blurb: "What our team rates and flags after reading the official sources.",
+    locked: true,
+    rows: [
+      { label: "Strengths", value: (u) => list(u.record.pros, 3) },
+      { label: "Watch-outs", value: (u) => list(u.record.cons, 3) },
+      { label: "Highlights", value: (u) => list(u.record.highlights, 3) },
+      { label: "Editorial verdict", value: (u) => u.record.verdict ?? null },
+    ],
+  },
+  {
+    id: "verification",
+    title: "Data verification",
+    blurb: "Where each figure came from and when we last checked it.",
+    locked: true,
+    rows: [
+      { label: "Data status", value: (u) => u.json?.data_status ?? null },
+      { label: "Last verified", value: (u) => u.json?.last_verified ?? u.record.lastUpdated ?? null },
+      {
+        label: "Official sources linked",
+        value: (u) => (verifiedSources(u) ? `${verifiedSources(u)} programme sources` : null),
+        better: "higher",
+        numeric: (u) => verifiedSources(u) || null,
+        hint: "Better sourced",
+      },
+      {
+        label: "Prospectus",
+        value: (u) => u.json?.basic_information.official_prospectus_url ?? null,
+      },
+    ],
+  },
 ];
+
 
 export interface Verdict {
   label: string;
