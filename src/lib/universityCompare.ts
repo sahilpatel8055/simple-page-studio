@@ -195,7 +195,11 @@ export const compareGroups: CompareGroup[] = [
       { label: "Accreditation", value: (u) => u.json?.recognition.accreditation ?? null },
       {
         label: "Approvals listed",
-        value: (u) => (u.record.approvals.length ? u.record.approvals.join(", ") : null),
+        value: (u) =>
+          list(
+            u.record.approvals.map((a) => `${a.body}${a.status ? ` — ${a.status}` : ""}`),
+            4,
+          ),
         better: "higher",
         numeric: (u) => u.record.approvals.length || null,
         hint: "More approvals",
