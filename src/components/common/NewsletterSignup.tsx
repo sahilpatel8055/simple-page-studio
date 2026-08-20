@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Check, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { submitLead } from "@/lib/leads";
 
 export function NewsletterSignup({ compact = false, className }: { compact?: boolean; className?: string }) {
   const [done, setDone] = useState(false);
@@ -10,7 +11,10 @@ export function NewsletterSignup({ compact = false, className }: { compact?: boo
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        if (email.trim()) setDone(true);
+        if (email.trim()) {
+          void submitLead({ email: email.trim(), form: "Newsletter signup" });
+          setDone(true);
+        }
       }}
       className={cn("w-full", className)}
     >

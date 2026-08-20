@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { X, Sparkles } from "lucide-react";
+import { submitLead } from "@/lib/leads";
+import { savePartialLead } from "@/lib/leadContext";
 
 type Copy = { eyebrow: string; title: string; body: string };
 
@@ -102,7 +104,13 @@ export function LeadPopup({ delayMs = 22000 }: { delayMs?: number }) {
             <form
               className="mt-5 grid gap-3"
               onSubmit={(e) => {
+                const data = new FormData(e.currentTarget);
                 e.preventDefault();
+                const name = String(data.get("name") ?? "");
+                const phone = String(data.get("phone") ?? "");
+                const course = String(data.get("interest") ?? "");
+                savePartialLead({ name, phone, course });
+                void submitLead({ name, phone, course, form: "Lead Popup" });
                 setSent(true);
               }}
             >

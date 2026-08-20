@@ -1,4 +1,7 @@
+import { useState } from "react";
 import { Phone, ShieldCheck, Star } from "lucide-react";
+import { submitLead } from "@/lib/leads";
+import { savePartialLead } from "@/lib/leadContext";
 import { AppLink } from "./AppLink";
 
 /** Sticky table of contents placeholder — headings come from CMS content later. */
@@ -34,9 +37,19 @@ export function TableOfContents({
 
 /** Lead generation placeholder — connect to CRM/Cloud later. */
 export function LeadCaptureCard({ title = "Get free admission guidance" }: { title?: string }) {
+  const [sent, setSent] = useState(false);
   return (
     <form
-      onSubmit={(e) => e.preventDefault()}
+      onSubmit={(e) => {
+        const data = new FormData(e.currentTarget);
+        e.preventDefault();
+        const name = String(data.get("name") ?? "");
+        const phone = String(data.get("phone") ?? "");
+        const course = String(data.get("course") ?? "");
+        savePartialLead({ name, phone, course });
+        void submitLead({ name, phone, course, form: "Sidebar callback card" });
+        setSent(true);
+      }}
       className="surface-card space-y-3 bg-brand-soft p-5"
       data-lead-form="sidebar"
     >
@@ -45,16 +58,21 @@ export function LeadCaptureCard({ title = "Get free admission guidance" }: { tit
         Verified counsellors from the DegreeKhojo network. No cost, no spam.
       </p>
       <input
+        required
+        name="name"
         aria-label="Full name"
         placeholder="Full name"
         className="h-10 w-full rounded-lg border border-border bg-card px-3 text-sm outline-none focus:border-brand"
       />
       <input
+        required
+        name="phone"
         aria-label="Phone number"
         placeholder="Phone number"
         className="h-10 w-full rounded-lg border border-border bg-card px-3 text-sm outline-none focus:border-brand"
       />
       <select
+        name="course"
         aria-label="Interested programme"
         className="h-10 w-full rounded-lg border border-border bg-card px-3 text-sm outline-none focus:border-brand"
       >
@@ -68,7 +86,7 @@ export function LeadCaptureCard({ title = "Get free admission guidance" }: { tit
         type="submit"
         className="flex h-10 w-full items-center justify-center gap-2 rounded-lg bg-brand text-sm font-semibold text-brand-foreground"
       >
-        <Phone className="h-4 w-4" /> Request callback
+        <Phone className="h-4 w-4" /> {sent ? "Callback requested" : "Request callback"}
       </button>
       <p className="flex items-center gap-1.5 text-[0.7rem] text-muted-foreground">
         <ShieldCheck className="h-3.5 w-3.5" /> Your details stay private.

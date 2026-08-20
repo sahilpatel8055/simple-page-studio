@@ -16,6 +16,7 @@ import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCTA } from "@/components/common/Blocks";
 import { LeadChatBot } from "@/components/common/LeadChatBot";
 import { PopupProvider } from "@/components/common/PopupManager";
+import { flushLeadQueue } from "@/lib/leads";
 
 
 import { jsonLd, organizationSchema, SITE_NAME, SITE_TAGLINE } from "@/lib/seo";
@@ -146,6 +147,14 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+
+  // Retry any lead that failed to reach the sheet earlier (offline, tab closed).
+  useEffect(() => {
+    void flushLeadQueue();
+    const onOnline = () => void flushLeadQueue();
+    window.addEventListener("online", onOnline);
+    return () => window.removeEventListener("online", onOnline);
+  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>

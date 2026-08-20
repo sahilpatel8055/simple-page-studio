@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Headset, Phone } from "lucide-react";
+import { trackContactClick } from "@/lib/leads";
 
 export const AVEDU_PHONE = "+919000000000";
 export const AVEDU_WHATSAPP = "919000000000";
@@ -63,7 +64,10 @@ export function ContactQuickMenu() {
         <div className="absolute right-0 top-12 z-50 w-48 overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
           <a
             href={`tel:${AVEDU_PHONE}`}
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              trackContactClick("Call", "Header contact menu");
+              setOpen(false);
+            }}
             className="flex min-h-12 items-center gap-3 px-4 text-[0.95rem] font-semibold text-foreground transition-colors hover:bg-secondary"
           >
             <Phone className="h-4 w-4 text-[#7f1813]" /> Call
@@ -72,7 +76,10 @@ export function ContactQuickMenu() {
             href={`https://wa.me/${AVEDU_WHATSAPP}`}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => setOpen(false)}
+            onClick={() => {
+              trackContactClick("WhatsApp", "Header contact menu");
+              setOpen(false);
+            }}
             className="flex min-h-12 items-center gap-3 border-t border-border px-4 text-[0.95rem] font-semibold text-foreground transition-colors hover:bg-secondary"
           >
             <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> WhatsApp

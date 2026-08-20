@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { getLeadContext, whatsappLink } from "@/lib/leadContext";
+import { trackContactClick } from "@/lib/leads";
 import { universities } from "@/lib/content";
 
 /** "Lovely Professional University Online" -> "LPU Online" */
@@ -83,6 +84,7 @@ export function WhatsAppFeeBar() {
         href={whatsappLink("Hi, please share the full fee structure and EMI options.")}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackContactClick("WhatsApp", "Sticky fee bar")}
         className="flex h-12 items-center justify-center gap-2 rounded-xl bg-[#128C7E] text-[0.92rem] font-bold text-white"
       >
         <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" />

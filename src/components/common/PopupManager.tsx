@@ -356,7 +356,7 @@ function CounsellingModal({ onClose }: { onClose: () => void }) {
         >
           <X className="h-4 w-4" />
         </button>
-        <CounsellingForm compact onDone={onClose} />
+        <CounsellingForm compact source="Counselling Popup" onDone={onClose} />
       </div>
       </div>
     </div>

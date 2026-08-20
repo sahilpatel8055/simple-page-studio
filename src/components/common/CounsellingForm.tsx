@@ -4,6 +4,7 @@ import { universities } from "@/lib/content";
 import { universityLogo } from "@/lib/assets";
 import { markLeadSubmitted } from "@/components/common/PopupManager";
 import { savePartialLead } from "@/lib/leadContext";
+import { submitLead } from "@/lib/leads";
 
 const COURSES = [
   "Online MBA",
@@ -69,11 +70,13 @@ export function CounsellingForm({
   title = "Book Free 1-1 counselling session",
   subtitle = "Let's Find your right online degree togethor.",
   compact = false,
+  source = "Counselling Form",
   onDone,
 }: {
   title?: string;
   subtitle?: string;
   compact?: boolean;
+  source?: string;
   onDone?: () => void;
 }) {
   const [sent, setSent] = useState(false);
@@ -137,7 +140,16 @@ export function CounsellingForm({
         onSubmit={(e) => {
           e.preventDefault();
           const data = new FormData(e.currentTarget);
-          savePartialLead(Object.fromEntries(data.entries()) as Record<string, string>);
+          const values = Object.fromEntries(data.entries()) as Record<string, string>;
+          savePartialLead(values);
+          void submitLead({
+            name: String(values['name'] ?? ''),
+            email: String(values['email'] ?? ''),
+            phone: String(values['phone'] ?? ''),
+            course: String(values['course'] ?? ''),
+            location: String(values['state'] ?? ''),
+            form: source,
+          });
           markLeadSubmitted();
           setSent(true);
         }}

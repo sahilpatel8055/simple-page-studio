@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { CheckCircle2, TimerReset } from "lucide-react";
+import { submitLead } from "@/lib/leads";
+import { savePartialLead } from "@/lib/leadContext";
 
 /** Milliseconds left until the next local midnight (today 12:00 AM). */
 function msToMidnight(now = Date.now()) {
@@ -94,7 +96,12 @@ export function QuickEnquiry({
         <form
           className="mt-3 grid gap-2 sm:grid-cols-2"
           onSubmit={(e) => {
+            const data = new FormData(e.currentTarget);
             e.preventDefault();
+            const name = String(data.get("name") ?? "");
+            const phone = String(data.get("phone") ?? "");
+            savePartialLead({ name, phone });
+            void submitLead({ name, phone, form: "Quick Enquiry" });
             setSent(true);
           }}
         >

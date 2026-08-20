@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { X, CalendarDays, Clock, ShieldCheck } from "lucide-react";
 import { usePopupSurface } from "@/components/common/PopupManager";
 import { getLeadContext, whatsappLink } from "@/lib/leadContext";
+import { trackContactClick } from "@/lib/leads";
 /** Tonight's midnight — the actual offer cut-off shown on the clock. */
 function nextMidnight(now = Date.now()) {
   const d = new Date(now);
@@ -175,7 +176,10 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
               )}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={onClose}
+              onClick={() => {
+                trackContactClick("WhatsApp", "Admission Popup");
+                onClose();
+              }}
               className="flex h-11 items-center justify-center gap-2 rounded-xl border border-[#7f1813]/25 bg-white text-[0.9rem] font-bold text-[#7f1813]"
             >
               <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> Get fees on WhatsApp
