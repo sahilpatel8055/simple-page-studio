@@ -12,8 +12,7 @@ import { RelatedContent } from "@/components/templates/DetailLayout";
 import { articles, news } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
 import { ToolsStrip } from "@/components/common/ToolsStrip";
-import { blogBanner } from "@/lib/blogBanners";
-import { universityBlogBanner } from "@/lib/universityBlogBanners";
+import { BlogBanner } from "@/components/common/BrandBanner";
 import { familyDefs } from "@/lib/courseFamily";
 import { universityByBlogSlug } from "@/data/university-blogs";
 import { BlogEntityLinks } from "@/components/post/BlogUniversities";
@@ -96,7 +95,7 @@ function Page() {
     .filter((a) => a.slug !== item.slug && a.categorySlug === item.categorySlug)
     .slice(0, 2);
 
-  const banner = universityBlogBanner(item.slug) ?? blogBanner(post.banner);
+  const universitySlug = universityByBlogSlug[item.slug];
 
   return (
     <DetailLayout
@@ -105,15 +104,13 @@ function Page() {
         { name: item.title, href: `/blogs/${item.slug}` },
       ]}
       hero={
-        banner ? (
-          <img
-            src={banner}
-            alt={item.title}
-            width={1280}
-            height={640}
-            className="aspect-[2/1] w-full rounded-2xl border border-border object-cover"
-          />
-        ) : undefined
+        <BlogBanner
+          title={item.title}
+          categorySlug={item.categorySlug}
+          slug={item.slug}
+          universitySlug={universitySlug}
+          universityName={item.category}
+        />
       }
       eyebrow={item.category}
       title={item.title}
