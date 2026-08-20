@@ -219,3 +219,27 @@ export const footerNav: NavColumn[] = [
     ],
   },
 ];
+
+/** DegreeKhojo ecosystem properties shown in the footer. */
+export const ecosystemLinks: NavLink[] = [
+  {
+    label: "DegreeKhojo Blog",
+    href: "/blogs",
+    description: "Research, guides and admission updates",
+  },
+  {
+    label: "University Finder",
+    href: "/tools",
+    description: "Shortlist programmes by budget and goal",
+  },
+  {
+    label: "Compare Universities",
+    href: "/compare",
+    description: "Side-by-side fees, approvals and support",
+  },
+  {
+    label: "Free Counselling",
+    href: "/counselling",
+    description: "Talk to an education advisor",
+  },
+];
