@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { CheckCircle2, TimerReset } from "lucide-react";
 import { submitLead } from "@/lib/leads";
 import { savePartialLead } from "@/lib/leadContext";
+import { ConsentCheck } from "@/components/common/ConsentCheck";
 
 /** Milliseconds left until the next local midnight (today 12:00 AM). */
 function msToMidnight(now = Date.now()) {
@@ -101,7 +102,13 @@ export function QuickEnquiry({
             const name = String(data.get("name") ?? "");
             const phone = String(data.get("phone") ?? "");
             savePartialLead({ name, phone });
-            void submitLead({ name, phone, form: "Quick Enquiry" });
+            const consent = String(data.get("consent") ?? "") === "Yes";
+            void submitLead({
+              name,
+              phone,
+              form: "Quick Enquiry",
+              note: `Consent: ${consent ? "Yes" : "No"}`,
+            });
             setSent(true);
           }}
         >
@@ -122,6 +129,7 @@ export function QuickEnquiry({
             placeholder="Enter phone No."
             className="h-11 w-full rounded-xl border border-input bg-background px-3.5 text-[0.9rem] outline-none focus-visible:border-[#7f1813] focus-visible:ring-2 focus-visible:ring-[#7f1813]/25 sm:col-span-2"
           />
+          <ConsentCheck className="sm:col-span-2" />
           <button
             type="submit"
             className="h-12 rounded-full bg-[#7f1813] text-[0.95rem] font-extrabold text-white transition-opacity hover:opacity-90 sm:col-span-2"
