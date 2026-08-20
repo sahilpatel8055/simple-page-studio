@@ -58,6 +58,7 @@ import nirfIcon from "@/approvals/nirf-icon.png";
 import nbaIcon from "@/approvals/nba-icon.png";
 import bciIcon from "@/approvals/bci-icon.png";
 import qsIcon from "@/approvals/qs-icon.png";
+import debIcon from "@/approvals/DEB.png";
 
 import amityDegree from "@/degree/amity.png";
 import cuDegree from "@/degree/cu.jpg";
@@ -129,8 +130,8 @@ const campuses: Record<string, string> = {
 /** Approval / accreditation body icons. Keys are matched case-insensitively. */
 const approvalIcons: Record<string, string> = {
   ugc: ugcIcon,
-  "ugc-deb": ugcIcon,
-  deb: ugcIcon,
+  "ugc-deb": debIcon,
+  deb: debIcon,
   naac: naacIcon,
   aicte: aicteIcon,
   aiu: aiuIcon,
