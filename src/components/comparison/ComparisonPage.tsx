@@ -14,10 +14,11 @@ import {
 } from "@/lib/comparisonMaster";
 import { packFor } from "@/data/comparison-packs";
 import { EditorialComparison } from "./EditorialComparison";
+import { CompareTable } from "./CompareTable";
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
-/** Table on desktop, stacked cards on mobile — never overflows the page. */
+/** Real side-by-side table on every screen; the parameter column stays pinned. */
 function CompareRows({
   rows,
   aName,
@@ -30,55 +31,11 @@ function CompareRows({
   caption: string;
 }) {
   return (
-    <>
-      <div className="hidden overflow-x-auto rounded-xl border border-border sm:block">
-        <table className="w-full border-collapse text-sm">
-          <caption className="sr-only">{caption}</caption>
-          <thead>
-            <tr className="bg-secondary text-left">
-              <th scope="col" className="px-3 py-2.5 font-bold">
-                Parameter
-              </th>
-              <th scope="col" className="px-3 py-2.5 font-bold">
-                {aName}
-              </th>
-              <th scope="col" className="px-3 py-2.5 font-bold">
-                {bName}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {rows.map((r) => (
-              <tr key={r.label} className="border-t border-border align-top">
-                <th scope="row" className="px-3 py-2.5 text-left font-semibold text-foreground">
-                  {r.label}
-                </th>
-                <td className="px-3 py-2.5 text-muted-foreground">{r.a}</td>
-                <td className="px-3 py-2.5 text-muted-foreground">{r.b}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      <ul className="grid gap-3 sm:hidden">
-        {rows.map((r) => (
-          <li key={r.label} className="rounded-xl border border-border bg-card p-3">
-            <p className="text-[0.72rem] font-bold uppercase tracking-wide text-brand">{r.label}</p>
-            <div className="mt-2 grid grid-cols-2 gap-3 text-sm">
-              <div>
-                <p className="text-[0.7rem] font-semibold text-muted-foreground">{aName}</p>
-                <p className="mt-0.5 font-medium text-foreground">{r.a}</p>
-              </div>
-              <div>
-                <p className="text-[0.7rem] font-semibold text-muted-foreground">{bName}</p>
-                <p className="mt-0.5 font-medium text-foreground">{r.b}</p>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </>
+    <CompareTable
+      caption={caption}
+      head={["Parameter", aName, bName]}
+      rows={rows.map((r) => [r.label, r.a, r.b])}
+    />
   );
 }
 
