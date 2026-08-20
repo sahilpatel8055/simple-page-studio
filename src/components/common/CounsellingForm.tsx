@@ -143,11 +143,11 @@ export function CounsellingForm({
           const values = Object.fromEntries(data.entries()) as Record<string, string>;
           savePartialLead(values);
           void submitLead({
-            name: values['name'],
-            email: values['email'],
-            phone: values['phone'],
-            course: values['course'],
-            location: values['state'],
+            name: String(values['name'] ?? ''),
+            email: String(values['email'] ?? ''),
+            phone: String(values['phone'] ?? ''),
+            course: String(values['course'] ?? ''),
+            location: String(values['state'] ?? ''),
             form: source,
           });
           markLeadSubmitted();

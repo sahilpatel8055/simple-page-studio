@@ -1,4 +1,4 @@
-import { trackContactClick } from "@/lib/leads";
+import { submitLead, trackContactClick } from "@/lib/leads";
 import { Fragment, useState, type ReactNode } from "react";
 import { BlogUniversities } from "@/components/post/BlogUniversities";
 import { compactMoney, dedupeByFirstCell, universitySlugForLabel } from "@/lib/blogFormat";
@@ -200,7 +200,13 @@ function InlineLeadCTA({ block }: { block: Extract<PostBlock, { kind: "cta" }> }
         <form
           className="mt-4 grid gap-2.5 sm:grid-cols-2"
           onSubmit={(e) => {
+            const data = new FormData(e.currentTarget);
             e.preventDefault();
+            void submitLead({
+              name: String(data.get("name") ?? ""),
+              phone: String(data.get("phone") ?? ""),
+              form: "Article lead block",
+            });
             setSent(true);
           }}
         >
