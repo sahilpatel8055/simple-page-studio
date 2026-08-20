@@ -1,5 +1,5 @@
 /**
- * Verified fee sheet (2026-27) supplied by the AVEDU fee desk.
+ * Verified fee sheet (2026-27) supplied by the DegreeKhojo fee desk.
  *
  * Some universities publish list prices; the discount rules below turn the
  * published figure into the fee a student actually pays. EMI is left at the

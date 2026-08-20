@@ -703,7 +703,7 @@ export const homeFaqs = [
   {
     question: "Do you charge students for guidance?",
     answer:
-      "No. Our editorial content and comparison tools are free. University admissions are handled through the AVEDU counselling ecosystem.",
+      "No. Our editorial content and comparison tools are free. University admissions are handled through the DegreeKhojo counselling ecosystem.",
   },
 ];
 

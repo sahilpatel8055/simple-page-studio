@@ -2,7 +2,7 @@
  * Verified fee overrides for the state / national open universities.
  *
  * Every row below is transcribed literally from a document supplied by the
- * AVEDU fee desk (see `source` on each row). Nothing is derived or estimated:
+ * DegreeKhojo fee desk (see `source` on each row). Nothing is derived or estimated:
  * where a document does not state a programme-total, `total` stays `null` so
  * the UI shows the "not published" label instead of an invented number.
  *

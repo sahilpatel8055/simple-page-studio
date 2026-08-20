@@ -29,7 +29,7 @@ export interface PackEntry {
   };
 }
 
-const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, AVEDU" };
+const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, DegreeKhojo" };
 
 const ctaFor = (variant: PackVariant, label: string): PostBlock => {
   switch (variant) {

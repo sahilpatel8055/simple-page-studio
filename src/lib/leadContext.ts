@@ -8,7 +8,7 @@
  * Everything lives in localStorage; nothing is sent anywhere by itself.
  */
 
-export const AVEDU_WA = "919000000000";
+export const DK_WA = "918770012496";
 
 const PARTIAL_KEY = "avedu-partial-lead";
 const CONTEXT_KEY = "avedu-last-context";
@@ -84,7 +84,7 @@ export function whatsappLink(intent?: string) {
     ctx.courseLabel || lead.course ? `Course: ${ctx.courseLabel || lead.course}` : "",
     lead.name ? `Name: ${lead.name}` : "",
   ].filter(Boolean);
-  return `https://wa.me/${AVEDU_WA}?text=${encodeURIComponent(bits.join("\n"))}`;
+  return `https://wa.me/${DK_WA}?text=${encodeURIComponent(bits.join("\n"))}`;
 }
 
 /** Callback slots offered in lead forms. */
