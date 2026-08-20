@@ -210,7 +210,7 @@ export function UpdatedStamp({ date, verified: _verified }: { date: string; veri
 
 
 export function AuthorBox({
-  name = "AVEDU Editorial Desk",
+  name = "DegreeKhojo Editorial Desk",
   role = "Education research team",
   slug = "",
 }: {

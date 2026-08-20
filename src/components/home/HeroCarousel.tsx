@@ -14,13 +14,13 @@ const desktopBanners: Banner[] = [
   { src: banner5, alt: "Learn from India's best online universities — UG & PG UGC-entitled degrees", to: "/universities", height: "h-auto" },
   { src: banner6, alt: "Compare online universities side by side on fees, approvals and placements", to: "/compare", height: "h-auto" },
   { src: banner3, alt: "Explore top online programs — MBA, MCA, BBA, BCA and more", to: "/courses", height: "h-auto" },
-  { src: banner4, alt: "Trusted, unbiased admission guidance from AVEDU Insights", to: "/contact", height: "h-auto" },
+  { src: banner4, alt: "Trusted, unbiased admission guidance from DegreeKhojo", to: "/contact", height: "h-auto" },
 ];
 
 const mobileBanners: Banner[] = [
   { src: mobile1, alt: "Compare India's top online universities on fees and approvals", to: "/compare", height: "aspect-square" },
   { src: mobile2, alt: "Explore UGC-entitled online degree programmes", to: "/courses", height: "aspect-square" },
-  { src: mobile3, alt: "Free, unbiased admission guidance from AVEDU Insights", to: "/contact", height: "aspect-[1190/1194]" },
+  { src: mobile3, alt: "Free, unbiased admission guidance from DegreeKhojo", to: "/contact", height: "aspect-[1190/1194]" },
 ];
 
 function Carousel({ banners, variant }: { banners: Banner[]; variant: "mobile" | "desktop" }) {

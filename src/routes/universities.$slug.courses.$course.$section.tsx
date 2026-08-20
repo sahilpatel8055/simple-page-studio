@@ -52,7 +52,7 @@ export const Route = createFileRoute("/universities/$slug/courses/$course/$secti
         description,
         path,
         modifiedTime: loaderData.lastUpdated,
-        author: "AVEDU Editorial Desk",
+        author: "DegreeKhojo Editorial Desk",
         keywords: [
           `${loaderData.universityShort} ${loaderData.programmeName} ${section.replace("-", " ")}`,
         ],

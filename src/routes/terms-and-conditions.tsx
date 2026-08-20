@@ -5,7 +5,7 @@ import { CTASection } from "@/components/common/Primitives";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
 const title = "Terms and Conditions";
-const description = "The terms that govern your use of the AVEDU Insights knowledge platform.";
+const description = "The terms that govern your use of the DegreeKhojo knowledge platform.";
 const path = "/terms-and-conditions";
 
 export const Route = createFileRoute("/terms-and-conditions")({

@@ -98,5 +98,5 @@ export function familySpecialisationTable(familySlug: string, caption?: string):
 export function familyFeeRangeSentence(familySlug: string): string {
   const family = getCourseFamily(familySlug);
   if (!family || family.feeMin == null || family.feeMax == null) return "";
-  return `Across the ${family.offers.length} universities researched on AVEDU, the published total ${family.shortName} fee runs from ₹${family.feeMin.toLocaleString("en-IN")} to ₹${family.feeMax.toLocaleString("en-IN")} for the full programme.`;
+  return `Across the ${family.offers.length} universities researched on DegreeKhojo, the published total ${family.shortName} fee runs from ₹${family.feeMin.toLocaleString("en-IN")} to ₹${family.feeMax.toLocaleString("en-IN")} for the full programme.`;
 }

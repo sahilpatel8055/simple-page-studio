@@ -91,7 +91,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} AVEDU Insights. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} DegreeKhojo. All rights reserved.</p>
           <div className="flex flex-wrap gap-4">
             <AppLink to="/privacy-policy" className="hover:text-foreground">Privacy policy</AppLink>
             <AppLink to="/terms-and-conditions" className="hover:text-foreground">Terms & conditions</AppLink>

@@ -42,7 +42,7 @@ export const Route = createFileRoute("/compare/$course/$pair")({
     const description =
       loaderData.packDescription ?? loaderData.description.replace(/\{Course\}/g, loaderData.course);
     return {
-      meta: pageMeta({ title, description, path, author: "AVEDU Editorial Desk" }),
+      meta: pageMeta({ title, description, path, author: "DegreeKhojo Editorial Desk" }),
       links: canonical(path),
       scripts: [
         jsonLd(

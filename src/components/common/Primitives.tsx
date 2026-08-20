@@ -196,7 +196,7 @@ export function SimplePagination({ page = 1, total = 8 }: { page?: number; total
 /* --------------------------------- CTA ---------------------------------- */
 
 export function CTASection({
-  title = "Talk to an AVEDU counsellor",
+  title = "Talk to an DegreeKhojo counsellor",
   description = "Get a shortlist matched to your budget, eligibility and career goal — free, and without sales pressure.",
   primaryLabel = "Get free guidance",
   primaryHref = "/contact",

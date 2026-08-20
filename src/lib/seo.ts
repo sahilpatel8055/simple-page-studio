@@ -6,15 +6,25 @@
  * to programmatic (100k+) pages.
  */
 
-export const SITE_NAME = "AVEDU Insights";
+export const SITE_NAME = "DegreeKhojo";
 export const SITE_TAGLINE = "India's online & distance education knowledge platform";
 export const SITE_LOCALE = "en_IN";
 export const SITE_LANG = "en-IN";
 
-/** No project domain is configured yet — relative URLs stay correct once it is. */
-export const BASE_URL = "";
+/** Canonical production origin — the single source of truth for every absolute SEO URL. */
+export const SITE_URL = "https://degreekhojo.com";
+export const BASE_URL = SITE_URL;
 
-export const abs = (path: string) => `${BASE_URL}${path}`;
+/** Default social share image (absolute, production origin). */
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/degreekhojo-logo.png`;
+
+/** Builds an absolute, production-origin URL from an app path. */
+export const abs = (path: string) => {
+  if (/^https?:\/\//i.test(path)) return path;
+  const clean = path === "/" ? "/" : `/${path.replace(/^\/+/, "").replace(/\/+$/, "")}`;
+  return `${SITE_URL}${clean}`;
+};
+
 
 export interface PageSeo {
   title: string;
@@ -55,10 +65,10 @@ export function pageMeta(seo: PageSeo): MetaEntry[] {
     meta.push({ name: "author", content: seo.author });
     meta.push({ property: "article:author", content: seo.author });
   }
-  if (seo.image) {
-    meta.push({ property: "og:image", content: seo.image });
-    meta.push({ name: "twitter:image", content: seo.image });
-  }
+  const image = seo.image ? abs(seo.image) : DEFAULT_OG_IMAGE;
+  meta.push({ property: "og:image", content: image });
+  meta.push({ property: "og:image:alt", content: fullTitle });
+  meta.push({ name: "twitter:image", content: image });
   if (seo.publishedTime) meta.push({ property: "article:published_time", content: seo.publishedTime });
   if (seo.modifiedTime) meta.push({ property: "article:modified_time", content: seo.modifiedTime });
   if (seo.section) meta.push({ property: "article:section", content: seo.section });
@@ -92,7 +102,7 @@ export const organizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
   name: SITE_NAME,
-  url: BASE_URL || "/",
+  url: SITE_URL,
   description: SITE_TAGLINE,
   sameAs: [
     "https://avedu.in/",
@@ -106,11 +116,11 @@ export const websiteSchema = () => ({
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: SITE_NAME,
-  url: BASE_URL || "/",
+  url: SITE_URL,
   inLanguage: SITE_LANG,
   potentialAction: {
     "@type": "SearchAction",
-    target: { "@type": "EntryPoint", urlTemplate: `${BASE_URL}/blogs?q={search_term_string}` },
+    target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/blogs?q={search_term_string}` },
     "query-input": "required name=search_term_string",
   },
 });
@@ -128,7 +138,7 @@ export const webPageSchema = (p: {
   description: p.description,
   url: abs(p.path),
   inLanguage: SITE_LANG,
-  isPartOf: { "@type": "WebSite", name: SITE_NAME, url: BASE_URL || "/" },
+  isPartOf: { "@type": "WebSite", name: SITE_NAME, url: SITE_URL },
   ...(p.modified ? { dateModified: p.modified } : {}),
   ...(p.speakable
     ? { speakable: { "@type": "SpeakableSpecification", cssSelector: p.speakable } }

@@ -42,7 +42,7 @@ export function LeadCaptureCard({ title = "Get free admission guidance" }: { tit
     >
       <p className="text-sm font-bold">{title}</p>
       <p className="text-xs text-muted-foreground">
-        Verified counsellors from the AVEDU network. No cost, no spam.
+        Verified counsellors from the DegreeKhojo network. No cost, no spam.
       </p>
       <input
         aria-label="Full name"
@@ -88,7 +88,7 @@ export function TrustCard() {
           <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> Verified against UGC-DEB records
         </li>
         <li className="flex gap-2">
-          <Star className="mt-0.5 h-4 w-4 shrink-0 text-highlight" /> Reviewed by the AVEDU editorial desk
+          <Star className="mt-0.5 h-4 w-4 shrink-0 text-highlight" /> Reviewed by the DegreeKhojo editorial desk
         </li>
       </ul>
       <AppLink to="/about" className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">

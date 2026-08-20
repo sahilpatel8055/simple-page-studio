@@ -276,7 +276,7 @@ function HomePage() {
         <PromoBanner
           variant="guidance"
           title="Confused between two universities?"
-          subtitle="Get a free 15-minute call with an AVEDU counsellor and a side-by-side comparison on WhatsApp."
+          subtitle="Get a free 15-minute call with an DegreeKhojo counsellor and a side-by-side comparison on WhatsApp."
           ctaLabel="Talk to a counsellor"
         />
       </div>

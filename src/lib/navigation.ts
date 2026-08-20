@@ -159,7 +159,7 @@ export const primaryNav: NavItem[] = [
         heading: "About us",
         links: [
           { label: "Authors", href: "/authors" },
-          { label: "About AVEDU", href: "/about" },
+          { label: "About DegreeKhojo", href: "/about" },
           { label: "Contact", href: "/contact" },
         ],
       },
