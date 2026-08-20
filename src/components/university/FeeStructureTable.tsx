@@ -60,6 +60,8 @@ export function FeeStructureTable({
   if (!table || table.rows.length === 0) return null;
 
   const hasSpec = table.rows.some((r) => r.specialisation);
+  const hasFocus = table.rows.some((r) => r.focus);
+  const hasEligibility = table.rows.some((r) => r.eligibility);
 
   return (
     <div className="space-y-3">
