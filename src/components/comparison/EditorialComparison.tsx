@@ -2,123 +2,27 @@ import { AppLink } from "@/components/common/AppLink";
 import { ContentSection } from "@/components/templates/DetailLayout";
 import type { ComparisonPack, PackFactor, PackSection } from "@/data/comparison-packs";
 import { CheckCircle2, Scale } from "lucide-react";
+import { CompareTable } from "./CompareTable";
 
 /**
  * Renders a researched comparison pack.
  *
- * Desktop keeps the classic A | factor | B board; mobile switches to stacked
- * factor cards with the university names repeated on every row, so nothing
- * relies on horizontal scrolling.
+ * Every board is a real side-by-side table (factor | A | B) on desktop and
+ * mobile alike; the factor column stays pinned while the table scrolls.
  */
 
 function FactorBoard({ pack }: { pack: ComparisonPack }) {
   return (
-    <>
-      {/* Desktop board */}
-      <div className="hidden overflow-hidden rounded-xl border border-border md:block">
-        <table className="w-full border-collapse text-sm">
-          <caption className="sr-only">
-            {pack.aLabel} vs {pack.bLabel} — factor-by-factor comparison
-          </caption>
-          <thead>
-            <tr className="bg-secondary text-left">
-              <th scope="col" className="w-[30%] px-3 py-3 font-bold text-foreground">
-                {pack.aLabel}
-              </th>
-              <th scope="col" className="w-[22%] px-3 py-3 text-center font-bold text-brand">
-                Comparison factor
-              </th>
-              <th scope="col" className="w-[30%] px-3 py-3 font-bold text-foreground">
-                {pack.bLabel}
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            {pack.factors.map((f: PackFactor) => (
-              <tr key={f.label} className="border-t border-border align-top odd:bg-card">
-                <td className="px-3 py-3 text-muted-foreground">{f.a}</td>
-                <th scope="row" className="px-3 py-3 text-center font-semibold text-foreground">
-                  {f.label}
-                </th>
-                <td className="px-3 py-3 text-muted-foreground">{f.b}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-
-      {/* Mobile cards */}
-      <ul className="grid gap-3 md:hidden">
-        {pack.factors.map((f) => (
-          <li key={f.label} className="rounded-xl border border-border bg-card p-3.5">
-            <p className="text-[0.74rem] font-bold uppercase tracking-wide text-brand">{f.label}</p>
-            <div className="mt-2.5 space-y-2.5">
-              <div className="rounded-lg bg-secondary/70 p-2.5">
-                <p className="text-[0.72rem] font-bold uppercase tracking-wide text-muted-foreground">
-                  {pack.aLabel}
-                </p>
-                <p className="mt-1 text-[0.92rem] leading-relaxed text-foreground">{f.a}</p>
-              </div>
-              <div className="rounded-lg bg-secondary/70 p-2.5">
-                <p className="text-[0.72rem] font-bold uppercase tracking-wide text-muted-foreground">
-                  {pack.bLabel}
-                </p>
-                <p className="mt-1 text-[0.92rem] leading-relaxed text-foreground">{f.b}</p>
-              </div>
-            </div>
-          </li>
-        ))}
-      </ul>
-    </>
+    <CompareTable
+      caption={`${pack.aLabel} vs ${pack.bLabel} — factor-by-factor comparison`}
+      head={["Parameter", pack.aLabel, pack.bLabel]}
+      rows={pack.factors.map((f: PackFactor) => [f.label, f.a, f.b])}
+    />
   );
 }
 
 function PackTable({ table }: { table: NonNullable<PackSection["table"]> }) {
-  return (
-    <>
-      <div className="hidden overflow-x-auto rounded-xl border border-border sm:block">
-        <table className="w-full border-collapse text-sm">
-          <thead>
-            <tr className="bg-secondary text-left">
-              {table.head.map((h) => (
-                <th key={h} scope="col" className="px-3 py-2.5 font-bold">
-                  {h}
-                </th>
-              ))}
-            </tr>
-          </thead>
-          <tbody>
-            {table.rows.map((row, i) => (
-              <tr key={i} className="border-t border-border align-top">
-                {row.map((cell, j) => (
-                  <td key={j} className="px-3 py-2.5 text-muted-foreground">
-                    {cell}
-                  </td>
-                ))}
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-      <ul className="grid gap-3 sm:hidden">
-        {table.rows.map((row, i) => (
-          <li key={i} className="rounded-xl border border-border bg-card p-3">
-            <p className="text-[0.74rem] font-bold uppercase tracking-wide text-brand">{row[0]}</p>
-            <dl className="mt-2 space-y-1.5">
-              {row.slice(1).map((cell, j) => (
-                <div key={j}>
-                  <dt className="text-[0.7rem] font-semibold text-muted-foreground">
-                    {table.head[j + 1]}
-                  </dt>
-                  <dd className="text-[0.9rem] text-foreground">{cell}</dd>
-                </div>
-              ))}
-            </dl>
-          </li>
-        ))}
-      </ul>
-    </>
-  );
+  return <CompareTable caption="Comparison table" head={table.head} rows={table.rows} />;
 }
 
 export function EditorialComparison({
