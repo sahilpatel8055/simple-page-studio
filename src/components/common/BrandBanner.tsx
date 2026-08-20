@@ -1,4 +1,4 @@
-import { campusImage, logoImage } from "@/lib/assets";
+import { campusImage, universityLogo } from "@/lib/assets";
 import studyPhoto from "@/assets/blog/banner-student-study.jpg";
 import careerPhoto from "@/assets/blog/banner-student-career.jpg";
 import admissionPhoto from "@/assets/blog/banner-student-admission.jpg";
@@ -166,7 +166,7 @@ export function BlogBanner({
     <BrandBanner
       title={title}
       photo={campus ?? bannerPhoto(categorySlug, slug)}
-      partnerLogo={universitySlug ? logoImage(universitySlug) : undefined}
+      partnerLogo={universitySlug ? universityLogo(universitySlug) : undefined}
       partnerName={universityName}
       pills={pills ?? ["UGC Entitled Degree", "Flexible Learning", "Career Focused"]}
     />
