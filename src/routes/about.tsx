@@ -4,6 +4,8 @@ import { CTASection } from "@/components/common/Primitives";
 import { AccentHeadline } from "@/components/common/Headline";
 import { CheckCircle2 } from "lucide-react";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
+import counsellingArt from "@/assets/course-counselling-illustration.png";
+import offerArt from "@/assets/course-offer-illustration.png";
 
 const title = "About DegreeKhojo";
 const description = "We research India’s online and distance education market so learners can choose a degree on evidence, not advertising.";
