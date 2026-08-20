@@ -4,7 +4,6 @@ import { CTASection } from "@/components/common/Primitives";
 import { AccentHeadline } from "@/components/common/Headline";
 import { CheckCircle2 } from "lucide-react";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
-import counsellingArt from "@/assets/course-counselling-illustration.png";
 import teamPhoto from "@/assets/about-team.jpg";
 import { GrowthChart } from "@/components/common/GrowthChart";
 
@@ -108,12 +107,6 @@ function Page() {
           <div className="absolute inset-0 rounded-full bg-[#7f1813]/10 blur-3xl" />
           <div className="relative z-10">
             <GrowthChart />
-            <img
-              src={counsellingArt}
-              alt="Online degree counselling illustration"
-              className="sr-only"
-              loading="lazy"
-            />
           </div>
         </div>
       </section>
