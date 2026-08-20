@@ -3,9 +3,8 @@ import { PageShell } from "@/components/templates/PageShell";
 import { CTASection } from "@/components/common/Primitives";
 import { AccentHeadline } from "@/components/common/Headline";
 import { CheckCircle2 } from "lucide-react";
-import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
-import teamPhoto from "@/assets/about-team.jpg";
 import { GrowthChart } from "@/components/common/GrowthChart";
+import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
 const title = "About DegreeKhojo";
 const description = "We research India’s online and distance education market so learners can choose a degree on evidence, not advertising.";
@@ -116,8 +115,8 @@ function Page() {
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-2 shadow-xl">
             <img
-              src={teamPhoto}
-              alt="DegreeKhojo research team at work"
+              src="/experts.png"
+              alt="DegreeKhojo education experts and admission counsellors"
               className="h-full w-full rounded-2xl object-cover"
               width={1280}
               height={912}
