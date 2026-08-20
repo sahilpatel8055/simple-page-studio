@@ -1,3 +1,4 @@
+import { trackContactClick } from "@/lib/leads";
 import { Fragment, useState, type ReactNode } from "react";
 import { BlogUniversities } from "@/components/post/BlogUniversities";
 import { compactMoney, dedupeByFirstCell, universitySlugForLabel } from "@/lib/blogFormat";
@@ -248,6 +249,7 @@ function PromoBannerBlock({ block }: { block: Extract<PostBlock, { kind: "promo"
       ) : (
         <a
           href="tel:+919000000000"
+          onClick={() => trackContactClick("Call", "Article CTA")}
           className="inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-white px-4 text-sm font-bold text-[#7f1813]"
         >
           <PhoneCall className="h-4 w-4" aria-hidden="true" /> {block.ctaLabel ?? "Talk to a counsellor"}
