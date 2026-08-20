@@ -11,6 +11,7 @@ import { ArticleCard } from "@/components/cards";
 import { RelatedContent } from "@/components/templates/DetailLayout";
 import { articles, news } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
+import { ToolsStrip } from "@/components/common/ToolsStrip";
 import { blogBanner } from "@/lib/blogBanners";
 import { universityBlogBanner } from "@/lib/universityBlogBanners";
 import { familyDefs } from "@/lib/courseFamily";
@@ -134,6 +135,7 @@ function Page() {
       <KeyTakeaways items={post.keyTakeaways} />
       <MobileToc sections={toc} />
       <PostBody post={post} familySlug={familySlug} showUniversities={showUniversities} />
+      <ToolsStrip />
       <BlogEntityLinks universitySlug={universityByBlogSlug[item.slug]} familySlug={familySlug} />
       {post.sources?.length ? <PostSources items={post.sources} /> : null}
     </DetailLayout>

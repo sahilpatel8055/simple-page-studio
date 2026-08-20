@@ -2,6 +2,7 @@ import { BadgeCheck, ExternalLink, Info } from "lucide-react";
 import { DataTable, StepList } from "@/components/common/Blocks";
 import { Chip } from "@/components/common/Primitives";
 import { SpecialisationBoxes } from "@/components/common/BoxMarquee";
+import { applicationFee } from "@/lib/applicationFees";
 import {
   formatFee,
   isVerifiedFee,
@@ -140,11 +141,14 @@ export function SpecialisationTable({ programme }: { programme: ProgrammeRecord 
 export function AdmissionSection({
   admissions,
   programme,
+  universitySlug,
 }: {
   admissions: UniversityRecordJson["admissions"] | undefined;
   programme?: ProgrammeRecord | undefined;
+  universitySlug?: string | undefined;
 }) {
   const rows: Array<[string, string]> = [];
+  const feeNote = universitySlug ? applicationFee(universitySlug)?.note : undefined;
   const push = (label: string, value: string | number | null | undefined) => {
     if (value != null && String(value).trim()) rows.push([label, String(value)]);
   };
@@ -180,6 +184,7 @@ export function AdmissionSection({
       {rows.length > 0 && (
         <DataTable caption="Admission details" head={["Detail", "Information"]} rows={rows} />
       )}
+      {feeNote && <p className="text-xs text-muted-foreground">{feeNote}</p>}
       {steps.length > 0 && (
         <div>
           <h3 className="mb-3 text-base font-bold text-foreground">Admission steps</h3>
