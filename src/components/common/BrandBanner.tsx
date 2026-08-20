@@ -42,14 +42,14 @@ function LogoChip({ src, alt }: { src: string; alt: string }) {
 export interface BrandBannerProps {
   title: string;
   /** Small pills under the headline. */
-  pills?: string[];
+  pills?: undefined | string[];
   /** Right-hand photo (campus or student). */
-  photo?: string;
+  photo?: undefined | string;
   /** Optional partner logo shown next to the DegreeKhojo logo. */
-  partnerLogo?: string;
-  partnerName?: string;
+  partnerLogo?: undefined | string;
+  partnerName?: undefined | string;
   /** Campus strip used by comparison banners (3–4 images). */
-  campusStrip?: string[];
+  campusStrip?: undefined | string[];
   className?: string;
 }
 
@@ -155,11 +155,11 @@ export function BlogBanner({
   pills,
 }: {
   title: string;
-  categorySlug?: string;
+  categorySlug?: undefined | string;
   slug: string;
-  universitySlug?: string;
-  universityName?: string;
-  pills?: string[];
+  universitySlug?: undefined | string;
+  universityName?: undefined | string;
+  pills?: undefined | string[];
 }) {
   const campus = universitySlug ? campusImage(universitySlug) : undefined;
   return (
