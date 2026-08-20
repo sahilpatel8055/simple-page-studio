@@ -1,31 +1,60 @@
-import { useMemo, useState } from "react";
-import { ArrowRight, Check, Plus, Search, Star, X } from "lucide-react";
+import { useEffect, useMemo, useState } from "react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Check,
+  Lock,
+  Plus,
+  Search,
+  Star,
+  Unlock,
+  X,
+} from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
 import { universityLogo } from "@/lib/assets";
+import { submitLead } from "@/lib/leads";
+import { savePartialLead } from "@/lib/leadContext";
 import {
   NOT_AVAILABLE,
   compareGroups,
   compareUniverse,
   quickVerdicts,
   winnersFor,
+  type CompareGroup,
   type CompareUniversity,
 } from "@/lib/universityCompare";
 import { cn } from "@/lib/utils";
 import { usePopupSurface } from "@/components/common/PopupManager";
 
 const MAX = 4;
+const UNLOCK_KEY = "degreekhojo-compare-unlocked";
+
+const freeGroups = compareGroups.filter((g) => !g.locked);
+const lockedGroups = compareGroups.filter((g) => g.locked);
+const lockedRowCount = lockedGroups.reduce((n, g) => n + g.rows.length, 0);
 
 /**
- * New, self-contained university comparison board. Nothing here touches the
- * existing /compare/* pSEO comparison pages — it only reads shared data.
+ * University comparison board.
+ *
+ * The first three blocks (basics, approvals, fees) are always open so the page
+ * is useful and indexable; the deeper decision blocks — portfolio, admission,
+ * career, editorial view and verification — sit behind a single lead unlock.
  */
 export function UniversityCompareBoard() {
   const { openCounselling } = usePopupSurface();
   const universe = useMemo(() => compareUniverse(), []);
   const [selected, setSelected] = useState<string[]>(() => universe.slice(0, 2).map((u) => u.slug));
-  const [compared, setCompared] = useState(true);
   const [picking, setPicking] = useState(false);
   const [query, setQuery] = useState("");
+  const [unlocked, setUnlocked] = useState(false);
+
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem(UNLOCK_KEY) === "1") setUnlocked(true);
+    } catch {
+      /* storage blocked — stay locked */
+    }
+  }, []);
 
   const chosen = useMemo(
     () =>
@@ -52,13 +81,21 @@ export function UniversityCompareBoard() {
   const remove = (slug: string) => setSelected((prev) => prev.filter((s) => s !== slug));
 
   const canCompare = chosen.length >= 2;
-  const verdicts = compared && canCompare ? quickVerdicts(chosen) : [];
+  const verdicts = canCompare ? quickVerdicts(chosen) : [];
 
-  // Label column stays sticky; university columns share the remaining width.
   const gridStyle = {
-    gridTemplateColumns: `6.5rem repeat(${chosen.length}, minmax(0, 1fr))`,
-    minWidth: chosen.length > 2 ? `${6.5 + chosen.length * 8.5}rem` : undefined,
+    gridTemplateColumns: `7rem repeat(${Math.max(chosen.length, 1)}, minmax(0, 1fr))`,
+    minWidth: chosen.length > 2 ? `${7 + chosen.length * 9}rem` : undefined,
   } as const;
+
+  const onUnlocked = () => {
+    setUnlocked(true);
+    try {
+      window.localStorage.setItem(UNLOCK_KEY, "1");
+    } catch {
+      /* ignore */
+    }
+  };
 
   return (
     <div className="space-y-8">
@@ -67,12 +104,17 @@ export function UniversityCompareBoard() {
         aria-labelledby="selection-heading"
         className="rounded-2xl border border-border bg-card p-4 sm:p-6"
       >
-        <h2 id="selection-heading" className="text-lg font-bold sm:text-xl">
-          Select universities
-        </h2>
+        <div className="flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="selection-heading" className="text-lg font-bold sm:text-xl">
+            Select universities
+          </h2>
+          <p className="text-xs font-semibold text-muted-foreground">
+            {chosen.length}/{MAX} selected
+          </p>
+        </div>
         <p className="mt-1 text-sm text-muted-foreground">
-          Select up to {MAX} universities to compare. Fields the university has not published show “
-          {NOT_AVAILABLE}”.
+          Pick 2–{MAX} universities. Every value is read from the published 2026-27 dataset — fields
+          the university has not published show “{NOT_AVAILABLE}”.
         </p>
 
         <ul className="mt-4 flex flex-wrap gap-2">
@@ -145,27 +187,14 @@ export function UniversityCompareBoard() {
           </div>
         )}
 
-        <button
-          type="button"
-          disabled={!canCompare}
-          onClick={() => setCompared(true)}
-          className={cn(
-            "mt-5 inline-flex min-h-11 items-center gap-2 rounded-xl px-5 text-sm font-bold transition-colors",
-            canCompare
-              ? "bg-brand text-brand-foreground hover:opacity-90"
-              : "cursor-not-allowed bg-secondary text-muted-foreground",
-          )}
-        >
-          Compare {canCompare ? `(${chosen.length})` : ""}
-        </button>
         {!canCompare && (
-          <p className="mt-2 text-xs text-muted-foreground">
-            Select at least 2 universities to compare.
+          <p className="mt-4 text-xs font-semibold text-muted-foreground">
+            Add at least 2 universities to see the comparison.
           </p>
         )}
       </section>
 
-      {compared && canCompare && (
+      {canCompare && (
         <>
           {/* --------------------------- quick verdict --------------------- */}
           {verdicts.length > 0 && (
@@ -173,6 +202,9 @@ export function UniversityCompareBoard() {
               <h2 id="verdict-heading" className="text-lg font-bold sm:text-xl">
                 Quick verdict
               </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Based only on the published figures below — not on rankings or paid placement.
+              </p>
               <ul className="mt-3 grid gap-3 sm:grid-cols-3">
                 {verdicts.map((v) => (
                   <li key={v.label} className="rounded-xl border border-border bg-card p-3.5">
@@ -197,7 +229,6 @@ export function UniversityCompareBoard() {
             </h2>
             <div className="overflow-x-auto lg:overflow-x-visible">
               <div style={gridStyle} className="grid">
-                {/* identity row — sticky while scrolling */}
                 <div className="sticky left-0 z-20 border-b border-border bg-secondary px-2.5 py-3 text-[0.7rem] font-bold uppercase tracking-wide text-muted-foreground lg:top-24">
                   Compare
                 </div>
@@ -219,10 +250,33 @@ export function UniversityCompareBoard() {
                   </div>
                 ))}
 
-                {compareGroups.map((group) => (
+                {freeGroups.map((group) => (
                   <GroupBlock key={group.id} group={group} chosen={chosen} />
                 ))}
               </div>
+            </div>
+
+            {/* ---------------------- locked deep comparison ---------------- */}
+            <div className="relative">
+              <div
+                aria-hidden={!unlocked}
+                className={cn(
+                  "overflow-x-auto lg:overflow-x-visible",
+                  !unlocked && "pointer-events-none max-h-[26rem] select-none overflow-hidden blur-[5px]",
+                )}
+              >
+                <div style={gridStyle} className="grid">
+                  {lockedGroups.map((group) => (
+                    <GroupBlock key={group.id} group={group} chosen={chosen} />
+                  ))}
+                </div>
+              </div>
+
+              {!unlocked && (
+                <div className="absolute inset-x-0 bottom-0 top-0 flex items-end bg-gradient-to-b from-card/40 via-card/85 to-card">
+                  <UnlockPanel chosen={chosen} onUnlocked={onUnlocked} />
+                </div>
+              )}
             </div>
           </section>
 
@@ -236,7 +290,7 @@ export function UniversityCompareBoard() {
           <section className="rounded-2xl border border-border bg-brand-soft/30 p-4 sm:p-6">
             <h2 className="text-lg font-bold sm:text-xl">Ready to choose?</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Open a full university profile, or talk to an DegreeKhojo counsellor about the
+              Open a full university profile, or talk to a DegreeKhojo counsellor about the
               shortlist.
             </p>
             <div className="mt-4 flex flex-wrap gap-2.5">
@@ -264,20 +318,123 @@ export function UniversityCompareBoard() {
   );
 }
 
-function GroupBlock({
-  group,
+/* --------------------------------- unlock -------------------------------- */
+
+function UnlockPanel({
   chosen,
+  onUnlocked,
 }: {
-  group: (typeof compareGroups)[number];
   chosen: CompareUniversity[];
+  onUnlocked: () => void;
 }) {
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const shortlist = chosen.map((u) => u.shortName).join(" vs ");
+
+  const onSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const digits = phone.replace(/\D/g, "");
+    if (name.trim().length < 2) return setError("Please enter your name.");
+    if (digits.length < 10) return setError("Please enter a valid 10-digit mobile number.");
+    setError(null);
+    setBusy(true);
+    savePartialLead({ name: name.trim(), phone: digits });
+    await submitLead({
+      name: name.trim(),
+      phone: digits,
+      form: "Comparison Unlock",
+      note: shortlist,
+    });
+    setBusy(false);
+    onUnlocked();
+  };
+
+  return (
+    <div className="w-full px-3 pb-5 pt-14 sm:px-6">
+      <div className="mx-auto max-w-2xl rounded-2xl border border-brand/25 bg-card p-4 shadow-[0_24px_60px_-40px_oklch(0_0_0/0.7)] sm:p-6">
+        <p className="inline-flex items-center gap-1.5 rounded-full bg-brand-soft px-2.5 py-1 text-[0.66rem] font-bold uppercase tracking-wide text-brand">
+          <Lock className="h-3 w-3" aria-hidden="true" /> {lockedRowCount} more comparison points
+        </p>
+        <h3 className="mt-2.5 font-display text-lg font-extrabold sm:text-xl">
+          Unlock the full {shortlist} report
+        </h3>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Programme &amp; specialisation depth, admission windows, documents, exam pattern, career
+          outcomes, our editorial verdict and the verification trail behind every figure.
+        </p>
+
+        <ul className="mt-3 grid gap-1.5 sm:grid-cols-2">
+          {lockedGroups.map((g) => (
+            <li key={g.id} className="flex items-start gap-1.5 text-[0.8rem] text-muted-foreground">
+              <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-brand" aria-hidden="true" />
+              <span>
+                <span className="font-semibold text-foreground">{g.title}</span>
+                {g.blurb ? ` — ${g.blurb}` : ""}
+              </span>
+            </li>
+          ))}
+        </ul>
+
+        <form onSubmit={onSubmit} className="mt-4 grid gap-2.5 sm:grid-cols-[1fr_1fr_auto]">
+          <label className="sm:col-span-1">
+            <span className="sr-only">Your name</span>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Your name"
+              autoComplete="name"
+              className="h-11 w-full rounded-xl border border-border bg-background px-3 text-sm outline-none focus-visible:border-brand"
+            />
+          </label>
+          <label>
+            <span className="sr-only">Mobile number</span>
+            <input
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="Mobile number"
+              inputMode="numeric"
+              autoComplete="tel"
+              className="h-11 w-full rounded-xl border border-border bg-background px-3 text-sm outline-none focus-visible:border-brand"
+            />
+          </label>
+          <button
+            type="submit"
+            disabled={busy}
+            className="inline-flex h-11 items-center justify-center gap-1.5 rounded-xl bg-brand px-5 text-sm font-bold text-brand-foreground hover:opacity-90 disabled:opacity-60"
+          >
+            <Unlock className="h-4 w-4" aria-hidden="true" />
+            {busy ? "Unlocking…" : "Unlock comparison"}
+          </button>
+        </form>
+        {error && <p className="mt-2 text-xs font-semibold text-destructive">{error}</p>}
+        <p className="mt-2 flex items-center gap-1.5 text-[0.7rem] text-muted-foreground">
+          <BadgeCheck className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
+          Free. We use your number only to send the comparison summary and answer admission
+          questions.
+        </p>
+      </div>
+    </div>
+  );
+}
+
+/* --------------------------------- rows ---------------------------------- */
+
+function GroupBlock({ group, chosen }: { group: CompareGroup; chosen: CompareUniversity[] }) {
   return (
     <>
       <div
-        className="col-span-full border-y border-border bg-secondary/70 px-2.5 py-2 text-[0.68rem] font-bold uppercase tracking-[0.14em] text-brand sm:px-4"
+        className="col-span-full border-y border-border bg-secondary/70 px-2.5 py-2 sm:px-4"
         role="rowheader"
       >
-        {group.title}
+        <p className="text-[0.68rem] font-bold uppercase tracking-[0.14em] text-brand">
+          {group.title}
+        </p>
+        {group.blurb && (
+          <p className="mt-0.5 text-[0.7rem] text-muted-foreground">{group.blurb}</p>
+        )}
       </div>
       {group.rows.map((row) => {
         const winners = winnersFor(row, chosen);

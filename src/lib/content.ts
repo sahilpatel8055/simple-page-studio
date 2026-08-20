@@ -694,7 +694,18 @@ export const authors: Author[] = [
     articles: 47,
     expertise: ["Fees", "Scholarships", "Rankings"],
   },
+  {
+
+    slug: "kartik-ahuja",
+    name: "Kartik Ahuja",
+    role: "Data & Verification Lead",
+    initials: "KA",
+    bio: "Verifies every fee, approval and admission date against the university's own published sources before it goes live.",
+    articles: 39,
+    expertise: ["Data verification", "UGC-DEB", "Fee audits"],
+  },
 ];
+
 
 export const categories: Taxonomy[] = [
   {
