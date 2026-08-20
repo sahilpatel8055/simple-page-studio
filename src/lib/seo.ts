@@ -5,6 +5,8 @@
  * so metadata stays unique, non-duplicated and consistent as the site scales
  * to programmatic (100k+) pages.
  */
+import { company } from "@/data/company";
+
 
 export const SITE_NAME = "DegreeKhojo";
 export const SITE_TAGLINE = "India's online & distance education knowledge platform";
@@ -194,29 +196,67 @@ export const articleSchema = (a: {
   dateModified: a.dateModified ?? a.datePublished,
 });
 
+/**
+ * Maps the dataset's delivery modes to schema.org `courseMode` values.
+ * Returns `undefined` when the dataset does not state a mode — the property is
+ * then omitted rather than defaulting to "online".
+ */
+export const courseModeValue = (modes?: readonly string[]) => {
+  if (!modes?.length) return undefined;
+  const values = [
+    ...new Set(
+      modes
+        .map((m) => m.toLowerCase())
+        .map((m) =>
+          m.includes("hybrid") || m.includes("blended")
+            ? "blended"
+            : m.includes("distance") || m.includes("odl")
+              ? "distance learning"
+              : m.includes("online")
+                ? "online"
+                : undefined,
+        )
+        .filter((m): m is string => Boolean(m)),
+    ),
+  ];
+  if (!values.length) return undefined;
+  return values.length === 1 ? values[0] : values;
+};
+
 export const courseSchema = (c: {
   name: string;
   description: string;
   provider?: string | undefined;
   path?: string | undefined;
-  mode?: string | undefined;
+  /** Actual delivery modes from the dataset, e.g. ["Online"] or ["Distance"]. */
+  modes?: readonly string[] | undefined;
   durationISO?: string | undefined;
   level?: string | undefined;
-}) => ({
-  "@context": "https://schema.org",
-  "@type": "Course",
-  name: c.name,
-  description: c.description,
-  ...(c.path ? { url: abs(c.path) } : {}),
-  inLanguage: SITE_LANG,
-  educationalLevel: c.level,
-  provider: { "@type": "CollegeOrUniversity", name: c.provider ?? SITE_NAME },
-  hasCourseInstance: {
-    "@type": "CourseInstance",
-    courseMode: c.mode ?? "online",
-    ...(c.durationISO ? { courseWorkload: c.durationISO } : {}),
-  },
-});
+}) => {
+  const courseMode = courseModeValue(c.modes);
+  const instance =
+    courseMode || c.durationISO
+      ? {
+          hasCourseInstance: {
+            "@type": "CourseInstance",
+            ...(courseMode ? { courseMode } : {}),
+            ...(c.durationISO ? { courseWorkload: c.durationISO } : {}),
+          },
+        }
+      : {};
+  return {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: c.name,
+    description: c.description,
+    ...(c.path ? { url: abs(c.path) } : {}),
+    inLanguage: SITE_LANG,
+    ...(c.level ? { educationalLevel: c.level } : {}),
+    provider: { "@type": "CollegeOrUniversity", name: c.provider ?? SITE_NAME },
+    ...instance,
+  };
+};
+
 
 export const collegeSchema = (u: {
   name: string;
