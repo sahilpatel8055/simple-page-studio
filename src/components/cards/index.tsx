@@ -297,11 +297,23 @@ export function CareerCard({ item }: { item: CareerGuide }) {
 }
 
 export function AuthorCard({ item }: { item: Author }) {
+  const photo = expertPhoto(item.slug);
   return (
     <AppLink to={`/authors/${item.slug}`} className={`${cardBase} items-center text-center`}>
-      <span className="grid h-16 w-16 place-items-center rounded-full bg-brand-soft font-display text-lg font-bold text-brand">
-        {item.initials}
-      </span>
+      {photo ? (
+        <img
+          src={photo}
+          alt={`${item.name}, ${item.role} at DegreeKhojo`}
+          loading="lazy"
+          width={96}
+          height={96}
+          className="h-24 w-24 rounded-full border border-border object-cover object-top"
+        />
+      ) : (
+        <span className="grid h-16 w-16 place-items-center rounded-full bg-brand-soft font-display text-lg font-bold text-brand">
+          {item.initials}
+        </span>
+      )}
       <h3 className="mt-4 font-display text-base font-bold">{item.name}</h3>
       <p className="text-xs text-muted-foreground">{item.role}</p>
       <p className="mt-3 line-clamp-3 text-sm text-muted-foreground">{item.bio}</p>
@@ -311,6 +323,7 @@ export function AuthorCard({ item }: { item: Author }) {
     </AppLink>
   );
 }
+
 
 export function ToolCard({ item }: { item: Tool }) {
   return (
