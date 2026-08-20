@@ -147,7 +147,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       title={title}
       subtitle={content.intro}
       meta={<UpdatedStamp date="2026-08-12" verified={false} />}
-      tocSections={pair.comparison_sections.map((s) => s.heading)}
+      tocSections={(pair.comparison_sections ?? []).map((s) => s.heading)}
       faqs={faqs}
       related={
         <RelatedLinkGrid
