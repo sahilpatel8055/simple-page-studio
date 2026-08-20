@@ -273,7 +273,7 @@ export function UniversityCompareBoard() {
               </div>
 
               {!unlocked && (
-                <div className="absolute inset-x-0 bottom-0 top-0 z-30 flex items-end bg-gradient-to-b from-card/90 via-card to-card">
+                <div className="absolute inset-x-0 bottom-0 top-0 z-30 flex items-end bg-card/98 pt-16 shadow-[0_-20px_40px_-15px_oklch(0_0_0/0.12)]">
                   <UnlockPanel chosen={chosen} onUnlocked={onUnlocked} />
                 </div>
               )}
