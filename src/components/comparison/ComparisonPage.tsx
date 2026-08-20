@@ -102,6 +102,14 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
     : undefined;
 
 
+  // Some master pairs ship without an editorial `content` block; fall back so SSR never crashes.
+  const content = pair.content ?? {
+    intro: `A side-by-side look at ${aName} and ${bName} — approvals, fees, specialisations and student support.`,
+    angle: `Both ${aName} and ${bName} run UGC-entitled online programmes, so the choice comes down to fee band, specialisation depth and support.`,
+    decision_framework: `Shortlist on approvals first, then compare total programme fee, specialisation fit and placement support before applying.`,
+    fit_statement: `${aName} suits learners who want its programme mix, while ${bName} works better if its fee band and specialisations match your plan.`,
+  };
+
   const title = course
     ? `${aName} vs ${bName} Online ${course}: Fees, Eligibility & Full Comparison`
     : `${aName} vs ${bName}: Online University Comparison ${"2026-27"}`;
@@ -111,11 +119,11 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
 
     {
       question: `${aName} vs ${bName} — which is better${course ? ` for online ${course}` : ""}?`,
-      answer: pair.content.fit_statement,
+      answer: content.fit_statement,
     },
     {
       question: `How should I decide between ${aName} and ${bName}?`,
-      answer: pair.content.decision_framework,
+      answer: content.decision_framework,
     },
     course
       ? {
@@ -137,7 +145,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       ]}
       eyebrow={course ? `Online ${course} comparison` : "University comparison"}
       title={title}
-      subtitle={pair.content.intro}
+      subtitle={content.intro}
       meta={<UpdatedStamp date="2026-08-12" verified={false} />}
       tocSections={pair.comparison_sections.map((s) => s.heading)}
       faqs={faqs}
@@ -197,8 +205,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       )}
 
       <ContentSection title={`${aName} vs ${bName}: Overview`}>
-        <p>{pair.content.angle}</p>
-        <p>{pair.content.decision_framework}</p>
+        <p>{content.angle}</p>
+        <p>{content.decision_framework}</p>
       </ContentSection>
 
       {pack ? (
@@ -412,7 +420,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       </ContentSection>
 
       <ContentSection title="Which University May Suit You?">
-        <p>{pair.content.fit_statement}</p>
+        <p>{content.fit_statement}</p>
       </ContentSection>
 
       <AuthorBox />

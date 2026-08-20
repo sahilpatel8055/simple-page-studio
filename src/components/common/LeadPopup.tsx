@@ -32,7 +32,7 @@ function copyForPath(path: string): Copy {
   return {
     eyebrow: "Free guidance",
     title: "Not sure which online degree to pick?",
-    body: "Speak to an unbiased AVEDU counsellor — no spam, no pressure, just verified information.",
+    body: "Speak to an unbiased DegreeKhojo counsellor — no spam, no pressure, just verified information.",
   };
 }
 

@@ -5,7 +5,7 @@ import { CTASection } from "@/components/common/Primitives";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
 const title = "Privacy Policy";
-const description = "How AVEDU Insights collects, uses and protects the information you share with us.";
+const description = "How DegreeKhojo collects, uses and protects the information you share with us.";
 const path = "/privacy-policy";
 
 export const Route = createFileRoute("/privacy-policy")({

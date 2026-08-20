@@ -34,7 +34,7 @@ export function sectionHead(slug: string, section: SectionKey, loaderData: Secti
       description,
       path,
       modifiedTime: loaderData.lastUpdated,
-      author: "AVEDU Editorial Desk",
+      author: "DegreeKhojo Editorial Desk",
     }),
     links: canonical(path),
     scripts: [

@@ -5,7 +5,7 @@ import { AuthorCard } from "@/components/cards";
 import { authors } from "@/lib/content";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
-const title = "About AVEDU Insights";
+const title = "About DegreeKhojo";
 const description = "We research India’s online and distance education market so learners can choose a degree on evidence, not advertising.";
 const path = "/about";
 

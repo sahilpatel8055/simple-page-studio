@@ -223,7 +223,7 @@ export function UniversityCompareBoard() {
           <section className="rounded-2xl border border-border bg-brand-soft/30 p-4 sm:p-6">
             <h2 className="text-lg font-bold sm:text-xl">Ready to choose?</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Open a full university profile, or talk to an AVEDU counsellor about the shortlist.
+              Open a full university profile, or talk to an DegreeKhojo counsellor about the shortlist.
             </p>
             <div className="mt-4 flex flex-wrap gap-2.5">
               {chosen.map((u) => (

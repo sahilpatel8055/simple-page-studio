@@ -6,7 +6,7 @@ import { categories } from "@/lib/content";
 import { canonical, collectionSchema, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
 const title = "Browse Content Categories";
-const description = "Explore every topic cluster in the AVEDU knowledge hub, from admission guidance to career growth.";
+const description = "Explore every topic cluster in the DegreeKhojo knowledge hub, from admission guidance to career growth.";
 const path = "/categories";
 
 export const Route = createFileRoute("/categories")({

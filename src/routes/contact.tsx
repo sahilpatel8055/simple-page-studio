@@ -5,7 +5,7 @@ import { LeadCaptureCard } from "@/components/common/Sidebar";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
 const title = "Contact & Free Admission Guidance";
-const description = "Talk to an AVEDU counsellor about eligibility, fees and university shortlisting — free of cost.";
+const description = "Talk to an DegreeKhojo counsellor about eligibility, fees and university shortlisting — free of cost.";
 const path = "/contact";
 
 export const Route = createFileRoute("/contact")({

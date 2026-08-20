@@ -32,6 +32,7 @@ import { Route as ToolsRouteImport } from './routes/tools'
 import { Route as UniversitiesRouteImport } from './routes/universities'
 import { Route as BlogsIndexRouteImport } from './routes/blogs.index'
 import { Route as BlogsSlugRouteImport } from './routes/blogs.$slug'
+import { Route as CareerIndexRouteImport } from './routes/career.index'
 import { Route as CareerSlugRouteImport } from './routes/career.$slug'
 import { Route as CompareIndexRouteImport } from './routes/compare.index'
 import { Route as CompareComparisonRouteImport } from './routes/compare.$comparison'
@@ -41,6 +42,7 @@ import { Route as CoursesCourseRouteImport } from './routes/courses.$course'
 import { Route as NewsIndexRouteImport } from './routes/news.index'
 import { Route as NewsSlugRouteImport } from './routes/news.$slug'
 import { Route as ReviewsSlugRouteImport } from './routes/reviews.$slug'
+import { Route as ScholarshipsIndexRouteImport } from './routes/scholarships.index'
 import { Route as ScholarshipsSlugRouteImport } from './routes/scholarships.$slug'
 import { Route as ToolsIndexRouteImport } from './routes/tools.index'
 import { Route as ToolsFeeEmiCalculatorRouteImport } from './routes/tools.fee-emi-calculator'
@@ -176,6 +178,11 @@ const BlogsSlugRoute = BlogsSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => BlogsRoute,
 } as any)
+const CareerIndexRoute = CareerIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => CareerRoute,
+} as any)
 const CareerSlugRoute = CareerSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -220,6 +227,11 @@ const ReviewsSlugRoute = ReviewsSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
   getParentRoute: () => ReviewsRoute,
+} as any)
+const ScholarshipsIndexRoute = ScholarshipsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ScholarshipsRoute,
 } as any)
 const ScholarshipsSlugRoute = ScholarshipsSlugRouteImport.update({
   id: '/$slug',
@@ -359,9 +371,11 @@ export interface FileRoutesByFullPath {
   '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
+  '/career/': typeof CareerIndexRoute
   '/compare/': typeof CompareIndexRoute
   '/courses/': typeof CoursesIndexRoute
   '/news/': typeof NewsIndexRoute
+  '/scholarships/': typeof ScholarshipsIndexRoute
   '/tools/': typeof ToolsIndexRoute
   '/universities/': typeof UniversitiesIndexRoute
   '/compare/$course/$pair': typeof CompareCoursePairRoute
@@ -383,14 +397,12 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/admissions': typeof AdmissionsRoute
   '/authors': typeof AuthorsRoute
-  '/career': typeof CareerRouteWithChildren
   '/categories': typeof CategoriesRoute
   '/contact': typeof ContactRoute
   '/counselling': typeof CounsellingRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/rankings': typeof RankingsRoute
   '/reviews': typeof ReviewsRouteWithChildren
-  '/scholarships': typeof ScholarshipsRouteWithChildren
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tags': typeof TagsRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
@@ -404,9 +416,11 @@ export interface FileRoutesByTo {
   '/tools/fee-emi-calculator': typeof ToolsFeeEmiCalculatorRoute
   '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/blogs': typeof BlogsIndexRoute
+  '/career': typeof CareerIndexRoute
   '/compare': typeof CompareIndexRoute
   '/courses': typeof CoursesIndexRoute
   '/news': typeof NewsIndexRoute
+  '/scholarships': typeof ScholarshipsIndexRoute
   '/tools': typeof ToolsIndexRoute
   '/universities': typeof UniversitiesIndexRoute
   '/compare/$course/$pair': typeof CompareCoursePairRoute
@@ -458,9 +472,11 @@ export interface FileRoutesById {
   '/tools/salary-after-course': typeof ToolsSalaryAfterCourseRoute
   '/universities/$slug': typeof UniversitiesSlugRouteWithChildren
   '/blogs/': typeof BlogsIndexRoute
+  '/career/': typeof CareerIndexRoute
   '/compare/': typeof CompareIndexRoute
   '/courses/': typeof CoursesIndexRoute
   '/news/': typeof NewsIndexRoute
+  '/scholarships/': typeof ScholarshipsIndexRoute
   '/tools/': typeof ToolsIndexRoute
   '/universities/': typeof UniversitiesIndexRoute
   '/compare/$course/$pair': typeof CompareCoursePairRoute
@@ -513,9 +529,11 @@ export interface FileRouteTypes {
     | '/tools/salary-after-course'
     | '/universities/$slug'
     | '/blogs/'
+    | '/career/'
     | '/compare/'
     | '/courses/'
     | '/news/'
+    | '/scholarships/'
     | '/tools/'
     | '/universities/'
     | '/compare/$course/$pair'
@@ -537,14 +555,12 @@ export interface FileRouteTypes {
     | '/about'
     | '/admissions'
     | '/authors'
-    | '/career'
     | '/categories'
     | '/contact'
     | '/counselling'
     | '/privacy-policy'
     | '/rankings'
     | '/reviews'
-    | '/scholarships'
     | '/sitemap.xml'
     | '/tags'
     | '/terms-and-conditions'
@@ -558,9 +574,11 @@ export interface FileRouteTypes {
     | '/tools/fee-emi-calculator'
     | '/tools/salary-after-course'
     | '/blogs'
+    | '/career'
     | '/compare'
     | '/courses'
     | '/news'
+    | '/scholarships'
     | '/tools'
     | '/universities'
     | '/compare/$course/$pair'
@@ -611,9 +629,11 @@ export interface FileRouteTypes {
     | '/tools/salary-after-course'
     | '/universities/$slug'
     | '/blogs/'
+    | '/career/'
     | '/compare/'
     | '/courses/'
     | '/news/'
+    | '/scholarships/'
     | '/tools/'
     | '/universities/'
     | '/compare/$course/$pair'
@@ -820,6 +840,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BlogsSlugRouteImport
       parentRoute: typeof BlogsRoute
     }
+    '/career/': {
+      id: '/career/'
+      path: '/'
+      fullPath: '/career/'
+      preLoaderRoute: typeof CareerIndexRouteImport
+      parentRoute: typeof CareerRoute
+    }
     '/career/$slug': {
       id: '/career/$slug'
       path: '/$slug'
@@ -882,6 +909,13 @@ declare module '@tanstack/react-router' {
       fullPath: '/reviews/$slug'
       preLoaderRoute: typeof ReviewsSlugRouteImport
       parentRoute: typeof ReviewsRoute
+    }
+    '/scholarships/': {
+      id: '/scholarships/'
+      path: '/'
+      fullPath: '/scholarships/'
+      preLoaderRoute: typeof ScholarshipsIndexRouteImport
+      parentRoute: typeof ScholarshipsRoute
     }
     '/scholarships/$slug': {
       id: '/scholarships/$slug'
@@ -1033,10 +1067,12 @@ const BlogsRouteWithChildren = BlogsRoute._addFileChildren(BlogsRouteChildren)
 
 interface CareerRouteChildren {
   CareerSlugRoute: typeof CareerSlugRoute
+  CareerIndexRoute: typeof CareerIndexRoute
 }
 
 const CareerRouteChildren: CareerRouteChildren = {
   CareerSlugRoute: CareerSlugRoute,
+  CareerIndexRoute: CareerIndexRoute,
 }
 
 const CareerRouteWithChildren =
@@ -1113,10 +1149,12 @@ const ReviewsRouteWithChildren =
 
 interface ScholarshipsRouteChildren {
   ScholarshipsSlugRoute: typeof ScholarshipsSlugRoute
+  ScholarshipsIndexRoute: typeof ScholarshipsIndexRoute
 }
 
 const ScholarshipsRouteChildren: ScholarshipsRouteChildren = {
   ScholarshipsSlugRoute: ScholarshipsSlugRoute,
+  ScholarshipsIndexRoute: ScholarshipsIndexRoute,
 }
 
 const ScholarshipsRouteWithChildren = ScholarshipsRoute._addFileChildren(

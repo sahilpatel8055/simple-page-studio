@@ -88,7 +88,7 @@ export const Route = createFileRoute("/compare/$comparison")({
           title,
           description,
           path,
-          author: "AVEDU Editorial Desk",
+          author: "DegreeKhojo Editorial Desk",
           keywords: [
             `${family.name} comparison`,
             `compare ${family.name} universities`,
@@ -125,7 +125,7 @@ export const Route = createFileRoute("/compare/$comparison")({
         title,
         description,
         path,
-        author: "AVEDU Editorial Desk",
+        author: "DegreeKhojo Editorial Desk",
         keywords: ctr.keywords,
       }),
       links: canonical(path),
