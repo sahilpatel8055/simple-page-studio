@@ -5,7 +5,8 @@ import { AccentHeadline } from "@/components/common/Headline";
 import { CheckCircle2 } from "lucide-react";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 import counsellingArt from "@/assets/course-counselling-illustration.png";
-import offerArt from "@/assets/course-offer-illustration.png";
+import teamPhoto from "@/assets/about-team.jpg";
+import { GrowthChart } from "@/components/common/GrowthChart";
 
 const title = "About DegreeKhojo";
 const description = "We research India’s online and distance education market so learners can choose a degree on evidence, not advertising.";
@@ -105,12 +106,15 @@ function Page() {
         </div>
         <div className="relative">
           <div className="absolute inset-0 rounded-full bg-[#7f1813]/10 blur-3xl" />
-          <img
-            src={counsellingArt}
-            alt="Online degree counselling illustration"
-            className="relative z-10 w-full rounded-3xl"
-            loading="lazy"
-          />
+          <div className="relative z-10">
+            <GrowthChart />
+            <img
+              src={counsellingArt}
+              alt="Online degree counselling illustration"
+              className="sr-only"
+              loading="lazy"
+            />
+          </div>
         </div>
       </section>
 
@@ -119,9 +123,11 @@ function Page() {
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-2 shadow-xl">
             <img
-              src={offerArt}
+              src={teamPhoto}
               alt="DegreeKhojo research team at work"
-              className="w-full rounded-2xl object-cover"
+              className="h-full w-full rounded-2xl object-cover"
+              width={1280}
+              height={912}
               loading="lazy"
             />
             <div className="absolute bottom-4 left-4 rounded-xl bg-[#7f1813] p-4 text-white shadow-lg">
