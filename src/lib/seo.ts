@@ -216,7 +216,7 @@ export const courseModeValue = (modes?: readonly string[]) => {
                 ? "online"
                 : undefined,
         )
-        .filter((m): m is string => Boolean(m)),
+        .filter((m): m is NonNullable<typeof m> => Boolean(m)),
     ),
   ];
   if (!values.length) return undefined;
