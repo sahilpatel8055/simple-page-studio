@@ -31,7 +31,10 @@ export function UniversitySectionPage({ slug, section }: { slug: string; section
 
   const siblings = universitySectionPages(slug)
     .filter((s) => s !== section)
-    .map((s) => ({ label: `${u.shortName} ${sectionLabels[s].toLowerCase()}`, href: `/universities/${slug}/${s}` }));
+    .map((s) => ({
+      label: `${u.shortName} ${sectionLabels[s].toLowerCase()}`,
+      href: `/universities/${slug}/${s}`,
+    }));
 
   const body = {
     admission: (
@@ -91,15 +94,17 @@ export function UniversitySectionPage({ slug, section }: { slug: string; section
         <div className="surface-card p-4 sm:p-5">
           <p className="text-sm font-bold">Programmes at {u.shortName}</p>
           <div className="mt-3 grid gap-1.5 sm:grid-cols-2">
-            {offeringLinks(u.slug).slice(0, 12).map((l) => (
-              <AppLink
-                key={l.href}
-                to={l.href}
-                className="truncate rounded-lg px-2 py-1.5 text-sm text-foreground transition-colors hover:bg-secondary"
-              >
-                {l.label}
-              </AppLink>
-            ))}
+            {offeringLinks(u.slug)
+              .slice(0, 12)
+              .map((l) => (
+                <AppLink
+                  key={l.href}
+                  to={l.href}
+                  className="truncate rounded-lg px-2 py-1.5 text-sm text-foreground transition-colors hover:bg-secondary"
+                >
+                  {l.label}
+                </AppLink>
+              ))}
           </div>
         </div>
 

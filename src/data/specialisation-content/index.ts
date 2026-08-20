@@ -57,10 +57,10 @@ export function specContentFor(
     industries: authored.industries.length
       ? authored.industries
       : [...new Set(list.flatMap((o) => o.industries))].slice(0, 12),
-    faqs: [
-      ...(authored.extraFaqs ?? []),
-      ...deriveSpecContent(family, spec, offers).faqs,
-    ].slice(0, 8),
+    faqs: [...(authored.extraFaqs ?? []), ...deriveSpecContent(family, spec, offers).faqs].slice(
+      0,
+      8,
+    ),
     researched: true,
   };
 }

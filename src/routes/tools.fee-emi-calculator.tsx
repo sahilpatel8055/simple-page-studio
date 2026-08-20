@@ -142,7 +142,10 @@ function Page() {
 
   return (
     <PageShell
-      crumbs={[{ name: "Tools", href: "/tools" }, { name: "Fee, EMI & ROI calculator", href: path }]}
+      crumbs={[
+        { name: "Tools", href: "/tools" },
+        { name: "Fee, EMI & ROI calculator", href: path },
+      ]}
       eyebrow="Interactive tool"
       title="Fee, EMI & ROI Calculator"
       description={description}
@@ -152,68 +155,157 @@ function Page() {
           <h2 className="font-display text-lg font-bold">1. Your programme</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             <div>
-              <label className={label} htmlFor="course">Course</label>
-              <select id="course" className={field} value={familySlug} onChange={(e) => onFamily(e.target.value)}>
-                {families.map((f) => (<option key={f.slug} value={f.slug}>{f.name}</option>))}
-              </select>
-            </div>
-            <div>
-              <label className={label} htmlFor="university">University</label>
-              <select id="university" className={field} value={uniSlug} onChange={(e) => setUniSlug(e.target.value)}>
-                {family?.offers.map((o) => (
-                  <option key={o.slug} value={o.slug}>{o.name} — {INR(o.total)}</option>
+              <label className={label} htmlFor="course">
+                Course
+              </label>
+              <select
+                id="course"
+                className={field}
+                value={familySlug}
+                onChange={(e) => onFamily(e.target.value)}
+              >
+                {families.map((f) => (
+                  <option key={f.slug} value={f.slug}>
+                    {f.name}
+                  </option>
                 ))}
               </select>
             </div>
             <div>
-              <label className={label} htmlFor="extra">Extra charges (exam, registration)</label>
-              <input id="extra" type="number" min={0} step={500} className={field} value={extraCost}
-                onChange={(e) => setExtraCost(Math.max(0, Number(e.target.value) || 0))} />
+              <label className={label} htmlFor="university">
+                University
+              </label>
+              <select
+                id="university"
+                className={field}
+                value={uniSlug}
+                onChange={(e) => setUniSlug(e.target.value)}
+              >
+                {family?.offers.map((o) => (
+                  <option key={o.slug} value={o.slug}>
+                    {o.name} — {INR(o.total)}
+                  </option>
+                ))}
+              </select>
             </div>
             <div>
-              <label className={label} htmlFor="down">Down payment</label>
-              <input id="down" type="number" min={0} step={1000} className={field} value={downPayment}
-                onChange={(e) => setDownPayment(Math.max(0, Number(e.target.value) || 0))} />
+              <label className={label} htmlFor="extra">
+                Extra charges (exam, registration)
+              </label>
+              <input
+                id="extra"
+                type="number"
+                min={0}
+                step={500}
+                className={field}
+                value={extraCost}
+                onChange={(e) => setExtraCost(Math.max(0, Number(e.target.value) || 0))}
+              />
+            </div>
+            <div>
+              <label className={label} htmlFor="down">
+                Down payment
+              </label>
+              <input
+                id="down"
+                type="number"
+                min={0}
+                step={1000}
+                className={field}
+                value={downPayment}
+                onChange={(e) => setDownPayment(Math.max(0, Number(e.target.value) || 0))}
+              />
             </div>
           </div>
 
           <h2 className="mt-8 font-display text-lg font-bold">2. EMI plan</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             <div>
-              <label className={label} htmlFor="tenure">Tenure: {months} months</label>
-              <input id="tenure" type="range" min={6} max={48} step={3} className="w-full accent-[color:var(--brand,#7f1813)]"
-                value={months} onChange={(e) => setMonths(Number(e.target.value))} />
+              <label className={label} htmlFor="tenure">
+                Tenure: {months} months
+              </label>
+              <input
+                id="tenure"
+                type="range"
+                min={6}
+                max={48}
+                step={3}
+                className="w-full accent-[color:var(--brand,#7f1813)]"
+                value={months}
+                onChange={(e) => setMonths(Number(e.target.value))}
+              />
             </div>
             <div>
-              <label className={label} htmlFor="rate">Interest rate: {rate}% p.a. {rate === 0 && "(no-cost EMI)"}</label>
-              <input id="rate" type="range" min={0} max={18} step={0.5} className="w-full accent-[color:var(--brand,#7f1813)]"
-                value={rate} onChange={(e) => setRate(Number(e.target.value))} />
+              <label className={label} htmlFor="rate">
+                Interest rate: {rate}% p.a. {rate === 0 && "(no-cost EMI)"}
+              </label>
+              <input
+                id="rate"
+                type="range"
+                min={0}
+                max={18}
+                step={0.5}
+                className="w-full accent-[color:var(--brand,#7f1813)]"
+                value={rate}
+                onChange={(e) => setRate(Number(e.target.value))}
+              />
             </div>
           </div>
 
           <h2 className="mt-8 font-display text-lg font-bold">3. Return on investment</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
             <div>
-              <label className={label} htmlFor="cur">Current annual salary</label>
-              <input id="cur" type="number" min={0} step={10000} className={field} value={currentSalary}
-                onChange={(e) => setCurrentSalary(Math.max(0, Number(e.target.value) || 0))} />
+              <label className={label} htmlFor="cur">
+                Current annual salary
+              </label>
+              <input
+                id="cur"
+                type="number"
+                min={0}
+                step={10000}
+                className={field}
+                value={currentSalary}
+                onChange={(e) => setCurrentSalary(Math.max(0, Number(e.target.value) || 0))}
+              />
             </div>
             <div>
-              <label className={label} htmlFor="exp">Expected annual salary after the degree</label>
-              <input id="exp" type="number" min={0} step={10000} className={field} value={expectedSalary}
-                onChange={(e) => setExpectedSalary(Math.max(0, Number(e.target.value) || 0))} />
+              <label className={label} htmlFor="exp">
+                Expected annual salary after the degree
+              </label>
+              <input
+                id="exp"
+                type="number"
+                min={0}
+                step={10000}
+                className={field}
+                value={expectedSalary}
+                onChange={(e) => setExpectedSalary(Math.max(0, Number(e.target.value) || 0))}
+              />
             </div>
             <div className="sm:col-span-2">
-              <label className={label} htmlFor="hz">Horizon: {horizon} years after completion</label>
-              <input id="hz" type="range" min={1} max={10} step={1} className="w-full accent-[color:var(--brand,#7f1813)]"
-                value={horizon} onChange={(e) => setHorizon(Number(e.target.value))} />
+              <label className={label} htmlFor="hz">
+                Horizon: {horizon} years after completion
+              </label>
+              <input
+                id="hz"
+                type="range"
+                min={1}
+                max={10}
+                step={1}
+                className="w-full accent-[color:var(--brand,#7f1813)]"
+                value={horizon}
+                onChange={(e) => setHorizon(Number(e.target.value))}
+              />
             </div>
           </div>
           {band && (
             <p className="mt-4 rounded-xl bg-secondary/60 p-3 text-xs text-muted-foreground">
-              For reference, learners three years after an {baseline?.label} typically report an indicative band of{" "}
-              <strong className="text-foreground">{INR(band.min)} – {INR(band.max)}</strong> per year. Indicative only —
-              not a placement guarantee.
+              For reference, learners three years after an {baseline?.label} typically report an
+              indicative band of{" "}
+              <strong className="text-foreground">
+                {INR(band.min)} – {INR(band.max)}
+              </strong>{" "}
+              per year. Indicative only — not a placement guarantee.
             </p>
           )}
         </div>
@@ -235,7 +327,11 @@ function Page() {
                 strong
               />
               <Row k={`Net gain over ${horizon} yrs`} v={INR(result.netGain)} />
-              <Row k="ROI" v={result.roiPercent === null ? "—" : `${Math.round(result.roiPercent)}%`} strong />
+              <Row
+                k="ROI"
+                v={result.roiPercent === null ? "—" : `${Math.round(result.roiPercent)}%`}
+                strong
+              />
             </dl>
             {offer && (
               <AppLink to={offer.path} className="btn btn-primary mt-5 w-full">
@@ -253,9 +349,18 @@ function Page() {
         <h2 className="font-display text-xl font-bold">How to read these results</h2>
         <div className="mt-4 grid gap-4 sm:grid-cols-3">
           {[
-            ["Payback under 18 months", "The fee is recovered within about a year and a half of the salary jump — a strong case for enrolling now rather than waiting."],
-            ["Payback 18–36 months", "Reasonable for a career switch. Check whether the university's specialisation actually maps to the role you are targeting."],
-            ["Payback beyond 36 months", "Either the fee is high for the outcome, or the salary expectation is optimistic. Compare a lower-fee university with the same UGC entitlement."],
+            [
+              "Payback under 18 months",
+              "The fee is recovered within about a year and a half of the salary jump — a strong case for enrolling now rather than waiting.",
+            ],
+            [
+              "Payback 18–36 months",
+              "Reasonable for a career switch. Check whether the university's specialisation actually maps to the role you are targeting.",
+            ],
+            [
+              "Payback beyond 36 months",
+              "Either the fee is high for the outcome, or the salary expectation is optimistic. Compare a lower-fee university with the same UGC entitlement.",
+            ],
           ].map(([h, p]) => (
             <div key={h} className="rounded-2xl border border-border bg-card p-4">
               <h3 className="font-display text-sm font-bold">{h}</h3>
@@ -268,7 +373,9 @@ function Page() {
       <div className="mt-14">
         <Faq items={faqs} />
       </div>
-      <div className="mt-16"><CTASection /></div>
+      <div className="mt-16">
+        <CTASection />
+      </div>
     </PageShell>
   );
 }
@@ -277,7 +384,9 @@ function Row({ k, v, strong }: { k: string; v: string; strong?: boolean }) {
   return (
     <div className="flex items-baseline justify-between gap-3">
       <dt className="text-muted-foreground">{k}</dt>
-      <dd className={strong ? "font-display text-base font-bold text-brand" : "font-semibold"}>{v}</dd>
+      <dd className={strong ? "font-display text-base font-bold text-brand" : "font-semibold"}>
+        {v}
+      </dd>
     </div>
   );
 }

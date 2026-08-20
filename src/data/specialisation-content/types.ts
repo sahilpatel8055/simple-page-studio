@@ -77,7 +77,9 @@ export const feeRangeFor = (offers: FamilyOffer[], family: CourseFamily): string
   if (!totals.length) return family.feeRangeLabel;
   const min = Math.min(...totals);
   const max = Math.max(...totals);
-  return min === max ? (formatFee(min) ?? family.feeRangeLabel) : `${formatFee(min)} – ${formatFee(max)}`;
+  return min === max
+    ? (formatFee(min) ?? family.feeRangeLabel)
+    : `${formatFee(min)} – ${formatFee(max)}`;
 };
 
 export function baseHighlights(ctx: SpecCtx, offers: FamilyOffer[]): SpecHighlight[] {
@@ -89,7 +91,10 @@ export function baseHighlights(ctx: SpecCtx, offers: FamilyOffer[]): SpecHighlig
     { label: "Mode", value: modes.length ? modes.join(" / ") : "Online" },
     { label: "Fee range", value: ctx.feeRange },
     { label: "Universities offering it", value: `${ctx.providers} in our dataset` },
-    { label: "Approvals to check", value: "UGC entitlement + UGC-DEB, NAAC grade, AICTE where applicable" },
+    {
+      label: "Approvals to check",
+      value: "UGC entitlement + UGC-DEB, NAAC grade, AICTE where applicable",
+    },
     {
       label: "Typical entry salary",
       value: ctx.level === "PG" ? "₹4 – ₹9 LPA (role dependent)" : "₹2.5 – ₹6 LPA (role dependent)",
@@ -123,7 +128,8 @@ export function baseAdmissionSteps(ctx: SpecCtx): Labelled[] {
     },
     {
       title: "Register on the online-learning portal",
-      detail: "Create an account with your mobile number and email, then verify the OTP to open the application form.",
+      detail:
+        "Create an account with your mobile number and email, then verify the OTP to open the application form.",
     },
     {
       title: "Fill the application and pick the specialisation",
@@ -138,11 +144,13 @@ export function baseAdmissionSteps(ctx: SpecCtx): Labelled[] {
     },
     {
       title: "Pay the fee (full, semester or EMI)",
-      detail: "Most universities allow semester-wise payment and no-cost EMI; keep the receipt and the fee-structure page.",
+      detail:
+        "Most universities allow semester-wise payment and no-cost EMI; keep the receipt and the fee-structure page.",
     },
     {
       title: "Get the enrolment number and LMS access",
-      detail: "Verification takes a few working days, after which recorded lectures, e-books and live-class links open up.",
+      detail:
+        "Verification takes a few working days, after which recorded lectures, e-books and live-class links open up.",
     },
   ];
 }
@@ -155,7 +163,8 @@ export function baseWhyOnline(ctx: SpecCtx): Labelled[] {
     },
     {
       title: "Earn while you learn",
-      detail: "Recorded lectures and weekend live classes mean you never have to resign to upskill.",
+      detail:
+        "Recorded lectures and weekend live classes mean you never have to resign to upskill.",
     },
     {
       title: "Lower total cost",
@@ -167,11 +176,13 @@ export function baseWhyOnline(ctx: SpecCtx): Labelled[] {
     },
     {
       title: "Portfolio you can show",
-      detail: "Case work, live projects and the capstone become interview evidence, which matters more than the mode of study.",
+      detail:
+        "Case work, live projects and the capstone become interview evidence, which matters more than the mode of study.",
     },
     {
       title: "Placement support included",
-      detail: "Most universities give resume reviews, mock interviews and access to a recruiter portal — assistance, not a guarantee.",
+      detail:
+        "Most universities give resume reviews, mock interviews and access to a recruiter portal — assistance, not a guarantee.",
     },
   ];
 }

@@ -155,7 +155,12 @@ const baou: Record<string, OpenUniFee> = {
   "master-of-library-and-information-science-mlis": yearly(10300, 1, BAOU_SRC, baouNote),
   /* Management */
   "master-of-business-administration-mba": yearly(15300, 2, BAOU_SRC, baouNote),
-  "master-of-business-administration-hospital-healthcare-management": yearly(120000, 1, BAOU_SRC, baouNote),
+  "master-of-business-administration-hospital-healthcare-management": yearly(
+    120000,
+    1,
+    BAOU_SRC,
+    baouNote,
+  ),
 };
 
 /* ------------------------------------------------------------------- NSOU */

@@ -29,14 +29,21 @@ export function UniversityCourseCard({
   const name = getCourse(offering.programmeSlug)?.displayName ?? fullName;
   const href = `/universities/${universitySlug}/courses/${offering.programmeSlug}`;
   const logo = universityLogo(universitySlug);
-  const specs = specialisationsOf(universitySlug, offering.programmeSlug).map((s) => s.specialisation_name);
+  const specs = specialisationsOf(universitySlug, offering.programmeSlug).map(
+    (s) => s.specialisation_name,
+  );
   const shown = specs.slice(0, 4);
-  const eligibility = getProgrammeRecord(universitySlug, offering.programmeSlug)?.eligibility.summary ?? null;
+  const eligibility =
+    getProgrammeRecord(universitySlug, offering.programmeSlug)?.eligibility.summary ?? null;
   const extra = specs.length - shown.length;
 
   return (
     <article className="hover-lift flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card text-card-foreground">
-      <AppLink to={href} aria-label={name} className="relative block aspect-[16/10] w-full overflow-hidden bg-secondary">
+      <AppLink
+        to={href}
+        aria-label={name}
+        className="relative block aspect-[16/10] w-full overflow-hidden bg-secondary"
+      >
         <img
           src={courseImage(fullName)}
           alt={`${name} online programme`}
@@ -47,7 +54,13 @@ export function UniversityCourseCard({
         />
         {logo && (
           <span className="absolute bottom-2 left-2 grid h-9 w-9 place-items-center rounded-lg bg-card/95 p-1 shadow-sm sm:h-10 sm:w-10">
-            <img src={logo} alt="" aria-hidden="true" loading="lazy" className="h-full w-full object-contain" />
+            <img
+              src={logo}
+              alt=""
+              aria-hidden="true"
+              loading="lazy"
+              className="h-full w-full object-contain"
+            />
           </span>
         )}
       </AppLink>
@@ -69,7 +82,9 @@ export function UniversityCourseCard({
           </span>
           <span className="inline-flex items-center gap-1 font-semibold text-foreground">
             <IndianRupee className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-            {offering.fee.total ? `${offering.fee.total.toLocaleString("en-IN")} total` : feeFallback}
+            {offering.fee.total
+              ? `${offering.fee.total.toLocaleString("en-IN")} total`
+              : feeFallback}
           </span>
         </p>
 
@@ -94,13 +109,20 @@ export function UniversityCourseCard({
                   {s}
                 </span>
               ))}
-              {extra > 0 && <span className="px-1 py-1 text-[0.68rem] font-semibold text-brand">+{extra} more</span>}
+              {extra > 0 && (
+                <span className="px-1 py-1 text-[0.68rem] font-semibold text-brand">
+                  +{extra} more
+                </span>
+              )}
             </div>
           </div>
         )}
 
         <div className="mt-auto flex items-center justify-between gap-2 pt-4">
-          <AppLink to={href} className="text-xs font-bold text-foreground hover:text-brand sm:text-sm">
+          <AppLink
+            to={href}
+            className="text-xs font-bold text-foreground hover:text-brand sm:text-sm"
+          >
             View Details ›
           </AppLink>
           <button

@@ -112,7 +112,8 @@ export interface Resolved<T> {
 
 const records = (dataset as unknown as { universities: UniversityInsightRecord[] }).universities;
 
-export const insightsSession = (dataset as unknown as { academic_session: string }).academic_session;
+export const insightsSession = (dataset as unknown as { academic_session: string })
+  .academic_session;
 
 const byUniversity = new Map<string, UniversityInsightRecord>();
 const byCourse = new Map<string, CourseInsightRecord>();
@@ -128,7 +129,10 @@ export function getUniversityInfo(universitySlug: string): UniversityInsightReco
   return byUniversity.get(universitySlug);
 }
 
-export function getCourseInfo(universitySlug: string, courseSlug: string): CourseInsightRecord | undefined {
+export function getCourseInfo(
+  universitySlug: string,
+  courseSlug: string,
+): CourseInsightRecord | undefined {
   return byCourse.get(`${universitySlug}::${courseSlug}`);
 }
 
@@ -138,7 +142,10 @@ const nonEmpty = (v: unknown): boolean =>
   Array.isArray(v) ? v.length > 0 : typeof v === "string" ? v.trim().length > 0 : v != null;
 
 /** True when at least one field other than a status marker carries content. */
-function hasContent(obj: Record<string, unknown> | null | undefined, ignore: string[] = []): boolean {
+function hasContent(
+  obj: Record<string, unknown> | null | undefined,
+  ignore: string[] = [],
+): boolean {
   if (!obj) return false;
   return Object.entries(obj).some(([k, v]) => !ignore.includes(k) && nonEmpty(v));
 }
@@ -147,7 +154,8 @@ export const hasAdmissionContent = (a: UniversityAdmissionInfo | undefined) =>
   hasContent(a as Record<string, unknown>, ["status", "source"]);
 export const hasExamContent = (e: ExamPatternInfo | undefined) =>
   hasContent(e as Record<string, unknown>, ["status"]);
-export const hasScholarshipContent = (s: ScholarshipInfo | undefined) => (s?.criteria?.length ?? 0) > 0;
+export const hasScholarshipContent = (s: ScholarshipInfo | undefined) =>
+  (s?.criteria?.length ?? 0) > 0;
 export const hasCareerContent = (c: CareerInfo | undefined) =>
   (c?.roles?.length ?? 0) > 0 ||
   (c?.industries?.length ?? 0) > 0 ||
@@ -214,7 +222,12 @@ export function getAdmissionInfo(
   const course = courseSlug ? getCourseInfo(universitySlug, courseSlug) : undefined;
   const override = course?.admission?.course_specific_override;
   if (override && hasAdmissionContent(override)) {
-    return { data: cleanAdmission({ ...uni.admission, ...override }), origin: "course", inherited: false, ...(course?.admission?.intake ? { intake: course.admission.intake } : {}) };
+    return {
+      data: cleanAdmission({ ...uni.admission, ...override }),
+      origin: "course",
+      inherited: false,
+      ...(course?.admission?.intake ? { intake: course.admission.intake } : {}),
+    };
   }
   if (!hasAdmissionContent(uni.admission)) return undefined;
   return {
@@ -225,7 +238,10 @@ export function getAdmissionInfo(
   };
 }
 
-export function getExamPattern(universitySlug: string, courseSlug?: string): Resolved<ExamPatternInfo> | undefined {
+export function getExamPattern(
+  universitySlug: string,
+  courseSlug?: string,
+): Resolved<ExamPatternInfo> | undefined {
   const uni = getUniversityInfo(universitySlug);
   if (!uni) return undefined;
   const course = courseSlug ? getCourseInfo(universitySlug, courseSlug) : undefined;
@@ -237,7 +253,10 @@ export function getExamPattern(universitySlug: string, courseSlug?: string): Res
   return { data: cleanExam(uni.exam), origin: "university", inherited: Boolean(courseSlug) };
 }
 
-export function getCareerInfo(universitySlug: string, courseSlug?: string): Resolved<CareerInfo> | undefined {
+export function getCareerInfo(
+  universitySlug: string,
+  courseSlug?: string,
+): Resolved<CareerInfo> | undefined {
   const uni = getUniversityInfo(universitySlug);
   if (!uni) return undefined;
   const course = courseSlug ? getCourseInfo(universitySlug, courseSlug) : undefined;
@@ -269,7 +288,11 @@ export function getScholarshipInfo(
     return { data: cleanScholarship(override), origin: "course", inherited: false };
   }
   if (!hasScholarshipContent(uni.scholarship) && !uni.scholarship?.note) return undefined;
-  return { data: cleanScholarship(uni.scholarship), origin: "university", inherited: Boolean(courseSlug) };
+  return {
+    data: cleanScholarship(uni.scholarship),
+    origin: "university",
+    inherited: Boolean(courseSlug),
+  };
 }
 
 export function insightSources(universitySlug: string): InsightSources | undefined {

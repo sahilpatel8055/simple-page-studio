@@ -77,8 +77,8 @@ export function LearningSupport({ universityShort }: { universityShort: string }
         programme is published only where the university documents it.
       </p>
       <VerificationNote>
-        Learner-support features change by admission cycle. Verify the current LMS access, live-class
-        schedule and support channels on the official programme page before you enrol.
+        Learner-support features change by admission cycle. Verify the current LMS access,
+        live-class schedule and support channels on the official programme page before you enrol.
       </VerificationNote>
     </div>
   );
@@ -121,7 +121,9 @@ export function ProgrammeDecision({
           {!hasVerifiedFee && <li>• You need a confirmed total fee before deciding.</li>}
         </ul>
       </div>
-      <p className="sm:col-span-2 text-xs text-muted-foreground">{universalCourseBlocks["decision"]}</p>
+      <p className="sm:col-span-2 text-xs text-muted-foreground">
+        {universalCourseBlocks["decision"]}
+      </p>
     </div>
   );
 }
@@ -152,7 +154,8 @@ export function ProgrammeSources({
           rel="nofollow noopener"
           className="box-hover inline-flex items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 text-sm font-semibold"
         >
-          {universityShort} official programme source <ExternalLink className="h-3.5 w-3.5" aria-hidden />
+          {universityShort} official programme source{" "}
+          <ExternalLink className="h-3.5 w-3.5" aria-hidden />
         </a>
       )}
       <VerifiedStamp

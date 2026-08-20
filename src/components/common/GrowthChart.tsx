@@ -97,7 +97,14 @@ export function GrowthChart() {
               stroke="#060606"
               strokeOpacity="0.07"
             />
-            <text x={PAD_L - 10} y={y(v) + 4} textAnchor="end" fontSize="11" fill="#060606" fillOpacity="0.45">
+            <text
+              x={PAD_L - 10}
+              y={y(v) + 4}
+              textAnchor="end"
+              fontSize="11"
+              fill="#060606"
+              fillOpacity="0.45"
+            >
               {v === 0 ? "0" : `${v / 1000}k`}
             </text>
           </g>
@@ -123,7 +130,13 @@ export function GrowthChart() {
         />
 
         <g style={{ opacity: active ? 1 : 0, transition: "opacity .4s ease 1.6s" }}>
-          <circle cx={x(points.length - 1)} cy={y(10000)} r="12" fill="#7f1813" fillOpacity="0.18" />
+          <circle
+            cx={x(points.length - 1)}
+            cy={y(10000)}
+            r="12"
+            fill="#7f1813"
+            fillOpacity="0.18"
+          />
           <circle cx={x(points.length - 1)} cy={y(10000)} r="6" fill="#7f1813" />
         </g>
 

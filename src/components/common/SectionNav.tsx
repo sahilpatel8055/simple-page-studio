@@ -1,7 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
-const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const slugify = (s: string) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 
 /**
  * Sticky in-page section navigation (pill chips), sits under the site header
@@ -40,10 +44,10 @@ export function SectionNav({ sections }: { sections: string[] }) {
     if (!list || !chip) return;
     const listRect = list.getBoundingClientRect();
     const chipRect = chip.getBoundingClientRect();
-    const target = list.scrollLeft + (chipRect.left - listRect.left) - listRect.width / 2 + chipRect.width / 2;
+    const target =
+      list.scrollLeft + (chipRect.left - listRect.left) - listRect.width / 2 + chipRect.width / 2;
     list.scrollTo({ left: Math.max(0, target), behavior: "smooth" });
   }, [active]);
-
 
   return (
     <nav

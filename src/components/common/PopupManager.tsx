@@ -169,7 +169,10 @@ export function PopupProvider({ children }: { children: ReactNode }) {
 }
 
 const titleCase = (s: string) =>
-  s.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()).replace(/\bMba|\bMca|\bBba|\bBca|\bMcom|\bBcom|\bMsc\b/gi, (m) => m.toUpperCase());
+  s
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase())
+    .replace(/\bMba|\bMca|\bBba|\bBca|\bMcom|\bBcom|\bMsc\b/gi, (m) => m.toUpperCase());
 
 /** Records the last university / course the visitor looked at. */
 function ContextTracker() {
@@ -180,7 +183,8 @@ function ContextTracker() {
     const parts = pathname.split("/").filter(Boolean);
     if (parts[0] === "universities" && parts[1]) {
       const uni = universities.find((u) => u.slug === parts[1]);
-      if (uni) rememberContext({ universitySlug: uni.slug, universityName: uni.name, path: pathname });
+      if (uni)
+        rememberContext({ universitySlug: uni.slug, universityName: uni.name, path: pathname });
     }
     if (parts[0] === "courses" && parts[1]) {
       rememberContext({ courseLabel: titleCase(parts[1]), path: pathname });
@@ -331,7 +335,6 @@ function CounsellingScheduler() {
   return null;
 }
 
-
 function CounsellingModal({ onClose }: { onClose: () => void }) {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
@@ -342,22 +345,22 @@ function CounsellingModal({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed inset-0 z-[80] overflow-y-auto bg-black/50 backdrop-blur-sm">
       <div className="flex min-h-full items-center justify-center p-4 sm:p-8">
-      <div
-        role="dialog"
-        aria-modal="true"
-        aria-label="Free counselling"
-        className="relative my-auto w-full max-w-lg overflow-hidden rounded-3xl border border-border bg-card shadow-2xl"
-      >
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label="Close"
-          className="absolute right-3 top-3 z-10 grid h-9 w-9 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors hover:text-foreground"
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label="Free counselling"
+          className="relative my-auto w-full max-w-lg overflow-hidden rounded-3xl border border-border bg-card shadow-2xl"
         >
-          <X className="h-4 w-4" />
-        </button>
-        <CounsellingForm compact source="Counselling Popup" onDone={onClose} />
-      </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close"
+            className="absolute right-3 top-3 z-10 grid h-9 w-9 place-items-center rounded-full bg-secondary text-muted-foreground transition-colors hover:text-foreground"
+          >
+            <X className="h-4 w-4" />
+          </button>
+          <CounsellingForm compact source="Counselling Popup" onDone={onClose} />
+        </div>
       </div>
     </div>
   );

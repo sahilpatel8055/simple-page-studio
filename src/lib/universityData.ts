@@ -211,7 +211,8 @@ const bySlug = new Map(universitiesJson.map((u) => [u.slug, u]));
 
 export const allUniversities = (): UniversityRecordJson[] => universitiesJson;
 
-export const getUniversityBySlug = (slug: string): UniversityRecordJson | undefined => bySlug.get(slug);
+export const getUniversityBySlug = (slug: string): UniversityRecordJson | undefined =>
+  bySlug.get(slug);
 
 export const getUniversityByName = (name: string): UniversityRecordJson | undefined => {
   const n = name.trim().toLowerCase();
@@ -223,17 +224,27 @@ export const getUniversityByName = (name: string): UniversityRecordJson | undefi
 export const programmesOf = (universitySlug: string): ProgrammeRecord[] =>
   getUniversityBySlug(universitySlug)?.programmes ?? [];
 
-export const getProgramme = (universitySlug: string, programmeSlug: string): ProgrammeRecord | undefined =>
+export const getProgramme = (
+  universitySlug: string,
+  programmeSlug: string,
+): ProgrammeRecord | undefined =>
   programmesOf(universitySlug).find((p) => p.slug === programmeSlug);
 
-export const programmesByLevel = (level: string): Array<{ university: UniversityRecordJson; programme: ProgrammeRecord }> =>
+export const programmesByLevel = (
+  level: string,
+): Array<{ university: UniversityRecordJson; programme: ProgrammeRecord }> =>
   allProgrammePairs().filter((x) => x.programme.level === level);
 
-export const programmesByMode = (mode: string): Array<{ university: UniversityRecordJson; programme: ProgrammeRecord }> =>
+export const programmesByMode = (
+  mode: string,
+): Array<{ university: UniversityRecordJson; programme: ProgrammeRecord }> =>
   allProgrammePairs().filter((x) => matchesMode(x.programme.mode, mode));
 
 /** Every university × programme pair in the dataset. */
-export function allProgrammePairs(): Array<{ university: UniversityRecordJson; programme: ProgrammeRecord }> {
+export function allProgrammePairs(): Array<{
+  university: UniversityRecordJson;
+  programme: ProgrammeRecord;
+}> {
   return universitiesJson.flatMap((university) =>
     university.programmes.map((programme) => ({ university, programme })),
   );
@@ -250,8 +261,10 @@ export function matchesMode(recordMode: string, wanted: string): boolean {
   return false;
 }
 
-export const specialisationsOf = (universitySlug: string, programmeSlug: string): SpecialisationRecord[] =>
-  getProgramme(universitySlug, programmeSlug)?.specializations ?? [];
+export const specialisationsOf = (
+  universitySlug: string,
+  programmeSlug: string,
+): SpecialisationRecord[] => getProgramme(universitySlug, programmeSlug)?.specializations ?? [];
 
 export const feesOf = (universitySlug: string, programmeSlug: string): FeeRecord | undefined =>
   getProgramme(universitySlug, programmeSlug)?.fees;
@@ -259,7 +272,9 @@ export const feesOf = (universitySlug: string, programmeSlug: string): FeeRecord
 export const scholarshipsOf = (universitySlug: string): ScholarshipRecord[] =>
   getUniversityBySlug(universitySlug)?.scholarships ?? [];
 
-export const admissionOf = (universitySlug: string): UniversityRecordJson["admissions"] | undefined =>
+export const admissionOf = (
+  universitySlug: string,
+): UniversityRecordJson["admissions"] | undefined =>
   getUniversityBySlug(universitySlug)?.admissions;
 
 export const sourcesFor = (universityName: string): SourceEntry[] =>
@@ -282,11 +297,16 @@ export const courseIndexByProgramme = (programmeSlug: string): CourseIndexEntry[
   courseIndexJson.filter((c) => c.programme_slug === programmeSlug);
 
 export const canonicalCourseUrl = (universitySlug: string, programmeSlug: string): string =>
-  courseIndexJson.find((c) => c.university_slug === universitySlug && c.programme_slug === programmeSlug)
-    ?.canonical_url ?? `/universities/${universitySlug}/courses/${programmeSlug}`;
+  courseIndexJson.find(
+    (c) => c.university_slug === universitySlug && c.programme_slug === programmeSlug,
+  )?.canonical_url ?? `/universities/${universitySlug}/courses/${programmeSlug}`;
 
 /** Same programme at other universities. */
-export const relatedCourses = (universitySlug: string, programmeSlug: string, limit = 6): CourseIndexEntry[] =>
+export const relatedCourses = (
+  universitySlug: string,
+  programmeSlug: string,
+  limit = 6,
+): CourseIndexEntry[] =>
   courseIndexByProgramme(programmeSlug)
     .filter((c) => c.university_slug !== universitySlug)
     .slice(0, limit);
@@ -308,38 +328,84 @@ export interface ComparisonRow {
 }
 
 /** Factual side-by-side rows only — no rankings, no "winner". */
-export function comparisonData(leftSlug: string, rightSlug: string): {
-  left: UniversityRecordJson;
-  right: UniversityRecordJson;
-  rows: ComparisonRow[];
-  sharedProgrammes: Array<{ slug: string; name: string; left: ProgrammeRecord; right: ProgrammeRecord }>;
-} | undefined {
+export function comparisonData(
+  leftSlug: string,
+  rightSlug: string,
+):
+  | {
+      left: UniversityRecordJson;
+      right: UniversityRecordJson;
+      rows: ComparisonRow[];
+      sharedProgrammes: Array<{
+        slug: string;
+        name: string;
+        left: ProgrammeRecord;
+        right: ProgrammeRecord;
+      }>;
+    }
+  | undefined {
   const left = getUniversityBySlug(leftSlug);
   const right = getUniversityBySlug(rightSlug);
   if (!left || !right) return undefined;
 
   const rows: ComparisonRow[] = [
     { label: "Mode", left: left.mode, right: right.mode },
-    { label: "Location", left: left.basic_information.location, right: right.basic_information.location },
+    {
+      label: "Location",
+      left: left.basic_information.location,
+      right: right.basic_information.location,
+    },
     {
       label: "Established",
-      left: left.basic_information.established_year ? String(left.basic_information.established_year) : null,
-      right: right.basic_information.established_year ? String(right.basic_information.established_year) : null,
+      left: left.basic_information.established_year
+        ? String(left.basic_information.established_year)
+        : null,
+      right: right.basic_information.established_year
+        ? String(right.basic_information.established_year)
+        : null,
     },
     { label: "UGC status", left: left.recognition.UGC_status, right: right.recognition.UGC_status },
-    { label: "UGC-DEB status", left: left.recognition.UGC_DEB_status, right: right.recognition.UGC_DEB_status },
+    {
+      label: "UGC-DEB status",
+      left: left.recognition.UGC_DEB_status,
+      right: right.recognition.UGC_DEB_status,
+    },
     { label: "NAAC", left: left.recognition.NAAC_status, right: right.recognition.NAAC_status },
-    { label: "NIRF", left: left.recognition.NIRF_information, right: right.recognition.NIRF_information },
-    { label: "Accreditation", left: left.recognition.accreditation, right: right.recognition.accreditation },
-    { label: "Programmes in dataset", left: String(left.programmes.length), right: String(right.programmes.length) },
+    {
+      label: "NIRF",
+      left: left.recognition.NIRF_information,
+      right: right.recognition.NIRF_information,
+    },
+    {
+      label: "Accreditation",
+      left: left.recognition.accreditation,
+      right: right.recognition.accreditation,
+    },
+    {
+      label: "Programmes in dataset",
+      left: String(left.programmes.length),
+      right: String(right.programmes.length),
+    },
     {
       label: "Next expected intake",
       left: left.admissions.next_expected_intake,
       right: right.admissions.next_expected_intake,
     },
-    { label: "Admission cycle", left: left.admissions.admission_cycle, right: right.admissions.admission_cycle },
-    { label: "Selection process", left: left.admissions.selection_process, right: right.admissions.selection_process },
-    { label: "Entrance exam", left: left.admissions.entrance_exam, right: right.admissions.entrance_exam },
+    {
+      label: "Admission cycle",
+      left: left.admissions.admission_cycle,
+      right: right.admissions.admission_cycle,
+    },
+    {
+      label: "Selection process",
+      left: left.admissions.selection_process,
+      right: right.admissions.selection_process,
+    },
+    {
+      label: "Entrance exam",
+      left: left.admissions.entrance_exam,
+      right: right.admissions.entrance_exam,
+    },
     {
       label: "Scholarships published",
       left: left.scholarships.length ? String(left.scholarships.length) : null,
@@ -405,7 +471,9 @@ export function searchDataset(query: string, limit = 12): SearchHit[] {
   }
 
   const seen = new Set<string>();
-  return hits.filter((h) => (seen.has(h.href + h.label) ? false : (seen.add(h.href + h.label), true))).slice(0, limit);
+  return hits
+    .filter((h) => (seen.has(h.href + h.label) ? false : (seen.add(h.href + h.label), true)))
+    .slice(0, limit);
 }
 
 /* ------------------------------ formatting ------------------------------- */
@@ -422,7 +490,10 @@ export function isVerifiedFee(fees: FeeRecord | undefined): boolean {
 }
 
 export function feePending(fees: FeeRecord | undefined): boolean {
-  return (fees?.fee_verification_status ?? "") === "fee_pending_verification" || fees?.total_programme_fee == null;
+  return (
+    (fees?.fee_verification_status ?? "") === "fee_pending_verification" ||
+    fees?.total_programme_fee == null
+  );
 }
 
 /** Lowest / highest published total fee across a university's programmes. */
@@ -433,7 +504,9 @@ export function feeRangeLabel(universitySlug: string): string {
   if (!totals.length) return "Fee pending verification";
   const min = Math.min(...totals);
   const max = Math.max(...totals);
-  return min === max ? `₹${min.toLocaleString("en-IN")}` : `₹${min.toLocaleString("en-IN")} – ₹${max.toLocaleString("en-IN")}`;
+  return min === max
+    ? `₹${min.toLocaleString("en-IN")}`
+    : `₹${min.toLocaleString("en-IN")} – ₹${max.toLocaleString("en-IN")}`;
 }
 
 export function programmeFeeRangeLabel(programmeSlug: string): string {
@@ -443,15 +516,21 @@ export function programmeFeeRangeLabel(programmeSlug: string): string {
   if (!totals.length) return "Fee pending verification";
   const min = Math.min(...totals);
   const max = Math.max(...totals);
-  return min === max ? `₹${min.toLocaleString("en-IN")}` : `₹${min.toLocaleString("en-IN")} – ₹${max.toLocaleString("en-IN")}`;
+  return min === max
+    ? `₹${min.toLocaleString("en-IN")}`
+    : `₹${min.toLocaleString("en-IN")} – ₹${max.toLocaleString("en-IN")}`;
 }
 
 /** Recognition strings a university actually publishes — never invented. */
 export function recognitionLabels(u: UniversityRecordJson): string[] {
   const r = u.recognition;
-  return [r.UGC_status, r.UGC_DEB_status, r.NAAC_status, r.NIRF_information, r.accreditation].filter(
-    (v): v is string => typeof v === "string" && v.trim().length > 0,
-  );
+  return [
+    r.UGC_status,
+    r.UGC_DEB_status,
+    r.NAAC_status,
+    r.NIRF_information,
+    r.accreditation,
+  ].filter((v): v is string => typeof v === "string" && v.trim().length > 0);
 }
 
 export function slugify(value: string): string {

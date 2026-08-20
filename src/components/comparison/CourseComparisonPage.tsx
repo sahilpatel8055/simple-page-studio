@@ -57,7 +57,10 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
             How this comparison works
           </h2>
           <ul className="mt-3 grid gap-2 text-sm leading-relaxed text-muted-foreground sm:grid-cols-2">
-            <li>Every value comes from the university's published programme data, not from an estimate.</li>
+            <li>
+              Every value comes from the university's published programme data, not from an
+              estimate.
+            </li>
             <li>Where a university has not published a field, the cell reads "Not published".</li>
             <li>No score, no ranking — only factual differences you can act on.</li>
             <li>Each column links to the full university × course page for the complete detail.</li>
@@ -75,8 +78,13 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
             Important differences to verify before applying
           </h2>
           <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted-foreground">
-            <li>Recognition and entitlement status for the exact programme and your admission year.</li>
-            <li>The complete fee, in writing, including registration, examination and any technology charge.</li>
+            <li>
+              Recognition and entitlement status for the exact programme and your admission year.
+            </li>
+            <li>
+              The complete fee, in writing, including registration, examination and any technology
+              charge.
+            </li>
             <li>Whether the specialisation you want is actually running this session.</li>
             <li>Examination mode, proctoring rules, re-attempt policy and passing criteria.</li>
             <li>What career support includes for online learners, and what it does not promise.</li>
@@ -94,7 +102,9 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
                   to={o.path}
                   className="box-hover flex min-h-11 items-center justify-between gap-3 rounded-xl border border-border bg-card px-4 py-3 text-sm font-semibold"
                 >
-                  <span className="min-w-0 truncate">{o.universityShortName} — {o.programmeName}</span>
+                  <span className="min-w-0 truncate">
+                    {o.universityShortName} — {o.programmeName}
+                  </span>
                   <span className="shrink-0 text-brand">View →</span>
                 </AppLink>
               </li>
@@ -113,13 +123,21 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
             Methodology and sources
           </h2>
           <ul className="mt-3 list-disc space-y-1.5 pl-5 text-sm leading-relaxed text-muted-foreground">
-            <li>Official university and regulator publications are the factual authority for every field.</li>
+            <li>
+              Official university and regulator publications are the factual authority for every
+              field.
+            </li>
             <li>Fees, admissions, curriculum and support can change by academic session.</li>
-            <li>Missing data is shown as "Not published" and is never interpreted as a negative.</li>
+            <li>
+              Missing data is shown as "Not published" and is never interpreted as a negative.
+            </li>
             <li>This is a factual comparison of published data, not a universal ranking.</li>
             <li>
               Last updated across the compared programmes:{" "}
-              <span className="font-semibold text-foreground">{family.lastVerified ?? "recently"}</span> ({academicSessionLabel} session).
+              <span className="font-semibold text-foreground">
+                {family.lastVerified ?? "recently"}
+              </span>{" "}
+              ({academicSessionLabel} session).
             </li>
           </ul>
         </section>

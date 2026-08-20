@@ -7,14 +7,22 @@ import { GrowthChart } from "@/components/common/GrowthChart";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
 const title = "About DegreeKhojo";
-const description = "We research India’s online and distance education market so learners can choose a degree on evidence, not advertising.";
+const description =
+  "We research India’s online and distance education market so learners can choose a degree on evidence, not advertising.";
 const path = "/about";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: pageMeta({ title, description, path }),
     links: canonical(path),
-    scripts: [jsonLd(breadcrumbSchema([{ name: "Home", href: "/" }, { name: "About", href: path }]))],
+    scripts: [
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", href: "/" },
+          { name: "About", href: path },
+        ]),
+      ),
+    ],
   }),
   component: Page,
 });
@@ -36,19 +44,28 @@ const values = [
 
 function Page() {
   return (
-    <PageShell crumbs={[{ name: "About", href: path }]} eyebrow="About" title={title} description={description}>
+    <PageShell
+      crumbs={[{ name: "About", href: path }]}
+      eyebrow="About"
+      title={title}
+      description={description}
+    >
       {/* Hero */}
       <section className="relative overflow-hidden rounded-3xl bg-[#060606] text-white">
         <div className="absolute inset-0 bg-gradient-to-br from-[#060606] via-[#0f172a] to-[#7f1813]/30" />
         <div className="absolute -right-20 -top-20 h-80 w-80 rounded-full bg-[#7f1813]/20 blur-3xl" />
         <div className="relative container-page grid gap-8 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#7f1813]">Discover Our Story</p>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#7f1813]">
+              Discover Our Story
+            </p>
             <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
               Meet The <span className="text-[#7f1813]">Movers</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-white/80">
-              DegreeKhojo is an independent education research platform. We help working professionals and students in India find the right online or distance degree — without the sales pitch.
+              DegreeKhojo is an independent education research platform. We help working
+              professionals and students in India find the right online or distance degree — without
+              the sales pitch.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
@@ -83,10 +100,14 @@ function Page() {
             <AccentHeadline text="Time To Level Up! Let's Start Hustlin'" />
           </h2>
           <p className="mt-5 text-base leading-relaxed text-[#060606]/70">
-            There are hundreds of online degrees in India today — but finding the right one is still hard. Marketing claims hide weak approvals, fee breakdowns are buried in PDFs, and counsellors often push the programme that pays them the most.
+            There are hundreds of online degrees in India today — but finding the right one is still
+            hard. Marketing claims hide weak approvals, fee breakdowns are buried in PDFs, and
+            counsellors often push the programme that pays them the most.
           </p>
           <p className="mt-4 text-base leading-relaxed text-[#060606]/70">
-            We built DegreeKhojo to fix that. Our team researches universities, verifies fees and approvals, and publishes what we find — so you can compare programmes with confidence and enrol in the degree that actually moves your career forward.
+            We built DegreeKhojo to fix that. Our team researches universities, verifies fees and
+            approvals, and publishes what we find — so you can compare programmes with confidence
+            and enrol in the degree that actually moves your career forward.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             {[
@@ -134,7 +155,10 @@ function Page() {
             <AccentHeadline text="Meet the Squad. Here's the Scoop on Us" />
           </h2>
           <p className="mt-5 text-base leading-relaxed text-[#060606]/70">
-            We are a mix of education researchers, data analysts and former admission counsellors. Some of us have worked inside universities; others have spent years helping learners pick the right course. Together, we are building the most transparent education discovery platform in India.
+            We are a mix of education researchers, data analysts and former admission counsellors.
+            Some of us have worked inside universities; others have spent years helping learners
+            pick the right course. Together, we are building the most transparent education
+            discovery platform in India.
           </p>
           <ul className="mt-6 space-y-4">
             {[
@@ -155,7 +179,9 @@ function Page() {
       {/* Values */}
       <section className="mt-24">
         <div className="text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">Our principles</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.18em] text-brand">
+            Our principles
+          </p>
           <h2 className="mt-3 text-3xl font-bold text-[#060606] sm:text-4xl">
             <AccentHeadline text="What Makes Us Different" />
           </h2>

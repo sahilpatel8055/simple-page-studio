@@ -14,7 +14,9 @@ export const Route = createFileRoute("/scholarships/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Scholarship unavailable" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [{ title: "Scholarship unavailable" }, { name: "robots", content: "noindex" }],
+      };
     }
     const { item } = loaderData;
     const path = `/scholarships/${item.slug}`;
@@ -57,7 +59,9 @@ function Page() {
           { label: "Provider", value: item.provider },
         ].map((f) => (
           <div key={f.label} className="surface-card p-5">
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">{f.label}</p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              {f.label}
+            </p>
             <p className="mt-1.5 text-base font-bold text-foreground">{f.value}</p>
           </div>
         ))}

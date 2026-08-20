@@ -2,11 +2,7 @@ import { Check, Minus, TrendingDown, TrendingUp } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
 import { DataTable } from "@/components/common/Blocks";
 import { formatINR } from "@/data";
-import {
-  offeringValue,
-  universityDecision,
-  universityFeeValue,
-} from "@/lib/pageDifferentiation";
+import { offeringValue, universityDecision, universityFeeValue } from "@/lib/pageDifferentiation";
 
 /**
  * Phase 2 sections. Each one renders only when the dataset supports it, so a
@@ -64,14 +60,20 @@ export function UniversityFeeValueAnalysis({ slug }: { slug: string }) {
           formatINR(r.marketMedian),
           <span
             key={`${r.href}-d`}
-            className={r.difference <= 0 ? "inline-flex items-center gap-1 text-success" : "inline-flex items-center gap-1 text-foreground"}
+            className={
+              r.difference <= 0
+                ? "inline-flex items-center gap-1 text-success"
+                : "inline-flex items-center gap-1 text-foreground"
+            }
           >
             {r.difference <= 0 ? (
               <TrendingDown className="h-3.5 w-3.5" aria-hidden="true" />
             ) : (
               <TrendingUp className="h-3.5 w-3.5" aria-hidden="true" />
             )}
-            {r.difference === 0 ? "Same" : `${r.difference < 0 ? "−" : "+"}${formatINR(Math.abs(r.difference))}`}
+            {r.difference === 0
+              ? "Same"
+              : `${r.difference < 0 ? "−" : "+"}${formatINR(Math.abs(r.difference))}`}
           </span>,
         ])}
       />
@@ -98,23 +100,28 @@ export function OfferingValueCheck({
   return (
     <div className="space-y-3 rounded-2xl border border-border bg-card p-4">
       <p className="text-sm text-muted-foreground">
-        {universityShort} publishes {formatINR(v.total)} as the total {programmeName} fee. Across the{" "}
-        {v.peers} universities on this site that publish a total for the same programme, the median is{" "}
-        {formatINR(v.peerMedian)} — this option is{" "}
+        {universityShort} publishes {formatINR(v.total)} as the total {programmeName} fee. Across
+        the {v.peers} universities on this site that publish a total for the same programme, the
+        median is {formatINR(v.peerMedian)} — this option is{" "}
         <span className="font-semibold text-foreground">
-          {diff === 0 ? "at the median" : diff < 0 ? `${formatINR(Math.abs(diff))} below it` : `${formatINR(diff)} above it`}
+          {diff === 0
+            ? "at the median"
+            : diff < 0
+              ? `${formatINR(Math.abs(diff))} below it`
+              : `${formatINR(diff)} above it`}
         </span>
         {v.rank ? ` and ranks ${v.rank} of ${v.peers} from lowest published total.` : "."}
       </p>
-      {v.cheapest && v.cheapest.href !== `/universities/${universitySlug}/courses/${programmeSlug}` && (
-        <p className="text-sm text-muted-foreground">
-          Lowest published total for this programme:{" "}
-          <AppLink to={v.cheapest.href} className="font-semibold text-brand">
-            {v.cheapest.name} — {formatINR(v.cheapest.total)}
-          </AppLink>
-          . Fee alone should not decide it — check approvals, exam mode and support on both pages.
-        </p>
-      )}
+      {v.cheapest &&
+        v.cheapest.href !== `/universities/${universitySlug}/courses/${programmeSlug}` && (
+          <p className="text-sm text-muted-foreground">
+            Lowest published total for this programme:{" "}
+            <AppLink to={v.cheapest.href} className="font-semibold text-brand">
+              {v.cheapest.name} — {formatINR(v.cheapest.total)}
+            </AppLink>
+            . Fee alone should not decide it — check approvals, exam mode and support on both pages.
+          </p>
+        )}
     </div>
   );
 }

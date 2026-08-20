@@ -10,7 +10,12 @@ export const Route = createFileRoute("/terms-and-conditions")({
     meta: pageMeta({ title: doc.metaTitle, description: doc.description, path: doc.path }),
     links: canonical(doc.path),
     scripts: [
-      jsonLd(breadcrumbSchema([{ name: "Home", href: "/" }, { name: doc.label, href: doc.path }])),
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", href: "/" },
+          { name: doc.label, href: doc.path },
+        ]),
+      ),
     ],
   }),
   component: Page,

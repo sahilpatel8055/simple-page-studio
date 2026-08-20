@@ -27,7 +27,9 @@ export function QuickFacts({ items }: { items: { label: string; value: ReactNode
     >
       {items.map((i) => (
         <div key={i.label} className="bg-card p-3 sm:p-4">
-          <dt className="text-[0.68rem] font-semibold uppercase tracking-wider text-muted-foreground">{i.label}</dt>
+          <dt className="text-[0.68rem] font-semibold uppercase tracking-wider text-muted-foreground">
+            {i.label}
+          </dt>
           <dd className="mt-1 text-sm font-bold leading-snug sm:text-base">{i.value}</dd>
         </div>
       ))}
@@ -89,7 +91,11 @@ export function DataTable({
         <thead>
           <tr className="bg-brand text-left text-brand-foreground">
             {head.map((h) => (
-              <th key={h} scope="col" className="px-3 py-2.5 text-xs font-semibold uppercase tracking-wide">
+              <th
+                key={h}
+                scope="col"
+                className="px-3 py-2.5 text-xs font-semibold uppercase tracking-wide"
+              >
                 {h}
               </th>
             ))}
@@ -110,7 +116,6 @@ export function DataTable({
     </>
   );
 }
-
 
 /* ------------------------------- Pros/cons ------------------------------- */
 
@@ -208,7 +213,6 @@ export function UpdatedStamp({ date, verified: _verified }: { date: string; veri
   );
 }
 
-
 export function AuthorBox({
   name = "DegreeKhojo Editorial Desk",
   role = "Education research team",
@@ -219,7 +223,10 @@ export function AuthorBox({
   slug?: string;
 }) {
   return (
-    <section id="author" className="surface-card scroll-mt-36 grid grid-cols-[auto_minmax(0,1fr)] gap-4 p-4 sm:p-5">
+    <section
+      id="author"
+      className="surface-card scroll-mt-36 grid grid-cols-[auto_minmax(0,1fr)] gap-4 p-4 sm:p-5"
+    >
       <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-brand-soft font-display text-sm font-bold text-brand">
         {name
           .split(" ")
@@ -231,11 +238,14 @@ export function AuthorBox({
         <p className="text-sm font-bold">{name}</p>
         <p className="text-xs text-muted-foreground">{role}</p>
         <p className="mt-2 text-sm text-muted-foreground">
-          Every fact on this page is checked against university and UGC-DEB sources before publication, and
-          re-checked each admission cycle.
+          Every fact on this page is checked against university and UGC-DEB sources before
+          publication, and re-checked each admission cycle.
         </p>
         {slug && (
-          <AppLink to={`/authors/${slug}`} className="mt-2 inline-block text-sm font-semibold text-brand hover:underline">
+          <AppLink
+            to={`/authors/${slug}`}
+            className="mt-2 inline-block text-sm font-semibold text-brand hover:underline"
+          >
             View profile →
           </AppLink>
         )}
@@ -253,7 +263,12 @@ export function References({ items }: { items: { label: string; href?: string | 
           <li key={r.label} className="flex gap-2">
             <ExternalLink className="mt-0.5 h-3.5 w-3.5 shrink-0" />
             {r.href ? (
-              <a href={r.href} rel="nofollow noopener noreferrer" target="_blank" className="hover:text-foreground">
+              <a
+                href={r.href}
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+                className="hover:text-foreground"
+              >
                 {r.label}
               </a>
             ) : (
@@ -346,15 +361,7 @@ export function DesktopStickyCTA({
   );
 }
 
-function NavItem({
-  to,
-  icon: Icon,
-  label,
-}: {
-  to: string;
-  icon: typeof Home;
-  label: string;
-}) {
+function NavItem({ to, icon: Icon, label }: { to: string; icon: typeof Home; label: string }) {
   return (
     <AppLink
       to={to}
@@ -365,4 +372,3 @@ function NavItem({
     </AppLink>
   );
 }
-

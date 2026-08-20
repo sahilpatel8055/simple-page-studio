@@ -42,7 +42,12 @@ export const Route = createFileRoute("/compare/")({
           "University comparisons",
         ),
       ),
-      jsonLd(breadcrumbSchema([{ name: "Home", href: "/" }, { name: "Compare", href: path }])),
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", href: "/" },
+          { name: "Compare", href: path },
+        ]),
+      ),
     ],
   }),
   component: Page,
@@ -57,7 +62,9 @@ function Page() {
       title="University & Course Comparisons"
       description={description}
     >
-      <h2 className="mb-4 text-xl font-bold sm:text-2xl">University vs university (2026-27 dataset)</h2>
+      <h2 className="mb-4 text-xl font-bold sm:text-2xl">
+        University vs university (2026-27 dataset)
+      </h2>
       <div className="grid gap-3 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
         {masterPairs.map((p) => (
           <ComparisonCard

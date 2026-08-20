@@ -51,7 +51,9 @@ export function ApprovalsSection({
                 <li key={a.body} className="box-hover rounded-xl border border-border bg-card p-3">
                   <p className="text-sm font-bold text-card-foreground">{a.body}</p>
                   {a.status && (
-                    <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">{a.status}</p>
+                    <p className="mt-0.5 text-[11px] leading-snug text-muted-foreground">
+                      {a.status}
+                    </p>
                   )}
                 </li>
               ))}
@@ -63,7 +65,11 @@ export function ApprovalsSection({
       {json ? (
         <RecognitionTable university={json} />
       ) : (
-        <DataTable caption={`${shortName} approvals`} head={["Body", "Status"]} rows={fallbackRows} />
+        <DataTable
+          caption={`${shortName} approvals`}
+          head={["Body", "Status"]}
+          rows={fallbackRows}
+        />
       )}
     </div>
   );

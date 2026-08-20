@@ -104,8 +104,17 @@ export const disclaimerDoc: LegalDoc = {
       p: [
         "To the maximum extent permitted by applicable law, DegreeKhojo does not guarantee that information published on the website will always be:",
       ],
-      list: ["Complete", "Accurate", "Current", "Error-free", "Uninterrupted", "Suitable for a particular purpose"],
-      after: ["Users are responsible for independently verifying material information before relying upon it."],
+      list: [
+        "Complete",
+        "Accurate",
+        "Current",
+        "Error-free",
+        "Uninterrupted",
+        "Suitable for a particular purpose",
+      ],
+      after: [
+        "Users are responsible for independently verifying material information before relying upon it.",
+      ],
     },
     {
       h: "8. Intellectual Property",
@@ -149,7 +158,10 @@ export const termsDoc: LegalDoc = {
   sections: [
     {
       h: "1. About DegreeKhojo",
-      p: ["DegreeKhojo operates as an independent education information and guidance platform.", "The platform may provide:"],
+      p: [
+        "DegreeKhojo operates as an independent education information and guidance platform.",
+        "The platform may provide:",
+      ],
       list: [
         "University information",
         "Course comparisons",
@@ -184,7 +196,9 @@ export const termsDoc: LegalDoc = {
         "Placements",
         "Certifications",
       ],
-      after: ["Users should verify important information with the relevant institution before making decisions."],
+      after: [
+        "Users should verify important information with the relevant institution before making decisions.",
+      ],
     },
     {
       h: "3. User Responsibility",
@@ -383,7 +397,11 @@ export const editorialDoc: LegalDoc = {
         "If you identify an inaccurate, outdated or misleading statement on DegreeKhojo, you can contact our editorial team.",
         "Please provide:",
       ],
-      list: ["Page URL", "Specific information that appears incorrect", "Supporting source or official reference, if available"],
+      list: [
+        "Page URL",
+        "Specific information that appears incorrect",
+        "Supporting source or official reference, if available",
+      ],
       after: [
         "Our editorial team will review the claim and make an appropriate correction where necessary.",
         "Editorial Contact: info@degreekhojo.com",
@@ -454,7 +472,9 @@ export const editorialDoc: LegalDoc = {
     },
     {
       h: "14. Reader Responsibility",
-      p: ["Readers should verify critical information directly from the relevant university or regulatory authority before:"],
+      p: [
+        "Readers should verify critical information directly from the relevant university or regulatory authority before:",
+      ],
       list: [
         "Paying fees",
         "Applying for admission",
@@ -524,7 +544,9 @@ export const privacyDoc: LegalDoc = {
     },
     {
       h: "3. How We Use Your Information",
-      p: ["We may use collected information for legitimate business and website-related purposes, including:"],
+      p: [
+        "We may use collected information for legitimate business and website-related purposes, including:",
+      ],
       list: [
         "Responding to your enquiries",
         "Providing education guidance or counselling",
@@ -630,7 +652,9 @@ export const privacyDoc: LegalDoc = {
     },
     {
       h: "11. Data Retention",
-      p: ["We retain personal information only for as long as reasonably necessary for the purposes described in this Privacy Policy, including:"],
+      p: [
+        "We retain personal information only for as long as reasonably necessary for the purposes described in this Privacy Policy, including:",
+      ],
       list: [
         "Providing requested services or assistance",
         "Maintaining business and communication records",
@@ -645,7 +669,9 @@ export const privacyDoc: LegalDoc = {
     },
     {
       h: "12. Your Privacy Choices",
-      p: ["Depending on applicable law, you may have rights regarding your personal information, which may include:"],
+      p: [
+        "Depending on applicable law, you may have rights regarding your personal information, which may include:",
+      ],
       list: [
         "Requesting access to certain personal information",
         "Requesting correction of inaccurate information",

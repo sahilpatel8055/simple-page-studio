@@ -12,7 +12,12 @@ export const shooliniOnlineArticles: Article[] = [
       "Complete guide to Shoolini University Online MBA, MCA, BBA and BCom fees, specialisations and scholarships for 2026-27.",
     category: "Fees & Scholarships",
     categorySlug: "fees-scholarships",
-    tags: ["shoolini-university-online", "online-mba-fees", "online-mca-fees", "online-degree-fees"],
+    tags: [
+      "shoolini-university-online",
+      "online-mba-fees",
+      "online-mca-fees",
+      "online-degree-fees",
+    ],
     author: "Kartik Ahuja",
     authorSlug: "kartik-ahuja",
     date: "2026-08-14",
@@ -260,8 +265,14 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "Shoolini Online admission process and eligibility", href: "/blogs/shoolini-online-admission-process-eligibility" },
-              { label: "How pay-after-placement works at Shoolini", href: "/blogs/shoolini-online-placements-pay-after-placement" },
+              {
+                label: "Shoolini Online admission process and eligibility",
+                href: "/blogs/shoolini-online-admission-process-eligibility",
+              },
+              {
+                label: "How pay-after-placement works at Shoolini",
+                href: "/blogs/shoolini-online-placements-pay-after-placement",
+              },
               { label: "Online MBA fees and specialisations", href: "/courses/online-mba" },
             ],
           },
@@ -350,7 +361,10 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
       { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
     ],
     related: [
-      { label: "Shoolini Online admission process", href: "/universities/shoolini-online/admission" },
+      {
+        label: "Shoolini Online admission process",
+        href: "/universities/shoolini-online/admission",
+      },
       { label: "Shoolini Online scholarships", href: "/universities/shoolini-online/scholarships" },
     ],
     cta: "Want the exact fee for your chosen Shoolini Online programme and intake? Share your details and we will confirm it against the official fee page.",
@@ -400,7 +414,11 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
             caption: "Eligibility at a glance",
             head: ["Programme", "Minimum qualification", "Minimum marks"],
             rows: [
-              ["Online MBA", "Bachelor's degree, any discipline, min. 3 years", "50 percent (45 percent reserved category)"],
+              [
+                "Online MBA",
+                "Bachelor's degree, any discipline, min. 3 years",
+                "50 percent (45 percent reserved category)",
+              ],
               ["Online MCA", "Bachelor's degree, any stream", "50 percent"],
               ["Online BBA", "10+2, any discipline", "40 percent"],
               ["Online BCom", "10+2, any discipline", "40 percent"],
@@ -505,8 +523,14 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Shoolini Online courses and fees 2026-27", href: "/blogs/shoolini-online-courses-fees-2026-27" },
-              { label: "Shoolini Online placement outcomes", href: "/blogs/shoolini-online-placements-pay-after-placement" },
+              {
+                label: "Shoolini Online courses and fees 2026-27",
+                href: "/blogs/shoolini-online-courses-fees-2026-27",
+              },
+              {
+                label: "Shoolini Online placement outcomes",
+                href: "/blogs/shoolini-online-placements-pay-after-placement",
+              },
               { label: "Compare online MBA programmes", href: "/courses/online-mba" },
             ],
           },
@@ -575,7 +599,10 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
       { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
     ],
     related: [
-      { label: "Shoolini Online courses and fees", href: "/blogs/shoolini-online-courses-fees-2026-27" },
+      {
+        label: "Shoolini Online courses and fees",
+        href: "/blogs/shoolini-online-courses-fees-2026-27",
+      },
       { label: "Compare universities side by side", href: "/compare/universities" },
     ],
     cta: "Want a document checklist tailored to your programme before you start the Shoolini Online application? Ask us and we will send it across.",
@@ -780,9 +807,18 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Shoolini Online courses and fees 2026-27", href: "/blogs/shoolini-online-courses-fees-2026-27" },
-              { label: "Is Shoolini University Online worth it", href: "/blogs/is-shoolini-university-online-worth-it" },
-              { label: "Shoolini Online placement page", href: "/universities/shoolini-online/placement" },
+              {
+                label: "Shoolini Online courses and fees 2026-27",
+                href: "/blogs/shoolini-online-courses-fees-2026-27",
+              },
+              {
+                label: "Is Shoolini University Online worth it",
+                href: "/blogs/is-shoolini-university-online-worth-it",
+              },
+              {
+                label: "Shoolini Online placement page",
+                href: "/universities/shoolini-online/placement",
+              },
             ],
           },
         ],
@@ -829,7 +865,10 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
       { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
     ],
     related: [
-      { label: "Shoolini Online courses and fees", href: "/blogs/shoolini-online-courses-fees-2026-27" },
+      {
+        label: "Shoolini Online courses and fees",
+        href: "/blogs/shoolini-online-courses-fees-2026-27",
+      },
       { label: "Careers after an online MBA", href: "/career" },
     ],
     cta: "Want us to check whether you meet the pay-after-placement eligibility for your target Shoolini Online programme? Share your details and we will verify it.",
@@ -1017,9 +1056,18 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Shoolini Online courses and fees 2026-27", href: "/blogs/shoolini-online-courses-fees-2026-27" },
-              { label: "Shoolini Online admission process", href: "/blogs/shoolini-online-admission-process-eligibility" },
-              { label: "Shoolini Online placements and pay after placement", href: "/blogs/shoolini-online-placements-pay-after-placement" },
+              {
+                label: "Shoolini Online courses and fees 2026-27",
+                href: "/blogs/shoolini-online-courses-fees-2026-27",
+              },
+              {
+                label: "Shoolini Online admission process",
+                href: "/blogs/shoolini-online-admission-process-eligibility",
+              },
+              {
+                label: "Shoolini Online placements and pay after placement",
+                href: "/blogs/shoolini-online-placements-pay-after-placement",
+              },
               { label: "Online MBA fees and specialisations", href: "/courses/online-mba" },
             ],
           },
@@ -1068,7 +1116,10 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
       { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
     ],
     related: [
-      { label: "Shoolini Online examination pattern", href: "/universities/shoolini-online/examination-pattern" },
+      {
+        label: "Shoolini Online examination pattern",
+        href: "/universities/shoolini-online/examination-pattern",
+      },
       { label: "Online MBA vs distance MBA", href: "/compare/online-mba-vs-distance-mba" },
     ],
     cta: "Still deciding between Shoolini Online and another university? Send us your shortlist and target role and we will help you compare them fairly.",

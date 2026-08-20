@@ -40,7 +40,12 @@ export const amityOnlineArticles: Article[] = [
       "How Amity University Online's placement support, hiring partners and career services actually translate into job outcomes for online learners.",
     category: "Career Growth",
     categorySlug: "career-growth",
-    tags: ["amity online placements", "amity university online careers", "online bca jobs", "online mba jobs"],
+    tags: [
+      "amity online placements",
+      "amity university online careers",
+      "online bca jobs",
+      "online mba jobs",
+    ],
     author: "Kartik Ahuja",
     authorSlug: "kartik-ahuja",
     date: "2026-08-14",
@@ -54,7 +59,12 @@ export const amityOnlineArticles: Article[] = [
       "Is Amity University Online worth the fee? A look at scholarships, EMI options, and how it compares with IGNOU and other online universities.",
     category: "Study Guides",
     categorySlug: "study-guides",
-    tags: ["amity online worth it", "amity vs ignou", "amity scholarships", "amity online comparison"],
+    tags: [
+      "amity online worth it",
+      "amity vs ignou",
+      "amity scholarships",
+      "amity online comparison",
+    ],
     author: "Kartik Ahuja",
     authorSlug: "kartik-ahuja",
     date: "2026-08-14",
@@ -170,7 +180,11 @@ export const amityOnlinePosts: Record<string, PostContent> = {
               ["Online BBA", "Travel & Tourism Management", "INR 1,65,000"],
               ["Online BA", "General", "INR 1,15,000"],
               ["Online BA", "Journalism & Mass Communication", "INR 1,90,000"],
-              ["Online BA (General)", "Regional Medium (Hindi/Tamil/Telugu/Kannada/Malayalam)", "INR 90,000"],
+              [
+                "Online BA (General)",
+                "Regional Medium (Hindi/Tamil/Telugu/Kannada/Malayalam)",
+                "INR 90,000",
+              ],
             ],
           },
         ],
@@ -309,8 +323,14 @@ export const amityOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "Amity Online admission process and eligibility", href: "/blogs/amity-online-admission-eligibility-process" },
-              { label: "Amity Online scholarships and comparison", href: "/blogs/is-amity-online-worth-it-scholarships-comparison" },
+              {
+                label: "Amity Online admission process and eligibility",
+                href: "/blogs/amity-online-admission-eligibility-process",
+              },
+              {
+                label: "Amity Online scholarships and comparison",
+                href: "/blogs/is-amity-online-worth-it-scholarships-comparison",
+              },
               { label: "Explore online MBA programmes", href: "/courses/online-mba" },
               { label: "Explore online BCA programmes", href: "/courses/online-bca" },
             ],
@@ -544,9 +564,18 @@ export const amityOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Amity Online courses and fees 2026-27", href: "/blogs/amity-online-courses-fees-2026-27" },
-              { label: "Amity Online placements and career outcomes", href: "/blogs/amity-online-placements-career-outcomes" },
-              { label: "Explore the Amity Online university page", href: "/universities/amity-online" },
+              {
+                label: "Amity Online courses and fees 2026-27",
+                href: "/blogs/amity-online-courses-fees-2026-27",
+              },
+              {
+                label: "Amity Online placements and career outcomes",
+                href: "/blogs/amity-online-placements-career-outcomes",
+              },
+              {
+                label: "Explore the Amity Online university page",
+                href: "/universities/amity-online",
+              },
               { label: "Explore online BBA programmes", href: "/courses/online-bba" },
             ],
           },
@@ -571,8 +600,7 @@ export const amityOnlinePosts: Record<string, PostContent> = {
       },
       {
         question: "How many intakes does Amity Online have in a year?",
-        answer:
-          "Two — a January intake and a July intake — each academic year.",
+        answer: "Two — a January intake and a July intake — each academic year.",
       },
       {
         question: "What documents are needed for Amity Online admission?",
@@ -595,7 +623,10 @@ export const amityOnlinePosts: Record<string, PostContent> = {
       { label: "UGC DEB online education portal", href: "https://deb.ugc.ac.in/" },
     ],
     related: [
-      { label: "Amity Online examination pattern", href: "/universities/amity-online/examination-pattern" },
+      {
+        label: "Amity Online examination pattern",
+        href: "/universities/amity-online/examination-pattern",
+      },
       { label: "Compare online universities", href: "/compare/universities" },
     ],
     cta: "Ready to apply to Amity Online? Share your qualifying degree and target intake and we will confirm your eligibility before you submit the form.",
@@ -762,8 +793,14 @@ export const amityOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "Amity Online courses and fees 2026-27", href: "/blogs/amity-online-courses-fees-2026-27" },
-              { label: "Amity Online admission process", href: "/blogs/amity-online-admission-eligibility-process" },
+              {
+                label: "Amity Online courses and fees 2026-27",
+                href: "/blogs/amity-online-courses-fees-2026-27",
+              },
+              {
+                label: "Amity Online admission process",
+                href: "/blogs/amity-online-admission-eligibility-process",
+              },
               { label: "Explore online MCA programmes", href: "/courses/online-mca" },
               { label: "Explore online BCom programmes", href: "/courses/online-bcom" },
             ],
@@ -871,8 +908,16 @@ export const amityOnlinePosts: Record<string, PostContent> = {
             rows: [
               ["Total fee", "INR 1,50,000-2,25,000", "INR 49,800"],
               ["Recognition", "UGC-DEB, NAAC A+, WES", "UGC-DEB, NAAC A++"],
-              ["Learning support", "Dedicated LMS, live + recorded classes", "Study material, regional study centres"],
-              ["Best suited for", "Structured, tech-enabled learning with placement support", "Budget-conscious, self-directed learners"],
+              [
+                "Learning support",
+                "Dedicated LMS, live + recorded classes",
+                "Study material, regional study centres",
+              ],
+              [
+                "Best suited for",
+                "Structured, tech-enabled learning with placement support",
+                "Budget-conscious, self-directed learners",
+              ],
             ],
           },
         ],
@@ -885,9 +930,21 @@ export const amityOnlinePosts: Record<string, PostContent> = {
             caption: "Amity Online BA vs IGNOU Online BA",
             head: ["Feature", "Amity Online BA", "IGNOU Online BA"],
             rows: [
-              ["Fee range", "Approx. INR 99,000-1,90,000 for 3 years", "A few thousand rupees per year"],
-              ["Examination", "Online proctored, semester-based", "Term-end exams at designated centres"],
-              ["Study support", "LMS, faculty mentoring, AI tools", "Study material, limited counselling"],
+              [
+                "Fee range",
+                "Approx. INR 99,000-1,90,000 for 3 years",
+                "A few thousand rupees per year",
+              ],
+              [
+                "Examination",
+                "Online proctored, semester-based",
+                "Term-end exams at designated centres",
+              ],
+              [
+                "Study support",
+                "LMS, faculty mentoring, AI tools",
+                "Study material, limited counselling",
+              ],
             ],
           },
           {
@@ -965,10 +1022,22 @@ export const amityOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Amity Online courses and fees 2026-27", href: "/blogs/amity-online-courses-fees-2026-27" },
-              { label: "Amity Online admission process", href: "/blogs/amity-online-admission-eligibility-process" },
-              { label: "Amity Online placements and career outcomes", href: "/blogs/amity-online-placements-career-outcomes" },
-              { label: "Amity Online scholarships page", href: "/universities/amity-online/scholarships" },
+              {
+                label: "Amity Online courses and fees 2026-27",
+                href: "/blogs/amity-online-courses-fees-2026-27",
+              },
+              {
+                label: "Amity Online admission process",
+                href: "/blogs/amity-online-admission-eligibility-process",
+              },
+              {
+                label: "Amity Online placements and career outcomes",
+                href: "/blogs/amity-online-placements-career-outcomes",
+              },
+              {
+                label: "Amity Online scholarships page",
+                href: "/universities/amity-online/scholarships",
+              },
             ],
           },
         ],
@@ -1006,7 +1075,8 @@ export const amityOnlinePosts: Record<string, PostContent> = {
           "Choose based on your priorities: government universities like IGNOU are more affordable and suit self-directed learners, while Amity Online suits those who want structured, tech-enabled learning with stronger placement infrastructure and can afford the higher fee.",
       },
       {
-        question: "Do I need to check UGC-DEB approval even for a well-known university like Amity?",
+        question:
+          "Do I need to check UGC-DEB approval even for a well-known university like Amity?",
         answer:
           "Yes. Recognition is granted per programme and per academic session, so you should verify your exact programme is listed on deb.ugc.ac.in for your intake before paying any fee.",
       },

@@ -182,5 +182,3 @@ export function hiringPartnerBoard(slug: string): string | undefined {
   for (let i = 0; i < slug.length; i += 1) hash = (hash * 31 + slug.charCodeAt(i)) % 100000;
   return hiringBoards[hash % hiringBoards.length];
 }
-
-

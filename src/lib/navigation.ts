@@ -61,8 +61,16 @@ export const primaryNav: NavItem[] = [
       {
         heading: "By mode",
         links: [
-          { label: "Online universities", href: "/universities", description: "UGC-entitled online degrees" },
-          { label: "Distance universities", href: "/universities", description: "DEB approved programmes" },
+          {
+            label: "Online universities",
+            href: "/universities",
+            description: "UGC-entitled online degrees",
+          },
+          {
+            label: "Distance universities",
+            href: "/universities",
+            description: "DEB approved programmes",
+          },
           { label: "Hybrid programmes", href: "/universities" },
         ],
       },

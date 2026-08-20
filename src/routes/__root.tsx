@@ -18,7 +18,6 @@ import { LeadChatBot } from "@/components/common/LeadChatBot";
 import { PopupProvider } from "@/components/common/PopupManager";
 import { flushLeadQueue } from "@/lib/leads";
 
-
 import { jsonLd, organizationSchema, SITE_NAME, SITE_TAGLINE } from "@/lib/seo";
 
 function NotFoundComponent() {
@@ -28,7 +27,8 @@ function NotFoundComponent() {
         <h1 className="font-display text-6xl font-extrabold text-foreground">404</h1>
         <h2 className="mt-3 text-xl font-bold text-foreground">This page isn’t available</h2>
         <p className="mt-2 text-sm text-muted-foreground">
-          The page you're looking for doesn't exist or has been moved. Pick up from one of these instead:
+          The page you're looking for doesn't exist or has been moved. Pick up from one of these
+          instead:
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-2">
           {[
@@ -173,4 +173,3 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
-

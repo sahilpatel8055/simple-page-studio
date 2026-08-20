@@ -91,7 +91,9 @@ export function offeringNarrative(
   const pricing = sentences([
     total
       ? `The published total for the full programme is ${formatINR(total)}${
-          offering.fee.perSemester ? `, billed at roughly ${formatINR(offering.fee.perSemester)} a semester` : ""
+          offering.fee.perSemester
+            ? `, billed at roughly ${formatINR(offering.fee.perSemester)} a semester`
+            : ""
         }${offering.fee.emiFrom ? `, with the university advertising instalments from ${formatINR(offering.fee.emiFrom)} a month` : ""}.`
       : `${u.shortName} does not publish a single headline total for this programme, so the fee has to be confirmed for your intake and mode before you commit.`,
     value && value.peerMedian && total
@@ -142,9 +144,7 @@ export function offeringNarrative(
       ? `You may take the degree abroad later and want a university that appears in WES evaluation records.`
       : null,
     specCount >= 5 ? `You want to pick a named specialisation rather than a general degree.` : null,
-    offering.fee.emiFrom
-      ? `You would rather pay monthly than fund a semester in one go.`
-      : null,
+    offering.fee.emiFrom ? `You would rather pay monthly than fund a semester in one go.` : null,
   ]);
 
   const notFor = sentences([

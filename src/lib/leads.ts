@@ -122,7 +122,10 @@ async function post(row: LeadRow): Promise<boolean> {
     // Last resort: beacon survives navigation and page unload.
     try {
       if (typeof navigator !== "undefined" && navigator.sendBeacon) {
-        return navigator.sendBeacon(LEAD_ENDPOINT, new Blob([body], { type: "text/plain;charset=utf-8" }));
+        return navigator.sendBeacon(
+          LEAD_ENDPOINT,
+          new Blob([body], { type: "text/plain;charset=utf-8" }),
+        );
       }
     } catch {
       /* ignore */

@@ -12,7 +12,15 @@ export function packPath(pack: ComparisonPack): string | undefined {
   return `/compare/${pack.course}/${pair.comparison_id}`;
 }
 
-function PackList({ packs, heading, id }: { packs: ComparisonPack[]; heading: string; id: string }) {
+function PackList({
+  packs,
+  heading,
+  id,
+}: {
+  packs: ComparisonPack[];
+  heading: string;
+  id: string;
+}) {
   const items = packs
     .map((p) => ({ pack: p, href: packPath(p) }))
     .filter((i): i is { pack: ComparisonPack; href: string } => Boolean(i.href));
@@ -61,5 +69,7 @@ export function CoursePackLinks({ familySlug }: { familySlug: string }) {
 /** Head-to-head packs that involve one university. */
 export function UniversityPackLinks({ slug, course }: { slug: string; course?: string }) {
   const packs = packsForUniversity(slug).filter((p) => (course ? p.course === course : true));
-  return <PackList id="uni-head-to-head" heading="Compare this university head-to-head" packs={packs} />;
+  return (
+    <PackList id="uni-head-to-head" heading="Compare this university head-to-head" packs={packs} />
+  );
 }

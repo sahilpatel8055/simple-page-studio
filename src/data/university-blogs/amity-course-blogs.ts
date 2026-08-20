@@ -82,7 +82,12 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
   sections.push({
     heading: `${c.name} at a glance`,
     blocks: [
-      { kind: "table", caption: `${c.name} 2026 — key programme facts`, head: ["Parameter", "Details"], rows: c.overview },
+      {
+        kind: "table",
+        caption: `${c.name} 2026 — key programme facts`,
+        head: ["Parameter", "Details"],
+        rows: c.overview,
+      },
       {
         kind: "note",
         text: "Every figure on this page is a researched snapshot with a visible Last Updated date. Where Amity has not published a value, we say so instead of estimating it.",
@@ -103,14 +108,22 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
     heading: "Eligibility for Indian + foreign students",
     blocks: [
       { kind: "p", text: c.eligibilityIntro },
-      { kind: "table", caption: `${c.short} eligibility by applicant type`, head: ["Applicant", "Requirement"], rows: c.eligibilityRows },
+      {
+        kind: "table",
+        caption: `${c.short} eligibility by applicant type`,
+        head: ["Applicant", "Requirement"],
+        rows: c.eligibilityRows,
+      },
     ],
   });
 
   sections.push({
     heading: "Documents",
     blocks: [
-      { kind: "p", text: "Keep clear scans ready before you start the application — an incomplete upload is the most common reason an online admission stalls." },
+      {
+        kind: "p",
+        text: "Keep clear scans ready before you start the application — an incomplete upload is the most common reason an online admission stalls.",
+      },
       { kind: "list", items: c.documents },
     ],
   });
@@ -119,7 +132,12 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
     heading: "Fee structure",
     blocks: [
       { kind: "p", text: c.feeIntro },
-      { kind: "table", caption: `${c.name} fee items (supplied source figures)`, head: ["Fee item", "Supplied source figure", "How we publish it"], rows: c.feeRows },
+      {
+        kind: "table",
+        caption: `${c.name} fee items (supplied source figures)`,
+        head: ["Fee item", "Supplied source figure", "How we publish it"],
+        rows: c.feeRows,
+      },
       { kind: "note", text: VERIFY_NOTE },
       enquiryCta(c.name),
     ],
@@ -140,7 +158,12 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
     sections.push({
       heading: "Semester-wise curriculum",
       blocks: [
-        { kind: "table", caption: c.curriculum.caption, head: ["Semester", "Subjects"], rows: c.curriculum.rows },
+        {
+          kind: "table",
+          caption: c.curriculum.caption,
+          head: ["Semester", "Subjects"],
+          rows: c.curriculum.rows,
+        },
         ...(c.curriculum.note ? [{ kind: "note", text: c.curriculum.note } as PostBlock] : []),
       ],
     });
@@ -151,7 +174,12 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
       heading: "Specialisations & decision guide",
       blocks: [
         { kind: "p", text: c.specialisations.intro },
-        { kind: "table", caption: `${c.short} specialisation routes`, head: c.specialisations.head, rows: c.specialisations.rows },
+        {
+          kind: "table",
+          caption: `${c.short} specialisation routes`,
+          head: c.specialisations.head,
+          rows: c.specialisations.rows,
+        },
       ],
     });
   }
@@ -164,7 +192,12 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
   sections.push({
     heading: "Career options",
     blocks: [
-      { kind: "table", caption: `Where ${c.short} graduates typically start`, head: c.careerHead, rows: c.careerRows },
+      {
+        kind: "table",
+        caption: `Where ${c.short} graduates typically start`,
+        head: c.careerHead,
+        rows: c.careerRows,
+      },
       promoBanner(c.name),
     ],
   });
@@ -183,7 +216,10 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
   sections.push({
     heading: "Skills required",
     blocks: [
-      { kind: "p", text: "The degree opens the door; these skills decide the offer. Build them in parallel with the semesters rather than after graduation." },
+      {
+        kind: "p",
+        text: "The degree opens the door; these skills decide the offer. Build them in parallel with the semesters rather than after graduation.",
+      },
       { kind: "list", items: c.skills },
     ],
   });
@@ -207,7 +243,14 @@ function buildSections(c: AmityBlogConfig): PostSection[] {
   if (c.comparison) {
     sections.push({
       heading: `Online ${c.short} vs campus ${c.short}`,
-      blocks: [{ kind: "table", caption: "Decision factors side by side", head: c.comparison.head, rows: c.comparison.rows }],
+      blocks: [
+        {
+          kind: "table",
+          caption: "Decision factors side by side",
+          head: c.comparison.head,
+          rows: c.comparison.rows,
+        },
+      ],
     });
   }
 
@@ -258,27 +301,45 @@ function buildPost(c: AmityBlogConfig): PostContent {
 
 const AMITY_SOURCES: Record<string, { label: string; href: string }[]> = {
   mba: [
-    { label: "Amity Online MBA programme page", href: "https://amityonline.com/master-of-business-administration-online" },
+    {
+      label: "Amity Online MBA programme page",
+      href: "https://amityonline.com/master-of-business-administration-online",
+    },
     { label: "UGC DEB recognised online programmes", href: "https://deb.ugc.ac.in/" },
   ],
   mca: [
-    { label: "Amity Online MCA programme page", href: "https://amityonline.com/master-of-computer-applications-online" },
+    {
+      label: "Amity Online MCA programme page",
+      href: "https://amityonline.com/master-of-computer-applications-online",
+    },
     { label: "UGC DEB recognised online programmes", href: "https://deb.ugc.ac.in/" },
   ],
   mcom: [
-    { label: "Amity Online M.Com programme page", href: "https://amityonline.com/master-of-commerce-online" },
+    {
+      label: "Amity Online M.Com programme page",
+      href: "https://amityonline.com/master-of-commerce-online",
+    },
     { label: "UGC DEB recognised online programmes", href: "https://deb.ugc.ac.in/" },
   ],
   bba: [
-    { label: "Amity Online BBA programme page", href: "https://amityonline.com/bachelor-of-business-administration-online" },
+    {
+      label: "Amity Online BBA programme page",
+      href: "https://amityonline.com/bachelor-of-business-administration-online",
+    },
     { label: "UGC DEB recognised online programmes", href: "https://deb.ugc.ac.in/" },
   ],
   bca: [
-    { label: "Amity Online BCA programme page", href: "https://amityonline.com/bachelor-of-computer-applications-online" },
+    {
+      label: "Amity Online BCA programme page",
+      href: "https://amityonline.com/bachelor-of-computer-applications-online",
+    },
     { label: "UGC DEB recognised online programmes", href: "https://deb.ugc.ac.in/" },
   ],
   bcom: [
-    { label: "Amity Online B.Com programme page", href: "https://amityonline.com/bachelor-of-commerce-online" },
+    {
+      label: "Amity Online B.Com programme page",
+      href: "https://amityonline.com/bachelor-of-commerce-online",
+    },
     { label: "UGC DEB recognised online programmes", href: "https://deb.ugc.ac.in/" },
   ],
 };
@@ -323,17 +384,35 @@ const configs: AmityBlogConfig[] = [
       ["Programme", "Master of Business Administration (MBA)"],
       ["Mode", "Online"],
       ["Duration", "2 years / 4 semesters"],
-      ["Eligibility", "Graduation in any discipline; official page states 40% minimum for Indian students, with a test route below 40%"],
+      [
+        "Eligibility",
+        "Graduation in any discipline; official page states 40% minimum for Indian students, with a test route below 40%",
+      ],
       ["Structure", "Core subjects + specialisation electives + minor and major project"],
-      ["Career support", "Placement assistance and AI-powered career support — not a guaranteed job"],
+      [
+        "Career support",
+        "Placement assistance and AI-powered career support — not a guaranteed job",
+      ],
     ],
     curriculum: {
       caption: "Amity Online MBA semester-wise subjects",
       rows: [
-        ["Semester 1", "Accounting for Managers; Managerial Economics; Marketing Management; Statistics for Management; Professional Communication"],
-        ["Semester 2", "Business Research Methods; Financial Management; Human Resource Management; Legal Aspects of Business; Conflict Resolution and Management"],
-        ["Semester 3", "Strategic Management; Minor Project; Professional Ethics; Specialisation electives"],
-        ["Semester 4", "Major Project; Management in Action — Social, Economic and Ethical Issues; Digital Marketing; Specialisation electives"],
+        [
+          "Semester 1",
+          "Accounting for Managers; Managerial Economics; Marketing Management; Statistics for Management; Professional Communication",
+        ],
+        [
+          "Semester 2",
+          "Business Research Methods; Financial Management; Human Resource Management; Legal Aspects of Business; Conflict Resolution and Management",
+        ],
+        [
+          "Semester 3",
+          "Strategic Management; Minor Project; Professional Ethics; Specialisation electives",
+        ],
+        [
+          "Semester 4",
+          "Major Project; Management in Action — Social, Economic and Ethical Issues; Digital Marketing; Specialisation electives",
+        ],
       ],
       note: "Treat this as a curriculum snapshot. Confirm the current structure for your specialisation on the official programme page before enrolling.",
     },
@@ -342,11 +421,23 @@ const configs: AmityBlogConfig[] = [
         "Fourteen routes are currently listed: Business Analytics, Data Science, Digital Marketing Management, Entrepreneurship and Leadership Management, Finance and Accounting Management, Human Resource Management, Information Technology Management, International Business Management, International Finance (ACCA), Marketing & Sales Management, Production and Operations Management, Hospital and Healthcare Management, Construction Project Management and General Management.",
       head: ["Route", "Best aligned interests", "Career direction"],
       rows: [
-        ["Finance & Accounting", "Finance, accounting, analysis", "Finance / accounting / FP&A pathways"],
-        ["Marketing & Sales", "Brand, sales, customer growth", "Marketing, sales, business development"],
+        [
+          "Finance & Accounting",
+          "Finance, accounting, analysis",
+          "Finance / accounting / FP&A pathways",
+        ],
+        [
+          "Marketing & Sales",
+          "Brand, sales, customer growth",
+          "Marketing, sales, business development",
+        ],
         ["Human Resource Management", "Talent, people, organisation", "HR and talent roles"],
         ["Business Analytics", "Data-led decisions", "Business analyst / analytics"],
-        ["Data Science", "Statistics, coding, modelling", "Data / AI pathway; technical practice required"],
+        [
+          "Data Science",
+          "Statistics, coding, modelling",
+          "Data / AI pathway; technical practice required",
+        ],
         ["Digital Marketing", "Performance, social, search", "Digital and growth marketing"],
         ["Operations", "Processes, efficiency", "Operations / process roles"],
         ["IT Management", "Business plus technology", "IT and business-technology coordination"],
@@ -369,8 +460,14 @@ const configs: AmityBlogConfig[] = [
     eligibilityIntro:
       "The current official page states graduation in any discipline with a 40% minimum for Indian students. Applicants below that threshold may be routed through an admission test. Foreign applicants need equivalence documentation.",
     eligibilityRows: [
-      ["Indian graduate", "Bachelor's degree in any discipline; official page states 40% minimum marks"],
-      ["Below 40% marks", "Admission-test route may apply — confirm the current test requirement for your intake"],
+      [
+        "Indian graduate",
+        "Bachelor's degree in any discipline; official page states 40% minimum marks",
+      ],
+      [
+        "Below 40% marks",
+        "Admission-test route may apply — confirm the current test requirement for your intake",
+      ],
       FOREIGN_ROW,
       ["Working professional", "No separate category; standard academic eligibility applies"],
     ],
@@ -386,10 +483,22 @@ const configs: AmityBlogConfig[] = [
     feeIntro:
       "The fetched official Amity page currently displays USD pricing, while Indian third-party sources report INR structures that vary by route and cycle. Those values must never be merged. DegreeKhojo publishes the manually researched India-specific payable amount with the research date attached.",
     feeRows: [
-      ["Programme fee", "Varies by specialisation route (general vs ACCA / dual)", "Published only after the India-specific fee sheet is verified"],
+      [
+        "Programme fee",
+        "Varies by specialisation route (general vs ACCA / dual)",
+        "Published only after the India-specific fee sheet is verified",
+      ],
       ["Semester fee", "Route-dependent", "Recorded per semester with a Last Updated stamp"],
-      ["Registration / examination charges", "Not separately published on the fetched page", "Shown as 'shared by the university' rather than estimated"],
-      ["EMI", "Offered on the admission flow", "Displayed only with current tenure and interest terms confirmed"],
+      [
+        "Registration / examination charges",
+        "Not separately published on the fetched page",
+        "Shown as 'shared by the university' rather than estimated",
+      ],
+      [
+        "EMI",
+        "Offered on the admission flow",
+        "Displayed only with current tenure and interest terms confirmed",
+      ],
     ],
     emi: [
       "Amity's admission flow offers instalment plans; the tenure and per-month amount depend on the route and the intake, so ask for the plan in writing.",
@@ -452,16 +561,45 @@ const configs: AmityBlogConfig[] = [
       ],
     },
     faqs: [
-      { question: "Is the Amity Online MBA valid?", answer: "Amity Online presents the MBA as a UGC-entitled online degree. Validity should always be checked against the current entitlement for the exact programme and admission session on the UGC DEB portal, not against a generic claim." },
-      { question: "What is the duration of the Amity Online MBA?", answer: "Two years, delivered across four semesters." },
-      { question: "What is the eligibility?", answer: "Graduation in any discipline. The current official page states a 40% minimum for Indian students, and applicants below 40% may need to clear an admission test." },
-      { question: "Does it have specialisations?", answer: "Yes — fourteen routes are currently listed, including Business Analytics, Data Science, Finance and Accounting Management, HR, Marketing & Sales and International Finance (ACCA). Use only the current official list when you apply." },
-      { question: "Is placement guaranteed?", answer: "No. Amity provides placement assistance and career support. No online MBA in India guarantees a job or a salary." },
-      { question: "Can working professionals pursue it?", answer: "Yes. The online format is built for it, subject to managing the weekly study workload alongside your job." },
+      {
+        question: "Is the Amity Online MBA valid?",
+        answer:
+          "Amity Online presents the MBA as a UGC-entitled online degree. Validity should always be checked against the current entitlement for the exact programme and admission session on the UGC DEB portal, not against a generic claim.",
+      },
+      {
+        question: "What is the duration of the Amity Online MBA?",
+        answer: "Two years, delivered across four semesters.",
+      },
+      {
+        question: "What is the eligibility?",
+        answer:
+          "Graduation in any discipline. The current official page states a 40% minimum for Indian students, and applicants below 40% may need to clear an admission test.",
+      },
+      {
+        question: "Does it have specialisations?",
+        answer:
+          "Yes — fourteen routes are currently listed, including Business Analytics, Data Science, Finance and Accounting Management, HR, Marketing & Sales and International Finance (ACCA). Use only the current official list when you apply.",
+      },
+      {
+        question: "Is placement guaranteed?",
+        answer:
+          "No. Amity provides placement assistance and career support. No online MBA in India guarantees a job or a salary.",
+      },
+      {
+        question: "Can working professionals pursue it?",
+        answer:
+          "Yes. The online format is built for it, subject to managing the weekly study workload alongside your job.",
+      },
     ],
     related: [
-      { label: "Amity Online courses & fees 2026-27", href: "/blogs/amity-online-courses-fees-2026-27" },
-      { label: "Amity Online MCA 2026 guide", href: "/blogs/amity-online-mca-2026-fees-eligibility-careers" },
+      {
+        label: "Amity Online courses & fees 2026-27",
+        href: "/blogs/amity-online-courses-fees-2026-27",
+      },
+      {
+        label: "Amity Online MCA 2026 guide",
+        href: "/blogs/amity-online-mca-2026-fees-eligibility-careers",
+      },
       { label: "Compare every Online MBA university", href: "/compare/online-mba" },
       { label: "Online MBA course hub", href: "/courses/online-mba" },
       { label: "Book free counselling", href: "/counselling" },
@@ -495,18 +633,39 @@ const configs: AmityBlogConfig[] = [
       ["Programme", "Master of Computer Applications (MCA)"],
       ["Mode", "Online"],
       ["Duration", "2 years / 4 semesters"],
-      ["Eligibility", "BCA or equivalent, or other accepted bachelor's routes; mathematics condition applies to specified routes"],
-      ["Bridge route", "Available for students without Mathematics at 10+2 or graduation, subject to qualifying the bridge course"],
-      ["Fee reference", "₹49,800 per semester in supplied research — verify the final current payable amount"],
+      [
+        "Eligibility",
+        "BCA or equivalent, or other accepted bachelor's routes; mathematics condition applies to specified routes",
+      ],
+      [
+        "Bridge route",
+        "Available for students without Mathematics at 10+2 or graduation, subject to qualifying the bridge course",
+      ],
+      [
+        "Fee reference",
+        "₹49,800 per semester in supplied research — verify the final current payable amount",
+      ],
       ["Career support", "Assistance and support; never presented as guaranteed employment"],
     ],
     curriculum: {
       caption: "Amity Online MCA semester-wise syllabus",
       rows: [
-        ["Semester 1", "Professional Communication; Core Java; Advanced DBMS; Advanced Software Engineering Principles; Graph Theory and Combinatorics"],
-        ["Semester 2", "Research Methodology; Data Structures and Algorithm Design; Cognitive Analytics and Social Skills for Professionals; Network Security and Cryptography"],
-        ["Semester 3", "Unix/Linux Programming; Seminar; Cloud Infrastructure and Services; Quantitative Aptitude; Professional Ethics"],
-        ["Semester 4", "Augmented Reality and Virtual Reality; Blockchain Technology and Management (Business); Blockchain Technology and Management (Technical Development); Electives; Machine Learning / ML & AI where applicable"],
+        [
+          "Semester 1",
+          "Professional Communication; Core Java; Advanced DBMS; Advanced Software Engineering Principles; Graph Theory and Combinatorics",
+        ],
+        [
+          "Semester 2",
+          "Research Methodology; Data Structures and Algorithm Design; Cognitive Analytics and Social Skills for Professionals; Network Security and Cryptography",
+        ],
+        [
+          "Semester 3",
+          "Unix/Linux Programming; Seminar; Cloud Infrastructure and Services; Quantitative Aptitude; Professional Ethics",
+        ],
+        [
+          "Semester 4",
+          "Augmented Reality and Virtual Reality; Blockchain Technology and Management (Business); Blockchain Technology and Management (Technical Development); Electives; Machine Learning / ML & AI where applicable",
+        ],
       ],
       note: "Specialisation subjects differ from the general MCA track. Do not assume a specialisation syllabus applies unless you have selected that route.",
     },
@@ -514,10 +673,26 @@ const configs: AmityBlogConfig[] = [
       intro: "Four specialisation routes are currently promoted alongside the general MCA.",
       head: ["Route", "Focus", "Potential direction"],
       rows: [
-        ["Cyber Security", "Security, cryptography, risk", "Security analyst, SOC and security-engineering pathway"],
-        ["Software Engineering", "Software design, development, testing", "Software and application developer"],
-        ["Machine Learning & AI", "Models, data, intelligent systems", "ML, data and AI roles — strong maths and coding needed"],
-        ["FinTech & AI", "Digital finance plus technology", "FinTech analyst, product, data and technology roles"],
+        [
+          "Cyber Security",
+          "Security, cryptography, risk",
+          "Security analyst, SOC and security-engineering pathway",
+        ],
+        [
+          "Software Engineering",
+          "Software design, development, testing",
+          "Software and application developer",
+        ],
+        [
+          "Machine Learning & AI",
+          "Models, data, intelligent systems",
+          "ML, data and AI roles — strong maths and coding needed",
+        ],
+        [
+          "FinTech & AI",
+          "Digital finance plus technology",
+          "FinTech analyst, product, data and technology roles",
+        ],
       ],
     },
     admissionIntro:
@@ -553,11 +728,31 @@ const configs: AmityBlogConfig[] = [
     feeIntro:
       "The supplied MCA research states ₹49,800 per semester, and current third-party 2026 listings also report this figure. Even with two sources agreeing, verify the active India-specific fee sheet at checkout before you commit.",
     feeRows: [
-      ["Per semester", "₹49,800 (supplied research)", "Cross-checked against the live India fee before publication"],
-      ["Full programme", "Four semesters at the verified semester fee", "Total published only after the fee sheet is confirmed"],
-      ["Scholarship / discount", "Offered, eligibility-based", "Recorded per scheme with the applicable conditions"],
-      ["EMI", "Offered on the admission flow", "Published with tenure and interest terms confirmed"],
-      ["Additional charges", "Not separately published", "Shown as 'shared by the university' rather than estimated"],
+      [
+        "Per semester",
+        "₹49,800 (supplied research)",
+        "Cross-checked against the live India fee before publication",
+      ],
+      [
+        "Full programme",
+        "Four semesters at the verified semester fee",
+        "Total published only after the fee sheet is confirmed",
+      ],
+      [
+        "Scholarship / discount",
+        "Offered, eligibility-based",
+        "Recorded per scheme with the applicable conditions",
+      ],
+      [
+        "EMI",
+        "Offered on the admission flow",
+        "Published with tenure and interest terms confirmed",
+      ],
+      [
+        "Additional charges",
+        "Not separately published",
+        "Shown as 'shared by the university' rather than estimated",
+      ],
     ],
     emi: [
       "Ask for the instalment schedule in writing — number of instalments, per-month amount and whether any processing fee applies.",
@@ -574,7 +769,10 @@ const configs: AmityBlogConfig[] = [
     ],
     careerHead: ["Role", "Core work"],
     careerRows: [
-      ["Software developer / engineer", "Programming, debugging, application development, version control"],
+      [
+        "Software developer / engineer",
+        "Programming, debugging, application development, version control",
+      ],
       ["Web developer", "Frontend and backend development, APIs, databases, deployment"],
       ["Application developer", "Building and maintaining business applications"],
       ["Database administrator", "Database management, queries, backups, performance"],
@@ -623,16 +821,44 @@ const configs: AmityBlogConfig[] = [
       ],
     },
     faqs: [
-      { question: "What is the duration of the Amity Online MCA?", answer: "Two years, across four semesters." },
-      { question: "What is the eligibility?", answer: "BCA or an equivalent degree, or other accepted bachelor's routes. A mathematics condition applies to specified non-BCA routes." },
-      { question: "Can non-BCA graduates apply?", answer: "Yes, subject to the current route rules — typically science, commerce or arts graduates with Mathematics at 10+2, or via the bridge course." },
-      { question: "Is there a bridge course?", answer: "Yes. Amity provides a bridge route for students who lack the required mathematics background, subject to qualifying it." },
-      { question: "What is the Amity Online MCA fee?", answer: "Supplied research references ₹49,800 per semester and current third-party 2026 listings report the same figure. Always confirm the live India-specific amount at checkout." },
-      { question: "Does the MCA guarantee placement?", answer: "No. Career support is assistance, not a job guarantee." },
+      {
+        question: "What is the duration of the Amity Online MCA?",
+        answer: "Two years, across four semesters.",
+      },
+      {
+        question: "What is the eligibility?",
+        answer:
+          "BCA or an equivalent degree, or other accepted bachelor's routes. A mathematics condition applies to specified non-BCA routes.",
+      },
+      {
+        question: "Can non-BCA graduates apply?",
+        answer:
+          "Yes, subject to the current route rules — typically science, commerce or arts graduates with Mathematics at 10+2, or via the bridge course.",
+      },
+      {
+        question: "Is there a bridge course?",
+        answer:
+          "Yes. Amity provides a bridge route for students who lack the required mathematics background, subject to qualifying it.",
+      },
+      {
+        question: "What is the Amity Online MCA fee?",
+        answer:
+          "Supplied research references ₹49,800 per semester and current third-party 2026 listings report the same figure. Always confirm the live India-specific amount at checkout.",
+      },
+      {
+        question: "Does the MCA guarantee placement?",
+        answer: "No. Career support is assistance, not a job guarantee.",
+      },
     ],
     related: [
-      { label: "Amity Online BCA 2026 guide", href: "/blogs/amity-online-bca-2026-fees-eligibility-careers" },
-      { label: "Amity Online MBA 2026 guide", href: "/blogs/amity-online-mba-2026-fees-eligibility-careers" },
+      {
+        label: "Amity Online BCA 2026 guide",
+        href: "/blogs/amity-online-bca-2026-fees-eligibility-careers",
+      },
+      {
+        label: "Amity Online MBA 2026 guide",
+        href: "/blogs/amity-online-mba-2026-fees-eligibility-careers",
+      },
       { label: "Compare every Online MCA university", href: "/compare/online-mca" },
       { label: "Online MCA course hub", href: "/courses/online-mca" },
       { label: "Book free counselling", href: "/counselling" },
@@ -666,26 +892,50 @@ const configs: AmityBlogConfig[] = [
       ["Programme", "Master of Commerce (M.Com)"],
       ["Mode", "Online"],
       ["Duration", "2 years / 4 semesters"],
-      ["Current routes", "M.Com in Financial Management; M.Com with Financial Technology specialisation"],
-      ["Eligibility", "Financial Management page states graduation in any discipline — verify route-specific conditions"],
+      [
+        "Current routes",
+        "M.Com in Financial Management; M.Com with Financial Technology specialisation",
+      ],
+      [
+        "Eligibility",
+        "Financial Management page states graduation in any discipline — verify route-specific conditions",
+      ],
       ["Fee", "Sources conflict — use the verified India-specific figure only"],
     ],
     curriculum: {
       caption: "Amity Online M.Com semester-wise curriculum",
       rows: [
-        ["Semester 1", "Advanced Financial Accounting; Managerial Economics; Financial Management; Statistics for Management; Professional Communication"],
-        ["Semester 2", "Risk Management; Business Research Methods; Cognitive Analytics and Social Skills for Professionals; Security Analysis and Portfolio Management; Financial Engineering"],
-        ["Semester 3", "Financial Reporting and Decision Making; Minor Project; Professional Ethics"],
+        [
+          "Semester 1",
+          "Advanced Financial Accounting; Managerial Economics; Financial Management; Statistics for Management; Professional Communication",
+        ],
+        [
+          "Semester 2",
+          "Risk Management; Business Research Methods; Cognitive Analytics and Social Skills for Professionals; Security Analysis and Portfolio Management; Financial Engineering",
+        ],
+        [
+          "Semester 3",
+          "Financial Reporting and Decision Making; Minor Project; Professional Ethics",
+        ],
         ["Semester 4", "Treasury Management; Dissertation; Project"],
       ],
       note: "Use the route-specific curriculum snapshot — the FinTech specialisation differs from the Financial Management route.",
     },
     specialisations: {
-      intro: "Two routes are currently listed. Choose on the basis of the finance function you want to work in, not the label.",
+      intro:
+        "Two routes are currently listed. Choose on the basis of the finance function you want to work in, not the label.",
       head: ["Route", "Focus", "Potential direction"],
       rows: [
-        ["Financial Management", "Planning, analysis, risk, reporting, treasury, portfolio concepts", "Finance analyst, corporate finance, banking and financial services"],
-        ["FinTech", "Digital finance, financial technology, digital banking, emerging systems", "FinTech analyst, digital banking, risk, product and data roles"],
+        [
+          "Financial Management",
+          "Planning, analysis, risk, reporting, treasury, portfolio concepts",
+          "Finance analyst, corporate finance, banking and financial services",
+        ],
+        [
+          "FinTech",
+          "Digital finance, financial technology, digital banking, emerging systems",
+          "FinTech analyst, digital banking, risk, product and data roles",
+        ],
       ],
     },
     admissionIntro:
@@ -702,9 +952,18 @@ const configs: AmityBlogConfig[] = [
     eligibilityIntro:
       "The current Amity Financial Management programme page states graduation in any discipline for Indian students. Some third-party sources mention a 50–60% requirement and final-semester candidates; verify those against the active admission form for the exact route.",
     eligibilityRows: [
-      ["Indian graduate", "Graduation in any discipline as stated on the current Financial Management page"],
-      ["Final-semester candidate", "Mentioned in secondary sources — confirm against the active admission form"],
-      ["Minimum-marks condition", "A 50–60% range appears in secondary sources; treat as unverified until the official form confirms it"],
+      [
+        "Indian graduate",
+        "Graduation in any discipline as stated on the current Financial Management page",
+      ],
+      [
+        "Final-semester candidate",
+        "Mentioned in secondary sources — confirm against the active admission form",
+      ],
+      [
+        "Minimum-marks condition",
+        "A 50–60% range appears in secondary sources; treat as unverified until the official form confirms it",
+      ],
       FOREIGN_ROW,
     ],
     documents: [
@@ -719,11 +978,31 @@ const configs: AmityBlogConfig[] = [
     feeIntro:
       "This programme carries a genuine data-quality problem. Supplied sources contain ₹1,20,000 in one place, ₹90,000–₹1,20,000 in a table and ₹60,000–₹70,000 elsewhere, while current third-party 2026 listings report around ₹1.5 lakh for M.Com Financial Management. These figures must not be averaged or merged into a range.",
     feeRows: [
-      ["Total programme fee", "Conflicting values across sources", "Published only from the verified India-specific fee record"],
-      ["Per semester", "Not consistently reported", "Recorded once the official semester split is confirmed"],
-      ["Scholarship / discount", "Offered, eligibility-based", "Documented per scheme with conditions"],
-      ["EMI", "Offered on the admission flow", "Published with tenure and interest terms confirmed"],
-      ["Other charges", "Not separately published", "Shown as 'shared by the university' rather than estimated"],
+      [
+        "Total programme fee",
+        "Conflicting values across sources",
+        "Published only from the verified India-specific fee record",
+      ],
+      [
+        "Per semester",
+        "Not consistently reported",
+        "Recorded once the official semester split is confirmed",
+      ],
+      [
+        "Scholarship / discount",
+        "Offered, eligibility-based",
+        "Documented per scheme with conditions",
+      ],
+      [
+        "EMI",
+        "Offered on the admission flow",
+        "Published with tenure and interest terms confirmed",
+      ],
+      [
+        "Other charges",
+        "Not separately published",
+        "Shown as 'shared by the university' rather than estimated",
+      ],
     ],
     emi: [
       "Because the published fee data conflicts, ask Amity for a written fee sheet naming the exact route before you consider any EMI plan.",
@@ -751,7 +1030,10 @@ const configs: AmityBlogConfig[] = [
       ["Treasury-related roles", "Cash, liquidity and funding operations"],
       ["FinTech analyst", "Digital finance products, payments and data"],
       ["Finance operations", "Process, reporting and control activities"],
-      ["Entrepreneurship / family-business finance", "Applying finance skills inside your own business"],
+      [
+        "Entrepreneurship / family-business finance",
+        "Applying finance skills inside your own business",
+      ],
     ],
     salary: [
       "Amity does not publish a verified M.Com-specific salary table, and this guide will not invent one. Commerce pay in India tracks the function you enter — accounting operations, analysis, risk or FinTech all pay differently.",
@@ -790,16 +1072,43 @@ const configs: AmityBlogConfig[] = [
       ],
     },
     faqs: [
-      { question: "What is the duration of the Amity Online M.Com?", answer: "Two years, across four semesters." },
-      { question: "What are the specialisations?", answer: "Current listings include M.Com in Financial Management and an M.Com with a Financial Technology (FinTech) specialisation. Verify the active route before applying." },
-      { question: "What is the fee?", answer: "Published figures conflict across sources — from ₹60,000–₹70,000 to around ₹1.5 lakh. Use the verified India-specific fee from Amity for your exact route rather than any published range." },
-      { question: "What subjects are taught?", answer: "Advanced Financial Accounting, Managerial Economics, Financial Management, Statistics, Risk Management, Security Analysis and Portfolio Management, Financial Engineering, Financial Reporting, Treasury Management and a dissertation." },
-      { question: "Can working professionals pursue it?", answer: "Yes — the online format is flexible, subject to managing the workload." },
-      { question: "Is placement guaranteed?", answer: "No. Amity offers career assistance; it is not a job guarantee." },
+      {
+        question: "What is the duration of the Amity Online M.Com?",
+        answer: "Two years, across four semesters.",
+      },
+      {
+        question: "What are the specialisations?",
+        answer:
+          "Current listings include M.Com in Financial Management and an M.Com with a Financial Technology (FinTech) specialisation. Verify the active route before applying.",
+      },
+      {
+        question: "What is the fee?",
+        answer:
+          "Published figures conflict across sources — from ₹60,000–₹70,000 to around ₹1.5 lakh. Use the verified India-specific fee from Amity for your exact route rather than any published range.",
+      },
+      {
+        question: "What subjects are taught?",
+        answer:
+          "Advanced Financial Accounting, Managerial Economics, Financial Management, Statistics, Risk Management, Security Analysis and Portfolio Management, Financial Engineering, Financial Reporting, Treasury Management and a dissertation.",
+      },
+      {
+        question: "Can working professionals pursue it?",
+        answer: "Yes — the online format is flexible, subject to managing the workload.",
+      },
+      {
+        question: "Is placement guaranteed?",
+        answer: "No. Amity offers career assistance; it is not a job guarantee.",
+      },
     ],
     related: [
-      { label: "Amity Online B.Com 2026 guide", href: "/blogs/amity-online-bcom-2026-fees-eligibility-careers" },
-      { label: "Amity Online MBA 2026 guide", href: "/blogs/amity-online-mba-2026-fees-eligibility-careers" },
+      {
+        label: "Amity Online B.Com 2026 guide",
+        href: "/blogs/amity-online-bcom-2026-fees-eligibility-careers",
+      },
+      {
+        label: "Amity Online MBA 2026 guide",
+        href: "/blogs/amity-online-mba-2026-fees-eligibility-careers",
+      },
       { label: "Compare every Online M.Com university", href: "/compare/online-mcom" },
       { label: "Online M.Com course hub", href: "/courses/online-mcom" },
       { label: "Book free counselling", href: "/counselling" },
@@ -847,7 +1156,10 @@ const configs: AmityBlogConfig[] = [
         ["Finance", "Financial and accounting fundamentals"],
         ["People", "Human-resource management and organisational behaviour"],
         ["Operations", "Operations and business processes"],
-        ["Applied", "Business analytics / digital business where included, plus projects and professional skills"],
+        [
+          "Applied",
+          "Business analytics / digital business where included, plus projects and professional skills",
+        ],
       ],
       note: "The supplied material is admission-focused rather than a complete semester curriculum. Use Amity's current published curriculum for a semester-wise breakdown before enrolling.",
     },
@@ -865,10 +1177,19 @@ const configs: AmityBlogConfig[] = [
     eligibilityIntro:
       "Indian students who have completed Class 12 or an equivalent qualification can apply. The current Amity Online BBA page lists 10th and 12th certificates for Indian students and O-Level/A-Level plus AIU equivalence for foreign students. English-language readiness is expected.",
     eligibilityRows: [
-      ["Indian student", "10th and 12th formal-schooling certificates; current programme-specific requirements apply"],
-      ["Foreign student", "O Level plus A Level or equivalent schooling as specified; AIU equivalence where required"],
+      [
+        "Indian student",
+        "10th and 12th formal-schooling certificates; current programme-specific requirements apply",
+      ],
+      [
+        "Foreign student",
+        "O Level plus A Level or equivalent schooling as specified; AIU equivalence where required",
+      ],
       ["Language", "Sufficient English understanding for the programme"],
-      ["Entrepreneur / working learner", "No separate category replaces academic eligibility; standard admission criteria still apply"],
+      [
+        "Entrepreneur / working learner",
+        "No separate category replaces academic eligibility; standard admission criteria still apply",
+      ],
     ],
     documents: [
       "Class 10 certificate / marksheet",
@@ -882,9 +1203,17 @@ const configs: AmityBlogConfig[] = [
       "The supplied source gives a per-semester fee of ₹33,200 and a full-programme figure of ₹1,99,000, plus a 24-month EMI figure. The live fee card changes with intake, scholarship and payment plan, so the researched current India fee is the primary value with the research date shown.",
     feeRows: [
       ["Per semester", "₹33,200", "Verify the current intake fee"],
-      ["Full programme", "₹1,99,000", "Verify the current total and whether all charges are included"],
+      [
+        "Full programme",
+        "₹1,99,000",
+        "Verify the current total and whether all charges are included",
+      ],
       ["EMI", "₹5,533/month for 24 months", "Display only with current terms confirmed"],
-      ["Scholarships", "Available subject to eligibility", "No fixed discount is promised without current scheme evidence"],
+      [
+        "Scholarships",
+        "Available subject to eligibility",
+        "No fixed discount is promised without current scheme evidence",
+      ],
     ],
     emi: [
       "The supplied source describes a 24-month, 0% interest EMI at ₹5,533 per month — confirm the tenure, processing fee and lender before signing.",
@@ -895,13 +1224,31 @@ const configs: AmityBlogConfig[] = [
     learning: COMMON_LEARNING,
     careerHead: ["Job role", "What the role commonly involves"],
     careerRows: [
-      ["Marketing Executive", "Campaign support, customer research, content and promotion coordination, market execution"],
-      ["Sales Executive", "Prospecting, customer interaction, sales targets and relationship management"],
-      ["HR Executive", "Recruitment coordination, employee records, HR operations and engagement support"],
+      [
+        "Marketing Executive",
+        "Campaign support, customer research, content and promotion coordination, market execution",
+      ],
+      [
+        "Sales Executive",
+        "Prospecting, customer interaction, sales targets and relationship management",
+      ],
+      [
+        "HR Executive",
+        "Recruitment coordination, employee records, HR operations and engagement support",
+      ],
       ["Financial Analyst", "Basic financial analysis, reporting and business data interpretation"],
-      ["Business Development Executive", "Lead generation, partnerships, client acquisition and market expansion"],
-      ["Operations Executive", "Process coordination, service delivery, reporting and operational support"],
-      ["Banking / insurance roles", "Customer service, relationship management, operations and product support"],
+      [
+        "Business Development Executive",
+        "Lead generation, partnerships, client acquisition and market expansion",
+      ],
+      [
+        "Operations Executive",
+        "Process coordination, service delivery, reporting and operational support",
+      ],
+      [
+        "Banking / insurance roles",
+        "Customer service, relationship management, operations and product support",
+      ],
       ["Entrepreneur", "Business planning, customer acquisition, finance, operations and growth"],
     ],
     salary: [
@@ -931,15 +1278,40 @@ const configs: AmityBlogConfig[] = [
       "None of that is a guaranteed job. Ask precisely what career services include and who is eligible for them before you treat placement support as part of the value you are paying for.",
     ],
     faqs: [
-      { question: "Is the Amity Online BBA valid?", answer: "Amity presents the BBA as an online undergraduate degree. Verify the applicable current UGC entitlement for the exact programme and admission session on the UGC DEB portal." },
-      { question: "What is the duration of the Amity Online BBA?", answer: "Three years, across six semesters." },
-      { question: "What is the Amity Online BBA fee in 2026?", answer: "The supplied source lists ₹33,200 per semester and ₹1,99,000 for the full programme. Verify the live India fee for your intake before paying." },
-      { question: "Can I pursue BBA after Class 12 from any stream?", answer: "Amity's eligibility information focuses on completing 10+2 and English readiness rather than a commerce-only stream requirement." },
-      { question: "Does Amity guarantee a job after BBA?", answer: "No. Career and placement assistance should never be read as a guaranteed job unless an explicit written guarantee applies to your specific programme." },
+      {
+        question: "Is the Amity Online BBA valid?",
+        answer:
+          "Amity presents the BBA as an online undergraduate degree. Verify the applicable current UGC entitlement for the exact programme and admission session on the UGC DEB portal.",
+      },
+      {
+        question: "What is the duration of the Amity Online BBA?",
+        answer: "Three years, across six semesters.",
+      },
+      {
+        question: "What is the Amity Online BBA fee in 2026?",
+        answer:
+          "The supplied source lists ₹33,200 per semester and ₹1,99,000 for the full programme. Verify the live India fee for your intake before paying.",
+      },
+      {
+        question: "Can I pursue BBA after Class 12 from any stream?",
+        answer:
+          "Amity's eligibility information focuses on completing 10+2 and English readiness rather than a commerce-only stream requirement.",
+      },
+      {
+        question: "Does Amity guarantee a job after BBA?",
+        answer:
+          "No. Career and placement assistance should never be read as a guaranteed job unless an explicit written guarantee applies to your specific programme.",
+      },
     ],
     related: [
-      { label: "Amity Online BCA 2026 guide", href: "/blogs/amity-online-bca-2026-fees-eligibility-careers" },
-      { label: "Amity Online B.Com 2026 guide", href: "/blogs/amity-online-bcom-2026-fees-eligibility-careers" },
+      {
+        label: "Amity Online BCA 2026 guide",
+        href: "/blogs/amity-online-bca-2026-fees-eligibility-careers",
+      },
+      {
+        label: "Amity Online B.Com 2026 guide",
+        href: "/blogs/amity-online-bcom-2026-fees-eligibility-careers",
+      },
       { label: "Compare every Online BBA university", href: "/compare/online-bba" },
       { label: "Online BBA course hub", href: "/courses/online-bba" },
       { label: "Book free counselling", href: "/counselling" },
@@ -976,18 +1348,39 @@ const configs: AmityBlogConfig[] = [
       ["Eligibility", "10+2 or equivalent schooling; current programme criteria apply"],
       ["Supplied fee", "₹29,200 per semester; ₹1,75,000 full programme"],
       ["EMI in supplied source", "24-month zero-cost EMI; ₹6,881/month stated"],
-      ["Academic focus", "Programming, data structures, databases, operating systems, software engineering, AI and emerging technologies"],
-      ["Career support", "Virtual job fairs, resume assistance, job-search support and counselling"],
+      [
+        "Academic focus",
+        "Programming, data structures, databases, operating systems, software engineering, AI and emerging technologies",
+      ],
+      [
+        "Career support",
+        "Virtual job fairs, resume assistance, job-search support and counselling",
+      ],
     ],
     curriculum: {
       caption: "Amity Online BCA syllabus 2026 (supplied source)",
       rows: [
-        ["Semester 1", "Computer and Information Technology; Basic Mathematics; Programming in C; Business Communication; Human-Computer Interaction"],
-        ["Semester 2", "Data Structures in C; Operating System Concepts; Environmental Studies; Software Engineering"],
-        ["Semester 3", "Computational Statistics; Database Management; Green Computing; Java Programming"],
-        ["Semester 4", "Unix System & Shell Programming; Python Programming; Cyber Security; Digital Marketing"],
+        [
+          "Semester 1",
+          "Computer and Information Technology; Basic Mathematics; Programming in C; Business Communication; Human-Computer Interaction",
+        ],
+        [
+          "Semester 2",
+          "Data Structures in C; Operating System Concepts; Environmental Studies; Software Engineering",
+        ],
+        [
+          "Semester 3",
+          "Computational Statistics; Database Management; Green Computing; Java Programming",
+        ],
+        [
+          "Semester 4",
+          "Unix System & Shell Programming; Python Programming; Cyber Security; Digital Marketing",
+        ],
         ["Semester 5", "Artificial Intelligence; Data Warehousing; Internet of Things (IoT)"],
-        ["Semester 6", "Major Project; Blockchain Technologies; Human Resource Management; e-Governance"],
+        [
+          "Semester 6",
+          "Major Project; Blockchain Technologies; Human Resource Management; e-Governance",
+        ],
       ],
       note: "This is a semester snapshot. Where a specialisation track is chosen, its subjects differ — keep the general curriculum and the specialisation curriculum separate.",
     },
@@ -996,9 +1389,18 @@ const configs: AmityBlogConfig[] = [
         "The supplied source describes a general BCA curriculum, while Amity Online also promotes specialised technology tracks. These are separate programme variants, not add-ons to the general degree.",
       head: ["Track / area", "Career-learning direction"],
       rows: [
-        ["FinTech & AI", "Financial technology, AI, digital payments and emerging financial systems"],
-        ["Applied / emerging technology", "Application development, data and technology engineering, emerging digital systems"],
-        ["General BCA", "Programming, databases, systems, cybersecurity and emerging-technology foundations"],
+        [
+          "FinTech & AI",
+          "Financial technology, AI, digital payments and emerging financial systems",
+        ],
+        [
+          "Applied / emerging technology",
+          "Application development, data and technology engineering, emerging digital systems",
+        ],
+        [
+          "General BCA",
+          "Programming, databases, systems, cybersecurity and emerging-technology foundations",
+        ],
       ],
     },
     admissionIntro:
@@ -1015,8 +1417,14 @@ const configs: AmityBlogConfig[] = [
     eligibilityIntro:
       "The current Amity Online BCA page lists 10+2 eligibility. Notably, the Amity-specific eligibility material does not state a mathematics requirement — use the official programme wording rather than the generic BCA rule you may have read elsewhere.",
     eligibilityRows: [
-      ["Indian student", "10+2 or equivalent schooling from a recognised board; current programme criteria apply"],
-      ["Mathematics", "Amity's BCA eligibility material does not state a mathematics requirement — confirm on the official page"],
+      [
+        "Indian student",
+        "10+2 or equivalent schooling from a recognised board; current programme criteria apply",
+      ],
+      [
+        "Mathematics",
+        "Amity's BCA eligibility material does not state a mathematics requirement — confirm on the official page",
+      ],
       FOREIGN_ROW,
       ["Language", "Sufficient English understanding for the programme"],
     ],
@@ -1051,15 +1459,33 @@ const configs: AmityBlogConfig[] = [
     ],
     careerHead: ["Role", "Core work / skills"],
     careerRows: [
-      ["Software Developer", "Programming, debugging, application development and version-control workflows"],
+      [
+        "Software Developer",
+        "Programming, debugging, application development and version-control workflows",
+      ],
       ["Web Developer", "Frontend and backend development, APIs, databases and deployment"],
-      ["Database Administrator / Associate", "Database management, queries, backups, access and performance basics"],
-      ["QA / Test Engineer", "Test planning, defect reporting, automation basics and quality processes"],
-      ["Information Security Analyst", "Security monitoring, vulnerability awareness and incident-support activities"],
-      ["Network Engineer / Support", "Networking fundamentals, troubleshooting and infrastructure support"],
+      [
+        "Database Administrator / Associate",
+        "Database management, queries, backups, access and performance basics",
+      ],
+      [
+        "QA / Test Engineer",
+        "Test planning, defect reporting, automation basics and quality processes",
+      ],
+      [
+        "Information Security Analyst",
+        "Security monitoring, vulnerability awareness and incident-support activities",
+      ],
+      [
+        "Network Engineer / Support",
+        "Networking fundamentals, troubleshooting and infrastructure support",
+      ],
       ["Technical Support", "User support, issue diagnosis and system-administration basics"],
       ["Data / BI Analyst", "Data cleaning, SQL, spreadsheets, dashboards and analytical thinking"],
-      ["Cloud Support Associate", "Cloud fundamentals, deployment concepts, monitoring and troubleshooting"],
+      [
+        "Cloud Support Associate",
+        "Cloud fundamentals, deployment concepts, monitoring and troubleshooting",
+      ],
     ],
     salary: [
       "There is no reliable, current, role-by-role Amity BCA salary table, so this guide deliberately does not publish a salary promise.",
@@ -1096,19 +1522,48 @@ const configs: AmityBlogConfig[] = [
         ["Self-discipline", "High", "Moderate to high"],
         ["Campus exposure", "Limited / virtual", "Direct campus environment"],
         ["Cost structure", "Depends on the university", "Depends on the college and city"],
-        ["Career outcome", "Depends strongly on skills plus programme quality", "Depends strongly on skills, institution and internships"],
+        [
+          "Career outcome",
+          "Depends strongly on skills plus programme quality",
+          "Depends strongly on skills, institution and internships",
+        ],
       ],
     },
     faqs: [
-      { question: "What is the duration of the Amity Online BCA?", answer: "Three years, across six semesters." },
-      { question: "What is the Amity Online BCA fee?", answer: "The supplied source lists ₹29,200 per semester and ₹1,75,000 for the programme. Confirm the current India fee before paying." },
-      { question: "What subjects are included in the Amity Online BCA?", answer: "C programming, data structures, operating systems, software engineering, databases, Java, Python, cybersecurity, AI, IoT, blockchain and a major project." },
-      { question: "Is Mathematics required for the Amity Online BCA?", answer: "The Amity-specific eligibility material does not state a mathematics requirement. Use the current official programme eligibility wording rather than a generic BCA rule." },
-      { question: "Is the Amity Online BCA valid?", answer: "The current programme page presents the degree as UGC-entitled. Check the entitlement for your exact programme and admission session rather than relying on a 'valid forever' claim, and treat international recognition claims such as WES precisely — they are not an employment or immigration guarantee." },
+      {
+        question: "What is the duration of the Amity Online BCA?",
+        answer: "Three years, across six semesters.",
+      },
+      {
+        question: "What is the Amity Online BCA fee?",
+        answer:
+          "The supplied source lists ₹29,200 per semester and ₹1,75,000 for the programme. Confirm the current India fee before paying.",
+      },
+      {
+        question: "What subjects are included in the Amity Online BCA?",
+        answer:
+          "C programming, data structures, operating systems, software engineering, databases, Java, Python, cybersecurity, AI, IoT, blockchain and a major project.",
+      },
+      {
+        question: "Is Mathematics required for the Amity Online BCA?",
+        answer:
+          "The Amity-specific eligibility material does not state a mathematics requirement. Use the current official programme eligibility wording rather than a generic BCA rule.",
+      },
+      {
+        question: "Is the Amity Online BCA valid?",
+        answer:
+          "The current programme page presents the degree as UGC-entitled. Check the entitlement for your exact programme and admission session rather than relying on a 'valid forever' claim, and treat international recognition claims such as WES precisely — they are not an employment or immigration guarantee.",
+      },
     ],
     related: [
-      { label: "Amity Online MCA 2026 guide", href: "/blogs/amity-online-mca-2026-fees-eligibility-careers" },
-      { label: "Amity Online BBA 2026 guide", href: "/blogs/amity-online-bba-2026-fees-eligibility-careers" },
+      {
+        label: "Amity Online MCA 2026 guide",
+        href: "/blogs/amity-online-mca-2026-fees-eligibility-careers",
+      },
+      {
+        label: "Amity Online BBA 2026 guide",
+        href: "/blogs/amity-online-bba-2026-fees-eligibility-careers",
+      },
       { label: "Compare every Online BCA university", href: "/compare/online-bca" },
       { label: "Online BCA course hub", href: "/courses/online-bca" },
       { label: "Book free counselling", href: "/counselling" },
@@ -1145,18 +1600,42 @@ const configs: AmityBlogConfig[] = [
       ["Duration", "3 years / 6 semesters"],
       ["Mode", "Online"],
       ["Entry point", "10+2 or equivalent, subject to current university criteria"],
-      ["Core academic areas", "Accounting, finance, taxation, business law, economics, statistics, management and commerce"],
-      ["Career directions", "Accounting, finance, taxation, banking, business operations and higher studies"],
+      [
+        "Core academic areas",
+        "Accounting, finance, taxation, business law, economics, statistics, management and commerce",
+      ],
+      [
+        "Career directions",
+        "Accounting, finance, taxation, banking, business operations and higher studies",
+      ],
     ],
     curriculum: {
       caption: "Amity Online B.Com semester-wise syllabus",
       rows: [
-        ["Semester 1", "Business Mathematics I; Financial Accounting I; Mercantile Law; Environmental Studies; Business Communication"],
-        ["Semester 2", "Business Mathematics II; Financial Accounting II; Fundamentals of Corporate Law; Macroeconomics; Principles of Marketing"],
-        ["Semester 3", "Individual Excellence and Social Dynamics; Corporate Accounting I; Cost Accounting; Direct Tax I; Business Statistics"],
-        ["Semester 4", "Auditing; Corporate Accounting II; Direct Tax II; Management Accounting; Research Methodology"],
-        ["Semester 5", "Business Organisation; Computerized Accounting System; Financial Reporting; Fundamentals of Financial Management; Indian Economy; Professional Ethics"],
-        ["Semester 6", "Ethics and Corporate Governance; Major Project; Corporate Tax Planning; International Financial Management; Investment Analysis and Portfolio Management"],
+        [
+          "Semester 1",
+          "Business Mathematics I; Financial Accounting I; Mercantile Law; Environmental Studies; Business Communication",
+        ],
+        [
+          "Semester 2",
+          "Business Mathematics II; Financial Accounting II; Fundamentals of Corporate Law; Macroeconomics; Principles of Marketing",
+        ],
+        [
+          "Semester 3",
+          "Individual Excellence and Social Dynamics; Corporate Accounting I; Cost Accounting; Direct Tax I; Business Statistics",
+        ],
+        [
+          "Semester 4",
+          "Auditing; Corporate Accounting II; Direct Tax II; Management Accounting; Research Methodology",
+        ],
+        [
+          "Semester 5",
+          "Business Organisation; Computerized Accounting System; Financial Reporting; Fundamentals of Financial Management; Indian Economy; Professional Ethics",
+        ],
+        [
+          "Semester 6",
+          "Ethics and Corporate Governance; Major Project; Corporate Tax Planning; International Financial Management; Investment Analysis and Portfolio Management",
+        ],
       ],
       note: "Treat this as a curriculum snapshot rather than the 'latest' syllabus — confirm the current structure on the official programme page before enrolling.",
     },
@@ -1174,8 +1653,14 @@ const configs: AmityBlogConfig[] = [
     eligibilityIntro:
       "Class 12 completion from a recognised board is the basic requirement, along with English-language readiness. Amity's current programme information identifies 10+2 as the entry route and lists formal-schooling documentation for Indian and foreign learners.",
     eligibilityRows: [
-      ["Indian learner", "10th and 12th certificates; 10+2 completion; current programme-specific eligibility must be checked"],
-      ["Foreign learner", "Equivalent secondary and senior-secondary qualifications, with AIU equivalence where applicable"],
+      [
+        "Indian learner",
+        "10th and 12th certificates; 10+2 completion; current programme-specific eligibility must be checked",
+      ],
+      [
+        "Foreign learner",
+        "Equivalent secondary and senior-secondary qualifications, with AIU equivalence where applicable",
+      ],
       ["Language", "Basic English proficiency / programme-language readiness"],
       ["Working learner", "No separate category; standard academic eligibility applies"],
     ],
@@ -1191,9 +1676,17 @@ const configs: AmityBlogConfig[] = [
       "The supplied source states ₹19,200 per semester and ₹1,15,000 for the full programme, with EMI and scholarship options. Fee cards change by intake, scholarship, payment mode and programme version, so the researched current fee is the primary value and the research date stays visible.",
     feeRows: [
       ["Per semester", "₹19,200", "Used only after current fee verification"],
-      ["Full programme", "₹1,15,000", "Check the arithmetic and the current official fee schedule before relying on it"],
+      [
+        "Full programme",
+        "₹1,15,000",
+        "Check the arithmetic and the current official fee schedule before relying on it",
+      ],
       ["EMI", "Available", "Display the current amount and tenure only if confirmed"],
-      ["Scholarships", "Available subject to eligibility", "No fixed discount is promised unless the current scheme is confirmed"],
+      [
+        "Scholarships",
+        "Available subject to eligibility",
+        "No fixed discount is promised unless the current scheme is confirmed",
+      ],
     ],
     emi: [
       "Note that six semesters at ₹19,200 does not reconcile neatly with the ₹1,15,000 programme figure — ask Amity for the official fee schedule and the exact number of payable instalments.",
@@ -1207,8 +1700,14 @@ const configs: AmityBlogConfig[] = [
       ["Accountant", "Bookkeeping, reconciliations, financial records and reporting support"],
       ["Financial Analyst", "Financial data analysis, reporting and business decision support"],
       ["Tax Consultant", "Tax compliance, documentation and tax-planning support"],
-      ["Banking Executive", "Customer service, banking operations, relationship and product support"],
-      ["Business Development Executive", "Lead generation, client relationships, sales and partnerships"],
+      [
+        "Banking Executive",
+        "Customer service, banking operations, relationship and product support",
+      ],
+      [
+        "Business Development Executive",
+        "Lead generation, client relationships, sales and partnerships",
+      ],
       ["Entrepreneur", "Using commerce and business knowledge to run a venture"],
       ["Higher studies", "MBA, M.Com and relevant professional qualifications"],
     ],
@@ -1237,15 +1736,40 @@ const configs: AmityBlogConfig[] = [
       "Use precise wording when you evaluate any university: 'placement assistance' and 'career support' mean help, and only an explicit published guarantee means more than that.",
     ],
     faqs: [
-      { question: "Is the Amity Online B.Com valid?", answer: "Amity presents the B.Com as an online degree with published eligibility and programme information. Validity should be evaluated against the current UGC entitlement for the specific programme and admission session." },
-      { question: "What is the duration of the Amity Online B.Com?", answer: "Three years, across six semesters." },
-      { question: "What is the Amity Online B.Com fee?", answer: "The supplied source lists ₹19,200 per semester and ₹1,15,000 for the programme. Verify the current India fee before paying, as fee cards change by intake." },
-      { question: "What are the main subjects in the Amity Online B.Com?", answer: "Accounting, business mathematics, mercantile and corporate law, economics, taxation, auditing, management accounting, financial management, corporate governance and a major project." },
-      { question: "Can I pursue higher studies after an online B.Com?", answer: "Yes, subject to the eligibility rules of the next institution. Common routes are MBA, M.Com and professional qualifications such as CA, CS and CMA." },
+      {
+        question: "Is the Amity Online B.Com valid?",
+        answer:
+          "Amity presents the B.Com as an online degree with published eligibility and programme information. Validity should be evaluated against the current UGC entitlement for the specific programme and admission session.",
+      },
+      {
+        question: "What is the duration of the Amity Online B.Com?",
+        answer: "Three years, across six semesters.",
+      },
+      {
+        question: "What is the Amity Online B.Com fee?",
+        answer:
+          "The supplied source lists ₹19,200 per semester and ₹1,15,000 for the programme. Verify the current India fee before paying, as fee cards change by intake.",
+      },
+      {
+        question: "What are the main subjects in the Amity Online B.Com?",
+        answer:
+          "Accounting, business mathematics, mercantile and corporate law, economics, taxation, auditing, management accounting, financial management, corporate governance and a major project.",
+      },
+      {
+        question: "Can I pursue higher studies after an online B.Com?",
+        answer:
+          "Yes, subject to the eligibility rules of the next institution. Common routes are MBA, M.Com and professional qualifications such as CA, CS and CMA.",
+      },
     ],
     related: [
-      { label: "Amity Online M.Com 2026 guide", href: "/blogs/amity-online-mcom-2026-fees-eligibility-careers" },
-      { label: "Amity Online BBA 2026 guide", href: "/blogs/amity-online-bba-2026-fees-eligibility-careers" },
+      {
+        label: "Amity Online M.Com 2026 guide",
+        href: "/blogs/amity-online-mcom-2026-fees-eligibility-careers",
+      },
+      {
+        label: "Amity Online BBA 2026 guide",
+        href: "/blogs/amity-online-bba-2026-fees-eligibility-careers",
+      },
       { label: "Compare every Online B.Com university", href: "/compare/online-bcom" },
       { label: "Online B.Com course hub", href: "/courses/online-bcom" },
       { label: "Book free counselling", href: "/counselling" },

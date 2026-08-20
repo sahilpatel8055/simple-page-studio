@@ -102,7 +102,10 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Explore the university and its courses",
             items: [
-              { label: "Chandigarh University Online overview", href: "/universities/chandigarh-university-online" },
+              {
+                label: "Chandigarh University Online overview",
+                href: "/universities/chandigarh-university-online",
+              },
               { label: "Online MBA course details", href: "/courses/online-mba" },
               { label: "Online BCA course details", href: "/courses/online-bca" },
             ],
@@ -250,8 +253,14 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Read more about scholarships and admission",
             items: [
-              { label: "Scholarships at Chandigarh University Online", href: "/universities/chandigarh-university-online/scholarships" },
-              { label: "Admission process guide", href: "/universities/chandigarh-university-online/admission" },
+              {
+                label: "Scholarships at Chandigarh University Online",
+                href: "/universities/chandigarh-university-online/scholarships",
+              },
+              {
+                label: "Admission process guide",
+                href: "/universities/chandigarh-university-online/admission",
+              },
             ],
           },
         ],
@@ -306,8 +315,14 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue reading",
             items: [
-              { label: "Chandigarh University Online admission process", href: "/blogs/chandigarh-university-online-admission-process-eligibility" },
-              { label: "Placement outcomes", href: "/universities/chandigarh-university-online/placement" },
+              {
+                label: "Chandigarh University Online admission process",
+                href: "/blogs/chandigarh-university-online-admission-process-eligibility",
+              },
+              {
+                label: "Placement outcomes",
+                href: "/universities/chandigarh-university-online/placement",
+              },
               { label: "Explore online BBA", href: "/courses/online-bba" },
             ],
           },
@@ -358,7 +373,10 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
     ],
     sources: [
       { label: "Chandigarh University Online official portal", href: "https://onlinecu.in" },
-      { label: "CU Online MBA eligibility page", href: "https://onlinecu.in/blog/cu/eligibility-criteria-for-online-mba.php" },
+      {
+        label: "CU Online MBA eligibility page",
+        href: "https://onlinecu.in/blog/cu/eligibility-criteria-for-online-mba.php",
+      },
     ],
     cta: "Want a semester-by-semester fee estimate for your chosen course? Share your details and we will send a personalised breakdown.",
   },
@@ -384,9 +402,21 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             caption: "Eligibility snapshot",
             head: ["Programme", "Minimum Eligibility", "Entrance Exam"],
             rows: [
-              ["Online BBA / BCA / BA JMC", "10+2 from a recognised board, any stream", "Not required"],
-              ["Online MBA", "Bachelor's degree from a recognised university (or CA/ICWA)", "Not required"],
-              ["Online MCA", "BCA/B.Sc.(CS/IT)/B.E./B.Tech.(CSE/IT), or any graduate with Maths/Stats/Programming background", "Not required"],
+              [
+                "Online BBA / BCA / BA JMC",
+                "10+2 from a recognised board, any stream",
+                "Not required",
+              ],
+              [
+                "Online MBA",
+                "Bachelor's degree from a recognised university (or CA/ICWA)",
+                "Not required",
+              ],
+              [
+                "Online MCA",
+                "BCA/B.Sc.(CS/IT)/B.E./B.Tech.(CSE/IT), or any graduate with Maths/Stats/Programming background",
+                "Not required",
+              ],
             ],
           },
           {
@@ -504,7 +534,10 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             head: ["Background", "Requirement"],
             rows: [
               ["Computing graduates", "BCA / B.Sc. (CS or IT) / B.E. or B.Tech. (CSE or IT)"],
-              ["Any other graduate", "Mathematics, Business Mathematics, Programming or Statistics at 10+2 or graduation level"],
+              [
+                "Any other graduate",
+                "Mathematics, Business Mathematics, Programming or Statistics at 10+2 or graduation level",
+              ],
               ["Selection process", "100% online, merit-based"],
             ],
           },
@@ -546,9 +579,18 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Plan your next steps",
             items: [
-              { label: "Courses and fees 2026-27", href: "/blogs/chandigarh-university-online-courses-fees-2026-27" },
-              { label: "Placement and career outcomes", href: "/blogs/chandigarh-university-online-placements-career-outcomes" },
-              { label: "Examination pattern", href: "/universities/chandigarh-university-online/examination-pattern" },
+              {
+                label: "Courses and fees 2026-27",
+                href: "/blogs/chandigarh-university-online-courses-fees-2026-27",
+              },
+              {
+                label: "Placement and career outcomes",
+                href: "/blogs/chandigarh-university-online-placements-career-outcomes",
+              },
+              {
+                label: "Examination pattern",
+                href: "/universities/chandigarh-university-online/examination-pattern",
+              },
               { label: "Explore online MCA", href: "/courses/online-mca" },
             ],
           },
@@ -599,7 +641,10 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
     ],
     sources: [
       { label: "Chandigarh University Online admission portal", href: "https://onlinecu.in" },
-      { label: "CU Online MBA eligibility page", href: "https://onlinecu.in/blog/cu/eligibility-criteria-for-online-mba.php" },
+      {
+        label: "CU Online MBA eligibility page",
+        href: "https://onlinecu.in/blog/cu/eligibility-criteria-for-online-mba.php",
+      },
     ],
     cta: "Ready to start your application? Get a free document and eligibility check before you submit.",
   },
@@ -774,8 +819,14 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Keep exploring",
             items: [
-              { label: "Courses and fees 2026-27", href: "/blogs/chandigarh-university-online-courses-fees-2026-27" },
-              { label: "Admission process", href: "/blogs/chandigarh-university-online-admission-process-eligibility" },
+              {
+                label: "Courses and fees 2026-27",
+                href: "/blogs/chandigarh-university-online-courses-fees-2026-27",
+              },
+              {
+                label: "Admission process",
+                href: "/blogs/chandigarh-university-online-admission-process-eligibility",
+              },
               { label: "Explore online MBA", href: "/courses/online-mba" },
               { label: "Explore online BBA", href: "/courses/online-bba" },
             ],
@@ -989,9 +1040,18 @@ export const chandigarhOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related guides",
             items: [
-              { label: "Courses and fees 2026-27", href: "/blogs/chandigarh-university-online-courses-fees-2026-27" },
-              { label: "Admission process and eligibility", href: "/blogs/chandigarh-university-online-admission-process-eligibility" },
-              { label: "Placement and career outcomes", href: "/blogs/chandigarh-university-online-placements-career-outcomes" },
+              {
+                label: "Courses and fees 2026-27",
+                href: "/blogs/chandigarh-university-online-courses-fees-2026-27",
+              },
+              {
+                label: "Admission process and eligibility",
+                href: "/blogs/chandigarh-university-online-admission-process-eligibility",
+              },
+              {
+                label: "Placement and career outcomes",
+                href: "/blogs/chandigarh-university-online-placements-career-outcomes",
+              },
               { label: "Explore online BCA", href: "/courses/online-bca" },
               { label: "Browse all blogs", href: "/blogs" },
             ],

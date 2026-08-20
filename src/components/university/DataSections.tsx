@@ -39,9 +39,9 @@ export function FeeSource(_props: { fees: FeeRecord | undefined }) {
   return null;
 }
 
-
 export function FeeTable({ fees, caption }: { fees: FeeRecord | undefined; caption: string }) {
-  if (!fees) return <EmptyNote>Fee information is not currently available for this programme.</EmptyNote>;
+  if (!fees)
+    return <EmptyNote>Fee information is not currently available for this programme.</EmptyNote>;
 
   const rows: Array<[string, number | null]> = [
     ["Total programme fee", fees.total_programme_fee],
@@ -64,8 +64,8 @@ export function FeeTable({ fees, caption }: { fees: FeeRecord | undefined; capti
     return (
       <div className="space-y-3">
         <EmptyNote>
-          The official fee for this programme is pending verification. A figure is published only once confirmed from
-          the university's own fee source.
+          The official fee for this programme is pending verification. A figure is published only
+          once confirmed from the university's own fee source.
         </EmptyNote>
         <FeeSource fees={fees} />
       </div>
@@ -88,7 +88,9 @@ export function FeeTable({ fees, caption }: { fees: FeeRecord | undefined; capti
       {(fees.discount.percentage != null || fees.discount.amount != null) && (
         <p className="text-xs text-muted-foreground">
           Discount published by the university:{" "}
-          {fees.discount.percentage != null ? `${fees.discount.percentage}%` : formatFee(fees.discount.amount)}
+          {fees.discount.percentage != null
+            ? `${fees.discount.percentage}%`
+            : formatFee(fees.discount.amount)}
           {fees.discount.valid_until ? ` (valid until ${fees.discount.valid_until})` : ""}
         </p>
       )}
@@ -107,7 +109,10 @@ export function EligibilitySection({ programme }: { programme: ProgrammeRecord }
   if (e.required_subjects?.length) rows.push(["Required subjects", e.required_subjects.join(", ")]);
   if (e.age_requirement) rows.push(["Age requirement", e.age_requirement]);
   if (e.entrance_exam) rows.push(["Entrance exam", e.entrance_exam]);
-  if (!rows.length) return <EmptyNote>Eligibility details are not currently available for this programme.</EmptyNote>;
+  if (!rows.length)
+    return (
+      <EmptyNote>Eligibility details are not currently available for this programme.</EmptyNote>
+    );
   return <DataTable caption="Eligibility" head={["Criterion", "Requirement"]} rows={rows} />;
 }
 
@@ -115,7 +120,9 @@ export function EligibilitySection({ programme }: { programme: ProgrammeRecord }
 
 export function SpecialisationTable({ programme }: { programme: ProgrammeRecord }) {
   if (!programme.specializations.length) {
-    return <EmptyNote>The university has not published specialisations for this programme.</EmptyNote>;
+    return (
+      <EmptyNote>The university has not published specialisations for this programme.</EmptyNote>
+    );
   }
   return (
     <SpecialisationBoxes
@@ -146,24 +153,33 @@ export function AdmissionSection({
   push("Admission cycle", admissions?.admission_cycle);
   push("Admission starts", admissions?.admission_start_date);
   push("Admission closes", admissions?.admission_end_date);
-  push("Application fee", admissions?.application_fee != null ? formatFee(admissions.application_fee) : null);
+  push(
+    "Application fee",
+    admissions?.application_fee != null ? formatFee(admissions.application_fee) : null,
+  );
   push("Selection process", admissions?.selection_process);
   push("Entrance exam", admissions?.entrance_exam ?? programme?.eligibility.entrance_exam);
   push("Direct admission", admissions?.direct_admission);
 
-  const steps = programme?.admission.steps?.length ? programme.admission.steps : (admissions?.admission_steps ?? []);
+  const steps = programme?.admission.steps?.length
+    ? programme.admission.steps
+    : (admissions?.admission_steps ?? []);
   const documents = programme?.admission.documents?.length
     ? programme.admission.documents
     : (admissions?.required_documents ?? []);
   const applyUrl = programme?.admission.application_url ?? admissions?.application_url;
 
   if (!rows.length && !steps.length && !documents.length && !applyUrl) {
-    return <EmptyNote>Admission details are not currently available from an official source.</EmptyNote>;
+    return (
+      <EmptyNote>Admission details are not currently available from an official source.</EmptyNote>
+    );
   }
 
   return (
     <div className="space-y-5">
-      {rows.length > 0 && <DataTable caption="Admission details" head={["Detail", "Information"]} rows={rows} />}
+      {rows.length > 0 && (
+        <DataTable caption="Admission details" head={["Detail", "Information"]} rows={rows} />
+      )}
       {steps.length > 0 && (
         <div>
           <h3 className="mb-3 text-base font-bold text-foreground">Admission steps</h3>
@@ -198,20 +214,29 @@ export function AdmissionSection({
 
 export function ScholarshipList({ items }: { items: ScholarshipRecord[] }) {
   if (!items.length) {
-    return <EmptyNote>No university-wide scholarship scheme is listed for this university yet.</EmptyNote>;
+    return (
+      <EmptyNote>
+        No university-wide scholarship scheme is listed for this university yet.
+      </EmptyNote>
+    );
   }
   return (
     <div className="grid gap-4 sm:grid-cols-2">
       {items.map((s, i) => {
         const name = s.scholarship_name ?? s.name ?? "Scholarship";
         return (
-          <article key={`${name}-${i}`} className="box-hover rounded-2xl border border-border bg-card p-4">
+          <article
+            key={`${name}-${i}`}
+            className="box-hover rounded-2xl border border-border bg-card p-4"
+          >
             <h3 className="font-display text-base font-bold">{name}</h3>
             <dl className="mt-3 space-y-1.5 text-sm text-muted-foreground">
               {s.amount != null && (
                 <div>
                   <dt className="inline font-semibold text-foreground">Amount: </dt>
-                  <dd className="inline">{typeof s.amount === "number" ? formatFee(s.amount) : s.amount}</dd>
+                  <dd className="inline">
+                    {typeof s.amount === "number" ? formatFee(s.amount) : s.amount}
+                  </dd>
                 </div>
               )}
               {s.percentage != null && (
@@ -282,9 +307,19 @@ export function RecognitionTable({ university }: { university: UniversityRecordJ
   if (r.NIRF_information) rows.push(["NIRF", r.NIRF_information]);
   if (r.accreditation) rows.push(["Accreditation", r.accreditation]);
   if (!rows.length) {
-    return <EmptyNote>Recognition details are not currently available from an official source.</EmptyNote>;
+    return (
+      <EmptyNote>
+        Recognition details are not currently available from an official source.
+      </EmptyNote>
+    );
   }
-  return <DataTable caption={`${university.short_name} recognition`} head={["Body", "Published status"]} rows={rows} />;
+  return (
+    <DataTable
+      caption={`${university.short_name} recognition`}
+      head={["Body", "Published status"]}
+      rows={rows}
+    />
+  );
 }
 
 /* --------------------------------- sources -------------------------------- */

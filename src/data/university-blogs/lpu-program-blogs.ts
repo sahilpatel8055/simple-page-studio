@@ -272,7 +272,12 @@ const mbaSections: PostSection[] = [
       { kind: "h3", text: "Semester 3" },
       {
         kind: "list",
-        items: ["Strategic Management", "Business Analytics", "Specialisation subjects", "Elective courses"],
+        items: [
+          "Strategic Management",
+          "Business Analytics",
+          "Specialisation subjects",
+          "Elective courses",
+        ],
       },
       { kind: "h3", text: "Semester 4" },
       {
@@ -509,7 +514,10 @@ const mcaSections: PostSection[] = [
           ["Online MCA entitlement", "UGC entitled"],
           ["University accreditation", "NAAC A++ (institution level)"],
           ["Examination mode", "Online"],
-          ["Degree equivalence", "Online degrees treated on par with conventional degrees under UGC rules"],
+          [
+            "Degree equivalence",
+            "Online degrees treated on par with conventional degrees under UGC rules",
+          ],
         ],
       },
       {
@@ -834,7 +842,10 @@ const bcaSections: PostSection[] = [
             "Semester 3",
             "Fundamentals of Web Programming, Data Structures, Community Development Project, Operating System",
           ],
-          ["Semester 4", "Software Engineering, Artificial Intelligence, Skill Enhancement Course I, Generic Elective I"],
+          [
+            "Semester 4",
+            "Software Engineering, Artificial Intelligence, Skill Enhancement Course I, Generic Elective I",
+          ],
           [
             "Semesters 5 and 6",
             "Discipline-specific electives, skill-enhancement courses, generic electives and a field project",
@@ -1248,7 +1259,15 @@ const bcomSections: PostSection[] = [
       { kind: "h3", text: "Career areas" },
       {
         kind: "list",
-        items: ["Banking", "Finance", "Insurance", "Taxation", "Retail", "Consulting", "Corporate business"],
+        items: [
+          "Banking",
+          "Finance",
+          "Insurance",
+          "Taxation",
+          "Retail",
+          "Consulting",
+          "Corporate business",
+        ],
       },
       {
         kind: "table",
@@ -1396,7 +1415,8 @@ export const lpuProgramPosts: Record<string, PostContent> = {
       },
       {
         question: "Is there an age limit for the LPU Online BBA?",
-        answer: "LPU states there is no maximum age restriction; the requirement is 10+2 or an equivalent qualification.",
+        answer:
+          "LPU states there is no maximum age restriction; the requirement is 10+2 or an equivalent qualification.",
       },
       {
         question: "Can I pay the LPU Online BBA fee in EMIs?",

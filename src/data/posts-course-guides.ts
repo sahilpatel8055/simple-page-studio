@@ -58,9 +58,21 @@ export const courseGuidePosts: Record<string, PostContent> = {
             unit: "Indicative published ranges, INR",
             data: [
               { label: "State open universities", value: 80000, display: "₹50,000 – ₹80,000" },
-              { label: "Mid-tier private universities", value: 175000, display: "₹1,20,000 – ₹1,75,000" },
-              { label: "Established private brands", value: 280000, display: "₹1,75,000 – ₹2,80,000" },
-              { label: "Premium / institute-of-eminence tier", value: 400000, display: "₹2,80,000 – ₹4,00,000" },
+              {
+                label: "Mid-tier private universities",
+                value: 175000,
+                display: "₹1,20,000 – ₹1,75,000",
+              },
+              {
+                label: "Established private brands",
+                value: 280000,
+                display: "₹1,75,000 – ₹2,80,000",
+              },
+              {
+                label: "Premium / institute-of-eminence tier",
+                value: 400000,
+                display: "₹2,80,000 – ₹4,00,000",
+              },
             ],
             note: "Bands are compiled from publicly listed fee pages and change every session. Verify before you pay.",
           },
@@ -69,10 +81,22 @@ export const courseGuidePosts: Record<string, PostContent> = {
             caption: "How to read a fee page correctly",
             head: ["Line item", "What to check", "Common trap"],
             rows: [
-              ["Semester fee", "Multiply by the number of semesters", "4 vs 6 semester structures look identical per semester"],
-              ["Registration fee", "One-time or per-year", "Per-year registration quietly adds a year's cost"],
+              [
+                "Semester fee",
+                "Multiply by the number of semesters",
+                "4 vs 6 semester structures look identical per semester",
+              ],
+              [
+                "Registration fee",
+                "One-time or per-year",
+                "Per-year registration quietly adds a year's cost",
+              ],
               ["Exam fee", "Included or per subject", "Per-subject exam fees scale with backlogs"],
-              ["EMI plan", "Interest-free or bank interest", "'No cost EMI' may need a specific card"],
+              [
+                "EMI plan",
+                "Interest-free or bank interest",
+                "'No cost EMI' may need a specific card",
+              ],
             ],
           },
         ],
@@ -126,7 +150,10 @@ export const courseGuidePosts: Record<string, PostContent> = {
     ],
     sources,
     related: [
-      { label: "Online MBA specialisations explained", href: "/blogs/online-mba-specialisations-guide" },
+      {
+        label: "Online MBA specialisations explained",
+        href: "/blogs/online-mba-specialisations-guide",
+      },
       { label: "Scholarships for online learners", href: "/blogs/scholarships-online-learners" },
     ],
   },
@@ -152,12 +179,36 @@ export const courseGuidePosts: Record<string, PostContent> = {
             caption: "Common online MBA specialisations and who they suit",
             head: ["Specialisation", "Best suited to", "Typical first roles"],
             rows: [
-              ["Finance", "Commerce graduates, banking and accounts staff", "Financial analyst, credit analyst, FP&A associate"],
-              ["Marketing", "Sales, content, brand and agency professionals", "Brand executive, growth marketer, key account manager"],
-              ["Human Resource Management", "Recruiters, HR generalists, admin leads", "HR business partner, talent acquisition lead"],
-              ["Operations", "Manufacturing, supply chain, service delivery", "Operations manager, supply chain analyst"],
-              ["Business Analytics", "Reporting, MIS, engineering backgrounds", "Business analyst, insights analyst"],
-              ["Information Technology", "IT services, support and delivery staff", "IT project manager, delivery lead"],
+              [
+                "Finance",
+                "Commerce graduates, banking and accounts staff",
+                "Financial analyst, credit analyst, FP&A associate",
+              ],
+              [
+                "Marketing",
+                "Sales, content, brand and agency professionals",
+                "Brand executive, growth marketer, key account manager",
+              ],
+              [
+                "Human Resource Management",
+                "Recruiters, HR generalists, admin leads",
+                "HR business partner, talent acquisition lead",
+              ],
+              [
+                "Operations",
+                "Manufacturing, supply chain, service delivery",
+                "Operations manager, supply chain analyst",
+              ],
+              [
+                "Business Analytics",
+                "Reporting, MIS, engineering backgrounds",
+                "Business analyst, insights analyst",
+              ],
+              [
+                "Information Technology",
+                "IT services, support and delivery staff",
+                "IT project manager, delivery lead",
+              ],
             ],
           },
         ],
@@ -277,9 +328,21 @@ export const courseGuidePosts: Record<string, PostContent> = {
             caption: "Representative online MCA structure",
             head: ["Semester", "Core focus", "Typical subjects"],
             rows: [
-              ["I", "Foundations", "Programming, discrete mathematics, computer organisation, DBMS"],
-              ["II", "Systems", "Data structures, operating systems, software engineering, networks"],
-              ["III", "Applied computing", "Web technologies, cloud computing, machine learning basics, electives"],
+              [
+                "I",
+                "Foundations",
+                "Programming, discrete mathematics, computer organisation, DBMS",
+              ],
+              [
+                "II",
+                "Systems",
+                "Data structures, operating systems, software engineering, networks",
+              ],
+              [
+                "III",
+                "Applied computing",
+                "Web technologies, cloud computing, machine learning basics, electives",
+              ],
               ["IV", "Specialisation & project", "Advanced elective track, major project and viva"],
             ],
           },
@@ -310,7 +373,10 @@ export const courseGuidePosts: Record<string, PostContent> = {
             items: [
               { label: "Online MCA course page", href: "/courses/online-mca" },
               { label: "Online MCA vs online MBA", href: "/compare/online-mca-vs-online-mba" },
-              { label: "Are online degrees valid for government jobs?", href: "/blogs/online-degree-government-jobs" },
+              {
+                label: "Are online degrees valid for government jobs?",
+                href: "/blogs/online-degree-government-jobs",
+              },
             ],
           },
         ],
@@ -363,9 +429,24 @@ export const courseGuidePosts: Record<string, PostContent> = {
             rows: [
               ["Level", "Postgraduate degree", "Postgraduate degree", "Postgraduate diploma"],
               ["Duration", "2 years", "2 years", "1 year"],
-              ["Online availability", "Widely available", "Not available in UGC online mode", "Available"],
-              ["Who can apply", "Any graduate with maths/computing background", "B.E./B.Tech holders", "Any graduate"],
-              ["Typical purpose", "PG degree for IT careers and eligibility", "Deep engineering specialisation", "Quick skills and eligibility bridge"],
+              [
+                "Online availability",
+                "Widely available",
+                "Not available in UGC online mode",
+                "Available",
+              ],
+              [
+                "Who can apply",
+                "Any graduate with maths/computing background",
+                "B.E./B.Tech holders",
+                "Any graduate",
+              ],
+              [
+                "Typical purpose",
+                "PG degree for IT careers and eligibility",
+                "Deep engineering specialisation",
+                "Quick skills and eligibility bridge",
+              ],
             ],
           },
         ],
@@ -481,7 +562,10 @@ export const courseGuidePosts: Record<string, PostContent> = {
             items: [
               { label: "Online BBA course page", href: "/courses/online-bba" },
               { label: "Compare universities", href: "/compare/universities" },
-              { label: "UGC entitled vs DEB approved", href: "/blogs/ugc-entitled-vs-deb-approved" },
+              {
+                label: "UGC entitled vs DEB approved",
+                href: "/blogs/ugc-entitled-vs-deb-approved",
+              },
             ],
           },
         ],
@@ -531,10 +615,26 @@ export const courseGuidePosts: Record<string, PostContent> = {
             caption: "Online BBA vs online B.Com",
             head: ["Factor", "Online BBA", "Online B.Com"],
             rows: [
-              ["Core subjects", "Management, marketing, HR, operations, strategy", "Financial accounting, cost accounting, taxation, audit, business law"],
-              ["Maths intensity", "Moderate — business statistics", "Higher — accounting and quantitative subjects throughout"],
-              ["Best professional add-on", "Digital marketing, analytics certifications", "CA / CS / CMA / GST practitioner"],
-              ["Typical first roles", "Sales executive, HR associate, operations trainee", "Accounts executive, audit assistant, tax associate"],
+              [
+                "Core subjects",
+                "Management, marketing, HR, operations, strategy",
+                "Financial accounting, cost accounting, taxation, audit, business law",
+              ],
+              [
+                "Maths intensity",
+                "Moderate — business statistics",
+                "Higher — accounting and quantitative subjects throughout",
+              ],
+              [
+                "Best professional add-on",
+                "Digital marketing, analytics certifications",
+                "CA / CS / CMA / GST practitioner",
+              ],
+              [
+                "Typical first roles",
+                "Sales executive, HR associate, operations trainee",
+                "Accounts executive, audit assistant, tax associate",
+              ],
               ["Natural PG route", "MBA", "M.Com, MBA (Finance), professional qualifications"],
             ],
           },
@@ -612,9 +712,21 @@ export const courseGuidePosts: Record<string, PostContent> = {
             caption: "What a well-designed online BCA covers",
             head: ["Year", "Focus", "What you should be able to build by the end"],
             rows: [
-              ["1", "Programming fundamentals, maths, computer organisation", "Console applications and small scripts"],
-              ["2", "Data structures, DBMS, web technologies, OS", "A database-backed web application"],
-              ["3", "Software engineering, cloud, electives, major project", "A deployed full-stack project with version control"],
+              [
+                "1",
+                "Programming fundamentals, maths, computer organisation",
+                "Console applications and small scripts",
+              ],
+              [
+                "2",
+                "Data structures, DBMS, web technologies, OS",
+                "A database-backed web application",
+              ],
+              [
+                "3",
+                "Software engineering, cloud, electives, major project",
+                "A deployed full-stack project with version control",
+              ],
             ],
           },
           {
@@ -708,9 +820,21 @@ export const courseGuidePosts: Record<string, PostContent> = {
             caption: "Typical online B.Com structure",
             head: ["Year", "Core subjects", "Practical outcome"],
             rows: [
-              ["1", "Financial accounting, business organisation, business economics", "Read and prepare basic financial statements"],
-              ["2", "Corporate accounting, cost accounting, business law, taxation", "Handle cost sheets, GST basics and statutory concepts"],
-              ["3", "Auditing, management accounting, specialisation electives, project", "Interpret accounts for decisions and audit readiness"],
+              [
+                "1",
+                "Financial accounting, business organisation, business economics",
+                "Read and prepare basic financial statements",
+              ],
+              [
+                "2",
+                "Corporate accounting, cost accounting, business law, taxation",
+                "Handle cost sheets, GST basics and statutory concepts",
+              ],
+              [
+                "3",
+                "Auditing, management accounting, specialisation electives, project",
+                "Interpret accounts for decisions and audit readiness",
+              ],
             ],
           },
           {
@@ -719,8 +843,16 @@ export const courseGuidePosts: Record<string, PostContent> = {
             unit: "Indicative published ranges, INR",
             data: [
               { label: "State open universities", value: 45000, display: "₹30,000 – ₹45,000" },
-              { label: "Mid-tier private universities", value: 95000, display: "₹60,000 – ₹95,000" },
-              { label: "Established private brands", value: 150000, display: "₹95,000 – ₹1,50,000" },
+              {
+                label: "Mid-tier private universities",
+                value: 95000,
+                display: "₹60,000 – ₹95,000",
+              },
+              {
+                label: "Established private brands",
+                value: 150000,
+                display: "₹95,000 – ₹1,50,000",
+              },
             ],
             note: "Verify the current session fee on the university's own fee page before paying.",
           },

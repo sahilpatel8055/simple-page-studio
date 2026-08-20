@@ -25,7 +25,13 @@ export const placeholderFaqs: FaqItem[] = [
   },
 ];
 
-export function Faq({ items = placeholderFaqs, title = "Frequently asked questions" }: { items?: FaqItem[]; title?: string }) {
+export function Faq({
+  items = placeholderFaqs,
+  title = "Frequently asked questions",
+}: {
+  items?: FaqItem[];
+  title?: string;
+}) {
   const [open, setOpen] = useState<number | null>(0);
   return (
     <div>
@@ -54,7 +60,9 @@ export function Faq({ items = placeholderFaqs, title = "Frequently asked questio
               )}
             >
               <div className="overflow-hidden">
-                <p className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground sm:px-6">{item.answer}</p>
+                <p className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground sm:px-6">
+                  {item.answer}
+                </p>
               </div>
             </div>
           </div>

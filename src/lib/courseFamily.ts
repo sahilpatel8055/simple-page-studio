@@ -185,7 +185,10 @@ export function familyForProgramme(programme: ProgrammeRecord): FamilyDef | unde
 }
 
 export const slugify = (s: string) =>
-  s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
 
 function mostCommon(values: (string | null)[]): string | null {
   const counts = new Map<string, number>();
@@ -232,7 +235,9 @@ function buildOffer(u: UniversityRecordJson, p: ProgrammeRecord): FamilyOffer {
       .map((s) => s.scholarship_name ?? s.name ?? "")
       .filter((s): s is string => Boolean(s)),
     admissionSteps: p.admission.steps.length ? p.admission.steps : u.admissions.admission_steps,
-    documents: p.admission.documents.length ? p.admission.documents : u.admissions.required_documents,
+    documents: p.admission.documents.length
+      ? p.admission.documents
+      : u.admissions.required_documents,
     intake: p.admission.intake ?? u.admissions.next_expected_intake,
     applicationUrl: p.admission.application_url ?? u.admissions.application_url,
     careerRoles: p.career.roles,
@@ -251,21 +256,30 @@ function buildFamily(def: FamilyDef, offers: FamilyOffer[]): CourseFamily {
       if (!slug) continue;
       const entry = specMap.get(slug) ?? { slug, name, universities: [] };
       if (!entry.universities.some((u) => u.slug === o.universitySlug)) {
-        entry.universities.push({ name: o.universityShortName, slug: o.universitySlug, path: o.path });
+        entry.universities.push({
+          name: o.universityShortName,
+          slug: o.universitySlug,
+          path: o.path,
+        });
       }
       specMap.set(slug, entry);
     }
   }
 
-  const totals = offers.map((o) => o.fees.total).filter((n): n is number => typeof n === "number" && n > 0);
+  const totals = offers
+    .map((o) => o.fees.total)
+    .filter((n): n is number => typeof n === "number" && n > 0);
   const feeMin = totals.length ? Math.min(...totals) : null;
   const feeMax = totals.length ? Math.max(...totals) : null;
 
   return {
     ...def,
     offers,
-    specialisations: [...specMap.values()].sort((a, b) => b.universities.length - a.universities.length),
-    durationLabel: mostCommon(offers.map((o) => o.duration)) ?? (def.level === "PG" ? "2 years" : "3 years"),
+    specialisations: [...specMap.values()].sort(
+      (a, b) => b.universities.length - a.universities.length,
+    ),
+    durationLabel:
+      mostCommon(offers.map((o) => o.duration)) ?? (def.level === "PG" ? "2 years" : "3 years"),
     semesters: mostCommon(offers.map((o) => (o.semesters ? String(o.semesters) : null)))
       ? Number(mostCommon(offers.map((o) => (o.semesters ? String(o.semesters) : null))))
       : null,
@@ -319,7 +333,9 @@ export function familySpecialisation(familySlug: string, specSlug: string) {
   const family = getCourseFamily(familySlug);
   const spec = family?.specialisations.find((s) => s.slug === specSlug);
   if (!family || !spec) return undefined;
-  const offers = family.offers.filter((o) => o.specialisations.some((n) => slugify(n) === specSlug));
+  const offers = family.offers.filter((o) =>
+    o.specialisations.some((n) => slugify(n) === specSlug),
+  );
   return { family, spec, offers };
 }
 

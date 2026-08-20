@@ -115,8 +115,16 @@ export const duSolPosts: Record<string, PostContent> = {
             head: ["Course", "First-Year Fee", "Note"],
             rows: [
               ["BA Programme / B.Com", "Rs 12,070", "Most affordable UG option"],
-              ["BA Programme with Computer Application", "Rs 15,570", "Includes practical fee component"],
-              ["BA Hons (English/Pol. Sci/Economics), B.Com Hons", "Rs 12,570", "Subject-focused honours"],
+              [
+                "BA Programme with Computer Application",
+                "Rs 15,570",
+                "Includes practical fee component",
+              ],
+              [
+                "BA Hons (English/Pol. Sci/Economics), B.Com Hons",
+                "Rs 12,570",
+                "Subject-focused honours",
+              ],
               ["BMS / BBA FIA", "Rs 21,120", "Professional management courses"],
               ["B.Sc Hons Computer Science", "Rs 24,570", "Highest UG fee; technical + practical"],
             ],
@@ -302,7 +310,10 @@ export const duSolPosts: Record<string, PostContent> = {
             title: "Plan your DU SOL admission",
             items: [
               { label: "DU SOL admission process", href: "/universities/du-sol/admission" },
-              { label: "DU SOL scholarships and concessions", href: "/universities/du-sol/scholarships" },
+              {
+                label: "DU SOL scholarships and concessions",
+                href: "/universities/du-sol/scholarships",
+              },
               { label: "Compare DU SOL with other universities", href: "/compare/universities" },
               { label: "Explore online BBA programmes", href: "/courses/online-bba" },
             ],
@@ -453,8 +464,14 @@ export const duSolPosts: Record<string, PostContent> = {
             caption: "UG vs PG eligibility",
             head: ["Level", "Eligibility"],
             rows: [
-              ["Undergraduate", "Pass in Class 12 or equivalent from a recognised board; specific subject/marks conditions vary by programme"],
-              ["Postgraduate", "Bachelor's degree from a recognised university; some programmes add minimum marks or a relevant academic background"],
+              [
+                "Undergraduate",
+                "Pass in Class 12 or equivalent from a recognised board; specific subject/marks conditions vary by programme",
+              ],
+              [
+                "Postgraduate",
+                "Bachelor's degree from a recognised university; some programmes add minimum marks or a relevant academic background",
+              ],
             ],
           },
           {
@@ -479,7 +496,10 @@ export const duSolPosts: Record<string, PostContent> = {
               ["Class 10 certificate/marksheet", "Date-of-birth and identity proof"],
               ["Class 12 certificate/marksheet", "UG eligibility proof"],
               ["Bachelor's degree/marksheets", "PG eligibility proof"],
-              ["Category certificate, migration certificate, valid ID", "Reservation claim and identity, where applicable"],
+              [
+                "Category certificate, migration certificate, valid ID",
+                "Reservation claim and identity, where applicable",
+              ],
             ],
           },
           {
@@ -549,7 +569,10 @@ export const duSolPosts: Record<string, PostContent> = {
             title: "Next steps after admission",
             items: [
               { label: "DU SOL fees for 2026-27", href: "/universities/du-sol" },
-              { label: "DU SOL examination pattern", href: "/universities/du-sol/examination-pattern" },
+              {
+                label: "DU SOL examination pattern",
+                href: "/universities/du-sol/examination-pattern",
+              },
               { label: "Explore online BBA and BCA options", href: "/courses/online-bca" },
             ],
           },
@@ -634,11 +657,20 @@ export const duSolPosts: Record<string, PostContent> = {
             caption: "Programme-to-career mapping",
             head: ["Programme", "Best suited for"],
             rows: [
-              ["BA Programme / B.Com", "General graduation for govt exams, banking, teaching pathways, further study"],
-              ["BA Hons (English/Pol. Sci/Economics), B.Com Hons", "Subject-focused study, competitive exams needing a specific discipline"],
+              [
+                "BA Programme / B.Com",
+                "General graduation for govt exams, banking, teaching pathways, further study",
+              ],
+              [
+                "BA Hons (English/Pol. Sci/Economics), B.Com Hons",
+                "Subject-focused study, competitive exams needing a specific discipline",
+              ],
               ["BMS / BBA FIA", "Management, finance, sales, operations, entrepreneurship careers"],
               ["B.Sc Hons Computer Science", "IT, programming and technical career tracks"],
-              ["MBA / MBA HCA", "Working professionals seeking management or healthcare-administration roles"],
+              [
+                "MBA / MBA HCA",
+                "Working professionals seeking management or healthcare-administration roles",
+              ],
             ],
           },
         ],
@@ -806,9 +838,7 @@ export const duSolPosts: Record<string, PostContent> = {
           "It is designed for students interested in computer science, IT and programming, with a technical and practical-based curriculum, though it is priced higher than other UG options due to practical components.",
       },
     ],
-    sources: [
-      { label: "DU SOL official website", href: "https://sol.du.ac.in/" },
-    ],
+    sources: [{ label: "DU SOL official website", href: "https://sol.du.ac.in/" }],
   },
 
   "du-sol-vs-other-distance-universities": {
@@ -876,7 +906,11 @@ export const duSolPosts: Record<string, PostContent> = {
             unit: "Rs",
             data: [
               { label: "DU SOL MBA (Category A)", value: 57920, display: "Rs 57,920" },
-              { label: "Typical private online MBA (low end)", value: 200000, display: "Rs 2,00,000+" },
+              {
+                label: "Typical private online MBA (low end)",
+                value: 200000,
+                display: "Rs 2,00,000+",
+              },
             ],
           },
           {
@@ -980,7 +1014,10 @@ export const duSolPosts: Record<string, PostContent> = {
             title: "Compare and plan",
             items: [
               { label: "Compare universities side by side", href: "/compare/universities" },
-              { label: "DU SOL scholarships and fee categories", href: "/universities/du-sol/scholarships" },
+              {
+                label: "DU SOL scholarships and fee categories",
+                href: "/universities/du-sol/scholarships",
+              },
               { label: "Explore online B.Com options", href: "/courses/online-bcom" },
             ],
           },

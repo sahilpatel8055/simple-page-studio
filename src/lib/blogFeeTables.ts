@@ -16,7 +16,9 @@ const inr = (n: number | null | undefined) =>
   typeof n === "number" && n > 0 ? `₹${n.toLocaleString("en-IN")}` : ASK;
 
 const date = (iso: string | null) =>
-  iso ? new Date(iso).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" }) : "—";
+  iso
+    ? new Date(iso).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })
+    : "—";
 
 function offersOf(familySlug: string): FamilyOffer[] {
   const family = getCourseFamily(familySlug);
@@ -56,7 +58,8 @@ export function familyExtrasTable(familySlug: string, caption?: string): PostBlo
     ]);
   return {
     kind: "table",
-    caption: caption ?? "Registration, examination and EMI figures where the university publishes them",
+    caption:
+      caption ?? "Registration, examination and EMI figures where the university publishes them",
     head: ["University", "Registration", "Examination", "EMI from"],
     rows,
   };

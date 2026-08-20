@@ -59,7 +59,11 @@ export function CourseLevelTabs({
     }
     return levelOrder
       .filter((l) => (map.get(l) ?? []).length > 0)
-      .map((l) => ({ id: l as string, label: l === "PG" ? "PG Courses" : l === "UG" ? "UG Courses" : l, items: map.get(l)! }));
+      .map((l) => ({
+        id: l as string,
+        label: l === "PG" ? "PG Courses" : l === "UG" ? "UG Courses" : l,
+        items: map.get(l)!,
+      }));
   }, [offerings]);
 
   const tabs = [{ id: "all", label: "All", items: offerings }, ...buckets];

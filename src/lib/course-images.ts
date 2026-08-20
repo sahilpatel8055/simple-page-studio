@@ -21,7 +21,10 @@ const rules: Array<[RegExp, string]> = [
   [/\bBCA\b|BACHELOR OF COMPUTER/i, bcaImg],
   [/\bM\.?\s?COM\b|\bB\.?\s?COM\b|COMMERCE|ACCOUNT|FINANCE/i, commerceImg],
   [/\bM\.?\s?SC\b|\bB\.?\s?SC\b|SCIENCE|DATA|STATISTIC/i, scienceImg],
-  [/\bMA\b|\bBA\b|MASTER OF ARTS|BACHELOR OF ARTS|ENGLISH|SOCIOLOG|POLITIC|HISTOR|JOURNALIS/i, maImg],
+  [
+    /\bMA\b|\bBA\b|MASTER OF ARTS|BACHELOR OF ARTS|ENGLISH|SOCIOLOG|POLITIC|HISTOR|JOURNALIS/i,
+    maImg,
+  ],
 ];
 
 /** Photo for a programme name; always returns an image. */

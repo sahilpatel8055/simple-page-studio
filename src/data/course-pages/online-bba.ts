@@ -203,8 +203,14 @@ export const onlineBbaContent: CourseContent = {
   specialisationGuide: [
     { goal: "Accounts, treasury or investment-support roles", specialisation: "Finance" },
     { goal: "Brand, sales and customer-facing roles", specialisation: "Marketing" },
-    { goal: "Recruitment, training and HR administration", specialisation: "Human Resource Management (HRM)" },
-    { goal: "Production, logistics and quality-support roles", specialisation: "Operations Management" },
+    {
+      goal: "Recruitment, training and HR administration",
+      specialisation: "Human Resource Management (HRM)",
+    },
+    {
+      goal: "Production, logistics and quality-support roles",
+      specialisation: "Operations Management",
+    },
     { goal: "Reporting, dashboards and data-led decisions", specialisation: "Business Analytics" },
     { goal: "Export-import, global accounts and trade", specialisation: "International Business" },
     { goal: "Social media, SEO and online campaigns", specialisation: "Digital Marketing" },
@@ -212,21 +218,51 @@ export const onlineBbaContent: CourseContent = {
   ],
 
   careers: [
-    { title: "Management Trainee", detail: "Rotates across functions in a structured early-career induction programme." },
-    { title: "Sales Executive", detail: "Builds and manages a pipeline of accounts against a monthly or quarterly target." },
-    { title: "Marketing Executive", detail: "Supports campaigns, content and channel performance for a product or brand." },
-    { title: "HR Executive", detail: "Assists with recruitment, onboarding, records and employee engagement activities." },
-    { title: "Operations Executive", detail: "Coordinates day-to-day process, vendor and scheduling tasks at a unit or site." },
-    { title: "Accounts / Finance Executive", detail: "Handles bookkeeping, reconciliations and basic reporting under a finance team." },
-    { title: "Business Development Associate", detail: "Identifies leads, sets up meetings and supports new-account acquisition." },
-    { title: "Junior Business Analyst", detail: "Compiles and interprets data to support decisions made by senior managers." },
-    { title: "Customer Relationship Executive", detail: "Manages client queries, renewals and satisfaction for an assigned account base." },
-    { title: "Entrepreneur / Family-business role", detail: "Applies coursework directly to running or supporting a small enterprise." },
+    {
+      title: "Management Trainee",
+      detail: "Rotates across functions in a structured early-career induction programme.",
+    },
+    {
+      title: "Sales Executive",
+      detail: "Builds and manages a pipeline of accounts against a monthly or quarterly target.",
+    },
+    {
+      title: "Marketing Executive",
+      detail: "Supports campaigns, content and channel performance for a product or brand.",
+    },
+    {
+      title: "HR Executive",
+      detail: "Assists with recruitment, onboarding, records and employee engagement activities.",
+    },
+    {
+      title: "Operations Executive",
+      detail: "Coordinates day-to-day process, vendor and scheduling tasks at a unit or site.",
+    },
+    {
+      title: "Accounts / Finance Executive",
+      detail: "Handles bookkeeping, reconciliations and basic reporting under a finance team.",
+    },
+    {
+      title: "Business Development Associate",
+      detail: "Identifies leads, sets up meetings and supports new-account acquisition.",
+    },
+    {
+      title: "Junior Business Analyst",
+      detail: "Compiles and interprets data to support decisions made by senior managers.",
+    },
+    {
+      title: "Customer Relationship Executive",
+      detail: "Manages client queries, renewals and satisfaction for an assigned account base.",
+    },
+    {
+      title: "Entrepreneur / Family-business role",
+      detail: "Applies coursework directly to running or supporting a small enterprise.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
   salaryNote:
-    "We do not publish Online BBA salary figures we cannot attribute to a credible, dated source. Starting pay is driven far more by the specific role, employer, city and demonstrable skills than by the study mode — treat any portal quoting a single national \"average BBA salary\" with caution.",
+    'We do not publish Online BBA salary figures we cannot attribute to a credible, dated source. Starting pay is driven far more by the specific role, employer, city and demonstrable skills than by the study mode — treat any portal quoting a single national "average BBA salary" with caution.',
 
   placementServices: defaultPlacementServices(),
   placementNote:
@@ -299,7 +335,7 @@ export const onlineBbaContent: CourseContent = {
     {
       question: "How much does an Online BBA cost?",
       answer:
-        "Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "Is an entrance examination required for an Online BBA?",

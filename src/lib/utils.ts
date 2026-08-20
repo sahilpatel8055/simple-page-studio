@@ -11,7 +11,10 @@ export function cn(...inputs: ClassValue[]) {
  * a thousands form ("₹85,000" -> "₹85 K") so cards never show long zero runs.
  */
 const trimZeros = (value: number, digits: number): string =>
-  value.toFixed(digits).replace(/(\.\d*?)0+$/, "$1").replace(/\.$/, "");
+  value
+    .toFixed(digits)
+    .replace(/(\.\d*?)0+$/, "$1")
+    .replace(/\.$/, "");
 
 export function feeRangeInLakhs(label: string): string {
   return label.replace(/₹\s?([\d,]+)/g, (match, digits: string) => {

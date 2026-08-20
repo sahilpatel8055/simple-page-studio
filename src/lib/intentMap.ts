@@ -22,12 +22,7 @@ import { ownedCourseKeywords, ownedUniversityKeywords } from "@/lib/keywordClust
 import type { SearchIntent } from "@/lib/searchIntent";
 
 export type PageKind =
-  | "universityHub"
-  | "universityCourse"
-  | "coursePillar"
-  | "specialisation"
-  | "comparison"
-  | "blog";
+  "universityHub" | "universityCourse" | "coursePillar" | "specialisation" | "comparison" | "blog";
 
 /** Query modifiers students actually append. Each belongs to exactly one page kind. */
 export type IntentModifier =
@@ -59,7 +54,12 @@ export const INTENT_OWNERSHIP: Record<PageKind, IntentOwnership> = {
     intent: "commercial",
     owns: "University discovery — “<University> online”, approvals, programme list, fee range.",
     modifiers: ["overview", "admission", "scholarship", "placement"],
-    defersTo: { fees: "universityCourse", syllabus: "universityCourse", specialisations: "coursePillar", comparison: "comparison" },
+    defersTo: {
+      fees: "universityCourse",
+      syllabus: "universityCourse",
+      specialisations: "coursePillar",
+      comparison: "comparison",
+    },
   },
   universityCourse: {
     kind: "universityCourse",
@@ -73,7 +73,12 @@ export const INTENT_OWNERSHIP: Record<PageKind, IntentOwnership> = {
     intent: "informational",
     owns: "Course discovery — “online <Course>”, what it is, who offers it, fee spread.",
     modifiers: ["overview", "specialisations", "eligibility"],
-    defersTo: { fees: "universityCourse", admission: "universityCourse", comparison: "comparison", question: "blog" },
+    defersTo: {
+      fees: "universityCourse",
+      admission: "universityCourse",
+      comparison: "comparison",
+      question: "blog",
+    },
   },
   specialisation: {
     kind: "specialisation",
@@ -168,7 +173,12 @@ export function routeForQuery(query: string): QueryRoute | null {
       modifier,
     };
   if (modifier === "question")
-    return { kind: "blog", path: "/blogs", reason: "Question-shaped long-tail belongs to editorial.", modifier };
+    return {
+      kind: "blog",
+      path: "/blogs",
+      reason: "Question-shaped long-tail belongs to editorial.",
+      modifier,
+    };
   return null;
 }
 
@@ -178,7 +188,8 @@ function universityMatch(q: string): string | null {
     const u = getUniversity(slug)!;
     for (const alias of [u.name, u.shortName, slug.replace(/-/g, " ")]) {
       const a = alias.toLowerCase();
-      if (a.length > 2 && q.includes(a) && (!best || a.length > best.len)) best = { slug, len: a.length };
+      if (a.length > 2 && q.includes(a) && (!best || a.length > best.len))
+        best = { slug, len: a.length };
     }
   }
   return best?.slug ?? null;
@@ -208,11 +219,17 @@ export interface CtrMeta {
 const clampDesc = (s: string) => (s.length <= 158 ? s : `${s.slice(0, 155).trimEnd()}…`);
 
 /** University × course: the page that owns fees / eligibility / syllabus queries. */
-export function offeringCtrMeta(universitySlug: string, programmeSlug: string, year = 2026): CtrMeta | null {
+export function offeringCtrMeta(
+  universitySlug: string,
+  programmeSlug: string,
+  year = 2026,
+): CtrMeta | null {
   const u = getUniversity(universitySlug);
   const p = getProgramme(programmeSlug);
   if (!u || !p) return null;
-  const offer = listOfferingsByUniversity(universitySlug).find((o) => o.programmeSlug === programmeSlug);
+  const offer = listOfferingsByUniversity(universitySlug).find(
+    (o) => o.programmeSlug === programmeSlug,
+  );
   const feeBit = offer?.fee.total ? `₹${offer.fee.total.toLocaleString("en-IN")} total fee, ` : "";
   return {
     title: `${u.shortName} ${p.name} ${year}: Fees, Eligibility, Syllabus & Admission`,
@@ -226,7 +243,6 @@ export function offeringCtrMeta(universitySlug: string, programmeSlug: string, y
       `${u.shortName} ${p.name} admission`,
       ...ownedUniversityKeywords(universitySlug, 2),
     ],
-
   };
 }
 
@@ -250,7 +266,6 @@ export function pillarCtrMeta(programmeSlug: string, year = 2026): CtrMeta | nul
   };
 }
 
-
 /** Comparison: owns “A vs B”; never claims a winner. */
 export function comparisonCtrMeta(leftShort: string, rightShort: string, year = 2026): CtrMeta {
   return {
@@ -258,7 +273,11 @@ export function comparisonCtrMeta(leftShort: string, rightShort: string, year = 
     description: clampDesc(
       `${leftShort} and ${rightShort} side by side — published fees, UGC-DEB recognition, programmes, delivery mode and learner support, so you can decide on facts rather than marketing.`,
     ),
-    keywords: [`${leftShort} vs ${rightShort}`, `${leftShort} or ${rightShort}`, `${leftShort} ${rightShort} comparison`],
+    keywords: [
+      `${leftShort} vs ${rightShort}`,
+      `${leftShort} or ${rightShort}`,
+      `${leftShort} ${rightShort} comparison`,
+    ],
   };
 }
 
@@ -287,7 +306,11 @@ export function siteIntentClaims(): IntentClaim[] {
   const claims: IntentClaim[] = [];
   for (const slug of universitySlugs()) {
     const u = getUniversity(slug)!;
-    claims.push({ path: `/universities/${slug}`, kind: "universityHub", primaryQuery: `${u.shortName} online` });
+    claims.push({
+      path: `/universities/${slug}`,
+      kind: "universityHub",
+      primaryQuery: `${u.shortName} online`,
+    });
     for (const o of listOfferingsByUniversity(slug)) {
       const p = getProgramme(o.programmeSlug);
       if (!p) continue;
@@ -317,7 +340,6 @@ export function siteIntentClaims(): IntentClaim[] {
 
   return claims;
 }
-
 
 /**
  * When the dataset carries two slugs for the same programme name, only the

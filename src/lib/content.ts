@@ -137,7 +137,11 @@ export const universities: University[] = allUniversities().map((u) => ({
   name: u.university_name,
   shortName: u.short_name,
   location: u.basic_information.location ?? u.basic_information.state ?? "",
-  mode: (u.mode === "Distance" || u.mode === "ODL" ? "Distance" : u.mode === "Both" ? "Hybrid" : "Online") as University["mode"],
+  mode: (u.mode === "Distance" || u.mode === "ODL"
+    ? "Distance"
+    : u.mode === "Both"
+      ? "Hybrid"
+      : "Online") as University["mode"],
   approvals: recognitionLabels(u),
   feeRange: feeRangeLabel(u.slug),
   courses: u.programmes.length,
@@ -148,7 +152,16 @@ export const universities: University[] = allUniversities().map((u) => ({
 }));
 
 /** Degrees whose "short name" is not a real abbreviation — keep the full name. */
-const genericDegreeWords = new Set(["BACHELOR", "MASTER", "POST", "DIPLOMA", "B", "M", "ONLINE", ""]);
+const genericDegreeWords = new Set([
+  "BACHELOR",
+  "MASTER",
+  "POST",
+  "DIPLOMA",
+  "B",
+  "M",
+  "ONLINE",
+  "",
+]);
 
 const normaliseDegree = (s: string) => s.toUpperCase().replace(/[^A-Z0-9]/g, "");
 
@@ -208,11 +221,9 @@ export const courseFamilies: Course[] = courseFamilyList()
   }))
   .sort(
     (a, b) =>
-      preferredOrder.indexOf(normaliseDegree(a.shortName)) - preferredOrder.indexOf(normaliseDegree(b.shortName)) ||
-      b.universities - a.universities,
+      preferredOrder.indexOf(normaliseDegree(a.shortName)) -
+        preferredOrder.indexOf(normaliseDegree(b.shortName)) || b.universities - a.universities,
   );
-
-
 
 export const articles: Article[] = [
   {
@@ -233,7 +244,8 @@ export const articles: Article[] = [
   {
     slug: "online-mba-specialisations-guide",
     title: "Online MBA specialisations: how to pick the right track",
-    excerpt: "What actually changes between finance, marketing, HR, operations, IT and analytics tracks.",
+    excerpt:
+      "What actually changes between finance, marketing, HR, operations, IT and analytics tracks.",
     category: "Career Growth",
     categorySlug: "career-growth",
     tags: ["mba", "specialisation", "career"],
@@ -274,7 +286,8 @@ export const articles: Article[] = [
   {
     slug: "online-bba-admission-guide",
     title: "Online BBA admission 2026: eligibility, steps and documents",
-    excerpt: "The full admission path for an online BBA, from shortlisting universities to LMS access.",
+    excerpt:
+      "The full admission path for an online BBA, from shortlisting universities to LMS access.",
     category: "Admission Guidance",
     categorySlug: "admission-guidance",
     tags: ["bba", "admission", "online-degree"],
@@ -288,7 +301,8 @@ export const articles: Article[] = [
   {
     slug: "online-bba-vs-bcom",
     title: "Online BBA vs online B.Com: which degree fits your goal?",
-    excerpt: "Curriculum, career entry points and PG routes compared for the two most popular online UG degrees.",
+    excerpt:
+      "Curriculum, career entry points and PG routes compared for the two most popular online UG degrees.",
     category: "Career Growth",
     categorySlug: "career-growth",
     tags: ["bba", "bcom", "comparison"],
@@ -302,7 +316,8 @@ export const articles: Article[] = [
   {
     slug: "online-bca-career-guide",
     title: "Online BCA career guide 2026: roles, skills and next steps",
-    excerpt: "What an online BCA opens up, and the portfolio habits that turn the degree into interviews.",
+    excerpt:
+      "What an online BCA opens up, and the portfolio habits that turn the degree into interviews.",
     category: "Career Growth",
     categorySlug: "career-growth",
     tags: ["bca", "career", "it"],
@@ -315,7 +330,8 @@ export const articles: Article[] = [
   {
     slug: "online-bcom-guide-2026",
     title: "Online B.Com in 2026: fees, syllabus and career paths",
-    excerpt: "Why online B.Com works so well alongside CA, CS and CMA preparation — and what it costs.",
+    excerpt:
+      "Why online B.Com works so well alongside CA, CS and CMA preparation — and what it costs.",
     category: "Admission Guidance",
     categorySlug: "admission-guidance",
     tags: ["bcom", "fees", "online-degree"],
@@ -345,7 +361,8 @@ export const articles: Article[] = [
   {
     slug: "online-mba-worth-it",
     title: "Is an online MBA worth it for working professionals?",
-    excerpt: "We look at fee, ROI, employer perception and the profiles where an online MBA genuinely pays back.",
+    excerpt:
+      "We look at fee, ROI, employer perception and the profiles where an online MBA genuinely pays back.",
     category: "Career Growth",
     categorySlug: "career-growth",
     tags: ["mba", "roi", "career"],
@@ -360,7 +377,8 @@ export const articles: Article[] = [
   {
     slug: "du-sol-admission-process",
     title: "DU SOL admission process explained step by step",
-    excerpt: "Documents, timelines, fee payment and the common mistakes that delay DU SOL enrolment.",
+    excerpt:
+      "Documents, timelines, fee payment and the common mistakes that delay DU SOL enrolment.",
     category: "Admission Guidance",
     categorySlug: "admission-guidance",
     tags: ["du-sol", "admission"],
@@ -374,7 +392,8 @@ export const articles: Article[] = [
   {
     slug: "online-degree-government-jobs",
     title: "Are online degrees accepted for government jobs?",
-    excerpt: "What UGC notifications say about equivalence for UPSC, SSC, banking and state services.",
+    excerpt:
+      "What UGC notifications say about equivalence for UPSC, SSC, banking and state services.",
     category: "Career Growth",
     categorySlug: "career-growth",
     tags: ["government-jobs", "validity"],
@@ -388,7 +407,8 @@ export const articles: Article[] = [
   {
     slug: "scholarships-online-learners",
     title: "Scholarships every online learner should apply for",
-    excerpt: "Merit, need-based and defence-category scholarships that apply to online and distance programmes.",
+    excerpt:
+      "Merit, need-based and defence-category scholarships that apply to online and distance programmes.",
     category: "Fees & Scholarships",
     categorySlug: "fees-scholarships",
     tags: ["scholarship", "fees"],
@@ -402,7 +422,8 @@ export const articles: Article[] = [
   {
     slug: "choosing-specialisation",
     title: "How to choose the right specialisation for your degree",
-    excerpt: "A decision framework that maps your current role, target role and market demand to a specialisation.",
+    excerpt:
+      "A decision framework that maps your current role, target role and market demand to a specialisation.",
     category: "Study Guides",
     categorySlug: "study-guides",
     tags: ["specialisation", "planning"],
@@ -416,12 +437,12 @@ export const articles: Article[] = [
   ...universityBlogArticles,
 ];
 
-
 export const news: Article[] = [
   {
     slug: "ugc-online-programme-list-update",
     title: "UGC updates the list of entitled online programmes for 2026-27",
-    excerpt: "The regulator has refreshed institution-wise entitlement, adding new specialisations across 40+ universities.",
+    excerpt:
+      "The regulator has refreshed institution-wise entitlement, adding new specialisations across 40+ universities.",
     category: "Regulatory",
     categorySlug: "regulatory",
     tags: ["ugc", "policy"],
@@ -434,7 +455,8 @@ export const news: Article[] = [
   {
     slug: "july-session-deadline-extended",
     title: "July session admission deadline extended for several universities",
-    excerpt: "Multiple online universities have moved their last date, giving applicants an extra fortnight.",
+    excerpt:
+      "Multiple online universities have moved their last date, giving applicants an extra fortnight.",
     category: "Admissions",
     categorySlug: "admissions",
     tags: ["deadline", "admission"],
@@ -447,7 +469,8 @@ export const news: Article[] = [
   {
     slug: "new-analytics-specialisations",
     title: "Universities add AI and analytics specialisations to online MBA",
-    excerpt: "Curriculum refreshes reflect hiring demand in analytics, product and applied AI roles.",
+    excerpt:
+      "Curriculum refreshes reflect hiring demand in analytics, product and applied AI roles.",
     category: "Programmes",
     categorySlug: "programmes",
     tags: ["mba", "ai"],
@@ -460,10 +483,30 @@ export const news: Article[] = [
 ];
 
 export const admissionUpdates = [
-  { title: "LPU Online — July session closes", date: "15 Aug 2026", status: "Closing soon", href: "/admissions" },
-  { title: "Amity Online — August cycle opens", date: "05 Aug 2026", status: "Open", href: "/admissions" },
-  { title: "DU SOL — UG re-registration window", date: "22 Aug 2026", status: "Open", href: "/admissions" },
-  { title: "Manipal Online — scholarship round 2", date: "30 Aug 2026", status: "Upcoming", href: "/admissions" },
+  {
+    title: "LPU Online — July session closes",
+    date: "15 Aug 2026",
+    status: "Closing soon",
+    href: "/admissions",
+  },
+  {
+    title: "Amity Online — August cycle opens",
+    date: "05 Aug 2026",
+    status: "Open",
+    href: "/admissions",
+  },
+  {
+    title: "DU SOL — UG re-registration window",
+    date: "22 Aug 2026",
+    status: "Open",
+    href: "/admissions",
+  },
+  {
+    title: "Manipal Online — scholarship round 2",
+    date: "30 Aug 2026",
+    status: "Upcoming",
+    href: "/admissions",
+  },
 ];
 
 /**
@@ -480,7 +523,8 @@ export const unpublishedReviews: Review[] = [
     rating: 4.5,
     author: "Sandeep K.",
     batch: "Batch of 2025",
-    summary: "Recorded lectures were genuinely usable alongside a full-time job, and the placement cell responded fast.",
+    summary:
+      "Recorded lectures were genuinely usable alongside a full-time job, and the placement cell responded fast.",
     verified: true,
   },
   {
@@ -490,7 +534,8 @@ export const unpublishedReviews: Review[] = [
     rating: 4.3,
     author: "Priya R.",
     batch: "Batch of 2024",
-    summary: "Strong curriculum and a smooth exam process. Fee is on the higher side but the brand helped in interviews.",
+    summary:
+      "Strong curriculum and a smooth exam process. Fee is on the higher side but the brand helped in interviews.",
     verified: true,
   },
   {
@@ -500,7 +545,8 @@ export const unpublishedReviews: Review[] = [
     rating: 4.0,
     author: "Aman T.",
     batch: "Batch of 2025",
-    summary: "Unbeatable value for a DU degree. Self-study discipline matters more here than in online universities.",
+    summary:
+      "Unbeatable value for a DU degree. Self-study discipline matters more here than in online universities.",
     verified: true,
   },
   {
@@ -510,7 +556,8 @@ export const unpublishedReviews: Review[] = [
     rating: 4.2,
     author: "Kritika S.",
     batch: "Batch of 2026",
-    summary: "The digital campus is well built and mentors actually reply. Assignments are practical.",
+    summary:
+      "The digital campus is well built and mentors actually reply. Assignments are practical.",
     verified: false,
   },
 ];
@@ -530,7 +577,8 @@ export const comparisons: Comparison[] = [
     left: "DU SOL",
     right: "IGNOU",
     category: "University",
-    summary: "Two of India's most affordable routes to a recognised degree — which suits which learner.",
+    summary:
+      "Two of India's most affordable routes to a recognised degree — which suits which learner.",
   },
   {
     slug: "online-mba-vs-distance-mba",
@@ -585,7 +633,8 @@ export const scholarships: Scholarship[] = [
     amount: "Varies by state",
     deadline: "31 Oct 2026",
     eligibility: "SC/ST/OBC category, income criteria",
-    summary: "Central and state scholarships that also cover recognised distance and online programmes.",
+    summary:
+      "Central and state scholarships that also cover recognised distance and online programmes.",
   },
 ];
 
@@ -595,7 +644,8 @@ export const careerGuides: CareerGuide[] = [
     title: "Career paths after an online MBA",
     field: "Management",
     salaryRange: "₹6L – ₹18L",
-    summary: "Role ladders, hiring signals and the switch strategies that work for online MBA graduates.",
+    summary:
+      "Role ladders, hiring signals and the switch strategies that work for online MBA graduates.",
     skills: ["Stakeholder management", "Financial modelling", "Analytics"],
   },
   {
@@ -647,32 +697,129 @@ export const authors: Author[] = [
 ];
 
 export const categories: Taxonomy[] = [
-  { slug: "admission-guidance", name: "Admission Guidance", description: "Step-by-step help with applications, documents and deadlines.", count: 128 },
-  { slug: "career-growth", name: "Career Growth", description: "Role transitions, salary benchmarks and hiring trends.", count: 96 },
-  { slug: "fees-scholarships", name: "Fees & Scholarships", description: "Fee structures, EMI options and funding routes.", count: 74 },
-  { slug: "study-guides", name: "Study Guides", description: "Learning plans, exam prep and study techniques.", count: 61 },
-  { slug: "university-insights", name: "University Insights", description: "Deep dives into individual universities and programmes.", count: 143 },
-  { slug: "regulatory", name: "Regulatory", description: "UGC, DEB and AICTE updates that affect learners.", count: 38 },
+  {
+    slug: "admission-guidance",
+    name: "Admission Guidance",
+    description: "Step-by-step help with applications, documents and deadlines.",
+    count: 128,
+  },
+  {
+    slug: "career-growth",
+    name: "Career Growth",
+    description: "Role transitions, salary benchmarks and hiring trends.",
+    count: 96,
+  },
+  {
+    slug: "fees-scholarships",
+    name: "Fees & Scholarships",
+    description: "Fee structures, EMI options and funding routes.",
+    count: 74,
+  },
+  {
+    slug: "study-guides",
+    name: "Study Guides",
+    description: "Learning plans, exam prep and study techniques.",
+    count: 61,
+  },
+  {
+    slug: "university-insights",
+    name: "University Insights",
+    description: "Deep dives into individual universities and programmes.",
+    count: 143,
+  },
+  {
+    slug: "regulatory",
+    name: "Regulatory",
+    description: "UGC, DEB and AICTE updates that affect learners.",
+    count: 38,
+  },
 ];
 
 export const tags: Taxonomy[] = [
-  { slug: "ugc", name: "UGC", description: "University Grants Commission entitlement and notices.", count: 52 },
+  {
+    slug: "ugc",
+    name: "UGC",
+    description: "University Grants Commission entitlement and notices.",
+    count: 52,
+  },
   { slug: "mba", name: "MBA", description: "Everything about online and distance MBA.", count: 88 },
-  { slug: "admission", name: "Admission", description: "Application cycles and enrolment.", count: 110 },
+  {
+    slug: "admission",
+    name: "Admission",
+    description: "Application cycles and enrolment.",
+    count: 110,
+  },
   { slug: "scholarship", name: "Scholarship", description: "Fee waivers and funding.", count: 43 },
-  { slug: "du-sol", name: "DU SOL", description: "Delhi University School of Open Learning.", count: 36 },
+  {
+    slug: "du-sol",
+    name: "DU SOL",
+    description: "Delhi University School of Open Learning.",
+    count: 36,
+  },
   { slug: "career", name: "Career", description: "Jobs, salaries and progression.", count: 71 },
-  { slug: "online-degree", name: "Online Degree", description: "Validity, delivery and outcomes.", count: 134 },
-  { slug: "approvals", name: "Approvals", description: "NAAC, AICTE, DEB and entitlement.", count: 29 },
+  {
+    slug: "online-degree",
+    name: "Online Degree",
+    description: "Validity, delivery and outcomes.",
+    count: 134,
+  },
+  {
+    slug: "approvals",
+    name: "Approvals",
+    description: "NAAC, AICTE, DEB and entitlement.",
+    count: 29,
+  },
 ];
 
 export const tools: Tool[] = [
-  { slug: "fee-emi-calculator", name: "Fee & EMI calculator", description: "Estimate total programme cost and monthly EMI on real 2026-27 university fees.", icon: "calculator", status: "Live", to: "/tools/fee-emi-calculator" },
-  { slug: "roi-calculator", name: "Degree ROI calculator", description: "Model payback period and net gain from fee, current salary and expected salary.", icon: "trending", status: "Live", to: "/tools/fee-emi-calculator" },
-  { slug: "salary-after-course", name: "Salary after course calculator", description: "Project your indicative salary band after an online UG or PG degree.", icon: "trending", status: "Live", to: "/tools/salary-after-course" },
-  { slug: "university-finder", name: "University finder", description: "Filter UGC-entitled universities by budget, mode and specialisation.", icon: "search", status: "Live", to: "/universities" },
-  { slug: "compare-builder", name: "Comparison builder", description: "Build a side-by-side comparison of any two universities.", icon: "columns", status: "Live", to: "/compare/universities" },
-  { slug: "eligibility-checker", name: "Eligibility checker", description: "Check whether your academic profile qualifies for a programme.", icon: "check", status: "Beta", to: "/counselling" },
+  {
+    slug: "fee-emi-calculator",
+    name: "Fee & EMI calculator",
+    description: "Estimate total programme cost and monthly EMI on real 2026-27 university fees.",
+    icon: "calculator",
+    status: "Live",
+    to: "/tools/fee-emi-calculator",
+  },
+  {
+    slug: "roi-calculator",
+    name: "Degree ROI calculator",
+    description: "Model payback period and net gain from fee, current salary and expected salary.",
+    icon: "trending",
+    status: "Live",
+    to: "/tools/fee-emi-calculator",
+  },
+  {
+    slug: "salary-after-course",
+    name: "Salary after course calculator",
+    description: "Project your indicative salary band after an online UG or PG degree.",
+    icon: "trending",
+    status: "Live",
+    to: "/tools/salary-after-course",
+  },
+  {
+    slug: "university-finder",
+    name: "University finder",
+    description: "Filter UGC-entitled universities by budget, mode and specialisation.",
+    icon: "search",
+    status: "Live",
+    to: "/universities",
+  },
+  {
+    slug: "compare-builder",
+    name: "Comparison builder",
+    description: "Build a side-by-side comparison of any two universities.",
+    icon: "columns",
+    status: "Live",
+    to: "/compare/universities",
+  },
+  {
+    slug: "eligibility-checker",
+    name: "Eligibility checker",
+    description: "Check whether your academic profile qualifies for a programme.",
+    icon: "check",
+    status: "Beta",
+    to: "/counselling",
+  },
 ];
 
 export const rankings = [
@@ -709,7 +856,8 @@ export const homeFaqs = [
 
 /* -------------------------------- getters -------------------------------- */
 
-const bySlug = <T extends { slug: string }>(list: T[], slug: string) => list.find((i) => i.slug === slug);
+const bySlug = <T extends { slug: string }>(list: T[], slug: string) =>
+  list.find((i) => i.slug === slug);
 
 export const getUniversity = (slug: string) => bySlug(universities, slug);
 export const getCourse = (slug: string) => bySlug(courses, slug);
@@ -726,7 +874,8 @@ export const getNews = (slug: string) => bySlug(news, slug);
 export const allArticles = [...articles, ...news];
 
 export const articlesByAuthor = (slug: string) => allArticles.filter((a) => a.authorSlug === slug);
-export const articlesByCategory = (slug: string) => allArticles.filter((a) => a.categorySlug === slug);
+export const articlesByCategory = (slug: string) =>
+  allArticles.filter((a) => a.categorySlug === slug);
 export const articlesByTag = (slug: string) => allArticles.filter((a) => a.tags.includes(slug));
 
 export const formatDate = (iso: string) =>

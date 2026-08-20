@@ -4,7 +4,6 @@ import { ecosystemLinks, footerNav } from "@/lib/navigation";
 import { NewsletterSignup } from "@/components/common/NewsletterSignup";
 import { FOOTER_DISCLAIMER, legalDocs } from "@/data/legal";
 
-
 const socials = [
   { label: "LinkedIn", Icon: Linkedin },
   { label: "Instagram", Icon: Instagram },
@@ -29,8 +28,8 @@ export function Footer() {
               />
             </AppLink>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Independent research, comparisons and guidance on India's online and distance education
-              landscape — built for learners who want verified answers, not sales pitches.
+              Independent research, comparisons and guidance on India's online and distance
+              education landscape — built for learners who want verified answers, not sales pitches.
             </p>
             <div className="mt-6 max-w-sm">
               <NewsletterSignup compact />
@@ -58,7 +57,10 @@ export function Footer() {
                 <ul className="space-y-2">
                   {col.links.map((l) => (
                     <li key={l.href}>
-                      <AppLink to={l.href} className="text-sm text-foreground/80 transition-colors hover:text-brand">
+                      <AppLink
+                        to={l.href}
+                        className="text-sm text-foreground/80 transition-colors hover:text-brand"
+                      >
                         {l.label}
                       </AppLink>
                     </li>
@@ -84,7 +86,9 @@ export function Footer() {
               >
                 <span className="min-w-0">
                   <span className="block truncate text-sm font-semibold">{l.label}</span>
-                  <span className="block truncate text-xs text-muted-foreground">{l.description}</span>
+                  <span className="block truncate text-xs text-muted-foreground">
+                    {l.description}
+                  </span>
                 </span>
                 <ArrowUpRight className="h-4 w-4 shrink-0 text-brand" />
               </a>
@@ -110,7 +114,6 @@ export function Footer() {
             © {new Date().getFullYear()} DegreeKhojo. All rights reserved.
           </p>
         </div>
-
       </div>
     </footer>
   );

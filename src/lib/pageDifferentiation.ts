@@ -70,7 +70,9 @@ export function universityDecision(slug: string): DecisionGuide | null {
   const cheapest = feeTotals.length ? Math.min(...feeTotals) : null;
   const dearest = feeTotals.length ? Math.max(...feeTotals) : null;
   const bodies = u.approvals.map((x) => x.body.toUpperCase());
-  const levels = Array.from(new Set(offers.map((o) => getProgramme(o.programmeSlug)?.level).filter(Boolean)));
+  const levels = Array.from(
+    new Set(offers.map((o) => getProgramme(o.programmeSlug)?.level).filter(Boolean)),
+  );
   const specCount = new Set(offers.flatMap((o) => o.specialisations)).size;
   const placement = offers.some((o) => o.placement?.supportAvailable);
 
@@ -99,25 +101,39 @@ export function universityDecision(slug: string): DecisionGuide | null {
       );
   }
   if (u.modes.includes("Online") && !u.modes.includes("Distance"))
-    choose.push(`You need a fully online mode — ${u.shortName} runs its programmes online, not as postal distance study.`);
+    choose.push(
+      `You need a fully online mode — ${u.shortName} runs its programmes online, not as postal distance study.`,
+    );
   if (u.modes.includes("Distance") && !u.modes.includes("Online"))
     avoid.push(`You want live/online classes — ${u.shortName} delivers in distance mode.`);
   if (bodies.some((b) => b.includes("AICTE")))
-    choose.push(`You need an AICTE-recognised technical programme — that approval is on record for ${u.shortName}.`);
+    choose.push(
+      `You need an AICTE-recognised technical programme — that approval is on record for ${u.shortName}.`,
+    );
   else
     avoid.push(
       `Your employer specifically asks for AICTE approval on the programme — confirm that in writing with ${u.shortName} before paying.`,
     );
   if (bodies.some((b) => b.includes("WES")))
-    choose.push(`You may study or work abroad later — ${u.shortName} degrees appear in WES evaluation records.`);
+    choose.push(
+      `You may study or work abroad later — ${u.shortName} degrees appear in WES evaluation records.`,
+    );
   if (levels.includes("PG") && levels.includes("UG"))
-    choose.push(`You want to finish UG and continue PG at the same university without re-applying elsewhere.`);
+    choose.push(
+      `You want to finish UG and continue PG at the same university without re-applying elsewhere.`,
+    );
   if (specCount >= 5)
-    choose.push(`You want a choice of specialisations — ${specCount} are published across ${u.shortName} programmes.`);
+    choose.push(
+      `You want a choice of specialisations — ${specCount} are published across ${u.shortName} programmes.`,
+    );
   else if (specCount > 0)
-    avoid.push(`You want a niche specialisation — only ${specCount} are published here; check the course pages first.`);
+    avoid.push(
+      `You want a niche specialisation — only ${specCount} are published here; check the course pages first.`,
+    );
   if (!placement)
-    avoid.push(`Placement assistance is a deciding factor for you — no placement support is published in the ${u.shortName} record.`);
+    avoid.push(
+      `Placement assistance is a deciding factor for you — no placement support is published in the ${u.shortName} record.`,
+    );
 
   if (choose.length === 0 && avoid.length === 0) return null;
   return {
@@ -148,7 +164,9 @@ export function universityFeeValue(slug: string): { rows: FeeValueRow[]; note: s
   for (const o of listOfferingsByUniversity(slug)) {
     const total = o.fee.total;
     if (!total) continue;
-    const peers = totals(listOfferingsByProgramme(o.programmeSlug).filter((p) => p.universitySlug !== slug));
+    const peers = totals(
+      listOfferingsByProgramme(o.programmeSlug).filter((p) => p.universitySlug !== slug),
+    );
     const m = median(peers);
     if (!m) continue;
     const programme = getProgramme(o.programmeSlug);

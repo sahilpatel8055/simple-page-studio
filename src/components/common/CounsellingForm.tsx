@@ -22,17 +22,36 @@ const COURSES = [
 ];
 
 const STATES = [
-  "Andhra Pradesh", "Assam", "Bihar", "Chhattisgarh", "Delhi", "Goa", "Gujarat", "Haryana",
-  "Himachal Pradesh", "Jharkhand", "Karnataka", "Kerala", "Madhya Pradesh", "Maharashtra",
-  "Odisha", "Punjab", "Rajasthan", "Tamil Nadu", "Telangana", "Uttar Pradesh", "Uttarakhand",
-  "West Bengal", "Other / Outside India",
+  "Andhra Pradesh",
+  "Assam",
+  "Bihar",
+  "Chhattisgarh",
+  "Delhi",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Odisha",
+  "Punjab",
+  "Rajasthan",
+  "Tamil Nadu",
+  "Telangana",
+  "Uttar Pradesh",
+  "Uttarakhand",
+  "West Bengal",
+  "Other / Outside India",
 ];
 
 const field =
   "h-10 w-full rounded-xl border-[1.5px] border-[#7f1813]/80 bg-background px-3 text-[0.88rem] outline-none transition-colors focus-visible:border-[#7f1813] focus-visible:ring-2 focus-visible:ring-[#7f1813]/25 sm:h-11 sm:px-3.5 sm:text-[0.9rem]";
 
-const label = "mb-1 block text-[0.68rem] font-bold uppercase tracking-wide text-black sm:text-[0.72rem]";
-
+const label =
+  "mb-1 block text-[0.68rem] font-bold uppercase tracking-wide text-black sm:text-[0.72rem]";
 
 /** Auto-scrolling university logo ribbon. Pure CSS, duplicated track for a seamless loop. */
 export function UniversityLogoMarquee() {
@@ -40,7 +59,10 @@ export function UniversityLogoMarquee() {
   const track = [...items, ...items];
   return (
     <div className="marquee rounded-xl border border-border bg-secondary/40 py-2.5">
-      <ul className="marquee-track items-center" style={{ animationDuration: "28s", gap: "1.5rem" }}>
+      <ul
+        className="marquee-track items-center"
+        style={{ animationDuration: "28s", gap: "1.5rem" }}
+      >
         {track.map((u, i) => {
           const logo = universityLogo(u.slug);
           return (
@@ -92,7 +114,8 @@ export function CounsellingForm({
         </span>
         <h3 className="mt-4 font-display text-lg font-extrabold">Request received</h3>
         <p className="mx-auto mt-2 max-w-sm text-[0.88rem] leading-relaxed text-muted-foreground">
-          A counsellor will call you shortly with a shortlist matched to your course, state and budget.
+          A counsellor will call you shortly with a shortlist matched to your course, state and
+          budget.
         </p>
         {onDone && (
           <button
@@ -121,14 +144,15 @@ export function CounsellingForm({
           <h2 className="font-display text-[1.02rem] font-extrabold leading-snug text-foreground sm:text-xl">
             {title}
           </h2>
-          <p className="mt-1 text-[0.8rem] leading-snug text-muted-foreground sm:text-[0.85rem]">{subtitle}</p>
+          <p className="mt-1 text-[0.8rem] leading-snug text-muted-foreground sm:text-[0.85rem]">
+            {subtitle}
+          </p>
         </div>
       </div>
 
       <div className="mt-3">
         <UniversityLogoMarquee />
       </div>
-
 
       <form
         className="mx-auto mt-4 grid w-full max-w-md gap-2.5 sm:max-w-none sm:grid-cols-2 sm:gap-3"
@@ -146,13 +170,13 @@ export function CounsellingForm({
           const values = Object.fromEntries(data.entries()) as Record<string, string>;
           savePartialLead(values);
           void submitLead({
-            name: String(values['name'] ?? ''),
-            email: String(values['email'] ?? ''),
-            phone: String(values['phone'] ?? ''),
-            course: String(values['course'] ?? ''),
-            location: String(values['state'] ?? ''),
+            name: String(values["name"] ?? ""),
+            email: String(values["email"] ?? ""),
+            phone: String(values["phone"] ?? ""),
+            course: String(values["course"] ?? ""),
+            location: String(values["state"] ?? ""),
             form: source,
-            note: `Consent: ${values['consent'] === 'Yes' ? 'Yes' : 'No'}`,
+            note: `Consent: ${values["consent"] === "Yes" ? "Yes" : "No"}`,
           });
           markLeadSubmitted();
           setSent(true);
@@ -162,7 +186,13 @@ export function CounsellingForm({
       >
         <label className="block">
           <span className={label}>Full name :</span>
-          <input required name="name" autoComplete="name" placeholder="Full name" className={field} />
+          <input
+            required
+            name="name"
+            autoComplete="name"
+            placeholder="Full name"
+            className={field}
+          />
         </label>
         <label className="block">
           <span className={label}>Email :</span>

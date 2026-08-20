@@ -90,10 +90,22 @@ export const nsouPosts: Record<string, PostContent> = {
             caption: "Approximate fee bands by course level (per year)",
             head: ["Course type", "Approx fee per year", "Notes"],
             rows: [
-              ["Undergraduate (B.A., B.Com, B.Sc, BLIS)", "Rs. 3,000 - Rs. 6,000", "Science subjects priced higher than arts/commerce"],
-              ["Postgraduate (MA, M.Com, M.Sc)", "Rs. 6,000 - Rs. 15,000", "Varies by specialisation"],
+              [
+                "Undergraduate (B.A., B.Com, B.Sc, BLIS)",
+                "Rs. 3,000 - Rs. 6,000",
+                "Science subjects priced higher than arts/commerce",
+              ],
+              [
+                "Postgraduate (MA, M.Com, M.Sc)",
+                "Rs. 6,000 - Rs. 15,000",
+                "Varies by specialisation",
+              ],
               ["Diploma / certificate", "Rs. 2,000 - Rs. 8,000", "Depends on programme"],
-              ["MBA (professional PG)", "Rs. 15,000 - Rs. 25,000", "Priced separately from other PG programmes"],
+              [
+                "MBA (professional PG)",
+                "Rs. 15,000 - Rs. 25,000",
+                "Priced separately from other PG programmes",
+              ],
             ],
           },
         ],
@@ -293,8 +305,14 @@ export const nsouPosts: Record<string, PostContent> = {
             kind: "links",
             title: "Plan your NSOU admission",
             items: [
-              { label: "NSOU admission process and eligibility", href: "/universities/nsou/admission" },
-              { label: "NSOU scholarships and fee concessions", href: "/universities/nsou/scholarships" },
+              {
+                label: "NSOU admission process and eligibility",
+                href: "/universities/nsou/admission",
+              },
+              {
+                label: "NSOU scholarships and fee concessions",
+                href: "/universities/nsou/scholarships",
+              },
               { label: "NSOU examination pattern", href: "/universities/nsou/examination-pattern" },
               { label: "Compare online MBA fees across universities", href: "/courses/online-mba" },
             ],
@@ -417,9 +435,18 @@ export const nsouPosts: Record<string, PostContent> = {
             head: ["Course level", "Eligibility"],
             rows: [
               ["Undergraduate", "Passed 10+2 from a recognised board; no upper age limit"],
-              ["Postgraduate (general)", "Bachelor's degree from a recognised university; subject-specific rules may apply"],
-              ["M.Com", "B.Com, BBA, BBM or equivalent commerce/business degree under 10+2+3 pattern"],
-              ["Diploma / Certificate", "Varies from 10+2 to graduation depending on the programme"],
+              [
+                "Postgraduate (general)",
+                "Bachelor's degree from a recognised university; subject-specific rules may apply",
+              ],
+              [
+                "M.Com",
+                "B.Com, BBA, BBM or equivalent commerce/business degree under 10+2+3 pattern",
+              ],
+              [
+                "Diploma / Certificate",
+                "Varies from 10+2 to graduation depending on the programme",
+              ],
             ],
           },
           {
@@ -491,9 +518,18 @@ export const nsouPosts: Record<string, PostContent> = {
             head: ["Document", "Purpose"],
             rows: [
               ["Passport-size photograph and signature", "Student profile and verification"],
-              ["Class 10 and Class 12 certificates/marksheets", "Date of birth and academic record proof"],
-              ["Graduation marksheets and degree/provisional certificate", "PG eligibility verification"],
-              ["Category / non-creamy layer certificate", "Where applicable for reserved category candidates"],
+              [
+                "Class 10 and Class 12 certificates/marksheets",
+                "Date of birth and academic record proof",
+              ],
+              [
+                "Graduation marksheets and degree/provisional certificate",
+                "PG eligibility verification",
+              ],
+              [
+                "Category / non-creamy layer certificate",
+                "Where applicable for reserved category candidates",
+              ],
             ],
           },
           {
@@ -740,8 +776,14 @@ export const nsouPosts: Record<string, PostContent> = {
             head: ["Component", "Detail"],
             rows: [
               ["Assignments", "Submitted before Term-End Examinations (TEE)"],
-              ["Term-End Examinations", "Held at designated centres; dates and admit cards published online"],
-              ["Evaluation method", "Combination of theory examinations and assignments/projects, varies by programme"],
+              [
+                "Term-End Examinations",
+                "Held at designated centres; dates and admit cards published online",
+              ],
+              [
+                "Evaluation method",
+                "Combination of theory examinations and assignments/projects, varies by programme",
+              ],
               ["Result publication", "Published on the NSOU website's Examination tab"],
             ],
           },
@@ -816,7 +858,10 @@ export const nsouPosts: Record<string, PostContent> = {
             items: [
               { label: "NSOU courses and fees 2026-27", href: "/universities/nsou" },
               { label: "NSOU admission process", href: "/universities/nsou/admission" },
-              { label: "Explore online MBA options across universities", href: "/courses/online-mba" },
+              {
+                label: "Explore online MBA options across universities",
+                href: "/courses/online-mba",
+              },
               { label: "Explore online MCA options", href: "/courses/online-mca" },
             ],
           },
@@ -1027,7 +1072,10 @@ export const nsouPosts: Record<string, PostContent> = {
             title: "Take the next step",
             items: [
               { label: "See NSOU fees in full detail", href: "/universities/nsou" },
-              { label: "Check NSOU scholarships and concessions", href: "/universities/nsou/scholarships" },
+              {
+                label: "Check NSOU scholarships and concessions",
+                href: "/universities/nsou/scholarships",
+              },
               { label: "Explore online B.Com alternatives", href: "/courses/online-bcom" },
               { label: "Explore online BBA alternatives", href: "/courses/online-bba" },
             ],

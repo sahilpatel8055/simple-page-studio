@@ -50,7 +50,10 @@ export function consumerText(input?: string | null): string | undefined {
   const sentences = input.split(/(?<=[.!?])\s+/);
   const kept: string[] = [];
   for (const sentence of sentences) {
-    const clauses = sentence.split(/;\s*/).map(cleanSegment).filter((s): s is string => Boolean(s));
+    const clauses = sentence
+      .split(/;\s*/)
+      .map(cleanSegment)
+      .filter((s): s is string => Boolean(s));
     if (!clauses.length) continue;
     let text = clauses.join("; ");
     if (!/[.!?]$/.test(text)) text += ".";

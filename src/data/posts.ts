@@ -51,7 +51,6 @@ export interface PostContent {
   cta?: string;
 }
 
-
 const REVIEWER = "Kartik Ahuja";
 const REVIEWER_ROLE = "Education Research Lead, DegreeKhojo";
 
@@ -66,7 +65,6 @@ const rawPostContent: Record<string, PostContent> = {
   ...courseGuidePosts,
   ...deepMasterPosts,
   ...universityBlogPosts,
-
 
   /* ------------------------------- blogs -------------------------------- */
 
@@ -109,7 +107,11 @@ const rawPostContent: Record<string, PostContent> = {
             rows: [
               ["Level", "Institution and mode", "Individual programme"],
               ["Validity", "Stated academic session", "Same session, programme-wise"],
-              ["What it proves", "The university may run online / ODL degrees", "Your specific degree is permitted"],
+              [
+                "What it proves",
+                "The university may run online / ODL degrees",
+                "Your specific degree is permitted",
+              ],
               ["Where to check", "UGC online education portal", "DEB / UGC programme list"],
             ],
           },
@@ -156,7 +158,10 @@ const rawPostContent: Record<string, PostContent> = {
             title: "Verify before you apply",
             items: [
               { label: "Compare UGC-entitled universities", href: "/universities" },
-              { label: "Are online degrees accepted for government jobs?", href: "/blogs/online-degree-government-jobs" },
+              {
+                label: "Are online degrees accepted for government jobs?",
+                href: "/blogs/online-degree-government-jobs",
+              },
             ],
           },
         ],
@@ -245,7 +250,11 @@ const rawPostContent: Record<string, PostContent> = {
               ["Tuition", "Paid per semester while earning", "Paid upfront or via education loan"],
               ["Salary foregone", "None", "Typically two years"],
               ["Relocation and living", "None", "Significant"],
-              ["Exam / convocation charges", "Usually extra, published by the university", "Usually bundled"],
+              [
+                "Exam / convocation charges",
+                "Usually extra, published by the university",
+                "Usually bundled",
+              ],
             ],
           },
           {
@@ -295,8 +304,14 @@ const rawPostContent: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Online MBA: universities, fees and specialisations", href: "/courses/online-mba" },
-              { label: "How to choose the right specialisation", href: "/blogs/choosing-specialisation" },
+              {
+                label: "Online MBA: universities, fees and specialisations",
+                href: "/courses/online-mba",
+              },
+              {
+                label: "How to choose the right specialisation",
+                href: "/blogs/choosing-specialisation",
+              },
             ],
           },
         ],
@@ -393,10 +408,26 @@ const rawPostContent: Record<string, PostContent> = {
             caption: "Common issues and how to avoid them",
             head: ["Issue", "Why it happens", "Fix"],
             rows: [
-              ["Name mismatch", "Marksheet spelling differs from Aadhaar", "Use the Class 12 spelling everywhere and carry an affidavit if they differ"],
-              ["Payment shows pending", "Gateway timeout or duplicate attempt", "Wait for the status to refresh before paying again; check your bank statement first"],
-              ["Document rejected", "Cropped, dark or oversized scan", "Rescan in colour within the portal's size limit"],
-              ["No confirmation email", "Typo in the email address", "Log back into the portal and download the confirmation from your dashboard"],
+              [
+                "Name mismatch",
+                "Marksheet spelling differs from Aadhaar",
+                "Use the Class 12 spelling everywhere and carry an affidavit if they differ",
+              ],
+              [
+                "Payment shows pending",
+                "Gateway timeout or duplicate attempt",
+                "Wait for the status to refresh before paying again; check your bank statement first",
+              ],
+              [
+                "Document rejected",
+                "Cropped, dark or oversized scan",
+                "Rescan in colour within the portal's size limit",
+              ],
+              [
+                "No confirmation email",
+                "Typo in the email address",
+                "Log back into the portal and download the confirmation from your dashboard",
+              ],
             ],
           },
         ],
@@ -446,7 +477,9 @@ const rawPostContent: Record<string, PostContent> = {
           "Re-registration windows are announced by SOL each academic year. Track the official notice board and the admission updates page rather than relying on informal groups.",
       },
     ],
-    sources: [{ label: "University of Delhi — School of Open Learning", href: "https://sol.du.ac.in/" }],
+    sources: [
+      { label: "University of Delhi — School of Open Learning", href: "https://sol.du.ac.in/" },
+    ],
     related: [
       { label: "DU SOL vs IGNOU", href: "/compare/du-sol-vs-ignou" },
       { label: "All universities", href: "/universities" },
@@ -483,10 +516,16 @@ const rawPostContent: Record<string, PostContent> = {
             caption: "Typical acceptance by recruitment stream",
             head: ["Stream", "Position on ODL / online degrees"],
             rows: [
-              ["Civil services and state PSC", "Accepted where a recognised bachelor's degree is the eligibility"],
+              [
+                "Civil services and state PSC",
+                "Accepted where a recognised bachelor's degree is the eligibility",
+              ],
               ["Banking (IBPS, SBI)", "Accepted where the notification asks for a graduate degree"],
               ["SSC posts", "Accepted for graduate-level posts on the same basis"],
-              ["PSU technical roles", "Often require a specific full-time engineering degree — check the notification"],
+              [
+                "PSU technical roles",
+                "Often require a specific full-time engineering degree — check the notification",
+              ],
               ["Teaching posts", "Depend on the professional qualification rules for that post"],
             ],
           },
@@ -527,7 +566,10 @@ const rawPostContent: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "UGC entitled vs DEB approved", href: "/blogs/ugc-entitled-vs-deb-approved" },
+              {
+                label: "UGC entitled vs DEB approved",
+                href: "/blogs/ugc-entitled-vs-deb-approved",
+              },
               { label: "Career guides", href: "/career" },
             ],
           },
@@ -589,10 +631,26 @@ const rawPostContent: Record<string, PostContent> = {
             caption: "Waiver categories commonly offered by online universities",
             head: ["Category", "Who qualifies", "How it is claimed"],
             rows: [
-              ["Merit", "Strong qualifying-exam marks", "Applied at admission on submitted marksheets"],
-              ["Defence", "Serving and ex-service personnel and dependants", "Service certificate at admission"],
-              ["Differently-abled", "Candidates with a valid disability certificate", "Certificate upload during application"],
-              ["Government employee", "Central and state employees", "Employer ID or service proof"],
+              [
+                "Merit",
+                "Strong qualifying-exam marks",
+                "Applied at admission on submitted marksheets",
+              ],
+              [
+                "Defence",
+                "Serving and ex-service personnel and dependants",
+                "Service certificate at admission",
+              ],
+              [
+                "Differently-abled",
+                "Candidates with a valid disability certificate",
+                "Certificate upload during application",
+              ],
+              [
+                "Government employee",
+                "Central and state employees",
+                "Employer ID or service proof",
+              ],
               ["Alumni", "Previous students of the same university", "Prior enrolment number"],
             ],
           },
@@ -716,12 +774,36 @@ const rawPostContent: Record<string, PostContent> = {
             caption: "How to read the usual options",
             head: ["Specialisation", "Best when", "Watch out for"],
             rows: [
-              ["Finance", "You already handle budgets, audit or accounts", "Certification expectations alongside the degree"],
-              ["Marketing", "You are moving into brand, growth or sales strategy", "Digital tool skills are assumed, not taught in depth"],
-              ["Human resources", "You want a generalist people-function path", "Compliance knowledge matters as much as theory"],
-              ["Operations / supply chain", "You work in manufacturing, logistics or service delivery", "Quantitative load is heavier than it looks"],
-              ["Business analytics", "You want a data-facing role and can invest in tools", "Curriculum depth varies widely between universities"],
-              ["IT / systems", "You are a technologist moving into management", "Overlap with your existing skills may add little"],
+              [
+                "Finance",
+                "You already handle budgets, audit or accounts",
+                "Certification expectations alongside the degree",
+              ],
+              [
+                "Marketing",
+                "You are moving into brand, growth or sales strategy",
+                "Digital tool skills are assumed, not taught in depth",
+              ],
+              [
+                "Human resources",
+                "You want a generalist people-function path",
+                "Compliance knowledge matters as much as theory",
+              ],
+              [
+                "Operations / supply chain",
+                "You work in manufacturing, logistics or service delivery",
+                "Quantitative load is heavier than it looks",
+              ],
+              [
+                "Business analytics",
+                "You want a data-facing role and can invest in tools",
+                "Curriculum depth varies widely between universities",
+              ],
+              [
+                "IT / systems",
+                "You are a technologist moving into management",
+                "Overlap with your existing skills may add little",
+              ],
             ],
           },
         ],
@@ -838,16 +920,21 @@ const rawPostContent: Record<string, PostContent> = {
       },
       {
         question: "Where is the official list published?",
-        answer: "On the UGC Distance Education Bureau's online education portal, institution by institution.",
+        answer:
+          "On the UGC Distance Education Bureau's online education portal, institution by institution.",
       },
       {
         question: "How often is the list updated?",
-        answer: "Entitlement is reviewed each academic session, with interim updates as institutions are added or amended.",
+        answer:
+          "Entitlement is reviewed each academic session, with interim updates as institutions are added or amended.",
       },
     ],
     sources: [{ label: "UGC DEB online education portal", href: "https://deb.ugc.ac.in/" }],
     related: [
-      { label: "UGC entitled vs DEB approved explained", href: "/blogs/ugc-entitled-vs-deb-approved" },
+      {
+        label: "UGC entitled vs DEB approved explained",
+        href: "/blogs/ugc-entitled-vs-deb-approved",
+      },
       { label: "Browse entitled universities", href: "/universities" },
     ],
   },
@@ -909,7 +996,8 @@ const rawPostContent: Record<string, PostContent> = {
       },
       {
         question: "Where can I see current deadlines?",
-        answer: "Track the admission updates page on this site and confirm against the university's official notice.",
+        answer:
+          "Track the admission updates page on this site and confirm against the university's official notice.",
       },
     ],
     related: [
@@ -946,10 +1034,19 @@ const rawPostContent: Record<string, PostContent> = {
             caption: "Questions worth asking before you enrol",
             head: ["Question", "Why it matters"],
             rows: [
-              ["How many electives form the specialisation?", "Two papers is exposure; four or more is depth"],
-              ["Which tools are taught?", "Spreadsheet-only coverage will not support an analytics role"],
+              [
+                "How many electives form the specialisation?",
+                "Two papers is exposure; four or more is depth",
+              ],
+              [
+                "Which tools are taught?",
+                "Spreadsheet-only coverage will not support an analytics role",
+              ],
               ["Is there a capstone project?", "Portfolio evidence is what recruiters ask to see"],
-              ["Is the specialisation listed for this session?", "Newly launched tracks must appear in the official listing"],
+              [
+                "Is the specialisation listed for this session?",
+                "Newly launched tracks must appear in the official listing",
+              ],
             ],
           },
           {

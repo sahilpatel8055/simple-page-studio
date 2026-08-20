@@ -14,7 +14,9 @@ export const Route = createFileRoute("/career/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Career guide unavailable" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [{ title: "Career guide unavailable" }, { name: "robots", content: "noindex" }],
+      };
     }
     const { item } = loaderData;
     const path = `/career/${item.slug}`;
@@ -52,11 +54,15 @@ function Page() {
     >
       <div className="grid gap-3 sm:grid-cols-2">
         <div className="surface-card p-5">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Salary range</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            Salary range
+          </p>
           <p className="mt-1.5 text-base font-bold text-foreground">{item.salaryRange}</p>
         </div>
         <div className="surface-card p-5">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Field</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            Field
+          </p>
           <p className="mt-1.5 text-base font-bold text-foreground">{item.field}</p>
         </div>
       </div>

@@ -66,7 +66,11 @@ export interface GapReport {
 }
 
 const has = (v: unknown): boolean =>
-  Array.isArray(v) ? v.length > 0 : typeof v === "string" ? v.trim().length > 0 : v !== null && v !== undefined;
+  Array.isArray(v)
+    ? v.length > 0
+    : typeof v === "string"
+      ? v.trim().length > 0
+      : v !== null && v !== undefined;
 
 const cov = (topic: AuditTopic, value: unknown, source: string): TopicCoverage =>
   has(value) ? { topic, covered: true, source } : { topic, covered: false, source: "" };
@@ -82,22 +86,48 @@ export function offeringGapReport(universitySlug: string, programmeSlug: string)
   const course = getCourseMaster(programmeSlug);
   const info = getCourseInfo(universitySlug, programmeSlug);
   const uniInfo = getUniversityInfo(universitySlug);
-  const specs = offer.specialisations.length ? offer.specialisations : listSpecialisations(programmeSlug).map((s) => s.slug);
+  const specs = offer.specialisations.length
+    ? offer.specialisations
+    : listSpecialisations(programmeSlug).map((s) => s.slug);
 
   const coverage: TopicCoverage[] = [
     cov("fees", offer.fee.total ?? offer.fee.perSemester ?? offer.fee.perYear, "offerings.fee"),
-    cov("eligibility", master.eligibility ?? p.eligibility, "research.eligibility / programme.eligibility"),
+    cov(
+      "eligibility",
+      master.eligibility ?? p.eligibility,
+      "research.eligibility / programme.eligibility",
+    ),
     cov("admission", u.admissionProcess, "university.admissionProcess"),
     cov("duration", offer.durationLabel || course?.duration, "offerings.durationLabel"),
     cov("syllabus", course?.semesters, "curriculum.semesters"),
-    cov("subjects", course?.semesters?.flatMap((s) => s.subjects), "curriculum.semesters[].subjects"),
+    cov(
+      "subjects",
+      course?.semesters?.flatMap((s) => s.subjects),
+      "curriculum.semesters[].subjects",
+    ),
     cov("specialisations", specs, "offerings.specialisations"),
     cov("scholarships", master.scholarships ?? master.scholarshipNote, "research.scholarships"),
     cov("examination", master.examPattern ?? u.examPattern, "research.examPattern"),
-    cov("learningModel", info?.exam_pattern?.course_specific_override?.mode ?? uniInfo?.exam?.mode, "insights.exam.mode (delivery)"),
-    cov("placement", offer.placement?.supportAvailable ? "yes" : offer.placement?.note, "offerings.placement"),
-    cov("career", info?.career_opportunities?.roles ?? uniInfo?.career?.roles ?? p.whoIsItFor, "insights.career_opportunities"),
-    cov("salary", offer.placement?.averagePackage ?? offer.placement?.highestPackage, "offerings.placement.packages"),
+    cov(
+      "learningModel",
+      info?.exam_pattern?.course_specific_override?.mode ?? uniInfo?.exam?.mode,
+      "insights.exam.mode (delivery)",
+    ),
+    cov(
+      "placement",
+      offer.placement?.supportAvailable ? "yes" : offer.placement?.note,
+      "offerings.placement",
+    ),
+    cov(
+      "career",
+      info?.career_opportunities?.roles ?? uniInfo?.career?.roles ?? p.whoIsItFor,
+      "insights.career_opportunities",
+    ),
+    cov(
+      "salary",
+      offer.placement?.averagePackage ?? offer.placement?.highestPackage,
+      "offerings.placement.packages",
+    ),
     cov("recruiters", offer.placement?.recruiters, "offerings.placement.recruiters"),
     cov("internships", undefined, "needs official internship/industry-project page"),
     cov("projects", undefined, "needs official capstone/project documentation"),
@@ -105,8 +135,18 @@ export function offeringGapReport(universitySlug: string, programmeSlug: string)
     cov("prosCons", u.pros.length && u.cons.length ? "yes" : "", "university.pros/cons"),
     cov("whoShouldChoose", p.whoIsItFor, "programme.whoIsItFor"),
     cov("whoShouldAvoid", u.cons, "university.cons"),
-    cov("comparison", listOfferingsByProgramme(programmeSlug).length > 1 ? "yes" : "", "comparison engine"),
-    cov("faqs", articles.filter((a) => a.tags.some((t) => t.toLowerCase().includes(p.shortName.toLowerCase()))), "editorial cluster"),
+    cov(
+      "comparison",
+      listOfferingsByProgramme(programmeSlug).length > 1 ? "yes" : "",
+      "comparison engine",
+    ),
+    cov(
+      "faqs",
+      articles.filter((a) =>
+        a.tags.some((t) => t.toLowerCase().includes(p.shortName.toLowerCase())),
+      ),
+      "editorial cluster",
+    ),
   ];
 
   return finalise({
@@ -124,34 +164,95 @@ export function pillarGapReport(programmeSlug: string): GapReport | null {
   const offers = listOfferingsByProgramme(programmeSlug);
   const course = getCourseMaster(programmeSlug);
   const specs = listSpecialisations(programmeSlug);
-  const related = articles.filter((a) => a.tags.some((t) => t.toLowerCase().includes(p.shortName.toLowerCase())));
+  const related = articles.filter((a) =>
+    a.tags.some((t) => t.toLowerCase().includes(p.shortName.toLowerCase())),
+  );
 
   const coverage: TopicCoverage[] = [
     cov("fees", offers.filter((o) => o.fee.total).length ? "yes" : "", "offerings fee spread"),
     cov("eligibility", p.eligibility, "programme.eligibility"),
-    cov("admission", offers.some((o) => getUniversity(o.universitySlug)?.admissionProcess.length) ? "yes" : "", "university.admissionProcess"),
+    cov(
+      "admission",
+      offers.some((o) => getUniversity(o.universitySlug)?.admissionProcess.length) ? "yes" : "",
+      "university.admissionProcess",
+    ),
     cov("duration", p.durationYears ? String(p.durationYears) : "", "programme.durationYears"),
     cov("syllabus", course?.semesters, "curriculum.semesters"),
-    cov("subjects", course?.semesters?.flatMap((s) => s.subjects), "curriculum subjects"),
+    cov(
+      "subjects",
+      course?.semesters?.flatMap((s) => s.subjects),
+      "curriculum subjects",
+    ),
     cov("specialisations", specs, "specialisations dataset"),
-    cov("scholarships", offers.map((o) => o.universitySlug).filter((s) => getUniversityCourse(s, programmeSlug).scholarships), "research.scholarships"),
-    cov("examination", offers.map((o) => o.universitySlug).filter((s) => getUniversityCourse(s, programmeSlug).examPattern), "research.examPattern"),
-    cov("learningModel", offers.map((o) => getCourseInfo(o.universitySlug, programmeSlug)?.exam_pattern?.course_specific_override?.mode).filter(Boolean), "insights.exam.mode (delivery)"),
+    cov(
+      "scholarships",
+      offers
+        .map((o) => o.universitySlug)
+        .filter((s) => getUniversityCourse(s, programmeSlug).scholarships),
+      "research.scholarships",
+    ),
+    cov(
+      "examination",
+      offers
+        .map((o) => o.universitySlug)
+        .filter((s) => getUniversityCourse(s, programmeSlug).examPattern),
+      "research.examPattern",
+    ),
+    cov(
+      "learningModel",
+      offers
+        .map(
+          (o) =>
+            getCourseInfo(o.universitySlug, programmeSlug)?.exam_pattern?.course_specific_override
+              ?.mode,
+        )
+        .filter(Boolean),
+      "insights.exam.mode (delivery)",
+    ),
     cov("placement", offers.filter((o) => o.placement).length ? "yes" : "", "offerings.placement"),
-    cov("career", specs.flatMap((s) => s.careerPaths), "specialisation.careerPaths"),
-    cov("salary", offers.map((o) => o.placement?.averagePackage).filter(Boolean), "offerings.placement.packages"),
-    cov("recruiters", offers.flatMap((o) => o.placement?.recruiters ?? []), "offerings.placement.recruiters"),
+    cov(
+      "career",
+      specs.flatMap((s) => s.careerPaths),
+      "specialisation.careerPaths",
+    ),
+    cov(
+      "salary",
+      offers.map((o) => o.placement?.averagePackage).filter(Boolean),
+      "offerings.placement.packages",
+    ),
+    cov(
+      "recruiters",
+      offers.flatMap((o) => o.placement?.recruiters ?? []),
+      "offerings.placement.recruiters",
+    ),
     cov("internships", undefined, "needs official internship/industry-project page"),
     cov("projects", undefined, "needs official capstone/project documentation"),
-    cov("studentSupport", offers.map((o) => getUniversityInfo(o.universitySlug)?.admission?.mode).filter(Boolean), "needs official learner-support page"),
-    cov("prosCons", offers.filter((o) => getUniversity(o.universitySlug)?.pros.length).length ? "yes" : "", "university.pros/cons"),
+    cov(
+      "studentSupport",
+      offers.map((o) => getUniversityInfo(o.universitySlug)?.admission?.mode).filter(Boolean),
+      "needs official learner-support page",
+    ),
+    cov(
+      "prosCons",
+      offers.filter((o) => getUniversity(o.universitySlug)?.pros.length).length ? "yes" : "",
+      "university.pros/cons",
+    ),
     cov("whoShouldChoose", p.whoIsItFor, "programme.whoIsItFor"),
-    cov("whoShouldAvoid", offers.flatMap((o) => getUniversity(o.universitySlug)?.cons ?? []), "university.cons"),
+    cov(
+      "whoShouldAvoid",
+      offers.flatMap((o) => getUniversity(o.universitySlug)?.cons ?? []),
+      "university.cons",
+    ),
     cov("comparison", offers.length > 1 ? "yes" : "", "comparison engine"),
     cov("faqs", related, "editorial cluster"),
   ];
 
-  return finalise({ path: `/courses/${programmeSlug}`, label: p.name, pageType: "coursePillar", coverage });
+  return finalise({
+    path: `/courses/${programmeSlug}`,
+    label: p.name,
+    pageType: "coursePillar",
+    coverage,
+  });
 }
 
 function finalise(r: Omit<GapReport, "gaps" | "coveredCount" | "score">): GapReport {
@@ -180,5 +281,7 @@ export function siteGapReports(): GapReport[] {
 export function topicGapFrequency(reports = siteGapReports()) {
   const counts = new Map<AuditTopic, number>();
   for (const r of reports) for (const g of r.gaps) counts.set(g, (counts.get(g) ?? 0) + 1);
-  return [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([topic, missing]) => ({ topic, missing }));
+  return [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([topic, missing]) => ({ topic, missing }));
 }

@@ -45,7 +45,8 @@ export const Route = createFileRoute("/courses/$course/")({
     if (family) return { kind: "family" as const, name: family.family.name };
     // Every other course slug rolls up to its "Online X" pillar page.
     const rollup = familyForProgrammeSlug(params.course);
-    if (rollup) throw redirect({ to: "/courses/$course", params: { course: rollup.slug }, statusCode: 301 });
+    if (rollup)
+      throw redirect({ to: "/courses/$course", params: { course: rollup.slug }, statusCode: 301 });
     const profile = programmeProfile(params.course);
     if (!profile) {
       throw notFound();
@@ -53,7 +54,11 @@ export const Route = createFileRoute("/courses/$course/")({
     // One canonical pillar per programme name — duplicates 301 instead of competing.
     const canonicalSlug = canonicalProgrammeSlug(params.course);
     if (canonicalSlug !== params.course) {
-      throw redirect({ to: "/courses/$course", params: { course: canonicalSlug }, statusCode: 301 });
+      throw redirect({
+        to: "/courses/$course",
+        params: { course: canonicalSlug },
+        statusCode: 301,
+      });
     }
 
     const p = profile.record;
@@ -117,7 +122,8 @@ export const Route = createFileRoute("/courses/$course/")({
     // Pillar owns the head term ("online <course>"); fee/admission specifics are
     // owned by each university + course page (src/lib/intentMap.ts).
     const ctr = pillarCtrMeta(params.course);
-    const title = ctr?.title ?? `${loaderData.name} in India 2026: Universities, Fee Range & How to Choose`;
+    const title =
+      ctr?.title ?? `${loaderData.name} in India 2026: Universities, Fee Range & How to Choose`;
     const description =
       ctr?.description ??
       `${loaderData.name} in India — ${loaderData.durationYears}-year ${loaderData.level} degree, ${loaderData.feeRangeLabel} fee range, ${loaderData.providers} universities compared, specialisations, eligibility and career scope.`;

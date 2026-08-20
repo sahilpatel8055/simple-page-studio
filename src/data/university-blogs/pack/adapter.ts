@@ -99,12 +99,17 @@ export function fromPack(entries: PackEntry[], label: string): PackOutput {
     variants[slug] = entry.variant;
     if (entry.course) courses[slug] = entry.course;
 
-    const sections = entry.post.sections.map((s) => ({ heading: s.heading, blocks: [...s.blocks] }));
+    const sections = entry.post.sections.map((s) => ({
+      heading: s.heading,
+      blocks: [...s.blocks],
+    }));
     const links = linksFor(entry);
     const tail = sections[sections.length - 1];
     if (tail) {
       if (links) tail.blocks.push(links);
-      tail.blocks.push(ctaFor(entry.variant, entry.course ? entry.article.title.split(":")[0]! : label));
+      tail.blocks.push(
+        ctaFor(entry.variant, entry.course ? entry.article.title.split(":")[0]! : label),
+      );
     }
 
     const content: PostContent = {

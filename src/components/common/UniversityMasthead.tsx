@@ -10,7 +10,10 @@ export function UniversityMasthead({ university }: { university: University }) {
   const campus = campusImage(university.slug);
 
   return (
-    <section id="key-highlights" className="scroll-mt-36 overflow-hidden rounded-2xl border border-border bg-card">
+    <section
+      id="key-highlights"
+      className="scroll-mt-36 overflow-hidden rounded-2xl border border-border bg-card"
+    >
       {campus && (
         <img
           src={campus}
@@ -35,7 +38,9 @@ export function UniversityMasthead({ university }: { university: University }) {
           )}
         </span>
         <div className="min-w-0">
-          <p className="truncate font-display text-base font-extrabold sm:text-xl">{university.name}</p>
+          <p className="truncate font-display text-base font-extrabold sm:text-xl">
+            {university.name}
+          </p>
           <p className="text-xs text-muted-foreground sm:text-sm">
             {[
               [university.city, university.state].filter(Boolean).join(", "),
@@ -57,7 +62,12 @@ export function UniversityMasthead({ university }: { university: University }) {
               className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-2.5 py-1.5"
             >
               {icon && (
-                <img src={icon} alt="" aria-hidden="true" className="h-6 w-auto max-w-10 object-contain" />
+                <img
+                  src={icon}
+                  alt=""
+                  aria-hidden="true"
+                  className="h-6 w-auto max-w-10 object-contain"
+                />
               )}
               <span className="text-[0.72rem] font-bold sm:text-xs" title={a.status}>
                 {a.body}

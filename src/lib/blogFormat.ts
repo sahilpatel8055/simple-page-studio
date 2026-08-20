@@ -52,7 +52,9 @@ function getIndex(): UniIndex[] {
 export function universitySlugForLabel(label: string): string | undefined {
   const key = norm(label);
   if (!key || key.length < 3) return undefined;
-  const hit = getIndex().find((u) => u.keys.some((k) => k && (k === key || k.includes(key) || key.includes(k))));
+  const hit = getIndex().find((u) =>
+    u.keys.some((k) => k && (k === key || k.includes(key) || key.includes(k))),
+  );
   return hit?.slug;
 }
 

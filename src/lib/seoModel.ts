@@ -87,7 +87,10 @@ export function universityHubSeo(slug: string): SeoRecord | null {
   };
 }
 
-export function universityCourseSeo(universitySlug: string, programmeSlug: string): SeoRecord | null {
+export function universityCourseSeo(
+  universitySlug: string,
+  programmeSlug: string,
+): SeoRecord | null {
   const u = getUniversity(universitySlug);
   const p = getProgramme(programmeSlug);
   const offer = getOffering(universitySlug, programmeSlug);
@@ -144,7 +147,9 @@ export function coursePillarSeo(programmeSlug: string): SeoRecord | null {
     ],
     internalLinks: [
       "/courses",
-      ...offers.slice(0, 8).map((o) => `/universities/${o.universitySlug}/courses/${programmeSlug}`),
+      ...offers
+        .slice(0, 8)
+        .map((o) => `/universities/${o.universitySlug}/courses/${programmeSlug}`),
       `/compare/${canonicalSlug}`,
     ],
     contentCluster: `course:${canonicalSlug}`,
@@ -172,7 +177,10 @@ export function specialisationSeo(programmeSlug: string, specSlug: string): SeoR
     schemaType: ["Course", "BreadcrumbList"],
     parentPage: `/courses/${programmeSlug}`,
     childPages: [],
-    internalLinks: [`/courses/${programmeSlug}`, `/compare/${canonicalProgrammeSlug(programmeSlug)}`],
+    internalLinks: [
+      `/courses/${programmeSlug}`,
+      `/compare/${canonicalProgrammeSlug(programmeSlug)}`,
+    ],
     contentCluster: `course:${canonicalProgrammeSlug(programmeSlug)}`,
     priority: "P2",
   };

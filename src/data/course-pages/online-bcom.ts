@@ -195,25 +195,75 @@ export const onlineBcomContent: CourseContent = {
     "Assessment weighting between internal work and the term-end examination, the proctoring method, and re-attempt rules are university-specific and can change between sessions.",
 
   specialisationGuide: [
-    { goal: "Financial reporting, book-keeping or controllership roles", specialisation: "Accounting & Finance" },
+    {
+      goal: "Financial reporting, book-keeping or controllership roles",
+      specialisation: "Accounting & Finance",
+    },
     { goal: "Tax practice, compliance or working toward CA/CMA", specialisation: "Taxation" },
-    { goal: "Retail banking, credit or insurance operations", specialisation: "Banking & Insurance" },
+    {
+      goal: "Retail banking, credit or insurance operations",
+      specialisation: "Banking & Insurance",
+    },
     { goal: "Data-led financial reporting and dashboards", specialisation: "Financial Analytics" },
-    { goal: "Cross-border trade, forex and export-import operations", specialisation: "International Finance" },
-    { goal: "Online retail, digital payments and platform business roles", specialisation: "E-commerce / Digital Business" },
+    {
+      goal: "Cross-border trade, forex and export-import operations",
+      specialisation: "International Finance",
+    },
+    {
+      goal: "Online retail, digital payments and platform business roles",
+      specialisation: "E-commerce / Digital Business",
+    },
   ],
 
   careers: [
-    { title: "Accountant", detail: "Maintains books of account, ledgers and financial statements for a business or client portfolio." },
-    { title: "Tax Consultant / Tax Assistant", detail: "Prepares returns, supports compliance filings and assists with GST and income-tax work." },
-    { title: "Auditing Assistant", detail: "Supports statutory or internal audit teams with vouching, verification and documentation." },
-    { title: "Accounts Executive", detail: "Manages accounts payable, receivable, reconciliations and vendor payments." },
-    { title: "Banking Associate", detail: "Handles retail banking operations, loan processing or customer accounts at a bank branch or back office." },
-    { title: "Financial Analyst", detail: "Reads financial statements, builds basic models and supports budgeting and forecasting work." },
-    { title: "Insurance Advisor / Operations Executive", detail: "Supports policy issuance, claims processing or advisory work in an insurance business." },
-    { title: "GST Practitioner", detail: "Assists businesses with indirect-tax registration, return filing and reconciliation." },
-    { title: "Business Development Executive", detail: "Supports client acquisition and account management in a finance-adjacent business." },
-    { title: "Further study toward CA, CS, CMA or an M.Com/MBA", detail: "Uses the degree as the graduation requirement while continuing a professional qualification." },
+    {
+      title: "Accountant",
+      detail:
+        "Maintains books of account, ledgers and financial statements for a business or client portfolio.",
+    },
+    {
+      title: "Tax Consultant / Tax Assistant",
+      detail:
+        "Prepares returns, supports compliance filings and assists with GST and income-tax work.",
+    },
+    {
+      title: "Auditing Assistant",
+      detail:
+        "Supports statutory or internal audit teams with vouching, verification and documentation.",
+    },
+    {
+      title: "Accounts Executive",
+      detail: "Manages accounts payable, receivable, reconciliations and vendor payments.",
+    },
+    {
+      title: "Banking Associate",
+      detail:
+        "Handles retail banking operations, loan processing or customer accounts at a bank branch or back office.",
+    },
+    {
+      title: "Financial Analyst",
+      detail:
+        "Reads financial statements, builds basic models and supports budgeting and forecasting work.",
+    },
+    {
+      title: "Insurance Advisor / Operations Executive",
+      detail:
+        "Supports policy issuance, claims processing or advisory work in an insurance business.",
+    },
+    {
+      title: "GST Practitioner",
+      detail:
+        "Assists businesses with indirect-tax registration, return filing and reconciliation.",
+    },
+    {
+      title: "Business Development Executive",
+      detail: "Supports client acquisition and account management in a finance-adjacent business.",
+    },
+    {
+      title: "Further study toward CA, CS, CMA or an M.Com/MBA",
+      detail:
+        "Uses the degree as the graduation requirement while continuing a professional qualification.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
@@ -291,7 +341,7 @@ export const onlineBcomContent: CourseContent = {
     {
       question: "How much does an Online B.Com cost?",
       answer:
-        "Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "How do I get admission to an Online B.Com?",

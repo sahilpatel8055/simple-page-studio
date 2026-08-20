@@ -68,7 +68,8 @@ function toUniversity(u: UniversityRecordJson): University {
     verified: (u.data_status ?? "").startsWith("verified_official"),
     lastUpdated: u.last_verified ?? "",
   };
-  if (u.basic_information.established_year) record.establishedYear = u.basic_information.established_year;
+  if (u.basic_information.established_year)
+    record.establishedYear = u.basic_information.established_year;
   const site = u.basic_information.official_online_portal ?? u.basic_information.official_website;
   if (site) record.websiteUrl = site;
   const apply = u.admissions.application_url ?? u.basic_information.official_admission_portal;

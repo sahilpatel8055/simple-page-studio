@@ -10,8 +10,6 @@ function nextMidnight(now = Date.now()) {
   return d.getTime();
 }
 
-
-
 /** Fixed 3-day admission cycle anchored to a stable epoch, in the user's local time. */
 const CYCLE_DAYS = 3;
 const ANCHOR = new Date(2026, 0, 1).getTime();
@@ -22,15 +20,25 @@ function nextDeadline(now = Date.now()) {
   midnight.setHours(0, 0, 0, 0);
   const dayMs = 86400000;
   const daysSinceAnchor = Math.floor((midnight.getTime() - ANCHOR) / dayMs);
-  const offset = ((CYCLE_DAYS - (daysSinceAnchor % CYCLE_DAYS)) % CYCLE_DAYS) || CYCLE_DAYS;
+  const offset = (CYCLE_DAYS - (daysSinceAnchor % CYCLE_DAYS)) % CYCLE_DAYS || CYCLE_DAYS;
   return midnight.getTime() + offset * dayMs;
 }
 
 const pad = (n: number) => String(n).padStart(2, "0");
 
 const MONTHS = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 export function AdmissionPopup({ onClose }: { onClose: () => void }) {
@@ -130,7 +138,9 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
                 ].map((u, i) => (
                   <div key={u.l} className="flex items-center gap-1.5 sm:gap-2">
                     {i > 0 && (
-                      <span className="animate-pulse text-base font-extrabold text-[#7f1813]">:</span>
+                      <span className="animate-pulse text-base font-extrabold text-[#7f1813]">
+                        :
+                      </span>
                     )}
                     <div className="relative min-w-[2.6rem] overflow-hidden rounded-xl bg-gradient-to-b from-[#a11f19] to-[#69100c] px-2 py-1 text-center text-white shadow-lg ring-1 ring-white/15 sm:min-w-[3rem] sm:py-1.5">
                       <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-white/12" />
@@ -182,7 +192,8 @@ export function AdmissionPopup({ onClose }: { onClose: () => void }) {
               }}
               className="flex h-11 items-center justify-center gap-2 rounded-xl border border-[#7f1813]/25 bg-white text-[0.9rem] font-bold text-[#7f1813]"
             >
-              <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> Get fees on WhatsApp
+              <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> Get fees on
+              WhatsApp
             </a>
           </div>
         </div>

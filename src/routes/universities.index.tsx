@@ -26,7 +26,11 @@ export const Route = createFileRoute("/universities/")({
       title,
       description,
       path,
-      keywords: ["online universities in India", "UGC entitled universities", "distance education universities"],
+      keywords: [
+        "online universities in India",
+        "UGC entitled universities",
+        "distance education universities",
+      ],
     }),
     links: canonical(path),
     scripts: [
@@ -38,7 +42,12 @@ export const Route = createFileRoute("/universities/")({
           "Online and distance universities",
         ),
       ),
-      jsonLd(breadcrumbSchema([{ name: "Home", href: "/" }, { name: "Universities", href: path }])),
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", href: "/" },
+          { name: "Universities", href: path },
+        ]),
+      ),
     ],
   }),
   component: Page,

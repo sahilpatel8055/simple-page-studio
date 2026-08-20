@@ -28,7 +28,10 @@ export function UniversityCompareBoard() {
   const [query, setQuery] = useState("");
 
   const chosen = useMemo(
-    () => selected.map((s) => universe.find((u) => u.slug === s)).filter(Boolean) as CompareUniversity[],
+    () =>
+      selected
+        .map((s) => universe.find((u) => u.slug === s))
+        .filter(Boolean) as CompareUniversity[],
     [selected, universe],
   );
 
@@ -60,7 +63,10 @@ export function UniversityCompareBoard() {
   return (
     <div className="space-y-8">
       {/* ---------------------------- selection ---------------------------- */}
-      <section aria-labelledby="selection-heading" className="rounded-2xl border border-border bg-card p-4 sm:p-6">
+      <section
+        aria-labelledby="selection-heading"
+        className="rounded-2xl border border-border bg-card p-4 sm:p-6"
+      >
         <h2 id="selection-heading" className="text-lg font-bold sm:text-xl">
           Select universities
         </h2>
@@ -131,7 +137,9 @@ export function UniversityCompareBoard() {
                 </li>
               ))}
               {results.length === 0 && (
-                <li className="px-2.5 py-3 text-sm text-muted-foreground">No universities match that search.</li>
+                <li className="px-2.5 py-3 text-sm text-muted-foreground">
+                  No universities match that search.
+                </li>
               )}
             </ul>
           </div>
@@ -151,7 +159,9 @@ export function UniversityCompareBoard() {
           Compare {canCompare ? `(${chosen.length})` : ""}
         </button>
         {!canCompare && (
-          <p className="mt-2 text-xs text-muted-foreground">Select at least 2 universities to compare.</p>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Select at least 2 universities to compare.
+          </p>
         )}
       </section>
 
@@ -178,7 +188,10 @@ export function UniversityCompareBoard() {
           )}
 
           {/* --------------------------- comparison ------------------------ */}
-          <section aria-labelledby="comparison-heading" className="overflow-hidden rounded-2xl border border-border bg-card">
+          <section
+            aria-labelledby="comparison-heading"
+            className="overflow-hidden rounded-2xl border border-border bg-card"
+          >
             <h2 id="comparison-heading" className="sr-only">
               Side-by-side comparison
             </h2>
@@ -223,7 +236,8 @@ export function UniversityCompareBoard() {
           <section className="rounded-2xl border border-border bg-brand-soft/30 p-4 sm:p-6">
             <h2 className="text-lg font-bold sm:text-xl">Ready to choose?</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Open a full university profile, or talk to an DegreeKhojo counsellor about the shortlist.
+              Open a full university profile, or talk to an DegreeKhojo counsellor about the
+              shortlist.
             </p>
             <div className="mt-4 flex flex-wrap gap-2.5">
               {chosen.map((u) => (
@@ -309,7 +323,12 @@ function UniLogo({ u, className }: { u: CompareUniversity; className?: string })
       )}
     >
       {logo ? (
-        <img src={logo} alt="" aria-hidden="true" className="max-h-full max-w-full object-contain" />
+        <img
+          src={logo}
+          alt=""
+          aria-hidden="true"
+          className="max-h-full max-w-full object-contain"
+        />
       ) : (
         <span className="text-[0.6rem] font-extrabold text-brand">{u.shortName.slice(0, 3)}</span>
       )}

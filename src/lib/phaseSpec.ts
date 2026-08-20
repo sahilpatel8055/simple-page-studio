@@ -50,7 +50,14 @@ export function universitySpec(slug: string): UniversitySpec | undefined {
 }
 
 export const universityPageSections = (
-  phase2 as { new_sections_to_add_to_every_university_page: Array<{ section: string; purpose?: string; content?: string; fields?: string[] }> }
+  phase2 as {
+    new_sections_to_add_to_every_university_page: Array<{
+      section: string;
+      purpose?: string;
+      content?: string;
+      fields?: string[];
+    }>;
+  }
 ).new_sections_to_add_to_every_university_page;
 
 export function universitySection(name: string) {
@@ -59,17 +66,29 @@ export function universitySection(name: string) {
 
 /** Fields Phase 1 flagged as missing/empty for a university. */
 export function universityGaps(slug: string): string[] {
-  const rows = (phase1 as { university_missing_content: Array<{ slug: string; missing_or_empty_fields: string[] }> })
-    .university_missing_content;
+  const rows = (
+    phase1 as {
+      university_missing_content: Array<{ slug: string; missing_or_empty_fields: string[] }>;
+    }
+  ).university_missing_content;
   return rows.find((r) => r.slug === slug)?.missing_or_empty_fields ?? [];
 }
 
 /** Official source registry entries for a university. */
 export function universitySources(slug: string) {
   const rows = (
-    phase1 as { research_source_registry: Array<{ university: string; source_type: string; url: string; research_note?: string }> }
+    phase1 as {
+      research_source_registry: Array<{
+        university: string;
+        source_type: string;
+        url: string;
+        research_note?: string;
+      }>;
+    }
   ).research_source_registry;
-  return rows.filter((r) => r.university === slug || r.university.toLowerCase().includes(slug.split("-")[0] ?? ""));
+  return rows.filter(
+    (r) => r.university === slug || r.university.toLowerCase().includes(slug.split("-")[0] ?? ""),
+  );
 }
 
 /* ---------- course family / pillar ---------- */
@@ -102,13 +121,16 @@ export interface CourseFamilySpec {
 }
 
 export function courseFamilySpec(slug: string): CourseFamilySpec | undefined {
-  return (phase3 as { course_family_content: Record<string, CourseFamilySpec> }).course_family_content[slug];
+  return (phase3 as { course_family_content: Record<string, CourseFamilySpec> })
+    .course_family_content[slug];
 }
 
-export const universalCourseBlocks = (phase3 as { universal_content_blocks: Record<string, string> })
-  .universal_content_blocks;
+export const universalCourseBlocks = (
+  phase3 as { universal_content_blocks: Record<string, string> }
+).universal_content_blocks;
 
-export const universityCourseSections = (phase3 as { required_sections: string[] }).required_sections;
+export const universityCourseSections = (phase3 as { required_sections: string[] })
+  .required_sections;
 
 /* ---------- comparison ---------- */
 

@@ -184,26 +184,71 @@ export const onlineBaContent: CourseContent = {
 
   specialisationGuide: [
     { goal: "Writing, editing, publishing and content roles", specialisation: "English" },
-    { goal: "Civil services, policy and public-sector careers", specialisation: "Political Science" },
+    {
+      goal: "Civil services, policy and public-sector careers",
+      specialisation: "Political Science",
+    },
     { goal: "Social work, NGOs and community development", specialisation: "Sociology" },
     { goal: "Counselling, HR and behavioural-research roles", specialisation: "Psychology" },
     { goal: "Research, archives, teaching and heritage work", specialisation: "History" },
     { goal: "Banking, finance and policy-analysis roles", specialisation: "Economics" },
-    { goal: "Government administration and public-sector management", specialisation: "Public Administration" },
-    { goal: "Media, reporting and digital-content careers", specialisation: "Journalism & Mass Communication" },
+    {
+      goal: "Government administration and public-sector management",
+      specialisation: "Public Administration",
+    },
+    {
+      goal: "Media, reporting and digital-content careers",
+      specialisation: "Journalism & Mass Communication",
+    },
   ],
 
   careers: [
-    { title: "Content Writer / Editor", detail: "Produces and refines written material for publications, brands or digital platforms." },
-    { title: "Social Worker", detail: "Works with communities and organisations on welfare, outreach and rehabilitation programmes." },
-    { title: "Teacher / Tutor", detail: "Teaches at the school level or coaches learners, often after a further teaching qualification." },
-    { title: "Journalist", detail: "Reports, researches and writes for print, broadcast or digital news outlets." },
-    { title: "HR / Administrative Assistant", detail: "Supports recruitment, onboarding, records and day-to-day office administration." },
-    { title: "Public Relations Executive", detail: "Manages an organisation's messaging, media relations and public image." },
-    { title: "Research Assistant", detail: "Supports data collection, literature review and documentation for academic or policy research." },
-    { title: "Government Job Aspirant Roles", detail: "Satisfies the bachelor's-degree eligibility for civil-service, banking, defence and state-level examinations." },
-    { title: "Customer Relationship Executive", detail: "Handles client communication, service queries and account coordination." },
-    { title: "Counsellor (with further training)", detail: "Provides guidance and support, typically after an additional diploma or PG qualification in counselling." },
+    {
+      title: "Content Writer / Editor",
+      detail:
+        "Produces and refines written material for publications, brands or digital platforms.",
+    },
+    {
+      title: "Social Worker",
+      detail:
+        "Works with communities and organisations on welfare, outreach and rehabilitation programmes.",
+    },
+    {
+      title: "Teacher / Tutor",
+      detail:
+        "Teaches at the school level or coaches learners, often after a further teaching qualification.",
+    },
+    {
+      title: "Journalist",
+      detail: "Reports, researches and writes for print, broadcast or digital news outlets.",
+    },
+    {
+      title: "HR / Administrative Assistant",
+      detail: "Supports recruitment, onboarding, records and day-to-day office administration.",
+    },
+    {
+      title: "Public Relations Executive",
+      detail: "Manages an organisation's messaging, media relations and public image.",
+    },
+    {
+      title: "Research Assistant",
+      detail:
+        "Supports data collection, literature review and documentation for academic or policy research.",
+    },
+    {
+      title: "Government Job Aspirant Roles",
+      detail:
+        "Satisfies the bachelor's-degree eligibility for civil-service, banking, defence and state-level examinations.",
+    },
+    {
+      title: "Customer Relationship Executive",
+      detail: "Handles client communication, service queries and account coordination.",
+    },
+    {
+      title: "Counsellor (with further training)",
+      detail:
+        "Provides guidance and support, typically after an additional diploma or PG qualification in counselling.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
@@ -279,7 +324,7 @@ export const onlineBaContent: CourseContent = {
     {
       question: "How much does an Online BA cost?",
       answer:
-        "Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "Do I need an entrance exam for an Online BA?",

@@ -17,12 +17,36 @@ export const mbaPacks: ComparisonPack[] = [
       { label: "Duration", a: "2 years / 4 semesters", b: "2 years / 4 semesters" },
       { label: "Mode", a: "Online", b: "Online" },
       { label: "Degree level", a: "PG", b: "PG" },
-      { label: "Eligibility", a: "Bachelor's degree from recognised institution", b: "Graduation; verify exact 2026 online route" },
-      { label: "Specialisation breadth", a: "26 options currently listed", b: "Broad traditional + emerging management options" },
-      { label: "Key new-age areas", a: "Business Analytics, IT, FinTech, Data Science & AI, Product Management", b: "Business Analytics, FinTech & AI, Data Science & AI, Financial Markets, Supply Chain" },
-      { label: "Learning", a: "LMS, live/recorded content, projects and case-based learning", b: "Digital learning, live/recorded learning and industry-oriented curriculum" },
-      { label: "Career support", a: "Placement/career services; 300+ hiring partners advertised", b: "Career/placement support through LPU ecosystem" },
-      { label: "Best for", a: "Learners prioritising choice and sector-specific MBA routes", b: "Learners wanting LPU ecosystem and broad management/new-age options" },
+      {
+        label: "Eligibility",
+        a: "Bachelor's degree from recognised institution",
+        b: "Graduation; verify exact 2026 online route",
+      },
+      {
+        label: "Specialisation breadth",
+        a: "26 options currently listed",
+        b: "Broad traditional + emerging management options",
+      },
+      {
+        label: "Key new-age areas",
+        a: "Business Analytics, IT, FinTech, Data Science & AI, Product Management",
+        b: "Business Analytics, FinTech & AI, Data Science & AI, Financial Markets, Supply Chain",
+      },
+      {
+        label: "Learning",
+        a: "LMS, live/recorded content, projects and case-based learning",
+        b: "Digital learning, live/recorded learning and industry-oriented curriculum",
+      },
+      {
+        label: "Career support",
+        a: "Placement/career services; 300+ hiring partners advertised",
+        b: "Career/placement support through LPU ecosystem",
+      },
+      {
+        label: "Best for",
+        a: "Learners prioritising choice and sector-specific MBA routes",
+        b: "Learners wanting LPU ecosystem and broad management/new-age options",
+      },
     ],
     sections: [
       {
@@ -34,12 +58,25 @@ export const mbaPacks: ComparisonPack[] = [
         table: {
           head: ["Fee factor", "CU Online MBA", "LPU Online MBA"],
           rows: [
-            ["Published reference", "₹52,667/semester before displayed offer", "Verify current intake quotation"],
-            ["Displayed offer", "₹39,500/semester after displayed 25% early-bird offer", "Current grants/promotions vary"],
-            ["Payment", "Semester/annual/other financing options", "Semester/annual/lump-sum/EMI routes may be available"],
+            [
+              "Published reference",
+              "₹52,667/semester before displayed offer",
+              "Verify current intake quotation",
+            ],
+            [
+              "Displayed offer",
+              "₹39,500/semester after displayed 25% early-bird offer",
+              "Current grants/promotions vary",
+            ],
+            [
+              "Payment",
+              "Semester/annual/other financing options",
+              "Semester/annual/lump-sum/EMI routes may be available",
+            ],
           ],
         },
-        verdict: "Do not compare old discounted fees. Compare the final payable amount, examination charges, registration charges and scholarship/grant terms for the same admission cycle.",
+        verdict:
+          "Do not compare old discounted fees. Compare the final payable amount, examination charges, registration charges and scholarship/grant terms for the same admission cycle.",
       },
       {
         heading: "Eligibility Comparison",
@@ -48,7 +85,11 @@ export const mbaPacks: ComparisonPack[] = [
           rows: [
             ["Graduation", "Required", "Required"],
             ["Recognised university", "Required", "Required"],
-            ["Work experience", "Generally not required for standard online MBA", "Generally not required; verify route"],
+            [
+              "Work experience",
+              "Generally not required for standard online MBA",
+              "Generally not required; verify route",
+            ],
             ["Fresh graduates", "Yes", "Yes, subject to current criteria"],
             ["Working professionals", "Yes", "Yes"],
           ],
@@ -57,7 +98,8 @@ export const mbaPacks: ComparisonPack[] = [
       {
         heading: "Specialisations",
         body: "Chandigarh University: Current CU Online information lists 26 areas including Marketing, HRM, International Business, Entrepreneurship, Finance, Business Analytics, IT, Banking & Insurance, Logistics & Supply Chain, Hospital Management, Operations, Digital Marketing, Retail, FinTech, Data Science & AI, General Management, International Relations, Brand Management, Foreign Exchange Management, Family Business and Product Management.\n\nLPU: LPU's current MBA ecosystem includes Finance, HR, International Business, Business Analytics, Financial Markets, Supply Chain & Logistics, FinTech & AI, Data Science & AI, Digital/Social Media Marketing and other management areas.",
-        verdict: "CU has the clearer advantage in sheer specialisation count and sector-specific choice. LPU is highly competitive when the learner wants analytics, AI, finance, supply chain or digital-management options.",
+        verdict:
+          "CU has the clearer advantage in sheer specialisation count and sector-specific choice. LPU is highly competitive when the learner wants analytics, AI, finance, supply chain or digital-management options.",
       },
       {
         heading: "Curriculum & Learning Experience",
@@ -98,15 +140,18 @@ export const mbaPacks: ComparisonPack[] = [
     faqs: [
       {
         question: "Which is better, CU or LPU Online MBA?",
-        answer: "Neither is universally better. CU stands out for specialisation breadth; LPU is strong for its university ecosystem and broad management portfolio.",
+        answer:
+          "Neither is universally better. CU stands out for specialisation breadth; LPU is strong for its university ecosystem and broad management portfolio.",
       },
       {
         question: "Which is cheaper?",
-        answer: "The answer depends on the active scholarship/grant. Compare final payable fees for the same intake.",
+        answer:
+          "The answer depends on the active scholarship/grant. Compare final payable fees for the same intake.",
       },
       {
         question: "Which is better for working professionals?",
-        answer: "Both offer flexible online formats. Compare class schedule, recordings, assessment workload and career services.",
+        answer:
+          "Both offer flexible online formats. Compare class schedule, recordings, assessment workload and career services.",
       },
     ],
   },
@@ -125,12 +170,36 @@ export const mbaPacks: ComparisonPack[] = [
     factors: [
       { label: "Duration", a: "2 years", b: "2 years / 4 semesters" },
       { label: "Mode", a: "Online", b: "Fully online" },
-      { label: "Eligibility", a: "Graduation; verify exact route", b: "Graduation in any discipline with 40%; below 40% may require eligibility test" },
-      { label: "Current published fee", a: "Verify current intake/grant", b: "₹1,99,000 total / ₹49,750 per semester" },
-      { label: "Specialisations", a: "Broad traditional + emerging", b: "Marketing, Finance, HR, Operations, IB, Digital Marketing, Analytics, Entrepreneurship and more" },
-      { label: "AI learning", a: "Strong AI-focused programme options", b: "Prof. AMI AI mentor + Amigo app" },
-      { label: "Global positioning", a: "Strong university ecosystem", b: "Strong international/global positioning" },
-      { label: "Best for", a: "Broad management + emerging domains", b: "AI-enabled learning + global orientation" },
+      {
+        label: "Eligibility",
+        a: "Graduation; verify exact route",
+        b: "Graduation in any discipline with 40%; below 40% may require eligibility test",
+      },
+      {
+        label: "Current published fee",
+        a: "Verify current intake/grant",
+        b: "₹1,99,000 total / ₹49,750 per semester",
+      },
+      {
+        label: "Specialisations",
+        a: "Broad traditional + emerging",
+        b: "Marketing, Finance, HR, Operations, IB, Digital Marketing, Analytics, Entrepreneurship and more",
+      },
+      {
+        label: "AI learning",
+        a: "Strong AI-focused programme options",
+        b: "Prof. AMI AI mentor + Amigo app",
+      },
+      {
+        label: "Global positioning",
+        a: "Strong university ecosystem",
+        b: "Strong international/global positioning",
+      },
+      {
+        label: "Best for",
+        a: "Broad management + emerging domains",
+        b: "AI-enabled learning + global orientation",
+      },
     ],
     sections: [
       {
@@ -145,10 +214,15 @@ export const mbaPacks: ComparisonPack[] = [
             ["Total", "Verify current official quotation", "₹1,99,000"],
             ["Semester", "Varies by route/grant", "₹49,750"],
             ["EMI", "Available depending on route", "Zero-cost EMI advertised"],
-            ["Scholarships", "Grants/concessions may apply", "Scholarships/financial assistance may apply"],
+            [
+              "Scholarships",
+              "Grants/concessions may apply",
+              "Scholarships/financial assistance may apply",
+            ],
           ],
         },
-        verdict: "Amity currently has a clearly published standard fee. LPU's final payable amount should be checked against the active grant and intake.",
+        verdict:
+          "Amity currently has a clearly published standard fee. LPU's final payable amount should be checked against the active grant and intake.",
       },
       {
         heading: "Eligibility",
@@ -162,12 +236,14 @@ export const mbaPacks: ComparisonPack[] = [
             ["Work experience", "Not generally required", "Not required for standard programme"],
           ],
         },
-        verdict: "Amity currently publishes a lower 40% threshold and a test route for candidates below 40%.",
+        verdict:
+          "Amity currently publishes a lower 40% threshold and a test route for candidates below 40%.",
       },
       {
         heading: "Specialisations",
         body: "LPU currently highlights Finance, HR, International Business, Business Analytics, Financial Markets, Supply Chain & Logistics, FinTech & AI, Data Science & AI and Digital/Social Media Marketing among its MBA ecosystem.\n\nAmity lists Marketing, Finance, HR, Operations, International Business, Digital Marketing, Business Analytics, Entrepreneurship and additional specialised MBA variants.",
-        verdict: "Both are broad. LPU is particularly attractive for AI/FinTech/analytics pathways; Amity is strong in digital business, global business and entrepreneurship.",
+        verdict:
+          "Both are broad. LPU is particularly attractive for AI/FinTech/analytics pathways; Amity is strong in digital business, global business and entrepreneurship.",
       },
       {
         heading: "AI & Technology",
@@ -175,7 +251,7 @@ export const mbaPacks: ComparisonPack[] = [
       },
       {
         heading: "Curriculum & Practical Learning",
-        body: "Amity describes its MBA as combining theory with real-world projects, internships and AI-enabled learning. LPU emphasises industry-oriented curriculum, workshops, guest lectures and practical exposure.\n\nThe page should compare actual subjects, project requirements, electives and assessment structure rather than relying on generic claims of \"industry relevance\".",
+        body: 'Amity describes its MBA as combining theory with real-world projects, internships and AI-enabled learning. LPU emphasises industry-oriented curriculum, workshops, guest lectures and practical exposure.\n\nThe page should compare actual subjects, project requirements, electives and assessment structure rather than relying on generic claims of "industry relevance".',
       },
       {
         heading: "Career Support",
@@ -197,9 +273,7 @@ export const mbaPacks: ComparisonPack[] = [
         },
       },
     ],
-    aBestFor: [
-      "You value LPU's broad university ecosystem and emerging management options.",
-    ],
+    aBestFor: ["You value LPU's broad university ecosystem and emerging management options."],
     bBestFor: [
       "AI-enabled learning, global orientation and a lower published eligibility threshold matter more to you.",
     ],
@@ -208,15 +282,18 @@ export const mbaPacks: ComparisonPack[] = [
     faqs: [
       {
         question: "Is LPU Online MBA better than Amity?",
-        answer: "It depends on your priorities. LPU is strong in emerging management areas; Amity is strong in AI-enabled learning and global positioning.",
+        answer:
+          "It depends on your priorities. LPU is strong in emerging management areas; Amity is strong in AI-enabled learning and global positioning.",
       },
       {
         question: "Which is cheaper?",
-        answer: "Compare final scholarship/grant-adjusted fees. Amity currently publishes ₹1,99,000 for its 2026 MBA.",
+        answer:
+          "Compare final scholarship/grant-adjusted fees. Amity currently publishes ₹1,99,000 for its 2026 MBA.",
       },
       {
         question: "Which is better for working professionals?",
-        answer: "Both are designed for flexibility. Compare live sessions, recordings, workload and career support.",
+        answer:
+          "Both are designed for flexibility. Compare live sessions, recordings, workload and career support.",
       },
     ],
   },
@@ -237,18 +314,39 @@ export const mbaPacks: ComparisonPack[] = [
     factors: [
       { label: "Duration", a: "2 years / 4 semesters", b: "24 months / 4 semesters" },
       { label: "Eligibility", a: "Bachelor's degree", b: "10+2+3 bachelor's; 50%, 45% reserved" },
-      { label: "Published fee reference", a: "₹52,667/semester before displayed offer", b: "₹45,000/semester before displayed offer" },
+      {
+        label: "Published fee reference",
+        a: "₹52,667/semester before displayed offer",
+        b: "₹45,000/semester before displayed offer",
+      },
       { label: "Displayed offer", a: "₹39,500/semester", b: "₹38,250/semester" },
-      { label: "Specialisation breadth", a: "26 options currently listed", b: "13 electives/specialisations" },
-      { label: "Learning", a: "Online LMS, live/recorded, projects/cases", b: "Online Manipal ecosystem, live/recorded, career-focused" },
-      { label: "Career support", a: "Career services; 300+ hiring partners advertised", b: "Career development/alumni/industry ecosystem" },
-      { label: "Best for", a: "Maximum choice and sector-specific options", b: "Curated MBA options + MUJ brand" },
+      {
+        label: "Specialisation breadth",
+        a: "26 options currently listed",
+        b: "13 electives/specialisations",
+      },
+      {
+        label: "Learning",
+        a: "Online LMS, live/recorded, projects/cases",
+        b: "Online Manipal ecosystem, live/recorded, career-focused",
+      },
+      {
+        label: "Career support",
+        a: "Career services; 300+ hiring partners advertised",
+        b: "Career development/alumni/industry ecosystem",
+      },
+      {
+        label: "Best for",
+        a: "Maximum choice and sector-specific options",
+        b: "Curated MBA options + MUJ brand",
+      },
     ],
     sections: [
       {
         heading: "Fee Comparison",
         body: "CU currently displays ₹52,667 per semester before a displayed 25% early-bird reduction to ₹39,500. MUJ currently lists ₹45,000 per semester before a displayed 15% reduction to ₹38,250; the standard full fee is ₹1,80,000 and application fee ₹500.",
-        verdict: "MUJ currently has the lower published standard semester amount. Promotional pricing makes the gap smaller, so compare final payable amounts at admission.",
+        verdict:
+          "MUJ currently has the lower published standard semester amount. Promotional pricing makes the gap smaller, so compare final payable amounts at admission.",
       },
       {
         heading: "Eligibility Comparison",
@@ -304,11 +402,13 @@ export const mbaPacks: ComparisonPack[] = [
     faqs: [
       {
         question: "Which is better, CU or Manipal Online MBA?",
-        answer: "CU has greater specialisation breadth; MUJ has a curated 13-option structure and Manipal University Jaipur positioning.",
+        answer:
+          "CU has greater specialisation breadth; MUJ has a curated 13-option structure and Manipal University Jaipur positioning.",
       },
       {
         question: "Which is cheaper?",
-        answer: "MUJ currently displays ₹45,000 standard per semester and ₹38,250 after its displayed offer. CU displays ₹52,667 and ₹39,500 after its displayed offer.",
+        answer:
+          "MUJ currently displays ₹45,000 standard per semester and ₹38,250 after its displayed offer. CU displays ₹52,667 and ₹39,500 after its displayed offer.",
       },
       {
         question: "Is MUJ the same as MAHE Online MBA?",
@@ -333,12 +433,28 @@ export const mbaPacks: ComparisonPack[] = [
     factors: [
       { label: "Duration", a: "2 years", b: "24 months" },
       { label: "Mode", a: "Online", b: "Online" },
-      { label: "Eligibility", a: "Graduation; verify current online route", b: "10+2+3 bachelor's; 50%, 45% reserved" },
-      { label: "Portfolio", a: "Broad management + emerging domains", b: "13 electives/specialisations" },
-      { label: "Emerging areas", a: "AI, Data Science, FinTech, Analytics, Supply Chain", b: "Analytics, Data Science, IT & FinTech, Digital Marketing and more" },
+      {
+        label: "Eligibility",
+        a: "Graduation; verify current online route",
+        b: "10+2+3 bachelor's; 50%, 45% reserved",
+      },
+      {
+        label: "Portfolio",
+        a: "Broad management + emerging domains",
+        b: "13 electives/specialisations",
+      },
+      {
+        label: "Emerging areas",
+        a: "AI, Data Science, FinTech, Analytics, Supply Chain",
+        b: "Analytics, Data Science, IT & FinTech, Digital Marketing and more",
+      },
       { label: "Fee", a: "Verify current LPU quotation", b: "₹1,80,000 standard" },
       { label: "Displayed offer", a: "—", b: "₹1,53,000 full / ₹38,250 semester" },
-      { label: "Best for", a: "Broad management and emerging domains", b: "Curated specialisations + MUJ ecosystem" },
+      {
+        label: "Best for",
+        a: "Broad management and emerging domains",
+        b: "Curated specialisations + MUJ ecosystem",
+      },
     ],
     sections: [
       {
@@ -348,7 +464,8 @@ export const mbaPacks: ComparisonPack[] = [
       {
         heading: "Fee Comparison",
         body: "MUJ currently publishes ₹1,80,000 full fee, ₹90,000 annual and ₹45,000 semester, with a displayed 15% promotional reduction to ₹1,53,000 full / ₹38,250 semester. Application fee is ₹500.\n\nLPU pricing can vary with student grants, programme routes and promotional offers. The comparison page should use the live official quotation for the current intake instead of hard-coding a third-party discounted amount.",
-        verdict: "MUJ has the clearer published standard price; LPU may become more competitive after applicable grants.",
+        verdict:
+          "MUJ has the clearer published standard price; LPU may become more competitive after applicable grants.",
       },
       {
         heading: "Eligibility",
@@ -366,7 +483,8 @@ export const mbaPacks: ComparisonPack[] = [
       {
         heading: "Specialisations",
         body: "LPU's current MBA portfolio includes Finance, HR, International Business, Business Analytics, Financial Markets, Supply Chain & Logistics, FinTech & AI, Data Science & AI and Digital/Social Media Marketing among its management offerings.\n\nMUJ currently lists 13 electives/specialisations, while the wider Online Manipal ecosystem covers Finance, HR, Analytics & Data Science, Marketing, Operations, Supply Chain, Healthcare, Project Management, International Business, BFSI, IT & FinTech, Retail and Digital Marketing.",
-        verdict: "LPU is stronger for breadth and emerging management options. MUJ is more curated.",
+        verdict:
+          "LPU is stronger for breadth and emerging management options. MUJ is more curated.",
       },
       {
         heading: "Curriculum & Industry Orientation",
@@ -404,26 +522,25 @@ export const mbaPacks: ComparisonPack[] = [
         },
       },
     ],
-    aBestFor: [
-      "Wants breadth and emerging management options.",
-    ],
-    bBestFor: [
-      "Wants the Manipal University Jaipur ecosystem and a curated MBA structure.",
-    ],
+    aBestFor: ["Wants breadth and emerging management options."],
+    bBestFor: ["Wants the Manipal University Jaipur ecosystem and a curated MBA structure."],
     verdict:
       "LPU is stronger for breadth and emerging management options. MUJ is stronger for learners seeking the Manipal University Jaipur ecosystem and a curated MBA structure. Choose only after checking the exact 2026 fee, eligibility and specialisation.",
     faqs: [
       {
         question: "Which is better, LPU or Manipal Online MBA?",
-        answer: "LPU is attractive for breadth; MUJ is attractive for a curated programme and MUJ ecosystem.",
+        answer:
+          "LPU is attractive for breadth; MUJ is attractive for a curated programme and MUJ ecosystem.",
       },
       {
         question: "Which is cheaper?",
-        answer: "MUJ currently publishes ₹1,80,000 standard and ₹1,53,000 after the displayed 15% offer. LPU's current grant-adjusted fee should be verified before comparison.",
+        answer:
+          "MUJ currently publishes ₹1,80,000 standard and ₹1,53,000 after the displayed 15% offer. LPU's current grant-adjusted fee should be verified before comparison.",
       },
       {
         question: "Which is better for AI and analytics?",
-        answer: "LPU has a strong current portfolio around Data Science & AI, FinTech & AI and Business Analytics. MUJ also offers Analytics & Data Science and IT & FinTech pathways.",
+        answer:
+          "LPU has a strong current portfolio around Data Science & AI, FinTech & AI and Business Analytics. MUJ also offers Analytics & Data Science and IT & FinTech pathways.",
       },
     ],
   },
@@ -443,14 +560,34 @@ export const mbaPacks: ComparisonPack[] = [
       "This comparison is Amity Online MBA vs Manipal University Jaipur (MUJ) Online MBA. MAHE and Sikkim Manipal University are separate online MBA programmes and should not be mixed into MUJ's fee or eligibility table.",
     factors: [
       { label: "Duration", a: "2 years / 4 semesters", b: "24 months / 4 semesters" },
-      { label: "Eligibility", a: "Graduation in any discipline with 40%; below 40% may require test", b: "10+2+3 bachelor's; 50%, 45% reserved" },
+      {
+        label: "Eligibility",
+        a: "Graduation in any discipline with 40%; below 40% may require test",
+        b: "10+2+3 bachelor's; 50%, 45% reserved",
+      },
       { label: "Published fee", a: "₹1,99,000", b: "₹1,80,000 standard" },
       { label: "Semester fee", a: "₹49,750", b: "₹45,000" },
-      { label: "Current displayed offer", a: "EMI/scholarship options", b: "15% displayed discount" },
-      { label: "Specialisations", a: "Broad management + digital/analytics options", b: "13 electives/specialisations" },
+      {
+        label: "Current displayed offer",
+        a: "EMI/scholarship options",
+        b: "15% displayed discount",
+      },
+      {
+        label: "Specialisations",
+        a: "Broad management + digital/analytics options",
+        b: "13 electives/specialisations",
+      },
       { label: "AI learning", a: "Prof. AMI + Amigo app", b: "Online Manipal digital ecosystem" },
-      { label: "Global positioning", a: "Strong global credential narrative", b: "Strong Manipal University Jaipur brand" },
-      { label: "Best for", a: "AI-enabled learning + global orientation", b: "Curated MBA + MUJ ecosystem" },
+      {
+        label: "Global positioning",
+        a: "Strong global credential narrative",
+        b: "Strong Manipal University Jaipur brand",
+      },
+      {
+        label: "Best for",
+        a: "AI-enabled learning + global orientation",
+        b: "Curated MBA + MUJ ecosystem",
+      },
     ],
     sections: [
       {
@@ -466,7 +603,11 @@ export const mbaPacks: ComparisonPack[] = [
             ["Semester", "₹49,750", "₹45,000"],
             ["Displayed promotional total", "—", "₹1,53,000 after displayed 15% discount"],
             ["Application fee", "Check current admission page", "₹500"],
-            ["EMI", "Zero-cost EMI advertised", "No-cost EMI available in current programme information"],
+            [
+              "EMI",
+              "Zero-cost EMI advertised",
+              "No-cost EMI available in current programme information",
+            ],
           ],
         },
         verdict: "MUJ currently has the lower published standard and displayed promotional fee.",
@@ -547,19 +688,23 @@ export const mbaPacks: ComparisonPack[] = [
     faqs: [
       {
         question: "Which is better, Amity or Manipal Online MBA?",
-        answer: "Amity is stronger for AI/global positioning; MUJ is stronger for a curated programme and MUJ ecosystem.",
+        answer:
+          "Amity is stronger for AI/global positioning; MUJ is stronger for a curated programme and MUJ ecosystem.",
       },
       {
         question: "Which is cheaper?",
-        answer: "MUJ currently publishes ₹1,80,000 standard and ₹1,53,000 after its displayed offer, while Amity publishes ₹1,99,000.",
+        answer:
+          "MUJ currently publishes ₹1,80,000 standard and ₹1,53,000 after its displayed offer, while Amity publishes ₹1,99,000.",
       },
       {
         question: "Which has easier eligibility?",
-        answer: "Amity currently publishes 40%; MUJ publishes 50% for general applicants and 45% for reserved categories.",
+        answer:
+          "Amity currently publishes 40%; MUJ publishes 50% for general applicants and 45% for reserved categories.",
       },
       {
         question: "Is MUJ the same as MAHE Online MBA?",
-        answer: "No. MUJ, MAHE and SMU are separate Manipal programmes and should be compared separately.",
+        answer:
+          "No. MUJ, MAHE and SMU are separate Manipal programmes and should be compared separately.",
       },
     ],
   },

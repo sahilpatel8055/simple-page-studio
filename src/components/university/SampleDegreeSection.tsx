@@ -31,8 +31,9 @@ export function SampleDegreeSection({
     <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
       <div className="min-w-0">
         <p className="max-w-prose text-sm leading-relaxed text-muted-foreground">
-          The degree awarded by {universityName} is recognised by the relevant regulatory bodies and makes no mention
-          of the learning mode, so it is accepted for every career and higher-study route.
+          The degree awarded by {universityName} is recognised by the relevant regulatory bodies and
+          makes no mention of the learning mode, so it is accepted for every career and higher-study
+          route.
         </p>
         <ul className="mt-4 space-y-3">
           {points.map((p) => (

@@ -37,17 +37,26 @@ const curriculumData = master.course_curriculum as unknown as Record<string, Cou
  * some of these fields as an array of notes, so accept both shapes.
  */
 function neutral(text: unknown): string {
-  const raw = Array.isArray(text) ? text.filter(Boolean).join(" ") : typeof text === "string" ? text : "";
+  const raw = Array.isArray(text)
+    ? text.filter(Boolean).join(" ")
+    : typeof text === "string"
+      ? text
+      : "";
   return raw
     .replace(/CollegeSathi[’']?s?/gi, "the referenced programme source")
     .replace(/CollegeVidya[’']?s?/gi, "the referenced programme source")
     .replace(/\bCited page\b/gi, "The referenced source")
     .replace(/\bthe cited\b/gi, "the referenced");
 }
-const researchData = master.university_research as unknown as Record<string, UniversityResearchJson>;
+const researchData = master.university_research as unknown as Record<
+  string,
+  UniversityResearchJson
+>;
 const masterUniversities = master.universities as Array<{ id: string; name: string; slug: string }>;
 export const masterResearchDate: string = master.meta.research_date;
-export const masterSources: string[] = (master.sources as unknown as Array<string | { url?: string }>)
+export const masterSources: string[] = (
+  master.sources as unknown as Array<string | { url?: string }>
+)
   .map((s) => (typeof s === "string" ? s : (s.url ?? "")))
   .filter(Boolean);
 
@@ -97,7 +106,6 @@ export function courseKeyForProgramme(programmeSlug: string): string | undefined
   if (flat.includes("ma")) return "online-ma";
   if (flat.includes("ba")) return "online-ba";
   return undefined;
-
 }
 
 export interface Semester {
@@ -183,8 +191,7 @@ export function getUniversityCourse(siteSlug: string, programmeSlug: string) {
   const isMba = common?.key === "online-mba";
   const uni = getUniversityCurriculum(siteSlug, common?.key);
   // A hand-verified university syllabus always replaces the common structure.
-  const course =
-    common && uni ? { ...common, semesters: uni.semesters } : common;
+  const course = common && uni ? { ...common, semesters: uni.semesters } : common;
   return {
     course,
     research,

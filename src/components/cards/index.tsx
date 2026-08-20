@@ -95,7 +95,13 @@ export function CourseCard({ item }: { item: Course }) {
   );
 }
 
-export function ArticleCard({ item, variant = "default" }: { item: Article; variant?: "default" | "compact" }) {
+export function ArticleCard({
+  item,
+  variant = "default",
+}: {
+  item: Article;
+  variant?: "default" | "compact";
+}) {
   const href = item.kind === "news" ? `/news/${item.slug}` : `/blogs/${item.slug}`;
   if (variant === "compact") {
     return (
@@ -120,7 +126,9 @@ export function ArticleCard({ item, variant = "default" }: { item: Article; vari
           </Chip>
         )}
       </div>
-      <h3 className="mt-4 font-display text-lg font-bold leading-snug group-hover:text-brand">{item.title}</h3>
+      <h3 className="mt-4 font-display text-lg font-bold leading-snug group-hover:text-brand">
+        {item.title}
+      </h3>
       <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">{item.excerpt}</p>
       <div className="mt-5 flex items-center justify-between border-t border-border pt-4 text-xs text-muted-foreground">
         <span className="truncate">{item.author}</span>
@@ -138,7 +146,9 @@ export function NewsCard({ item }: { item: Article }) {
       <span className="flex items-center gap-1.5 text-xs font-semibold text-brand">
         <CalendarDays className="h-3.5 w-3.5" /> {formatDate(item.date)}
       </span>
-      <h3 className="mt-3 font-display text-base font-bold leading-snug group-hover:text-brand">{item.title}</h3>
+      <h3 className="mt-3 font-display text-base font-bold leading-snug group-hover:text-brand">
+        {item.title}
+      </h3>
       <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{item.excerpt}</p>
       <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
         Read update <ArrowRight className="h-3.5 w-3.5" />
@@ -192,7 +202,9 @@ export function ComparisonCard({ item }: { item: Comparison }) {
                 {side.name}
               </span>
             )}
-            {side.isCampus && <span className="absolute inset-0 bg-gradient-to-t from-ink/75 to-transparent" />}
+            {side.isCampus && (
+              <span className="absolute inset-0 bg-gradient-to-t from-ink/75 to-transparent" />
+            )}
             <span
               className={`absolute inset-x-2 bottom-2 line-clamp-2 text-[0.7rem] font-bold leading-tight ${
                 side.isCampus ? "text-white" : "text-muted-foreground"
@@ -207,18 +219,18 @@ export function ComparisonCard({ item }: { item: Comparison }) {
         </span>
       </div>
       <div className="flex flex-1 flex-col p-5 sm:p-6">
-      <Chip>{item.category} comparison</Chip>
-      <div className="mt-4 grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2">
-        <span className="truncate text-sm font-bold">{item.left}</span>
-        <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-secondary">
-          <GitCompareArrows className="h-4 w-4 text-brand" />
+        <Chip>{item.category} comparison</Chip>
+        <div className="mt-4 grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2">
+          <span className="truncate text-sm font-bold">{item.left}</span>
+          <span className="grid h-8 w-8 shrink-0 place-items-center rounded-full bg-secondary">
+            <GitCompareArrows className="h-4 w-4 text-brand" />
+          </span>
+          <span className="truncate text-right text-sm font-bold">{item.right}</span>
+        </div>
+        <p className="mt-4 line-clamp-2 text-sm text-muted-foreground">{item.summary}</p>
+        <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
+          See full comparison <ArrowRight className="h-3.5 w-3.5" />
         </span>
-        <span className="truncate text-right text-sm font-bold">{item.right}</span>
-      </div>
-      <p className="mt-4 line-clamp-2 text-sm text-muted-foreground">{item.summary}</p>
-      <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
-        See full comparison <ArrowRight className="h-3.5 w-3.5" />
-      </span>
       </div>
     </AppLink>
   );
@@ -290,7 +302,11 @@ export function ToolCard({ item }: { item: Tool }) {
         <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-secondary text-brand">
           <Wrench className="h-5 w-5" />
         </span>
-        <Chip tone={item.status === "Live" ? "success" : item.status === "Beta" ? "highlight" : "default"}>
+        <Chip
+          tone={
+            item.status === "Live" ? "success" : item.status === "Beta" ? "highlight" : "default"
+          }
+        >
           {item.status}
         </Chip>
       </div>

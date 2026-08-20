@@ -27,7 +27,8 @@ export function UniversityHero({ university }: { university: University }) {
   })();
 
   const facts: Array<{ label: string; value: string }> = [];
-  if (u.city || u.state) facts.push({ label: "Location", value: [u.city, u.state].filter(Boolean).join(", ") });
+  if (u.city || u.state)
+    facts.push({ label: "Location", value: [u.city, u.state].filter(Boolean).join(", ") });
   if (u.establishedYear) facts.push({ label: "Established", value: String(u.establishedYear) });
   if (programmes.length) facts.push({ label: "Programmes", value: String(programmes.length) });
   if (lowestFee) facts.push({ label: "Fee from", value: lowestFee });
@@ -53,25 +54,38 @@ export function UniversityHero({ university }: { university: University }) {
         <div className="grid grid-cols-[auto_minmax(0,1fr)] items-start gap-3 sm:gap-5">
           <span className="grid h-16 w-16 shrink-0 place-items-center rounded-xl border border-border bg-card p-1.5 sm:h-20 sm:w-20 sm:p-2">
             {logo ? (
-              <img src={logo} alt={`${u.name} logo`} className="max-h-full max-w-full object-contain" />
+              <img
+                src={logo}
+                alt={`${u.name} logo`}
+                className="max-h-full max-w-full object-contain"
+              />
             ) : (
-              <span className="text-center font-display text-xs font-extrabold text-brand">{u.shortName}</span>
+              <span className="text-center font-display text-xs font-extrabold text-brand">
+                {u.shortName}
+              </span>
             )}
           </span>
           <div className="min-w-0">
-            <p className="font-display text-lg font-extrabold leading-tight sm:text-2xl">{u.name}</p>
+            <p className="font-display text-lg font-extrabold leading-tight sm:text-2xl">
+              {u.name}
+            </p>
             <div className="mt-1.5 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground sm:text-sm">
               {u.rating ? (
                 <span className="inline-flex items-center gap-1 font-bold text-foreground">
                   <Star className="h-3.5 w-3.5 fill-brand text-brand" aria-hidden="true" />
                   {u.rating}/5
-                  {u.reviewCount ? <span className="font-normal">({u.reviewCount} reviews)</span> : null}
+                  {u.reviewCount ? (
+                    <span className="font-normal">({u.reviewCount} reviews)</span>
+                  ) : null}
                 </span>
               ) : null}
               {(hasUG || hasPG) && (
                 <span className="inline-flex items-center gap-1">
                   <GraduationCap className="h-3.5 w-3.5" aria-hidden="true" />
-                  Online {[hasUG ? "UG" : null, hasPG ? "PG" : null].filter(Boolean).join(" & ")} available
+                  Online {[hasUG ? "UG" : null, hasPG ? "PG" : null]
+                    .filter(Boolean)
+                    .join(" & ")}{" "}
+                  available
                 </span>
               )}
             </div>
@@ -88,7 +102,12 @@ export function UniversityHero({ university }: { university: University }) {
                   className="inline-flex items-center gap-2 rounded-lg border border-border bg-surface-2 px-2.5 py-1.5"
                 >
                   {icon && (
-                    <img src={icon} alt="" aria-hidden="true" className="h-6 w-auto max-w-10 object-contain" />
+                    <img
+                      src={icon}
+                      alt=""
+                      aria-hidden="true"
+                      className="h-6 w-auto max-w-10 object-contain"
+                    />
                   )}
                   <span className="text-[0.72rem] font-bold sm:text-xs" title={a.status}>
                     {a.body}

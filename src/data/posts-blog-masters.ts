@@ -95,9 +95,18 @@ function build(slug: string, base: PostContent): PostContent {
     Math.max(0, sections.length - 2),
   ];
   const copy: [string, string][] = [
-    ["Not sure which university fits you?", "Share your details and a counsellor will send verified fees, eligibility and the current admission window."],
-    ["Want a shortlist built around your budget?", "We compare researched fee records across universities and send you the two or three that match."],
-    ["Ready to apply for the 2026 session?", "Get document help, scholarship options and admission deadlines for the programmes you shortlist."],
+    [
+      "Not sure which university fits you?",
+      "Share your details and a counsellor will send verified fees, eligibility and the current admission window.",
+    ],
+    [
+      "Want a shortlist built around your budget?",
+      "We compare researched fee records across universities and send you the two or three that match.",
+    ],
+    [
+      "Ready to apply for the 2026 session?",
+      "Get document help, scholarship options and admission deadlines for the programmes you shortlist.",
+    ],
   ];
   spots.forEach((pos, i) => {
     const s = sections[pos];

@@ -43,7 +43,9 @@ export function SectionHeader({
           <AccentHeadline text={title} />
         </h2>
         {description && (
-          <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground sm:text-base">{description}</p>
+          <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground sm:text-base">
+            {description}
+          </p>
         )}
       </div>
       {href && (
@@ -55,7 +57,6 @@ export function SectionHeader({
         </AppLink>
       )}
     </div>
-
   );
 }
 
@@ -94,7 +95,9 @@ export function FilterBar({ groups }: { groups: { label: string; options: string
     <div className="surface-card mb-8 flex flex-col gap-4 p-5">
       {groups.map((g) => (
         <div key={g.label} className="grid gap-2 sm:grid-cols-[8rem_minmax(0,1fr)] sm:items-center">
-          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">{g.label}</p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            {g.label}
+          </p>
           <div className="flex flex-wrap gap-2">
             {g.options.map((o, i) => (
               <button
@@ -174,14 +177,18 @@ export function SimplePagination({ page = 1, total = 8 }: { page?: number; total
   const pages = Array.from({ length: Math.min(total, 5) }, (_, i) => i + 1);
   return (
     <nav aria-label="Pagination" className="mt-12 flex items-center justify-center gap-1.5">
-      <span className="rounded-full border border-border px-4 py-2 text-sm text-muted-foreground">Prev</span>
+      <span className="rounded-full border border-border px-4 py-2 text-sm text-muted-foreground">
+        Prev
+      </span>
       {pages.map((p) => (
         <span
           key={p}
           aria-current={p === page ? "page" : undefined}
           className={cn(
             "grid h-10 w-10 place-items-center rounded-full border text-sm font-medium",
-            p === page ? "border-brand bg-brand text-brand-foreground" : "border-border hover:bg-secondary",
+            p === page
+              ? "border-brand bg-brand text-brand-foreground"
+              : "border-border hover:bg-secondary",
           )}
         >
           {p}
@@ -234,6 +241,5 @@ export function CTASection({
         </div>
       </div>
     </div>
-
   );
 }

@@ -101,7 +101,9 @@ function Page() {
     { question: `What is the eligibility for ${p.name} at ${u.shortName}?`, answer: p.eligibility },
     {
       question: `Which specialisations are available?`,
-      answer: offering.specialisations.map((s) => getSpecialisation(p.slug, s)?.name ?? s).join(", "),
+      answer: offering.specialisations
+        .map((s) => getSpecialisation(p.slug, s)?.name ?? s)
+        .join(", "),
     },
     {
       question: `Is this ${p.name} approved?`,
@@ -135,7 +137,11 @@ function Page() {
           <UniCourseSectionBody section={key} profile={profile} faqs={faqs} />
         </ContentSection>
 
-        <SectionUrlGrid base={pillar} active={key} title={`More on ${u.shortName} ${p.shortName}`} />
+        <SectionUrlGrid
+          base={pillar}
+          active={key}
+          title={`More on ${u.shortName} ${p.shortName}`}
+        />
 
         <RelatedPageLinks
           title="Back to the full programme page"
@@ -147,9 +153,14 @@ function Page() {
         />
 
         <AuthorBox />
-        <References items={[{ label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" }]} />
+        <References
+          items={[{ label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" }]}
+        />
       </DetailLayout>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
     </>
   );
 }

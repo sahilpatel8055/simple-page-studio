@@ -182,28 +182,68 @@ export const onlineMscContent: CourseContent = {
     { goal: "Actuarial science, research and quantitative analysis", specialisation: "Statistics" },
     { goal: "Teaching, academia and competitive-exam preparation", specialisation: "Mathematics" },
     { goal: "Pharma, agri-tech and life-sciences research", specialisation: "Biotechnology" },
-    { goal: "Sustainability, ESG and environmental consulting", specialisation: "Environmental Science" },
+    {
+      goal: "Sustainability, ESG and environmental consulting",
+      specialisation: "Environmental Science",
+    },
     { goal: "Counselling, HR and behavioural-research roles", specialisation: "Psychology" },
-    { goal: "Laboratory and diagnostic-sciences careers", specialisation: "Chemistry / Biochemistry" },
+    {
+      goal: "Laboratory and diagnostic-sciences careers",
+      specialisation: "Chemistry / Biochemistry",
+    },
     { goal: "IT infrastructure and cybersecurity roles", specialisation: "Information Technology" },
   ],
 
   careers: [
-    { title: "Data Analyst", detail: "Cleans, explores and interprets data to support business or research decisions." },
-    { title: "Data Scientist", detail: "Builds statistical and machine-learning models to solve prediction and optimisation problems." },
-    { title: "Machine Learning Engineer", detail: "Deploys and maintains ML models in production systems." },
-    { title: "Software Developer", detail: "Designs, builds and maintains applications and backend systems." },
-    { title: "Research Associate", detail: "Supports academic or industry research projects, often as a step toward a doctoral programme." },
-    { title: "Statistician / Biostatistician", detail: "Applies statistical methods to clinical trials, surveys or quality-control data." },
-    { title: "Environmental Consultant", detail: "Assesses environmental impact and compliance for projects and organisations." },
-    { title: "Lecturer / Subject Teacher", detail: "Teaches the subject at the school or college level, subject to the recruiting institution's own eligibility rules." },
-    { title: "Business Intelligence Analyst", detail: "Builds dashboards and reporting pipelines that track business performance." },
-    { title: "Clinical Research Associate", detail: "Coordinates and monitors clinical studies for pharmaceutical or healthcare organisations." },
+    {
+      title: "Data Analyst",
+      detail: "Cleans, explores and interprets data to support business or research decisions.",
+    },
+    {
+      title: "Data Scientist",
+      detail:
+        "Builds statistical and machine-learning models to solve prediction and optimisation problems.",
+    },
+    {
+      title: "Machine Learning Engineer",
+      detail: "Deploys and maintains ML models in production systems.",
+    },
+    {
+      title: "Software Developer",
+      detail: "Designs, builds and maintains applications and backend systems.",
+    },
+    {
+      title: "Research Associate",
+      detail:
+        "Supports academic or industry research projects, often as a step toward a doctoral programme.",
+    },
+    {
+      title: "Statistician / Biostatistician",
+      detail: "Applies statistical methods to clinical trials, surveys or quality-control data.",
+    },
+    {
+      title: "Environmental Consultant",
+      detail: "Assesses environmental impact and compliance for projects and organisations.",
+    },
+    {
+      title: "Lecturer / Subject Teacher",
+      detail:
+        "Teaches the subject at the school or college level, subject to the recruiting institution's own eligibility rules.",
+    },
+    {
+      title: "Business Intelligence Analyst",
+      detail: "Builds dashboards and reporting pipelines that track business performance.",
+    },
+    {
+      title: "Clinical Research Associate",
+      detail:
+        "Coordinates and monitors clinical studies for pharmaceutical or healthcare organisations.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
   salaryNote:
-    "We do not publish Online M.Sc salary figures we cannot attribute to a credible, dated source. Pay is driven by specialisation, prior experience, role, industry and location far more than by the study mode — treat any portal quoting a single national \"average M.Sc salary\" with caution.",
+    'We do not publish Online M.Sc salary figures we cannot attribute to a credible, dated source. Pay is driven by specialisation, prior experience, role, industry and location far more than by the study mode — treat any portal quoting a single national "average M.Sc salary" with caution.',
 
   placementServices: defaultPlacementServices(),
   placementNote:
@@ -281,7 +321,7 @@ export const onlineMscContent: CourseContent = {
     {
       question: "How much does an Online M.Sc cost?",
       answer:
-        "Fees are set by each university and vary by specialisation, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university and vary by specialisation, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "How are lab or practical components handled in an Online M.Sc?",

@@ -53,14 +53,24 @@ export function ApprovalBox({ body, status }: { body: string; status?: string | 
     <div className="box-hover flex h-full flex-col items-center gap-3 rounded-2xl border border-brand/35 bg-card p-4 text-center shadow-[0_12px_28px_-24px_oklch(0.39_0.139_28/0.7)]">
       <div className="grid h-14 w-full place-items-center rounded-xl bg-brand-soft/40 px-3">
         {icon ? (
-          <img src={icon} alt={`${body} logo`} loading="lazy" decoding="async" className="max-h-10 object-contain" />
+          <img
+            src={icon}
+            alt={`${body} logo`}
+            loading="lazy"
+            decoding="async"
+            className="max-h-10 object-contain"
+          />
         ) : (
           <span className="font-display text-base font-extrabold text-brand">{body}</span>
         )}
       </div>
       <div className="min-w-0">
         <p className="text-sm font-bold text-card-foreground">{body}</p>
-        {status && <p className="mt-0.5 line-clamp-2 text-[11px] leading-snug text-muted-foreground">{status}</p>}
+        {status && (
+          <p className="mt-0.5 line-clamp-2 text-[11px] leading-snug text-muted-foreground">
+            {status}
+          </p>
+        )}
       </div>
     </div>
   );
@@ -70,7 +80,11 @@ export function ApprovalBox({ body, status }: { body: string; status?: string | 
  * Approvals & recognition: every approval a university publishes, in one
  * manually scrollable horizontal strip (no auto-scroll).
  */
-export function ApprovalMarquee({ approvals }: { approvals: Array<{ body: string; status?: string }> }) {
+export function ApprovalMarquee({
+  approvals,
+}: {
+  approvals: Array<{ body: string; status?: string }>;
+}) {
   if (!approvals.length) return null;
   return (
     <ul
@@ -129,7 +143,12 @@ export function SpecialisationBoxes({
   if (!items.length) return null;
   const boxes = items.map((item) =>
     item.href ? (
-      <AppLink key={item.name} to={item.href} className="block h-full" data-specialisation={item.name}>
+      <AppLink
+        key={item.name}
+        to={item.href}
+        className="block h-full"
+        data-specialisation={item.name}
+      >
         <SpecBoxInner item={item} />
       </AppLink>
     ) : (

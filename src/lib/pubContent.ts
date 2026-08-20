@@ -113,7 +113,10 @@ export interface PubCoursePage {
 
 const pubCourses = coursePagesJson as unknown as PubCoursePage[];
 
-export function pubCoursePage(universitySlug: string, programmeSlug: string): PubCoursePage | undefined {
+export function pubCoursePage(
+  universitySlug: string,
+  programmeSlug: string,
+): PubCoursePage | undefined {
   return pubCourses.find(
     (c) => c.university_slug === universitySlug && c.programme_slug === programmeSlug,
   );
@@ -205,7 +208,10 @@ const pubSpecialisations = specialisationsJson as unknown as PubSpecialisation[]
 
 export const allPubSpecialisations = pubSpecialisations;
 
-export function pubSpecialisation(slug: string, familySlug?: string): PubSpecialisation | undefined {
+export function pubSpecialisation(
+  slug: string,
+  familySlug?: string,
+): PubSpecialisation | undefined {
   const matches = pubSpecialisations.filter((s) => s.slug === slug);
   if (!matches.length) return undefined;
   if (familySlug) {

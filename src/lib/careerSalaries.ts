@@ -17,21 +17,71 @@ const SOURCE = "Glassdoor / AmbitionBox / Naukri (India, aggregated)";
 const YEAR = 2026;
 
 const bands: SalaryBand[] = [
-{ match: /chief|vp|vice president|director|head of/i, range: "18 – 35 LPA", source: SOURCE, year: YEAR },
-  { match: /architect|scientist|machine learning|ai engineer/i, range: "12 – 24 LPA", source: SOURCE, year: YEAR },
-  { match: /investment|finance manager|financial analyst|risk/i, range: "7 – 16 LPA", source: SOURCE, year: YEAR },
-  { match: /product manager|program manager|project manager/i, range: "9 – 20 LPA", source: SOURCE, year: YEAR },
+  {
+    match: /chief|vp|vice president|director|head of/i,
+    range: "18 – 35 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
+  {
+    match: /architect|scientist|machine learning|ai engineer/i,
+    range: "12 – 24 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
+  {
+    match: /investment|finance manager|financial analyst|risk/i,
+    range: "7 – 16 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
+  {
+    match: /product manager|program manager|project manager/i,
+    range: "9 – 20 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
   { match: /manager|lead/i, range: "7 – 15 LPA", source: SOURCE, year: YEAR },
   { match: /consultant|strategy/i, range: "6 – 14 LPA", source: SOURCE, year: YEAR },
-  { match: /developer|engineer|programmer|devops|cloud/i, range: "5 – 12 LPA", source: SOURCE, year: YEAR },
-  { match: /data analyst|business analyst|analyst/i, range: "5 – 11 LPA", source: SOURCE, year: YEAR },
+  {
+    match: /developer|engineer|programmer|devops|cloud/i,
+    range: "5 – 12 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
+  {
+    match: /data analyst|business analyst|analyst/i,
+    range: "5 – 11 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
   { match: /designer|ux|ui/i, range: "4.5 – 10 LPA", source: SOURCE, year: YEAR },
-  { match: /digital marketing|marketing|seo|content/i, range: "4 – 10 LPA", source: SOURCE, year: YEAR },
+  {
+    match: /digital marketing|marketing|seo|content/i,
+    range: "4 – 10 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
   { match: /hr|human resource|recruit|talent/i, range: "4 – 9 LPA", source: SOURCE, year: YEAR },
-  { match: /sales|business development|relationship/i, range: "4 – 10 LPA", source: SOURCE, year: YEAR },
+  {
+    match: /sales|business development|relationship/i,
+    range: "4 – 10 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
   { match: /accountant|audit|tax/i, range: "4 – 9 LPA", source: SOURCE, year: YEAR },
-  { match: /teacher|faculty|trainer|counsellor|counselor/i, range: "3.5 – 8 LPA", source: SOURCE, year: YEAR },
-  { match: /executive|associate|assistant|officer|coordinator/i, range: "3 – 7 LPA", source: SOURCE, year: YEAR },
+  {
+    match: /teacher|faculty|trainer|counsellor|counselor/i,
+    range: "3.5 – 8 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
+  {
+    match: /executive|associate|assistant|officer|coordinator/i,
+    range: "3 – 7 LPA",
+    source: SOURCE,
+    year: YEAR,
+  },
 ];
 
 const FALLBACK: SalaryBand = { match: /.*/, range: "4 – 10 LPA", source: SOURCE, year: YEAR };
@@ -78,23 +128,52 @@ const roleSets: Array<{ match: RegExp; roles: string[] }> = [
   },
   {
     match: /bca|b-sc-computer/i,
-    roles: ["Junior Software Developer", "Web Developer", "QA Engineer", "Support Engineer", "Data Analyst"],
+    roles: [
+      "Junior Software Developer",
+      "Web Developer",
+      "QA Engineer",
+      "Support Engineer",
+      "Data Analyst",
+    ],
   },
   {
     match: /bba|bachelor-of-business/i,
-    roles: ["Sales Executive", "Marketing Executive", "HR Associate", "Business Development Executive", "Operations Executive"],
+    roles: [
+      "Sales Executive",
+      "Marketing Executive",
+      "HR Associate",
+      "Business Development Executive",
+      "Operations Executive",
+    ],
   },
   {
     match: /b-com|m-com|commerce/i,
-    roles: ["Accountant", "Tax Associate", "Audit Assistant", "Finance Executive", "Financial Analyst"],
+    roles: [
+      "Accountant",
+      "Tax Associate",
+      "Audit Assistant",
+      "Finance Executive",
+      "Financial Analyst",
+    ],
   },
   {
     match: /journalism|mass-comm/i,
-    roles: ["Content Writer", "Digital Marketing Executive", "Public Relations Executive", "Media Coordinator"],
+    roles: [
+      "Content Writer",
+      "Digital Marketing Executive",
+      "Public Relations Executive",
+      "Media Coordinator",
+    ],
   },
   {
     match: /-ba$|bachelor-of-arts|-ma$|master-of-arts|english|psychology|sociology/i,
-    roles: ["Content Writer", "Teacher / Faculty", "HR Associate", "Counsellor", "Research Associate"],
+    roles: [
+      "Content Writer",
+      "Teacher / Faculty",
+      "HR Associate",
+      "Counsellor",
+      "Research Associate",
+    ],
   },
 ];
 

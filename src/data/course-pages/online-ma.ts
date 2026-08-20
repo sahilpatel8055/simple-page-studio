@@ -172,27 +172,77 @@ export const onlineMaContent: CourseContent = {
 
   specialisationGuide: [
     { goal: "Teaching, editing, content and language careers", specialisation: "English" },
-    { goal: "Civil services, policy analysis, political consulting", specialisation: "Political Science" },
-    { goal: "Government administration, public policy, NGO leadership", specialisation: "Public Administration" },
-    { goal: "Counselling, HR, clinical support roles (with further licensure)", specialisation: "Psychology" },
+    {
+      goal: "Civil services, policy analysis, political consulting",
+      specialisation: "Political Science",
+    },
+    {
+      goal: "Government administration, public policy, NGO leadership",
+      specialisation: "Public Administration",
+    },
+    {
+      goal: "Counselling, HR, clinical support roles (with further licensure)",
+      specialisation: "Psychology",
+    },
     { goal: "Social research, development sector, CSR", specialisation: "Sociology" },
     { goal: "Banking, research analysis, policy economics", specialisation: "Economics" },
     { goal: "Archival work, teaching, civil-services general studies", specialisation: "History" },
-    { goal: "Journalism, media production, corporate communication", specialisation: "Journalism & Mass Communication" },
+    {
+      goal: "Journalism, media production, corporate communication",
+      specialisation: "Journalism & Mass Communication",
+    },
     { goal: "School leadership, curriculum design, ed-tech", specialisation: "Education" },
   ],
 
   careers: [
-    { title: "School or College Teacher", detail: "Subject-specialist teaching role, typically alongside the eligibility test the school board or UGC framework requires." },
-    { title: "Content Writer / Editor", detail: "Writing, editing and quality-checking content for publishers, media houses or corporate teams." },
-    { title: "Civil Services Aspirant / Officer", detail: "Uses the discipline's syllabus overlap with UPSC or state PSC examinations, on qualifying the exam." },
-    { title: "Policy or Research Analyst", detail: "Supports government bodies, think tanks or NGOs with research briefs, data analysis and policy notes." },
-    { title: "HR Executive", detail: "Applies sociology, psychology or public-administration training to recruitment, engagement and employee relations." },
-    { title: "Social Worker / Programme Officer", detail: "Plans and runs community or development-sector programmes for NGOs and government schemes." },
-    { title: "Journalist / Media Professional", detail: "Reports, edits or produces content across print, broadcast or digital newsrooms." },
-    { title: "Counsellor (with further licensure)", detail: "Psychology postgraduates who complete the additional clinical training and registration required can move into counselling or therapy roles." },
-    { title: "Public Relations / Corporate Communications Executive", detail: "Manages messaging, media relations and internal communication for an organisation." },
-    { title: "Academic Researcher / PhD Scholar", detail: "Progresses into MPhil or PhD study using the dissertation and methodology grounding built during the MA." },
+    {
+      title: "School or College Teacher",
+      detail:
+        "Subject-specialist teaching role, typically alongside the eligibility test the school board or UGC framework requires.",
+    },
+    {
+      title: "Content Writer / Editor",
+      detail:
+        "Writing, editing and quality-checking content for publishers, media houses or corporate teams.",
+    },
+    {
+      title: "Civil Services Aspirant / Officer",
+      detail:
+        "Uses the discipline's syllabus overlap with UPSC or state PSC examinations, on qualifying the exam.",
+    },
+    {
+      title: "Policy or Research Analyst",
+      detail:
+        "Supports government bodies, think tanks or NGOs with research briefs, data analysis and policy notes.",
+    },
+    {
+      title: "HR Executive",
+      detail:
+        "Applies sociology, psychology or public-administration training to recruitment, engagement and employee relations.",
+    },
+    {
+      title: "Social Worker / Programme Officer",
+      detail:
+        "Plans and runs community or development-sector programmes for NGOs and government schemes.",
+    },
+    {
+      title: "Journalist / Media Professional",
+      detail: "Reports, edits or produces content across print, broadcast or digital newsrooms.",
+    },
+    {
+      title: "Counsellor (with further licensure)",
+      detail:
+        "Psychology postgraduates who complete the additional clinical training and registration required can move into counselling or therapy roles.",
+    },
+    {
+      title: "Public Relations / Corporate Communications Executive",
+      detail: "Manages messaging, media relations and internal communication for an organisation.",
+    },
+    {
+      title: "Academic Researcher / PhD Scholar",
+      detail:
+        "Progresses into MPhil or PhD study using the dissertation and methodology grounding built during the MA.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
@@ -270,7 +320,7 @@ export const onlineMaContent: CourseContent = {
     {
       question: "How much does an Online MA cost?",
       answer:
-        "Fees are set by each university, so the range is wide and also varies by discipline. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university, so the range is wide and also varies by discipline. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "Is an Online MA sufficient for a teaching job?",
