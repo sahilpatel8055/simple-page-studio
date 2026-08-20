@@ -1,21 +1,9 @@
 import { AppLink } from "@/components/common/AppLink";
-import { campusImage } from "@/lib/assets";
-import { blogBanners } from "@/lib/blogBanners";
-import { universityByBlogSlug, universityLabelByBlogSlug } from "@/data/university-blogs";
+import { articleCover } from "@/lib/articleCover";
+import { universityLabelByBlogSlug } from "@/data/university-blogs";
 import { formatDate, type Article } from "@/lib/content";
 import { ArrowRight, CalendarDays, Clock } from "lucide-react";
 
-const fallbackBanners = Object.values(blogBanners);
-
-/** Deterministic cover for a blog: campus photo of its university, else a stock banner. */
-export function blogCover(article: Article): string | undefined {
-  const uni = universityByBlogSlug[article.slug];
-  const campus = uni ? campusImage(uni) : undefined;
-  if (campus) return campus;
-  const i =
-    article.slug.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % fallbackBanners.length;
-  return fallbackBanners[i];
-}
 
 /** Blog card with an image banner — used on university and course pages. */
 export function BlogBannerCard({ item }: { item: Article }) {
