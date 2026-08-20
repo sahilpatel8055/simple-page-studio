@@ -6,7 +6,9 @@
  * "Online". Course structured data and any mode-dependent output must read it
  * from here so schema always matches the visible programme facts.
  */
-import { allProgrammePairs, siteSlugForMasterSlug } from "@/lib/universityData";
+import { allProgrammePairs } from "@/lib/universityData";
+import { siteSlugForMasterSlug } from "@/lib/courseMaster";
+
 
 export type DeliveryMode = "Online" | "Distance" | "Hybrid";
 
