@@ -20,6 +20,8 @@ import { Route as CompareRouteImport } from './routes/compare'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CounsellingRouteImport } from './routes/counselling'
 import { Route as CoursesRouteImport } from './routes/courses'
+import { Route as DisclaimerRouteImport } from './routes/disclaimer'
+import { Route as EditorialPolicyRouteImport } from './routes/editorial-policy'
 import { Route as NewsRouteImport } from './routes/news'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as RankingsRouteImport } from './routes/rankings'
@@ -117,6 +119,16 @@ const CounsellingRoute = CounsellingRouteImport.update({
 const CoursesRoute = CoursesRouteImport.update({
   id: '/courses',
   path: '/courses',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisclaimerRoute = DisclaimerRouteImport.update({
+  id: '/disclaimer',
+  path: '/disclaimer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EditorialPolicyRoute = EditorialPolicyRouteImport.update({
+  id: '/editorial-policy',
+  path: '/editorial-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NewsRoute = NewsRouteImport.update({
@@ -355,6 +367,8 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/counselling': typeof CounsellingRoute
   '/courses': typeof CoursesRouteWithChildren
+  '/disclaimer': typeof DisclaimerRoute
+  '/editorial-policy': typeof EditorialPolicyRoute
   '/news': typeof NewsRouteWithChildren
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/rankings': typeof RankingsRoute
@@ -407,6 +421,8 @@ export interface FileRoutesByTo {
   '/categories': typeof CategoriesRoute
   '/contact': typeof ContactRoute
   '/counselling': typeof CounsellingRoute
+  '/disclaimer': typeof DisclaimerRoute
+  '/editorial-policy': typeof EditorialPolicyRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/rankings': typeof RankingsRoute
   '/reviews': typeof ReviewsRouteWithChildren
@@ -458,6 +474,8 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/counselling': typeof CounsellingRoute
   '/courses': typeof CoursesRouteWithChildren
+  '/disclaimer': typeof DisclaimerRoute
+  '/editorial-policy': typeof EditorialPolicyRoute
   '/news': typeof NewsRouteWithChildren
   '/privacy-policy': typeof PrivacyPolicyRoute
   '/rankings': typeof RankingsRoute
@@ -516,6 +534,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/counselling'
     | '/courses'
+    | '/disclaimer'
+    | '/editorial-policy'
     | '/news'
     | '/privacy-policy'
     | '/rankings'
@@ -568,6 +588,8 @@ export interface FileRouteTypes {
     | '/categories'
     | '/contact'
     | '/counselling'
+    | '/disclaimer'
+    | '/editorial-policy'
     | '/privacy-policy'
     | '/rankings'
     | '/reviews'
@@ -618,6 +640,8 @@ export interface FileRouteTypes {
     | '/contact'
     | '/counselling'
     | '/courses'
+    | '/disclaimer'
+    | '/editorial-policy'
     | '/news'
     | '/privacy-policy'
     | '/rankings'
@@ -675,6 +699,8 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   CounsellingRoute: typeof CounsellingRoute
   CoursesRoute: typeof CoursesRouteWithChildren
+  DisclaimerRoute: typeof DisclaimerRoute
+  EditorialPolicyRoute: typeof EditorialPolicyRoute
   NewsRoute: typeof NewsRouteWithChildren
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
   RankingsRoute: typeof RankingsRoute
@@ -767,6 +793,20 @@ declare module '@tanstack/react-router' {
       path: '/courses'
       fullPath: '/courses'
       preLoaderRoute: typeof CoursesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/disclaimer': {
+      id: '/disclaimer'
+      path: '/disclaimer'
+      fullPath: '/disclaimer'
+      preLoaderRoute: typeof DisclaimerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/editorial-policy': {
+      id: '/editorial-policy'
+      path: '/editorial-policy'
+      fullPath: '/editorial-policy'
+      preLoaderRoute: typeof EditorialPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/news': {
@@ -1259,6 +1299,8 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   CounsellingRoute: CounsellingRoute,
   CoursesRoute: CoursesRouteWithChildren,
+  DisclaimerRoute: DisclaimerRoute,
+  EditorialPolicyRoute: EditorialPolicyRoute,
   NewsRoute: NewsRouteWithChildren,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
   RankingsRoute: RankingsRoute,

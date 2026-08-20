@@ -2,6 +2,8 @@ import { AppLink } from "@/components/common/AppLink";
 import { ArrowUpRight, Linkedin, Instagram, Youtube, Twitter } from "lucide-react";
 import { ecosystemLinks, footerNav } from "@/lib/navigation";
 import { NewsletterSignup } from "@/components/common/NewsletterSignup";
+import { FOOTER_DISCLAIMER, legalDocs } from "@/data/legal";
+
 
 const socials = [
   { label: "LinkedIn", Icon: Linkedin },
@@ -90,14 +92,25 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-3 border-t border-border pt-6 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} DegreeKhojo. All rights reserved.</p>
-          <div className="flex flex-wrap gap-4">
-            <AppLink to="/privacy-policy" className="hover:text-foreground">Privacy policy</AppLink>
-            <AppLink to="/terms-and-conditions" className="hover:text-foreground">Terms & conditions</AppLink>
-            <AppLink to="/about" className="hover:text-foreground">Editorial policy</AppLink>
+        <div className="mt-10 border-t border-border pt-8">
+          <p className="mx-auto max-w-4xl text-center text-xs leading-relaxed text-muted-foreground">
+            {FOOTER_DISCLAIMER}
+          </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm font-semibold">
+            {legalDocs.map((d, i) => (
+              <span key={d.path} className="flex items-center gap-3">
+                {i > 0 && <span className="text-muted-foreground">/</span>}
+                <AppLink to={d.path} className="text-foreground hover:text-brand">
+                  {d.label}
+                </AppLink>
+              </span>
+            ))}
           </div>
+          <p className="mt-6 text-center text-xs text-muted-foreground">
+            © {new Date().getFullYear()} DegreeKhojo. All rights reserved.
+          </p>
         </div>
+
       </div>
     </footer>
   );
