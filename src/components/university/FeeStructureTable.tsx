@@ -60,6 +60,8 @@ export function FeeStructureTable({
   if (!table || table.rows.length === 0) return null;
 
   const hasSpec = table.rows.some((r) => r.specialisation);
+  const hasFocus = table.rows.some((r) => r.focus);
+  const hasEligibility = table.rows.some((r) => r.eligibility);
 
   return (
     <div className="space-y-3">
@@ -94,6 +96,12 @@ export function FeeStructureTable({
                       {r.specialisation}
                     </span>
                   )}
+                  {(r.focus || r.eligibility) && (
+                    <span className="mt-1 block space-y-0.5 text-[0.62rem] font-normal leading-snug text-muted-foreground">
+                      {r.focus && <span className="block">Focus: {r.focus}</span>}
+                      {r.eligibility && <span className="block">Eligibility: {r.eligibility}</span>}
+                    </span>
+                  )}
                 </th>
                 <td className="px-2 py-2 align-top font-semibold text-foreground">{r.fee}</td>
                 <td className="px-2 py-2 align-top text-muted-foreground">{r.duration ?? "—"}</td>
@@ -123,6 +131,16 @@ export function FeeStructureTable({
               <th scope="col" className="px-3 py-2.5 text-left font-semibold">
                 Duration
               </th>
+              {hasFocus && (
+                <th scope="col" className="px-3 py-2.5 text-left font-semibold">
+                  Academic focus
+                </th>
+              )}
+              {hasEligibility && (
+                <th scope="col" className="px-3 py-2.5 text-left font-semibold">
+                  Eligibility
+                </th>
+              )}
             </tr>
           </thead>
           <tbody>
@@ -134,8 +152,11 @@ export function FeeStructureTable({
                 {hasSpec && <td className="px-3 py-2.5 text-muted-foreground">{r.specialisation ?? "—"}</td>}
                 <td className="px-3 py-2.5 font-semibold text-foreground">{r.fee}</td>
                 <td className="px-3 py-2.5 text-muted-foreground">{r.duration ?? "—"}</td>
+                {hasFocus && <td className="px-3 py-2.5 text-muted-foreground">{r.focus ?? "—"}</td>}
+                {hasEligibility && <td className="px-3 py-2.5 text-muted-foreground">{r.eligibility ?? "—"}</td>}
               </tr>
             ))}
+
           </tbody>
         </table>
       </div>
