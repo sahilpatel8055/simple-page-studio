@@ -28,6 +28,7 @@ import { Route as ScholarshipsRouteImport } from './routes/scholarships'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TagsRouteImport } from './routes/tags'
 import { Route as TermsAndConditionsRouteImport } from './routes/terms-and-conditions'
+import { Route as ThankYouRouteImport } from './routes/thank-you'
 import { Route as ToolsRouteImport } from './routes/tools'
 import { Route as UniversitiesRouteImport } from './routes/universities'
 import { Route as BlogsIndexRouteImport } from './routes/blogs.index'
@@ -156,6 +157,11 @@ const TagsRoute = TagsRouteImport.update({
 const TermsAndConditionsRoute = TermsAndConditionsRouteImport.update({
   id: '/terms-and-conditions',
   path: '/terms-and-conditions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ThankYouRoute = ThankYouRouteImport.update({
+  id: '/thank-you',
+  path: '/thank-you',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsRoute = ToolsRouteImport.update({
@@ -357,6 +363,7 @@ export interface FileRoutesByFullPath {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tags': typeof TagsRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/thank-you': typeof ThankYouRoute
   '/tools': typeof ToolsRouteWithChildren
   '/universities': typeof UniversitiesRouteWithChildren
   '/blogs/$slug': typeof BlogsSlugRoute
@@ -406,6 +413,7 @@ export interface FileRoutesByTo {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tags': typeof TagsRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/thank-you': typeof ThankYouRoute
   '/blogs/$slug': typeof BlogsSlugRoute
   '/career/$slug': typeof CareerSlugRoute
   '/compare/$comparison': typeof CompareComparisonRoute
@@ -458,6 +466,7 @@ export interface FileRoutesById {
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tags': typeof TagsRoute
   '/terms-and-conditions': typeof TermsAndConditionsRoute
+  '/thank-you': typeof ThankYouRoute
   '/tools': typeof ToolsRouteWithChildren
   '/universities': typeof UniversitiesRouteWithChildren
   '/blogs/$slug': typeof BlogsSlugRoute
@@ -515,6 +524,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/tags'
     | '/terms-and-conditions'
+    | '/thank-you'
     | '/tools'
     | '/universities'
     | '/blogs/$slug'
@@ -564,6 +574,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/tags'
     | '/terms-and-conditions'
+    | '/thank-you'
     | '/blogs/$slug'
     | '/career/$slug'
     | '/compare/$comparison'
@@ -615,6 +626,7 @@ export interface FileRouteTypes {
     | '/sitemap.xml'
     | '/tags'
     | '/terms-and-conditions'
+    | '/thank-you'
     | '/tools'
     | '/universities'
     | '/blogs/$slug'
@@ -671,6 +683,7 @@ export interface RootRouteChildren {
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TagsRoute: typeof TagsRoute
   TermsAndConditionsRoute: typeof TermsAndConditionsRoute
+  ThankYouRoute: typeof ThankYouRoute
   ToolsRoute: typeof ToolsRouteWithChildren
   UniversitiesRoute: typeof UniversitiesRouteWithChildren
   OnlineCoursesLevelCourseRoute: typeof OnlineCoursesLevelCourseRoute
@@ -810,6 +823,13 @@ declare module '@tanstack/react-router' {
       path: '/terms-and-conditions'
       fullPath: '/terms-and-conditions'
       preLoaderRoute: typeof TermsAndConditionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/thank-you': {
+      id: '/thank-you'
+      path: '/thank-you'
+      fullPath: '/thank-you'
+      preLoaderRoute: typeof ThankYouRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools': {
@@ -1247,6 +1267,7 @@ const rootRouteChildren: RootRouteChildren = {
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TagsRoute: TagsRoute,
   TermsAndConditionsRoute: TermsAndConditionsRoute,
+  ThankYouRoute: ThankYouRoute,
   ToolsRoute: ToolsRouteWithChildren,
   UniversitiesRoute: UniversitiesRouteWithChildren,
   OnlineCoursesLevelCourseRoute: OnlineCoursesLevelCourseRoute,

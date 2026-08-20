@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "@tanstack/react-router";
 import { CheckCircle2, ShieldCheck } from "lucide-react";
 import { universities } from "@/lib/content";
 import { universityLogo } from "@/lib/assets";
@@ -80,6 +81,7 @@ export function CounsellingForm({
   onDone?: () => void;
 }) {
   const [sent, setSent] = useState(false);
+  const navigate = useNavigate();
 
   if (sent) {
     return (
@@ -152,6 +154,8 @@ export function CounsellingForm({
           });
           markLeadSubmitted();
           setSent(true);
+          onDone?.();
+          void navigate({ to: "/thank-you" });
         }}
       >
         <label className="block">
