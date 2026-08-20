@@ -692,7 +692,10 @@ export const authors: Author[] = [
     initials: "NV",
     bio: "Covers fee structures, scholarships and comparative analysis across Indian universities.",
     articles: 47,
+    expertise: ["Fees", "Scholarships", "Rankings"],
+  },
   {
+
     slug: "kartik-ahuja",
     name: "Kartik Ahuja",
     role: "Data & Verification Lead",
