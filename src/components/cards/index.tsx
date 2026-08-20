@@ -14,8 +14,10 @@ import {
 } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
 import { campusImage, universityLogo } from "@/lib/assets";
+import { articleCover } from "@/lib/articleCover";
 import { Chip } from "@/components/common/Primitives";
 import { formatDate } from "@/lib/content";
+
 import type {
   Article,
   Author,
