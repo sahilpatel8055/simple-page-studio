@@ -4,6 +4,8 @@ import { useTimedSurface, usePopupSurface } from "@/components/common/PopupManag
 import { useRouterState } from "@tanstack/react-router";
 import { universities } from "@/data";
 import { courseFamilies } from "@/lib/content";
+import { submitLead, trackContactClick } from "@/lib/leads";
+import { savePartialLead } from "@/lib/leadContext";
 
 const WHATSAPP_ICON = "/whatsapp-icon.png";
 
@@ -166,6 +168,8 @@ export function LeadChatBot() {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
+    savePartialLead({ name, phone });
+    void submitLead({ name, phone, form: "Chatbot", note: `${level} · ${goal}` });
     setStep(3);
     push([
       { from: "user", text: `${name} · ${phone}` },
@@ -185,6 +189,7 @@ export function LeadChatBot() {
               <div className="mt-2 flex items-center gap-2">
                 <a
                   href="tel:+919000000000"
+                  onClick={() => trackContactClick("Call", "Chatbot counselling nudge")}
                   aria-label="Call a counsellor"
                   className="grid h-8 w-8 place-items-center rounded-full bg-[#7f1813] text-white"
                 >
@@ -194,6 +199,7 @@ export function LeadChatBot() {
                   href="https://wa.me/919000000000"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackContactClick("WhatsApp", "Chatbot counselling nudge")}
                   aria-label="Chat on WhatsApp"
                   className="grid h-8 w-8 place-items-center overflow-hidden rounded-full"
                 >
@@ -325,6 +331,7 @@ export function LeadChatBot() {
                 href="https://wa.me/919000000000"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackContactClick("WhatsApp", "Chatbot")}
                 className="flex h-10 items-center justify-center rounded-lg bg-[#25D366] text-sm font-bold text-white"
               >
                 Continue on WhatsApp
