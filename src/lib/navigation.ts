@@ -219,10 +219,3 @@ export const footerNav: NavColumn[] = [
     ],
   },
 ];
-
-export const ecosystemLinks: NavLink[] = [
-  { label: "DegreeKhojo", href: "https://degreekhojo.com/", description: "Main counselling platform" },
-  { label: "DU SOL", href: "https://dusol.degreekhojo.com/", description: "DU SOL admissions" },
-  { label: "LPU Online", href: "https://lpuonline.degreekhojo.com/", description: "LPU Online admissions" },
-  { label: "Amity Online", href: "https://amityonline.degreekhojo.com/", description: "Amity Online admissions" },
-];
