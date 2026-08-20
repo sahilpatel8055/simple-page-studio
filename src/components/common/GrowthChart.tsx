@@ -20,12 +20,12 @@ const x = (i: number) => PAD_L + (i * (W - PAD_L - 20)) / (points.length - 1);
 const y = (v: number) => PAD_T + (1 - v / max) * (H - PAD_T - PAD_B);
 
 function curve() {
-  let d = `M ${x(0)} ${y(points[0].value)}`;
+  let d = `M ${x(0)} ${y(points[0]!.value)}`;
   for (let i = 1; i < points.length; i++) {
     const px = x(i - 1);
-    const py = y(points[i - 1].value);
+    const py = y(points[i - 1]!.value);
     const cx = x(i);
-    const cy = y(points[i].value);
+    const cy = y(points[i]!.value);
     const mx = (px + cx) / 2;
     d += ` C ${mx} ${py}, ${mx} ${cy}, ${cx} ${cy}`;
   }
@@ -41,8 +41,8 @@ export function GrowthChart() {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
+      (entries) => {
+        if (entries[0]?.isIntersecting) {
           setActive(true);
           obs.disconnect();
         }
