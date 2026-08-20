@@ -17,6 +17,8 @@ import { campusImage, universityLogo } from "@/lib/assets";
 import { articleCover } from "@/lib/articleCover";
 import { Chip } from "@/components/common/Primitives";
 import { formatDate } from "@/lib/content";
+import { expertPhoto } from "@/lib/experts";
+
 
 import type {
   Article,
