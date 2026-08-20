@@ -2,17 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
 import {
   articles,
-  articlesByAuthor,
-  articlesByCategory,
-  articlesByTag,
-  authors,
   careerGuides,
-  categories,
   comparisons,
   news,
   reviews,
   scholarships,
-  tags,
 } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
 import { offerings, programmes, universities as universityRecords } from "@/data";
