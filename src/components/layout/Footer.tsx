@@ -71,7 +71,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-            AVEDU ecosystem
+            DegreeKhojo ecosystem
           </p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {ecosystemLinks.map((l) => (

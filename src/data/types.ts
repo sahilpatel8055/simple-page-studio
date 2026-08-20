@@ -74,7 +74,7 @@ export interface University {
   examPattern?: string;
   websiteUrl?: string;
   logoUrl?: string;
-  /** Deep link used to hand the lead over to the AVEDU application flow. */
+  /** Deep link used to hand the lead over to the DegreeKhojo application flow. */
   applyUrl?: string;
   verified: boolean;
   lastUpdated: string;

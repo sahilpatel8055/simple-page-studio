@@ -105,10 +105,10 @@ export const organizationSchema = () => ({
   url: SITE_URL,
   description: SITE_TAGLINE,
   sameAs: [
-    "https://avedu.in/",
-    "https://dusol.avedu.in/",
-    "https://lpuonline.avedu.in/",
-    "https://amityonline.avedu.in/",
+    "https://degreekhojo.com/",
+    "https://dusol.degreekhojo.com/",
+    "https://lpuonline.degreekhojo.com/",
+    "https://amityonline.degreekhojo.com/",
   ],
 });
 

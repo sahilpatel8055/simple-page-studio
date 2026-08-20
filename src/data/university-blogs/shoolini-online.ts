@@ -1,7 +1,7 @@
 import type { PostContent } from "@/data/posts";
 import type { Article } from "@/lib/content";
 
-const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, AVEDU" };
+const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, DegreeKhojo" };
 const UPDATED = "2026-08-14";
 
 export const shooliniOnlineArticles: Article[] = [
@@ -281,7 +281,7 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
           {
             kind: "promo",
             title: "Explore the Shoolini Online programme pages",
-            body: "See detailed curriculum, faculty and outcomes for each Shoolini Online degree on AVEDU.",
+            body: "See detailed curriculum, faculty and outcomes for each Shoolini Online degree on DegreeKhojo.",
             ctaLabel: "View Shoolini University Online",
             href: "/universities/shoolini-online",
           },
@@ -296,7 +296,7 @@ export const shooliniOnlinePosts: Record<string, PostContent> = {
           },
           {
             kind: "cta",
-            title: "Talk to an AVEDU counsellor before you pay",
+            title: "Talk to an DegreeKhojo counsellor before you pay",
             body: "Share your target programme and budget and we will verify the current fee, scholarship and EMI terms for you.",
             buttonLabel: "Talk to a counsellor",
           },

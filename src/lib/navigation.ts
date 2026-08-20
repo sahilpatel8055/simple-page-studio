@@ -219,10 +219,3 @@ export const footerNav: NavColumn[] = [
     ],
   },
 ];
-
-export const ecosystemLinks: NavLink[] = [
-  { label: "AVEDU", href: "https://avedu.in/", description: "Main counselling platform" },
-  { label: "DU SOL", href: "https://dusol.avedu.in/", description: "DU SOL admissions" },
-  { label: "LPU Online", href: "https://lpuonline.avedu.in/", description: "LPU Online admissions" },
-  { label: "Amity Online", href: "https://amityonline.avedu.in/", description: "Amity Online admissions" },
-];

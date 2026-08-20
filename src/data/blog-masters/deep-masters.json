@@ -12,7 +12,7 @@
      },
      {
       "kind": "p",
-      "text": "The name alone is not enough to judge a programme. Two universities can use similar specialisation names while offering different electives, projects, tools and depth. AVEDU should therefore distinguish between a general description of a specialisation and the actual curriculum published for a particular university."
+      "text": "The name alone is not enough to judge a programme. Two universities can use similar specialisation names while offering different electives, projects, tools and depth. DegreeKhojo should therefore distinguish between a general description of a specialisation and the actual curriculum published for a particular university."
      }
     ]
    },
@@ -555,7 +555,7 @@
      },
      {
       "kind": "p",
-      "text": "A university may advertise a broad MBA and offer only selected specialisations in a particular session. AVEDU should display university-specific availability from the current programme record rather than treating a general market list as proof of availability."
+      "text": "A university may advertise a broad MBA and offer only selected specialisations in a particular session. DegreeKhojo should display university-specific availability from the current programme record rather than treating a general market list as proof of availability."
      }
     ]
    },
@@ -765,7 +765,7 @@
     "blocks": [
      {
       "kind": "p",
-      "text": "This depends entirely on the university's programme rules. Some programmes allow specialisation selection after common foundational semesters; others structure the track from a particular semester or use electives. AVEDU should never give a universal yes/no answer. Link to the university-specific rule when available."
+      "text": "This depends entirely on the university's programme rules. Some programmes allow specialisation selection after common foundational semesters; others structure the track from a particular semester or use electives. DegreeKhojo should never give a universal yes/no answer. Link to the university-specific rule when available."
      }
     ]
    },
@@ -1042,7 +1042,7 @@
      },
      {
       "kind": "p",
-      "text": "These points should not be converted into a universal rule for every Online BBA programme. Eligibility is ultimately determined by the university's current admission policy. AVEDU should display university-specific eligibility on each course page rather than allowing a generic statement to override programme-level requirements."
+      "text": "These points should not be converted into a universal rule for every Online BBA programme. Eligibility is ultimately determined by the university's current admission policy. DegreeKhojo should display university-specific eligibility on each course page rather than allowing a generic statement to override programme-level requirements."
      },
      {
       "kind": "p",
@@ -1329,7 +1329,7 @@
      },
      {
       "kind": "p",
-      "text": "Specialisation names and availability are not identical across universities. AVEDU should therefore show specialisations from the university's actual course record rather than generating the same list on every BBA page."
+      "text": "Specialisation names and availability are not identical across universities. DegreeKhojo should therefore show specialisations from the university's actual course record rather than generating the same list on every BBA page."
      }
     ]
    },
@@ -1522,7 +1522,7 @@
      },
      {
       "kind": "p",
-      "text": "AVEDU should therefore avoid a generic 'all Online BBA degrees are valid' claim. The safest architecture is to explain what students should verify and then provide university-specific information on the relevant course page."
+      "text": "DegreeKhojo should therefore avoid a generic 'all Online BBA degrees are valid' claim. The safest architecture is to explain what students should verify and then provide university-specific information on the relevant course page."
      }
     ]
    },
@@ -1783,7 +1783,7 @@
       "items": [
        "Primary topic: Online BBA admission 2026.",
        "Use supporting terms naturally: Online BBA eligibility, Online BBA admission process, Online BBA documents, Online BBA fees, Online BBA specialisations, Online BBA duration, Online BBA courses and Online BBA career options.",
-       "Build internal links to AVEDU's Online BBA pillar page, university-specific Online BBA course pages, specialisation pages, fee guides and related comparison content.",
+       "Build internal links to DegreeKhojo's Online BBA pillar page, university-specific Online BBA course pages, specialisation pages, fee guides and related comparison content.",
        "Keep generic admission guidance on this article and university-specific eligibility, fee, curriculum, dates and documents on the corresponding university course pages.",
        "Use a visible Last Updated date for time-sensitive admission content.",
        "Do not publish a universal admission deadline unless it applies to the exact programme/session.",
@@ -1808,7 +1808,7 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU, this article should act as the broad admission resource, while university-specific pages should provide the exact fee, eligibility, curriculum, duration, specialisations and other researched facts for each programme."
+      "text": "For DegreeKhojo, this article should act as the broad admission resource, while university-specific pages should provide the exact fee, eligibility, curriculum, duration, specialisations and other researched facts for each programme."
      }
     ]
    }
@@ -2069,7 +2069,7 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU, eligibility should therefore be maintained at the university-course level rather than being presented as a universal rule on a generic course page."
+      "text": "For DegreeKhojo, eligibility should therefore be maintained at the university-course level rather than being presented as a universal rule on a generic course page."
      }
     ]
    },
@@ -2731,7 +2731,7 @@
       "items": [
        "Keep the H1 focused on the primary search intent: Online BCA Career Guide 2026: Roles, Skills and Next Steps.",
        "Use supporting H2s around Online BCA career scope, jobs, skills, salary, specialisations, higher studies and career roadmap.",
-       "Add contextual internal links to AVEDU's Online BCA pillar, university-specific BCA pages, BCA specialisation pages, MCA page and relevant career guides.",
+       "Add contextual internal links to DegreeKhojo's Online BCA pillar, university-specific BCA pages, BCA specialisation pages, MCA page and relevant career guides.",
        "Do not repeat the same generic curriculum paragraph after every university/specialisation section. Use this article for the broad explanation and link to university-specific evidence.",
        "Where a fee, eligibility, duration, specialisation or salary number changes over time, show a Last updated date and maintain the underlying research record.",
        "Do not present generic regulatory language as proof that every university or programme has identical status. Verify at programme/session level.",
@@ -2744,11 +2744,11 @@
     ]
    },
    {
-    "heading": "Editorial Accuracy Rules for AVEDU",
+    "heading": "Editorial Accuracy Rules for DegreeKhojo",
     "blocks": [
      {
       "kind": "p",
-      "text": "This article is intentionally broad. University-specific facts should not be copied into the generic article as universal truths. When AVEDU publishes a university card or course page, use that university's researched fee, curriculum, eligibility, duration and specialisation information on the corresponding page."
+      "text": "This article is intentionally broad. University-specific facts should not be copied into the generic article as universal truths. When DegreeKhojo publishes a university card or course page, use that university's researched fee, curriculum, eligibility, duration and specialisation information on the corresponding page."
      },
      {
       "kind": "p",
@@ -2997,7 +2997,7 @@
      },
      {
       "kind": "p",
-      "text": "Students should never treat this generic section as a substitute for the exact university eligibility. AVEDU should display programme-level eligibility separately on every university course page."
+      "text": "Students should never treat this generic section as a substitute for the exact university eligibility. DegreeKhojo should display programme-level eligibility separately on every university course page."
      }
     ]
    },
@@ -3132,7 +3132,7 @@
      },
      {
       "kind": "p",
-      "text": "The exact subjects above are examples of common B.Com curriculum areas, not a claim that every Online B.Com programme contains every subject. University-specific semester tables should always be the authoritative curriculum displayed on AVEDU."
+      "text": "The exact subjects above are examples of common B.Com curriculum areas, not a claim that every Online B.Com programme contains every subject. University-specific semester tables should always be the authoritative curriculum displayed on DegreeKhojo."
      }
     ]
    },
@@ -3183,7 +3183,7 @@
     "blocks": [
      {
       "kind": "p",
-      "text": "Not every university offers a formal specialisation. Some programmes use elective groups or focused tracks instead. AVEDU should preserve that distinction instead of presenting electives as a formal specialisation."
+      "text": "Not every university offers a formal specialisation. Some programmes use elective groups or focused tracks instead. DegreeKhojo should preserve that distinction instead of presenting electives as a formal specialisation."
      },
      {
       "kind": "h3",
@@ -3277,7 +3277,7 @@
      },
      {
       "kind": "p",
-      "text": "Because university fees change and are programme-specific, AVEDU should use researched current fee data on university course pages. A broad article should explain how to compare fees rather than inventing a universal 'average fee' that may quickly become outdated."
+      "text": "Because university fees change and are programme-specific, DegreeKhojo should use researched current fee data on university course pages. A broad article should explain how to compare fees rather than inventing a universal 'average fee' that may quickly become outdated."
      }
     ]
    },
@@ -3569,7 +3569,7 @@
      },
      {
       "kind": "p",
-      "text": "AVEDU should avoid presenting generic salary numbers as guaranteed outcomes. Where salary figures are published, they should have a clear source, date and methodology."
+      "text": "DegreeKhojo should avoid presenting generic salary numbers as guaranteed outcomes. Where salary figures are published, they should have a clear source, date and methodology."
      }
     ]
    },
@@ -3951,7 +3951,7 @@
      },
      {
       "kind": "p",
-      "text": "The exact fee of an Online MBA must always be checked against the current university fee schedule for the relevant admission session. AVEDU should store university-specific researched fees separately from this general article."
+      "text": "The exact fee of an Online MBA must always be checked against the current university fee schedule for the relevant admission session. DegreeKhojo should store university-specific researched fees separately from this general article."
      }
     ]
    },
@@ -4084,7 +4084,7 @@
      },
      {
       "kind": "p",
-      "text": "Do not subtract an advertised 'up to' scholarship unless the student actually qualifies for it. Keep standard fee and discounted payable fee as separate fields in AVEDU."
+      "text": "Do not subtract an advertised 'up to' scholarship unless the student actually qualifies for it. Keep standard fee and discounted payable fee as separate fields in DegreeKhojo."
      }
     ]
    },
@@ -4304,7 +4304,7 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU, display 'monthly EMI from' only when the underlying payment-plan data is available, and pair it with the complete programme fee."
+      "text": "For DegreeKhojo, display 'monthly EMI from' only when the underlying payment-plan data is available, and pair it with the complete programme fee."
      }
     ]
    },
@@ -4321,7 +4321,7 @@
      },
      {
       "kind": "p",
-      "text": "AVEDU should show the exact fee attached to the exact university programme/specialisation rather than assuming that all specialisations have the same price."
+      "text": "DegreeKhojo should show the exact fee attached to the exact university programme/specialisation rather than assuming that all specialisations have the same price."
      }
     ]
    },
@@ -4429,7 +4429,7 @@
     ]
    },
    {
-    "heading": "Online MBA Fee Comparison Table: How AVEDU Should Display It",
+    "heading": "Online MBA Fee Comparison Table: How DegreeKhojo Should Display It",
     "blocks": [
      {
       "kind": "table",
@@ -4504,7 +4504,7 @@
      },
      {
       "kind": "p",
-      "text": "For example, if a university quotes ₹25,000 per semester for four semesters, the academic tuition is ₹1,00,000 before any separate mandatory charges. AVEDU's comparison engine should normalise fees to a common 'total programme fee' field wherever the source permits."
+      "text": "For example, if a university quotes ₹25,000 per semester for four semesters, the academic tuition is ₹1,00,000 before any separate mandatory charges. DegreeKhojo's comparison engine should normalise fees to a common 'total programme fee' field wherever the source permits."
      }
     ]
    },
@@ -4681,12 +4681,12 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU, save the official source and the date on which the fee was checked."
+      "text": "For DegreeKhojo, save the official source and the date on which the fee was checked."
      }
     ]
    },
    {
-    "heading": "AVEDU Fee Data Model",
+    "heading": "DegreeKhojo Fee Data Model",
     "blocks": [
      {
       "kind": "p",
@@ -4723,7 +4723,7 @@
      },
      {
       "kind": "p",
-      "text": "This structure allows AVEDU to update a fee without rewriting the entire article."
+      "text": "This structure allows DegreeKhojo to update a fee without rewriting the entire article."
      }
     ]
    },
@@ -4774,7 +4774,7 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU, the strongest approach is to keep this article as the general Online MBA fee pillar and use separately researched university records for exact fees. Each university page should show the total programme fee, payment schedule, scholarship conditions, mandatory extras and Last Updated date, while preserving the underlying research source internally."
+      "text": "For DegreeKhojo, the strongest approach is to keep this article as the general Online MBA fee pillar and use separately researched university records for exact fees. Each university page should show the total programme fee, payment schedule, scholarship conditions, mandatory extras and Last Updated date, while preserving the underlying research source internally."
      },
      {
       "kind": "p",
@@ -4833,7 +4833,7 @@
     "answer": "Tuition is the academic teaching charge; total programme fee should represent all mandatory charges needed to complete the programme, subject to the university's stated fee structure."
    },
    {
-    "question": "Should AVEDU show fee 'from' pricing?",
+    "question": "Should DegreeKhojo show fee 'from' pricing?",
     "answer": "It can be useful for comparison, but the exact programme fee should be clearly displayed and promotional conditions should not be hidden."
    },
    {
@@ -5290,7 +5290,7 @@
     "blocks": [
      {
       "kind": "p",
-      "text": "Specialisation names vary substantially across universities. AVEDU should never manufacture a specialisation simply because it is common in the market. Publish a specialisation page only when the university actually offers that track or when the page is explicitly presented as a general career/learning guide."
+      "text": "Specialisation names vary substantially across universities. DegreeKhojo should never manufacture a specialisation simply because it is common in the market. Publish a specialisation page only when the university actually offers that track or when the page is explicitly presented as a general career/learning guide."
      },
      {
       "kind": "h3",
@@ -5371,7 +5371,7 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU, university-specific fee values should come from the researched university record and carry a Last Updated date. Do not combine a range from multiple universities and display it as though it were the fee of one programme."
+      "text": "For DegreeKhojo, university-specific fee values should come from the researched university record and carry a Last Updated date. Do not combine a range from multiple universities and display it as though it were the fee of one programme."
      }
     ]
    },
@@ -5595,7 +5595,7 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU, university-specific placement salary figures should be sourced to the university's placement report or another identifiable primary/credible source, with the reporting year clearly displayed."
+      "text": "For DegreeKhojo, university-specific placement salary figures should be sourced to the university's placement report or another identifiable primary/credible source, with the reporting year clearly displayed."
      }
     ]
    },
@@ -6056,7 +6056,7 @@
     "blocks": [
      {
       "kind": "p",
-      "text": "Students commonly use 'DEB approved' as shorthand for an online or distance programme being valid under the UGC-DEB framework. For accuracy, AVEDU should avoid presenting this phrase as a universal official status label unless the underlying UGC-DEB listing uses that terminology."
+      "text": "Students commonly use 'DEB approved' as shorthand for an online or distance programme being valid under the UGC-DEB framework. For accuracy, DegreeKhojo should avoid presenting this phrase as a universal official status label unless the underlying UGC-DEB listing uses that terminology."
      },
      {
       "kind": "p",
@@ -6204,7 +6204,7 @@
      },
      {
       "kind": "p",
-      "text": "For AVEDU's research system, store the official listing/notice, retrieval date, academic year, mode, HEI and programme name in the source record."
+      "text": "For DegreeKhojo's research system, store the official listing/notice, retrieval date, academic year, mode, HEI and programme name in the source record."
      },
      {
       "kind": "h3",
@@ -6225,7 +6225,7 @@
      },
      {
       "kind": "p",
-      "text": "This is the model AVEDU should follow internally: store programme-level regulatory evidence rather than a single generic 'UGC approved' field for the whole university."
+      "text": "This is the model DegreeKhojo should follow internally: store programme-level regulatory evidence rather than a single generic 'UGC approved' field for the whole university."
      }
     ]
    },
@@ -6279,7 +6279,7 @@
     "blocks": [
      {
       "kind": "p",
-      "text": "Admission timelines are session-specific. The UGC-DEB portal currently states that for the academic session beginning August 2026, the last date for student admission is 15 September 2026. AVEDU should not hard-code a generic 'January and July' table as a permanent rule because the actual session calendar and official deadlines can change."
+      "text": "Admission timelines are session-specific. The UGC-DEB portal currently states that for the academic session beginning August 2026, the last date for student admission is 15 September 2026. DegreeKhojo should not hard-code a generic 'January and July' table as a permanent rule because the actual session calendar and official deadlines can change."
      },
      {
       "kind": "p",
@@ -6330,7 +6330,7 @@
      },
      {
       "kind": "p",
-      "text": "AVEDU should therefore explain academic recognition and equivalence carefully without promising a career outcome."
+      "text": "DegreeKhojo should therefore explain academic recognition and equivalence carefully without promising a career outcome."
      }
     ]
    },
@@ -6433,11 +6433,11 @@
     ]
    },
    {
-    "heading": "How AVEDU Should Display This Information",
+    "heading": "How DegreeKhojo Should Display This Information",
     "blocks": [
      {
       "kind": "p",
-      "text": "For AVEDU, the strongest approach is not to create a large 'Verified/Unverified' badge that implies a permanent guarantee. Regulatory status is time-sensitive and programme-specific. A cleaner model is to display the researched regulatory status with a 'Last Updated' date and provide the underlying official source where appropriate."
+      "text": "For DegreeKhojo, the strongest approach is not to create a large 'Verified/Unverified' badge that implies a permanent guarantee. Regulatory status is time-sensitive and programme-specific. A cleaner model is to display the researched regulatory status with a 'Last Updated' date and provide the underlying official source where appropriate."
      },
      {
       "kind": "table",
@@ -6474,7 +6474,7 @@
      },
      {
       "kind": "p",
-      "text": "If AVEDU's UI wants to keep the experience simple, 'Last Updated' is the key freshness signal. Internally, however, retain the exact source, retrieval date, academic year, mode and programme fields for auditability."
+      "text": "If DegreeKhojo's UI wants to keep the experience simple, 'Last Updated' is the key freshness signal. Internally, however, retain the exact source, retrieval date, academic year, mode and programme fields for auditability."
      }
     ]
    },

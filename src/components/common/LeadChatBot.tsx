@@ -188,7 +188,7 @@ export function LeadChatBot() {
               </p>
               <div className="mt-2 flex items-center gap-2">
                 <a
-                  href="tel:+919000000000"
+                  href="tel:+918770012496"
                   onClick={() => trackContactClick("Call", "Chatbot counselling nudge")}
                   aria-label="Call a counsellor"
                   className="grid h-8 w-8 place-items-center rounded-full bg-[#7f1813] text-white"
@@ -196,7 +196,7 @@ export function LeadChatBot() {
                   <Phone className="h-4 w-4" />
                 </a>
                 <a
-                  href="https://wa.me/919000000000"
+                  href="https://wa.me/918770012496"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => trackContactClick("WhatsApp", "Chatbot counselling nudge")}
@@ -328,7 +328,7 @@ export function LeadChatBot() {
             )}
             {step === 3 && (
               <a
-                href="https://wa.me/919000000000"
+                href="https://wa.me/918770012496"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => trackContactClick("WhatsApp", "Chatbot")}

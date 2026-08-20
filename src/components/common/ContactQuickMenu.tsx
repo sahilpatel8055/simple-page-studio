@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { Headset, Phone } from "lucide-react";
 import { trackContactClick } from "@/lib/leads";
 
-export const AVEDU_PHONE = "+919000000000";
-export const AVEDU_WHATSAPP = "919000000000";
+export const DK_PHONE = "+918770012496";
+export const DK_WHATSAPP = "918770012496";
 
 /**
  * Compact header CTA (mobile-first): one round button that opens a small
@@ -63,7 +63,7 @@ export function ContactQuickMenu() {
       {open && (
         <div className="absolute right-0 top-12 z-50 w-48 overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
           <a
-            href={`tel:${AVEDU_PHONE}`}
+            href={`tel:${DK_PHONE}`}
             onClick={() => {
               trackContactClick("Call", "Header contact menu");
               setOpen(false);
@@ -73,7 +73,7 @@ export function ContactQuickMenu() {
             <Phone className="h-4 w-4 text-[#7f1813]" /> Call
           </a>
           <a
-            href={`https://wa.me/${AVEDU_WHATSAPP}`}
+            href={`https://wa.me/${DK_WHATSAPP}`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => {

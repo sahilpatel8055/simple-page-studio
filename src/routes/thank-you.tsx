@@ -12,7 +12,7 @@ import {
 import { AppLink } from "@/components/common/AppLink";
 import { courseFamilies, articles, universities } from "@/lib/content";
 import { universityLogo } from "@/lib/assets";
-import { AVEDU_PHONE, AVEDU_WHATSAPP } from "@/components/common/ContactQuickMenu";
+import { DK_PHONE, DK_WHATSAPP } from "@/components/common/ContactQuickMenu";
 import { trackContactClick } from "@/lib/leads";
 import { canonical, pageMeta } from "@/lib/seo";
 
@@ -71,7 +71,7 @@ function Page() {
 
           <div className="mt-6 flex flex-col items-center justify-center gap-2.5 sm:flex-row">
             <a
-              href={`https://wa.me/${AVEDU_WHATSAPP}`}
+              href={`https://wa.me/${DK_WHATSAPP}`}
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackContactClick("WhatsApp", "Thank you page")}
@@ -81,7 +81,7 @@ function Page() {
               WhatsApp
             </a>
             <a
-              href={`tel:${AVEDU_PHONE}`}
+              href={`tel:${DK_PHONE}`}
               onClick={() => trackContactClick("Call", "Thank you page")}
               className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl border border-[#7f1813]/30 bg-card px-6 text-sm font-bold text-[#7f1813] sm:w-auto"
             >

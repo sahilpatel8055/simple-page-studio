@@ -25,7 +25,7 @@ function Page() {
         {authors.map((a) => (<AuthorCard key={a.slug} item={a} />))}
       </div>
       <div className="mx-auto mt-16 max-w-3xl space-y-8">
-        {["Our mission", "Editorial policy", "How we research", "The AVEDU ecosystem"].map((h) => (
+        {["Our mission", "Editorial policy", "How we research"].map((h) => (
           <section key={h}>
             <h2 className="text-xl font-bold">{h}</h2>
             <div className="mt-3 space-y-3" data-cms-slot="rich-text">

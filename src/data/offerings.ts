@@ -8,7 +8,7 @@ import { openUniversityFee } from "@/lib/openUniversityFees";
  * Fees are passed through verbatim — a `null` stays `null` so the UI can hide
  * the row rather than display an invented number.
  *
- * Precedence: official open-university fee documents > AVEDU fee sheet >
+ * Precedence: official open-university fee documents > DegreeKhojo fee sheet >
  * the value already in the master dataset.
  */
 export const offerings: Offering[] = allProgrammePairs().map(({ university, programme }) => {

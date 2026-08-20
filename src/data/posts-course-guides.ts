@@ -6,7 +6,7 @@
  */
 import type { PostContent } from "./posts";
 
-const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, AVEDU" };
+const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, DegreeKhojo" };
 const UPDATED = "2026-08-16";
 
 const sources = [

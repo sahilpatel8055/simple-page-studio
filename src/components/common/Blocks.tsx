@@ -318,7 +318,7 @@ export function StickyMobileCTA({
  */
 export function DesktopStickyCTA({
   href = "/contact",
-  phone = "+91 90000 00000",
+  phone = "+91 87700 12496",
 }: {
   href?: string;
   phone?: string;

@@ -1,7 +1,7 @@
 import type { PostContent } from "@/data/posts";
 import type { Article } from "@/lib/content";
 
-const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, AVEDU" };
+const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, DegreeKhojo" };
 const UPDATED = "2026-08-18";
 
 export const parulOnlineArticles: Article[] = [
@@ -141,7 +141,7 @@ export const parulOnlinePosts: Record<string, PostContent> = {
           {
             kind: "promo",
             title: "See Parul's full online programme list",
-            body: "Compare Parul's online MBA, MCA, BBA, BCA and diploma programmes on AVEDU before you apply.",
+            body: "Compare Parul's online MBA, MCA, BBA, BCA and diploma programmes on DegreeKhojo before you apply.",
             ctaLabel: "View Parul University Online",
             href: "/universities/parul-online",
           },
