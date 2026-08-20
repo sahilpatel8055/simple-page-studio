@@ -46,8 +46,13 @@ export interface CompareRow {
 export interface CompareGroup {
   id: string;
   title: string;
+  /** Short line describing what the block answers. */
+  blurb?: string;
+  /** Locked blocks stay blurred until the visitor unlocks the full report. */
+  locked?: boolean;
   rows: CompareRow[];
 }
+
 
 const uniqueSpecialisations = (slug: string) => {
   const names = new Set<string>();
