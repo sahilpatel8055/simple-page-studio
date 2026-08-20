@@ -28,7 +28,7 @@ export const company = {
     email: "support@degreekhojo.com",
     editorial: "editor@degreekhojo.com",
     grievance: "grievance@degreekhojo.com",
-    phone: "+91 8383805805",
+    phone: "+91 87700 12496",
     hours: "Mon–Sat, 10:00 AM – 7:00 PM IST",
   },
   socials: [

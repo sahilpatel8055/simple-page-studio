@@ -254,7 +254,7 @@ function PromoBannerBlock({ block }: { block: Extract<PostBlock, { kind: "promo"
         </AppLink>
       ) : (
         <a
-          href="tel:+919000000000"
+          href="tel:+918770012496"
           onClick={() => trackContactClick("Call", "Article CTA")}
           className="inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-white px-4 text-sm font-bold text-[#7f1813]"
         >
