@@ -94,7 +94,7 @@ export function BrandBanner({
           alt=""
           aria-hidden="true"
           loading="lazy"
-          className="absolute inset-y-0 right-0 hidden h-full w-[58%] object-cover object-top sm:block"
+          className="absolute inset-y-0 right-0 hidden h-full w-[58%] object-cover object-[50%_28%] sm:block"
         />
       ) : null}
 
