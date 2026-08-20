@@ -4,6 +4,7 @@ import { universities } from "@/lib/content";
 import { universityLogo } from "@/lib/assets";
 import { markLeadSubmitted } from "@/components/common/PopupManager";
 import { savePartialLead } from "@/lib/leadContext";
+import { submitLead } from "@/lib/leads";
 
 const COURSES = [
   "Online MBA",
@@ -142,11 +143,11 @@ export function CounsellingForm({
           const values = Object.fromEntries(data.entries()) as Record<string, string>;
           savePartialLead(values);
           void submitLead({
-            name: values.name,
-            email: values.email,
-            phone: values.phone,
-            course: values.course,
-            location: values.state,
+            name: values['name'],
+            email: values['email'],
+            phone: values['phone'],
+            course: values['course'],
+            location: values['state'],
             form: source,
           });
           markLeadSubmitted();
