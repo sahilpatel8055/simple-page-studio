@@ -7,6 +7,8 @@ import type { CourseFamily } from "@/lib/courseFamily";
 import { academicSessionLabel } from "@/lib/phaseSpec";
 import { PubComparisonRows } from "@/components/pub/PubBlocks";
 import { CoursePackLinks } from "./PackHeadToHead";
+import { BrandBanner } from "@/components/common/BrandBanner";
+import { campusImage } from "@/lib/assets";
 
 /**
  * Phase 5 — evergreen course comparison page (`/compare/online-mba`, …).
@@ -40,6 +42,10 @@ export function courseComparisonFaqs(family: CourseFamily): FaqItem[] {
 
 export function CourseComparisonPage({ family }: { family: CourseFamily }) {
   const faqs = courseComparisonFaqs(family);
+  const campusStrip = Array.from(new Set(family.offers.map((o) => o.universitySlug)))
+    .map((slug) => campusImage(slug))
+    .filter((src): src is string => Boolean(src))
+    .slice(0, 4);
 
   return (
     <PageShell
@@ -52,6 +58,16 @@ export function CourseComparisonPage({ family }: { family: CourseFamily }) {
       description={`Compare ${family.offers.length} universities offering ${family.name} on fees, eligibility, duration, specialisations, admission, examinations and learner support — side by side, on any screen.`}
     >
       <div className="space-y-12">
+        <BrandBanner
+          title={`${family.name} University Comparison ${academicSessionLabel}: Fees, Eligibility & Specialisations`}
+          pills={[
+            `${family.offers.length} universities`,
+            "Side-by-side fees",
+            "Verified sources",
+          ]}
+          campusStrip={campusStrip}
+        />
+
         <section aria-labelledby="how-it-works">
           <h2 id="how-it-works" className="text-base font-bold sm:text-lg">
             How this comparison works
