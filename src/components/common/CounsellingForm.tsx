@@ -6,6 +6,7 @@ import { universityLogo } from "@/lib/assets";
 import { markLeadSubmitted } from "@/components/common/PopupManager";
 import { savePartialLead } from "@/lib/leadContext";
 import { submitLead } from "@/lib/leads";
+import { ConsentCheck } from "@/components/common/ConsentCheck";
 
 const COURSES = [
   "Online MBA",
@@ -151,6 +152,7 @@ export function CounsellingForm({
             course: String(values['course'] ?? ''),
             location: String(values['state'] ?? ''),
             form: source,
+            note: `Consent: ${values['consent'] === 'Yes' ? 'Yes' : 'No'}`,
           });
           markLeadSubmitted();
           setSent(true);
@@ -214,6 +216,7 @@ export function CounsellingForm({
             </select>
           </label>
         </div>
+        <ConsentCheck className="sm:col-span-2" />
         <button
           type="submit"
           className="h-11 rounded-xl bg-[#7f1813] text-sm font-bold text-white transition-opacity hover:opacity-90 sm:col-span-2 sm:h-12"
