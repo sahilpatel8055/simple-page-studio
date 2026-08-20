@@ -35,9 +35,11 @@ export const offerings: Offering[] = allProgrammePairs().map(({ university, prog
       examFee: official?.examFee ?? programme.fees.examination_fee,
       currency: "INR",
     },
+    // Verified means an official source backs the figure: an open-university
+    // fee document, or a dataset row explicitly marked verified_official.
+    // The internal fee sheet alone is NOT an official verification.
     verified:
       official != null ||
-      corrected != null ||
       (programme.fees.fee_verification_status ?? "").startsWith("verified_official"),
     lastUpdated: official ? "2026-08-14" : (programme.last_verified ?? ""),
   };

@@ -4,6 +4,7 @@ import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
 import { courseFamilyList, familyForProgrammeSlug } from "@/lib/courseFamily";
 import { webPageSchema } from "@/lib/seo";
+import { familyModes, programmeModes } from "@/lib/deliveryMode";
 import { canonicalProgrammeSlug, pillarCtrMeta } from "@/lib/intentMap";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
 import { SectionUrlGrid } from "@/components/course/SectionHub";
@@ -71,6 +72,7 @@ export const Route = createFileRoute("/courses/$course/")({
       feeRangeLabel: p.feeRangeLabel,
       durationYears: p.durationYears,
       providers: profile.offerings.length,
+      modes: programmeModes(params.course),
     };
   },
   head: ({ params, loaderData }) => {
@@ -90,7 +92,7 @@ export const Route = createFileRoute("/courses/$course/")({
               name: family.name,
               description,
               path,
-              mode: "online",
+              modes: familyModes(family.offers.map((o) => o.programmeSlug)),
               level: family.level === "PG" ? "Postgraduate" : "Undergraduate",
             }),
           ),
@@ -148,7 +150,7 @@ export const Route = createFileRoute("/courses/$course/")({
             description: loaderData.summary,
             path,
             level: loaderData.level,
-            mode: "online",
+            modes: loaderData.modes,
           }),
         ),
         jsonLd(

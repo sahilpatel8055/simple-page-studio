@@ -34,6 +34,7 @@ import {
   pageMeta,
   webPageSchema,
 } from "@/lib/seo";
+import { familyModes } from "@/lib/deliveryMode";
 
 /** Specialisation page: /courses/{course}/specialisation/{spec} */
 export const Route = createFileRoute("/courses/$course/specialisation/$spec")({
@@ -42,6 +43,7 @@ export const Route = createFileRoute("/courses/$course/specialisation/$spec")({
     if (!match) throw notFound();
     return {
       courseName: match.family.name,
+      modes: familyModes(match.family.offers.map((o) => o.programmeSlug)),
       specName: match.spec.name,
       providers: match.offers.length,
     };
@@ -73,7 +75,7 @@ export const Route = createFileRoute("/courses/$course/specialisation/$spec")({
             name: `${loaderData.courseName} (${loaderData.specName})`,
             description,
             path,
-            mode: "online",
+            modes: loaderData.modes,
           }),
         ),
         jsonLd(

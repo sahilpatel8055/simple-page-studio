@@ -2,19 +2,18 @@
  * Single source of truth for company / trust facts shown on About, Counsellors,
  * How-we-work, legal pages and in Organization structured data.
  *
- * EDIT ME: replace the values marked TODO with the registered legal details
- * before launch. Nothing here should state a certification or compliance claim
- * that the business cannot evidence.
+ * Production values only. Nothing here should state a certification or
+ * compliance claim that the business cannot evidence.
  */
 
 export const company = {
   brand: "DegreeKhojo",
   alternateNames: ["Degree Khojo", "DegreeKhojo.com", "Degreekhojo"],
-  /** TODO: confirm registered legal entity name. */
-  legalName: "DegreeKhojo Edutech",
+  legalName: "DegreeKhojo",
+  domain: "degreekhojo.com",
+  url: "https://degreekhojo.com",
   tagline: "India's online & distance education knowledge platform",
   foundedYear: "2021",
-  /** TODO: confirm registered office address. */
   registeredOffice: {
     line1: "Office No. 12, 2nd Floor",
     line2: "Sector 62",
@@ -24,6 +23,7 @@ export const company = {
     country: "IN",
     countryName: "India",
   },
+
   contact: {
     email: "support@degreekhojo.com",
     editorial: "editor@degreekhojo.com",

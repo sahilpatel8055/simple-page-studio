@@ -34,7 +34,7 @@ import {
   scholarships,
   tools,
 } from "@/lib/content";
-import { canonical, collectionSchema, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
+import { canonical, faqSchema, jsonLd, pageMeta, websiteSchema } from "@/lib/seo";
 
 const title = "Top Online Universities: Compare Fees, Programs and EMI - DegreeKhojo";
 const description =
@@ -45,7 +45,7 @@ export const Route = createFileRoute("/")({
     meta: pageMeta({ title, description, path: "/" }),
     links: canonical("/"),
     scripts: [
-      jsonLd(collectionSchema({ name: title, description, path: "/" })),
+      jsonLd(websiteSchema()),
       jsonLd(faqSchema(homeFaqs)),
     ],
   }),
