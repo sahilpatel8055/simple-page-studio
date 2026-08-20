@@ -100,17 +100,34 @@ export function jsonLd(data: unknown) {
 
 export const organizationSchema = () => ({
   "@context": "https://schema.org",
-  "@type": "EducationalOrganization",
-  name: SITE_NAME,
+  "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
+  name: company.brand,
+  legalName: company.legalName,
+  alternateName: [...company.alternateNames],
   url: SITE_URL,
+  logo: DEFAULT_OG_IMAGE,
   description: SITE_TAGLINE,
-  sameAs: [
-    "https://degreekhojo.com/",
-    "https://dusol.degreekhojo.com/",
-    "https://lpuonline.degreekhojo.com/",
-    "https://amityonline.degreekhojo.com/",
-  ],
+  foundingDate: company.foundedYear,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: `${company.registeredOffice.line1}, ${company.registeredOffice.line2}`,
+    addressLocality: company.registeredOffice.city,
+    addressRegion: company.registeredOffice.state,
+    postalCode: company.registeredOffice.postalCode,
+    addressCountry: company.registeredOffice.country,
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    telephone: company.contact.phone,
+    email: company.contact.email,
+    areaServed: "IN",
+    availableLanguage: ["en", "hi"],
+  },
+  sameAs: [...company.socials],
 });
+
 
 export const websiteSchema = () => ({
   "@context": "https://schema.org",
