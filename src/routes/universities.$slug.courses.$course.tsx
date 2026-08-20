@@ -77,6 +77,7 @@ import {
   jsonLd,
   pageMeta,
 } from "@/lib/seo";
+import { offeringModes } from "@/lib/deliveryMode";
 
 /**
  * Highest-intent programmatic page type: university × programme.

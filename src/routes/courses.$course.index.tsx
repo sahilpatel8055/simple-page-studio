@@ -4,6 +4,7 @@ import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
 import { courseFamilyList, familyForProgrammeSlug } from "@/lib/courseFamily";
 import { webPageSchema } from "@/lib/seo";
+import { familyModes, programmeModes } from "@/lib/deliveryMode";
 import { canonicalProgrammeSlug, pillarCtrMeta } from "@/lib/intentMap";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
 import { SectionUrlGrid } from "@/components/course/SectionHub";

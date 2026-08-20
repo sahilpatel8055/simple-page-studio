@@ -34,6 +34,7 @@ import {
   pageMeta,
   webPageSchema,
 } from "@/lib/seo";
+import { familyModes } from "@/lib/deliveryMode";
 
 /** Specialisation page: /courses/{course}/specialisation/{spec} */
 export const Route = createFileRoute("/courses/$course/specialisation/$spec")({
