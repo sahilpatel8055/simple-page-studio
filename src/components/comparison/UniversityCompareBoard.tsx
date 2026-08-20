@@ -273,7 +273,7 @@ export function UniversityCompareBoard() {
               </div>
 
               {!unlocked && (
-                <div className="absolute inset-x-0 bottom-0 top-0 flex items-end bg-gradient-to-b from-card/40 via-card/85 to-card">
+                <div className="absolute inset-x-0 bottom-0 top-0 flex items-end bg-gradient-to-b from-card/80 via-card/95 to-card">
                   <UnlockPanel chosen={chosen} onUnlocked={onUnlocked} />
                 </div>
               )}
@@ -353,8 +353,8 @@ function UnlockPanel({
   };
 
   return (
-    <div className="w-full px-3 pb-5 pt-14 sm:px-6">
-      <div className="mx-auto max-w-2xl rounded-2xl border-2 border-brand bg-card p-4 shadow-[0_24px_60px_-40px_oklch(0_0_0/0.7)] sm:p-6">
+    <div className="w-full px-3 pb-6 pt-16 sm:px-6">
+      <div className="mx-auto max-w-2xl rounded-2xl border-2 border-brand bg-card p-4 shadow-[0_24px_70px_-30px_oklch(0_0_0/0.45)] sm:p-6">
         <p className="inline-flex items-center gap-1.5 rounded-full bg-brand-soft px-2.5 py-1 text-[0.66rem] font-bold uppercase tracking-wide text-brand">
           <Lock className="h-3 w-3" aria-hidden="true" /> {lockedRowCount} more comparison points
         </p>
