@@ -14,12 +14,15 @@ export type DeliveryMode = "Online" | "Distance" | "Hybrid";
 export function normaliseMode(raw?: string | null): DeliveryMode[] {
   const m = (raw ?? "").trim().toLowerCase();
   if (!m) return [];
-  if (m === "both" || m.includes("online") === false && m.includes("distance") && m.includes("online"))
-    return ["Online", "Distance"];
+  if (m === "both") return ["Online", "Distance"];
   if (m.includes("hybrid") || m.includes("blended")) return ["Hybrid"];
-  if (m.includes("distance") || m === "odl" || m.includes("odl")) return ["Distance"];
-  if (m.includes("online")) return ["Online"];
+  const distance = m.includes("distance") || m.includes("odl");
+  const online = m.includes("online");
+  if (distance && online) return ["Online", "Distance"];
+  if (distance) return ["Distance"];
+  if (online) return ["Online"];
   return [];
+
 }
 
 const uniq = (modes: DeliveryMode[]): DeliveryMode[] => [...new Set(modes)];
