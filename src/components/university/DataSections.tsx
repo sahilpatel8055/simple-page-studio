@@ -2,6 +2,7 @@ import { BadgeCheck, ExternalLink, Info } from "lucide-react";
 import { DataTable, StepList } from "@/components/common/Blocks";
 import { Chip } from "@/components/common/Primitives";
 import { SpecialisationBoxes } from "@/components/common/BoxMarquee";
+import { applicationFee } from "@/lib/applicationFees";
 import {
   formatFee,
   isVerifiedFee,
