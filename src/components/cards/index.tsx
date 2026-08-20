@@ -14,8 +14,10 @@ import {
 } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
 import { campusImage, universityLogo } from "@/lib/assets";
+import { articleCover } from "@/lib/articleCover";
 import { Chip } from "@/components/common/Primitives";
 import { formatDate } from "@/lib/content";
+
 import type {
   Article,
   Author,
@@ -116,28 +118,43 @@ export function ArticleCard({
       </AppLink>
     );
   }
+  const cover = articleCover(item);
   return (
-    <AppLink to={href} className={cardBase}>
-      <div className="flex flex-wrap items-center gap-2">
-        <Chip tone="brand">{item.category}</Chip>
-        {item.trending && (
-          <Chip tone="highlight">
-            <TrendingUp className="mr-1 h-3 w-3" /> Trending
-          </Chip>
-        )}
-      </div>
-      <h3 className="mt-4 font-display text-lg font-bold leading-snug group-hover:text-brand">
-        {item.title}
-      </h3>
-      <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">{item.excerpt}</p>
-      <div className="mt-5 flex items-center justify-between border-t border-border pt-4 text-xs text-muted-foreground">
-        <span className="truncate">{item.author}</span>
-        <span className="flex shrink-0 items-center gap-1">
-          <Clock className="h-3 w-3" /> {item.readingTime}
-        </span>
+    <AppLink to={href} className="card-pro hover-lift group flex flex-col overflow-hidden">
+      {cover && (
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-secondary">
+          <img
+            src={cover}
+            alt=""
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+      )}
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
+        <div className="flex flex-wrap items-center gap-2">
+          <Chip tone="brand">{item.category}</Chip>
+          {item.trending && (
+            <Chip tone="highlight">
+              <TrendingUp className="mr-1 h-3 w-3" /> Trending
+            </Chip>
+          )}
+        </div>
+        <h3 className="mt-4 font-display text-lg font-bold leading-snug group-hover:text-brand">
+          {item.title}
+        </h3>
+        <p className="mt-2 line-clamp-3 text-sm text-muted-foreground">{item.excerpt}</p>
+        <div className="mt-auto flex items-center justify-between border-t border-border pt-4 text-xs text-muted-foreground">
+          <span className="truncate">{item.author}</span>
+          <span className="flex shrink-0 items-center gap-1">
+            <Clock className="h-3 w-3" /> {item.readingTime}
+          </span>
+        </div>
       </div>
     </AppLink>
   );
+
 }
 
 export function NewsCard({ item }: { item: Article }) {
