@@ -12,6 +12,7 @@ import { RelatedContent } from "@/components/templates/DetailLayout";
 import { articles, news } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
 import { blogBanner } from "@/lib/blogBanners";
+import { universityBlogBanner } from "@/lib/universityBlogBanners";
 import { familyDefs } from "@/lib/courseFamily";
 import { universityByBlogSlug } from "@/data/university-blogs";
 import { BlogEntityLinks } from "@/components/post/BlogUniversities";
@@ -94,7 +95,7 @@ function Page() {
     .filter((a) => a.slug !== item.slug && a.categorySlug === item.categorySlug)
     .slice(0, 2);
 
-  const banner = blogBanner(post.banner);
+  const banner = universityBlogBanner(item.slug) ?? blogBanner(post.banner);
 
   return (
     <DetailLayout
