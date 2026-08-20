@@ -94,7 +94,7 @@ export function BrandBanner({
           alt=""
           aria-hidden="true"
           loading="lazy"
-          className="absolute inset-y-0 right-0 hidden h-full w-1/2 object-cover object-top sm:block"
+          className="absolute inset-y-0 right-0 hidden h-full w-[58%] object-cover object-top sm:block"
         />
       ) : null}
 
@@ -104,7 +104,7 @@ export function BrandBanner({
         className={
           strip.length > 0
             ? "absolute inset-0 bg-[#0b1f4b]/80"
-            : "absolute inset-0 bg-gradient-to-r from-[#0b1f4b] via-[#0b1f4b] to-[#0b1f4b]/25 sm:to-transparent sm:via-[#0b1f4b]/95"
+            : "absolute inset-0 bg-gradient-to-r from-[#0b1f4b] from-40% via-[#0b1f4b]/85 via-60% to-transparent to-90%"
         }
       />
       <span
