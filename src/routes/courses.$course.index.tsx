@@ -7,6 +7,7 @@ import { webPageSchema } from "@/lib/seo";
 import { canonicalProgrammeSlug, pillarCtrMeta } from "@/lib/intentMap";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
 import { SectionUrlGrid } from "@/components/course/SectionHub";
+import { ToolsStrip } from "@/components/common/ToolsStrip";
 import { PromoBanner } from "@/components/course/PromoBanner";
 import {
   AuthorBox,
@@ -365,6 +366,8 @@ function Page() {
         </ContentSection>
 
         <SectionUrlGrid base={pillarBase} title={`More on the ${p.name}`} />
+
+        <ToolsStrip title="Plan the cost and payback before you apply" />
 
         <PromoBanner
           variant="guidance"
