@@ -119,7 +119,7 @@ function Page() {
         <div className="order-2 lg:order-1">
           <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-2 shadow-xl">
             <img
-              src="/course-offer-illustration.png"
+              src={offerArt}
               alt="DegreeKhojo research team at work"
               className="w-full rounded-2xl object-cover"
               loading="lazy"
