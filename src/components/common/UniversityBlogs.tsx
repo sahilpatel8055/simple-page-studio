@@ -7,7 +7,8 @@ import { ArrowRight, CalendarDays, Clock } from "lucide-react";
 
 /** Blog card with an image banner — used on university and course pages. */
 export function BlogBannerCard({ item }: { item: Article }) {
-  const cover = blogCover(item);
+  const cover = articleCover(item);
+
   const label = universityLabelByBlogSlug[item.slug];
   return (
     <AppLink
