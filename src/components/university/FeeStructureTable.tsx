@@ -131,6 +131,16 @@ export function FeeStructureTable({
               <th scope="col" className="px-3 py-2.5 text-left font-semibold">
                 Duration
               </th>
+              {hasFocus && (
+                <th scope="col" className="px-3 py-2.5 text-left font-semibold">
+                  Academic focus
+                </th>
+              )}
+              {hasEligibility && (
+                <th scope="col" className="px-3 py-2.5 text-left font-semibold">
+                  Eligibility
+                </th>
+              )}
             </tr>
           </thead>
           <tbody>
@@ -142,8 +152,11 @@ export function FeeStructureTable({
                 {hasSpec && <td className="px-3 py-2.5 text-muted-foreground">{r.specialisation ?? "—"}</td>}
                 <td className="px-3 py-2.5 font-semibold text-foreground">{r.fee}</td>
                 <td className="px-3 py-2.5 text-muted-foreground">{r.duration ?? "—"}</td>
+                {hasFocus && <td className="px-3 py-2.5 text-muted-foreground">{r.focus ?? "—"}</td>}
+                {hasEligibility && <td className="px-3 py-2.5 text-muted-foreground">{r.eligibility ?? "—"}</td>}
               </tr>
             ))}
+
           </tbody>
         </table>
       </div>
