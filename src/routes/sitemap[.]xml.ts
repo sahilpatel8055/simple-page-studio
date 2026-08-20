@@ -143,16 +143,9 @@ export function sitemapEntries(): SitemapEntry[] {
     })),
     ...reviews.map((r) => ({ path: `/reviews/${r.slug}`, changefreq: "monthly" as const, priority: "0.5" })),
 
-    // Taxonomies — only when they actually list content.
-    ...categories
-      .filter((c) => articlesByCategory(c.slug).length > 0)
-      .map((c) => ({ path: `/categories/${c.slug}`, changefreq: "weekly" as const, priority: "0.5" })),
-    ...tags
-      .filter((t) => articlesByTag(t.slug).length > 0)
-      .map((t) => ({ path: `/tags/${t.slug}`, changefreq: "weekly" as const, priority: "0.4" })),
-    ...authors
-      .filter((a) => articlesByAuthor(a.slug).length > 0)
-      .map((a) => ({ path: `/authors/${a.slug}`, changefreq: "monthly" as const, priority: "0.4" })),
+    // Taxonomy detail pages (/categories/:slug, /tags/:slug, /authors/:slug)
+    // have no route yet — the index pages above cover them, so they stay out
+    // of the sitemap to keep every submitted URL a live 200.
   ];
 
   // De-duplicate on path, first entry wins.
