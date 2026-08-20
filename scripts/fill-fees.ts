@@ -6,8 +6,8 @@ const path = "src/data/university-master-data-2026-27.json";
 const d = JSON.parse(readFileSync(path, "utf8"));
 const today = "2026-08-15";
 let filled = 0,
-  stamped = 0,
-  left: string[] = [];
+  stamped = 0;
+const left: string[] = [];
 
 for (const u of d.universities) {
   for (const p of u.programmes) {
