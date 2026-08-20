@@ -84,7 +84,9 @@ export function UniCourseSectionBody({
         <>
           <p>{p.eligibility}</p>
           {master.eligibility && <p>{master.eligibility}</p>}
-          <h3 className="pt-2 font-display text-base font-bold text-foreground">Documents required</h3>
+          <h3 className="pt-2 font-display text-base font-bold text-foreground">
+            Documents required
+          </h3>
           <ul className="list-inside list-disc">
             {u.documentsRequired.map((d) => (
               <li key={d}>{d}</li>
@@ -133,17 +135,17 @@ export function UniCourseSectionBody({
           <p>
             What the university does state for this programme: a{" "}
             {offering.durationLabel || p.durationYears + "-year"} duration
-            {p.level ? `, ${p.level} level` : ""}, delivered in{" "}
-            {p.mode.join(" / ").toLowerCase()} mode, with {p.eligibility.toLowerCase()} The
-            examination pattern and assessment weightage for this course are covered in the exam
-            pattern section of this page.
+            {p.level ? `, ${p.level} level` : ""}, delivered in {p.mode.join(" / ").toLowerCase()}{" "}
+            mode, with {p.eligibility.toLowerCase()} The examination pattern and assessment
+            weightage for this course are covered in the exam pattern section of this page.
           </p>
           <p>
             The detailed syllabus is shared in the {u.shortName} prospectus and inside the learning
             management system after enrolment
             {u.websiteUrl ? (
               <>
-                {" "}— you can request the current copy from the official site at{" "}
+                {" "}
+                — you can request the current copy from the official site at{" "}
                 <a
                   href={u.websiteUrl}
                   target="_blank"
@@ -186,10 +188,10 @@ export function UniCourseSectionBody({
       return (
         <>
           <ExaminationPatternSection
-          banner={<SectionBannerInline kind="examination" />}
-          universitySlug={u.slug}
-          universityShort={u.shortName}
-          courseSlug={p.slug}
+            banner={<SectionBannerInline kind="examination" />}
+            universitySlug={u.slug}
+            universityShort={u.shortName}
+            courseSlug={p.slug}
             courseName={`${u.shortName} ${p.shortName}`}
           />
         </>

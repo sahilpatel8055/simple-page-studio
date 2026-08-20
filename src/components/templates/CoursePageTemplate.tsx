@@ -118,7 +118,10 @@ export function CoursePageTemplate({
           </ul>
 
           <div className="mt-5 max-w-xl">
-            <QuickEnquiry heading="Take a step towards your" highlight={`${family.shortName} career`} />
+            <QuickEnquiry
+              heading="Take a step towards your"
+              highlight={`${family.shortName} career`}
+            />
           </div>
 
           <div className="mt-5 flex flex-wrap items-start gap-2.5">
@@ -239,8 +242,6 @@ export function CoursePageTemplate({
                 course yet.
               </p>
             )}
-
-
           </Section>
 
           {content.syllabus.length > 0 && (
@@ -445,7 +446,6 @@ export function CoursePageTemplate({
               />
             </Section>
           )}
-
 
           <section id="faqs" className="scroll-mt-36">
             <Faq items={content.faqs} title={`${family.name} FAQs`} />

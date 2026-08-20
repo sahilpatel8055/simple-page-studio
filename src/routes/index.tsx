@@ -88,10 +88,7 @@ function HomePage() {
                 { label: "All courses", href: "/courses" },
               ].map((c) => (
                 <li key={c.href}>
-                  <AppLink
-                    to={c.href}
-                    className="btn btn-secondary btn-sm"
-                  >
+                  <AppLink to={c.href} className="btn btn-secondary btn-sm">
                     {c.label}
                   </AppLink>
                 </li>
@@ -100,12 +97,13 @@ function HomePage() {
           </div>
           <div className="mx-auto mt-10 max-w-3xl text-center sm:mt-14">
             <h1 className="font-display text-[2.1rem] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-
-              <span className="text-shine">Choose the Right Degree.</span> Compare. Research. Decide with Confidence.
+              <span className="text-shine">Choose the Right Degree.</span> Compare. Research. Decide
+              with Confidence.
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-[0.95rem] leading-relaxed text-muted-foreground sm:text-lg">
               Compare universities, courses, <span className="mark-brand">fees</span>,{" "}
-              <span className="mark-brand">eligibility</span> &amp; career options — all in one place.
+              <span className="mark-brand">eligibility</span> &amp; career options — all in one
+              place.
             </p>
             <div className="mx-auto mt-8 max-w-2xl">
               <SearchBox size="lg" />
@@ -116,17 +114,17 @@ function HomePage() {
               ))}
             </div>
             <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-semibold text-muted-foreground">
-              {["UGC-DEB entitled data", "No sponsored rankings", "Updated every cycle"].map((t) => (
-                <li key={t} className="inline-flex items-center gap-1.5">
-                  <CheckCircle2 className="h-3.5 w-3.5 text-brand" /> {t}
-                </li>
-              ))}
+              {["UGC-DEB entitled data", "No sponsored rankings", "Updated every cycle"].map(
+                (t) => (
+                  <li key={t} className="inline-flex items-center gap-1.5">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-brand" /> {t}
+                  </li>
+                ),
+              )}
             </ul>
           </div>
-
         </div>
       </section>
-
 
       {/* Popular courses */}
       <Section>
@@ -146,7 +144,8 @@ function HomePage() {
             Unlock Excellence with <span className="text-shine">Top Universities</span>
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-muted-foreground sm:text-base">
-            UGC-approved universities, researched by our team and reviewed by learners on 30+ factors.
+            UGC-approved universities, researched by our team and reviewed by learners on 30+
+            factors.
           </p>
         </div>
         <UniversityGrid items={universityRecords.slice(0, 12)} />
@@ -166,9 +165,11 @@ function HomePage() {
           <div>
             <SectionHeader eyebrow="Popular now" title="Trending articles" href="/blogs" />
             <div className="surface-card px-5 py-2">
-              {allArticles.filter((a) => a.trending).map((a) => (
-                <ArticleCard key={a.slug} item={a} variant="compact" />
-              ))}
+              {allArticles
+                .filter((a) => a.trending)
+                .map((a) => (
+                  <ArticleCard key={a.slug} item={a} variant="compact" />
+                ))}
               {articles.slice(0, 3).map((a) => (
                 <ArticleCard key={`t-${a.slug}`} item={a} variant="compact" />
               ))}
@@ -179,21 +180,20 @@ function HomePage() {
 
       {/* Reviews */}
       {reviews.length > 0 && (
-      <Section>
-        <SectionHeader
-          eyebrow="Student voices"
-          title="Top reviews"
-          description="Learner reviews from students currently enrolled or recently graduated."
-          href="/reviews"
-        />
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {reviews.map((r) => (
-            <ReviewCard key={r.slug} item={r} />
-          ))}
-        </div>
-      </Section>
+        <Section>
+          <SectionHeader
+            eyebrow="Student voices"
+            title="Top reviews"
+            description="Learner reviews from students currently enrolled or recently graduated."
+            href="/reviews"
+          />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {reviews.map((r) => (
+              <ReviewCard key={r.slug} item={r} />
+            ))}
+          </div>
+        </Section>
       )}
-
 
       <div className="container-page py-4">
         <PromoBanner
@@ -219,7 +219,9 @@ function HomePage() {
                       <span className="block truncate text-sm font-semibold">{u.title}</span>
                       <span className="text-xs text-muted-foreground">{u.date}</span>
                     </span>
-                    <Chip tone={u.status === "Closing soon" ? "highlight" : "success"}>{u.status}</Chip>
+                    <Chip tone={u.status === "Closing soon" ? "highlight" : "success"}>
+                      {u.status}
+                    </Chip>
                   </AppLink>
                 </li>
               ))}
@@ -250,12 +252,13 @@ function HomePage() {
           href="/blogs"
         />
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {articles.filter((a) => a.featured).map((a) => (
-            <ArticleCard key={a.slug} item={a} />
-          ))}
+          {articles
+            .filter((a) => a.featured)
+            .map((a) => (
+              <ArticleCard key={a.slug} item={a} />
+            ))}
         </div>
       </Section>
-
 
       {/* Student tools */}
       <Section muted>
@@ -311,29 +314,32 @@ function HomePage() {
         </div>
       </Section>
 
-
       {/* Editor's picks */}
       <Section muted>
         <SectionHeader eyebrow="Editorial" title="Editor's picks" href="/blogs" />
         <div className="grid gap-6 lg:grid-cols-2">
-          {allArticles.filter((a) => a.editorsPick).map((a) => (
-            <AppLink
-              key={a.slug}
-              to={`/blogs/${a.slug}`}
-              className="surface-card hover-lift group grid gap-5 p-7 sm:grid-cols-[auto_minmax(0,1fr)]"
-            >
-              <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand text-brand-foreground">
-                <CheckCircle2 className="h-5 w-5" />
-              </span>
-              <span className="min-w-0">
-                <span className="block font-display text-lg font-bold group-hover:text-brand">{a.title}</span>
-                <span className="mt-2 block text-sm text-muted-foreground">{a.excerpt}</span>
-                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
-                  Read article <ArrowRight className="h-3.5 w-3.5" />
+          {allArticles
+            .filter((a) => a.editorsPick)
+            .map((a) => (
+              <AppLink
+                key={a.slug}
+                to={`/blogs/${a.slug}`}
+                className="surface-card hover-lift group grid gap-5 p-7 sm:grid-cols-[auto_minmax(0,1fr)]"
+              >
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-brand text-brand-foreground">
+                  <CheckCircle2 className="h-5 w-5" />
                 </span>
-              </span>
-            </AppLink>
-          ))}
+                <span className="min-w-0">
+                  <span className="block font-display text-lg font-bold group-hover:text-brand">
+                    {a.title}
+                  </span>
+                  <span className="mt-2 block text-sm text-muted-foreground">{a.excerpt}</span>
+                  <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
+                    Read article <ArrowRight className="h-3.5 w-3.5" />
+                  </span>
+                </span>
+              </AppLink>
+            ))}
         </div>
       </Section>
 

@@ -72,7 +72,10 @@ export interface OfferingProfile {
   path: string;
 }
 
-export function offeringProfile(universitySlug: string, programmeSlug: string): OfferingProfile | undefined {
+export function offeringProfile(
+  universitySlug: string,
+  programmeSlug: string,
+): OfferingProfile | undefined {
   const offering = getOffering(universitySlug, programmeSlug);
   const university = universityProfile(universitySlug);
   const programme = programmeProfile(programmeSlug);
@@ -109,7 +112,12 @@ export function universityPairs(): ComparisonPair[] {
       );
       // Only one canonical direction per pair (alphabetical) — no duplicate URLs.
       if (shares && a.slug < b.slug) {
-        pairs.push({ slug: `${a.slug}-vs-${b.slug}`, left, right, path: `/compare/${a.slug}-vs-${b.slug}` });
+        pairs.push({
+          slug: `${a.slug}-vs-${b.slug}`,
+          left,
+          right,
+          path: `/compare/${a.slug}-vs-${b.slug}`,
+        });
       }
     }
   }
@@ -134,7 +142,9 @@ export interface LinkRef {
 }
 
 export const programmeLinks = (limit = 8): LinkRef[] =>
-  programmes.slice(0, limit).map((p) => ({ label: p.name, href: `/courses/${p.slug}`, note: p.feeRangeLabel }));
+  programmes
+    .slice(0, limit)
+    .map((p) => ({ label: p.name, href: `/courses/${p.slug}`, note: p.feeRangeLabel }));
 
 export const universityLinks = (exclude?: string, limit = 8): LinkRef[] =>
   universityRecords
@@ -158,7 +168,12 @@ export const providerLinks = (programmeSlug: string): LinkRef[] =>
 
 export const comparisonLinks = (universitySlug?: string, limit = 6): LinkRef[] =>
   universityPairs()
-    .filter((p) => !universitySlug || p.left.record.slug === universitySlug || p.right.record.slug === universitySlug)
+    .filter(
+      (p) =>
+        !universitySlug ||
+        p.left.record.slug === universitySlug ||
+        p.right.record.slug === universitySlug,
+    )
     .slice(0, limit)
     .map((p) => ({
       label: `${p.left.record.shortName} vs ${p.right.record.shortName}`,
@@ -166,16 +181,26 @@ export const comparisonLinks = (universitySlug?: string, limit = 6): LinkRef[] =
     }));
 
 export const reviewLinks = (limit = 4): LinkRef[] =>
-  reviewList.slice(0, limit).map((r) => ({ label: `${r.entity} review`, href: `/reviews/${r.slug}`, note: `${r.rating}/5` }));
+  reviewList.slice(0, limit).map((r) => ({
+    label: `${r.entity} review`,
+    href: `/reviews/${r.slug}`,
+    note: `${r.rating}/5`,
+  }));
 
 export const scholarshipLinks = (limit = 4): LinkRef[] =>
-  scholarships.slice(0, limit).map((s) => ({ label: s.name, href: `/scholarships/${s.slug}`, note: s.amount }));
+  scholarships
+    .slice(0, limit)
+    .map((s) => ({ label: s.name, href: `/scholarships/${s.slug}`, note: s.amount }));
 
 export const articleLinks = (limit = 4, filter?: (a: Article) => boolean): LinkRef[] =>
   allArticles
     .filter((a) => (filter ? filter(a) : true))
     .slice(0, limit)
-    .map((a) => ({ label: a.title, href: a.kind === "news" ? `/news/${a.slug}` : `/blogs/${a.slug}`, note: a.readingTime }));
+    .map((a) => ({
+      label: a.title,
+      href: a.kind === "news" ? `/news/${a.slug}` : `/blogs/${a.slug}`,
+      note: a.readingTime,
+    }));
 
 /* ------------------------------ formatting ------------------------------ */
 

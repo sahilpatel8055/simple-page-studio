@@ -24,7 +24,9 @@ function FacetRow({
 }) {
   return (
     <div className="grid gap-1.5 sm:grid-cols-[7rem_minmax(0,1fr)] sm:items-center">
-      <p className="text-[0.68rem] font-semibold uppercase tracking-widest text-muted-foreground">{label}</p>
+      <p className="text-[0.68rem] font-semibold uppercase tracking-widest text-muted-foreground">
+        {label}
+      </p>
       <div className="-mx-1 flex gap-1.5 overflow-x-auto px-1 pb-1 sm:flex-wrap sm:overflow-visible">
         {options.map((o) => (
           <button
@@ -66,13 +68,16 @@ export function UniversityExplorer({ items }: { items: University[] }) {
     const bodies = ["UGC", "UGC-DEB", "NAAC", "AICTE", "AIU", "WES", "NIRF"];
     return [
       "All",
-      ...bodies.filter((b) => items.some((i) => i.approvals.some((a) => a.toUpperCase().includes(b)))),
+      ...bodies.filter((b) =>
+        items.some((i) => i.approvals.some((a) => a.toUpperCase().includes(b))),
+      ),
     ];
   }, [items]);
 
   const filtered = items.filter((i) => {
     if (mode !== "All" && i.mode !== mode) return false;
-    if (approval !== "All" && !i.approvals.some((a) => a.toUpperCase().includes(approval))) return false;
+    if (approval !== "All" && !i.approvals.some((a) => a.toUpperCase().includes(approval)))
+      return false;
     if (fee === "Under ₹1L" && !/₹\d+K/.test(i.feeRange)) return false;
     if (fee === "₹1L and above" && !/₹\d(\.\d)?L/.test(i.feeRange)) return false;
     return true;
@@ -81,9 +86,19 @@ export function UniversityExplorer({ items }: { items: University[] }) {
   return (
     <>
       <Shell count={filtered.length}>
-        <FacetRow label="Mode" options={["All", "Online", "Distance", "Hybrid"]} value={mode} onChange={setMode} />
+        <FacetRow
+          label="Mode"
+          options={["All", "Online", "Distance", "Hybrid"]}
+          value={mode}
+          onChange={setMode}
+        />
         <FacetRow label="Approval" options={approvals} value={approval} onChange={setApproval} />
-        <FacetRow label="Fee" options={["Any", "Under ₹1L", "₹1L and above"]} value={fee} onChange={setFee} />
+        <FacetRow
+          label="Fee"
+          options={["Any", "Under ₹1L", "₹1L and above"]}
+          value={fee}
+          onChange={setFee}
+        />
       </Shell>
       <ul className="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         {filtered.map((i) => (
@@ -102,7 +117,8 @@ export function UniversityExplorer({ items }: { items: University[] }) {
         <div className="surface-card px-5 py-10 text-center">
           <p className="text-sm font-bold text-foreground">No university matches these filters.</p>
           <p className="mx-auto mt-1 max-w-sm text-sm text-muted-foreground">
-            Try widening the fee band or approval facet — or reset and browse every university we track.
+            Try widening the fee band or approval facet — or reset and browse every university we
+            track.
           </p>
           <button
             type="button"
@@ -136,7 +152,12 @@ export function CourseExplorer({ items }: { items: Course[] }) {
   return (
     <>
       <Shell count={filtered.length}>
-        <FacetRow label="Level" options={["All", "UG", "PG", "Diploma", "Certificate"]} value={level} onChange={setLevel} />
+        <FacetRow
+          label="Level"
+          options={["All", "UG", "PG", "Diploma", "Certificate"]}
+          value={level}
+          onChange={setLevel}
+        />
         <FacetRow label="Duration" options={durations} value={duration} onChange={setDuration} />
       </Shell>
       <div className="grid grid-cols-2 gap-2.5 sm:gap-4 lg:grid-cols-4">

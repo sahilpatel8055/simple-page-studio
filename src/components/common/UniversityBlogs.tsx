@@ -12,7 +12,8 @@ export function blogCover(article: Article): string | undefined {
   const uni = universityByBlogSlug[article.slug];
   const campus = uni ? campusImage(uni) : undefined;
   if (campus) return campus;
-  const i = article.slug.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % fallbackBanners.length;
+  const i =
+    article.slug.split("").reduce((a, c) => a + c.charCodeAt(0), 0) % fallbackBanners.length;
   return fallbackBanners[i];
 }
 
@@ -77,7 +78,9 @@ export function BlogStrip({
   if (!items.length) return null;
   return (
     <div>
-      {intro && <p className="mb-4 text-[0.88rem] leading-relaxed text-muted-foreground">{intro}</p>}
+      {intro && (
+        <p className="mb-4 text-[0.88rem] leading-relaxed text-muted-foreground">{intro}</p>
+      )}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((a) => (
           <BlogBannerCard key={a.slug} item={a} />

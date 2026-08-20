@@ -16,7 +16,11 @@ import { NOT_PUBLISHED } from "@/lib/phaseSpec";
 
 const MAX_COLUMNS = 4;
 
-type Row = { label: string; value: (o: FamilyOffer) => React.ReactNode; compare?: (o: FamilyOffer) => string };
+type Row = {
+  label: string;
+  value: (o: FamilyOffer) => React.ReactNode;
+  compare?: (o: FamilyOffer) => string;
+};
 type Group = { id: string; title: string; rows: Row[] };
 
 const text = (v: string | null | undefined) =>
@@ -50,7 +54,11 @@ function buildGroups(): Group[] {
       id: "fees",
       title: "Fees",
       rows: [
-        { label: "Total programme fee", value: (o) => money(o.fees.total), compare: (o) => String(o.fees.total ?? "") },
+        {
+          label: "Total programme fee",
+          value: (o) => money(o.fees.total),
+          compare: (o) => String(o.fees.total ?? ""),
+        },
         { label: "Per semester", value: (o) => money(o.fees.semester) },
         { label: "Per year", value: (o) => money(o.fees.annual) },
         { label: "EMI from", value: (o) => money(o.fees.emi) },
@@ -77,12 +85,28 @@ function buildGroups(): Group[] {
       id: "admission",
       title: "Admission & eligibility",
       rows: [
-        { label: "Eligibility", value: (o) => text(o.eligibility), compare: (o) => o.eligibility ?? "" },
+        {
+          label: "Eligibility",
+          value: (o) => text(o.eligibility),
+          compare: (o) => o.eligibility ?? "",
+        },
         { label: "Minimum marks", value: (o) => text(o.minimumMarks) },
-        { label: "Entrance requirement", value: (o) => text(o.entranceExam ?? "No entrance exam published"), compare: (o) => o.entranceExam ?? "none" },
+        {
+          label: "Entrance requirement",
+          value: (o) => text(o.entranceExam ?? "No entrance exam published"),
+          compare: (o) => o.entranceExam ?? "none",
+        },
         { label: "Intake / session", value: (o) => text(o.intake) },
-        { label: "Admission steps", value: (o) => (o.admissionSteps.length ? `${o.admissionSteps.length} published steps` : text(null)) },
-        { label: "Documents required", value: (o) => (o.documents.length ? `${o.documents.length} documents listed` : text(null)) },
+        {
+          label: "Admission steps",
+          value: (o) =>
+            o.admissionSteps.length ? `${o.admissionSteps.length} published steps` : text(null),
+        },
+        {
+          label: "Documents required",
+          value: (o) =>
+            o.documents.length ? `${o.documents.length} documents listed` : text(null),
+        },
       ],
     },
     {
@@ -94,7 +118,12 @@ function buildGroups(): Group[] {
           label: "Official website",
           value: (o) =>
             o.website ? (
-              <a href={o.website} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-brand hover:underline">
+              <a
+                href={o.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-semibold text-brand hover:underline"
+              >
                 Visit <ExternalLink className="h-3 w-3" aria-hidden />
               </a>
             ) : (
@@ -105,7 +134,12 @@ function buildGroups(): Group[] {
           label: "Apply link",
           value: (o) =>
             o.applicationUrl ? (
-              <a href={o.applicationUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 font-semibold text-brand hover:underline">
+              <a
+                href={o.applicationUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 font-semibold text-brand hover:underline"
+              >
                 Official portal <ExternalLink className="h-3 w-3" aria-hidden />
               </a>
             ) : (
@@ -132,12 +166,20 @@ function highlights(offers: FamilyOffer[]) {
   const priced = offers.filter((o) => o.fees.verified && typeof o.fees.total === "number");
   if (priced.length > 1) {
     const low = priced.reduce((a, b) => ((a.fees.total ?? 0) <= (b.fees.total ?? 0) ? a : b));
-    out.push({ label: "Lowest published fee", value: `${low.universityShortName} — ${formatFee(low.fees.total)}` });
+    out.push({
+      label: "Lowest published fee",
+      value: `${low.universityShortName} — ${formatFee(low.fees.total)}`,
+    });
   }
   const withSpecs = offers.filter((o) => o.specialisations.length);
   if (withSpecs.length > 1) {
-    const most = withSpecs.reduce((a, b) => (a.specialisations.length >= b.specialisations.length ? a : b));
-    out.push({ label: "Most specialisations published", value: `${most.universityShortName} — ${most.specialisations.length}` });
+    const most = withSpecs.reduce((a, b) =>
+      a.specialisations.length >= b.specialisations.length ? a : b,
+    );
+    out.push({
+      label: "Most specialisations published",
+      value: `${most.universityShortName} — ${most.specialisations.length}`,
+    });
   }
   const entrance = offers.filter((o) => o.entranceExam);
   out.push({
@@ -150,7 +192,8 @@ function highlights(offers: FamilyOffer[]) {
   if (durations.length) {
     out.push({
       label: "Published duration",
-      value: durations.length === 1 ? `Same for all selected — ${durations[0]}` : durations.join(" / "),
+      value:
+        durations.length === 1 ? `Same for all selected — ${durations[0]}` : durations.join(" / "),
     });
   }
   return out;
@@ -158,17 +201,26 @@ function highlights(offers: FamilyOffer[]) {
 
 export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
   const offers = family.offers;
-  const [selected, setSelected] = useState<string[]>(() => offers.slice(0, Math.min(3, offers.length)).map((o) => o.key));
+  const [selected, setSelected] = useState<string[]>(() =>
+    offers.slice(0, Math.min(3, offers.length)).map((o) => o.key),
+  );
   const [openGroups, setOpenGroups] = useState<string[]>(["overview", "fees"]);
   const [onlyDifferences, setOnlyDifferences] = useState(false);
 
-  const chosen = useMemo(() => selected.map((k) => offers.find((o) => o.key === k)!).filter(Boolean), [selected, offers]);
+  const chosen = useMemo(
+    () => selected.map((k) => offers.find((o) => o.key === k)!).filter(Boolean),
+    [selected, offers],
+  );
   const groups = useMemo(buildGroups, []);
   const facts = useMemo(() => (chosen.length ? highlights(chosen) : []), [chosen]);
 
   const toggle = (key: string) =>
     setSelected((prev) =>
-      prev.includes(key) ? prev.filter((k) => k !== key) : prev.length >= MAX_COLUMNS ? prev : [...prev, key],
+      prev.includes(key)
+        ? prev.filter((k) => k !== key)
+        : prev.length >= MAX_COLUMNS
+          ? prev
+          : [...prev, key],
     );
 
   const toggleGroup = (id: string) =>
@@ -183,7 +235,10 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
   return (
     <div className="space-y-8">
       {/* --- selection --- */}
-      <section aria-labelledby="select-universities" className="rounded-2xl border border-border bg-card p-4 sm:p-5">
+      <section
+        aria-labelledby="select-universities"
+        className="rounded-2xl border border-border bg-card p-4 sm:p-5"
+      >
         <h2 id="select-universities" className="text-base font-bold sm:text-lg">
           Select universities to compare
         </h2>
@@ -209,7 +264,11 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
                         : "border-border text-foreground hover:border-brand/60"
                   }`}
                 >
-                  {active ? <X className="h-3.5 w-3.5" aria-hidden /> : <Plus className="h-3.5 w-3.5" aria-hidden />}
+                  {active ? (
+                    <X className="h-3.5 w-3.5" aria-hidden />
+                  ) : (
+                    <Plus className="h-3.5 w-3.5" aria-hidden />
+                  )}
                   {o.universityShortName}
                 </button>
               </li>
@@ -235,7 +294,9 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {facts.map((f) => (
                 <li key={f.label} className="rounded-xl border border-border bg-card p-3.5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">{f.label}</p>
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    {f.label}
+                  </p>
                   <p className="mt-1 text-sm font-semibold text-foreground">{f.value}</p>
                 </li>
               ))}
@@ -259,7 +320,8 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
               </label>
             </div>
             <p className="flex items-center gap-1.5 text-xs text-muted-foreground lg:hidden">
-              <MoveHorizontal className="h-3.5 w-3.5" aria-hidden /> Swipe the table sideways to see every university.
+              <MoveHorizontal className="h-3.5 w-3.5" aria-hidden /> Swipe the table sideways to see
+              every university.
             </p>
 
             <div className="max-w-full overflow-x-auto overscroll-x-contain rounded-2xl border border-border">
@@ -278,10 +340,15 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
                         scope="col"
                         className="min-w-[200px] border-b border-border bg-secondary p-3 text-left align-bottom sm:min-w-[240px]"
                       >
-                        <AppLink to={o.universityPath} className="text-sm font-bold text-foreground hover:text-brand">
+                        <AppLink
+                          to={o.universityPath}
+                          className="text-sm font-bold text-foreground hover:text-brand"
+                        >
                           {o.universityShortName}
                         </AppLink>
-                        <span className="mt-0.5 block text-xs font-normal text-muted-foreground">{o.programmeName}</span>
+                        <span className="mt-0.5 block text-xs font-normal text-muted-foreground">
+                          {o.programmeName}
+                        </span>
                         <button
                           type="button"
                           onClick={() => toggle(o.key)}
@@ -311,7 +378,10 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
                             className="flex min-h-11 w-full items-center justify-between gap-2 px-3 py-2.5 text-xs font-bold uppercase tracking-wide"
                           >
                             {group.title}
-                            <ChevronDown className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`} aria-hidden />
+                            <ChevronDown
+                              className={`h-4 w-4 transition-transform ${open ? "rotate-180" : ""}`}
+                              aria-hidden
+                            />
                           </button>
                         </th>
                       </tr>
@@ -326,7 +396,10 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
                                 {row.label}
                               </th>
                               {chosen.map((o) => (
-                                <td key={o.key} className="min-w-[200px] border-b border-border p-3 leading-relaxed sm:min-w-[240px]">
+                                <td
+                                  key={o.key}
+                                  className="min-w-[200px] border-b border-border p-3 leading-relaxed sm:min-w-[240px]"
+                                >
                                   {row.value(o)}
                                 </td>
                               ))}
@@ -334,7 +407,10 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
                           ))
                         ) : (
                           <tr>
-                            <td colSpan={chosen.length + 1} className="border-b border-border p-3 text-xs text-muted-foreground">
+                            <td
+                              colSpan={chosen.length + 1}
+                              className="border-b border-border p-3 text-xs text-muted-foreground"
+                            >
                               No differences in this group for the selected universities.
                             </td>
                           </tr>
@@ -354,7 +430,10 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {chosen.map((o) => (
                 <li key={o.key} className="rounded-xl border border-border bg-card p-4">
-                  <AppLink to={o.path} className="text-sm font-bold text-foreground hover:text-brand">
+                  <AppLink
+                    to={o.path}
+                    className="text-sm font-bold text-foreground hover:text-brand"
+                  >
                     {o.universityShortName} — {o.programmeName}
                   </AppLink>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -364,7 +443,9 @@ export function CourseComparisonBoard({ family }: { family: CourseFamily }) {
                       : o.fees.verified && typeof o.fees.total === "number"
                         ? "a published total fee"
                         : "this university's published programme structure"}
-                    {o.entranceExam ? ". Note that an entrance requirement is published for this programme." : "."}{" "}
+                    {o.entranceExam
+                      ? ". Note that an entrance requirement is published for this programme."
+                      : "."}{" "}
                     Verify the current figures on the programme page before applying.
                   </p>
                 </li>

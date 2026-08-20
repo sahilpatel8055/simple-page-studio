@@ -12,9 +12,10 @@ export function TableOfContents({
 }) {
   if (sections.length === 0) return null;
   return (
-
     <nav aria-label="On this page" className="surface-card p-5">
-      <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">On this page</p>
+      <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+        On this page
+      </p>
       <ol className="space-y-2 border-l border-border pl-4">
         {sections.map((s, i) => (
           <li key={s}>
@@ -103,13 +104,18 @@ export function TrustCard() {
       </p>
       <ul className="space-y-2.5 text-sm text-muted-foreground">
         <li className="flex gap-2">
-          <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> Verified against UGC-DEB records
+          <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-brand" /> Verified against UGC-DEB
+          records
         </li>
         <li className="flex gap-2">
-          <Star className="mt-0.5 h-4 w-4 shrink-0 text-highlight" /> Reviewed by the DegreeKhojo editorial desk
+          <Star className="mt-0.5 h-4 w-4 shrink-0 text-highlight" /> Reviewed by the DegreeKhojo
+          editorial desk
         </li>
       </ul>
-      <AppLink to="/about" className="mt-4 inline-block text-sm font-semibold text-brand hover:underline">
+      <AppLink
+        to="/about"
+        className="mt-4 inline-block text-sm font-semibold text-brand hover:underline"
+      >
         Our editorial policy →
       </AppLink>
     </div>

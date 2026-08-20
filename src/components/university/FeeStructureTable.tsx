@@ -3,7 +3,6 @@ import { courseIndexFor } from "@/lib/universityData";
 import { AppLink } from "@/components/common/AppLink";
 import { hasOpenUniversityFeeSheet } from "@/lib/openUniversityFees";
 
-
 const norm = (v: string) => v.toLowerCase().replace(/[^a-z0-9]/g, "");
 
 /**
@@ -12,7 +11,11 @@ const norm = (v: string) => v.toLowerCase().replace(/[^a-z0-9]/g, "");
  * text on the row picks the closest match. Returns undefined when unsure —
  * an unlinked label is better than a wrong link.
  */
-function coursePath(universitySlug: string, course: string, specialisation?: string): string | undefined {
+function coursePath(
+  universitySlug: string,
+  course: string,
+  specialisation?: string,
+): string | undefined {
   const entries = courseIndexFor(universitySlug);
   const key = norm(course);
   const candidates = entries.filter((e) => norm(e.programme_name).includes(`${key}`));
@@ -89,8 +92,15 @@ export function FeeStructureTable({
           <tbody>
             {table.rows.map((r, i) => (
               <tr key={`${r.course}-${i}`} className={i % 2 ? "bg-secondary/50" : "bg-card"}>
-                <th scope="row" className="px-2 py-2 text-left align-top font-semibold text-foreground">
-                  <CourseName universitySlug={universitySlug} course={r.course} specialisation={r.specialisation} />
+                <th
+                  scope="row"
+                  className="px-2 py-2 text-left align-top font-semibold text-foreground"
+                >
+                  <CourseName
+                    universitySlug={universitySlug}
+                    course={r.course}
+                    specialisation={r.specialisation}
+                  />
                   {r.specialisation && (
                     <span className="mt-0.5 block text-[0.62rem] font-normal leading-snug text-muted-foreground">
                       {r.specialisation}
@@ -147,16 +157,25 @@ export function FeeStructureTable({
             {table.rows.map((r, i) => (
               <tr key={`${r.course}-${i}`} className={i % 2 ? "bg-secondary/50" : "bg-card"}>
                 <th scope="row" className="px-3 py-2.5 text-left font-semibold text-foreground">
-                  <CourseName universitySlug={universitySlug} course={r.course} specialisation={r.specialisation} />
+                  <CourseName
+                    universitySlug={universitySlug}
+                    course={r.course}
+                    specialisation={r.specialisation}
+                  />
                 </th>
-                {hasSpec && <td className="px-3 py-2.5 text-muted-foreground">{r.specialisation ?? "—"}</td>}
+                {hasSpec && (
+                  <td className="px-3 py-2.5 text-muted-foreground">{r.specialisation ?? "—"}</td>
+                )}
                 <td className="px-3 py-2.5 font-semibold text-foreground">{r.fee}</td>
                 <td className="px-3 py-2.5 text-muted-foreground">{r.duration ?? "—"}</td>
-                {hasFocus && <td className="px-3 py-2.5 text-muted-foreground">{r.focus ?? "—"}</td>}
-                {hasEligibility && <td className="px-3 py-2.5 text-muted-foreground">{r.eligibility ?? "—"}</td>}
+                {hasFocus && (
+                  <td className="px-3 py-2.5 text-muted-foreground">{r.focus ?? "—"}</td>
+                )}
+                {hasEligibility && (
+                  <td className="px-3 py-2.5 text-muted-foreground">{r.eligibility ?? "—"}</td>
+                )}
               </tr>
             ))}
-
           </tbody>
         </table>
       </div>
@@ -169,7 +188,6 @@ export function FeeStructureTable({
           what is shown — no programme total is estimated.
         </p>
       )}
-
     </div>
   );
 }

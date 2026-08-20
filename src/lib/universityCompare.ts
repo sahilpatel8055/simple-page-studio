@@ -86,7 +86,9 @@ export function compareUniverse(): CompareUniversity[] {
 }
 
 const durations = (u: CompareUniversity) => {
-  const list = [...new Set((u.json?.programmes ?? []).map((p) => p.duration).filter(Boolean))] as string[];
+  const list = [
+    ...new Set((u.json?.programmes ?? []).map((p) => p.duration).filter(Boolean)),
+  ] as string[];
   return list.length ? list.slice(0, 3).join(", ") : null;
 };
 
@@ -106,8 +108,14 @@ export const compareGroups: CompareGroup[] = [
     title: "Basics",
     rows: [
       { label: "Rating", value: (u) => (u.rating ? `${u.rating}/5` : null) },
-      { label: "Location", value: (u) => [u.record.city, u.record.state].filter(Boolean).join(", ") || null },
-      { label: "Established", value: (u) => (u.record.establishedYear ? String(u.record.establishedYear) : null) },
+      {
+        label: "Location",
+        value: (u) => [u.record.city, u.record.state].filter(Boolean).join(", ") || null,
+      },
+      {
+        label: "Established",
+        value: (u) => (u.record.establishedYear ? String(u.record.establishedYear) : null),
+      },
       { label: "Type", value: (u) => u.record.type ?? null },
       { label: "Learning mode", value: (u) => u.record.modes.join(" / ") || null },
     ],
@@ -183,7 +191,8 @@ export const compareGroups: CompareGroup[] = [
       { label: "Entrance exam", value: entranceExam },
       {
         label: "Admission steps",
-        value: (u) => (u.record.admissionProcess.length ? `${u.record.admissionProcess.length} steps` : null),
+        value: (u) =>
+          u.record.admissionProcess.length ? `${u.record.admissionProcess.length} steps` : null,
       },
     ],
   },
@@ -203,7 +212,8 @@ export const compareGroups: CompareGroup[] = [
         label: "Higher study paths",
         value: (u) => {
           const paths = new Set<string>();
-          for (const p of u.json?.programmes ?? []) for (const r of p.career.higher_study) paths.add(r);
+          for (const p of u.json?.programmes ?? [])
+            for (const r of p.career.higher_study) paths.add(r);
           return paths.size ? String(paths.size) : null;
         },
       },
@@ -236,7 +246,9 @@ export function quickVerdicts(selected: CompareUniversity[]): Verdict[] {
 
   const specRanked = selected.filter((u) => u.specialisationCount > 0);
   if (specRanked.length >= 2) {
-    const best = specRanked.reduce((a, b) => (a.specialisationCount >= b.specialisationCount ? a : b));
+    const best = specRanked.reduce((a, b) =>
+      a.specialisationCount >= b.specialisationCount ? a : b,
+    );
     if (specRanked.some((u) => u.specialisationCount !== best.specialisationCount)) {
       out.push({
         label: "More specialisations",

@@ -44,7 +44,6 @@ export function DataSourceBadge(_props: { status?: string | null | undefined }) 
   return null;
 }
 
-
 export function ScopeBadge({ inherited, label }: { inherited: boolean; label: string }) {
   return (
     <Chip tone={inherited ? "default" : "brand"}>
@@ -54,7 +53,13 @@ export function ScopeBadge({ inherited, label }: { inherited: boolean; label: st
   );
 }
 
-export function OfficialSourceLink({ href, label = "View source" }: { href?: string | null | undefined; label?: string }) {
+export function OfficialSourceLink({
+  href,
+  label = "View source",
+}: {
+  href?: string | null | undefined;
+  label?: string;
+}) {
   if (!href) return null;
   // Aggregator references are not cited as sources.
   if (/collegevidya/i.test(href)) return null;
@@ -99,12 +104,16 @@ function InsightPanel({
         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-brand-soft text-brand">
           {icon}
         </span>
-        <p className="min-w-0 flex-1 font-display text-sm font-bold text-foreground sm:text-base">{title}</p>
+        <p className="min-w-0 flex-1 font-display text-sm font-bold text-foreground sm:text-base">
+          {title}
+        </p>
         {badges && <div className="flex flex-wrap items-center gap-2">{badges}</div>}
       </div>
       {banner}
       <div className="space-y-5 p-4 sm:p-5">{children}</div>
-      {footer && <div className="border-t border-border bg-secondary/30 px-4 py-3 sm:px-5">{footer}</div>}
+      {footer && (
+        <div className="border-t border-border bg-secondary/30 px-4 py-3 sm:px-5">{footer}</div>
+      )}
     </div>
   );
 }
@@ -114,8 +123,13 @@ function FactGrid({ items }: { items: Array<{ label: string; value: string }> })
   return (
     <dl className="grid grid-cols-2 gap-3 sm:grid-cols-2">
       {items.map((f) => (
-        <div key={f.label} className="box-hover rounded-xl border border-border bg-card px-3.5 py-3">
-          <dt className="text-[0.72rem] font-extrabold uppercase tracking-[0.12em] text-foreground">{f.label}</dt>
+        <div
+          key={f.label}
+          className="box-hover rounded-xl border border-border bg-card px-3.5 py-3"
+        >
+          <dt className="text-[0.72rem] font-extrabold uppercase tracking-[0.12em] text-foreground">
+            {f.label}
+          </dt>
           <dd className="mt-1 text-sm leading-relaxed text-foreground">{f.value}</dd>
         </div>
       ))}
@@ -151,7 +165,9 @@ function ChipRow({ label, items }: { label: string; items: string[] }) {
   if (!items.length) return null;
   return (
     <div>
-      <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">{label}</p>
+      <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+        {label}
+      </p>
       <div className="flex flex-wrap gap-2">
         {items.map((i) => (
           <Chip key={i}>{i}</Chip>
@@ -214,7 +230,11 @@ export function AdmissionInsightSection({
   return (
     <InsightPanel
       icon={<ClipboardCheck className="h-4 w-4" aria-hidden="true" />}
-      title={courseSlug ? `${courseName ?? "Programme"} admission` : `${universityShort} admission process`}
+      title={
+        courseSlug
+          ? `${courseName ?? "Programme"} admission`
+          : `${universityShort} admission process`
+      }
       banner={banner}
       badges={
         <>
@@ -227,7 +247,10 @@ export function AdmissionInsightSection({
       }
       footer={
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <OfficialSourceLink href={insightSources(universitySlug)?.admission} label="Admission source" />
+          <OfficialSourceLink
+            href={insightSources(universitySlug)?.admission}
+            label="Admission source"
+          />
           {courseSlug && (
             <PillarLink
               universitySlug={universitySlug}
@@ -241,8 +264,8 @@ export function AdmissionInsightSection({
     >
       {courseSlug && resolved.inherited && (
         <p className="text-sm leading-relaxed text-muted-foreground">
-          Admission to this programme follows {universityShort}&apos;s standard online admission process. Programme-level
-          eligibility still applies.
+          Admission to this programme follows {universityShort}&apos;s standard online admission
+          process. Programme-level eligibility still applies.
         </p>
       )}
       <FactGrid items={facts} />
@@ -291,20 +314,31 @@ export function ExaminationPatternSection({
   return (
     <InsightPanel
       icon={<MonitorCheck className="h-4 w-4" aria-hidden="true" />}
-      title={courseSlug ? `${courseName ?? "Programme"} examination pattern` : `${universityShort} examination pattern`}
+      title={
+        courseSlug
+          ? `${courseName ?? "Programme"} examination pattern`
+          : `${universityShort} examination pattern`
+      }
       banner={banner}
       badges={
         <>
           <ScopeBadge
             inherited={resolved.inherited}
-            label={resolved.inherited ? "University-level examination pattern" : "Programme examination pattern"}
+            label={
+              resolved.inherited
+                ? "University-level examination pattern"
+                : "Programme examination pattern"
+            }
           />
           <DataSourceBadge status={e.status} />
         </>
       }
       footer={
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <OfficialSourceLink href={insightSources(universitySlug)?.exam} label="Examination source" />
+          <OfficialSourceLink
+            href={insightSources(universitySlug)?.exam}
+            label="Examination source"
+          />
           {courseSlug && (
             <PillarLink
               universitySlug={universitySlug}
@@ -341,13 +375,18 @@ export function CareerOpportunitiesSection({
   const roles = c.roles ?? [];
   const industries = c.industries ?? [];
   const skills = c.skills ?? [];
-  const hasBody = roles.length || industries.length || skills.length || c.placement_support_reference;
+  const hasBody =
+    roles.length || industries.length || skills.length || c.placement_support_reference;
   if (!hasBody) return null;
 
   return (
     <InsightPanel
       icon={<GraduationCap className="h-4 w-4" aria-hidden="true" />}
-      title={courseSlug ? `${courseName ?? "Programme"} career opportunities` : `${universityShort} career support`}
+      title={
+        courseSlug
+          ? `${courseName ?? "Programme"} career opportunities`
+          : `${universityShort} career support`
+      }
       badges={
         <ScopeBadge
           inherited={resolved.inherited}
@@ -356,7 +395,10 @@ export function CareerOpportunitiesSection({
       }
       footer={
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <OfficialSourceLink href={c.placement_support_reference} label="Placement support reference" />
+          <OfficialSourceLink
+            href={c.placement_support_reference}
+            label="Placement support reference"
+          />
           {courseSlug && (
             <PillarLink
               universitySlug={universitySlug}
@@ -369,7 +411,9 @@ export function CareerOpportunitiesSection({
       }
     >
       {c.university_level_summary && (
-        <p className="text-sm leading-relaxed text-muted-foreground">{c.university_level_summary}</p>
+        <p className="text-sm leading-relaxed text-muted-foreground">
+          {c.university_level_summary}
+        </p>
       )}
       <CareerRoles roles={roles} />
       <ChipRow label="Industries" items={industries} />
@@ -382,7 +426,9 @@ export function CareerRoles({ roles }: { roles: string[] }) {
   if (!roles.length) return null;
   return (
     <div>
-      <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">Job roles</p>
+      <p className="mb-2 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-muted-foreground">
+        Job roles
+      </p>
       <ul className="grid grid-cols-2 gap-2 sm:grid-cols-2">
         {roles.map((r) => (
           <li
@@ -420,7 +466,9 @@ export function ScholarshipCard({
           <Chip>{scope}</Chip>
         </div>
       </div>
-      {criterion && <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{criterion}</p>}
+      {criterion && (
+        <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{criterion}</p>
+      )}
     </article>
   );
 }
@@ -446,7 +494,9 @@ export function ScholarshipInsightSection({
   return (
     <InsightPanel
       icon={<FileCheck2 className="h-4 w-4" aria-hidden="true" />}
-      title={courseSlug ? `${courseName ?? "Programme"} scholarships` : `${universityShort} scholarships`}
+      title={
+        courseSlug ? `${courseName ?? "Programme"} scholarships` : `${universityShort} scholarships`
+      }
       badges={
         <>
           <ScopeBadge inherited={resolved.inherited} label={scope} />
@@ -455,7 +505,10 @@ export function ScholarshipInsightSection({
       }
       footer={
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <OfficialSourceLink href={insightSources(universitySlug)?.scholarship} label="Scholarship source" />
+          <OfficialSourceLink
+            href={insightSources(universitySlug)?.scholarship}
+            label="Scholarship source"
+          />
           {courseSlug && (
             <PillarLink
               universitySlug={universitySlug}
@@ -469,8 +522,8 @@ export function ScholarshipInsightSection({
     >
       {courseSlug && resolved.inherited && criteria.length > 0 && (
         <p className="text-sm leading-relaxed text-muted-foreground">
-          These are {universityShort} scholarship categories. Applicability to this programme depends on the current
-          scholarship notice.
+          These are {universityShort} scholarship categories. Applicability to this programme
+          depends on the current scholarship notice.
         </p>
       )}
       {criteria.length > 0 && (
@@ -492,7 +545,13 @@ export function ScholarshipInsightSection({
 
 /* ------------------------------ related links ------------------------------ */
 
-export function RelatedPageLinks({ title, links }: { title: string; links: Array<{ label: string; href: string }> }) {
+export function RelatedPageLinks({
+  title,
+  links,
+}: {
+  title: string;
+  links: Array<{ label: string; href: string }>;
+}) {
   if (!links.length) return null;
   return (
     <div className="surface-card p-4 sm:p-5">

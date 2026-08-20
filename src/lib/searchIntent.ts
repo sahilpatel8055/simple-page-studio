@@ -9,11 +9,7 @@
  * Nothing here invents facts: it only decides framing and CTA wording.
  */
 
-export type SearchIntent =
-  | "informational"
-  | "commercial"
-  | "comparison"
-  | "transactional";
+export type SearchIntent = "informational" | "commercial" | "comparison" | "transactional";
 
 export interface IntentProfile {
   intent: SearchIntent;

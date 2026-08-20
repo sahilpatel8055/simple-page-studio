@@ -8,16 +8,18 @@
  * (query -> single canonical page); this module is the vocabulary layer that
  * feeds meta keywords, internal-link copy and the cannibalisation audit.
  */
-import { getProgramme, getUniversity, listOfferingsByUniversity, programmes, universities } from "@/data";
+import {
+  getProgramme,
+  getUniversity,
+  listOfferingsByUniversity,
+  programmes,
+  universities,
+} from "@/data";
 import type { IntentModifier, PageKind } from "@/lib/intentMap";
 
 /** Google-style intent taxonomy used for page ownership decisions. */
 export type KeywordIntent =
-  | "informational"
-  | "commercial-investigation"
-  | "transactional"
-  | "navigational"
-  | "comparison";
+  "informational" | "commercial-investigation" | "transactional" | "navigational" | "comparison";
 
 export type ClusterId =
   | "core"
@@ -53,7 +55,12 @@ export const COURSE_CLUSTERS: ClusterRule[] = [
     modifier: "overview",
     owner: "coursePillar",
     supporting: ["universityCourse", "comparison"],
-    templates: ["online [course]", "[course] online", "online [course] degree", "online [course] program"],
+    templates: [
+      "online [course]",
+      "[course] online",
+      "online [course] degree",
+      "online [course] program",
+    ],
   },
   {
     id: "fees",
@@ -61,7 +68,12 @@ export const COURSE_CLUSTERS: ClusterRule[] = [
     modifier: "fees",
     owner: "coursePillar",
     supporting: ["universityCourse"],
-    templates: ["online [course] fees", "[course] fees", "online [course] fee structure", "online [course] fees per semester"],
+    templates: [
+      "online [course] fees",
+      "[course] fees",
+      "online [course] fee structure",
+      "online [course] fees per semester",
+    ],
   },
   {
     id: "eligibility",
@@ -69,7 +81,11 @@ export const COURSE_CLUSTERS: ClusterRule[] = [
     modifier: "eligibility",
     owner: "coursePillar",
     supporting: ["universityCourse", "blog"],
-    templates: ["online [course] eligibility", "eligibility for online [course]", "online [course] qualification"],
+    templates: [
+      "online [course] eligibility",
+      "eligibility for online [course]",
+      "online [course] qualification",
+    ],
   },
   {
     id: "admission",
@@ -77,7 +93,11 @@ export const COURSE_CLUSTERS: ClusterRule[] = [
     modifier: "admission",
     owner: "universityCourse",
     supporting: ["coursePillar"],
-    templates: ["online [course] admission", "online [course] admission process", "online [course] admission 2026"],
+    templates: [
+      "online [course] admission",
+      "online [course] admission process",
+      "online [course] admission 2026",
+    ],
   },
   {
     id: "duration",
@@ -109,7 +129,11 @@ export const COURSE_CLUSTERS: ClusterRule[] = [
     modifier: "placement",
     owner: "blog",
     supporting: ["coursePillar", "universityCourse"],
-    templates: ["jobs after online [course]", "career after online [course]", "[course] career opportunities"],
+    templates: [
+      "jobs after online [course]",
+      "career after online [course]",
+      "[course] career opportunities",
+    ],
   },
   {
     id: "salary",
@@ -163,7 +187,11 @@ export interface KeywordEntry {
   owner: PageKind;
 }
 
-const fill = (t: string, course: string) => t.replace(/\[course\]/g, course).replace(/\s+/g, " ").trim();
+const fill = (t: string, course: string) =>
+  t
+    .replace(/\[course\]/g, course)
+    .replace(/\s+/g, " ")
+    .trim();
 
 /** Every keyword in the course family cluster, already classified. */
 export function courseKeywordCluster(programmeSlug: string): KeywordEntry[] {
@@ -171,7 +199,12 @@ export function courseKeywordCluster(programmeSlug: string): KeywordEntry[] {
   if (!p) return [];
   const name = p.name.replace(/^online\s+/i, "");
   return COURSE_CLUSTERS.flatMap((c) =>
-    c.templates.map((t) => ({ keyword: fill(t, name), cluster: c.id, intent: c.intent, owner: c.owner })),
+    c.templates.map((t) => ({
+      keyword: fill(t, name),
+      cluster: c.id,
+      intent: c.intent,
+      owner: c.owner,
+    })),
   );
 }
 
@@ -204,9 +237,19 @@ export function universityKeywordCluster(universitySlug: string): UniversityClus
   return {
     core: [`${short} Online`, `${short} Online University`, `${short} online courses`],
     course: offers.map((n) => `${short} ${n}`),
-    commercial: offers.flatMap((n) => [`${short} ${n} fees`, `${short} ${n} admission`, `${short} ${n} eligibility`]).slice(0, 18),
+    commercial: offers
+      .flatMap((n) => [
+        `${short} ${n} fees`,
+        `${short} ${n} admission`,
+        `${short} ${n} eligibility`,
+      ])
+      .slice(0, 18),
     decision: first
-      ? [`${short} ${first} review`, `${short} ${first} worth it`, `${short} online courses comparison`]
+      ? [
+          `${short} ${first} review`,
+          `${short} ${first} worth it`,
+          `${short} online courses comparison`,
+        ]
       : [`${short} online review`, `${short} online courses comparison`],
   };
 }
@@ -225,7 +268,10 @@ const NAV_HINT = /\b(login|portal|official|website)\b/i;
 /** Ordered signal patterns — the first match wins, most specific first. */
 const CLUSTER_SIGNALS: Array<[ClusterId, RegExp]> = [
   ["comparison", /\b(vs|versus|compare|comparison|better|best)\b/i],
-  ["informational", /\b(is|are|worth|who should|should i|can i|why|advantages|disadvantages|after graduation|working professional)\b/i],
+  [
+    "informational",
+    /\b(is|are|worth|who should|should i|can i|why|advantages|disadvantages|after graduation|working professional)\b/i,
+  ],
   ["fees", /\b(fee|fees|cost|price|emi|fee structure)\b/i],
   ["eligibility", /\b(eligibility|eligible|qualification|criteria)\b/i],
   ["admission", /\b(admission|apply|application|form|last date)\b/i],
@@ -237,26 +283,34 @@ const CLUSTER_SIGNALS: Array<[ClusterId, RegExp]> = [
   ["career", /\b(job|jobs|career|scope)\b/i],
 ];
 
-const CLUSTER_INTENT = Object.fromEntries(COURSE_CLUSTERS.map((c) => [c.id, c.intent])) as Record<ClusterId, KeywordIntent>;
+const CLUSTER_INTENT = Object.fromEntries(COURSE_CLUSTERS.map((c) => [c.id, c.intent])) as Record<
+  ClusterId,
+  KeywordIntent
+>;
 
 /** Classifies a raw query into the Phase 5 intent taxonomy. */
 export function classifyKeyword(query: string): { intent: KeywordIntent; cluster: ClusterId } {
   const q = query.toLowerCase();
-  const named = universities.some((u) => q.includes(u.shortName.toLowerCase()) || q.includes(u.name.toLowerCase()));
+  const named = universities.some(
+    (u) => q.includes(u.shortName.toLowerCase()) || q.includes(u.name.toLowerCase()),
+  );
   if (NAV_HINT.test(q) && named) return { intent: "navigational", cluster: "core" };
   const hit = CLUSTER_SIGNALS.find(([, re]) => re.test(q));
   if (!hit) return { intent: named ? "navigational" : "commercial-investigation", cluster: "core" };
   const [cluster] = hit;
   // A named university turns fee/admission research into a transactional decision.
-  if (named && (cluster === "fees" || cluster === "admission")) return { intent: "transactional", cluster };
+  if (named && (cluster === "fees" || cluster === "admission"))
+    return { intent: "transactional", cluster };
   return { intent: CLUSTER_INTENT[cluster], cluster };
 }
-
 
 /** Full site keyword map — used by the audit script, not rendered anywhere. */
 export function siteKeywordMap() {
   return {
     courses: programmes.map((p) => ({ slug: p.slug, keywords: courseKeywordCluster(p.slug) })),
-    universities: universities.map((u) => ({ slug: u.slug, cluster: universityKeywordCluster(u.slug) })),
+    universities: universities.map((u) => ({
+      slug: u.slug,
+      cluster: universityKeywordCluster(u.slug),
+    })),
   };
 }

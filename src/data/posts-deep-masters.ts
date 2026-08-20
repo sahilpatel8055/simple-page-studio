@@ -38,7 +38,10 @@ function deepen(
 }
 
 /** Standard "what the dataset says" block set for a family. */
-function feeSection(family: string, heading = "University-wise fees, verified from our dataset"): PostSection {
+function feeSection(
+  family: string,
+  heading = "University-wise fees, verified from our dataset",
+): PostSection {
   const sentence = familyFeeRangeSentence(family);
   return {
     heading,
@@ -54,7 +57,10 @@ function feeSection(family: string, heading = "University-wise fees, verified fr
   };
 }
 
-function eligibilitySection(family: string, heading = "Eligibility and duration, university by university"): PostSection {
+function eligibilitySection(
+  family: string,
+  heading = "Eligibility and duration, university by university",
+): PostSection {
   return {
     heading,
     blocks: [
@@ -67,7 +73,10 @@ function eligibilitySection(family: string, heading = "Eligibility and duration,
   };
 }
 
-function specSection(family: string, heading = "Specialisations offered, per university"): PostSection {
+function specSection(
+  family: string,
+  heading = "Specialisations offered, per university",
+): PostSection {
   return {
     heading,
     blocks: [
@@ -102,7 +111,10 @@ export const deepMasterPosts: Record<string, PostContent> = {
 
   "online-mba-specialisations-guide": deepen("online-mba-specialisations-guide", {
     insertAfter: "The tracks you will actually find",
-    sections: [specSection("online-mba"), feeSection("online-mba", "Fee by university for each MBA track")],
+    sections: [
+      specSection("online-mba"),
+      feeSection("online-mba", "Fee by university for each MBA track"),
+    ],
     faqs: [
       {
         question: "Does the specialisation change the fee?",
@@ -168,13 +180,33 @@ export const deepMasterPosts: Record<string, PostContent> = {
             rows: [
               ["Class 10 marksheet", "Scanned PDF or JPG", "Date of birth and name verification"],
               ["Class 12 marksheet", "Scanned PDF or JPG", "Mathematics eligibility check"],
-              ["Graduation marksheets, all years", "Scanned PDF", "Aggregate percentage calculation"],
+              [
+                "Graduation marksheets, all years",
+                "Scanned PDF",
+                "Aggregate percentage calculation",
+              ],
               ["Degree or provisional certificate", "Scanned PDF", "Proof of programme completion"],
-              ["Photo ID (Aadhaar / passport)", "Scanned PDF or JPG", "Identity and address record"],
-              ["Passport-size photograph", "JPG, white background", "ID card and examination records"],
+              [
+                "Photo ID (Aadhaar / passport)",
+                "Scanned PDF or JPG",
+                "Identity and address record",
+              ],
+              [
+                "Passport-size photograph",
+                "JPG, white background",
+                "ID card and examination records",
+              ],
               ["Signature scan", "JPG", "Examination and result verification"],
-              ["Category certificate, if applicable", "Scanned PDF", "Fee concession and mark relaxation"],
-              ["Work-experience letter, if claimed", "Scanned PDF on letterhead", "Waivers and lateral consideration"],
+              [
+                "Category certificate, if applicable",
+                "Scanned PDF",
+                "Fee concession and mark relaxation",
+              ],
+              [
+                "Work-experience letter, if claimed",
+                "Scanned PDF on letterhead",
+                "Waivers and lateral consideration",
+              ],
             ],
           },
           {
@@ -272,12 +304,28 @@ export const deepMasterPosts: Record<string, PostContent> = {
             head: ["Role", "Core skills tested", "Typical entry pay"],
             rows: [
               ["Software developer", "DSA, one backend language, Git, REST APIs", "₹4-7 LPA"],
-              ["Full-stack developer", "React or Angular with Node/Java, databases, deployment", "₹5-9 LPA"],
+              [
+                "Full-stack developer",
+                "React or Angular with Node/Java, databases, deployment",
+                "₹5-9 LPA",
+              ],
               ["Data analyst", "SQL, Python, statistics, Power BI or Tableau", "₹4-8 LPA"],
               ["Cloud / DevOps engineer", "AWS or Azure, Linux, CI/CD, containers", "₹6-12 LPA"],
-              ["Cyber security analyst", "Networking, SIEM tools, vulnerability assessment", "₹5-10 LPA"],
-              ["Systems / business analyst", "Requirement analysis, SQL, process documentation", "₹5-9 LPA"],
-              ["Government IT officer / programmer", "MCA eligibility plus written examination", "Pay-level based"],
+              [
+                "Cyber security analyst",
+                "Networking, SIEM tools, vulnerability assessment",
+                "₹5-10 LPA",
+              ],
+              [
+                "Systems / business analyst",
+                "Requirement analysis, SQL, process documentation",
+                "₹5-9 LPA",
+              ],
+              [
+                "Government IT officer / programmer",
+                "MCA eligibility plus written examination",
+                "Pay-level based",
+              ],
             ],
           },
           {
@@ -307,8 +355,6 @@ export const deepMasterPosts: Record<string, PostContent> = {
     ],
   }),
 
-
-
   "online-mca-vs-mtech-vs-pgdca": deepen("online-mca-vs-mtech-vs-pgdca", {
     insertAfter: "Time and cost trade-off",
     sections: [feeSection("online-mca", "What the online MCA actually costs across universities")],
@@ -323,7 +369,11 @@ export const deepMasterPosts: Record<string, PostContent> = {
 
   "online-bba-admission-guide": deepen("online-bba-admission-guide", {
     insertAfter: "Step-by-step admission",
-    sections: [eligibilitySection("online-bba"), feeSection("online-bba"), specSection("online-bba")],
+    sections: [
+      eligibilitySection("online-bba"),
+      feeSection("online-bba"),
+      specSection("online-bba"),
+    ],
     faqs: [
       {
         question: "Do I need an entrance test for an online BBA?",
@@ -351,7 +401,11 @@ export const deepMasterPosts: Record<string, PostContent> = {
 
   "online-bca-career-guide": deepen("online-bca-career-guide", {
     insertAfter: "The three-year arc",
-    sections: [eligibilitySection("online-bca"), feeSection("online-bca"), specSection("online-bca")],
+    sections: [
+      eligibilitySection("online-bca"),
+      feeSection("online-bca"),
+      specSection("online-bca"),
+    ],
     faqs: [
       {
         question: "Is an online BCA accepted for an MCA admission later?",
@@ -364,7 +418,11 @@ export const deepMasterPosts: Record<string, PostContent> = {
 
   "online-bcom-guide-2026": deepen("online-bcom-guide-2026", {
     insertAfter: "Programme structure",
-    sections: [eligibilitySection("online-bcom"), feeSection("online-bcom"), specSection("online-bcom")],
+    sections: [
+      eligibilitySection("online-bcom"),
+      feeSection("online-bcom"),
+      specSection("online-bcom"),
+    ],
     faqs: [
       {
         question: "Can I study for CA or CS alongside an online B.Com?",

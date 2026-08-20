@@ -27,8 +27,8 @@ export function HiringPartners({
         className="mt-3 h-auto w-full rounded-lg object-contain"
       />
       <p className="mt-2 text-[0.7rem] leading-relaxed text-muted-foreground">
-        Indicative recruiter list published for the university's online and campus programmes. Placement support does
-        not guarantee a job offer.
+        Indicative recruiter list published for the university's online and campus programmes.
+        Placement support does not guarantee a job offer.
       </p>
     </figure>
   );

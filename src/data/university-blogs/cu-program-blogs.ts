@@ -24,7 +24,10 @@ const courseLinks = (programme: string, slug: string): PostBlock => ({
   title: `CU Online ${programme} pages on DegreeKhojo`,
   items: [
     { label: `CU Online ${programme} course page`, href: `${UNI}/courses/${slug}` },
-    { label: `${programme} fees at Chandigarh University Online`, href: `${UNI}/courses/${slug}/fees` },
+    {
+      label: `${programme} fees at Chandigarh University Online`,
+      href: `${UNI}/courses/${slug}/fees`,
+    },
     { label: "Chandigarh University Online overview", href: UNI },
     { label: "CU Online admission process", href: `${UNI}/admission` },
     { label: "CU Online placements", href: `${UNI}/placement` },
@@ -88,7 +91,14 @@ export const cuProgramArticles: Article[] = [
       "Chandigarh University Online MBA guide — ₹41,250 per semester, dual specialisation across 23 stated options, live + recorded learning and career support.",
     category: "Study Guides",
     categorySlug: "study-guides",
-    tags: ["chandigarh-university-online", "mba", "fees", "admission", "specialisations", "2026-27"],
+    tags: [
+      "chandigarh-university-online",
+      "mba",
+      "fees",
+      "admission",
+      "specialisations",
+      "2026-27",
+    ],
     author: "Kartik Ahuja",
     authorSlug: "kartik-ahuja",
     date: UPDATED,
@@ -819,11 +829,31 @@ const bcaSections: PostSection[] = [
         caption: "Years 1 and 2 core subjects",
         head: ["Semester 1", "Semester 2", "Semester 3", "Semester 4"],
         rows: [
-          ["Computer Programming", "Object-Oriented Programming", "Design and Analysis of Algorithms", "Python Programming"],
-          ["Finance & Economics", "Data Structures and Algorithms", "Software Engineering", "Computer Graphics"],
-          ["Discrete Mathematics", "Introduction to Management & Leadership", "Database Management Systems", "Machine Learning"],
+          [
+            "Computer Programming",
+            "Object-Oriented Programming",
+            "Design and Analysis of Algorithms",
+            "Python Programming",
+          ],
+          [
+            "Finance & Economics",
+            "Data Structures and Algorithms",
+            "Software Engineering",
+            "Computer Graphics",
+          ],
+          [
+            "Discrete Mathematics",
+            "Introduction to Management & Leadership",
+            "Database Management Systems",
+            "Machine Learning",
+          ],
           ["Communication Skills", "Soft Skills", "Operating Systems", "Computer Networks"],
-          ["Electrical and Electronic Circuits", "Computer Systems Architecture", "Web Applications", "Probability & Statistics"],
+          [
+            "Electrical and Electronic Circuits",
+            "Computer Systems Architecture",
+            "Web Applications",
+            "Probability & Statistics",
+          ],
         ],
       },
       {
@@ -853,7 +883,10 @@ const bcaSections: PostSection[] = [
         head: ["Specialisation", "Best suited to"],
         rows: [
           ["Data Science", "Data analysis, machine learning, visualisation"],
-          ["Cloud Computing & Cyber Security", "Cloud infrastructure, networks, security operations"],
+          [
+            "Cloud Computing & Cyber Security",
+            "Cloud infrastructure, networks, security operations",
+          ],
           ["Agentic AI", "Intelligent systems and AI applications"],
           ["UI/UX Design", "Interface, experience and product design"],
           ["AR & VR (Meta)", "Immersive and extended-reality applications"],
@@ -917,8 +950,14 @@ const bcaSections: PostSection[] = [
         caption: "Skill stacks by target role",
         head: ["Target", "Add these skills"],
         rows: [
-          ["Software development", "HTML/CSS/JS, React, Node.js, SQL, MongoDB, Git, REST APIs, DSA, cloud basics, testing"],
-          ["Data science", "Python, statistics, SQL, Pandas/NumPy, visualisation, machine learning, portfolio projects"],
+          [
+            "Software development",
+            "HTML/CSS/JS, React, Node.js, SQL, MongoDB, Git, REST APIs, DSA, cloud basics, testing",
+          ],
+          [
+            "Data science",
+            "Python, statistics, SQL, Pandas/NumPy, visualisation, machine learning, portfolio projects",
+          ],
           ["UI/UX", "Figma, design systems, user research, prototyping, usability testing"],
           ["AI", "Python, ML fundamentals, LLM concepts, RAG, prompt design, AI app development"],
         ],
@@ -1016,11 +1055,26 @@ const mscSections: PostSection[] = [
         caption: "MSc Mathematics semester-wise curriculum",
         head: ["Semester 1", "Semester 2", "Semester 3", "Semester 4"],
         rows: [
-          ["Real Analysis I", "Functional Analysis", "Optimisation Techniques", "Fundamentals of LaTeX"],
+          [
+            "Real Analysis I",
+            "Functional Analysis",
+            "Optimisation Techniques",
+            "Fundamentals of LaTeX",
+          ],
           ["Linear Algebra", "Abstract Algebra", "AI for All", "Programme Elective I"],
-          ["Differential Equations", "Integral Equations & Calculus of Variations", "Programme Elective I", "Programme Elective II"],
+          [
+            "Differential Equations",
+            "Integral Equations & Calculus of Variations",
+            "Programme Elective I",
+            "Programme Elective II",
+          ],
           ["Complex Analysis", "Topology", "Programme Elective II", "Programme Elective III"],
-          ["Statistical Methods", "Numerical Analysis", "Programme Elective III", "Programme Elective IV"],
+          [
+            "Statistical Methods",
+            "Numerical Analysis",
+            "Programme Elective III",
+            "Programme Elective IV",
+          ],
         ],
       },
       {
@@ -1053,9 +1107,21 @@ const mscSections: PostSection[] = [
         caption: "MSc Data Science semester-wise curriculum",
         head: ["Semester 1", "Semester 2", "Semesters 3–4"],
         rows: [
-          ["Fundamentals of Programming – Python", "Software Engineering for Data Science", "Deep Learning"],
-          ["Design and Analysis of Algorithm", "Data Visualisation", "Electives by specialisation group"],
-          ["Evolutionary Algorithms and Numerical Optimisation", "Machine Learning", "Major Project"],
+          [
+            "Fundamentals of Programming – Python",
+            "Software Engineering for Data Science",
+            "Deep Learning",
+          ],
+          [
+            "Design and Analysis of Algorithm",
+            "Data Visualisation",
+            "Electives by specialisation group",
+          ],
+          [
+            "Evolutionary Algorithms and Numerical Optimisation",
+            "Machine Learning",
+            "Major Project",
+          ],
           ["SQL Programming", "Big Data", "—"],
           ["Statistical Methods", "Statistical Inference", "—"],
         ],
@@ -1144,8 +1210,14 @@ const mscSections: PostSection[] = [
         caption: "Portfolio by pathway",
         head: ["Pathway", "Build these"],
         rows: [
-          ["Data Science", "Python and SQL projects, Power BI/Tableau dashboards, ML models, data-cleaning and end-to-end analytics projects"],
-          ["Mathematics", "Research work, mathematical modelling, statistical projects, computational mathematics, publications where relevant"],
+          [
+            "Data Science",
+            "Python and SQL projects, Power BI/Tableau dashboards, ML models, data-cleaning and end-to-end analytics projects",
+          ],
+          [
+            "Mathematics",
+            "Research work, mathematical modelling, statistical projects, computational mathematics, publications where relevant",
+          ],
         ],
       },
     ],
@@ -1240,8 +1312,14 @@ const bbaSections: PostSection[] = [
         caption: "Examples given in the supplied source",
         head: ["Combination", "What it builds"],
         rows: [
-          ["Marketing + Digital Marketing", "Brand, digital campaign and customer-acquisition skills"],
-          ["Banking & Finance + Business Analytics", "Financial knowledge combined with data interpretation"],
+          [
+            "Marketing + Digital Marketing",
+            "Brand, digital campaign and customer-acquisition skills",
+          ],
+          [
+            "Banking & Finance + Business Analytics",
+            "Financial knowledge combined with data interpretation",
+          ],
         ],
       },
       {
@@ -1301,11 +1379,36 @@ const bbaSections: PostSection[] = [
         caption: "Years 1 and 2 subjects",
         head: ["Semester 1", "Semester 2", "Semester 3", "Semester 4"],
         rows: [
-          ["Microeconomics", "Macroeconomics", "Logistics and Supply Chain Management", "Operations Research"],
-          ["Marketing Management", "Human Resource Management", "Research Methodology", "Commercial & Company Law"],
-          ["Accounting for Managers", "Business Mathematics and Statistics", "Universal Human Values, Ethics & Life Skills II", "Consumer Behaviour"],
-          ["Management Principles and Organisational Behaviour", "Professional Communication Skills", "Two specialisation electives", "Two specialisation electives"],
-          ["Communication Skills; Human Values, Ethics & Life Skills I", "Financial Management", "—", "—"],
+          [
+            "Microeconomics",
+            "Macroeconomics",
+            "Logistics and Supply Chain Management",
+            "Operations Research",
+          ],
+          [
+            "Marketing Management",
+            "Human Resource Management",
+            "Research Methodology",
+            "Commercial & Company Law",
+          ],
+          [
+            "Accounting for Managers",
+            "Business Mathematics and Statistics",
+            "Universal Human Values, Ethics & Life Skills II",
+            "Consumer Behaviour",
+          ],
+          [
+            "Management Principles and Organisational Behaviour",
+            "Professional Communication Skills",
+            "Two specialisation electives",
+            "Two specialisation electives",
+          ],
+          [
+            "Communication Skills; Human Values, Ethics & Life Skills I",
+            "Financial Management",
+            "—",
+            "—",
+          ],
         ],
       },
       {
@@ -1389,10 +1492,16 @@ const bbaSections: PostSection[] = [
         caption: "Skills to build alongside the BBA",
         head: ["Direction", "Skills"],
         rows: [
-          ["Business", "Excel, PowerPoint, business communication, presentations, financial basics, CRM tools"],
+          [
+            "Business",
+            "Excel, PowerPoint, business communication, presentations, financial basics, CRM tools",
+          ],
           ["Analytics", "Advanced Excel, SQL, Power BI, basic statistics"],
           ["Marketing", "SEO, social media, Google Ads, content strategy, analytics"],
-          ["Finance", "Financial modelling, accounting software, Excel, financial statement analysis"],
+          [
+            "Finance",
+            "Financial modelling, accounting software, Excel, financial statement analysis",
+          ],
         ],
       },
       {
@@ -1637,11 +1746,13 @@ export const cuProgramPosts: Record<string, PostContent> = {
       },
       {
         question: "Is an entrance exam required?",
-        answer: "No. The supplied source states admission is online and merit-based with no entrance examination.",
+        answer:
+          "No. The supplied source states admission is online and merit-based with no entrance examination.",
       },
       {
         question: "Does the course include a project?",
-        answer: "Yes. The final semester includes dissertation/capstone work alongside two specialisation electives.",
+        answer:
+          "Yes. The final semester includes dissertation/capstone work alongside two specialisation electives.",
       },
       {
         question: "Which BBA specialisation is best?",

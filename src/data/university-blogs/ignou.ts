@@ -184,11 +184,8 @@ export const ignouPosts: Record<string, PostContent> = {
           },
         ],
       },
-      {
-        kind: undefined,
-      } as any,
     ],
     faqs: [],
     sources: [],
-  } as any,
+  } as unknown as PostContent,
 };

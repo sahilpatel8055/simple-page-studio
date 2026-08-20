@@ -3,7 +3,17 @@ import { Fragment, useState, type ReactNode } from "react";
 import { BlogUniversities } from "@/components/post/BlogUniversities";
 import { compactMoney, dedupeByFirstCell, universitySlugForLabel } from "@/lib/blogFormat";
 import { getCourseFamily } from "@/lib/courseFamily";
-import { ArrowRight, CalendarClock, ListTree, CheckCircle2, Info, PhoneCall, ShieldCheck, Sparkles, UserRound } from "lucide-react";
+import {
+  ArrowRight,
+  CalendarClock,
+  ListTree,
+  CheckCircle2,
+  Info,
+  PhoneCall,
+  ShieldCheck,
+  Sparkles,
+  UserRound,
+} from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
 import { DataTable } from "@/components/common/Blocks";
 import { ContentSection } from "@/components/templates/DetailLayout";
@@ -24,7 +34,8 @@ export function PostByline({ item, post }: { item: Article; post: PostContent })
       </span>
       <span className="inline-flex items-center gap-1.5">
         <ShieldCheck className="h-3.5 w-3.5 text-brand" aria-hidden="true" />
-        Reviewed by <span className="font-semibold text-foreground">{post.reviewer}</span>, {post.reviewerRole}
+        Reviewed by <span className="font-semibold text-foreground">{post.reviewer}</span>,{" "}
+        {post.reviewerRole}
       </span>
       <span className="inline-flex items-center gap-1.5">
         <CalendarClock className="h-3.5 w-3.5" aria-hidden="true" />
@@ -46,7 +57,10 @@ export function formatDate(iso: string) {
 
 export function KeyTakeaways({ items }: { items: string[] }) {
   return (
-    <section id="key-takeaways" className="scroll-mt-36 rounded-2xl border border-brand/30 bg-brand-soft p-5 sm:p-6">
+    <section
+      id="key-takeaways"
+      className="scroll-mt-36 rounded-2xl border border-brand/30 bg-brand-soft p-5 sm:p-6"
+    >
       <h2 className="font-display text-lg font-bold">Key takeaways</h2>
       <ul className="mt-4 space-y-2.5">
         {items.map((t) => (
@@ -67,19 +81,27 @@ const anchor = (t: string) => t.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 /** Collapsible table of contents shown on phones (sidebar TOC is desktop-only). */
 export function MobileToc({ sections }: { sections: string[] }) {
   return (
-    <details className="not-prose group rounded-2xl border border-border bg-card p-4 lg:hidden" open>
+    <details
+      className="not-prose group rounded-2xl border border-border bg-card p-4 lg:hidden"
+      open
+    >
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-extrabold text-foreground">
         <span className="inline-flex items-center gap-2">
           <ListTree className="h-4 w-4 text-brand" aria-hidden="true" /> Table of contents
         </span>
         <span className="text-xs font-semibold text-muted-foreground group-open:hidden">Show</span>
-        <span className="hidden text-xs font-semibold text-muted-foreground group-open:inline">Hide</span>
+        <span className="hidden text-xs font-semibold text-muted-foreground group-open:inline">
+          Hide
+        </span>
       </summary>
       <ol className="mt-3 space-y-1.5 border-t border-border pt-3 text-sm">
         {sections.map((s, i) => (
           <li key={s} className="flex gap-2 leading-snug">
             <span className="w-5 shrink-0 tabular-nums text-xs font-bold text-brand">{i + 1}.</span>
-            <a href={`#${anchor(s)}`} className="min-h-[1.75rem] text-muted-foreground hover:text-brand">
+            <a
+              href={`#${anchor(s)}`}
+              className="min-h-[1.75rem] text-muted-foreground hover:text-brand"
+            >
               {s}
             </a>
           </li>
@@ -136,7 +158,9 @@ function Block({ block }: { block: PostBlock }) {
     case "links":
       return (
         <div className="rounded-xl border border-border bg-card p-4">
-          <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">{block.title}</p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            {block.title}
+          </p>
           <ul className="mt-2.5 space-y-1.5">
             {block.items.map((l) => (
               <li key={l.href}>
@@ -181,7 +205,6 @@ function BarChart({ block }: { block: Extract<PostBlock, { kind: "chart" }> }) {
   );
 }
 
-
 /** Inline lead-capture form used between article sections. */
 function InlineLeadCTA({ block }: { block: Extract<PostBlock, { kind: "cta" }> }) {
   const [sent, setSent] = useState(false);
@@ -190,8 +213,12 @@ function InlineLeadCTA({ block }: { block: Extract<PostBlock, { kind: "cta" }> }
       <span className="inline-flex items-center gap-1.5 rounded-full bg-[#7f1813] px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-wide text-white">
         <Sparkles className="h-3.5 w-3.5" aria-hidden="true" /> Free counselling
       </span>
-      <h3 className="mt-3 font-display text-lg font-extrabold leading-snug text-foreground">{block.title}</h3>
-      {block.body && <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{block.body}</p>}
+      <h3 className="mt-3 font-display text-lg font-extrabold leading-snug text-foreground">
+        {block.title}
+      </h3>
+      {block.body && (
+        <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{block.body}</p>
+      )}
       {sent ? (
         <p className="mt-4 rounded-lg bg-card p-3 text-sm font-semibold text-foreground">
           Thanks — our counsellor will call you shortly with verified fees and eligibility.
@@ -232,7 +259,9 @@ function InlineLeadCTA({ block }: { block: Extract<PostBlock, { kind: "cta" }> }
           </button>
         </form>
       )}
-      <p className="mt-2 text-[0.7rem] text-muted-foreground">No spam. Your details are used only for counselling.</p>
+      <p className="mt-2 text-[0.7rem] text-muted-foreground">
+        No spam. Your details are used only for counselling.
+      </p>
     </div>
   );
 }
@@ -258,7 +287,8 @@ function PromoBannerBlock({ block }: { block: Extract<PostBlock, { kind: "promo"
           onClick={() => trackContactClick("Call", "Article CTA")}
           className="inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-xl bg-white px-4 text-sm font-bold text-[#7f1813]"
         >
-          <PhoneCall className="h-4 w-4" aria-hidden="true" /> {block.ctaLabel ?? "Talk to a counsellor"}
+          <PhoneCall className="h-4 w-4" aria-hidden="true" />{" "}
+          {block.ctaLabel ?? "Talk to a counsellor"}
         </a>
       )}
     </div>
@@ -279,7 +309,11 @@ function BlogTable({ block }: { block: Extract<PostBlock, { kind: "table" }> }) 
         const slug = universitySlugForLabel(String(cell ?? ""));
         if (slug)
           return (
-            <AppLink key={ci} to={`/universities/${slug}`} className="font-semibold text-brand hover:underline">
+            <AppLink
+              key={ci}
+              to={`/universities/${slug}`}
+              className="font-semibold text-brand hover:underline"
+            >
               {text}
             </AppLink>
           );
@@ -317,7 +351,8 @@ function Clamped({ children, clamp }: { children: ReactNode; clamp: boolean }) {
         onClick={() => setOpen((v) => !v)}
         className="mt-3 inline-flex min-h-10 items-center gap-1.5 rounded-full border border-brand/40 px-5 text-sm font-bold text-brand transition-colors hover:bg-brand hover:text-brand-foreground"
       >
-        {open ? "See less" : "See more"} <ArrowRight className={`h-4 w-4 ${open ? "-rotate-90" : "rotate-90"}`} />
+        {open ? "See less" : "See more"}{" "}
+        <ArrowRight className={`h-4 w-4 ${open ? "-rotate-90" : "rotate-90"}`} />
       </button>
     </div>
   );
@@ -375,7 +410,6 @@ export function PostBody({
           )}
         </Fragment>
       ))}
-
     </>
   );
 }

@@ -49,14 +49,22 @@ export function SpecSection({
       id={sectionId(title)}
       className={`scroll-mt-36 overflow-hidden rounded-3xl border border-border shadow-sm ${bodyTone[tone]}`}
     >
-      <header className={`flex flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3.5 sm:px-6 ${headTone[tone]}`}>
+      <header
+        className={`flex flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3.5 sm:px-6 ${headTone[tone]}`}
+      >
         {eyebrow && (
-          <span className="text-[0.62rem] font-bold uppercase tracking-[0.18em] opacity-80">{eyebrow}</span>
+          <span className="text-[0.62rem] font-bold uppercase tracking-[0.18em] opacity-80">
+            {eyebrow}
+          </span>
         )}
-        <h2 className="font-display text-[1.05rem] font-bold leading-snug sm:text-[1.35rem]">{title}</h2>
+        <h2 className="font-display text-[1.05rem] font-bold leading-snug sm:text-[1.35rem]">
+          {title}
+        </h2>
       </header>
       <div className="px-4 py-5 sm:px-6 sm:py-6">
-        {intro && <p className="mb-4 text-[0.95rem] leading-relaxed text-muted-foreground">{intro}</p>}
+        {intro && (
+          <p className="mb-4 text-[0.95rem] leading-relaxed text-muted-foreground">{intro}</p>
+        )}
         {children}
       </div>
     </section>
@@ -104,11 +112,16 @@ export function NumberedList({ items }: { items: string[] }) {
   return (
     <ol className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card">
       {items.map((item, i) => (
-        <li key={item} className="flex gap-3 px-3.5 py-3 transition-colors hover:bg-secondary/50 sm:px-4">
+        <li
+          key={item}
+          className="flex gap-3 px-3.5 py-3 transition-colors hover:bg-secondary/50 sm:px-4"
+        >
           <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-lg bg-brand text-[0.72rem] font-bold text-brand-foreground">
             {i + 1}
           </span>
-          <p className="text-[0.85rem] leading-relaxed text-foreground/80 sm:text-[0.9rem]">{item}</p>
+          <p className="text-[0.85rem] leading-relaxed text-foreground/80 sm:text-[0.9rem]">
+            {item}
+          </p>
         </li>
       ))}
     </ol>
@@ -124,24 +137,38 @@ export function SalaryTable({ roles }: { roles: SpecRole[] }) {
           <caption className="sr-only">Job roles and indicative salary</caption>
           <thead>
             <tr className="bg-brand text-brand-foreground">
-              <th scope="col" className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide">
+              <th
+                scope="col"
+                className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide"
+              >
                 Job role
               </th>
-              <th scope="col" className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide">
+              <th
+                scope="col"
+                className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide"
+              >
                 Indicative annual salary range
               </th>
-              <th scope="col" className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide">
+              <th
+                scope="col"
+                className="px-4 py-3 text-[0.75rem] font-bold uppercase tracking-wide"
+              >
                 What the role does
               </th>
             </tr>
           </thead>
           <tbody className="divide-y divide-border">
             {roles.map((r) => (
-              <tr key={r.role} className="align-top transition-colors even:bg-secondary/40 hover:bg-brand-soft/40">
+              <tr
+                key={r.role}
+                className="align-top transition-colors even:bg-secondary/40 hover:bg-brand-soft/40"
+              >
                 <th scope="row" className="px-4 py-3 text-[0.86rem] font-bold text-foreground">
                   {r.role}
                 </th>
-                <td className="whitespace-nowrap px-4 py-3 text-[0.86rem] font-semibold text-brand">{r.salary}</td>
+                <td className="whitespace-nowrap px-4 py-3 text-[0.86rem] font-semibold text-brand">
+                  {r.salary}
+                </td>
                 <td className="px-4 py-3 text-[0.84rem] text-muted-foreground">{r.detail}</td>
               </tr>
             ))}
@@ -159,7 +186,9 @@ export function SalaryTable({ roles }: { roles: SpecRole[] }) {
                 {r.salary.replace(/₹/g, "")}
               </span>
             </div>
-            <p className="mt-1.5 text-[0.78rem] leading-relaxed text-muted-foreground">{r.detail}</p>
+            <p className="mt-1.5 text-[0.78rem] leading-relaxed text-muted-foreground">
+              {r.detail}
+            </p>
           </li>
         ))}
       </ul>
@@ -168,7 +197,13 @@ export function SalaryTable({ roles }: { roles: SpecRole[] }) {
 }
 
 /** "Top colleges offering …" table with fee, duration and a link. */
-export function CollegeTable({ offers, courseName }: { offers: FamilyOffer[]; courseName: string }) {
+export function CollegeTable({
+  offers,
+  courseName,
+}: {
+  offers: FamilyOffer[];
+  courseName: string;
+}) {
   const rows = offers.slice(0, 10);
   return (
     <>
@@ -178,7 +213,11 @@ export function CollegeTable({ offers, courseName }: { offers: FamilyOffer[]; co
           <thead>
             <tr className="bg-brand text-brand-foreground">
               {["#", "University", "Total fee", "Duration", "Approvals", ""].map((h, i) => (
-                <th key={i} scope="col" className="px-3 py-3 text-[0.72rem] font-bold uppercase tracking-wide">
+                <th
+                  key={i}
+                  scope="col"
+                  className="px-3 py-3 text-[0.72rem] font-bold uppercase tracking-wide"
+                >
                   {h}
                 </th>
               ))}
@@ -186,21 +225,29 @@ export function CollegeTable({ offers, courseName }: { offers: FamilyOffer[]; co
           </thead>
           <tbody className="divide-y divide-border">
             {rows.map((o, i) => (
-              <tr key={o.key} className="align-middle transition-colors even:bg-secondary/40 hover:bg-brand-soft/40">
+              <tr
+                key={o.key}
+                className="align-middle transition-colors even:bg-secondary/40 hover:bg-brand-soft/40"
+              >
                 <td className="px-3 py-3 text-[0.8rem] font-bold text-brand">{i + 1}</td>
                 <th scope="row" className="px-3 py-3 text-[0.85rem] font-bold text-foreground">
                   {o.universityName}
                   {o.location && (
-                    <span className="mt-0.5 block text-[0.72rem] font-medium text-muted-foreground">{o.location}</span>
+                    <span className="mt-0.5 block text-[0.72rem] font-medium text-muted-foreground">
+                      {o.location}
+                    </span>
                   )}
                 </th>
                 <td className="px-3 py-3 text-[0.84rem] font-semibold text-foreground">
                   {o.fees.total ? `₹${o.fees.total.toLocaleString("en-IN")}` : "Not specified"}
                 </td>
-                <td className="px-3 py-3 text-[0.82rem] text-muted-foreground">{o.duration ?? "—"}</td>
+                <td className="px-3 py-3 text-[0.82rem] text-muted-foreground">
+                  {o.duration ?? "—"}
+                </td>
                 <td className="px-3 py-3 text-[0.78rem] text-muted-foreground">
-                  {[o.debStatus ? "UGC-DEB" : null, o.naac ? `NAAC ${o.naac}` : null].filter(Boolean).join(" · ") ||
-                    "Check university page"}
+                  {[o.debStatus ? "UGC-DEB" : null, o.naac ? `NAAC ${o.naac}` : null]
+                    .filter(Boolean)
+                    .join(" · ") || "Check university page"}
                 </td>
                 <td className="px-3 py-3">
                   <AppLink
@@ -235,7 +282,10 @@ export function CollegeTable({ offers, courseName }: { offers: FamilyOffer[]; co
           <tbody>
             {rows.map((o, i) => (
               <tr key={o.key} className={i % 2 ? "bg-secondary/50" : "bg-card"}>
-                <th scope="row" className="px-2 py-2 text-left align-top font-semibold text-foreground">
+                <th
+                  scope="row"
+                  className="px-2 py-2 text-left align-top font-semibold text-foreground"
+                >
                   <AppLink to={o.path} className="text-brand hover:underline">
                     {o.universityShortName || o.universityName}
                   </AppLink>
@@ -297,7 +347,9 @@ export function BrandBand({
             className="rounded-2xl border border-brand-foreground/20 bg-brand-foreground/10 p-3 transition-colors hover:bg-brand-foreground/20 sm:p-4"
           >
             <p className="font-display text-[0.82rem] font-bold sm:text-[0.95rem]">{p.title}</p>
-            <p className="mt-1.5 text-[0.74rem] leading-relaxed opacity-90 sm:text-[0.84rem]">{p.detail}</p>
+            <p className="mt-1.5 text-[0.74rem] leading-relaxed opacity-90 sm:text-[0.84rem]">
+              {p.detail}
+            </p>
           </div>
         ))}
       </div>

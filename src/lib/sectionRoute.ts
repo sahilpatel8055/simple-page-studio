@@ -21,7 +21,11 @@ export function sectionLoader(slug: string, section: SectionKey): SectionLoaderD
   return { name: u.name, shortName: u.shortName, lastUpdated: u.lastUpdated };
 }
 
-export function sectionHead(slug: string, section: SectionKey, loaderData: SectionLoaderData | undefined) {
+export function sectionHead(
+  slug: string,
+  section: SectionKey,
+  loaderData: SectionLoaderData | undefined,
+) {
   const path = `/universities/${slug}/${section}`;
   if (!loaderData) {
     return { meta: [{ title: "Page not available" }, { name: "robots", content: "noindex" }] };

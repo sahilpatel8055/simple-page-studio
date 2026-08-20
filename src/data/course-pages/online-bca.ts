@@ -55,38 +55,46 @@ export const onlineBcaContent: CourseContent = {
   audience: [
     {
       title: "School leavers (10+2 pass-outs)",
-      detail: "Start a computing degree flexibly while preparing for other examinations, internships or part-time work, without being tied to a fixed campus timetable.",
+      detail:
+        "Start a computing degree flexibly while preparing for other examinations, internships or part-time work, without being tied to a fixed campus timetable.",
     },
     {
       title: "IT support and helpdesk staff",
-      detail: "Formalise practical computer knowledge already gained on the job into a recognised bachelor's degree that can support a move into development or analyst roles.",
+      detail:
+        "Formalise practical computer knowledge already gained on the job into a recognised bachelor's degree that can support a move into development or analyst roles.",
     },
     {
       title: "Career switchers from non-IT backgrounds",
-      detail: "Build programming, database and networking fundamentals from the ground up, at a pace that fits around current work.",
+      detail:
+        "Build programming, database and networking fundamentals from the ground up, at a pace that fits around current work.",
     },
     {
       title: "Aspiring MCA or M.Sc (CS) candidates",
-      detail: "Complete a computing-focused bachelor's degree as the natural qualifying route into postgraduate computer-science programmes.",
+      detail:
+        "Complete a computing-focused bachelor's degree as the natural qualifying route into postgraduate computer-science programmes.",
     },
   ],
 
   eligibility: [
     {
       title: "Educational qualification",
-      detail: "10+2 (or an equivalent qualification) from a recognised board, in any stream, subject to the individual university's requirement.",
+      detail:
+        "10+2 (or an equivalent qualification) from a recognised board, in any stream, subject to the individual university's requirement.",
     },
     {
       title: "Mathematics at 10+2",
-      detail: "Requirement varies by university. Several ask for Mathematics or Computer Science as a 10+2 subject; others admit students from any stream, sometimes with a bridge or foundation paper.",
+      detail:
+        "Requirement varies by university. Several ask for Mathematics or Computer Science as a 10+2 subject; others admit students from any stream, sometimes with a bridge or foundation paper.",
     },
     {
       title: "Minimum marks",
-      detail: "University-specific. Some publish a minimum aggregate at 10+2; others admit on the qualification alone, occasionally with a relaxation for reserved categories.",
+      detail:
+        "University-specific. Some publish a minimum aggregate at 10+2; others admit on the qualification alone, occasionally with a relaxation for reserved categories.",
     },
     {
       title: "Entrance examination",
-      detail: "Not a general requirement for this course. Most universities in our dataset admit directly on 10+2 marks; verify with the specific university before applying.",
+      detail:
+        "Not a general requirement for this course. Most universities in our dataset admit directly on 10+2 marks; verify with the specific university before applying.",
     },
   ],
   eligibilityNote:
@@ -180,25 +188,70 @@ export const onlineBcaContent: CourseContent = {
     "For BCA specifically, theory and practical papers are usually assessed separately, with the practical component evaluated through a coding assignment, a proctored lab test or a viva depending on the university. Weightings and formats can change between sessions, so confirm the current pattern with the university.",
 
   specialisationGuide: [
-    { goal: "Building predictive models and working with data pipelines", specialisation: "Data Science" },
-    { goal: "Machine-learning engineering and intelligent applications", specialisation: "Artificial Intelligence & Machine Learning" },
+    {
+      goal: "Building predictive models and working with data pipelines",
+      specialisation: "Data Science",
+    },
+    {
+      goal: "Machine-learning engineering and intelligent applications",
+      specialisation: "Artificial Intelligence & Machine Learning",
+    },
     { goal: "Managing infrastructure, deployment and DevOps", specialisation: "Cloud Computing" },
-    { goal: "Security operations, ethical hacking and network defence", specialisation: "Cyber Security" },
-    { goal: "Building websites and web applications end-to-end", specialisation: "Full-Stack Development" },
-    { goal: "Business reporting, dashboards and data-driven decisions", specialisation: "Data Analytics" },
+    {
+      goal: "Security operations, ethical hacking and network defence",
+      specialisation: "Cyber Security",
+    },
+    {
+      goal: "Building websites and web applications end-to-end",
+      specialisation: "Full-Stack Development",
+    },
+    {
+      goal: "Business reporting, dashboards and data-driven decisions",
+      specialisation: "Data Analytics",
+    },
   ],
 
   careers: [
-    { title: "Software Developer", detail: "Writes, tests and maintains application code as part of a development team." },
-    { title: "Web Developer", detail: "Builds and maintains websites and web applications, front-end, back-end or both." },
-    { title: "Junior Data Analyst", detail: "Cleans data and builds reports and dashboards that support business decisions." },
-    { title: "System Administrator", detail: "Maintains servers, networks and access controls for an organisation's IT setup." },
-    { title: "Quality Assurance / Test Engineer", detail: "Designs and runs test cases to catch defects before software ships." },
-    { title: "Database Administrator (entry-level)", detail: "Supports database performance, backups and access under senior guidance." },
-    { title: "Technical Support Engineer", detail: "Diagnoses and resolves software or infrastructure issues for end users." },
-    { title: "Mobile App Developer", detail: "Builds applications for Android or iOS, often starting on a single platform." },
-    { title: "IT Business Analyst", detail: "Bridges business requirements and technical teams for software projects." },
-    { title: "Cyber Security Analyst (entry-level)", detail: "Monitors systems for threats and supports incident response under a senior analyst." },
+    {
+      title: "Software Developer",
+      detail: "Writes, tests and maintains application code as part of a development team.",
+    },
+    {
+      title: "Web Developer",
+      detail: "Builds and maintains websites and web applications, front-end, back-end or both.",
+    },
+    {
+      title: "Junior Data Analyst",
+      detail: "Cleans data and builds reports and dashboards that support business decisions.",
+    },
+    {
+      title: "System Administrator",
+      detail: "Maintains servers, networks and access controls for an organisation's IT setup.",
+    },
+    {
+      title: "Quality Assurance / Test Engineer",
+      detail: "Designs and runs test cases to catch defects before software ships.",
+    },
+    {
+      title: "Database Administrator (entry-level)",
+      detail: "Supports database performance, backups and access under senior guidance.",
+    },
+    {
+      title: "Technical Support Engineer",
+      detail: "Diagnoses and resolves software or infrastructure issues for end users.",
+    },
+    {
+      title: "Mobile App Developer",
+      detail: "Builds applications for Android or iOS, often starting on a single platform.",
+    },
+    {
+      title: "IT Business Analyst",
+      detail: "Bridges business requirements and technical teams for software projects.",
+    },
+    {
+      title: "Cyber Security Analyst (entry-level)",
+      detail: "Monitors systems for threats and supports incident response under a senior analyst.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
@@ -281,7 +334,7 @@ export const onlineBcaContent: CourseContent = {
     {
       question: "How much does an Online BCA cost?",
       answer:
-        "Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "How are practical labs conducted in an Online BCA?",

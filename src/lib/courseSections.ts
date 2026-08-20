@@ -37,7 +37,11 @@ export function isCourseSection(value: string): value is CourseSectionKey {
 }
 
 /** Search-intent title for a standalone course section page. */
-export function courseSectionTitle(courseName: string, section: CourseSectionKey, year: number): string {
+export function courseSectionTitle(
+  courseName: string,
+  section: CourseSectionKey,
+  year: number,
+): string {
   const map: Record<CourseSectionKey, string> = {
     fees: `${courseName} Fees ${year}: University-wise Fee Structure & EMI`,
     eligibility: `${courseName} Eligibility ${year}: Criteria, Marks & Age Limit`,
@@ -52,7 +56,11 @@ export function courseSectionTitle(courseName: string, section: CourseSectionKey
   return map[section];
 }
 
-export function courseSectionDescription(courseName: string, section: CourseSectionKey, year: number): string {
+export function courseSectionDescription(
+  courseName: string,
+  section: CourseSectionKey,
+  year: number,
+): string {
   const map: Record<CourseSectionKey, string> = {
     fees: `Complete ${courseName} fee structure for ${year} — university-wise total fee, per-semester fee, EMI options and what is included.`,
     eligibility: `${courseName} eligibility for ${year}: minimum qualification, marks required, work-experience relaxations and entrance requirements.`,

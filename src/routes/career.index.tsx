@@ -6,7 +6,8 @@ import { careerGuides } from "@/lib/content";
 import { canonical, collectionSchema, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
 const title = "Career Guides for Online Learners";
-const description = "Role ladders, salary benchmarks and switch strategies for graduates of online and distance programmes.";
+const description =
+  "Role ladders, salary benchmarks and switch strategies for graduates of online and distance programmes.";
 const path = "/career";
 
 export const Route = createFileRoute("/career/")({
@@ -15,7 +16,12 @@ export const Route = createFileRoute("/career/")({
     links: canonical(path),
     scripts: [
       jsonLd(collectionSchema({ name: title, description, path })),
-      jsonLd(breadcrumbSchema([{ name: "Home", href: "/" }, { name: "Career", href: path }])),
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", href: "/" },
+          { name: "Career", href: path },
+        ]),
+      ),
     ],
   }),
   component: Page,
@@ -29,12 +35,20 @@ function Page() {
       title="Career Guides for Online Learners"
       description={description}
     >
-      <FilterBar groups={[{"label":"Field","options":["All","Management","Data & Analytics","Public Sector"]}]} />
+      <FilterBar
+        groups={[
+          { label: "Field", options: ["All", "Management", "Data & Analytics", "Public Sector"] },
+        ]}
+      />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {careerGuides.map((i) => (<CareerCard key={i.slug} item={i} />))}
+        {careerGuides.map((i) => (
+          <CareerCard key={i.slug} item={i} />
+        ))}
       </div>
       <SimplePagination />
-      <div className="mt-16"><CTASection /></div>
+      <div className="mt-16">
+        <CTASection />
+      </div>
     </PageShell>
   );
 }

@@ -71,7 +71,11 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
       <div className="container-page flex h-[4.5rem] items-center gap-3 lg:h-[5.25rem] lg:gap-4">
-        <AppLink to="/" className="flex min-w-0 shrink-0 items-center" aria-label="Degreekhojo home">
+        <AppLink
+          to="/"
+          className="flex min-w-0 shrink-0 items-center"
+          aria-label="Degreekhojo home"
+        >
           <img
             src="/degreekhojo-logo.png"
             alt="Degreekhojo logo"
@@ -132,9 +136,17 @@ export function Header() {
             aria-label="Toggle colour theme"
             className="btn-icon hidden sm:grid"
           >
-            {mounted && theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+            {mounted && theme === "dark" ? (
+              <Sun className="h-4 w-4" />
+            ) : (
+              <Moon className="h-4 w-4" />
+            )}
           </button>
-          <button type="button" onClick={openCounselling} className="btn btn-primary hidden sm:inline-flex">
+          <button
+            type="button"
+            onClick={openCounselling}
+            className="btn btn-primary hidden sm:inline-flex"
+          >
             Get guidance
           </button>
           <ContactQuickMenu />

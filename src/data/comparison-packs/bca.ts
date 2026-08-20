@@ -5,19 +5,55 @@ function buildFactors(aName: string, bName: string) {
     { label: "University type", a: "Private university", b: "Private university" },
     { label: "Degree", a: "Online BCA", b: "Online BCA" },
     { label: "Typical duration", a: "3 years / 6 semesters", b: "3 years / 6 semesters" },
-    { label: "Eligibility", a: "10+2 or equivalent; verify current programme rules", b: "10+2 or equivalent; verify current programme rules" },
-    { label: "Recognition", a: "UGC entitlement/DEB status should be checked for the current session", b: "UGC entitlement/DEB status should be checked for the current session" },
-    { label: "Fee position", a: "Compare current official fee + exam/other charges", b: "Compare current official fee + exam/other charges" },
-    { label: "Specialisation breadth", a: "Depends on current intake", b: "Depends on current intake" },
-    { label: "Learning model", a: "LMS + digital/self-learning + live/recorded components may vary", b: "LMS + digital/self-learning + live/recorded components may vary" },
-    { label: "Career support", a: "Placement/career assistance; distinguish assistance from guaranteed placement", b: "Placement/career assistance; distinguish assistance from guaranteed placement" },
-    { label: "Best suited for", a: `Students prioritising the strengths of ${aName}'s BCA ecosystem`, b: `Students prioritising the strengths of ${bName}'s BCA ecosystem` },
-    { label: "Advertised tuition", a: "Verify current official figure", b: "Verify current official figure" },
+    {
+      label: "Eligibility",
+      a: "10+2 or equivalent; verify current programme rules",
+      b: "10+2 or equivalent; verify current programme rules",
+    },
+    {
+      label: "Recognition",
+      a: "UGC entitlement/DEB status should be checked for the current session",
+      b: "UGC entitlement/DEB status should be checked for the current session",
+    },
+    {
+      label: "Fee position",
+      a: "Compare current official fee + exam/other charges",
+      b: "Compare current official fee + exam/other charges",
+    },
+    {
+      label: "Specialisation breadth",
+      a: "Depends on current intake",
+      b: "Depends on current intake",
+    },
+    {
+      label: "Learning model",
+      a: "LMS + digital/self-learning + live/recorded components may vary",
+      b: "LMS + digital/self-learning + live/recorded components may vary",
+    },
+    {
+      label: "Career support",
+      a: "Placement/career assistance; distinguish assistance from guaranteed placement",
+      b: "Placement/career assistance; distinguish assistance from guaranteed placement",
+    },
+    {
+      label: "Best suited for",
+      a: `Students prioritising the strengths of ${aName}'s BCA ecosystem`,
+      b: `Students prioritising the strengths of ${bName}'s BCA ecosystem`,
+    },
+    {
+      label: "Advertised tuition",
+      a: "Verify current official figure",
+      b: "Verify current official figure",
+    },
     { label: "Semester payment", a: "Verify", b: "Verify" },
     { label: "Annual payment", a: "Verify", b: "Verify" },
     { label: "One-time/lumpsum option", a: "Verify", b: "Verify" },
     { label: "Examination/other charges", a: "Verify", b: "Verify" },
-    { label: "Scholarship/discount", a: "Verify current intake offer", b: "Verify current intake offer" },
+    {
+      label: "Scholarship/discount",
+      a: "Verify current intake offer",
+      b: "Verify current intake offer",
+    },
     { label: "EMI", a: "Check current terms", b: "Check current terms" },
     { label: "Recognition/credibility (scorecard)", a: "★★★★☆", b: "★★★★☆" },
     { label: "Curriculum relevance (scorecard)", a: "★★★★☆", b: "★★★★☆" },
@@ -72,7 +108,8 @@ function buildSections(aName: string, bName: string) {
     {
       heading: "Fees: Which Online BCA Offers Better Value?",
       body: "Do not compare only the advertised tuition number. Calculate the effective programme cost after considering semester/yearly payment options, examination fees, registration charges, study material charges if any, and available scholarships or EMI plans.",
-      verdict: "Value-for-money test: If the fee difference is significant, ask whether the higher-priced programme provides materially stronger curriculum depth, specialisation choices, academic support, career services or brand value for the student's specific goal.",
+      verdict:
+        "Value-for-money test: If the fee difference is significant, ask whether the higher-priced programme provides materially stronger curriculum depth, specialisation choices, academic support, career services or brand value for the student's specific goal.",
     },
     {
       heading: "Eligibility & Admission",
@@ -135,12 +172,24 @@ function buildSections(aName: string, bName: string) {
       table: {
         head: ["Student profile", "Better choice depends on"],
         rows: [
-          ["12th-pass fresher", "Academic support, programming foundation, projects and affordability"],
+          [
+            "12th-pass fresher",
+            "Academic support, programming foundation, projects and affordability",
+          ],
           ["Career switcher", "Technical depth, practical projects and career services"],
           ["Working professional", "Flexibility, recordings, LMS and assessment convenience"],
-          ["Entrepreneur/freelancer", "Broad business + technology exposure and project-based learning"],
-          ["Student targeting software development", "Programming, DSA, web development, Git/project portfolio and internships"],
-          ["Student targeting data/AI", "Statistics, Python, databases, ML/data electives and external projects"],
+          [
+            "Entrepreneur/freelancer",
+            "Broad business + technology exposure and project-based learning",
+          ],
+          [
+            "Student targeting software development",
+            "Programming, DSA, web development, Git/project portfolio and internships",
+          ],
+          [
+            "Student targeting data/AI",
+            "Statistics, Python, databases, ML/data electives and external projects",
+          ],
         ],
       },
     },
@@ -155,27 +204,33 @@ function buildFaqs(aName: string, bName: string) {
   return [
     {
       question: `Which is better for online BCA: ${aName} or ${bName}?`,
-      answer: "It depends on your target specialisation, budget, preferred learning model and career plans. Compare the current syllabus and fee before deciding.",
+      answer:
+        "It depends on your target specialisation, budget, preferred learning model and career plans. Compare the current syllabus and fee before deciding.",
     },
     {
       question: "Are both online BCA degrees valid?",
-      answer: "Check the university's current UGC/DEB entitlement for the specific programme and academic session before admission.",
+      answer:
+        "Check the university's current UGC/DEB entitlement for the specific programme and academic session before admission.",
     },
     {
       question: "Which has better placements?",
-      answer: "Compare placement assistance, hiring drives, career services and documented outcomes. Neither university should be treated as guaranteeing a job unless an explicit written guarantee exists.",
+      answer:
+        "Compare placement assistance, hiring drives, career services and documented outcomes. Neither university should be treated as guaranteeing a job unless an explicit written guarantee exists.",
     },
     {
       question: "Which online BCA is more affordable?",
-      answer: "Use the current official total cost, including examination and other mandatory charges, rather than relying on a headline tuition figure.",
+      answer:
+        "Use the current official total cost, including examination and other mandatory charges, rather than relying on a headline tuition figure.",
     },
     {
       question: "Can I pursue an online BCA while working?",
-      answer: "Yes, online BCA programmes are generally designed to provide flexibility, but class schedules and assessment requirements should be checked before enrolling.",
+      answer:
+        "Yes, online BCA programmes are generally designed to provide flexibility, but class schedules and assessment requirements should be checked before enrolling.",
     },
     {
       question: "Which is better for a software developer career?",
-      answer: "Choose the programme with the stronger combination of programming, DSA, web/software development, projects and career support; supplement the degree with a strong GitHub/portfolio and interview preparation.",
+      answer:
+        "Choose the programme with the stronger combination of programming, DSA, web/software development, projects and career support; supplement the degree with a strong GitHub/portfolio and interview preparation.",
     },
   ];
 }
@@ -213,7 +268,8 @@ const manipalVsParul: ComparisonPack = {
   bSlug: "parul-online",
   aLabel: "Manipal University Jaipur Online BCA",
   bLabel: "Parul University Online BCA",
-  title: "Manipal University Jaipur Online BCA vs Parul University Online BCA — 2026 Deep Comparison",
+  title:
+    "Manipal University Jaipur Online BCA vs Parul University Online BCA — 2026 Deep Comparison",
   metaDescription:
     "A decision-focused comparison of Manipal University Jaipur Online BCA and Parul University Online BCA covering fees, eligibility, recognition, curriculum, specialisations, learning experience, exams, career support and value for money.",
   intro:
@@ -270,7 +326,8 @@ const manipalVsJain: ComparisonPack = {
   bSlug: "jain-online",
   aLabel: "Manipal University Jaipur Online BCA",
   bLabel: "Jain University Online BCA",
-  title: "Manipal University Jaipur Online BCA vs Jain University Online BCA — 2026 Deep Comparison",
+  title:
+    "Manipal University Jaipur Online BCA vs Jain University Online BCA — 2026 Deep Comparison",
   metaDescription:
     "A decision-focused comparison of Manipal University Jaipur Online BCA and Jain University Online BCA covering fees, eligibility, recognition, curriculum, specialisations, learning experience, exams, career support and value for money.",
   intro:

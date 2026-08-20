@@ -13,7 +13,10 @@ import {
 import { AppLink } from "@/components/common/AppLink";
 import { getProgramme } from "@/data";
 import { ComparisonPage } from "@/components/comparison/ComparisonPage";
-import { CourseComparisonPage, courseComparisonFaqs } from "@/components/comparison/CourseComparisonPage";
+import {
+  CourseComparisonPage,
+  courseComparisonFaqs,
+} from "@/components/comparison/CourseComparisonPage";
 import { getCourseFamily } from "@/lib/courseFamily";
 import { masterPairBySlug } from "@/lib/comparisonMaster";
 import { comparisonCtrMeta } from "@/lib/intentMap";
@@ -26,7 +29,14 @@ import {
   offeringLinks,
   universityLinks,
 } from "@/lib/entities";
-import { breadcrumbSchema, canonical, faqSchema, itemListSchema, jsonLd, pageMeta } from "@/lib/seo";
+import {
+  breadcrumbSchema,
+  canonical,
+  faqSchema,
+  itemListSchema,
+  jsonLd,
+  pageMeta,
+} from "@/lib/seo";
 
 export const Route = createFileRoute("/compare/$comparison")({
   loader: ({ params }) => {
@@ -107,7 +117,10 @@ export const Route = createFileRoute("/compare/$comparison")({
           jsonLd(faqSchema(courseComparisonFaqs(family))),
           jsonLd(
             itemListSchema(
-              family.offers.map((o) => ({ name: `${o.universityShortName} — ${o.programmeName}`, href: o.path })),
+              family.offers.map((o) => ({
+                name: `${o.universityShortName} — ${o.programmeName}`,
+                href: o.path,
+              })),
               `${family.name} university comparison`,
             ),
           ),
@@ -144,7 +157,10 @@ export const Route = createFileRoute("/compare/$comparison")({
   notFoundComponent: () => (
     <div className="container-page py-24 text-center">
       <h1 className="text-2xl font-bold">Comparison not found</h1>
-      <AppLink to="/compare" className="mt-6 inline-block text-sm font-semibold text-brand hover:underline">
+      <AppLink
+        to="/compare"
+        className="mt-6 inline-block text-sm font-semibold text-brand hover:underline"
+      >
         See all comparisons →
       </AppLink>
     </div>
@@ -179,7 +195,11 @@ function Page() {
           subtitle={editorial.summary}
           tocSections={["Quick verdict", "Side-by-side", "FAQs", "Related links"]}
           faqs={faqs}
-          related={<RelatedLinkGrid groups={[{ title: "More comparisons", links: comparisonLinks(undefined, 8) }]} />}
+          related={
+            <RelatedLinkGrid
+              groups={[{ title: "More comparisons", links: comparisonLinks(undefined, 8) }]}
+            />
+          }
         >
           <ContentSection title="Quick verdict">
             <p>{editorial.summary}</p>
@@ -273,7 +293,11 @@ function Page() {
               ["Approvals", approvalText(a), approvalText(b)],
               ["Fee band", a.feeRangeLabel, b.feeRangeLabel],
               ["Programmes tracked", pair.left.offerings.length, pair.right.offerings.length],
-              ["Learner rating", `${a.rating}/5 (${a.reviewCount} reviews)`, `${b.rating}/5 (${b.reviewCount} reviews)`],
+              [
+                "Learner rating",
+                `${a.rating}/5 (${a.reviewCount} reviews)`,
+                `${b.rating}/5 (${b.reviewCount} reviews)`,
+              ],
               ["Type", a.type, b.type],
               ["Key strength", a.highlights[0] ?? "—", b.highlights[0] ?? "—"],
             ]}
@@ -285,7 +309,11 @@ function Page() {
             caption="Fee bands by programme"
             head={["Programme", a.shortName, b.shortName]}
             rows={shared.map((o) => [
-              <AppLink key={o.id} to={`/courses/${o.programmeSlug}`} className="font-semibold text-brand hover:underline">
+              <AppLink
+                key={o.id}
+                to={`/courses/${o.programmeSlug}`}
+                className="font-semibold text-brand hover:underline"
+              >
                 {getProgramme(o.programmeSlug)?.name ?? o.programmeSlug}
               </AppLink>,
               a.feeRangeLabel,
@@ -298,7 +326,10 @@ function Page() {
           <ul className="grid gap-2 sm:grid-cols-2">
             {shared.map((o) => (
               <li key={o.id} className="rounded-lg bg-secondary px-3 py-2 text-sm">
-                <AppLink to={`/courses/${o.programmeSlug}`} className="font-semibold text-brand hover:underline">
+                <AppLink
+                  to={`/courses/${o.programmeSlug}`}
+                  className="font-semibold text-brand hover:underline"
+                >
                   {getProgramme(o.programmeSlug)?.name ?? o.programmeSlug}
                 </AppLink>
               </li>
@@ -321,12 +352,12 @@ function Page() {
 
         <ContentSection title="Which should you choose">
           <p>
-            <strong className="text-foreground">Choose {a.shortName}</strong> if you want {a.highlights[0]?.toLowerCase() ?? "this delivery model"}.{" "}
-            {a.verdict}
+            <strong className="text-foreground">Choose {a.shortName}</strong> if you want{" "}
+            {a.highlights[0]?.toLowerCase() ?? "this delivery model"}. {a.verdict}
           </p>
           <p>
-            <strong className="text-foreground">Choose {b.shortName}</strong> if you want {b.highlights[0]?.toLowerCase() ?? "this delivery model"}.{" "}
-            {b.verdict}
+            <strong className="text-foreground">Choose {b.shortName}</strong> if you want{" "}
+            {b.highlights[0]?.toLowerCase() ?? "this delivery model"}. {b.verdict}
           </p>
         </ContentSection>
 
@@ -339,7 +370,10 @@ function Page() {
           ]}
         />
       </DetailLayout>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

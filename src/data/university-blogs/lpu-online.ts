@@ -211,10 +211,22 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
             caption: "LPU Online MCA curriculum by semester",
             head: ["Semester", "Key subjects"],
             rows: [
-              ["Semester I", "Programming Fundamentals, DBMS, Computer Organization, Operating Systems, Software Engineering"],
-              ["Semester II", "Data Structures, Computer Networks, Web Technologies, OOP, Design & Analysis of Algorithms"],
-              ["Semester III", "Cloud Computing, AI, Data Analytics, Mobile App Development, Machine Learning"],
-              ["Semester IV", "Major Project, Cyber Security, Emerging Technologies, Software Testing, Electives"],
+              [
+                "Semester I",
+                "Programming Fundamentals, DBMS, Computer Organization, Operating Systems, Software Engineering",
+              ],
+              [
+                "Semester II",
+                "Data Structures, Computer Networks, Web Technologies, OOP, Design & Analysis of Algorithms",
+              ],
+              [
+                "Semester III",
+                "Cloud Computing, AI, Data Analytics, Mobile App Development, Machine Learning",
+              ],
+              [
+                "Semester IV",
+                "Major Project, Cyber Security, Emerging Technologies, Software Testing, Electives",
+              ],
             ],
           },
         ],
@@ -227,10 +239,22 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
             caption: "LPU Online MBA curriculum by semester",
             head: ["Semester", "Key subjects"],
             rows: [
-              ["Semester 1", "Organizational Behaviour, Managerial Economics, Accounting for Managers, Marketing Management"],
-              ["Semester 2", "Human Resource Management, Financial Management, Operations Management, Research Methodology"],
-              ["Semester 3", "Strategic Management, Business Analytics, Specialization Subjects, Electives"],
-              ["Semester 4", "International Business, Entrepreneurship Development, Capstone Project, Specialization Subjects"],
+              [
+                "Semester 1",
+                "Organizational Behaviour, Managerial Economics, Accounting for Managers, Marketing Management",
+              ],
+              [
+                "Semester 2",
+                "Human Resource Management, Financial Management, Operations Management, Research Methodology",
+              ],
+              [
+                "Semester 3",
+                "Strategic Management, Business Analytics, Specialization Subjects, Electives",
+              ],
+              [
+                "Semester 4",
+                "International Business, Entrepreneurship Development, Capstone Project, Specialization Subjects",
+              ],
             ],
           },
           {
@@ -309,8 +333,7 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
       },
       {
         question: "How long is the LPU Online BA programme?",
-        answer:
-          "The Online BA runs for 3 years across 6 semesters.",
+        answer: "The Online BA runs for 3 years across 6 semesters.",
       },
       {
         question: "Are LPU Online fees the same every year?",
@@ -370,9 +393,21 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
             caption: "LPU Online eligibility at a glance",
             head: ["Programme", "Minimum qualification", "Special allowances"],
             rows: [
-              ["MBA", "Bachelor's degree in any discipline", "CS (ICSI), CA or CMA qualified candidates also eligible"],
-              ["MCA", "Bachelor's degree with Mathematics at 10+2 or graduation level", "Open to varied academic backgrounds meeting the criteria"],
-              ["BA", "10+2 or equivalent from a recognized board", "Open to students of all academic levels"],
+              [
+                "MBA",
+                "Bachelor's degree in any discipline",
+                "CS (ICSI), CA or CMA qualified candidates also eligible",
+              ],
+              [
+                "MCA",
+                "Bachelor's degree with Mathematics at 10+2 or graduation level",
+                "Open to varied academic backgrounds meeting the criteria",
+              ],
+              [
+                "BA",
+                "10+2 or equivalent from a recognized board",
+                "Open to students of all academic levels",
+              ],
             ],
           },
         ],
@@ -479,7 +514,10 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
             title: "Plan your next step",
             items: [
               { label: "LPU Online courses and fees", href: "/universities/lpu-online" },
-              { label: "LPU Online examination pattern", href: "/universities/lpu-online/examination-pattern" },
+              {
+                label: "LPU Online examination pattern",
+                href: "/universities/lpu-online/examination-pattern",
+              },
               { label: "Explore online BBA", href: "/courses/online-bba" },
               { label: "Explore online BCA", href: "/courses/online-bca" },
             ],
@@ -515,8 +553,7 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
       },
       {
         question: "When can I apply for LPU Online BA?",
-        answer:
-          "The Online BA has January and July admission intakes.",
+        answer: "The Online BA has January and July admission intakes.",
       },
       {
         question: "How is the registration fee paid?",
@@ -682,7 +719,10 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Explore next steps",
             items: [
-              { label: "LPU Online MBA and MCA fees", href: "/blogs/lpu-online-courses-fees-2026-27" },
+              {
+                label: "LPU Online MBA and MCA fees",
+                href: "/blogs/lpu-online-courses-fees-2026-27",
+              },
               { label: "Online MBA: universities and fees", href: "/courses/online-mba" },
               { label: "Online MCA: universities and fees", href: "/courses/online-mca" },
             ],
@@ -836,9 +876,17 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
             head: ["Aspect", "LPU Online", "Typical on-campus programme"],
             rows: [
               ["Delivery", "Live + recorded lectures via LMS", "In-person classes"],
-              ["Cost structure", "Semester-wise, no relocation cost", "Often higher due to hostel/relocation"],
+              [
+                "Cost structure",
+                "Semester-wise, no relocation cost",
+                "Often higher due to hostel/relocation",
+              ],
               ["Flexibility", "Study while working", "Requires full-time attendance"],
-              ["Recognition basis", "UGC entitlement for online mode", "Standard on-campus recognition"],
+              [
+                "Recognition basis",
+                "UGC entitlement for online mode",
+                "Standard on-campus recognition",
+              ],
             ],
           },
           {
@@ -933,7 +981,10 @@ export const lpuOnlinePosts: Record<string, PostContent> = {
     ],
     related: [
       { label: "LPU Online admission process", href: "/universities/lpu-online/admission" },
-      { label: "LPU Online MBA & MCA career outcomes", href: "/blogs/lpu-online-mba-mca-career-outcomes" },
+      {
+        label: "LPU Online MBA & MCA career outcomes",
+        href: "/blogs/lpu-online-mba-mca-career-outcomes",
+      },
     ],
     cta: "Still comparing LPU Online with other universities? Send us your shortlist and budget and we will help you pick.",
   },

@@ -18,8 +18,8 @@ export function SkillToCareerMap({
   return (
     <div className="space-y-4">
       <p className="text-sm text-muted-foreground">
-        Each {courseName} specialisation trains a different skill set, and that decides the roles you can
-        realistically apply for. Use this to pick the specialisation, not the brochure.
+        Each {courseName} specialisation trains a different skill set, and that decides the roles
+        you can realistically apply for. Use this to pick the specialisation, not the brochure.
       </p>
       <DataTable
         caption={`${courseName} specialisation, core subjects and role direction`}
@@ -33,8 +33,8 @@ export function SkillToCareerMap({
         ])}
       />
       <p className="text-xs text-muted-foreground">
-        Subjects and role directions come from the published specialisation records. No salary figures are
-        stated because universities do not publish specialisation-wise salary data.
+        Subjects and role directions come from the published specialisation records. No salary
+        figures are stated because universities do not publish specialisation-wise salary data.
       </p>
     </div>
   );
@@ -55,12 +55,12 @@ export function CourseFeeValueBand({
   return (
     <div className="space-y-3 rounded-2xl border border-border bg-card p-4">
       <p className="text-sm text-muted-foreground">
-        Across {spread.count} universities that publish a total {courseName} fee, the range runs from{" "}
-        <span className="font-semibold text-foreground">{formatINR(spread.lowest)}</span> to{" "}
-        <span className="font-semibold text-foreground">{formatINR(spread.highest)}</span>, with a median of{" "}
-        <span className="font-semibold text-foreground">{formatINR(spread.median)}</span>. The degree title is
-        the same at every UGC-entitled university; the fee difference buys learning platform, support and
-        placement services, not a different qualification.
+        Across {spread.count} universities that publish a total {courseName} fee, the range runs
+        from <span className="font-semibold text-foreground">{formatINR(spread.lowest)}</span> to{" "}
+        <span className="font-semibold text-foreground">{formatINR(spread.highest)}</span>, with a
+        median of <span className="font-semibold text-foreground">{formatINR(spread.median)}</span>.
+        The degree title is the same at every UGC-entitled university; the fee difference buys
+        learning platform, support and placement services, not a different qualification.
       </p>
       <AppLink to={`/courses/${courseSlug}/fees`} className="text-sm font-semibold text-brand">
         See the university-wise fee table →

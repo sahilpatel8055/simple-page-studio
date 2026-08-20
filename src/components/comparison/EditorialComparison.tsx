@@ -107,7 +107,9 @@ function PackTable({ table }: { table: NonNullable<PackSection["table"]> }) {
             <dl className="mt-2 space-y-1.5">
               {row.slice(1).map((cell, j) => (
                 <div key={j}>
-                  <dt className="text-[0.7rem] font-semibold text-muted-foreground">{table.head[j + 1]}</dt>
+                  <dt className="text-[0.7rem] font-semibold text-muted-foreground">
+                    {table.head[j + 1]}
+                  </dt>
                   <dd className="text-[0.9rem] text-foreground">{cell}</dd>
                 </div>
               ))}
@@ -174,7 +176,9 @@ export function EditorialComparison({
               .filter((c) => c.items.length > 0)
               .map((c) => (
                 <div key={c.label} className="rounded-2xl border border-border bg-card p-4">
-                  <h3 className="font-display text-base font-bold text-foreground">Choose {c.label} if you</h3>
+                  <h3 className="font-display text-base font-bold text-foreground">
+                    Choose {c.label} if you
+                  </h3>
                   <ul className="mt-3 space-y-2">
                     {c.items.map((i) => (
                       <li key={i} className="flex gap-2 text-sm text-muted-foreground">

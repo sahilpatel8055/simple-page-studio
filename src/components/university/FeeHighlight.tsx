@@ -19,8 +19,12 @@ function Cell({
   return (
     <div className="min-w-0 rounded-2xl bg-card/70 p-4 sm:bg-transparent sm:p-0">
       <p className="text-[0.8rem] font-semibold text-muted-foreground sm:text-sm">{label}</p>
-      {strike && <p className="mt-1 text-sm font-semibold text-muted-foreground line-through">{strike}</p>}
-      <p className="mt-0.5 font-display text-xl font-extrabold leading-tight text-brand sm:text-3xl">{value}</p>
+      {strike && (
+        <p className="mt-1 text-sm font-semibold text-muted-foreground line-through">{strike}</p>
+      )}
+      <p className="mt-0.5 font-display text-xl font-extrabold leading-tight text-brand sm:text-3xl">
+        {value}
+      </p>
       {note && <p className="mt-1 text-xs leading-snug text-muted-foreground">{note}</p>}
       {badge && (
         <span className="mt-2 inline-flex items-center gap-1 rounded-full bg-brand/10 px-2.5 py-1 text-[0.7rem] font-bold text-brand">
@@ -51,14 +55,33 @@ export function FeeHighlight({ fee, duration }: { fee: Offering["fee"]; duration
     );
   }
   if (fee.perYear) {
-    cells.push(<Cell key="yr" label="Each Year Fee" value={inr(fee.perYear)} note="Inclusive of all taxes" />);
+    cells.push(
+      <Cell
+        key="yr"
+        label="Each Year Fee"
+        value={inr(fee.perYear)}
+        note="Inclusive of all taxes"
+      />,
+    );
   }
   if (fee.perSemester) {
-    cells.push(<Cell key="sem" label="Each Semester Fee" value={inr(fee.perSemester)} note="Inclusive of all taxes" />);
+    cells.push(
+      <Cell
+        key="sem"
+        label="Each Semester Fee"
+        value={inr(fee.perSemester)}
+        note="Inclusive of all taxes"
+      />,
+    );
   }
   if (fee.emiFrom) {
     cells.push(
-      <Cell key="emi" label="EMI Starting at" value={`${inr(fee.emiFrom)}/mo`} note="Terms & conditions apply" />,
+      <Cell
+        key="emi"
+        label="EMI Starting at"
+        value={`${inr(fee.emiFrom)}/mo`}
+        note="Terms & conditions apply"
+      />,
     );
   }
   if (!cells.length) return null;

@@ -5,14 +5,7 @@ import { ArticleCard } from "@/components/cards";
 import { RelatedContent } from "@/components/templates/DetailLayout";
 import { articles, news } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
-import {
-  articleSchema,
-  breadcrumbSchema,
-  canonical,
-  faqSchema,
-  jsonLd,
-  pageMeta,
-} from "@/lib/seo";
+import { articleSchema, breadcrumbSchema, canonical, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
 
 const all = [...articles, ...news];
 
@@ -78,7 +71,9 @@ function Page() {
     ...(post.sources?.length ? ["Sources & references"] : []),
     "FAQs",
   ];
-  const related = all.filter((a) => a.slug !== item.slug && a.categorySlug === item.categorySlug).slice(0, 2);
+  const related = all
+    .filter((a) => a.slug !== item.slug && a.categorySlug === item.categorySlug)
+    .slice(0, 2);
 
   return (
     <DetailLayout

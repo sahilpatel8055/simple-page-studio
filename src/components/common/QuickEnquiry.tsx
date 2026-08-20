@@ -38,14 +38,12 @@ export function QuickEnquiry({
     return () => window.clearInterval(id);
   }, []);
 
-
   const total = left === null ? null : Math.max(0, Math.floor(left / 1000));
   const units = [
     { v: total === null ? "--" : pad(Math.floor(total / 3600)), l: "HRS" },
     { v: total === null ? "--" : pad(Math.floor((total % 3600) / 60)), l: "MIN" },
     { v: total === null ? "--" : pad(total % 60), l: "SEC" },
   ];
-
 
   return (
     <div
@@ -57,7 +55,6 @@ export function QuickEnquiry({
           {heading} <span className="text-[#7f1813]">{highlight}</span>
         </span>
       </p>
-
 
       <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-dashed border-[#7f1813]/45 bg-[#7f1813]/[0.06] px-3 py-2.5">
         <p className="flex w-full items-start gap-2 text-[0.8rem] leading-tight sm:w-auto">

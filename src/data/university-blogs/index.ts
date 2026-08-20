@@ -26,7 +26,6 @@ import { shooliniOnlineArticles, shooliniOnlinePosts } from "./shoolini-online";
 import { shooliniCourseArticles, shooliniCoursePosts } from "./shoolini-course-blogs";
 import { uttaranchalOnlineArticles, uttaranchalOnlinePosts } from "./uttaranchal-online";
 
-
 export interface UniversityBlogGroup {
   /** University slug used by /universities/{slug}. */
   slug: string;
@@ -83,7 +82,6 @@ export const universityBlogGroups: UniversityBlogGroup[] = [
   },
 ];
 
-
 /** Every university blog card, newest university group first. */
 export const universityBlogArticles: Article[] = universityBlogGroups.flatMap((g) => g.articles);
 
@@ -117,7 +115,16 @@ export const blogsForCourse = (shortName: string, limit = 6): Article[] => {
   if (!key) return [];
   const matches = (a: Article) =>
     a.slug.includes(key) ||
-    a.title.toLowerCase().replace(/[^a-z ]/g, "").split(" ").includes(key) ||
-    a.tags.some((t) => t.toLowerCase().replace(/[^a-z]/g, "").includes(key));
+    a.title
+      .toLowerCase()
+      .replace(/[^a-z ]/g, "")
+      .split(" ")
+      .includes(key) ||
+    a.tags.some((t) =>
+      t
+        .toLowerCase()
+        .replace(/[^a-z]/g, "")
+        .includes(key),
+    );
   return universityBlogArticles.filter(matches).slice(0, limit);
 };

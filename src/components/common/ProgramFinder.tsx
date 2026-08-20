@@ -16,7 +16,12 @@ const groups: Group[] = [
   { id: "pg", label: "PG Courses", note: "After Graduation", match: (c) => c.level === "PG" },
   { id: "ug", label: "UG Courses", note: "After 12th", match: (c) => c.level === "UG" },
   { id: "diploma", label: "Diploma", note: "Open to All", match: (c) => c.level === "Diploma" },
-  { id: "certificate", label: "Certificate", note: "Skill tracks", match: (c) => c.level === "Certificate" },
+  {
+    id: "certificate",
+    label: "Certificate",
+    note: "Skill tracks",
+    match: (c) => c.level === "Certificate",
+  },
 ];
 
 export function CourseTile({ item }: { item: Course }) {
@@ -28,7 +33,9 @@ export function CourseTile({ item }: { item: Course }) {
           <Icon className="h-4.5 w-4.5 sm:h-5 sm:w-5" aria-hidden="true" />
         </span>
         <div className="min-w-0">
-          <h3 className="truncate text-sm font-bold leading-tight text-card-foreground sm:text-base">{item.displayName}</h3>
+          <h3 className="truncate text-sm font-bold leading-tight text-card-foreground sm:text-base">
+            {item.displayName}
+          </h3>
           <p className="mt-0.5 flex items-center gap-1 text-[11px] text-muted-foreground sm:text-xs">
             <Clock className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
             {item.duration}
@@ -47,7 +54,9 @@ export function CourseTile({ item }: { item: Course }) {
 
       <div className="mt-2.5 border-t border-border pt-2.5">
         <span className="block text-[10px] text-muted-foreground sm:text-[11px]">Fee range</span>
-        <span className="block truncate text-[0.8rem] font-bold text-card-foreground sm:text-sm">{feeRangeInLakhs(item.feeRange)}</span>
+        <span className="block truncate text-[0.8rem] font-bold text-card-foreground sm:text-sm">
+          {feeRangeInLakhs(item.feeRange)}
+        </span>
         <AppLink
           to={`/courses/${item.slug}`}
           className="mt-2 flex min-h-11 items-center justify-center rounded-lg bg-brand px-3 text-center text-[11px] font-semibold text-brand-foreground transition-opacity hover:opacity-90 sm:min-h-9 sm:text-xs"
@@ -56,7 +65,6 @@ export function CourseTile({ item }: { item: Course }) {
         </AppLink>
       </div>
     </article>
-
   );
 }
 
@@ -84,14 +92,18 @@ export function ProgramFinder({ items }: { items: Course[] }) {
                 aria-pressed={g.id === active}
                 className={cn(
                   "shrink-0 rounded-xl px-3 py-2 text-left transition-colors lg:w-full",
-                  g.id === active ? "bg-white text-[oklch(0.3_0.12_27)]" : "text-white/85 hover:bg-white/10",
+                  g.id === active
+                    ? "bg-white text-[oklch(0.3_0.12_27)]"
+                    : "text-white/85 hover:bg-white/10",
                 )}
               >
                 <span className="block whitespace-nowrap text-sm font-semibold">{g.label}</span>
                 <span
                   className={cn(
                     "mt-0.5 inline-block whitespace-nowrap rounded-full px-2 py-0.5 text-[10px] font-medium",
-                    g.id === active ? "bg-[oklch(0.42_0.16_28)]/12 text-[oklch(0.3_0.12_27)]" : "bg-white/10",
+                    g.id === active
+                      ? "bg-[oklch(0.42_0.16_28)]/12 text-[oklch(0.3_0.12_27)]"
+                      : "bg-white/10",
                   )}
                 >
                   {g.note}

@@ -171,28 +171,72 @@ export const onlineMcomContent: CourseContent = {
     "Assessment weighting between internal work and the term-end examination, the proctoring method, and the dissertation evaluation process are all university-specific and can change between sessions.",
 
   specialisationGuide: [
-    { goal: "Corporate accounting, audit support and financial reporting roles", specialisation: "Accounting and Finance" },
+    {
+      goal: "Corporate accounting, audit support and financial reporting roles",
+      specialisation: "Accounting and Finance",
+    },
     { goal: "Tax practice, compliance and advisory work", specialisation: "Taxation" },
-    { goal: "Retail and corporate banking, treasury and lending", specialisation: "Banking and Finance" },
-    { goal: "Data-led financial planning, reporting and analytics roles", specialisation: "Financial Analytics" },
-    { goal: "Cross-border trade, export documentation and global accounts", specialisation: "International Business" },
+    {
+      goal: "Retail and corporate banking, treasury and lending",
+      specialisation: "Banking and Finance",
+    },
+    {
+      goal: "Data-led financial planning, reporting and analytics roles",
+      specialisation: "Financial Analytics",
+    },
+    {
+      goal: "Cross-border trade, export documentation and global accounts",
+      specialisation: "International Business",
+    },
   ],
 
   careers: [
-    { title: "Accountant", detail: "Maintains books of accounts, prepares statements and supports statutory filings." },
-    { title: "Tax Consultant", detail: "Advises on direct and indirect tax compliance, filings and planning for individuals or businesses." },
-    { title: "Financial Analyst", detail: "Builds forecasts, evaluates investments and prepares reports that support business decisions." },
-    { title: "Auditor (Internal or Assistant)", detail: "Reviews financial records and controls for accuracy and compliance, typically supporting a qualified auditor." },
-    { title: "Banking Executive", detail: "Handles lending, operations or relationship roles in retail or corporate banking." },
-    { title: "Cost and Budget Analyst", detail: "Tracks cost centres, variance and budget performance for a business unit." },
-    { title: "Business Consultant", detail: "Supports client engagements on financial planning, compliance or process improvement." },
-    { title: "Investment or Equity Research Associate", detail: "Assists in analysing companies, sectors and markets for research or advisory teams." },
-    { title: "Academic or Research Assistant", detail: "Supports teaching or research work, often while pursuing UGC-NET or a doctoral programme." },
+    {
+      title: "Accountant",
+      detail: "Maintains books of accounts, prepares statements and supports statutory filings.",
+    },
+    {
+      title: "Tax Consultant",
+      detail:
+        "Advises on direct and indirect tax compliance, filings and planning for individuals or businesses.",
+    },
+    {
+      title: "Financial Analyst",
+      detail:
+        "Builds forecasts, evaluates investments and prepares reports that support business decisions.",
+    },
+    {
+      title: "Auditor (Internal or Assistant)",
+      detail:
+        "Reviews financial records and controls for accuracy and compliance, typically supporting a qualified auditor.",
+    },
+    {
+      title: "Banking Executive",
+      detail: "Handles lending, operations or relationship roles in retail or corporate banking.",
+    },
+    {
+      title: "Cost and Budget Analyst",
+      detail: "Tracks cost centres, variance and budget performance for a business unit.",
+    },
+    {
+      title: "Business Consultant",
+      detail:
+        "Supports client engagements on financial planning, compliance or process improvement.",
+    },
+    {
+      title: "Investment or Equity Research Associate",
+      detail: "Assists in analysing companies, sectors and markets for research or advisory teams.",
+    },
+    {
+      title: "Academic or Research Assistant",
+      detail:
+        "Supports teaching or research work, often while pursuing UGC-NET or a doctoral programme.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
   salaryNote:
-    "We do not publish Online M.Com salary figures we cannot attribute to a credible, dated source. Pay depends heavily on prior experience, professional certifications such as CA, CS or CMA, role, employer and location — treat any single quoted \"average salary\" with caution.",
+    'We do not publish Online M.Com salary figures we cannot attribute to a credible, dated source. Pay depends heavily on prior experience, professional certifications such as CA, CS or CMA, role, employer and location — treat any single quoted "average salary" with caution.',
 
   placementServices: defaultPlacementServices(),
   placementNote:
@@ -270,7 +314,7 @@ export const onlineMcomContent: CourseContent = {
     {
       question: "How much does an Online M.Com cost?",
       answer:
-        "Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "Is an entrance examination required for an Online M.Com?",

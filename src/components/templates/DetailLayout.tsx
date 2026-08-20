@@ -6,7 +6,6 @@ import { LeadCaptureCard, TableOfContents, TrustCard } from "@/components/common
 import { SectionNav } from "@/components/common/SectionNav";
 import { CTASection } from "@/components/common/Primitives";
 
-
 /**
  * Canonical detail template used by university, course, article, comparison,
  * review, scholarship, career, news, author, category and tag pages.
@@ -45,7 +44,9 @@ export function DetailLayout({
           <Breadcrumbs items={crumbs} />
           {hero && <div className="mt-6">{hero}</div>}
           {eyebrow && (
-            <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-brand">{eyebrow}</p>
+            <p className="mt-8 text-xs font-semibold uppercase tracking-[0.18em] text-brand">
+              {eyebrow}
+            </p>
           )}
           <h1 className="mt-2 max-w-4xl text-3xl font-bold sm:text-4xl lg:text-[2.75rem] lg:leading-[1.1]">
             <AccentHeadline text={title} />
@@ -58,7 +59,6 @@ export function DetailLayout({
       {tocSections && tocSections.length > 1 && <SectionNav sections={tocSections} />}
 
       <div className="container-page grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14 lg:py-16">
-
         <main className="min-w-0 space-y-12">
           {children}
           <section id="faqs">
@@ -118,7 +118,13 @@ export function ContentPlaceholder({ lines = 3 }: { lines?: number }) {
   );
 }
 
-export function RelatedContent({ title = "Related reading", children }: { title?: string; children: ReactNode }) {
+export function RelatedContent({
+  title = "Related reading",
+  children,
+}: {
+  title?: string;
+  children: ReactNode;
+}) {
   return (
     <section id="related">
       <h2 className="text-2xl font-bold">

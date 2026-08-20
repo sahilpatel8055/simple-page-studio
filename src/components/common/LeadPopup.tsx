@@ -98,7 +98,9 @@ export function LeadPopup({ delayMs = 22000 }: { delayMs?: number }) {
             <span className="inline-flex items-center gap-1.5 rounded-full bg-secondary px-2.5 py-1 text-[0.7rem] font-bold uppercase tracking-wide text-brand">
               <Sparkles className="h-3.5 w-3.5" /> {copy.eyebrow}
             </span>
-            <h2 className="mt-3 font-display text-xl font-extrabold leading-snug text-foreground">{copy.title}</h2>
+            <h2 className="mt-3 font-display text-xl font-extrabold leading-snug text-foreground">
+              {copy.title}
+            </h2>
             <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{copy.body}</p>
 
             <form

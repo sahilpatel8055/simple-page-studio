@@ -184,21 +184,51 @@ export const onlineMbaContent: CourseContent = {
   ],
 
   careers: [
-    { title: "Marketing Manager", detail: "Owns positioning, campaigns and channel performance for a product or region." },
-    { title: "Business Analyst", detail: "Translates business questions into data and requirements that teams can act on." },
-    { title: "Financial Analyst", detail: "Builds forecasts, evaluates investments and supports budget decisions." },
-    { title: "HR Manager", detail: "Runs hiring, performance, retention and employee relations for a business unit." },
-    { title: "Operations Manager", detail: "Improves throughput, cost and quality across a process or site." },
-    { title: "Project Manager", detail: "Plans scope, budget and timelines, and keeps cross-functional delivery on track." },
-    { title: "Product Manager", detail: "Defines the problem, prioritises the roadmap and works with engineering and design." },
-    { title: "Sales Manager", detail: "Owns a target, a territory and a team, and manages the pipeline against it." },
-    { title: "Business Development Manager", detail: "Opens new accounts, partnerships and market segments." },
-    { title: "Supply Chain Manager", detail: "Coordinates sourcing, inventory and distribution against service levels." },
+    {
+      title: "Marketing Manager",
+      detail: "Owns positioning, campaigns and channel performance for a product or region.",
+    },
+    {
+      title: "Business Analyst",
+      detail: "Translates business questions into data and requirements that teams can act on.",
+    },
+    {
+      title: "Financial Analyst",
+      detail: "Builds forecasts, evaluates investments and supports budget decisions.",
+    },
+    {
+      title: "HR Manager",
+      detail: "Runs hiring, performance, retention and employee relations for a business unit.",
+    },
+    {
+      title: "Operations Manager",
+      detail: "Improves throughput, cost and quality across a process or site.",
+    },
+    {
+      title: "Project Manager",
+      detail: "Plans scope, budget and timelines, and keeps cross-functional delivery on track.",
+    },
+    {
+      title: "Product Manager",
+      detail: "Defines the problem, prioritises the roadmap and works with engineering and design.",
+    },
+    {
+      title: "Sales Manager",
+      detail: "Owns a target, a territory and a team, and manages the pipeline against it.",
+    },
+    {
+      title: "Business Development Manager",
+      detail: "Opens new accounts, partnerships and market segments.",
+    },
+    {
+      title: "Supply Chain Manager",
+      detail: "Coordinates sourcing, inventory and distribution against service levels.",
+    },
   ],
 
   salaryFactors: defaultSalaryFactors(),
   salaryNote:
-    "We do not publish Online MBA salary figures we cannot attribute to a credible, dated source. Pay is driven by prior experience, role, industry and location far more than by the study mode — treat any portal quoting a single national \"average MBA salary\" with caution.",
+    'We do not publish Online MBA salary figures we cannot attribute to a credible, dated source. Pay is driven by prior experience, role, industry and location far more than by the study mode — treat any portal quoting a single national "average MBA salary" with caution.',
 
   placementServices: defaultPlacementServices(),
   placementNote:
@@ -266,7 +296,7 @@ export const onlineMbaContent: CourseContent = {
     {
       question: "How much does an Online MBA cost?",
       answer:
-        "Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as \"Not specified\".",
+        'Fees are set by each university, so the range is wide. The university comparison on this page shows the published figure for each programme in our dataset, and marks anything we could not verify as "Not specified".',
     },
     {
       question: "Is CAT required for an Online MBA?",

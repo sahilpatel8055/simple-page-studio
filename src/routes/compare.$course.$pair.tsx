@@ -18,7 +18,8 @@ export const Route = createFileRoute("/compare/$course/$pair")({
     const course = courseFromSlug(pair, params.course);
     if (!course || !comparableCourses(pair).includes(course)) throw notFound();
     const { a: uniA, b: uniB } = pairUniversities(pair);
-    const pack = uniA?.slug && uniB?.slug ? packFor(courseSlug(course), uniA.slug, uniB.slug) : undefined;
+    const pack =
+      uniA?.slug && uniB?.slug ? packFor(courseSlug(course), uniA.slug, uniB.slug) : undefined;
     return {
       a: pair.university_a,
       b: pair.university_b,
@@ -27,7 +28,6 @@ export const Route = createFileRoute("/compare/$course/$pair")({
       packTitle: pack?.title ?? null,
       packDescription: pack?.metaDescription ?? null,
       packFaqs: pack?.faqs ?? [],
-
     };
   },
 
@@ -40,7 +40,8 @@ export const Route = createFileRoute("/compare/$course/$pair")({
       loaderData.packTitle ??
       `${loaderData.a} vs ${loaderData.b} Online ${loaderData.course} – Fees, Eligibility & Comparison 2026-27`;
     const description =
-      loaderData.packDescription ?? loaderData.description.replace(/\{Course\}/g, loaderData.course);
+      loaderData.packDescription ??
+      loaderData.description.replace(/\{Course\}/g, loaderData.course);
     return {
       meta: pageMeta({ title, description, path, author: "DegreeKhojo Editorial Desk" }),
       links: canonical(path),
@@ -55,7 +56,6 @@ export const Route = createFileRoute("/compare/$course/$pair")({
         ),
         ...(loaderData.packFaqs.length ? [jsonLd(faqSchema(loaderData.packFaqs))] : []),
       ],
-
     };
   },
   component: Page,
@@ -63,9 +63,13 @@ export const Route = createFileRoute("/compare/$course/$pair")({
     <div className="container-page py-24 text-center">
       <h1 className="text-2xl font-bold">Comparison not found</h1>
       <p className="mt-2 text-sm text-muted-foreground">
-        This course is not published by both universities, so we don't create a comparison page for it.
+        This course is not published by both universities, so we don't create a comparison page for
+        it.
       </p>
-      <AppLink to="/compare" className="mt-6 inline-block text-sm font-semibold text-brand hover:underline">
+      <AppLink
+        to="/compare"
+        className="mt-6 inline-block text-sm font-semibold text-brand hover:underline"
+      >
         See all comparisons →
       </AppLink>
     </div>

@@ -35,7 +35,12 @@ import {
   relatedUniversities,
   type UniversityRecordJson,
 } from "@/lib/universityData";
-import { getCareerInfo, getExamPattern, getScholarshipInfo, type ScholarshipCriterion } from "@/lib/insightsData";
+import {
+  getCareerInfo,
+  getExamPattern,
+  getScholarshipInfo,
+  type ScholarshipCriterion,
+} from "@/lib/insightsData";
 
 /**
  * University pillar-page hub sections.
@@ -62,7 +67,9 @@ function IconCard({
         <Icon className="h-4 w-4" aria-hidden="true" />
       </span>
       <div className="min-w-0">
-        <p className="text-[0.66rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">{label}</p>
+        <p className="text-[0.66rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+          {label}
+        </p>
         <p className="mt-0.5 break-words text-[0.85rem] font-bold leading-snug">{value}</p>
       </div>
     </div>
@@ -99,17 +106,32 @@ export function UniversityGlance({ slug }: { slug: string }) {
 
   const items: Array<{ icon: typeof Award; label: string; value: ReactNode }> = [];
   if (u.basic_information.established_year)
-    items.push({ icon: CalendarDays, label: "Established", value: u.basic_information.established_year });
-  if (u.mode) items.push({ icon: Laptop, label: "Mode", value: u.mode === "Both" ? "Online / Distance" : u.mode });
-  if (u.programmes.length) items.push({ icon: BookOpenCheck, label: "Programmes", value: u.programmes.length });
-  if (levels.length) items.push({ icon: GraduationCap, label: "Levels", value: levels.join(" & ") });
+    items.push({
+      icon: CalendarDays,
+      label: "Established",
+      value: u.basic_information.established_year,
+    });
+  if (u.mode)
+    items.push({
+      icon: Laptop,
+      label: "Mode",
+      value: u.mode === "Both" ? "Online / Distance" : u.mode,
+    });
+  if (u.programmes.length)
+    items.push({ icon: BookOpenCheck, label: "Programmes", value: u.programmes.length });
+  if (levels.length)
+    items.push({ icon: GraduationCap, label: "Levels", value: levels.join(" & ") });
   if (duration) items.push({ icon: CalendarDays, label: "Duration", value: duration });
   if (specCount) items.push({ icon: Layers, label: "Specialisations", value: `${specCount}+` });
   if (u.basic_information.location)
     items.push({ icon: MapPin, label: "Location", value: u.basic_information.location });
   const recognitions = recognitionLabels(u);
   if (recognitions.length)
-    items.push({ icon: ShieldCheck, label: "Recognition", value: `${recognitions.length} published approvals` });
+    items.push({
+      icon: ShieldCheck,
+      label: "Recognition",
+      value: `${recognitions.length} published approvals`,
+    });
 
   if (!items.length) return null;
 
@@ -136,16 +158,30 @@ export function UniversityGlance({ slug }: { slug: string }) {
 
 /* ----------------------- PART 2 — learning experience -------------------- */
 
-export function UniversityLearningExperience({ slug, shortName }: { slug: string; shortName: string }) {
+export function UniversityLearningExperience({
+  slug,
+  shortName,
+}: {
+  slug: string;
+  shortName: string;
+}) {
   const u = getUniversityBySlug(slug);
   const exam = getExamPattern(slug)?.data;
   if (!u) return null;
 
   const cards: Array<{ icon: typeof Award; title: string; body: string }> = [];
-  if (exam?.proctoring) cards.push({ icon: MonitorPlay, title: "Learning platform (LMS)", body: exam.proctoring });
-  if (exam?.mode) cards.push({ icon: Laptop, title: "Examination delivery", body: `Examinations are conducted in ${exam.mode} mode.` });
-  if (exam?.assessment) cards.push({ icon: ClipboardCheck, title: "Assessments", body: exam.assessment });
-  if (exam?.weightage) cards.push({ icon: Layers, title: "Assessment weightage", body: exam.weightage });
+  if (exam?.proctoring)
+    cards.push({ icon: MonitorPlay, title: "Learning platform (LMS)", body: exam.proctoring });
+  if (exam?.mode)
+    cards.push({
+      icon: Laptop,
+      title: "Examination delivery",
+      body: `Examinations are conducted in ${exam.mode} mode.`,
+    });
+  if (exam?.assessment)
+    cards.push({ icon: ClipboardCheck, title: "Assessments", body: exam.assessment });
+  if (exam?.weightage)
+    cards.push({ icon: Layers, title: "Assessment weightage", body: exam.weightage });
   if (u.mode)
     cards.push({
       icon: Compass,
@@ -157,7 +193,12 @@ export function UniversityLearningExperience({ slug, shortName }: { slug: string
     });
 
   if (!cards.length)
-    return <EmptyNote>This university does not publish its exam and platform details in full — ask the admissions team how classes and exams run before you apply.</EmptyNote>;
+    return (
+      <EmptyNote>
+        This university does not publish its exam and platform details in full — ask the admissions
+        team how classes and exams run before you apply.
+      </EmptyNote>
+    );
 
   return (
     <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
@@ -187,15 +228,18 @@ export function UniversityCareerSupport({ slug, shortName }: { slug: string; sho
   return (
     <div className="space-y-4">
       <p className="rounded-xl border border-border bg-secondary p-3.5 text-sm leading-relaxed text-muted-foreground">
-        {shortName} publishes <strong className="text-foreground">placement assistance</strong>, which is career support
-        such as guidance and opportunity sharing. It is not a placement guarantee, and no employment outcome is assured.
+        {shortName} publishes <strong className="text-foreground">placement assistance</strong>,
+        which is career support such as guidance and opportunity sharing. It is not a placement
+        guarantee, and no employment outcome is assured.
       </p>
       {summary && <p className="text-sm leading-relaxed text-foreground">{summary}</p>}
       {stats.length > 0 && (
         <dl className="grid grid-cols-2 gap-2.5 sm:grid-cols-3">
           {stats.map((s) => (
             <div key={s.label} className="rounded-xl border border-border bg-card px-3.5 py-3">
-              <dt className="text-[0.68rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">{s.label}</dt>
+              <dt className="text-[0.68rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+                {s.label}
+              </dt>
               <dd className="mt-1 text-sm font-bold text-foreground">{s.value}</dd>
             </div>
           ))}
@@ -236,12 +280,19 @@ export function UniversityScholarshipCTA({ slug, shortName }: { slug: string; sh
       {criteria.length > 0 && (
         <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-2">
           {criteria.map((c: ScholarshipCriterion) => (
-            <details key={c.name ?? c.criterion} className="box-hover group rounded-xl border border-border bg-card p-3.5">
+            <details
+              key={c.name ?? c.criterion}
+              className="box-hover group rounded-xl border border-border bg-card p-3.5"
+            >
               <summary className="cursor-pointer list-none text-sm font-bold marker:hidden">
                 {c.name ?? "Scholarship"}
-                <span className="float-right text-brand transition-transform group-open:rotate-45">+</span>
+                <span className="float-right text-brand transition-transform group-open:rotate-45">
+                  +
+                </span>
               </summary>
-              {c.criterion && <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{c.criterion}</p>}
+              {c.criterion && (
+                <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{c.criterion}</p>
+              )}
             </details>
           ))}
         </div>
@@ -263,9 +314,15 @@ export function UniversityDegreeFacts({ slug }: { slug: string }) {
   const u = getUniversityBySlug(slug);
   if (!u) return null;
   const rows: Array<[string, string]> = [];
-  const degrees = Array.from(new Set(u.programmes.map((p) => p.degree).filter((d): d is string => !!d)));
+  const degrees = Array.from(
+    new Set(u.programmes.map((p) => p.degree).filter((d): d is string => !!d)),
+  );
   rows.push(["Awarded by", u.university_name]);
-  if (degrees.length) rows.push(["Credentials awarded", `${degrees.length} degree types including ${degrees.slice(0, 3).join(", ")}`]);
+  if (degrees.length)
+    rows.push([
+      "Credentials awarded",
+      `${degrees.length} degree types including ${degrees.slice(0, 3).join(", ")}`,
+    ]);
   if (u.mode) rows.push(["Study mode", u.mode === "Both" ? "Online / Distance" : u.mode]);
   const rec = recognitionLabels(u);
   if (rec.length) rows.push(["Recognition published", rec.join(" · ")]);
@@ -274,7 +331,9 @@ export function UniversityDegreeFacts({ slug }: { slug: string }) {
     <dl className="grid grid-cols-2 gap-2.5 sm:grid-cols-2">
       {rows.map(([label, value]) => (
         <div key={label} className="box-hover rounded-xl border border-border bg-card p-3">
-          <dt className="text-[0.66rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">{label}</dt>
+          <dt className="text-[0.66rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+            {label}
+          </dt>
           <dd className="mt-1 text-sm font-semibold leading-snug">{value}</dd>
         </div>
       ))}
@@ -304,7 +363,10 @@ export function UniversitySpecialisations({ slug }: { slug: string }) {
           </div>
           <div className="mt-2 flex flex-wrap gap-1.5">
             {p.specializations.slice(0, 6).map((s) => (
-              <span key={s.specialisation_name} className="rounded-md bg-secondary px-2 py-1 text-[0.72rem] font-semibold">
+              <span
+                key={s.specialisation_name}
+                className="rounded-md bg-secondary px-2 py-1 text-[0.72rem] font-semibold"
+              >
                 {s.specialisation_name}
               </span>
             ))}
@@ -323,7 +385,8 @@ export function UniversityAdvantages({ slug, shortName }: { slug: string; shortN
 
   const points: Array<{ icon: typeof Award; title: string; body: string }> = [];
   const rec = recognitionLabels(u);
-  if (rec.length) points.push({ icon: ShieldCheck, title: "Published recognition", body: rec.join(" · ") });
+  if (rec.length)
+    points.push({ icon: ShieldCheck, title: "Published recognition", body: rec.join(" · ") });
   if (u.programmes.length)
     points.push({
       icon: BookOpenCheck,
@@ -332,20 +395,42 @@ export function UniversityAdvantages({ slug, shortName }: { slug: string; shortN
     });
   const specCount = u.programmes.reduce((n, p) => n + p.specializations.length, 0);
   if (specCount)
-    points.push({ icon: Layers, title: "Specialisation options", body: `${specCount} specialisations published across programmes.` });
+    points.push({
+      icon: Layers,
+      title: "Specialisation options",
+      body: `${specCount} specialisations published across programmes.`,
+    });
   if (u.mode)
     points.push({
       icon: Laptop,
       title: "Flexible study mode",
-      body: u.mode === "Both" ? "Both online and distance/ODL delivery are published." : `${u.mode} delivery for working learners.`,
+      body:
+        u.mode === "Both"
+          ? "Both online and distance/ODL delivery are published."
+          : `${u.mode} delivery for working learners.`,
     });
   const fees = feeRangeLabel(slug);
   if (fees !== "Fee pending verification")
-    points.push({ icon: Wallet, title: "Published fee range", body: `Programme fees listed between ${fees}.` });
-  if ((u.scholarships?.length ?? 0) > 0 || (getScholarshipInfo(slug)?.data?.criteria?.length ?? 0) > 0)
-    points.push({ icon: Sparkles, title: "Scholarship options", body: `${shortName} publishes scholarship criteria for eligible applicants.` });
+    points.push({
+      icon: Wallet,
+      title: "Published fee range",
+      body: `Programme fees listed between ${fees}.`,
+    });
+  if (
+    (u.scholarships?.length ?? 0) > 0 ||
+    (getScholarshipInfo(slug)?.data?.criteria?.length ?? 0) > 0
+  )
+    points.push({
+      icon: Sparkles,
+      title: "Scholarship options",
+      body: `${shortName} publishes scholarship criteria for eligible applicants.`,
+    });
   if (u.admissions.admission_steps.length)
-    points.push({ icon: ClipboardCheck, title: "Documented admission process", body: `${u.admissions.admission_steps.length}-step official application process.` });
+    points.push({
+      icon: ClipboardCheck,
+      title: "Documented admission process",
+      body: `${u.admissions.admission_steps.length}-step official application process.`,
+    });
 
   if (!points.length) return null;
 
@@ -376,18 +461,31 @@ export function UniversityConsiderations({ slug, shortName }: { slug: string; sh
     "Placement assistance does not guarantee employment.",
   ];
   if (u.admissions.admission_cycle || u.admissions.next_expected_intake)
-    points.push("Admission cycles and intake dates can change; confirm the current cycle on the official portal.");
+    points.push(
+      "Admission cycles and intake dates can change; confirm the current cycle on the official portal.",
+    );
   if ((getScholarshipInfo(slug)?.data?.criteria?.length ?? 0) > 0)
-    points.push("Scholarship eligibility varies by programme and by the current scholarship notice.");
-  if (u.programmes.some((p) => !(p.fees.fee_verification_status ?? "").startsWith("verified_official")))
+    points.push(
+      "Scholarship eligibility varies by programme and by the current scholarship notice.",
+    );
+  if (
+    u.programmes.some(
+      (p) => !(p.fees.fee_verification_status ?? "").startsWith("verified_official"),
+    )
+  )
     points.push("Fees can change between intakes; confirm the current amount before you pay.");
-  points.push(`Verify current fee, recognition and admission details on the official ${shortName} website before paying.`);
+  points.push(
+    `Verify current fee, recognition and admission details on the official ${shortName} website before paying.`,
+  );
 
   return (
     <div className="rounded-2xl border border-dashed border-border bg-secondary p-4">
       <ul className="space-y-2">
         {points.map((p) => (
-          <li key={p} className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground">
+          <li
+            key={p}
+            className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground"
+          >
             <Info className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
             {p}
           </li>
@@ -409,7 +507,9 @@ export function UniversitySuitability({ slug }: { slug: string }) {
     "Learners who want a flexible, non-classroom schedule",
     ...(levels.includes("PG") ? ["Graduates looking for a PG programme"] : []),
     ...(levels.includes("UG") ? ["Students looking for a UG degree without relocating"] : []),
-    ...(u.programmes.some((p) => p.specializations.length) ? ["Learners who want a specialised programme"] : []),
+    ...(u.programmes.some((p) => p.specializations.length)
+      ? ["Learners who want a specialised programme"]
+      : []),
   ];
   const notSuits = [
     "Students who specifically want daily on-campus life",
@@ -467,7 +567,8 @@ export function UniversityReviews({
     <div className="box-hover flex items-center gap-3 rounded-2xl border border-border bg-card p-4">
       <Star className="h-6 w-6 text-brand" aria-hidden="true" />
       <p className="text-sm font-bold">
-        {rating}/5 <span className="font-medium text-muted-foreground">based on {reviewCount} reviews</span>
+        {rating}/5{" "}
+        <span className="font-medium text-muted-foreground">based on {reviewCount} reviews</span>
       </p>
     </div>
   );
@@ -492,7 +593,13 @@ export function UniversityComparison({ slug, shortName }: { slug: string; shortN
           >
             <div className="flex items-center gap-2.5">
               {logo ? (
-                <img src={logo} alt="" aria-hidden="true" loading="lazy" className="h-9 w-9 shrink-0 object-contain" />
+                <img
+                  src={logo}
+                  alt=""
+                  aria-hidden="true"
+                  loading="lazy"
+                  className="h-9 w-9 shrink-0 object-contain"
+                />
               ) : (
                 <Building2 className="h-9 w-9 shrink-0 text-brand" aria-hidden="true" />
               )}
@@ -504,7 +611,10 @@ export function UniversityComparison({ slug, shortName }: { slug: string; shortN
             <p className="mt-1 text-xs font-semibold">{feeRangeLabel(p.slug)}</p>
             {rec && <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">{rec}</p>}
             <div className="mt-auto flex items-center gap-2 pt-3">
-              <AppLink to={`/universities/${p.slug}`} className="text-xs font-bold text-brand hover:underline">
+              <AppLink
+                to={`/universities/${p.slug}`}
+                className="text-xs font-bold text-brand hover:underline"
+              >
                 View university ›
               </AppLink>
               <AppLink

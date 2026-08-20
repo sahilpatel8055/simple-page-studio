@@ -20,8 +20,7 @@ export function CurriculumSection({
   universityShort: string;
   universitySpecificNote?: string | undefined;
   verifiedSource?:
-    | { sourceLabel: string; sourceUrl?: string | undefined; verifiedOn: string }
-    | undefined;
+    { sourceLabel: string; sourceUrl?: string | undefined; verifiedOn: string } | undefined;
 }) {
   return (
     <div className="space-y-4">
@@ -39,7 +38,6 @@ export function CurriculumSection({
       ) : null}
       <p className="text-xs text-subtle">Indicative duration: {course.duration}</p>
 
-
       <div className="grid gap-3 sm:grid-cols-2">
         {course.semesters.map((sem) => (
           <div key={sem.label} className="surface-card overflow-hidden">
@@ -49,7 +47,9 @@ export function CurriculumSection({
             <ul className="space-y-1.5 border-t border-border px-4 py-3">
               {sem.subjects.map((s) => (
                 <li key={s} className="flex gap-2 text-sm leading-relaxed text-muted-foreground">
-                  <span aria-hidden="true" className="mt-0.5 text-brand">✓</span>
+                  <span aria-hidden="true" className="mt-0.5 text-brand">
+                    ✓
+                  </span>
                   <span className="min-w-0">{s}</span>
                 </li>
               ))}
@@ -81,10 +81,15 @@ export function SpecialisationElectives({
     <div className="space-y-4">
       {universitySpecialisations && universitySpecialisations.length > 0 && (
         <div>
-          <h3 className="text-sm font-bold text-foreground">Specialisations offered at {universityShort}</h3>
+          <h3 className="text-sm font-bold text-foreground">
+            Specialisations offered at {universityShort}
+          </h3>
           <div className="mt-2 flex flex-wrap gap-2">
             {universitySpecialisations.map((s) => (
-              <span key={s} className="rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold text-brand">
+              <span
+                key={s}
+                className="rounded-full bg-brand-soft px-3 py-1 text-xs font-semibold text-brand"
+              >
                 {s}
               </span>
             ))}
@@ -122,7 +127,8 @@ export function SpecialisationElectives({
             ))}
           </ul>
           <p className="mt-3 text-xs text-subtle">
-            Specialisation subjects are electives, not compulsory core papers. Availability varies by university.
+            Specialisation subjects are electives, not compulsory core papers. Availability varies
+            by university.
           </p>
         </div>
       )}
@@ -154,7 +160,10 @@ export function MasterFacts({
   if (data.examPattern) rows.push({ label: "Examination pattern", value: data.examPattern });
   const notes = data.universityNotes ?? (data.universityNote ? [data.universityNote] : []);
   notes.forEach((n, i) =>
-    rows.push({ label: notes.length > 1 ? `Researched note ${i + 1}` : "University note", value: n }),
+    rows.push({
+      label: notes.length > 1 ? `Researched note ${i + 1}` : "University note",
+      value: n,
+    }),
   );
   if (rows.length === 0) return null;
   return (
@@ -166,7 +175,8 @@ export function MasterFacts({
         </div>
       ))}
       <p className="text-xs text-subtle sm:col-span-2">
-        Fees, admission dates, scholarships and exam schedules change. Verify with {universityShort} before applying.
+        Fees, admission dates, scholarships and exam schedules change. Verify with {universityShort}{" "}
+        before applying.
       </p>
     </div>
   );

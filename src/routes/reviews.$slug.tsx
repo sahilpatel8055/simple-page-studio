@@ -21,7 +21,11 @@ export const Route = createFileRoute("/reviews/$slug")({
     const path = `/reviews/${item.slug}`;
     const description = `${item.entity} ${item.programme} review rated ${item.rating}/5 by a ${item.batch} learner — study experience, support and value for money.`;
     return {
-      meta: pageMeta({ title: `${item.entity} ${item.programme} Review (${item.rating}/5)`, description, path }),
+      meta: pageMeta({
+        title: `${item.entity} ${item.programme} Review (${item.rating}/5)`,
+        description,
+        path,
+      }),
       links: canonical(path),
       scripts: [
         jsonLd(
@@ -60,7 +64,9 @@ function Page() {
 
       <section className="surface-card mt-6 p-6">
         <h2 className="font-display text-lg font-bold">What the learner said</h2>
-        <blockquote className="mt-2 text-sm leading-relaxed text-muted-foreground">“{item.summary}”</blockquote>
+        <blockquote className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          “{item.summary}”
+        </blockquote>
       </section>
 
       <div className="mt-6 grid gap-2">

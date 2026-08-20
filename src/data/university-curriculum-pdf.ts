@@ -248,11 +248,21 @@ export const pdfCurricula: Record<string, UniversityCurriculum> = {
       },
       {
         label: "Semester 2",
-        subjects: ["Drama – II", "Poetry – II", "Fiction – II", "Literary Theory and Criticism – II"],
+        subjects: [
+          "Drama – II",
+          "Poetry – II",
+          "Fiction – II",
+          "Literary Theory and Criticism – II",
+        ],
       },
       {
         label: "Semester 3",
-        subjects: ["American Literature", "Indian English Literature", "Commonwealth Literature", "Choose any 2 electives"],
+        subjects: [
+          "American Literature",
+          "Indian English Literature",
+          "Commonwealth Literature",
+          "Choose any 2 electives",
+        ],
       },
     ],
   },

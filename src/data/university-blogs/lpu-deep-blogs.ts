@@ -159,12 +159,37 @@ const mbaDeepSections: PostSection[] = [
       { kind: "h3", text: "Business skills" },
       {
         kind: "list",
-        items: ["Business communication", "Presentation", "Negotiation", "Leadership", "Decision-making", "Strategic thinking"],
+        items: [
+          "Business communication",
+          "Presentation",
+          "Negotiation",
+          "Leadership",
+          "Decision-making",
+          "Strategic thinking",
+        ],
       },
       { kind: "h3", text: "Analytical skills" },
-      { kind: "list", items: ["Excel", "Business analytics", "Data interpretation", "Financial analysis", "Market research"] },
+      {
+        kind: "list",
+        items: [
+          "Excel",
+          "Business analytics",
+          "Data interpretation",
+          "Financial analysis",
+          "Market research",
+        ],
+      },
       { kind: "h3", text: "Digital skills (specialisation-dependent)" },
-      { kind: "list", items: ["Digital marketing tools", "CRM platforms", "Business intelligence tools", "Product management tools", "Data and analytics platforms"] },
+      {
+        kind: "list",
+        items: [
+          "Digital marketing tools",
+          "CRM platforms",
+          "Business intelligence tools",
+          "Product management tools",
+          "Data and analytics platforms",
+        ],
+      },
       {
         kind: "p",
         text: "LPU frames the MBA's value as depending on how it connects to a learner's existing path — a working professional strengthens business knowledge with it, a fresher uses it as a management-role foundation. Pick a specialisation against your target career, current background, work experience, industry demand and long-term direction rather than by popularity.",
@@ -182,7 +207,10 @@ const mbaDeepSections: PostSection[] = [
         kind: "links",
         title: "Continue your MBA research",
         items: [
-          { label: "LPU Online MBA 2026-27: full guide", href: "/blogs/lpu-online-mba-2026-27-complete-guide" },
+          {
+            label: "LPU Online MBA 2026-27: full guide",
+            href: "/blogs/lpu-online-mba-2026-27-complete-guide",
+          },
           { label: "Online MBA course page", href: "/courses/online-mba" },
           { label: "LPU Online vs Amity Online", href: "/compare/lpu-online-vs-amity-online" },
         ],
@@ -230,7 +258,14 @@ const bbaDeepSections: PostSection[] = [
       },
       {
         kind: "list",
-        items: ["MBA", "PGDM", "Professional certifications", "Domain-specific courses", "Entrepreneurship", "Competitive examinations, subject to eligibility"],
+        items: [
+          "MBA",
+          "PGDM",
+          "Professional certifications",
+          "Domain-specific courses",
+          "Entrepreneurship",
+          "Competitive examinations, subject to eligibility",
+        ],
       },
       {
         kind: "p",
@@ -242,11 +277,41 @@ const bbaDeepSections: PostSection[] = [
     heading: "How the curriculum builds up, stage by stage",
     blocks: [
       { kind: "h3", text: "Stage 1 — Business foundations" },
-      { kind: "list", items: ["Management principles", "Business communication", "Accounting", "Economics", "Business environment", "Basic quantitative concepts"] },
+      {
+        kind: "list",
+        items: [
+          "Management principles",
+          "Business communication",
+          "Accounting",
+          "Economics",
+          "Business environment",
+          "Basic quantitative concepts",
+        ],
+      },
       { kind: "h3", text: "Stage 2 — Functional business knowledge" },
-      { kind: "list", items: ["Marketing management", "Human resource management", "Financial management", "Operations", "Organisational behaviour", "Business research"] },
+      {
+        kind: "list",
+        items: [
+          "Marketing management",
+          "Human resource management",
+          "Financial management",
+          "Operations",
+          "Organisational behaviour",
+          "Business research",
+        ],
+      },
       { kind: "h3", text: "Stage 3 — Application and career orientation" },
-      { kind: "list", items: ["Strategic management", "Entrepreneurship", "Business analytics", "Electives", "Projects", "Industry-oriented applications"] },
+      {
+        kind: "list",
+        items: [
+          "Strategic management",
+          "Entrepreneurship",
+          "Business analytics",
+          "Electives",
+          "Projects",
+          "Industry-oriented applications",
+        ],
+      },
       {
         kind: "p",
         text: "This three-stage framing maps onto the same subject list published in the main BBA guide, but it's a useful lens for planning: foundations first, functional depth next, then application and electives in the final stretch.",
@@ -276,7 +341,10 @@ const bbaDeepSections: PostSection[] = [
         kind: "links",
         title: "Continue your BBA research",
         items: [
-          { label: "LPU Online BBA 2026-27: full guide", href: "/blogs/lpu-online-bba-2026-27-complete-guide" },
+          {
+            label: "LPU Online BBA 2026-27: full guide",
+            href: "/blogs/lpu-online-bba-2026-27-complete-guide",
+          },
           { label: "Online BBA course page", href: "/courses/online-bba" },
           { label: "LPU Online admission process", href: `${UNI}/admission` },
         ],
@@ -416,7 +484,10 @@ const bcaDeepSections: PostSection[] = [
         kind: "links",
         title: "Continue your BCA research",
         items: [
-          { label: "LPU Online BCA 2026-27: full guide", href: "/blogs/lpu-online-bca-2026-27-complete-guide" },
+          {
+            label: "LPU Online BCA 2026-27: full guide",
+            href: "/blogs/lpu-online-bca-2026-27-complete-guide",
+          },
           { label: "Online BCA course page", href: "/courses/online-bca" },
           { label: "LPU Online placements", href: `${UNI}/placement` },
         ],
@@ -588,10 +659,22 @@ const coursesDeepSections: PostSection[] = [
         kind: "links",
         title: "Reconcile fees against the programme-specific guides",
         items: [
-          { label: "LPU Online MBA 2026-27: full guide", href: "/blogs/lpu-online-mba-2026-27-complete-guide" },
-          { label: "LPU Online MCA 2026-27: full guide", href: "/blogs/lpu-online-mca-2026-27-complete-guide" },
-          { label: "LPU Online BCA 2026-27: full guide", href: "/blogs/lpu-online-bca-2026-27-complete-guide" },
-          { label: "LPU Online courses & fees 2026-27", href: "/blogs/lpu-online-courses-fees-2026-27" },
+          {
+            label: "LPU Online MBA 2026-27: full guide",
+            href: "/blogs/lpu-online-mba-2026-27-complete-guide",
+          },
+          {
+            label: "LPU Online MCA 2026-27: full guide",
+            href: "/blogs/lpu-online-mca-2026-27-complete-guide",
+          },
+          {
+            label: "LPU Online BCA 2026-27: full guide",
+            href: "/blogs/lpu-online-bca-2026-27-complete-guide",
+          },
+          {
+            label: "LPU Online courses & fees 2026-27",
+            href: "/blogs/lpu-online-courses-fees-2026-27",
+          },
           { label: "LPU Online university overview", href: UNI },
         ],
       },

@@ -12,7 +12,12 @@ export const uttaranchalOnlineArticles: Article[] = [
       "Course-wise Uttaranchal University Online fee structure for 2026 — MBA, MCA, BCA, BBA and BA, with scholarships, EMI and international fees.",
     category: "Fees & Scholarships",
     categorySlug: "fees-scholarships",
-    tags: ["uttaranchal-university-online", "online-degree-fees", "online-mba-fees", "online-mca-fees"],
+    tags: [
+      "uttaranchal-university-online",
+      "online-degree-fees",
+      "online-mba-fees",
+      "online-mca-fees",
+    ],
     author: "Kartik Ahuja",
     authorSlug: "kartik-ahuja",
     date: "2026-08-18",
@@ -40,7 +45,12 @@ export const uttaranchalOnlineArticles: Article[] = [
       "Uttaranchal University Online BBA fee structure, eligibility, semester-wise subjects, specialisations and placement support for 2026.",
     category: "Study Guides",
     categorySlug: "study-guides",
-    tags: ["uttaranchal-university-online", "online-bba", "online-bba-fees", "online-degree-eligibility"],
+    tags: [
+      "uttaranchal-university-online",
+      "online-bba",
+      "online-bba-fees",
+      "online-degree-eligibility",
+    ],
     author: "Kartik Ahuja",
     authorSlug: "kartik-ahuja",
     date: "2026-08-18",
@@ -71,7 +81,14 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
           {
             kind: "table",
             caption: "2026 fee overview by programme",
-            head: ["Programme", "Level", "Duration", "Semester Fee", "Annual Fee", "Published Total After Scholarship"],
+            head: [
+              "Programme",
+              "Level",
+              "Duration",
+              "Semester Fee",
+              "Annual Fee",
+              "Published Total After Scholarship",
+            ],
             rows: [
               ["Online MBA", "PG", "2 Years", "₹24,500", "₹47,000", "₹98,000"],
               ["Online MCA", "PG", "2 Years", "₹24,000", "₹46,000", "₹96,000"],
@@ -269,9 +286,18 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "Uttaranchal Online MBA & MCA fees in detail", href: "/blogs/uttaranchal-university-online-mba-mca-fees-2026" },
-              { label: "Uttaranchal Online BBA fees, curriculum and careers", href: "/blogs/uttaranchal-university-online-bba-fees-2026" },
-              { label: "Explore Uttaranchal University Online", href: "/universities/uttaranchal-online" },
+              {
+                label: "Uttaranchal Online MBA & MCA fees in detail",
+                href: "/blogs/uttaranchal-university-online-mba-mca-fees-2026",
+              },
+              {
+                label: "Uttaranchal Online BBA fees, curriculum and careers",
+                href: "/blogs/uttaranchal-university-online-bba-fees-2026",
+              },
+              {
+                label: "Explore Uttaranchal University Online",
+                href: "/universities/uttaranchal-online",
+              },
             ],
           },
         ],
@@ -325,13 +351,22 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
       },
     ],
     sources: [
-      { label: "Official Online UU programme and recognition page", href: "https://www.onlineuu.in/index.php" },
+      {
+        label: "Official Online UU programme and recognition page",
+        href: "https://www.onlineuu.in/index.php",
+      },
       { label: "Official Online UU fee/admission page", href: "https://www.onlineuu.in/apply.php" },
       { label: "Official Online UU FAQ", href: "https://www.onlineuu.in/faqs.php" },
     ],
     related: [
-      { label: "Uttaranchal Online MBA & MCA fees", href: "/blogs/uttaranchal-university-online-mba-mca-fees-2026" },
-      { label: "Uttaranchal Online BBA fees", href: "/blogs/uttaranchal-university-online-bba-fees-2026" },
+      {
+        label: "Uttaranchal Online MBA & MCA fees",
+        href: "/blogs/uttaranchal-university-online-mba-mca-fees-2026",
+      },
+      {
+        label: "Uttaranchal Online BBA fees",
+        href: "/blogs/uttaranchal-university-online-bba-fees-2026",
+      },
       { label: "Compare online universities", href: "/compare" },
     ],
     cta: "Want your exact Online UU fee confirmed for the current admission cycle? Share your programme choice and we will verify it against the official fee page.",
@@ -545,8 +580,14 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Full Online UU fee structure across all programmes", href: "/blogs/uttaranchal-university-online-fees-2026" },
-              { label: "Uttaranchal Online BBA fees and curriculum", href: "/blogs/uttaranchal-university-online-bba-fees-2026" },
+              {
+                label: "Full Online UU fee structure across all programmes",
+                href: "/blogs/uttaranchal-university-online-fees-2026",
+              },
+              {
+                label: "Uttaranchal Online BBA fees and curriculum",
+                href: "/blogs/uttaranchal-university-online-bba-fees-2026",
+              },
               { label: "Explore online MBA programmes", href: "/courses/online-mba" },
             ],
           },
@@ -582,10 +623,16 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
     ],
     sources: [
       { label: "Official Online UU MBA page", href: "https://www.onlineuu.in/mba.php" },
-      { label: "Official Online UU admission process", href: "https://www.onlineuu.in/how-to-apply.php" },
+      {
+        label: "Official Online UU admission process",
+        href: "https://www.onlineuu.in/how-to-apply.php",
+      },
     ],
     related: [
-      { label: "Uttaranchal Online fee structure (all programmes)", href: "/blogs/uttaranchal-university-online-fees-2026" },
+      {
+        label: "Uttaranchal Online fee structure (all programmes)",
+        href: "/blogs/uttaranchal-university-online-fees-2026",
+      },
       { label: "Online MBA universities and fees", href: "/courses/online-mba" },
       { label: "Compare online universities", href: "/compare" },
     ],
@@ -620,7 +667,10 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
               ["Semesters", "6"],
               ["Credits", "120"],
               ["Mode", "Fully Online"],
-              ["Learning Support", "Smart LMS, live sessions, TA sessions, case studies and projects"],
+              [
+                "Learning Support",
+                "Smart LMS, live sessions, TA sessions, case studies and projects",
+              ],
               ["Specialisations", "Marketing, Finance, Human Resources"],
               ["Eligibility", "10+2 from a recognised board"],
             ],
@@ -788,7 +838,13 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
           },
           {
             kind: "list",
-            items: ["Entrepreneurial Mindset", "Data Interpretation", "Digital Literacy", "Financial Literacy", "Business Writing"],
+            items: [
+              "Entrepreneurial Mindset",
+              "Data Interpretation",
+              "Digital Literacy",
+              "Financial Literacy",
+              "Business Writing",
+            ],
           },
           {
             kind: "h3",
@@ -840,9 +896,18 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "Full Online UU fee structure across all programmes", href: "/blogs/uttaranchal-university-online-fees-2026" },
-              { label: "Uttaranchal Online MBA & MCA fees", href: "/blogs/uttaranchal-university-online-mba-mca-fees-2026" },
-              { label: "Explore Uttaranchal University Online", href: "/universities/uttaranchal-online" },
+              {
+                label: "Full Online UU fee structure across all programmes",
+                href: "/blogs/uttaranchal-university-online-fees-2026",
+              },
+              {
+                label: "Uttaranchal Online MBA & MCA fees",
+                href: "/blogs/uttaranchal-university-online-mba-mca-fees-2026",
+              },
+              {
+                label: "Explore Uttaranchal University Online",
+                href: "/universities/uttaranchal-online",
+              },
             ],
           },
         ],
@@ -880,7 +945,10 @@ export const uttaranchalOnlinePosts: Record<string, PostContent> = {
       { label: "Official Online UU fee/admission page", href: "https://www.onlineuu.in/apply.php" },
     ],
     related: [
-      { label: "Full Online UU fee structure", href: "/blogs/uttaranchal-university-online-fees-2026" },
+      {
+        label: "Full Online UU fee structure",
+        href: "/blogs/uttaranchal-university-online-fees-2026",
+      },
       { label: "Online BBA admission guide", href: "/courses/online-bba" },
       { label: "Compare online universities", href: "/compare" },
     ],

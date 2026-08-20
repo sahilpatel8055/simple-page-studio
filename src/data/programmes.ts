@@ -13,7 +13,8 @@ import {
  */
 
 function toLevel(level: string): Level {
-  if (level === "UG" || level === "PG" || level === "Diploma" || level === "Certificate") return level;
+  if (level === "UG" || level === "PG" || level === "Diploma" || level === "Certificate")
+    return level;
   return "Certificate";
 }
 
@@ -55,7 +56,8 @@ for (const { programme } of allProgrammePairs()) {
   } else {
     // Merge modes and fill an eligibility summary if the first record lacked one.
     for (const m of toModes(programme.mode)) if (!existing.mode.includes(m)) existing.mode.push(m);
-    if (!existing.eligibility && programme.eligibility.summary) existing.eligibility = programme.eligibility.summary;
+    if (!existing.eligibility && programme.eligibility.summary)
+      existing.eligibility = programme.eligibility.summary;
     if (!existing.durationYears) existing.durationYears = durationYears(programme.duration);
   }
 

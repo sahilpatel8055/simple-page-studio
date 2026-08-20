@@ -77,10 +77,7 @@ export function Section({
           ? "rounded-3xl border border-success/20 bg-gradient-to-br from-success/10 via-card to-card p-5 sm:p-7"
           : "";
   return (
-    <section
-      id={sectionId(title)}
-      className={`scroll-mt-36 ${toneClass}`}
-    >
+    <section id={sectionId(title)} className={`scroll-mt-36 ${toneClass}`}>
       <h2 className="font-display text-xl font-bold tracking-tight sm:text-2xl">{title}</h2>
       {intro && (
         <p className="mt-3 text-[0.95rem] leading-relaxed text-muted-foreground">{intro}</p>
@@ -952,7 +949,11 @@ export function InfoBoxGrid({
 }) {
   const Heading = headingLevel;
   const cols =
-    columns === 2 ? "sm:grid-cols-2" : columns === 3 ? "sm:grid-cols-2 lg:grid-cols-3" : "sm:grid-cols-2 lg:grid-cols-4";
+    columns === 2
+      ? "sm:grid-cols-2"
+      : columns === 3
+        ? "sm:grid-cols-2 lg:grid-cols-3"
+        : "sm:grid-cols-2 lg:grid-cols-4";
   return (
     <div className={`grid grid-cols-2 gap-2.5 sm:gap-3.5 ${cols}`}>
       {items.map((item, i) => {

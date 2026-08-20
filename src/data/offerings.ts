@@ -13,7 +13,9 @@ import { openUniversityFee } from "@/lib/openUniversityFees";
  */
 export const offerings: Offering[] = allProgrammePairs().map(({ university, programme }) => {
   const official = openUniversityFee(university.slug, programme.slug);
-  const corrected = official ? undefined : sheetFee(university.slug, programme.slug, programme.duration);
+  const corrected = official
+    ? undefined
+    : sheetFee(university.slug, programme.slug, programme.duration);
   const row: Offering = {
     id: `${university.slug}--${programme.slug}`,
     universitySlug: university.slug,
@@ -22,7 +24,9 @@ export const offerings: Offering[] = allProgrammePairs().map(({ university, prog
     durationLabel: programme.duration ?? "",
     fee: {
       total: official ? official.total : (corrected?.total ?? programme.fees.total_programme_fee),
-      perSemester: official ? official.perSemester : (corrected?.perSemester ?? programme.fees.semester),
+      perSemester: official
+        ? official.perSemester
+        : (corrected?.perSemester ?? programme.fees.semester),
       perYear: official ? official.perYear : (corrected?.perYear ?? programme.fees.annual),
       emiFrom: official ? null : (corrected?.emiFrom ?? programme.fees.emi),
       listTotal: official ? null : (corrected?.listTotal ?? null),
@@ -44,4 +48,3 @@ export const offerings: Offering[] = allProgrammePairs().map(({ university, prog
   if (programme.admission.intake) row.nextSessionLabel = programme.admission.intake;
   return row;
 });
-

@@ -55,7 +55,10 @@ export type PairComparison = {
   };
   content: { intro: string; decision_framework: string; fit_statement: string; angle: string };
   comparison_sections: { id: string; heading: string }[];
-  course_snapshots: Record<string, { university_a: CourseSnapshotSide; university_b: CourseSnapshotSide }>;
+  course_snapshots: Record<
+    string,
+    { university_a: CourseSnapshotSide; university_b: CourseSnapshotSide }
+  >;
 };
 
 const dataset = master as unknown as {
@@ -120,7 +123,10 @@ export function comparableCourses(pair: PairComparison): string[] {
  * verified programme dataset (same numbers the university pages publish)
  * instead of telling the reader the fee is unverified.
  */
-export function datasetFeeTotal(universitySlug: string | undefined, courseName: string | undefined) {
+export function datasetFeeTotal(
+  universitySlug: string | undefined,
+  courseName: string | undefined,
+) {
   if (!universitySlug || !courseName) return null;
   const siteSlug = siteSlugForMasterSlug(universitySlug) ?? universitySlug;
   const wanted = courseKeyForProgramme(courseSlug(courseName));

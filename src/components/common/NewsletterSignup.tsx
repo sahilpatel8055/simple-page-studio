@@ -3,7 +3,13 @@ import { Check, Mail } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { submitLead } from "@/lib/leads";
 
-export function NewsletterSignup({ compact = false, className }: { compact?: boolean; className?: string }) {
+export function NewsletterSignup({
+  compact = false,
+  className,
+}: {
+  compact?: boolean;
+  className?: string;
+}) {
   const [done, setDone] = useState(false);
   const [email, setEmail] = useState("");
 
@@ -20,7 +26,9 @@ export function NewsletterSignup({ compact = false, className }: { compact?: boo
     >
       {!compact && (
         <>
-          <h2 className="font-display text-2xl font-bold sm:text-3xl">Admission intelligence, weekly</h2>
+          <h2 className="font-display text-2xl font-bold sm:text-3xl">
+            Admission intelligence, weekly
+          </h2>
           <p className="mt-2 text-sm text-muted-foreground">
             Deadlines, fee changes and new programme approvals — one concise email, no spam.
           </p>

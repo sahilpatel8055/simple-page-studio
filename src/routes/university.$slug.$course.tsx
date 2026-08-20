@@ -12,7 +12,9 @@ export const Route = createFileRoute("/university/$slug/$course")({
     const slug = siteSlugForMasterSlug(params.slug) ?? params.slug;
     const wanted = courseKeyForProgramme(params.course);
     const match = listOfferingsByUniversity(slug).find(
-      (o) => o.programmeSlug === params.course || (wanted && courseKeyForProgramme(o.programmeSlug) === wanted),
+      (o) =>
+        o.programmeSlug === params.course ||
+        (wanted && courseKeyForProgramme(o.programmeSlug) === wanted),
     );
     throw redirect({
       to: "/universities/$slug/courses/$course",

@@ -31,10 +31,15 @@ export function PlacementSupportSection({
               <tbody>
                 {facts.stats.map((s) => (
                   <tr key={s.label} className="border-b border-border/60 last:border-0">
-                    <th scope="row" className="w-1/2 py-2 pr-3 align-top text-xs font-semibold text-muted-foreground sm:text-sm">
+                    <th
+                      scope="row"
+                      className="w-1/2 py-2 pr-3 align-top text-xs font-semibold text-muted-foreground sm:text-sm"
+                    >
                       {s.label}
                     </th>
-                    <td className="py-2 align-top text-xs font-bold text-foreground sm:text-sm">{s.value}</td>
+                    <td className="py-2 align-top text-xs font-bold text-foreground sm:text-sm">
+                      {s.value}
+                    </td>
                   </tr>
                 ))}
               </tbody>
@@ -43,7 +48,9 @@ export function PlacementSupportSection({
 
           {facts.support.length > 0 ? (
             <div>
-              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">What the career service includes</p>
+              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">
+                What the career service includes
+              </p>
               <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-foreground">
                 {facts.support.map((s) => (
                   <li key={s}>{s}</li>
@@ -54,10 +61,15 @@ export function PlacementSupportSection({
 
           {facts.recruiters.length > 0 ? (
             <div>
-              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Recruiters named in the university's material</p>
+              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">
+                Recruiters named in the university's material
+              </p>
               <div className="mt-2 flex flex-wrap gap-1.5">
                 {facts.recruiters.map((r) => (
-                  <span key={r} className="rounded-full border border-border bg-secondary px-2.5 py-1 text-[0.7rem] font-medium text-secondary-foreground">
+                  <span
+                    key={r}
+                    className="rounded-full border border-border bg-secondary px-2.5 py-1 text-[0.7rem] font-medium text-secondary-foreground"
+                  >
                     {r}
                   </span>
                 ))}
@@ -67,10 +79,15 @@ export function PlacementSupportSection({
 
           {facts.approvals.length > 0 ? (
             <div>
-              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">Approvals & recognition</p>
+              <p className="text-xs font-bold uppercase tracking-wide text-muted-foreground">
+                Approvals & recognition
+              </p>
               <div className="mt-2 flex flex-wrap gap-1.5">
                 {facts.approvals.map((a) => (
-                  <span key={a} className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-1 text-[0.7rem] font-semibold text-primary">
+                  <span
+                    key={a}
+                    className="rounded-full border border-primary/30 bg-primary/10 px-2.5 py-1 text-[0.7rem] font-semibold text-primary"
+                  >
                     {a}
                   </span>
                 ))}
@@ -83,8 +100,8 @@ export function PlacementSupportSection({
       ) : null}
       <InfoBoxGrid items={defaultPlacementServices()} />
       <p className="text-xs leading-relaxed text-muted-foreground">
-        Placement assistance is not the same as guaranteed placement. Ask {universityShort} in writing what its career
-        service actually includes for online learners.
+        Placement assistance is not the same as guaranteed placement. Ask {universityShort} in
+        writing what its career service actually includes for online learners.
       </p>
       <HiringPartners universitySlug={universitySlug} universityShort={universityShort} />
     </div>

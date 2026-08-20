@@ -69,7 +69,6 @@ import {
 import { universityFeeValue, universityHeadings } from "@/lib/pageDifferentiation";
 import { universityIntro } from "@/lib/pageNarrative";
 
-
 import {
   approvalText,
   articleLinks,
@@ -272,7 +271,6 @@ function Page() {
           <UniversityGlance slug={slug} />
         </ContentSection>
 
-
         <ContentSection title="Overview">
           <UniversityResearchIntro slug={slug} />
           {universityIntro(slug) && <p>{universityIntro(slug)}</p>}
@@ -304,7 +302,6 @@ function Page() {
             feeFallback={u.feeRangeLabel}
           />
         </ContentSection>
-
 
         {hasFeeTable && (
           <ContentSection title="Fee structure">
@@ -378,13 +375,16 @@ function Page() {
         </ContentSection>
 
         <ContentSection title="Student reviews">
-          <UniversityReviews rating={u.rating} reviewCount={u.reviewCount} shortName={u.shortName} />
+          <UniversityReviews
+            rating={u.rating}
+            reviewCount={u.reviewCount}
+            shortName={u.shortName}
+          />
         </ContentSection>
 
         <ContentSection title="Compare universities">
           <UniversityComparison slug={slug} shortName={u.shortName} />
         </ContentSection>
-
 
         <ContentSection title={decisionHeading ?? "Who may consider this university"}>
           {decisionHeading ? (
@@ -397,7 +397,9 @@ function Page() {
         <ContentSection title="What to verify before applying">
           <StudentsShouldVerify
             lastVerified={u.lastUpdated}
-            status={json?.data_status ?? (u.verified ? "verified_official" : "partial_verification")}
+            status={
+              json?.data_status ?? (u.verified ? "verified_official" : "partial_verification")
+            }
           />
         </ContentSection>
 
@@ -414,8 +416,6 @@ function Page() {
             />
           </ContentSection>
         )}
-
-
 
         <RelatedPageLinks
           title={`${u.shortName} guides`}

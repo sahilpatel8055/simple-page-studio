@@ -60,7 +60,8 @@ const projectsExposure = {
     "capstone projects",
     "internship experience",
   ],
-  verdict: "Use the MCA as a framework for building a public technical portfolio. The university provides the academic structure; the learner must continuously practise and build.",
+  verdict:
+    "Use the MCA as a framework for building a public technical portfolio. The university provides the academic structure; the learner must continuously practise and build.",
 };
 
 const placementCareerSupport = {
@@ -137,31 +138,38 @@ const decisionScorecard = {
 const commonFaqs = (aLabel: string, bLabel: string) => [
   {
     question: `Which is better: ${aLabel} vs ${bLabel} Online MCA?`,
-    answer: "It depends on your career goal, specialisation preference, budget and eligibility. There is no universal winner.",
+    answer:
+      "It depends on your career goal, specialisation preference, budget and eligibility. There is no universal winner.",
   },
   {
     question: "Is an online MCA valid?",
-    answer: "A student should verify the university and programme's current UGC entitlement/recognition status for the admission session before enrolling.",
+    answer:
+      "A student should verify the university and programme's current UGC entitlement/recognition status for the admission session before enrolling.",
   },
   {
     question: "Can I pursue an online MCA after BCA?",
-    answer: "Yes, BCA is a common pathway into MCA, subject to the specific university's current eligibility rules.",
+    answer:
+      "Yes, BCA is a common pathway into MCA, subject to the specific university's current eligibility rules.",
   },
   {
     question: "Can a non-computer graduate pursue an online MCA?",
-    answer: "Some universities permit non-computer graduates if they meet mathematics/computer-subject requirements or complete prescribed bridge courses. Always verify the current university rules.",
+    answer:
+      "Some universities permit non-computer graduates if they meet mathematics/computer-subject requirements or complete prescribed bridge courses. Always verify the current university rules.",
   },
   {
     question: "Which MCA specialisation is best in 2026?",
-    answer: "AI/ML, data science, cybersecurity, cloud computing and full-stack development are strong technology directions, but the best option depends on your skills and target role.",
+    answer:
+      "AI/ML, data science, cybersecurity, cloud computing and full-stack development are strong technology directions, but the best option depends on your skills and target role.",
   },
   {
     question: "Is an online MCA good for a working professional?",
-    answer: "Yes, if the programme's schedule, LMS, examinations and support fit your work commitments.",
+    answer:
+      "Yes, if the programme's schedule, LMS, examinations and support fit your work commitments.",
   },
   {
     question: "Does an online MCA guarantee a job?",
-    answer: "No. Placement assistance is not the same as guaranteed employment. Skills, projects, internships, communication and interview performance remain important.",
+    answer:
+      "No. Placement assistance is not the same as guaranteed employment. Skills, projects, internships, communication and interview performance remain important.",
   },
 ];
 
@@ -189,14 +197,46 @@ export const mcaPacks: ComparisonPack[] = [
       { label: "Programme", a: "Online MCA", b: "Online MCA" },
       { label: "Duration", a: "2 years", b: "2 years" },
       { label: "Mode", a: "Online; live/recorded learning", b: "Online; live/recorded learning" },
-      { label: "Current fee position", a: "Check current programme page for exact payable fee", b: "Check current programme page for exact payable fee" },
-      { label: "Specialisation approach", a: "Technology-focused options", b: "Technology-focused options" },
-      { label: "Core technical areas", a: "Programming, databases, web, AI/data/cloud depending on track", b: "Programming, databases, emerging technology depending on track" },
-      { label: "Eligibility", a: "Depends on prior degree and mathematics/computer background", b: "Depends on prior degree and programme rules" },
-      { label: "Assessment", a: "Online assessment/examinations", b: "Online assessment/examinations" },
-      { label: "Projects", a: "Programme-dependent practical work", b: "Programme-dependent practical work" },
-      { label: "Career support", a: "Placement/career assistance", b: "Placement/career assistance" },
-      { label: "Best suited for", a: "Learners seeking a structured online technology degree", b: "Learners seeking a structured online technology degree" },
+      {
+        label: "Current fee position",
+        a: "Check current programme page for exact payable fee",
+        b: "Check current programme page for exact payable fee",
+      },
+      {
+        label: "Specialisation approach",
+        a: "Technology-focused options",
+        b: "Technology-focused options",
+      },
+      {
+        label: "Core technical areas",
+        a: "Programming, databases, web, AI/data/cloud depending on track",
+        b: "Programming, databases, emerging technology depending on track",
+      },
+      {
+        label: "Eligibility",
+        a: "Depends on prior degree and mathematics/computer background",
+        b: "Depends on prior degree and programme rules",
+      },
+      {
+        label: "Assessment",
+        a: "Online assessment/examinations",
+        b: "Online assessment/examinations",
+      },
+      {
+        label: "Projects",
+        a: "Programme-dependent practical work",
+        b: "Programme-dependent practical work",
+      },
+      {
+        label: "Career support",
+        a: "Placement/career assistance",
+        b: "Placement/career assistance",
+      },
+      {
+        label: "Best suited for",
+        a: "Learners seeking a structured online technology degree",
+        b: "Learners seeking a structured online technology degree",
+      },
     ],
     sections: [
       {
@@ -228,14 +268,27 @@ export const mcaPacks: ComparisonPack[] = [
           head: ["Fee Factor", "Chandigarh University", "LPU Online MCA"],
           rows: [
             ["Programme duration", "2 years", "2 years"],
-            ["Semester payment", "Check current official fee page", "Check current official fee page"],
-            ["Total programme fee", "Check current official fee page", "Check current official fee page"],
-            ["EMI availability", "Available/subject to current terms", "Available/subject to current terms"],
+            [
+              "Semester payment",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "Total programme fee",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "EMI availability",
+              "Available/subject to current terms",
+              "Available/subject to current terms",
+            ],
             ["Scholarships/discounts", "Session/category dependent", "Session/category dependent"],
             ["Important check", "Final payable amount", "Final payable amount"],
           ],
         },
-        verdict: "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
+        verdict:
+          "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
       },
       {
         heading: "Eligibility Comparison",
@@ -245,19 +298,29 @@ export const mcaPacks: ComparisonPack[] = [
           rows: [
             ["Bachelor's degree required", "Yes", "Yes"],
             ["Computer/IT background", "Programme-specific", "Programme-specific"],
-            ["Mathematics requirement", "Check current programme rules", "Check current programme rules"],
-            ["Non-computer graduate route", "May be possible with required background/bridge requirements", "Depends on programme"],
+            [
+              "Mathematics requirement",
+              "Check current programme rules",
+              "Check current programme rules",
+            ],
+            [
+              "Non-computer graduate route",
+              "May be possible with required background/bridge requirements",
+              "Depends on programme",
+            ],
             ["Minimum marks", "Programme-specific", "Programme-specific"],
             ["Age restriction", "Check current admission rules", "Check current admission rules"],
           ],
         },
-        verdict: "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
+        verdict:
+          "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
       },
       specialisationCareerAlignment,
       {
         heading: "Specialisation Comparison",
         body: "Chandigarh University: Compare the available technology tracks for depth, elective flexibility and project work.\n\nLPU Online MCA: Compare whether the programme offers the technology area you want and whether the curriculum includes enough advanced subjects to build a portfolio.",
-        verdict: "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
+        verdict:
+          "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
       },
       curriculumSyllabus,
       {
@@ -286,13 +349,17 @@ export const mcaPacks: ComparisonPack[] = [
       },
       {
         heading: "Which Is Better for Working Professionals?",
-        body: "Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the \"best\" university is often the one that fits the person's schedule while providing a specialisation that can directly improve their current role.",
+        body: 'Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the "best" university is often the one that fits the person\'s schedule while providing a specialisation that can directly improve their current role.',
       },
       onlineVsRegular,
       decisionScorecard,
     ],
-    aBestFor: ["Its current specialisation, curriculum, fee and learning model better match your career target."],
-    bBestFor: ["Its programme structure, technical track, eligibility and overall cost better fit your situation."],
+    aBestFor: [
+      "Its current specialisation, curriculum, fee and learning model better match your career target.",
+    ],
+    bBestFor: [
+      "Its programme structure, technical track, eligibility and overall cost better fit your situation.",
+    ],
     verdict:
       "There is no single winner for every MCA aspirant. Choose Chandigarh University if its current specialisation, curriculum, fee and learning model better match your career target. Choose LPU Online MCA if its programme structure, technical track, eligibility and overall cost better fit your situation. The right online MCA should be selected as a career investment, not merely as a degree purchase. Compare the two universities across recognition, eligibility, complete fee, curriculum, specialisation, technical depth, projects, LMS, assessment and career support. Before enrolling, verify the latest official fee, admission deadline, programme eligibility, specialisation availability and regulatory status for the current session.",
     faqs: commonFaqs("Chandigarh University", "LPU"),
@@ -314,14 +381,46 @@ export const mcaPacks: ComparisonPack[] = [
       { label: "Programme", a: "Online MCA", b: "Online MCA" },
       { label: "Duration", a: "2 years", b: "2 years" },
       { label: "Mode", a: "Online; live/recorded learning", b: "Online; live/recorded learning" },
-      { label: "Current fee position", a: "Check current programme page for exact payable fee", b: "Check current programme page for exact payable fee" },
-      { label: "Specialisation approach", a: "Technology-focused options", b: "Technology-focused options" },
-      { label: "Core technical areas", a: "Programming, databases, web, AI/data/cloud depending on track", b: "Programming, databases, emerging technology depending on track" },
-      { label: "Eligibility", a: "Depends on prior degree and mathematics/computer background", b: "Depends on prior degree and programme rules" },
-      { label: "Assessment", a: "Online assessment/examinations", b: "Online assessment/examinations" },
-      { label: "Projects", a: "Programme-dependent practical work", b: "Programme-dependent practical work" },
-      { label: "Career support", a: "Placement/career assistance", b: "Placement/career assistance" },
-      { label: "Best suited for", a: "Learners seeking a structured online technology degree", b: "Learners seeking a structured online technology degree" },
+      {
+        label: "Current fee position",
+        a: "Check current programme page for exact payable fee",
+        b: "Check current programme page for exact payable fee",
+      },
+      {
+        label: "Specialisation approach",
+        a: "Technology-focused options",
+        b: "Technology-focused options",
+      },
+      {
+        label: "Core technical areas",
+        a: "Programming, databases, web, AI/data/cloud depending on track",
+        b: "Programming, databases, emerging technology depending on track",
+      },
+      {
+        label: "Eligibility",
+        a: "Depends on prior degree and mathematics/computer background",
+        b: "Depends on prior degree and programme rules",
+      },
+      {
+        label: "Assessment",
+        a: "Online assessment/examinations",
+        b: "Online assessment/examinations",
+      },
+      {
+        label: "Projects",
+        a: "Programme-dependent practical work",
+        b: "Programme-dependent practical work",
+      },
+      {
+        label: "Career support",
+        a: "Placement/career assistance",
+        b: "Placement/career assistance",
+      },
+      {
+        label: "Best suited for",
+        a: "Learners seeking a structured online technology degree",
+        b: "Learners seeking a structured online technology degree",
+      },
     ],
     sections: [
       {
@@ -353,14 +452,27 @@ export const mcaPacks: ComparisonPack[] = [
           head: ["Fee Factor", "LPU", "Amity Online MCA"],
           rows: [
             ["Programme duration", "2 years", "2 years"],
-            ["Semester payment", "Check current official fee page", "Check current official fee page"],
-            ["Total programme fee", "Check current official fee page", "Check current official fee page"],
-            ["EMI availability", "Available/subject to current terms", "Available/subject to current terms"],
+            [
+              "Semester payment",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "Total programme fee",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "EMI availability",
+              "Available/subject to current terms",
+              "Available/subject to current terms",
+            ],
             ["Scholarships/discounts", "Session/category dependent", "Session/category dependent"],
             ["Important check", "Final payable amount", "Final payable amount"],
           ],
         },
-        verdict: "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
+        verdict:
+          "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
       },
       {
         heading: "Eligibility Comparison",
@@ -370,19 +482,29 @@ export const mcaPacks: ComparisonPack[] = [
           rows: [
             ["Bachelor's degree required", "Yes", "Yes"],
             ["Computer/IT background", "Programme-specific", "Programme-specific"],
-            ["Mathematics requirement", "Check current programme rules", "Check current programme rules"],
-            ["Non-computer graduate route", "May be possible with required background/bridge requirements", "Depends on programme"],
+            [
+              "Mathematics requirement",
+              "Check current programme rules",
+              "Check current programme rules",
+            ],
+            [
+              "Non-computer graduate route",
+              "May be possible with required background/bridge requirements",
+              "Depends on programme",
+            ],
             ["Minimum marks", "Programme-specific", "Programme-specific"],
             ["Age restriction", "Check current admission rules", "Check current admission rules"],
           ],
         },
-        verdict: "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
+        verdict:
+          "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
       },
       specialisationCareerAlignment,
       {
         heading: "Specialisation Comparison",
         body: "LPU: Compare the available technology tracks for depth, elective flexibility and project work.\n\nAmity Online MCA: Compare whether the programme offers the technology area you want and whether the curriculum includes enough advanced subjects to build a portfolio.",
-        verdict: "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
+        verdict:
+          "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
       },
       curriculumSyllabus,
       {
@@ -411,13 +533,17 @@ export const mcaPacks: ComparisonPack[] = [
       },
       {
         heading: "Which Is Better for Working Professionals?",
-        body: "Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the \"best\" university is often the one that fits the person's schedule while providing a specialisation that can directly improve their current role.",
+        body: 'Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the "best" university is often the one that fits the person\'s schedule while providing a specialisation that can directly improve their current role.',
       },
       onlineVsRegular,
       decisionScorecard,
     ],
-    aBestFor: ["Its current specialisation, curriculum, fee and learning model better match your career target."],
-    bBestFor: ["Its programme structure, technical track, eligibility and overall cost better fit your situation."],
+    aBestFor: [
+      "Its current specialisation, curriculum, fee and learning model better match your career target.",
+    ],
+    bBestFor: [
+      "Its programme structure, technical track, eligibility and overall cost better fit your situation.",
+    ],
     verdict:
       "There is no single winner for every MCA aspirant. Choose LPU if its current specialisation, curriculum, fee and learning model better match your career target. Choose Amity Online MCA if its programme structure, technical track, eligibility and overall cost better fit your situation. The right online MCA should be selected as a career investment, not merely as a degree purchase. Compare the two universities across recognition, eligibility, complete fee, curriculum, specialisation, technical depth, projects, LMS, assessment and career support. Before enrolling, verify the latest official fee, admission deadline, programme eligibility, specialisation availability and regulatory status for the current session.",
     faqs: commonFaqs("LPU", "Amity"),
@@ -439,14 +565,46 @@ export const mcaPacks: ComparisonPack[] = [
       { label: "Programme", a: "Online MCA", b: "Online MCA" },
       { label: "Duration", a: "2 years", b: "2 years" },
       { label: "Mode", a: "Online; live/recorded learning", b: "Online; live/recorded learning" },
-      { label: "Current fee position", a: "Check current programme page for exact payable fee", b: "Check current programme page for exact payable fee" },
-      { label: "Specialisation approach", a: "Technology-focused options", b: "Technology-focused options" },
-      { label: "Core technical areas", a: "Programming, databases, web, AI/data/cloud depending on track", b: "Programming, databases, emerging technology depending on track" },
-      { label: "Eligibility", a: "Depends on prior degree and mathematics/computer background", b: "Depends on prior degree and programme rules" },
-      { label: "Assessment", a: "Online assessment/examinations", b: "Online assessment/examinations" },
-      { label: "Projects", a: "Programme-dependent practical work", b: "Programme-dependent practical work" },
-      { label: "Career support", a: "Placement/career assistance", b: "Placement/career assistance" },
-      { label: "Best suited for", a: "Learners seeking a structured online technology degree", b: "Learners seeking a structured online technology degree" },
+      {
+        label: "Current fee position",
+        a: "Check current programme page for exact payable fee",
+        b: "Check current programme page for exact payable fee",
+      },
+      {
+        label: "Specialisation approach",
+        a: "Technology-focused options",
+        b: "Technology-focused options",
+      },
+      {
+        label: "Core technical areas",
+        a: "Programming, databases, web, AI/data/cloud depending on track",
+        b: "Programming, databases, emerging technology depending on track",
+      },
+      {
+        label: "Eligibility",
+        a: "Depends on prior degree and mathematics/computer background",
+        b: "Depends on prior degree and programme rules",
+      },
+      {
+        label: "Assessment",
+        a: "Online assessment/examinations",
+        b: "Online assessment/examinations",
+      },
+      {
+        label: "Projects",
+        a: "Programme-dependent practical work",
+        b: "Programme-dependent practical work",
+      },
+      {
+        label: "Career support",
+        a: "Placement/career assistance",
+        b: "Placement/career assistance",
+      },
+      {
+        label: "Best suited for",
+        a: "Learners seeking a structured online technology degree",
+        b: "Learners seeking a structured online technology degree",
+      },
     ],
     sections: [
       {
@@ -478,14 +636,27 @@ export const mcaPacks: ComparisonPack[] = [
           head: ["Fee Factor", "Chandigarh University", "Manipal Online MCA"],
           rows: [
             ["Programme duration", "2 years", "2 years"],
-            ["Semester payment", "Check current official fee page", "Check current official fee page"],
-            ["Total programme fee", "Check current official fee page", "Check current official fee page"],
-            ["EMI availability", "Available/subject to current terms", "Available/subject to current terms"],
+            [
+              "Semester payment",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "Total programme fee",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "EMI availability",
+              "Available/subject to current terms",
+              "Available/subject to current terms",
+            ],
             ["Scholarships/discounts", "Session/category dependent", "Session/category dependent"],
             ["Important check", "Final payable amount", "Final payable amount"],
           ],
         },
-        verdict: "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
+        verdict:
+          "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
       },
       {
         heading: "Eligibility Comparison",
@@ -495,19 +666,29 @@ export const mcaPacks: ComparisonPack[] = [
           rows: [
             ["Bachelor's degree required", "Yes", "Yes"],
             ["Computer/IT background", "Programme-specific", "Programme-specific"],
-            ["Mathematics requirement", "Check current programme rules", "Check current programme rules"],
-            ["Non-computer graduate route", "May be possible with required background/bridge requirements", "Depends on programme"],
+            [
+              "Mathematics requirement",
+              "Check current programme rules",
+              "Check current programme rules",
+            ],
+            [
+              "Non-computer graduate route",
+              "May be possible with required background/bridge requirements",
+              "Depends on programme",
+            ],
             ["Minimum marks", "Programme-specific", "Programme-specific"],
             ["Age restriction", "Check current admission rules", "Check current admission rules"],
           ],
         },
-        verdict: "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
+        verdict:
+          "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
       },
       specialisationCareerAlignment,
       {
         heading: "Specialisation Comparison",
         body: "Chandigarh University: Compare the available technology tracks for depth, elective flexibility and project work.\n\nManipal Online MCA: Compare whether the programme offers the technology area you want and whether the curriculum includes enough advanced subjects to build a portfolio.",
-        verdict: "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
+        verdict:
+          "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
       },
       curriculumSyllabus,
       {
@@ -536,13 +717,17 @@ export const mcaPacks: ComparisonPack[] = [
       },
       {
         heading: "Which Is Better for Working Professionals?",
-        body: "Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the \"best\" university is often the one that fits the person's schedule while providing a specialisation that can directly improve their current role.",
+        body: 'Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the "best" university is often the one that fits the person\'s schedule while providing a specialisation that can directly improve their current role.',
       },
       onlineVsRegular,
       decisionScorecard,
     ],
-    aBestFor: ["Its current specialisation, curriculum, fee and learning model better match your career target."],
-    bBestFor: ["Its programme structure, technical track, eligibility and overall cost better fit your situation."],
+    aBestFor: [
+      "Its current specialisation, curriculum, fee and learning model better match your career target.",
+    ],
+    bBestFor: [
+      "Its programme structure, technical track, eligibility and overall cost better fit your situation.",
+    ],
     verdict:
       "There is no single winner for every MCA aspirant. Choose Chandigarh University if its current specialisation, curriculum, fee and learning model better match your career target. Choose Manipal Online MCA if its programme structure, technical track, eligibility and overall cost better fit your situation. The right online MCA should be selected as a career investment, not merely as a degree purchase. Compare the two universities across recognition, eligibility, complete fee, curriculum, specialisation, technical depth, projects, LMS, assessment and career support. Before enrolling, verify the latest official fee, admission deadline, programme eligibility, specialisation availability and regulatory status for the current session.",
     faqs: commonFaqs("Chandigarh University", "Manipal"),
@@ -564,14 +749,46 @@ export const mcaPacks: ComparisonPack[] = [
       { label: "Programme", a: "Online MCA", b: "Online MCA" },
       { label: "Duration", a: "2 years", b: "2 years" },
       { label: "Mode", a: "Online; live/recorded learning", b: "Online; live/recorded learning" },
-      { label: "Current fee position", a: "Check current programme page for exact payable fee", b: "Check current programme page for exact payable fee" },
-      { label: "Specialisation approach", a: "Technology-focused options", b: "Technology-focused options" },
-      { label: "Core technical areas", a: "Programming, databases, web, AI/data/cloud depending on track", b: "Programming, databases, emerging technology depending on track" },
-      { label: "Eligibility", a: "Depends on prior degree and mathematics/computer background", b: "Depends on prior degree and programme rules" },
-      { label: "Assessment", a: "Online assessment/examinations", b: "Online assessment/examinations" },
-      { label: "Projects", a: "Programme-dependent practical work", b: "Programme-dependent practical work" },
-      { label: "Career support", a: "Placement/career assistance", b: "Placement/career assistance" },
-      { label: "Best suited for", a: "Learners seeking a structured online technology degree", b: "Learners seeking a structured online technology degree" },
+      {
+        label: "Current fee position",
+        a: "Check current programme page for exact payable fee",
+        b: "Check current programme page for exact payable fee",
+      },
+      {
+        label: "Specialisation approach",
+        a: "Technology-focused options",
+        b: "Technology-focused options",
+      },
+      {
+        label: "Core technical areas",
+        a: "Programming, databases, web, AI/data/cloud depending on track",
+        b: "Programming, databases, emerging technology depending on track",
+      },
+      {
+        label: "Eligibility",
+        a: "Depends on prior degree and mathematics/computer background",
+        b: "Depends on prior degree and programme rules",
+      },
+      {
+        label: "Assessment",
+        a: "Online assessment/examinations",
+        b: "Online assessment/examinations",
+      },
+      {
+        label: "Projects",
+        a: "Programme-dependent practical work",
+        b: "Programme-dependent practical work",
+      },
+      {
+        label: "Career support",
+        a: "Placement/career assistance",
+        b: "Placement/career assistance",
+      },
+      {
+        label: "Best suited for",
+        a: "Learners seeking a structured online technology degree",
+        b: "Learners seeking a structured online technology degree",
+      },
     ],
     sections: [
       {
@@ -603,14 +820,27 @@ export const mcaPacks: ComparisonPack[] = [
           head: ["Fee Factor", "LPU", "Manipal Online MCA"],
           rows: [
             ["Programme duration", "2 years", "2 years"],
-            ["Semester payment", "Check current official fee page", "Check current official fee page"],
-            ["Total programme fee", "Check current official fee page", "Check current official fee page"],
-            ["EMI availability", "Available/subject to current terms", "Available/subject to current terms"],
+            [
+              "Semester payment",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "Total programme fee",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "EMI availability",
+              "Available/subject to current terms",
+              "Available/subject to current terms",
+            ],
             ["Scholarships/discounts", "Session/category dependent", "Session/category dependent"],
             ["Important check", "Final payable amount", "Final payable amount"],
           ],
         },
-        verdict: "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
+        verdict:
+          "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
       },
       {
         heading: "Eligibility Comparison",
@@ -620,19 +850,29 @@ export const mcaPacks: ComparisonPack[] = [
           rows: [
             ["Bachelor's degree required", "Yes", "Yes"],
             ["Computer/IT background", "Programme-specific", "Programme-specific"],
-            ["Mathematics requirement", "Check current programme rules", "Check current programme rules"],
-            ["Non-computer graduate route", "May be possible with required background/bridge requirements", "Depends on programme"],
+            [
+              "Mathematics requirement",
+              "Check current programme rules",
+              "Check current programme rules",
+            ],
+            [
+              "Non-computer graduate route",
+              "May be possible with required background/bridge requirements",
+              "Depends on programme",
+            ],
             ["Minimum marks", "Programme-specific", "Programme-specific"],
             ["Age restriction", "Check current admission rules", "Check current admission rules"],
           ],
         },
-        verdict: "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
+        verdict:
+          "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
       },
       specialisationCareerAlignment,
       {
         heading: "Specialisation Comparison",
         body: "LPU: Compare the available technology tracks for depth, elective flexibility and project work.\n\nManipal Online MCA: Compare whether the programme offers the technology area you want and whether the curriculum includes enough advanced subjects to build a portfolio.",
-        verdict: "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
+        verdict:
+          "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
       },
       curriculumSyllabus,
       {
@@ -661,13 +901,17 @@ export const mcaPacks: ComparisonPack[] = [
       },
       {
         heading: "Which Is Better for Working Professionals?",
-        body: "Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the \"best\" university is often the one that fits the person's schedule while providing a specialisation that can directly improve their current role.",
+        body: 'Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the "best" university is often the one that fits the person\'s schedule while providing a specialisation that can directly improve their current role.',
       },
       onlineVsRegular,
       decisionScorecard,
     ],
-    aBestFor: ["Its current specialisation, curriculum, fee and learning model better match your career target."],
-    bBestFor: ["Its programme structure, technical track, eligibility and overall cost better fit your situation."],
+    aBestFor: [
+      "Its current specialisation, curriculum, fee and learning model better match your career target.",
+    ],
+    bBestFor: [
+      "Its programme structure, technical track, eligibility and overall cost better fit your situation.",
+    ],
     verdict:
       "There is no single winner for every MCA aspirant. Choose LPU if its current specialisation, curriculum, fee and learning model better match your career target. Choose Manipal Online MCA if its programme structure, technical track, eligibility and overall cost better fit your situation. The right online MCA should be selected as a career investment, not merely as a degree purchase. Compare the two universities across recognition, eligibility, complete fee, curriculum, specialisation, technical depth, projects, LMS, assessment and career support. Before enrolling, verify the latest official fee, admission deadline, programme eligibility, specialisation availability and regulatory status for the current session.",
     faqs: commonFaqs("LPU", "Manipal"),
@@ -689,14 +933,46 @@ export const mcaPacks: ComparisonPack[] = [
       { label: "Programme", a: "Online MCA", b: "Online MCA" },
       { label: "Duration", a: "2 years", b: "2 years" },
       { label: "Mode", a: "Online; live/recorded learning", b: "Online; live/recorded learning" },
-      { label: "Current fee position", a: "Check current programme page for exact payable fee", b: "Check current programme page for exact payable fee" },
-      { label: "Specialisation approach", a: "Technology-focused options", b: "Technology-focused options" },
-      { label: "Core technical areas", a: "Programming, databases, web, AI/data/cloud depending on track", b: "Programming, databases, emerging technology depending on track" },
-      { label: "Eligibility", a: "Depends on prior degree and mathematics/computer background", b: "Depends on prior degree and programme rules" },
-      { label: "Assessment", a: "Online assessment/examinations", b: "Online assessment/examinations" },
-      { label: "Projects", a: "Programme-dependent practical work", b: "Programme-dependent practical work" },
-      { label: "Career support", a: "Placement/career assistance", b: "Placement/career assistance" },
-      { label: "Best suited for", a: "Learners seeking a structured online technology degree", b: "Learners seeking a structured online technology degree" },
+      {
+        label: "Current fee position",
+        a: "Check current programme page for exact payable fee",
+        b: "Check current programme page for exact payable fee",
+      },
+      {
+        label: "Specialisation approach",
+        a: "Technology-focused options",
+        b: "Technology-focused options",
+      },
+      {
+        label: "Core technical areas",
+        a: "Programming, databases, web, AI/data/cloud depending on track",
+        b: "Programming, databases, emerging technology depending on track",
+      },
+      {
+        label: "Eligibility",
+        a: "Depends on prior degree and mathematics/computer background",
+        b: "Depends on prior degree and programme rules",
+      },
+      {
+        label: "Assessment",
+        a: "Online assessment/examinations",
+        b: "Online assessment/examinations",
+      },
+      {
+        label: "Projects",
+        a: "Programme-dependent practical work",
+        b: "Programme-dependent practical work",
+      },
+      {
+        label: "Career support",
+        a: "Placement/career assistance",
+        b: "Placement/career assistance",
+      },
+      {
+        label: "Best suited for",
+        a: "Learners seeking a structured online technology degree",
+        b: "Learners seeking a structured online technology degree",
+      },
     ],
     sections: [
       {
@@ -728,14 +1004,27 @@ export const mcaPacks: ComparisonPack[] = [
           head: ["Fee Factor", "Amity", "Manipal Online MCA"],
           rows: [
             ["Programme duration", "2 years", "2 years"],
-            ["Semester payment", "Check current official fee page", "Check current official fee page"],
-            ["Total programme fee", "Check current official fee page", "Check current official fee page"],
-            ["EMI availability", "Available/subject to current terms", "Available/subject to current terms"],
+            [
+              "Semester payment",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "Total programme fee",
+              "Check current official fee page",
+              "Check current official fee page",
+            ],
+            [
+              "EMI availability",
+              "Available/subject to current terms",
+              "Available/subject to current terms",
+            ],
             ["Scholarships/discounts", "Session/category dependent", "Session/category dependent"],
             ["Important check", "Final payable amount", "Final payable amount"],
           ],
         },
-        verdict: "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
+        verdict:
+          "Do not select an MCA solely because one university advertises a lower initial price. Compare the complete cost against curriculum depth, technical specialisation, learning resources and career support.",
       },
       {
         heading: "Eligibility Comparison",
@@ -745,19 +1034,29 @@ export const mcaPacks: ComparisonPack[] = [
           rows: [
             ["Bachelor's degree required", "Yes", "Yes"],
             ["Computer/IT background", "Programme-specific", "Programme-specific"],
-            ["Mathematics requirement", "Check current programme rules", "Check current programme rules"],
-            ["Non-computer graduate route", "May be possible with required background/bridge requirements", "Depends on programme"],
+            [
+              "Mathematics requirement",
+              "Check current programme rules",
+              "Check current programme rules",
+            ],
+            [
+              "Non-computer graduate route",
+              "May be possible with required background/bridge requirements",
+              "Depends on programme",
+            ],
             ["Minimum marks", "Programme-specific", "Programme-specific"],
             ["Age restriction", "Check current admission rules", "Check current admission rules"],
           ],
         },
-        verdict: "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
+        verdict:
+          "If you are from BCA/B.Sc. CS/IT, eligibility is usually more straightforward. If you are from B.Com., BBA, BA or another non-computer background, verify mathematics/computer-subject and bridge-course requirements before paying the admission fee.",
       },
       specialisationCareerAlignment,
       {
         heading: "Specialisation Comparison",
         body: "Amity: Compare the available technology tracks for depth, elective flexibility and project work.\n\nManipal Online MCA: Compare whether the programme offers the technology area you want and whether the curriculum includes enough advanced subjects to build a portfolio.",
-        verdict: "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
+        verdict:
+          "There is no universal winner. The winner is the university whose current specialisation matches your intended technology career.",
       },
       curriculumSyllabus,
       {
@@ -786,13 +1085,17 @@ export const mcaPacks: ComparisonPack[] = [
       },
       {
         heading: "Which Is Better for Working Professionals?",
-        body: "Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the \"best\" university is often the one that fits the person's schedule while providing a specialisation that can directly improve their current role.",
+        body: 'Working professionals should give additional weight to: weekend/live-class schedules; recorded lecture availability; flexible examination arrangements; LMS quality; academic support; EMI/payment flexibility; specialisations relevant to their existing career. For a working professional, the "best" university is often the one that fits the person\'s schedule while providing a specialisation that can directly improve their current role.',
       },
       onlineVsRegular,
       decisionScorecard,
     ],
-    aBestFor: ["Its current specialisation, curriculum, fee and learning model better match your career target."],
-    bBestFor: ["Its programme structure, technical track, eligibility and overall cost better fit your situation."],
+    aBestFor: [
+      "Its current specialisation, curriculum, fee and learning model better match your career target.",
+    ],
+    bBestFor: [
+      "Its programme structure, technical track, eligibility and overall cost better fit your situation.",
+    ],
     verdict:
       "There is no single winner for every MCA aspirant. Choose Amity if its current specialisation, curriculum, fee and learning model better match your career target. Choose Manipal Online MCA if its programme structure, technical track, eligibility and overall cost better fit your situation. The right online MCA should be selected as a career investment, not merely as a degree purchase. Compare the two universities across recognition, eligibility, complete fee, curriculum, specialisation, technical depth, projects, LMS, assessment and career support. Before enrolling, verify the latest official fee, admission deadline, programme eligibility, specialisation availability and regulatory status for the current session.",
     faqs: commonFaqs("Amity", "Manipal"),

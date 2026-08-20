@@ -109,7 +109,11 @@ export const parulOnlinePosts: Record<string, PostContent> = {
             caption: "PG diploma and diploma courses",
             head: ["Course", "Duration", "Total Fees"],
             rows: [
-              ["PG Diploma in Industrial Relations and Personnel Management", "1 Year", "INR 30,000"],
+              [
+                "PG Diploma in Industrial Relations and Personnel Management",
+                "1 Year",
+                "INR 30,000",
+              ],
               ["Diploma in Financial Services and Portfolio Management", "1 Year", "INR 25,000"],
               ["Diploma Programme in Business Analytics", "1 Year", "INR 25,000"],
               ["Diploma Programme in Blockchain Technology", "1 Year", "INR 25,000"],
@@ -205,7 +209,10 @@ export const parulOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "Parul University Online MBA: fees, specialisations and careers", href: "/blogs/parul-university-online-mba-admission-2026" },
+              {
+                label: "Parul University Online MBA: fees, specialisations and careers",
+                href: "/blogs/parul-university-online-mba-admission-2026",
+              },
               { label: "Compare Parul with other online universities", href: "/compare" },
             ],
           },
@@ -225,7 +232,8 @@ export const parulOnlinePosts: Record<string, PostContent> = {
       },
       {
         question: "What is the fee range for Parul University online programmes?",
-        answer: "Fees range from INR 25,000 for one-year diplomas to INR 1,50,000 for the two-year online MBA.",
+        answer:
+          "Fees range from INR 25,000 for one-year diplomas to INR 1,50,000 for the two-year online MBA.",
       },
       {
         question: "Does Parul University provide placement support for online learners?",
@@ -243,7 +251,10 @@ export const parulOnlinePosts: Record<string, PostContent> = {
       { label: "UGC DEB online education portal", href: "https://deb.ugc.ac.in/" },
     ],
     related: [
-      { label: "Parul University Online MBA admission guide", href: "/blogs/parul-university-online-mba-admission-2026" },
+      {
+        label: "Parul University Online MBA admission guide",
+        href: "/blogs/parul-university-online-mba-admission-2026",
+      },
       { label: "Explore Parul University Online", href: "/universities/parul-online" },
       { label: "Compare online universities", href: "/compare" },
     ],
@@ -428,15 +439,47 @@ export const parulOnlinePosts: Record<string, PostContent> = {
             caption: "Roles and indicative salary ranges",
             head: ["Job Role", "Typical Responsibilities", "Salary Range*"],
             rows: [
-              ["Human Resources", "Recruitment, employee relations and benefits management.", "INR 4 LPA – 12 LPA"],
-              ["Management Consulting", "Advising organisations on efficiency, strategy and operations.", "INR 7 LPA – 18 LPA"],
-              ["Marketing Manager", "Developing and implementing marketing strategies and promoting products/services.", "INR 6 LPA – 15 LPA"],
-              ["Operations Manager", "Managing operations, supply chains and logistics.", "INR 4 LPA – 11 LPA"],
-              ["Entrepreneurship", "Building and managing a business based on market opportunities.", "Depends on business revenue"],
+              [
+                "Human Resources",
+                "Recruitment, employee relations and benefits management.",
+                "INR 4 LPA – 12 LPA",
+              ],
+              [
+                "Management Consulting",
+                "Advising organisations on efficiency, strategy and operations.",
+                "INR 7 LPA – 18 LPA",
+              ],
+              [
+                "Marketing Manager",
+                "Developing and implementing marketing strategies and promoting products/services.",
+                "INR 6 LPA – 15 LPA",
+              ],
+              [
+                "Operations Manager",
+                "Managing operations, supply chains and logistics.",
+                "INR 4 LPA – 11 LPA",
+              ],
+              [
+                "Entrepreneurship",
+                "Building and managing a business based on market opportunities.",
+                "Depends on business revenue",
+              ],
               ["Finance", "Financial planning, analysis and reporting.", "INR 6 LPA – 18 LPA"],
-              ["Healthcare", "Managing healthcare services, policies and programmes.", "INR 5 LPA – 10 LPA"],
-              ["Finance Manager", "Planning, budgeting, investments and organisational financial management.", "INR 8 LPA – 15 LPA"],
-              ["Information Technology", "Managing IT systems, infrastructure, data systems and emerging technologies.", "INR 6 LPA – 18 LPA"],
+              [
+                "Healthcare",
+                "Managing healthcare services, policies and programmes.",
+                "INR 5 LPA – 10 LPA",
+              ],
+              [
+                "Finance Manager",
+                "Planning, budgeting, investments and organisational financial management.",
+                "INR 8 LPA – 15 LPA",
+              ],
+              [
+                "Information Technology",
+                "Managing IT systems, infrastructure, data systems and emerging technologies.",
+                "INR 6 LPA – 18 LPA",
+              ],
             ],
           },
           {
@@ -449,7 +492,13 @@ export const parulOnlinePosts: Record<string, PostContent> = {
           },
           {
             kind: "list",
-            items: ["Reliance Digital", "Amazon", "L&T", "Vodafone", "Tata Consultancy Services (TCS)"],
+            items: [
+              "Reliance Digital",
+              "Amazon",
+              "L&T",
+              "Vodafone",
+              "Tata Consultancy Services (TCS)",
+            ],
           },
         ],
       },
@@ -472,7 +521,10 @@ export const parulOnlinePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue your research",
             items: [
-              { label: "Parul University Online Learning: full course and fee guide", href: "/blogs/parul-university-online-learning-2026-guide" },
+              {
+                label: "Parul University Online Learning: full course and fee guide",
+                href: "/blogs/parul-university-online-learning-2026-guide",
+              },
               { label: "Online MBA specialisations explained", href: "/courses/online-mba" },
               { label: "Compare online universities", href: "/compare" },
             ],
@@ -515,7 +567,10 @@ export const parulOnlinePosts: Record<string, PostContent> = {
       { label: "UGC DEB online education portal", href: "https://deb.ugc.ac.in/" },
     ],
     related: [
-      { label: "Parul University Online Learning overview", href: "/blogs/parul-university-online-learning-2026-guide" },
+      {
+        label: "Parul University Online Learning overview",
+        href: "/blogs/parul-university-online-learning-2026-guide",
+      },
       { label: "Online MBA fees across universities", href: "/courses/online-mba" },
       { label: "Compare online universities", href: "/compare" },
     ],

@@ -229,8 +229,14 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "NSOU admission form: steps and documents", href: "/blogs/nsou-admission-form-2026-steps-documents" },
-              { label: "Best NSOU courses for jobs", href: "/blogs/nsou-courses-best-picks-for-jobs-career-scope" },
+              {
+                label: "NSOU admission form: steps and documents",
+                href: "/blogs/nsou-admission-form-2026-steps-documents",
+              },
+              {
+                label: "Best NSOU courses for jobs",
+                href: "/blogs/nsou-courses-best-picks-for-jobs-career-scope",
+              },
               { label: "Explore NSOU", href: "/universities/nsou" },
             ],
           },
@@ -252,11 +258,13 @@ export const nsouCoursePosts: Record<string, PostContent> = {
       },
       {
         question: "What documents are generally needed?",
-        answer: "Photograph, signature and academic documents are among the listed requirements; exact document lists should be checked against the current notification.",
+        answer:
+          "Photograph, signature and academic documents are among the listed requirements; exact document lists should be checked against the current notification.",
       },
       {
         question: "What specialisations does the NSOU MBA offer?",
-        answer: "Marketing Management, Human Resource Management, Finance Management and Operations Management.",
+        answer:
+          "Marketing Management, Human Resource Management, Finance Management and Operations Management.",
       },
     ],
     sources: [{ label: "NSOU official website", href: "https://www.wbnsou.ac.in" }],
@@ -299,7 +307,10 @@ export const nsouCoursePosts: Record<string, PostContent> = {
               ["Mode", "Open and Distance Learning"],
               ["Course level", "Postgraduate"],
               ["Duration", "2 years"],
-              ["Eligibility", "B.Com, BBA, BBM, or equivalent commerce/business qualification under 10+2+3 pattern"],
+              [
+                "Eligibility",
+                "B.Com, BBA, BBM, or equivalent commerce/business qualification under 10+2+3 pattern",
+              ],
               ["Programme fee", "INR 7,600"],
               ["First-year payable amount", "INR 4,550, excluding bank/payment gateway charges"],
               ["Admission mode", "Online application and verification"],
@@ -320,7 +331,10 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             head: ["Eligibility type", "Requirement"],
             rows: [
               ["Non-CBCS qualification", "B.Com, BBA, or BBM under 10+2+3 pattern"],
-              ["CBCS qualification", "Graduate under 10+2+3 with relevant Commerce, Business Administration or Business Management background"],
+              [
+                "CBCS qualification",
+                "Graduate under 10+2+3 with relevant Commerce, Business Administration or Business Management background",
+              ],
               ["Course level", "Postgraduate"],
               ["Admission mode", "Online application followed by verification"],
               ["Programme code", "PGCO"],
@@ -430,7 +444,10 @@ export const nsouCoursePosts: Record<string, PostContent> = {
               ["Re-edit required", "Correct details or upload proper documents"],
               ["Rejected", "Apply afresh if eligible and allowed"],
               ["Payment completed", "Submit DEB ID and anti-ragging reference"],
-              ["Final confirmation", "Download payment receipt and provisional enrolment certificate"],
+              [
+                "Final confirmation",
+                "Download payment receipt and provisional enrolment certificate",
+              ],
             ],
           },
           {
@@ -438,10 +455,16 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             caption: "M.Com course structure",
             head: ["Subject area", "Learning focus"],
             rows: [
-              ["Accounting", "Managerial accounting, international accounting, financial statement analysis"],
+              [
+                "Accounting",
+                "Managerial accounting, international accounting, financial statement analysis",
+              ],
               ["Finance", "Financial management, security analysis, portfolio management"],
               ["Taxation", "Corporate tax planning and management"],
-              ["Management", "Strategic management, marketing management, human resource management"],
+              [
+                "Management",
+                "Strategic management, marketing management, human resource management",
+              ],
               ["Audit", "Audit and assurance service"],
               ["Research", "Research methodology"],
               ["Business technology", "Computer applications in business"],
@@ -451,7 +474,10 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "NSOU admission form: steps and documents", href: "/blogs/nsou-admission-form-2026-steps-documents" },
+              {
+                label: "NSOU admission form: steps and documents",
+                href: "/blogs/nsou-admission-form-2026-steps-documents",
+              },
               { label: "Explore NSOU", href: "/universities/nsou" },
             ],
           },
@@ -477,7 +503,8 @@ export const nsouCoursePosts: Record<string, PostContent> = {
       },
       {
         question: "What is the eligibility for this M.Com?",
-        answer: "B.Com, BBA or BBM (or an equivalent commerce/business qualification) under the 10+2+3 pattern.",
+        answer:
+          "B.Com, BBA or BBM (or an equivalent commerce/business qualification) under the 10+2+3 pattern.",
       },
     ],
     sources: [{ label: "NSOU official website", href: "https://www.wbnsou.ac.in" }],
@@ -621,8 +648,14 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "NSOU MBA distance course, admission and fees", href: "/blogs/nsou-mba-distance-course-fees-admission-2026" },
-              { label: "NSOU M.Com admission process", href: "/blogs/nsou-mcom-distance-admission-process-2026" },
+              {
+                label: "NSOU MBA distance course, admission and fees",
+                href: "/blogs/nsou-mba-distance-course-fees-admission-2026",
+              },
+              {
+                label: "NSOU M.Com admission process",
+                href: "/blogs/nsou-mcom-distance-admission-process-2026",
+              },
               { label: "Explore NSOU", href: "/universities/nsou" },
             ],
           },
@@ -632,25 +665,32 @@ export const nsouCoursePosts: Record<string, PostContent> = {
     faqs: [
       {
         question: "Where should students apply?",
-        answer: "Through the official programme-wise admission portal — for example, the UG portal at ug.wbnsouadmissions.com.",
+        answer:
+          "Through the official programme-wise admission portal — for example, the UG portal at ug.wbnsouadmissions.com.",
       },
       {
         question: "What should PG applicants keep ready?",
-        answer: "Graduation marksheets and a degree or provisional certificate, among other documents.",
+        answer:
+          "Graduation marksheets and a degree or provisional certificate, among other documents.",
       },
       {
         question: "Are offline applications normally used?",
-        answer: "Online application is the normal process unless an official notification states otherwise.",
+        answer:
+          "Online application is the normal process unless an official notification states otherwise.",
       },
       {
         question: "What programmes can I apply for?",
-        answer: "BA, BSc, BCom, BLIS at UG level; MA, MSc, MCom, MLIS at PG level; plus diploma and certificate courses.",
+        answer:
+          "BA, BSc, BCom, BLIS at UG level; MA, MSc, MCom, MLIS at PG level; plus diploma and certificate courses.",
       },
     ],
     sources: [{ label: "NSOU official website", href: "https://www.wbnsou.ac.in" }],
     related: [
       { label: "NSOU university profile", href: "/universities/nsou" },
-      { label: "NSOU M.Com admission process", href: "/blogs/nsou-mcom-distance-admission-process-2026" },
+      {
+        label: "NSOU M.Com admission process",
+        href: "/blogs/nsou-mcom-distance-admission-process-2026",
+      },
       { label: "Admission guidance hub", href: "/admissions" },
     ],
     cta: "Filling the NSOU form for the first time? Send us a screenshot of any step you're stuck on and we'll help you fix it.",
@@ -693,7 +733,10 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             caption: "Education-oriented programmes",
             head: ["NSOU pick", "Potential career direction"],
             rows: [
-              ["UG Honours in Education (HED)", "Teaching support, education support, further studies"],
+              [
+                "UG Honours in Education (HED)",
+                "Teaching support, education support, further studies",
+              ],
               ["M.A. in Education (PGED)", "Education support, academic pathways"],
               ["B.Ed. Special Education", "Special education support where eligible"],
               ["M.Ed. Special Education", "Advanced special education-related pathways"],
@@ -785,7 +828,10 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             head: ["Programme", "Potential direction"],
             rows: [
               ["Business Administration", "Office/business support"],
-              ["Entrepreneurship Development & Small Business Management", "Small-business setup support"],
+              [
+                "Entrepreneurship Development & Small Business Management",
+                "Small-business setup support",
+              ],
               ["Modern Office Management", "Office administration and operations"],
               ["Hospital Front Office Management", "Front-office and service-sector roles"],
             ],
@@ -831,8 +877,14 @@ export const nsouCoursePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "NSOU MBA distance course, admission and fees", href: "/blogs/nsou-mba-distance-course-fees-admission-2026" },
-              { label: "NSOU admission form: steps and documents", href: "/blogs/nsou-admission-form-2026-steps-documents" },
+              {
+                label: "NSOU MBA distance course, admission and fees",
+                href: "/blogs/nsou-mba-distance-course-fees-admission-2026",
+              },
+              {
+                label: "NSOU admission form: steps and documents",
+                href: "/blogs/nsou-admission-form-2026-steps-documents",
+              },
               { label: "Explore NSOU", href: "/universities/nsou" },
             ],
           },
@@ -842,19 +894,23 @@ export const nsouCoursePosts: Record<string, PostContent> = {
     faqs: [
       {
         question: "Which NSOU options are useful for IT skills?",
-        answer: "Digital marketing, web design, graphic design, video editing, ERP/application training, IT applications and cyber laws.",
+        answer:
+          "Digital marketing, web design, graphic design, video editing, ERP/application training, IT applications and cyber laws.",
       },
       {
         question: "Which options support education careers?",
-        answer: "Education UG/PG programmes and special education programmes, including B.Ed./M.Ed. Special Education and the Diploma in Inclusive Education.",
+        answer:
+          "Education UG/PG programmes and special education programmes, including B.Ed./M.Ed. Special Education and the Diploma in Inclusive Education.",
       },
       {
         question: "Is a degree alone enough for jobs?",
-        answer: "Pairing academic study with a practical, job-ready skill is recommended wherever useful, rather than relying on the degree alone.",
+        answer:
+          "Pairing academic study with a practical, job-ready skill is recommended wherever useful, rather than relying on the degree alone.",
       },
       {
         question: "Are there options for healthcare and technical service careers?",
-        answer: "Yes — Health Care Management, Fire Safety and Security Management, AC & Refrigeration Technician and Electrical Technician courses.",
+        answer:
+          "Yes — Health Care Management, Fire Safety and Security Management, AC & Refrigeration Technician and Electrical Technician courses.",
       },
     ],
     sources: [{ label: "NSOU official website", href: "https://www.wbnsou.ac.in" }],

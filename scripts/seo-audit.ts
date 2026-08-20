@@ -16,8 +16,10 @@ const warn: string[] = [];
 
 /* ------------------------------ 1. Domain ------------------------------- */
 
-if (!/^https:\/\/[a-z0-9.-]+$/i.test(SITE_URL)) critical.push(`SITE_URL is not a bare https origin: ${SITE_URL}`);
-if (/localhost|lovable\.app|127\.0\.0\.1/i.test(SITE_URL)) critical.push(`SITE_URL points at a non-production host: ${SITE_URL}`);
+if (!/^https:\/\/[a-z0-9.-]+$/i.test(SITE_URL))
+  critical.push(`SITE_URL is not a bare https origin: ${SITE_URL}`);
+if (/localhost|lovable\.app|127\.0\.0\.1/i.test(SITE_URL))
+  critical.push(`SITE_URL points at a non-production host: ${SITE_URL}`);
 
 /* --------------------------- 2. Route inventory -------------------------- */
 
@@ -81,7 +83,8 @@ for (const dir of scanDirs) {
 const entries = sitemapEntries();
 const paths = entries.map((e) => e.path);
 const dupes = paths.filter((p, i) => paths.indexOf(p) !== i);
-if (dupes.length) critical.push(`sitemap contains ${dupes.length} duplicate URLs (e.g. ${dupes[0]})`);
+if (dupes.length)
+  critical.push(`sitemap contains ${dupes.length} duplicate URLs (e.g. ${dupes[0]})`);
 paths.forEach((p) => {
   if (!p.startsWith("/")) critical.push(`sitemap entry is not a root-relative path: ${p}`);
   if (/[?#]/.test(p)) critical.push(`sitemap entry contains a query/fragment: ${p}`);
@@ -91,10 +94,12 @@ if (paths.length === 0) critical.push("sitemap is empty");
 /* ------------------------------- 5. Robots ------------------------------- */
 
 const robots = readFileSync(join(process.cwd(), "public/robots.txt"), "utf8");
-if (!robots.includes(`Sitemap: ${SITE_URL}/sitemap.xml`)) critical.push("robots.txt missing absolute Sitemap directive");
+if (!robots.includes(`Sitemap: ${SITE_URL}/sitemap.xml`))
+  critical.push("robots.txt missing absolute Sitemap directive");
 if (/^\s*Disallow:\s*\/\s*$/m.test(robots)) critical.push("robots.txt blocks the whole site");
 ["\\.css", "\\.js", "/assets"].forEach((r) => {
-  if (new RegExp(`Disallow:.*${r}`).test(robots)) critical.push(`robots.txt blocks a render-critical resource (${r})`);
+  if (new RegExp(`Disallow:.*${r}`).test(robots))
+    critical.push(`robots.txt blocks a render-critical resource (${r})`);
 });
 
 /* -------------------------------- 6. Live -------------------------------- */
@@ -102,7 +107,9 @@ if (/^\s*Disallow:\s*\/\s*$/m.test(robots)) critical.push("robots.txt blocks the
 const live = process.argv.includes("--live");
 if (live) {
   const base = process.env["SEO_AUDIT_BASE"] ?? "http://localhost:8080";
-  const sample = [...new Set(["/", ...paths.filter((_, i) => i % Math.ceil(paths.length / 40) === 0)])].slice(0, 40);
+  const sample = [
+    ...new Set(["/", ...paths.filter((_, i) => i % Math.ceil(paths.length / 40) === 0)]),
+  ].slice(0, 40);
   const titles = new Map<string, string>();
   for (const p of sample) {
     const res = await fetch(`${base}${p}`);
@@ -113,22 +120,28 @@ if (live) {
     const html = await res.text();
     const title = html.match(/<title[^>]*>([^<]*)<\/title>/i)?.[1]?.trim() ?? "";
     const desc = html.match(/<meta[^>]+name="description"[^>]+content="([^"]*)"/i)?.[1] ?? "";
-    const canon = [...html.matchAll(/<link[^>]+rel="canonical"[^>]+href="([^"]*)"/gi)].map((m) => m[1]);
+    const canon = [...html.matchAll(/<link[^>]+rel="canonical"[^>]+href="([^"]*)"/gi)].map(
+      (m) => m[1],
+    );
     const h1 = [...html.matchAll(/<h1[\s>]/gi)].length;
     const noindex = /name="robots"[^>]+content="[^"]*noindex/i.test(html);
 
     if (!title) critical.push(`live: ${p} missing <title>`);
-    if (/undefined|null|unavailable|not found/i.test(title)) critical.push(`live: ${p} has a placeholder title "${title}"`);
+    if (/undefined|null|unavailable|not found/i.test(title))
+      critical.push(`live: ${p} has a placeholder title "${title}"`);
     if (!desc) critical.push(`live: ${p} missing meta description`);
     if (canon.length !== 1) critical.push(`live: ${p} has ${canon.length} canonical tags`);
-    else if (!canon[0]!.startsWith(SITE_URL)) critical.push(`live: ${p} canonical is not on ${SITE_URL}: ${canon[0]}`);
+    else if (!canon[0]!.startsWith(SITE_URL))
+      critical.push(`live: ${p} canonical is not on ${SITE_URL}: ${canon[0]}`);
     if (h1 === 0) critical.push(`live: ${p} has no H1`);
     if (h1 > 1) warn.push(`live: ${p} has ${h1} H1 elements`);
     if (noindex) critical.push(`live: ${p} is in the sitemap but noindex`);
     if (!/property="og:image"/.test(html)) warn.push(`live: ${p} missing og:image`);
     if (!/name="twitter:image"/.test(html)) warn.push(`live: ${p} missing twitter:image`);
 
-    for (const m of html.matchAll(/<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi)) {
+    for (const m of html.matchAll(
+      /<script[^>]+application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi,
+    )) {
       try {
         JSON.parse(m[1]!);
       } catch {

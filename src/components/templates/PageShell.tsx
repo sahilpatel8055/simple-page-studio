@@ -26,13 +26,17 @@ export function PageShell({
           <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
             <div className="max-w-3xl">
               {eyebrow && (
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand">{eyebrow}</p>
+                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.18em] text-brand">
+                  {eyebrow}
+                </p>
               )}
               <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
                 <AccentHeadline text={title} />
               </h1>
               {description && (
-                <p className="mt-4 text-base leading-relaxed text-muted-foreground">{description}</p>
+                <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                  {description}
+                </p>
               )}
             </div>
             {aside}

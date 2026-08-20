@@ -54,7 +54,12 @@ export const shooliniCourseArticles: Article[] = [
       "Semester fees, payment options, Pay-After-Placement terms and scholarships across every Shoolini University Online programme.",
     category: "Fees & Scholarships",
     categorySlug: "fees-scholarships",
-    tags: ["shoolini-university-online", "shoolini-fees-2026", "pay-after-placement", "online-degree-fees"],
+    tags: [
+      "shoolini-university-online",
+      "shoolini-fees-2026",
+      "pay-after-placement",
+      "online-degree-fees",
+    ],
     author: "Kartik Ahuja",
     authorSlug: "kartik-ahuja",
     date: "2026-08-18",
@@ -130,8 +135,14 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
             caption: "Eligibility checklist",
             head: ["Eligibility point", "Requirement / guidance"],
             rows: [
-              ["Academic qualification", "Bachelor's or master's degree from a recognised/accredited university"],
-              ["Discipline", "Graduation can be from different academic backgrounds, subject to university rules"],
+              [
+                "Academic qualification",
+                "Bachelor's or master's degree from a recognised/accredited university",
+              ],
+              [
+                "Discipline",
+                "Graduation can be from different academic backgrounds, subject to university rules",
+              ],
               ["Fresh graduates", "Can be considered"],
               ["Working professionals", "Can be considered"],
               ["Final check", "Verify the latest admission notice before applying"],
@@ -274,8 +285,14 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Continue researching",
             items: [
-              { label: "Shoolini Online fees, full breakdown", href: "/blogs/shoolini-online-fees-2026-complete-breakdown" },
-              { label: "Explore Shoolini University Online", href: "/universities/shoolini-online" },
+              {
+                label: "Shoolini Online fees, full breakdown",
+                href: "/blogs/shoolini-online-fees-2026-complete-breakdown",
+              },
+              {
+                label: "Explore Shoolini University Online",
+                href: "/universities/shoolini-online",
+              },
               { label: "Online MBA fees across universities", href: "/courses/online-mba" },
             ],
           },
@@ -294,7 +311,8 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
       },
       {
         question: "Is it suitable for working professionals?",
-        answer: "Yes; the programme is presented as a flexible online format designed to accommodate work and other commitments.",
+        answer:
+          "Yes; the programme is presented as a flexible online format designed to accommodate work and other commitments.",
       },
       {
         question: "What specialisations are offered?",
@@ -308,10 +326,13 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
       },
       {
         question: "What documents are required for admission?",
-        answer: "Graduation marksheets and degree certificate, government ID proof, photograph, signature, and category certificate if applicable.",
+        answer:
+          "Graduation marksheets and degree certificate, government ID proof, photograph, signature, and category certificate if applicable.",
       },
     ],
-    sources: [{ label: "Shoolini University official website", href: "https://shooliniuniversity.com/" }],
+    sources: [
+      { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
+    ],
     related: [
       { label: "Shoolini University Online", href: "/universities/shoolini-online" },
       { label: "Online MBA course guide", href: "/courses/online-mba" },
@@ -368,12 +389,36 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
             caption: "Semester-wise core areas",
             head: ["Semester", "Core academic areas", "Learning focus"],
             rows: [
-              ["Semester 1", "Functional English 1; Problem Solving with Programming; Mathematics; Creativity Decoded; Open Electives; Fundamentals of Journalism; Principles of Management", "Programming foundation, quantitative thinking, communication and management"],
-              ["Semester 2", "Entrepreneurship; Functional English 2; Data Structures with C; Web Technology; Open Electives; Presentations", "Data structures, web basics, communication and entrepreneurship"],
-              ["Semester 3", "Acing Interviews with AI; Operating System; OOP with C++; Software Engineering; Open Electives; Critical Thinking; New Media", "Systems, object-oriented programming, software development and employability"],
-              ["Semester 4", "DBMS; Python Programming; Digital Marketing; Organisational Behaviour; Open Electives; Advertising; Effective Negotiations", "Databases, Python, business understanding and communication"],
-              ["Semester 5", "Java Programming; Subject Area Elective; Cloud Computing; Minor Project; Open Electives; Emotional Intelligence; Public Relations", "Java, cloud concepts, project experience and professional skills"],
-              ["Semester 6", "Major Project; Project Management; Subject Area Electives; Open Elective; Corporate Communication; Stock Market & Investment", "Capstone/project execution, management and professional readiness"],
+              [
+                "Semester 1",
+                "Functional English 1; Problem Solving with Programming; Mathematics; Creativity Decoded; Open Electives; Fundamentals of Journalism; Principles of Management",
+                "Programming foundation, quantitative thinking, communication and management",
+              ],
+              [
+                "Semester 2",
+                "Entrepreneurship; Functional English 2; Data Structures with C; Web Technology; Open Electives; Presentations",
+                "Data structures, web basics, communication and entrepreneurship",
+              ],
+              [
+                "Semester 3",
+                "Acing Interviews with AI; Operating System; OOP with C++; Software Engineering; Open Electives; Critical Thinking; New Media",
+                "Systems, object-oriented programming, software development and employability",
+              ],
+              [
+                "Semester 4",
+                "DBMS; Python Programming; Digital Marketing; Organisational Behaviour; Open Electives; Advertising; Effective Negotiations",
+                "Databases, Python, business understanding and communication",
+              ],
+              [
+                "Semester 5",
+                "Java Programming; Subject Area Elective; Cloud Computing; Minor Project; Open Electives; Emotional Intelligence; Public Relations",
+                "Java, cloud concepts, project experience and professional skills",
+              ],
+              [
+                "Semester 6",
+                "Major Project; Project Management; Subject Area Electives; Open Elective; Corporate Communication; Stock Market & Investment",
+                "Capstone/project execution, management and professional readiness",
+              ],
             ],
           },
           {
@@ -412,8 +457,16 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
               ["Fee per semester", "INR 14,200", "INR 15,000"],
               ["Payable before placement", "INR 85,200", "INR 15,000 × 6"],
               ["Payable after placement", "INR 21,300", "Not applicable"],
-              ["Merit scholarship", "10% for >90% in qualifying criteria", "10% for >90% in qualifying criteria"],
-              ["Other options", "10% one-time payment discount; 5% annual payment discount; EMI/loan options", "10% one-time payment discount; 5% annual payment discount; EMI/loan options"],
+              [
+                "Merit scholarship",
+                "10% for >90% in qualifying criteria",
+                "10% for >90% in qualifying criteria",
+              ],
+              [
+                "Other options",
+                "10% one-time payment discount; 5% annual payment discount; EMI/loan options",
+                "10% one-time payment discount; 5% annual payment discount; EMI/loan options",
+              ],
             ],
           },
           {
@@ -428,7 +481,13 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
           {
             kind: "table",
             caption: "International Online BCA fee",
-            head: ["Region", "Standard fee", "Scholarship", "Fee after scholarship", "Per semester"],
+            head: [
+              "Region",
+              "Standard fee",
+              "Scholarship",
+              "Fee after scholarship",
+              "Per semester",
+            ],
             rows: [
               ["Africa", "$2,500", "$1,000", "$1,500", "$250"],
               ["Other listed regions", "$2,000", "$500", "$1,500", "$250"],
@@ -478,14 +537,20 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
               ["Database & systems", "Database Support Executive, System Support Associate"],
               ["IT support", "Technical Support Executive, IT Support Associate"],
               ["Analysis & operations", "Junior System Analyst, Operations/Technology Associate"],
-              ["Further education", "MCA, specialised certifications or other eligible postgraduate programmes"],
+              [
+                "Further education",
+                "MCA, specialised certifications or other eligible postgraduate programmes",
+              ],
             ],
           },
           {
             kind: "links",
             title: "Related reading",
             items: [
-              { label: "Shoolini Online fees, full breakdown", href: "/blogs/shoolini-online-fees-2026-complete-breakdown" },
+              {
+                label: "Shoolini Online fees, full breakdown",
+                href: "/blogs/shoolini-online-fees-2026-complete-breakdown",
+              },
               { label: "Online BCA course guide", href: "/courses/online-bca" },
             ],
           },
@@ -495,7 +560,8 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
     faqs: [
       {
         question: "What is the eligibility for Shoolini Online BCA?",
-        answer: "10+2 or equivalent in any stream from a recognised board, subject to the applicable admission rules for the academic session.",
+        answer:
+          "10+2 or equivalent in any stream from a recognised board, subject to the applicable admission rules for the academic session.",
       },
       {
         question: "What is the fee for Shoolini Online BCA?",
@@ -504,22 +570,30 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
       },
       {
         question: "Is there an international fee for the BCA?",
-        answer: "Yes — USD 2,000-2,500 standard depending on region, reducing to USD 1,500 after scholarship, billed at USD 250 per semester, plus a USD 50 application fee.",
+        answer:
+          "Yes — USD 2,000-2,500 standard depending on region, reducing to USD 1,500 after scholarship, billed at USD 250 per semester, plus a USD 50 application fee.",
       },
       {
         question: "What will I learn in the BCA?",
-        answer: "Programming fundamentals, data structures, OOP, web technologies, DBMS, operating systems, Python, Java, software engineering, cloud computing and project work.",
+        answer:
+          "Programming fundamentals, data structures, OOP, web technologies, DBMS, operating systems, Python, Java, software engineering, cloud computing and project work.",
       },
       {
         question: "What jobs can I get after this BCA?",
-        answer: "Entry-level roles such as Junior Software Developer, Web Developer, Database Support Executive and Technical Support Executive, or progression to an MCA.",
+        answer:
+          "Entry-level roles such as Junior Software Developer, Web Developer, Database Support Executive and Technical Support Executive, or progression to an MCA.",
       },
     ],
-    sources: [{ label: "Shoolini University official website", href: "https://shooliniuniversity.com/" }],
+    sources: [
+      { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
+    ],
     related: [
       { label: "Shoolini University Online", href: "/universities/shoolini-online" },
       { label: "Online BCA course guide", href: "/courses/online-bca" },
-      { label: "Shoolini Online fees breakdown", href: "/blogs/shoolini-online-fees-2026-complete-breakdown" },
+      {
+        label: "Shoolini Online fees breakdown",
+        href: "/blogs/shoolini-online-fees-2026-complete-breakdown",
+      },
     ],
     cta: "Comparing BCA options across universities? Send us your budget and we will shortlist the ones that fit.",
   },
@@ -561,7 +635,13 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
           {
             kind: "table",
             caption: "International Online B.Com fee",
-            head: ["Region", "Standard fee", "Scholarship", "Fee after scholarship", "Per semester"],
+            head: [
+              "Region",
+              "Standard fee",
+              "Scholarship",
+              "Fee after scholarship",
+              "Per semester",
+            ],
             rows: [
               ["Africa", "$2,500", "$1,000", "$1,500", "$250"],
               ["Other listed regions", "$2,000", "$500", "$1,500", "$250"],
@@ -585,7 +665,10 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
               ["Qualification", "10+2 / equivalent"],
               ["Stream", "Any discipline"],
               ["Indian applicants", "Minimum 40% in the last qualifying examination"],
-              ["International applicants", "Minimum 60% in the qualifying examination, as published"],
+              [
+                "International applicants",
+                "Minimum 60% in the qualifying examination, as published",
+              ],
               ["Duration", "3 years / 6 semesters"],
               ["Mode", "Fully online"],
             ],
@@ -604,12 +687,36 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
             caption: "Semester-wise subjects",
             head: ["Semester", "Major subjects", "Learning focus"],
             rows: [
-              ["Semester 1", "Functional English 1; Principles of Management; Financial Accounting; Creativity Decoded; Open Electives", "Commerce fundamentals, accounting, management and communication"],
-              ["Semester 2", "Entrepreneurship; Functional English 2; Computerized Accounting Systems; Human Resource Management; Open Electives", "Accounting technology, HR, entrepreneurship and professional communication"],
-              ["Semester 3", "Acing Interviews through AI; Marketing Management; Marketing Research; Principles of Economics; Open Electives", "Marketing, economics, research and employability"],
-              ["Semester 4", "Business Statistics; Business Law; Financial Management; Organisational Behaviour; Open Elective", "Quantitative business analysis, finance, law and people management"],
-              ["Semester 5", "Taxation; Sales Management; Cost Accounting; Subject Area Elective; Open Electives", "Tax, sales, cost control and applied commerce"],
-              ["Semester 6", "Subject Area Electives; Research Methodology; Open Electives; Effective Negotiations & Conflict Management", "Research, advanced electives, negotiation and final academic application"],
+              [
+                "Semester 1",
+                "Functional English 1; Principles of Management; Financial Accounting; Creativity Decoded; Open Electives",
+                "Commerce fundamentals, accounting, management and communication",
+              ],
+              [
+                "Semester 2",
+                "Entrepreneurship; Functional English 2; Computerized Accounting Systems; Human Resource Management; Open Electives",
+                "Accounting technology, HR, entrepreneurship and professional communication",
+              ],
+              [
+                "Semester 3",
+                "Acing Interviews through AI; Marketing Management; Marketing Research; Principles of Economics; Open Electives",
+                "Marketing, economics, research and employability",
+              ],
+              [
+                "Semester 4",
+                "Business Statistics; Business Law; Financial Management; Organisational Behaviour; Open Elective",
+                "Quantitative business analysis, finance, law and people management",
+              ],
+              [
+                "Semester 5",
+                "Taxation; Sales Management; Cost Accounting; Subject Area Elective; Open Electives",
+                "Tax, sales, cost control and applied commerce",
+              ],
+              [
+                "Semester 6",
+                "Subject Area Electives; Research Methodology; Open Electives; Effective Negotiations & Conflict Management",
+                "Research, advanced electives, negotiation and final academic application",
+              ],
             ],
           },
           {
@@ -671,8 +778,14 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
               ["Taxation", "Tax Assistant, GST/Tax Support Executive"],
               ["Business operations", "Business Operations Associate, Process Executive"],
               ["Sales & marketing", "Sales Executive, Marketing Associate"],
-              ["Entrepreneurship", "Small business/freelance business services, startup operations"],
-              ["Higher studies", "MBA, M.Com or other eligible postgraduate/professional programmes"],
+              [
+                "Entrepreneurship",
+                "Small business/freelance business services, startup operations",
+              ],
+              [
+                "Higher studies",
+                "MBA, M.Com or other eligible postgraduate/professional programmes",
+              ],
             ],
           },
           {
@@ -683,7 +796,10 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Keep exploring",
             items: [
-              { label: "Shoolini Online fees, full breakdown", href: "/blogs/shoolini-online-fees-2026-complete-breakdown" },
+              {
+                label: "Shoolini Online fees, full breakdown",
+                href: "/blogs/shoolini-online-fees-2026-complete-breakdown",
+              },
               { label: "Online B.Com course guide", href: "/courses/online-bcom" },
             ],
           },
@@ -693,15 +809,18 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
     faqs: [
       {
         question: "What is the eligibility for Shoolini Online B.Com (Honours)?",
-        answer: "10+2 in any discipline with a minimum of 40% marks for Indian applicants, or 60% for international applicants, in the qualifying examination.",
+        answer:
+          "10+2 in any discipline with a minimum of 40% marks for Indian applicants, or 60% for international applicants, in the qualifying examination.",
       },
       {
         question: "What is the fee after scholarship?",
-        answer: "INR 90,000 after the standard INR 30,000 scholarship on a total fee of INR 1,20,000, paid as INR 15,000 per semester across 6 semesters.",
+        answer:
+          "INR 90,000 after the standard INR 30,000 scholarship on a total fee of INR 1,20,000, paid as INR 15,000 per semester across 6 semesters.",
       },
       {
         question: "Is there a merit scholarship?",
-        answer: "Yes, 10% for students scoring above 90% in Class 12, as published by the university.",
+        answer:
+          "Yes, 10% for students scoring above 90% in Class 12, as published by the university.",
       },
       {
         question: "What subjects will I study?",
@@ -710,14 +829,20 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
       },
       {
         question: "What can I do after this B.Com?",
-        answer: "Entry-level roles in accounting, finance, banking, taxation, business operations and sales, or progression to an MBA or M.Com.",
+        answer:
+          "Entry-level roles in accounting, finance, banking, taxation, business operations and sales, or progression to an MBA or M.Com.",
       },
     ],
-    sources: [{ label: "Shoolini University official website", href: "https://shooliniuniversity.com/" }],
+    sources: [
+      { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
+    ],
     related: [
       { label: "Shoolini University Online", href: "/universities/shoolini-online" },
       { label: "Online B.Com course guide", href: "/courses/online-bcom" },
-      { label: "Shoolini Online fees breakdown", href: "/blogs/shoolini-online-fees-2026-complete-breakdown" },
+      {
+        label: "Shoolini Online fees breakdown",
+        href: "/blogs/shoolini-online-fees-2026-complete-breakdown",
+      },
     ],
     cta: "Want the exact B.Com fee for your admission cycle confirmed before you pay? Reach out and we will verify it for you.",
   },
@@ -856,9 +981,18 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
             kind: "links",
             title: "Go deeper on a specific course",
             items: [
-              { label: "Online MBA: specialisations, eligibility, careers", href: "/blogs/shoolini-online-mba-2026-fees-eligibility-careers" },
-              { label: "Online BCA: curriculum and fees", href: "/blogs/shoolini-online-bca-2026-fees-eligibility-careers" },
-              { label: "Online B.Com (Honours) guide", href: "/blogs/shoolini-online-bcom-honours-2026-guide" },
+              {
+                label: "Online MBA: specialisations, eligibility, careers",
+                href: "/blogs/shoolini-online-mba-2026-fees-eligibility-careers",
+              },
+              {
+                label: "Online BCA: curriculum and fees",
+                href: "/blogs/shoolini-online-bca-2026-fees-eligibility-careers",
+              },
+              {
+                label: "Online B.Com (Honours) guide",
+                href: "/blogs/shoolini-online-bcom-honours-2026-guide",
+              },
             ],
           },
         ],
@@ -907,18 +1041,23 @@ export const shooliniCoursePosts: Record<string, PostContent> = {
       },
       {
         question: "Does Shoolini University Online offer a Pay-After-Placement option?",
-        answer: "Yes, for eligible students, with 70% of tuition paid upfront and 30% paid after securing employment. Exact terms should be confirmed at admission.",
+        answer:
+          "Yes, for eligible students, with 70% of tuition paid upfront and 30% paid after securing employment. Exact terms should be confirmed at admission.",
       },
       {
         question: "Is there a discount for paying the full course fee at once?",
-        answer: "Yes, a 10% one-time payment discount is offered, plus an additional 5% discount for annual payment.",
+        answer:
+          "Yes, a 10% one-time payment discount is offered, plus an additional 5% discount for annual payment.",
       },
       {
         question: "Does the fee structure remain the same for every course?",
-        answer: "No. Semester fees vary by programme, so check the specific course fee before applying.",
+        answer:
+          "No. Semester fees vary by programme, so check the specific course fee before applying.",
       },
     ],
-    sources: [{ label: "Shoolini University official website", href: "https://shooliniuniversity.com/" }],
+    sources: [
+      { label: "Shoolini University official website", href: "https://shooliniuniversity.com/" },
+    ],
     related: [
       { label: "Shoolini University Online", href: "/universities/shoolini-online" },
       { label: "Online MBA course guide", href: "/courses/online-mba" },

@@ -1,7 +1,12 @@
 import { useState } from "react";
 import { ArrowRight, BadgeCheck } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
-import { courseFamilyList, getCourseFamily, type CourseFamily, type FamilyOffer } from "@/lib/courseFamily";
+import {
+  courseFamilyList,
+  getCourseFamily,
+  type CourseFamily,
+  type FamilyOffer,
+} from "@/lib/courseFamily";
 import { getUniversity } from "@/data";
 
 /** Compact rupee display used inside blog cards: ₹1.75L / ₹85k. */
@@ -16,7 +21,12 @@ function OfferCard({ offer, family }: { offer: FamilyOffer; family: CourseFamily
     <div className="flex flex-col rounded-2xl border border-border bg-card p-4 shadow-[0_10px_30px_-26px_oklch(0_0_0/0.6)]">
       <div className="flex items-start gap-3">
         {offer.logo && (
-          <img src={offer.logo} alt="" loading="lazy" className="h-10 w-10 shrink-0 rounded-lg object-contain" />
+          <img
+            src={offer.logo}
+            alt=""
+            loading="lazy"
+            className="h-10 w-10 shrink-0 rounded-lg object-contain"
+          />
         )}
         <div className="min-w-0">
           <AppLink
@@ -25,7 +35,9 @@ function OfferCard({ offer, family }: { offer: FamilyOffer; family: CourseFamily
           >
             {offer.universityName}
           </AppLink>
-          {offer.location && <p className="mt-0.5 text-[0.72rem] text-muted-foreground">{offer.location}</p>}
+          {offer.location && (
+            <p className="mt-0.5 text-[0.72rem] text-muted-foreground">{offer.location}</p>
+          )}
         </div>
       </div>
       <dl className="mt-3 grid grid-cols-2 gap-2 text-[0.75rem]">
@@ -74,8 +86,8 @@ export function BlogUniversities({ familySlug }: { familySlug: string }) {
     <section id="universities" className="scroll-mt-36 content-block">
       <h2 className="border-b border-border pb-3 text-2xl font-bold">Universities</h2>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-        {offers.length} universities researched on Degreekhojo offer an {family.name}. Fees below are the
-        researched total programme fee — open a card for the full verified record.
+        {offers.length} universities researched on Degreekhojo offer an {family.name}. Fees below
+        are the researched total programme fee — open a card for the full verified record.
       </p>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {shown.map((o) => (
@@ -117,7 +129,10 @@ export function BlogEntityLinks({
 }) {
   const family = familySlug ? courseFamilyList().find((f) => f.slug === familySlug) : undefined;
   const uni = universitySlug ? getUniversity(universitySlug) : undefined;
-  const offer = family && universitySlug ? family.offers.find((o) => o.universitySlug === universitySlug) : undefined;
+  const offer =
+    family && universitySlug
+      ? family.offers.find((o) => o.universitySlug === universitySlug)
+      : undefined;
   const links: { label: string; href: string; note?: string }[] = [];
   if (uni)
     links.push({
@@ -157,7 +172,11 @@ export function BlogEntityLinks({
             <AppLink to={l.href} className="text-sm font-semibold text-brand hover:underline">
               {l.label} →
             </AppLink>
-            {l.note && <p className="mt-0.5 text-[0.78rem] leading-relaxed text-muted-foreground">{l.note}</p>}
+            {l.note && (
+              <p className="mt-0.5 text-[0.78rem] leading-relaxed text-muted-foreground">
+                {l.note}
+              </p>
+            )}
           </li>
         ))}
       </ul>
@@ -192,4 +211,3 @@ export function BlogEntityLinks({
     </div>
   );
 }
-

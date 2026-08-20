@@ -1,6 +1,12 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { DetailLayout } from "@/components/templates/DetailLayout";
-import { KeyTakeaways, MobileToc, PostBody, PostByline, PostSources } from "@/components/post/PostArticle";
+import {
+  KeyTakeaways,
+  MobileToc,
+  PostBody,
+  PostByline,
+  PostSources,
+} from "@/components/post/PostArticle";
 import { ArticleCard } from "@/components/cards";
 import { RelatedContent } from "@/components/templates/DetailLayout";
 import { articles, news } from "@/lib/content";
@@ -10,15 +16,7 @@ import { familyDefs } from "@/lib/courseFamily";
 import { universityByBlogSlug } from "@/data/university-blogs";
 import { BlogEntityLinks } from "@/components/post/BlogUniversities";
 
-
-import {
-  articleSchema,
-  breadcrumbSchema,
-  canonical,
-  faqSchema,
-  jsonLd,
-  pageMeta,
-} from "@/lib/seo";
+import { articleSchema, breadcrumbSchema, canonical, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
 
 const all = [...articles, ...news];
 
@@ -92,7 +90,9 @@ function Page() {
     "FAQs",
   ];
 
-  const related = all.filter((a) => a.slug !== item.slug && a.categorySlug === item.categorySlug).slice(0, 2);
+  const related = all
+    .filter((a) => a.slug !== item.slug && a.categorySlug === item.categorySlug)
+    .slice(0, 2);
 
   const banner = blogBanner(post.banner);
 

@@ -6,16 +6,7 @@
  * published no-cost EMI unless the university explicitly discounts it.
  */
 
-export type FeeCourseKey =
-  | "mba"
-  | "mca"
-  | "bba"
-  | "bca"
-  | "bcom"
-  | "mcom"
-  | "ba"
-  | "ma"
-  | "msc";
+export type FeeCourseKey = "mba" | "mca" | "bba" | "bca" | "bcom" | "mcom" | "ba" | "ma" | "msc";
 
 const UG_KEYS: FeeCourseKey[] = ["bba", "bca", "bcom", "ba"];
 

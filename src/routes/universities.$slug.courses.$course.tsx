@@ -33,7 +33,12 @@ import {
 } from "@/components/university/CourseDecisionSections";
 import { NextStep } from "@/components/common/NextStep";
 import { PubCourseCurriculum, hasPubCurriculum } from "@/components/pub/PubBlocks";
-import { courseKeyForProgramme, getUniversityCourse, masterResearchDate, siteSlugForMasterSlug } from "@/lib/courseMaster";
+import {
+  courseKeyForProgramme,
+  getUniversityCourse,
+  masterResearchDate,
+  siteSlugForMasterSlug,
+} from "@/lib/courseMaster";
 import {
   CurriculumSection,
   MasterFacts,
@@ -87,7 +92,9 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
     const candidates = listOfferingsByUniversity(slug);
     const match =
       candidates.find((o) => o.programmeSlug === params.course) ??
-      (wanted ? candidates.find((o) => courseKeyForProgramme(o.programmeSlug) === wanted) : undefined);
+      (wanted
+        ? candidates.find((o) => courseKeyForProgramme(o.programmeSlug) === wanted)
+        : undefined);
     if (match && (match.programmeSlug !== params.course || slug !== params.slug)) {
       throw redirect({
         to: "/universities/$slug/courses/$course",
@@ -121,7 +128,8 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
     // query (see src/lib/intentMap.ts); the pillar and comparison pages defer.
     const ctr = offeringCtrMeta(params.slug, params.course);
     const title =
-      ctr?.title ?? `${loaderData.universityShort} ${loaderData.programmeName}: Fees, Eligibility & Admission 2026`;
+      ctr?.title ??
+      `${loaderData.universityShort} ${loaderData.programmeName}: Fees, Eligibility & Admission 2026`;
     const description =
       ctr?.description ??
       `${loaderData.programmeName} at ${loaderData.universityName} — ${loaderData.duration} duration, ${loaderData.feeRange} fee range, specialisations, eligibility, admission steps and placement support.`;
@@ -171,7 +179,10 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
   notFoundComponent: () => (
     <div className="container-page py-24 text-center">
       <h1 className="text-2xl font-bold">Programme not found</h1>
-      <AppLink to="/universities" className="mt-6 inline-block text-sm font-semibold text-brand hover:underline">
+      <AppLink
+        to="/universities"
+        className="mt-6 inline-block text-sm font-semibold text-brand hover:underline"
+      >
         Browse all universities →
       </AppLink>
     </div>
@@ -233,7 +244,10 @@ function Page() {
         meta={
           <>
             <div className="mb-5 max-w-xl">
-              <QuickEnquiry heading={`Enquire about ${u.shortName}`} highlight={`${p.shortName} admission`} />
+              <QuickEnquiry
+                heading={`Enquire about ${u.shortName}`}
+                highlight={`${p.shortName} admission`}
+              />
             </div>
             <UpdatedStamp date={offering.lastUpdated} verified={offering.verified} />
           </>
@@ -291,14 +305,15 @@ function Page() {
 
         <ContentSection title="Overview">
           <p>
-            {p.summary} At {u.name}, it runs for {offering.durationLabel} and is delivered {p.mode.join(" / ")}, with{" "}
-            {approvalText(u)} backing the award.
+            {p.summary} At {u.name}, it runs for {offering.durationLabel} and is delivered{" "}
+            {p.mode.join(" / ")}, with {approvalText(u)} backing the award.
           </p>
-          {narrative?.paragraphs.map((text) => <p key={text.slice(0, 40)}>{text}</p>)}
+          {narrative?.paragraphs.map((text) => (
+            <p key={text.slice(0, 40)}>{text}</p>
+          ))}
           <p>{u.verdict}</p>
           <ApprovalMarquee approvals={u.approvals} />
         </ContentSection>
-
 
         <ContentSection title="Specialisations">
           <SpecialisationBoxes
@@ -332,8 +347,8 @@ function Page() {
             programmeName={p.name}
           />
           <p className="text-xs">
-            Figures are published only after verification against the university's own fee schedule — nothing on this
-            page is estimated.
+            Figures are published only after verification against the university's own fee schedule
+            — nothing on this page is estimated.
           </p>
           <NextStep
             question="Want to see how this fee compares with other universities?"
@@ -352,7 +367,11 @@ function Page() {
           </ContentSection>
         ) : hasPubCurriculum(u.slug, p.slug) ? (
           <ContentSection title="Curriculum">
-            <PubCourseCurriculum universitySlug={u.slug} programmeSlug={p.slug} universityShort={u.shortName} />
+            <PubCourseCurriculum
+              universitySlug={u.slug}
+              programmeSlug={p.slug}
+              universityShort={u.shortName}
+            />
           </ContentSection>
         ) : null}
 
@@ -420,12 +439,13 @@ function Page() {
                 ? getCareerInfo(u.slug, p.slug)!.data.roles!
                 : Array.from(
                     new Set(
-                      offering.specialisations.flatMap((s) => getSpecialisation(p.slug, s)?.careerPaths ?? []),
+                      offering.specialisations.flatMap(
+                        (s) => getSpecialisation(p.slug, s)?.careerPaths ?? [],
+                      ),
                     ),
                   ).slice(0, 10)
             }
-            fallbackRoles={defaultRolesFor(p.slug)
-            }
+            fallbackRoles={defaultRolesFor(p.slug)}
             universitySlug={u.slug}
             universityShort={u.shortName}
           />
@@ -502,9 +522,11 @@ function Page() {
         </ContentSection>
 
         <ContentSection title={`${u.shortName} ${p.shortName} head-to-head comparisons`}>
-          <UniversityPackLinks slug={u.slug} course={p.shortName.toLowerCase().replace(/[^a-z]/g, "")} />
+          <UniversityPackLinks
+            slug={u.slug}
+            course={p.shortName.toLowerCase().replace(/[^a-z]/g, "")}
+          />
         </ContentSection>
-
 
         {courseBlogs.length > 0 && (
           <ContentSection title={`${u.shortName} ${p.shortName} guides`}>
@@ -541,12 +563,13 @@ function Page() {
 
         <AuthorBox />
         <References
-          items={[
-            { label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" },
-          ]}
+          items={[{ label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" }]}
         />
       </DetailLayout>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+      />
     </>
   );
 }

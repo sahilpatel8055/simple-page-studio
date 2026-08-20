@@ -88,8 +88,6 @@ export function CourseSectionBody({
               No specialisation list has been published for {family.name} yet.
             </p>
           )}
-
-
         </>
       );
     case "exam-pattern":
@@ -113,7 +111,9 @@ export function CourseSectionBody({
           {content.careers.length ? (
             <InfoBoxGrid items={content.careers} />
           ) : (
-            <ChipList items={[...new Set(family.offers.flatMap((o) => o.careerRoles))].slice(0, 12)} />
+            <ChipList
+              items={[...new Set(family.offers.flatMap((o) => o.careerRoles))].slice(0, 12)}
+            />
           )}
           <div className="mt-6">
             <h3 className="font-display text-base font-bold">Industries hiring</h3>

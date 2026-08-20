@@ -9,7 +9,6 @@ import { savePartialLead } from "@/lib/leadContext";
 
 const WHATSAPP_ICON = "/whatsapp-icon.png";
 
-
 const BOT_ICON = "/leadbot-icon.png";
 
 const TEASERS = [
@@ -53,8 +52,10 @@ function teasersForPath(pathname: string): string[] {
     }
   }
 
-  if (parts[0] === "compare") return ["Confused between two universities?", "I can help you shortlist in 2 minutes"];
-  if (parts[0] === "scholarships") return ["Want to check your scholarship eligibility?", "Ask me about fee waivers & EMI"];
+  if (parts[0] === "compare")
+    return ["Confused between two universities?", "I can help you shortlist in 2 minutes"];
+  if (parts[0] === "scholarships")
+    return ["Want to check your scholarship eligibility?", "Ask me about fee waivers & EMI"];
 
   return TEASERS;
 }
@@ -99,7 +100,12 @@ function useTypewriter(messages: string[], active: boolean) {
 type Msg = { from: "bot" | "user"; text: string };
 
 const LEVELS = ["UG (Bachelor's)", "PG (Master's)", "Not sure yet"];
-const GOALS = ["Better job / promotion", "Government job eligibility", "Higher studies", "Business / startup"];
+const GOALS = [
+  "Better job / promotion",
+  "Government job eligibility",
+  "Higher studies",
+  "Business / startup",
+];
 
 /** Instant, rule-based answers so the user gets value before giving details. */
 function autoAnswer(level: string, goal: string) {
@@ -127,7 +133,10 @@ export function LeadChatBot() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [msgs, setMsgs] = useState<Msg[]>([
-    { from: "bot", text: "Hi 👋 I'm DegreeKhojo Assist. Two quick questions and I'll suggest the right online degree for you." },
+    {
+      from: "bot",
+      text: "Hi 👋 I'm DegreeKhojo Assist. Two quick questions and I'll suggest the right online degree for you.",
+    },
     { from: "bot", text: "Which level are you looking for?" },
   ]);
   const endRef = useRef<HTMLDivElement>(null);
@@ -146,14 +155,15 @@ export function LeadChatBot() {
     endRef.current?.scrollIntoView({ block: "end" });
   }, [msgs, step]);
 
-
-
   const push = (m: Msg[]) => setMsgs((prev) => [...prev, ...m]);
 
   const chooseLevel = (v: string) => {
     setLevel(v);
     setStep(1);
-    push([{ from: "user", text: v }, { from: "bot", text: "Got it. What's your main goal?" }]);
+    push([
+      { from: "user", text: v },
+      { from: "bot", text: "Got it. What's your main goal?" },
+    ]);
   };
 
   const chooseGoal = (v: string) => {
@@ -162,7 +172,10 @@ export function LeadChatBot() {
     push([
       { from: "user", text: v },
       { from: "bot", text: autoAnswer(level, v) },
-      { from: "bot", text: "Want a free counsellor call with the exact fee and scholarship for your case? Share your name and mobile." },
+      {
+        from: "bot",
+        text: "Want a free counsellor call with the exact fee and scholarship for your case? Share your name and mobile.",
+      },
     ]);
   };
 
@@ -173,7 +186,10 @@ export function LeadChatBot() {
     setStep(3);
     push([
       { from: "user", text: `${name} · ${phone}` },
-      { from: "bot", text: `Thanks ${name.split(" ")[0] || "there"}! Our counsellor will call you shortly with a shortlist for ${goal.toLowerCase()}.` },
+      {
+        from: "bot",
+        text: `Thanks ${name.split(" ")[0] || "there"}! Our counsellor will call you shortly with a shortlist for ${goal.toLowerCase()}.`,
+      },
     ]);
   };
 
@@ -261,7 +277,12 @@ export function LeadChatBot() {
               </p>
               <p className="text-[0.7rem] font-semibold text-white/85">Connect Now</p>
             </div>
-            <button type="button" onClick={() => setOpen(false)} aria-label="Close chat" className="shrink-0 rounded-full p-1.5 hover:bg-white/15">
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              aria-label="Close chat"
+              className="shrink-0 rounded-full p-1.5 hover:bg-white/15"
+            >
               <X className="h-4 w-4" />
             </button>
           </div>
@@ -286,7 +307,12 @@ export function LeadChatBot() {
             {step === 0 && (
               <div className="flex flex-wrap gap-2">
                 {LEVELS.map((l) => (
-                  <button key={l} type="button" onClick={() => chooseLevel(l)} className="rounded-full border border-border px-3 py-2 text-[0.8rem] font-semibold hover:bg-secondary">
+                  <button
+                    key={l}
+                    type="button"
+                    onClick={() => chooseLevel(l)}
+                    className="rounded-full border border-border px-3 py-2 text-[0.8rem] font-semibold hover:bg-secondary"
+                  >
                     {l}
                   </button>
                 ))}
@@ -295,7 +321,12 @@ export function LeadChatBot() {
             {step === 1 && (
               <div className="flex flex-wrap gap-2">
                 {GOALS.map((g) => (
-                  <button key={g} type="button" onClick={() => chooseGoal(g)} className="rounded-full border border-border px-3 py-2 text-[0.8rem] font-semibold hover:bg-secondary">
+                  <button
+                    key={g}
+                    type="button"
+                    onClick={() => chooseGoal(g)}
+                    className="rounded-full border border-border px-3 py-2 text-[0.8rem] font-semibold hover:bg-secondary"
+                  >
                     {g}
                   </button>
                 ))}
@@ -320,7 +351,11 @@ export function LeadChatBot() {
                     placeholder="Mobile number"
                     className="h-10 min-w-0 flex-1 rounded-lg border border-input bg-background px-3 text-sm outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   />
-                  <button type="submit" aria-label="Send details" className="grid h-10 w-11 shrink-0 place-items-center rounded-lg bg-[#7f1813] text-white">
+                  <button
+                    type="submit"
+                    aria-label="Send details"
+                    className="grid h-10 w-11 shrink-0 place-items-center rounded-lg bg-[#7f1813] text-white"
+                  >
                     <Send className="h-4 w-4" />
                   </button>
                 </div>

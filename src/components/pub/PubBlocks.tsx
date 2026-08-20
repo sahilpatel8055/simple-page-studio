@@ -44,14 +44,22 @@ export function FactBlock({ label, value }: { label: string; value?: string | nu
 }
 
 function SourceList({ sources }: { sources: Record<string, string | null> }) {
-  const entries = Object.entries(sources).filter(([, v]) => typeof v === "string" && v.startsWith("http"));
-  if (!entries.length) return <VerificationNote text="No official source URL is recorded for this record yet." />;
+  const entries = Object.entries(sources).filter(
+    ([, v]) => typeof v === "string" && v.startsWith("http"),
+  );
+  if (!entries.length)
+    return <VerificationNote text="No official source URL is recorded for this record yet." />;
   return (
     <ul className="grid gap-2 text-sm">
       {entries.map(([k, v]) => (
         <li key={k} className="break-words">
           <span className="font-semibold capitalize text-foreground">{k.replace(/_/g, " ")}: </span>
-          <a href={v!} target="_blank" rel="noopener noreferrer nofollow" className="text-brand hover:underline">
+          <a
+            href={v!}
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            className="text-brand hover:underline"
+          >
             {v}
           </a>
         </li>
@@ -77,11 +85,15 @@ export function PubUniversityResearch({ slug }: { slug: string }) {
       </div>
 
       {u.admission.cycles && <FactBlock label="Admission cycles" value={u.admission.cycles} />}
-      {u.admission.entrance_exam && <FactBlock label="Entrance exam" value={u.admission.entrance_exam} />}
+      {u.admission.entrance_exam && (
+        <FactBlock label="Entrance exam" value={u.admission.entrance_exam} />
+      )}
 
       {u.admission.steps?.length ? (
         <div>
-          <h3 className="font-display text-base font-bold text-foreground">Researched admission steps</h3>
+          <h3 className="font-display text-base font-bold text-foreground">
+            Researched admission steps
+          </h3>
           <ol className="mt-2 list-inside list-decimal space-y-1 text-[0.95rem] leading-relaxed text-muted-foreground">
             {u.admission.steps.map((s) => (
               <li key={s}>{s}</li>
@@ -92,7 +104,9 @@ export function PubUniversityResearch({ slug }: { slug: string }) {
 
       {u.scholarship.criteria?.length ? (
         <div>
-          <h3 className="font-display text-base font-bold text-foreground">Scholarship information</h3>
+          <h3 className="font-display text-base font-bold text-foreground">
+            Scholarship information
+          </h3>
           <ul className="mt-2 space-y-2">
             {u.scholarship.criteria.map((c) => (
               <li key={c.name} className="rounded-xl border border-border bg-card p-3">
@@ -101,14 +115,18 @@ export function PubUniversityResearch({ slug }: { slug: string }) {
               </li>
             ))}
           </ul>
-          {u.scholarship.note && <p className="mt-2 text-xs text-muted-foreground">{u.scholarship.note}</p>}
+          {u.scholarship.note && (
+            <p className="mt-2 text-xs text-muted-foreground">{u.scholarship.note}</p>
+          )}
         </div>
       ) : null}
 
       {u.career.university_level_summary && <Prose>{u.career.university_level_summary}</Prose>}
 
       <div>
-        <h3 className="font-display text-base font-bold text-foreground">Official university links</h3>
+        <h3 className="font-display text-base font-bold text-foreground">
+          Official university links
+        </h3>
         <div className="mt-2">
           <SourceList sources={{ official_website: u.hero.official_website }} />
         </div>
@@ -123,7 +141,10 @@ export function PubUniversityResearch({ slug }: { slug: string }) {
 /* ---------- Phase 3 ---------- */
 
 export function hasPubCurriculum(universitySlug: string, programmeSlug: string): boolean {
-  return (pubCoursePage(universitySlug, programmeSlug)?.publication_content.curriculum.semesters.length ?? 0) > 0;
+  return (
+    (pubCoursePage(universitySlug, programmeSlug)?.publication_content.curriculum.semesters
+      .length ?? 0) > 0
+  );
 }
 
 export function PubCourseCurriculum({
@@ -156,7 +177,8 @@ export function PubCourseCurriculum({
         ))}
       </div>
       <p className="text-xs text-muted-foreground">
-        {PUB_SESSION} session · Last updated: {lastUpdatedLabel(rec?.publication_content.last_verified) ?? "recently"}.
+        {PUB_SESSION} session · Last updated:{" "}
+        {lastUpdatedLabel(rec?.publication_content.last_verified) ?? "recently"}.
       </p>
     </div>
   );
@@ -188,7 +210,8 @@ export function PubPillarGuidance({ familySlug }: { familySlug: string }) {
         <FactBlock label="Career guidance" value={p.career_guidance} />
       </div>
       <p className="text-xs text-muted-foreground">
-        {p.universities_count} universities in the researched {PUB_SESSION} dataset list this course.
+        {p.universities_count} universities in the researched {PUB_SESSION} dataset list this
+        course.
       </p>
     </div>
   );
@@ -206,8 +229,18 @@ export function PubComparisonRows({ familySlug }: { familySlug: string }) {
         <table className="w-full min-w-[46rem] border-collapse text-left text-sm">
           <thead>
             <tr className="bg-secondary">
-              {["University", "Programme", "Duration", "Eligibility", "Fee status", "Specialisations"].map((h) => (
-                <th key={h} className="border border-border px-3 py-2 font-semibold text-foreground">
+              {[
+                "University",
+                "Programme",
+                "Duration",
+                "Eligibility",
+                "Fee status",
+                "Specialisations",
+              ].map((h) => (
+                <th
+                  key={h}
+                  className="border border-border px-3 py-2 font-semibold text-foreground"
+                >
                   {h}
                 </th>
               ))}
@@ -216,17 +249,28 @@ export function PubComparisonRows({ familySlug }: { familySlug: string }) {
           <tbody>
             {c.rows.map((r) => (
               <tr key={`${r.university}-${r.programme}`} className="align-top">
-                <th scope="row" className="border border-border px-3 py-2 text-left font-semibold text-foreground">
+                <th
+                  scope="row"
+                  className="border border-border px-3 py-2 text-left font-semibold text-foreground"
+                >
                   <AppLink to={r.course_url} className="text-brand hover:underline">
                     {r.university}
                   </AppLink>
                 </th>
-                <td className="border border-border px-3 py-2 text-muted-foreground">{r.programme}</td>
-                <td className="border border-border px-3 py-2 text-muted-foreground">{r.duration ?? NOT_PUBLISHED_LABEL}</td>
-                <td className="border border-border px-3 py-2 text-muted-foreground">{r.eligibility ?? NOT_PUBLISHED_LABEL}</td>
+                <td className="border border-border px-3 py-2 text-muted-foreground">
+                  {r.programme}
+                </td>
+                <td className="border border-border px-3 py-2 text-muted-foreground">
+                  {r.duration ?? NOT_PUBLISHED_LABEL}
+                </td>
+                <td className="border border-border px-3 py-2 text-muted-foreground">
+                  {r.eligibility ?? NOT_PUBLISHED_LABEL}
+                </td>
                 <td className="border border-border px-3 py-2 text-muted-foreground">{r.fee}</td>
                 <td className="border border-border px-3 py-2 text-muted-foreground">
-                  {r.specialisations.length ? r.specialisations.join(", ") : "Not published by the university"}
+                  {r.specialisations.length
+                    ? r.specialisations.join(", ")
+                    : "Not published by the university"}
                 </td>
               </tr>
             ))}
@@ -234,7 +278,8 @@ export function PubComparisonRows({ familySlug }: { familySlug: string }) {
         </table>
       </div>
       <p className="text-xs text-muted-foreground">
-        Researched comparison data for session {PUB_SESSION}. Verify the official source before applying.
+        Researched comparison data for session {PUB_SESSION}. Verify the official source before
+        applying.
       </p>
     </div>
   );
@@ -259,7 +304,9 @@ export function PubSpecialisationResearch({
       <FactBlock label="Career direction" value={c.career} />
       <div>
         <h3 className="font-display text-base font-bold text-foreground">Where it is offered</h3>
-        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">{c.university_availability}</p>
+        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+          {c.university_availability}
+        </p>
         <ul className="mt-2 grid gap-2">
           {s.programmes.map((p) => (
             <li key={p.url} className="rounded-xl border border-border bg-card p-3 text-sm">
@@ -285,7 +332,12 @@ export function PubSpecialisationResearch({
           <ul className="mt-2 space-y-1 text-sm">
             {c.sources.map((src) => (
               <li key={src} className="break-words">
-                <a href={src} target="_blank" rel="noopener noreferrer nofollow" className="text-brand hover:underline">
+                <a
+                  href={src}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="text-brand hover:underline"
+                >
                   {src}
                 </a>
               </li>

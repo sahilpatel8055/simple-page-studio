@@ -40,11 +40,17 @@ export const Route = createFileRoute("/courses/$course/specialisation/$spec")({
   loader: ({ params }) => {
     const match = familySpecialisation(params.course, params.spec);
     if (!match) throw notFound();
-    return { courseName: match.family.name, specName: match.spec.name, providers: match.offers.length };
+    return {
+      courseName: match.family.name,
+      specName: match.spec.name,
+      providers: match.offers.length,
+    };
   },
   head: ({ params, loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Specialisation not found" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [{ title: "Specialisation not found" }, { name: "robots", content: "noindex" }],
+      };
     }
     const path = `/courses/${params.course}/specialisation/${params.spec}`;
     const title = `${loaderData.courseName} in ${loaderData.specName} ${ADMISSION_YEAR}: Fees, Universities & Career`;
@@ -129,21 +135,36 @@ function Page() {
 
       <div className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14">
         <main className="min-w-0 space-y-8">
-          <SpecSection title={`General specialisation overview: what is an ${family.name} in ${specialisation.name}?`} tone="cream">
+          <SpecSection
+            title={`General specialisation overview: what is an ${family.name} in ${specialisation.name}?`}
+            tone="cream"
+          >
             <SpecProse paragraphs={rich.what} />
           </SpecSection>
 
-          <SpecSection title={`Highlights of ${family.name} in ${specialisation.name} ${SPEC_YEAR}`} tone="brand">
+          <SpecSection
+            title={`Highlights of ${family.name} in ${specialisation.name} ${SPEC_YEAR}`}
+            tone="brand"
+          >
             <HighlightTable items={rich.highlights} />
           </SpecSection>
 
-          <SpecSection title={`General specialisation overview: scope of ${family.name} in ${specialisation.name}`}>
+          <SpecSection
+            title={`General specialisation overview: scope of ${family.name} in ${specialisation.name}`}
+          >
             <SpecProse paragraphs={rich.scope} />
             <div className="mt-5 grid grid-cols-2 gap-2.5 lg:grid-cols-3">
               {rich.scopeAreas.map((a) => (
-                <div key={a.title} className="rounded-2xl border border-border bg-secondary/40 p-3 transition-colors hover:bg-brand-soft/50">
-                  <p className="font-display text-[0.82rem] font-bold sm:text-[0.9rem]">{a.title}</p>
-                  <p className="mt-1 text-[0.74rem] leading-relaxed text-muted-foreground sm:text-[0.82rem]">{a.detail}</p>
+                <div
+                  key={a.title}
+                  className="rounded-2xl border border-border bg-secondary/40 p-3 transition-colors hover:bg-brand-soft/50"
+                >
+                  <p className="font-display text-[0.82rem] font-bold sm:text-[0.9rem]">
+                    {a.title}
+                  </p>
+                  <p className="mt-1 text-[0.74rem] leading-relaxed text-muted-foreground sm:text-[0.82rem]">
+                    {a.detail}
+                  </p>
                 </div>
               ))}
             </div>
@@ -162,11 +183,17 @@ function Page() {
             points={rich.whyOnline}
           />
 
-          <SpecSection title={`General specialisation overview: indicative syllabus of ${family.name} in ${specialisation.name}`} intro={rich.syllabusNote}>
+          <SpecSection
+            title={`General specialisation overview: indicative syllabus of ${family.name} in ${specialisation.name}`}
+            intro={rich.syllabusNote}
+          >
             {rich.syllabus.length > 0 ? (
               <div className="grid gap-3 sm:grid-cols-2">
                 {rich.syllabus.map((sem) => (
-                  <div key={sem.semester} className="overflow-hidden rounded-2xl border border-border bg-card">
+                  <div
+                    key={sem.semester}
+                    className="overflow-hidden rounded-2xl border border-border bg-card"
+                  >
                     <p className="bg-secondary px-3 py-2 text-[0.76rem] font-bold uppercase tracking-wide text-foreground">
                       {sem.semester}
                     </p>
@@ -185,8 +212,14 @@ function Page() {
             )}
           </SpecSection>
 
-          <SpecSection title={`University-specific data: colleges offering ${family.name} in ${specialisation.name}`} tone="brand">
-            <CollegeTable offers={offers.length ? offers : family.offers} courseName={`${family.name} in ${specialisation.name}`} />
+          <SpecSection
+            title={`University-specific data: colleges offering ${family.name} in ${specialisation.name}`}
+            tone="brand"
+          >
+            <CollegeTable
+              offers={offers.length ? offers : family.offers}
+              courseName={`${family.name} in ${specialisation.name}`}
+            />
           </SpecSection>
 
           <SpecSection
@@ -213,7 +246,10 @@ function Page() {
             )}
           </SpecSection>
 
-          <SpecSection title="University-specific data: fees published by each university" tone="cream">
+          <SpecSection
+            title="University-specific data: fees published by each university"
+            tone="cream"
+          >
             <FeeSummaryTable offers={offers.length ? offers : family.offers} />
             <Note>
               Specialisation choice rarely changes the {family.name} fee — the figures above are the
@@ -224,7 +260,6 @@ function Page() {
           <section id="faqs" className="scroll-mt-36">
             <Faq items={rich.faqs} title={`${family.name} in ${specialisation.name} FAQs`} />
           </section>
-
 
           <SectionUrlGrid base={pillar} title={`More on the ${family.name}`} />
 
@@ -254,7 +289,10 @@ function Page() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(
             itemListSchema(
-              offers.map((o) => ({ name: `${o.universityShortName} ${family.name}`, href: o.path })),
+              offers.map((o) => ({
+                name: `${o.universityShortName} ${family.name}`,
+                href: o.path,
+              })),
               `${family.name} in ${specialisation.name}`,
             ),
           ),

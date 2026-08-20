@@ -21,8 +21,8 @@ export function WriteReview() {
         <div>
           <h2 className="font-display text-lg font-bold">Studied online? Write a review</h2>
           <p className="mt-1 max-w-xl text-sm text-muted-foreground">
-            Share your experience of fees, faculty, LMS and exams. Every submission is verified against enrolment proof
-            before it goes live.
+            Share your experience of fees, faculty, LMS and exams. Every submission is verified
+            against enrolment proof before it goes live.
           </p>
         </div>
         {!open && (
@@ -41,23 +41,56 @@ export function WriteReview() {
           }}
         >
           <div>
-            <label className={label} htmlFor="rv-name">Your name</label>
-            <input id="rv-name" required maxLength={80} className={field} placeholder="e.g. Rahul S." />
+            <label className={label} htmlFor="rv-name">
+              Your name
+            </label>
+            <input
+              id="rv-name"
+              required
+              maxLength={80}
+              className={field}
+              placeholder="e.g. Rahul S."
+            />
           </div>
           <div>
-            <label className={label} htmlFor="rv-email">Email</label>
-            <input id="rv-email" type="email" required maxLength={120} className={field} placeholder="you@example.com" />
+            <label className={label} htmlFor="rv-email">
+              Email
+            </label>
+            <input
+              id="rv-email"
+              type="email"
+              required
+              maxLength={120}
+              className={field}
+              placeholder="you@example.com"
+            />
           </div>
           <div>
-            <label className={label} htmlFor="rv-uni">University</label>
+            <label className={label} htmlFor="rv-uni">
+              University
+            </label>
             <select id="rv-uni" required className={field} defaultValue="">
-              <option value="" disabled>Select your university</option>
-              {universities.map((u) => (<option key={u.slug} value={u.slug}>{u.name}</option>))}
+              <option value="" disabled>
+                Select your university
+              </option>
+              {universities.map((u) => (
+                <option key={u.slug} value={u.slug}>
+                  {u.name}
+                </option>
+              ))}
             </select>
           </div>
           <div>
-            <label className={label} htmlFor="rv-course">Programme</label>
-            <input id="rv-course" required maxLength={80} className={field} placeholder="e.g. Online MBA — Marketing" />
+            <label className={label} htmlFor="rv-course">
+              Programme
+            </label>
+            <input
+              id="rv-course"
+              required
+              maxLength={80}
+              className={field}
+              placeholder="e.g. Online MBA — Marketing"
+            />
           </div>
           <div className="sm:col-span-2">
             <span className={label}>Overall rating</span>
@@ -70,13 +103,17 @@ export function WriteReview() {
                   onClick={() => setRating(n)}
                   className="rounded-md p-1"
                 >
-                  <Star className={`h-6 w-6 ${n <= rating ? "fill-brand text-brand" : "text-muted-foreground"}`} />
+                  <Star
+                    className={`h-6 w-6 ${n <= rating ? "fill-brand text-brand" : "text-muted-foreground"}`}
+                  />
                 </button>
               ))}
             </div>
           </div>
           <div className="sm:col-span-2">
-            <label className={label} htmlFor="rv-body">Your review</label>
+            <label className={label} htmlFor="rv-body">
+              Your review
+            </label>
             <textarea
               id="rv-body"
               required
@@ -88,8 +125,12 @@ export function WriteReview() {
             />
           </div>
           <div className="sm:col-span-2 flex flex-wrap gap-3">
-            <button type="submit" className="btn btn-primary">Submit for verification</button>
-            <button type="button" className="btn btn-secondary" onClick={() => setOpen(false)}>Cancel</button>
+            <button type="submit" className="btn btn-primary">
+              Submit for verification
+            </button>
+            <button type="button" className="btn btn-secondary" onClick={() => setOpen(false)}>
+              Cancel
+            </button>
           </div>
         </form>
       )}
@@ -98,8 +139,8 @@ export function WriteReview() {
         <p className="mt-6 flex items-start gap-2 rounded-xl border border-border bg-background p-4 text-sm">
           <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
           <span>
-            Thanks — your review is in the verification queue. Our editorial team checks enrolment proof before
-            publishing, usually within 3 working days.
+            Thanks — your review is in the verification queue. Our editorial team checks enrolment
+            proof before publishing, usually within 3 working days.
           </span>
         </p>
       )}

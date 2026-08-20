@@ -3,7 +3,12 @@ import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { Faq } from "@/components/common/Faq";
 import { LeadCaptureCard, TrustCard } from "@/components/common/Sidebar";
 import { CourseSectionBody } from "@/components/course/CourseSectionBody";
-import { FinalCta, LinkTiles, Section, UniversityTileGrid } from "@/components/course/CourseSections";
+import {
+  FinalCta,
+  LinkTiles,
+  Section,
+  UniversityTileGrid,
+} from "@/components/course/CourseSections";
 import { BackToPillar, SectionUrlGrid } from "@/components/course/SectionHub";
 import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
@@ -135,7 +140,9 @@ function Page() {
       </div>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(found.content.faqs.slice(0, 6))) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema(found.content.faqs.slice(0, 6))),
+        }}
       />
     </>
   );

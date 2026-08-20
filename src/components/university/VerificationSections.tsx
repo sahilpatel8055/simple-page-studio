@@ -24,7 +24,13 @@ export function UniversityResearchIntro({ slug }: { slug: string }) {
   );
 }
 
-export function StudentsShouldVerify({ lastVerified, status }: { lastVerified?: string; status?: string }) {
+export function StudentsShouldVerify({
+  lastVerified,
+  status,
+}: {
+  lastVerified?: string;
+  status?: string;
+}) {
   const section = universitySection("What Students Should Verify Before Applying");
   if (!section?.content) return null;
   return (
@@ -48,8 +54,8 @@ export function WhoMayConsiderUniversity({ shortName }: { shortName: string }) {
     <div className="space-y-3">
       <p>{section.content}</p>
       <p className="text-sm text-muted-foreground">
-        Use the programme pages for {shortName} to check availability, fee structure and
-        admission requirements before deciding.
+        Use the programme pages for {shortName} to check availability, fee structure and admission
+        requirements before deciding.
       </p>
     </div>
   );
@@ -85,7 +91,9 @@ export function OfficialDocumentsAndSources({
       )}
       {(research.length > 0 || gaps.length > 0) && (
         <VerificationNote>
-          <p className="font-semibold text-foreground">Confirm these directly with the university</p>
+          <p className="font-semibold text-foreground">
+            Confirm these directly with the university
+          </p>
           <p className="mt-1">
             The university shares these details directly with applicants for the 2026-27 session:
           </p>

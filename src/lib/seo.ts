@@ -25,7 +25,6 @@ export const abs = (path: string) => {
   return `${SITE_URL}${clean}`;
 };
 
-
 export interface PageSeo {
   title: string;
   description: string;
@@ -69,7 +68,8 @@ export function pageMeta(seo: PageSeo): MetaEntry[] {
   meta.push({ property: "og:image", content: image });
   meta.push({ property: "og:image:alt", content: fullTitle });
   meta.push({ name: "twitter:image", content: image });
-  if (seo.publishedTime) meta.push({ property: "article:published_time", content: seo.publishedTime });
+  if (seo.publishedTime)
+    meta.push({ property: "article:published_time", content: seo.publishedTime });
   if (seo.modifiedTime) meta.push({ property: "article:modified_time", content: seo.modifiedTime });
   if (seo.section) meta.push({ property: "article:section", content: seo.section });
   seo.tags?.forEach((t) => meta.push({ property: "article:tag", content: t }));
@@ -239,7 +239,12 @@ export const collegeSchema = (u: {
     : {}),
 });
 
-export const reviewSchema = (r: { itemName: string; rating: number; author: string; body: string }) => ({
+export const reviewSchema = (r: {
+  itemName: string;
+  rating: number;
+  author: string;
+  body: string;
+}) => ({
   "@context": "https://schema.org",
   "@type": "Review",
   itemReviewed: { "@type": "CollegeOrUniversity", name: r.itemName },

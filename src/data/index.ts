@@ -26,9 +26,14 @@ export function listUniversities(filter?: {
   let list = universities;
   if (filter?.mode) list = list.filter((u) => u.modes.includes(filter.mode!));
   if (filter?.state) list = list.filter((u) => u.state === filter.state);
-  if (filter?.approvalBody) list = list.filter((u) => u.approvals.some((a) => a.body === filter.approvalBody));
+  if (filter?.approvalBody)
+    list = list.filter((u) => u.approvals.some((a) => a.body === filter.approvalBody));
   if (filter?.programmeSlug) {
-    const slugs = new Set(offerings.filter((o) => o.programmeSlug === filter.programmeSlug).map((o) => o.universitySlug));
+    const slugs = new Set(
+      offerings
+        .filter((o) => o.programmeSlug === filter.programmeSlug)
+        .map((o) => o.universitySlug),
+    );
     list = list.filter((u) => slugs.has(u.slug));
   }
   return list;
@@ -55,7 +60,9 @@ export function listSpecialisations(programmeSlug: string): Specialisation[] {
 /* ---------- offerings ---------- */
 
 export function getOffering(universitySlug: string, programmeSlug: string): Offering | undefined {
-  return offerings.find((o) => o.universitySlug === universitySlug && o.programmeSlug === programmeSlug);
+  return offerings.find(
+    (o) => o.universitySlug === universitySlug && o.programmeSlug === programmeSlug,
+  );
 }
 
 export function listOfferingsByUniversity(universitySlug: string): Offering[] {
@@ -66,8 +73,13 @@ export function listOfferingsByProgramme(programmeSlug: string): Offering[] {
   return offerings.filter((o) => o.programmeSlug === programmeSlug);
 }
 
-export function listOfferingsBySpecialisation(programmeSlug: string, specialisationSlug: string): Offering[] {
-  return offerings.filter((o) => o.programmeSlug === programmeSlug && o.specialisations.includes(specialisationSlug));
+export function listOfferingsBySpecialisation(
+  programmeSlug: string,
+  specialisationSlug: string,
+): Offering[] {
+  return offerings.filter(
+    (o) => o.programmeSlug === programmeSlug && o.specialisations.includes(specialisationSlug),
+  );
 }
 
 /* ---------- comparisons ---------- */

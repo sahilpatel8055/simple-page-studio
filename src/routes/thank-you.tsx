@@ -65,8 +65,8 @@ function Page() {
             Thank you — your counselling session is booked
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Your request has reached our admission desk. A DegreeKhojo counsellor will call you shortly with a
-            university shortlist, verified fees and the scholarships you qualify for.
+            Your request has reached our admission desk. A DegreeKhojo counsellor will call you
+            shortly with a university shortlist, verified fees and the scholarships you qualify for.
           </p>
 
           <div className="mt-6 flex flex-col items-center justify-center gap-2.5 sm:flex-row">
@@ -77,8 +77,8 @@ function Page() {
               onClick={() => trackContactClick("WhatsApp", "Thank you page")}
               className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#128C7E] px-6 text-sm font-bold text-white sm:w-auto"
             >
-              <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> Get an instant reply on
-              WhatsApp
+              <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" /> Get an
+              instant reply on WhatsApp
             </a>
             <a
               href={`tel:${DK_PHONE}`}
@@ -90,14 +90,17 @@ function Page() {
           </div>
 
           <p className="mt-4 flex items-center justify-center gap-1.5 text-xs font-medium text-muted-foreground">
-            <Clock className="h-3.5 w-3.5" aria-hidden="true" /> Counsellors online · Mon–Sat, 10 AM – 7 PM
+            <Clock className="h-3.5 w-3.5" aria-hidden="true" /> Counsellors online · Mon–Sat, 10 AM
+            – 7 PM
           </p>
         </div>
       </section>
 
       {/* What happens next */}
       <section className="mx-auto max-w-5xl px-4 py-10 sm:py-14">
-        <h2 className="font-display text-xl font-extrabold text-foreground sm:text-2xl">What happens next</h2>
+        <h2 className="font-display text-xl font-extrabold text-foreground sm:text-2xl">
+          What happens next
+        </h2>
         <ol className="mt-5 grid gap-3 sm:grid-cols-3">
           {STEPS.map((s, i) => (
             <li key={s.title} className="rounded-2xl border border-border bg-card p-5">
@@ -121,7 +124,8 @@ function Page() {
             While you wait, explore your options
           </h2>
           <p className="mt-1.5 text-sm text-muted-foreground">
-            Verified fees, eligibility and specialisations for India&apos;s most-applied online degrees.
+            Verified fees, eligibility and specialisations for India&apos;s most-applied online
+            degrees.
           </p>
           <div className="mt-5 grid gap-2.5 sm:grid-cols-2 lg:grid-cols-3">
             {topCourses.map((c) => (
@@ -206,7 +210,9 @@ function Page() {
               >
                 <BookOpen className="h-5 w-5 text-brand" aria-hidden="true" />
                 <h3 className="mt-3 text-base font-bold leading-snug text-foreground">{a.title}</h3>
-                <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-muted-foreground">{a.excerpt}</p>
+                <p className="mt-1.5 line-clamp-3 text-sm leading-relaxed text-muted-foreground">
+                  {a.excerpt}
+                </p>
                 <span className="mt-3 inline-flex items-center gap-1.5 text-sm font-bold text-brand">
                   Read guide <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </span>

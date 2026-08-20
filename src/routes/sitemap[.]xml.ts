@@ -1,13 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type {} from "@tanstack/react-start";
-import {
-  articles,
-  careerGuides,
-  comparisons,
-  news,
-  reviews,
-  scholarships,
-} from "@/lib/content";
+import { articles, careerGuides, comparisons, news, reviews, scholarships } from "@/lib/content";
 import { getPostContent } from "@/data/posts";
 import { offerings, programmes, universities as universityRecords } from "@/data";
 import { universityPairs } from "@/lib/entities";
@@ -32,7 +25,9 @@ export function sitemapEntries(): SitemapEntry[] {
   // A programme slug is only canonical when the pillar route would render it (no 301).
   const canonicalProgrammes = [
     ...new Set([
-      ...courseFamilyList().filter((f) => Boolean(courseContentBySlug(f.slug))).map((f) => f.slug),
+      ...courseFamilyList()
+        .filter((f) => Boolean(courseContentBySlug(f.slug)))
+        .map((f) => f.slug),
       ...programmes
         .map((p) => p.slug)
         .filter((slug) => !courseContentBySlug(slug))
@@ -65,6 +60,8 @@ export function sitemapEntries(): SitemapEntry[] {
     "/contact",
     "/privacy-policy",
     "/terms-and-conditions",
+    "/disclaimer",
+    "/editorial-policy",
   ];
 
   const entries: SitemapEntry[] = [
@@ -121,21 +118,41 @@ export function sitemapEntries(): SitemapEntry[] {
     ),
 
     // Comparisons
-    ...comparisons.map((c) => ({ path: `/compare/${c.slug}`, changefreq: "monthly" as const, priority: "0.7" })),
-    ...universityPairs().map((p) => ({ path: p.path, changefreq: "monthly" as const, priority: "0.7" })),
+    ...comparisons.map((c) => ({
+      path: `/compare/${c.slug}`,
+      changefreq: "monthly" as const,
+      priority: "0.7",
+    })),
+    ...universityPairs().map((p) => ({
+      path: p.path,
+      changefreq: "monthly" as const,
+      priority: "0.7",
+    })),
 
     // Editorial
     ...articles
       .filter((a) => Boolean(getPostContent(a.slug)))
       .map((a) => ({ path: `/blogs/${a.slug}`, changefreq: "monthly" as const, priority: "0.7" })),
-    ...news.map((n) => ({ path: `/news/${n.slug}`, changefreq: "weekly" as const, priority: "0.6" })),
-    ...careerGuides.map((c) => ({ path: `/career/${c.slug}`, changefreq: "monthly" as const, priority: "0.6" })),
+    ...news.map((n) => ({
+      path: `/news/${n.slug}`,
+      changefreq: "weekly" as const,
+      priority: "0.6",
+    })),
+    ...careerGuides.map((c) => ({
+      path: `/career/${c.slug}`,
+      changefreq: "monthly" as const,
+      priority: "0.6",
+    })),
     ...scholarships.map((s) => ({
       path: `/scholarships/${s.slug}`,
       changefreq: "monthly" as const,
       priority: "0.6",
     })),
-    ...reviews.map((r) => ({ path: `/reviews/${r.slug}`, changefreq: "monthly" as const, priority: "0.5" })),
+    ...reviews.map((r) => ({
+      path: `/reviews/${r.slug}`,
+      changefreq: "monthly" as const,
+      priority: "0.5",
+    })),
 
     // Taxonomy detail pages (/categories/:slug, /tags/:slug, /authors/:slug)
     // have no route yet — the index pages above cover them, so they stay out

@@ -38,7 +38,12 @@ export const Route = createFileRoute("/courses/")({
           "Online degree programmes",
         ),
       ),
-      jsonLd(breadcrumbSchema([{ name: "Home", href: "/" }, { name: "Courses", href: path }])),
+      jsonLd(
+        breadcrumbSchema([
+          { name: "Home", href: "/" },
+          { name: "Courses", href: path },
+        ]),
+      ),
     ],
   }),
   component: Page,
