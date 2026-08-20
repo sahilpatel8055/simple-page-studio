@@ -50,7 +50,7 @@ export function CompareTable({
                     <th
                       key={ci}
                       scope="row"
-                      className="sticky left-0 z-10 bg-inherit px-2.5 py-2.5 text-[0.7rem] font-semibold text-foreground sm:px-4 sm:py-3 sm:text-[0.8rem]"
+                      className={`sticky left-0 z-10 ${ri % 2 === 1 ? "bg-[color-mix(in_srgb,var(--secondary)_40%,var(--card))]" : "bg-card"} px-2.5 py-2.5 text-[0.7rem] font-semibold text-foreground sm:px-4 sm:py-3 sm:text-[0.8rem]`}
                     >
                       {cell}
                     </th>
