@@ -10,6 +10,7 @@ import {
 } from "@/components/common/Blocks";
 import { LinkCluster } from "@/components/common/Blocks";
 import { UniversityHero } from "@/components/university/UniversityHero";
+import { ToolsStrip } from "@/components/common/ToolsStrip";
 import { AppLink } from "@/components/common/AppLink";
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForUniversity } from "@/data/university-blogs";
