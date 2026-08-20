@@ -139,7 +139,16 @@ export function CounsellingForm({
         onSubmit={(e) => {
           e.preventDefault();
           const data = new FormData(e.currentTarget);
-          savePartialLead(Object.fromEntries(data.entries()) as Record<string, string>);
+          const values = Object.fromEntries(data.entries()) as Record<string, string>;
+          savePartialLead(values);
+          void submitLead({
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            course: values.course,
+            location: values.state,
+            form: source,
+          });
           markLeadSubmitted();
           setSent(true);
         }}
