@@ -10,6 +10,10 @@ export interface FeeTableRow {
   specialisation?: string;
   fee: string;
   duration?: string;
+  /** Short academic-focus note for the programme, when published. */
+  focus?: string;
+  /** Entry requirement summary, when published. */
+  eligibility?: string;
 }
 
 export interface UniversityFeeTable {
