@@ -1,4 +1,5 @@
 import type { Approval, Mode, University } from "./types";
+import { approvalOverrides } from "./approval-overrides";
 import {
   academicSession,
   allUniversities,
@@ -24,6 +25,8 @@ function modes(mode: string): Mode[] {
 }
 
 function approvals(u: UniversityRecordJson): Approval[] {
+  const override = approvalOverrides[u.slug];
+  if (override) return override;
   const r = u.recognition;
   const rows: Array<[string, string | null]> = [
     ["UGC", r.UGC_status],
