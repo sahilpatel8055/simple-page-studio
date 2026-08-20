@@ -96,6 +96,12 @@ export function FeeStructureTable({
                       {r.specialisation}
                     </span>
                   )}
+                  {(r.focus || r.eligibility) && (
+                    <span className="mt-1 block space-y-0.5 text-[0.62rem] font-normal leading-snug text-muted-foreground">
+                      {r.focus && <span className="block">Focus: {r.focus}</span>}
+                      {r.eligibility && <span className="block">Eligibility: {r.eligibility}</span>}
+                    </span>
+                  )}
                 </th>
                 <td className="px-2 py-2 align-top font-semibold text-foreground">{r.fee}</td>
                 <td className="px-2 py-2 align-top text-muted-foreground">{r.duration ?? "—"}</td>
