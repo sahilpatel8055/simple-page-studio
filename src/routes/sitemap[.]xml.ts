@@ -65,6 +65,8 @@ export function sitemapEntries(): SitemapEntry[] {
     "/contact",
     "/privacy-policy",
     "/terms-and-conditions",
+    "/disclaimer",
+    "/editorial-policy",
   ];
 
   const entries: SitemapEntry[] = [
