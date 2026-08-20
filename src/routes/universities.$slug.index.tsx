@@ -315,11 +315,13 @@ function Page() {
           </ContentSection>
         )}
 
+        <ToolsStrip />
+
         <ContentSection title="Admission process" tone="admission">
           <div className="space-y-5">
             <SectionBanner kind="admission" />
             <AdmissionInsightSection universitySlug={slug} universityShort={u.shortName} />
-            <AdmissionSection admissions={admissionOf(slug)} />
+            <AdmissionSection admissions={admissionOf(slug)} universitySlug={slug} />
           </div>
         </ContentSection>
 

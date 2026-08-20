@@ -817,7 +817,7 @@ export const tools: Tool[] = [
     name: "Eligibility checker",
     description: "Check whether your academic profile qualifies for a programme.",
     icon: "check",
-    status: "Beta",
+    status: "Live",
     to: "/counselling",
   },
 ];
