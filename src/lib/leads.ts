@@ -14,7 +14,7 @@
  *   came from is always attached.
  */
 
-import { getLeadContext, getPartialLead } from "@/lib/leadContext";
+import { getLeadContext, getPartialLead, markLeadSubmitted } from "@/lib/leadContext";
 
 export const LEAD_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbxDCGIr01-dyHzlxSGfWjz9cH0oL9Gqv-V7jODdrgLkJbR3MJY7oH8W5C1XwALG_lF8nQ/exec";
@@ -138,6 +138,8 @@ async function post(row: LeadRow): Promise<boolean> {
 export async function submitLead(input: LeadInput): Promise<void> {
   if (typeof window === "undefined") return;
   const row = buildRow(input);
+  // Any completed form starts the popup cooling period for this visitor.
+  if (!/\((WhatsApp|Call)\)/.test(input.form)) markLeadSubmitted();
   const ok = await post(row);
   if (!ok) enqueue(row);
 }

@@ -11,7 +11,7 @@ import {
 import { AdmissionPopup } from "@/components/common/AdmissionPopup";
 import { CounsellingForm } from "@/components/common/CounsellingForm";
 import { WhatsAppFeeBar } from "@/components/common/WhatsAppFeeBar";
-import { rememberContext } from "@/lib/leadContext";
+import { rememberContext, markLeadSubmitted, leadCoolingDown } from "@/lib/leadContext";
 import { universities } from "@/lib/content";
 import { X } from "lucide-react";
 import { useRouterState } from "@tanstack/react-router";
@@ -110,9 +110,9 @@ const write = (store: "local" | "session", key: string, value: string) => {
   }
 };
 
-/** A lead was captured — never auto-open the counselling form again. */
-export const markLeadSubmitted = () => write("local", LEAD_KEY, "1");
-const leadSubmitted = () => read("local", LEAD_KEY) === "1";
+/** A lead was captured — start the site-wide popup cooling period. */
+export { markLeadSubmitted };
+const leadSubmitted = () => leadCoolingDown() || read("local", LEAD_KEY) === "1";
 
 /** Scroll depth of the document, 0..1. */
 const scrollDepth = () => {
@@ -208,12 +208,13 @@ function AdmissionScheduler() {
 
   useEffect(() => {
     if (typeof window === "undefined" || isHome) return;
+    if (leadSubmitted()) return;
     const seen = read("session", "avedu-admission-popup") === "seen";
     const delay = seen ? 10000 : 5000;
     let done = false;
 
     const fire = () => {
-      if (done) return;
+      if (done || leadSubmitted()) return;
       if (!request("admission")) return;
       done = true;
       setOpen(true);
