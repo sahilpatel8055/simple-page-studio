@@ -96,3 +96,46 @@ export const CALL_SLOTS = [
   "Today after 6 PM",
   "Tomorrow morning",
 ];
+
+/* ------------------------------------------------------------------ *
+ * Lead cooling period
+ * Once a visitor submits ANY form (counselling, enquiry, unlock, chat
+ * bot, contact), every auto popup — counselling form and admission
+ * banner — goes quiet: for the rest of the session, and for 7 days.
+ * ------------------------------------------------------------------ */
+
+const LEAD_AT_KEY = "avedu-lead-submitted-at";
+const LEAD_SESSION_KEY = "avedu-lead-session";
+export const LEAD_COOLDOWN_MS = 7 * 24 * 60 * 60 * 1000;
+
+export function markLeadSubmitted() {
+  if (typeof window === "undefined") return;
+  try {
+    localStorage.setItem(LEAD_AT_KEY, String(Date.now()));
+  } catch {
+    /* ignore */
+  }
+  try {
+    sessionStorage.setItem(LEAD_SESSION_KEY, "1");
+  } catch {
+    /* ignore */
+  }
+}
+
+/** True while auto popups must stay hidden after a submission. */
+export function leadCoolingDown() {
+  if (typeof window === "undefined") return false;
+  try {
+    if (sessionStorage.getItem(LEAD_SESSION_KEY) === "1") return true;
+  } catch {
+    /* ignore */
+  }
+  try {
+    // legacy flag from earlier versions
+    if (localStorage.getItem("avedu-lead-submitted") === "1") return true;
+    const at = Number(localStorage.getItem(LEAD_AT_KEY) ?? 0);
+    return at > 0 && Date.now() - at < LEAD_COOLDOWN_MS;
+  } catch {
+    return false;
+  }
+}
