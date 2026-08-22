@@ -66,6 +66,7 @@ export function BrandBanner({
   partnerLogo,
   partnerName,
   campusStrip,
+  compact = false,
   className = "",
 }: BrandBannerProps) {
   const { lead, highlight } = splitHeadline(title);
@@ -73,7 +74,7 @@ export function BrandBanner({
 
   return (
     <div
-      className={`relative isolate overflow-hidden rounded-2xl border border-border bg-[#0b1f4b] ${className}`}
+      className={`relative isolate overflow-hidden ${compact ? "" : "rounded-2xl border border-border"} bg-[#0b1f4b] ${className}`}
     >
       {/* Right-hand imagery */}
       {strip.length > 0 ? (
@@ -94,7 +95,7 @@ export function BrandBanner({
           alt=""
           aria-hidden="true"
           loading="lazy"
-          className="absolute inset-y-0 right-0 hidden h-full w-[58%] object-cover object-[50%_28%] sm:block"
+          className={`absolute inset-y-0 right-0 h-full w-[58%] object-cover object-[50%_28%] ${compact ? "" : "hidden sm:block"}`}
         />
       ) : null}
 
@@ -112,13 +113,25 @@ export function BrandBanner({
         className="absolute -left-16 -top-16 h-56 w-56 rounded-full bg-[#f2b021]/10"
       />
 
-      <div className="relative px-5 py-6 sm:max-w-[62%] sm:px-8 sm:py-9">
+      <div
+        className={
+          compact
+            ? "relative flex h-full max-w-[64%] flex-col justify-center px-4 py-4"
+            : "relative px-5 py-6 sm:max-w-[62%] sm:px-8 sm:py-9"
+        }
+      >
         <div className="flex flex-wrap items-center gap-2">
-          <LogoChip src={brandLogoSrc} alt="Degreekhojo" />
-          {partnerLogo && <LogoChip src={partnerLogo} alt={partnerName ?? ""} />}
+          <LogoChip src={brandLogoSrc} alt="Degreekhojo" compact={compact} />
+          {partnerLogo && <LogoChip src={partnerLogo} alt={partnerName ?? ""} compact={compact} />}
         </div>
 
-        <h2 className="mt-5 font-display text-xl font-extrabold leading-tight text-white sm:text-3xl">
+        <h2
+          className={
+            compact
+              ? "mt-2.5 line-clamp-3 font-display text-[0.8rem] font-extrabold leading-snug text-white"
+              : "mt-5 font-display text-xl font-extrabold leading-tight text-white sm:text-3xl"
+          }
+        >
           {lead}
           {highlight && (
             <>
@@ -128,7 +141,7 @@ export function BrandBanner({
           )}
         </h2>
 
-        {pills.length > 0 && (
+        {!compact && pills.length > 0 && (
           <ul className="mt-4 flex flex-wrap gap-2">
             {pills.map((p) => (
               <li
@@ -144,6 +157,7 @@ export function BrandBanner({
     </div>
   );
 }
+
 
 /** Blog-page banner: campus photo when the blog belongs to a university. */
 export function BlogBanner({
