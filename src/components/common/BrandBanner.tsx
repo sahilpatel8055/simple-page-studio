@@ -31,10 +31,17 @@ export function splitHeadline(title: string): { lead: string; highlight?: string
   return { lead: m[1]!.trim(), highlight: m[2]!.trim() };
 }
 
-function LogoChip({ src, alt }: { src: string; alt: string }) {
+function LogoChip({ src, alt, compact = false }: { src: string; alt: string; compact?: boolean }) {
   return (
-    <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5 shadow-sm">
-      <img src={src} alt={alt} loading="lazy" className="h-6 w-auto object-contain sm:h-8" />
+    <span
+      className={`inline-flex items-center rounded-lg bg-white shadow-sm ${compact ? "px-1.5 py-1" : "px-2.5 py-1.5"}`}
+    >
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className={compact ? "h-4 w-auto object-contain" : "h-6 w-auto object-contain sm:h-8"}
+      />
     </span>
   );
 }
@@ -50,6 +57,8 @@ export interface BrandBannerProps {
   partnerName?: undefined | string;
   /** Campus strip used by comparison banners (3–4 images). */
   campusStrip?: undefined | string[];
+  /** Card-sized rendering used in blog listings. */
+  compact?: boolean;
   className?: string;
 }
 
@@ -167,6 +176,7 @@ export function BlogBanner({
   universitySlug,
   universityName,
   pills,
+  compact = false,
 }: {
   title: string;
   categorySlug?: undefined | string;
@@ -174,6 +184,7 @@ export function BlogBanner({
   universitySlug?: undefined | string;
   universityName?: undefined | string;
   pills?: undefined | string[];
+  compact?: boolean;
 }) {
   const campus = universitySlug ? campusImage(universitySlug) : undefined;
   return (
@@ -183,6 +194,8 @@ export function BlogBanner({
       partnerLogo={universitySlug ? universityLogo(universitySlug) : undefined}
       partnerName={universityName}
       pills={pills ?? ["UGC Entitled Degree", "Flexible Learning", "Career Focused"]}
+      compact={compact}
+      className={compact ? "h-full" : ""}
     />
   );
 }
