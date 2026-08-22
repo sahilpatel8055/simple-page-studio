@@ -24,7 +24,7 @@ export function BlogBannerCard({ item }: { item: Article }) {
           universityName={label ?? item.category}
           compact
         />
-        <span className="absolute left-3 top-3 rounded-full bg-[#7f1813] px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-white">
+        <span className="absolute right-3 top-3 rounded-full bg-[#7f1813] px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-white">
           {label ?? item.category}
         </span>
       </div>
