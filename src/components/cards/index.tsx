@@ -305,7 +305,7 @@ export function AuthorCard({ item }: { item: Author }) {
       {photo ? (
         <img
           src={photo}
-          alt={`${item.name}, ${item.role} at DegreeKhojo`}
+          alt={`${item.name}, ${item.role} at Degreekhojo`}
           loading="lazy"
           width={96}
           height={96}

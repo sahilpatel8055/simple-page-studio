@@ -15,7 +15,7 @@ export function ConsentCheck({ className = "" }: { className?: string }) {
         className="mt-0.5 h-4 w-4 shrink-0 accent-[#7f1813]"
       />
       <span>
-        I consent to be contacted by DegreeKhojo regarding my enquiry and agree to the{" "}
+        I consent to be contacted by Degreekhojo regarding my enquiry and agree to the{" "}
         <AppLink
           to="/privacy-policy"
           className="font-semibold text-[#7f1813] underline underline-offset-2"

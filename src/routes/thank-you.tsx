@@ -18,7 +18,7 @@ import { canonical, pageMeta } from "@/lib/seo";
 
 const title = "Thank You — Your Counselling Request Is Confirmed";
 const description =
-  "Your free counselling request has reached the DegreeKhojo desk. While you wait for the call, compare universities, check fees and read verified admission guides.";
+  "Your free counselling request has reached the Degreekhojo desk. While you wait for the call, compare universities, check fees and read verified admission guides.";
 const path = "/thank-you";
 
 export const Route = createFileRoute("/thank-you")({
@@ -65,7 +65,7 @@ function Page() {
             Thank you — your counselling session is booked
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-sm leading-relaxed text-muted-foreground sm:text-base">
-            Your request has reached our admission desk. A DegreeKhojo counsellor will call you
+            Your request has reached our admission desk. A Degreekhojo counsellor will call you
             shortly with a university shortlist, verified fees and the scholarships you qualify for.
           </p>
 

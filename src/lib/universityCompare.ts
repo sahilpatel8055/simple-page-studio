@@ -334,7 +334,7 @@ export const compareGroups: CompareGroup[] = [
   },
   {
     id: "editorial",
-    title: "DegreeKhojo editorial view",
+    title: "Degreekhojo editorial view",
     blurb: "What our team rates and flags after reading the official sources.",
     locked: true,
     rows: [

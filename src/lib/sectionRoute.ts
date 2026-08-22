@@ -38,7 +38,7 @@ export function sectionHead(
       description,
       path,
       modifiedTime: loaderData.lastUpdated,
-      author: "DegreeKhojo Editorial Desk",
+      author: "Degreekhojo Editorial Desk",
     }),
     links: canonical(path),
     scripts: [

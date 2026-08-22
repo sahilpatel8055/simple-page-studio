@@ -73,7 +73,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border pt-8">
           <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-            DegreeKhojo ecosystem
+            Degreekhojo ecosystem
           </p>
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {ecosystemLinks.map((l) => (
@@ -111,7 +111,7 @@ export function Footer() {
             ))}
           </div>
           <p className="mt-6 text-center text-xs text-muted-foreground">
-            © {new Date().getFullYear()} DegreeKhojo. All rights reserved.
+            © {new Date().getFullYear()} Degreekhojo. All rights reserved.
           </p>
         </div>
       </div>

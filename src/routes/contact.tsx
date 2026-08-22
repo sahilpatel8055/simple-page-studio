@@ -8,7 +8,7 @@ import { savePartialLead } from "@/lib/leadContext";
 
 const title = "Contact & Free Admission Guidance";
 const description =
-  "Talk to an DegreeKhojo counsellor about eligibility, fees and university shortlisting — free of cost.";
+  "Talk to an Degreekhojo counsellor about eligibility, fees and university shortlisting — free of cost.";
 const path = "/contact";
 
 export const Route = createFileRoute("/contact")({

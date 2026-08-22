@@ -7,7 +7,7 @@ import { canonical, collectionSchema, jsonLd, pageMeta, breadcrumbSchema } from 
 
 const title = "Our Authors & Reviewers";
 const description =
-  "The editors, analysts and subject experts behind every guide published on DegreeKhojo.";
+  "The editors, analysts and subject experts behind every guide published on Degreekhojo.";
 const path = "/authors";
 
 export const Route = createFileRoute("/authors")({

@@ -6,7 +6,7 @@ import { CheckCircle2 } from "lucide-react";
 import { GrowthChart } from "@/components/common/GrowthChart";
 import { canonical, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
-const title = "About DegreeKhojo";
+const title = "About Degreekhojo";
 const description =
   "We research India’s online and distance education market so learners can choose a degree on evidence, not advertising.";
 const path = "/about";
@@ -63,7 +63,7 @@ function Page() {
               Meet The <span className="text-[#7f1813]">Movers</span>
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-white/80">
-              DegreeKhojo is an independent education research platform. We help working
+              Degreekhojo is an independent education research platform. We help working
               professionals and students in India find the right online or distance degree — without
               the sales pitch.
             </p>
@@ -85,7 +85,7 @@ function Page() {
           <div className="relative mx-auto w-full max-w-md lg:max-w-none">
             <img
               src="/banner-girl.png"
-              alt="DegreeKhojo advisor helping a learner choose an online degree"
+              alt="Degreekhojo advisor helping a learner choose an online degree"
               className="relative z-10 mx-auto w-full max-w-sm drop-shadow-2xl lg:max-w-md"
               loading="eager"
             />
@@ -105,7 +105,7 @@ function Page() {
             counsellors often push the programme that pays them the most.
           </p>
           <p className="mt-4 text-base leading-relaxed text-[#060606]/70">
-            We built DegreeKhojo to fix that. Our team researches universities, verifies fees and
+            We built Degreekhojo to fix that. Our team researches universities, verifies fees and
             approvals, and publishes what we find — so you can compare programmes with confidence
             and enrol in the degree that actually moves your career forward.
           </p>
@@ -137,7 +137,7 @@ function Page() {
           <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-2 shadow-xl">
             <img
               src="/experts.png"
-              alt="DegreeKhojo education experts and admission counsellors"
+              alt="Degreekhojo education experts and admission counsellors"
               className="h-full w-full rounded-2xl object-cover"
               width={1280}
               height={912}

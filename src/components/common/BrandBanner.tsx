@@ -45,7 +45,7 @@ export interface BrandBannerProps {
   pills?: undefined | string[];
   /** Right-hand photo (campus or student). */
   photo?: undefined | string;
-  /** Optional partner logo shown next to the DegreeKhojo logo. */
+  /** Optional partner logo shown next to the Degreekhojo logo. */
   partnerLogo?: undefined | string;
   partnerName?: undefined | string;
   /** Campus strip used by comparison banners (3–4 images). */
@@ -55,7 +55,7 @@ export interface BrandBannerProps {
 
 /**
  * Brand banner used as the hero artwork on blog and comparison pages.
- * Recreates our designed banner concept (navy panel + DegreeKhojo logo +
+ * Recreates our designed banner concept (navy panel + Degreekhojo logo +
  * gold-highlighted headline + pills) with real page data, so every page gets a
  * consistent, on-brand banner.
  */
@@ -114,7 +114,7 @@ export function BrandBanner({
 
       <div className="relative px-5 py-6 sm:max-w-[62%] sm:px-8 sm:py-9">
         <div className="flex flex-wrap items-center gap-2">
-          <LogoChip src={brandLogoSrc} alt="DegreeKhojo" />
+          <LogoChip src={brandLogoSrc} alt="Degreekhojo" />
           {partnerLogo && <LogoChip src={partnerLogo} alt={partnerName ?? ""} />}
         </div>
 

@@ -31,7 +31,7 @@ const desktopBanners: Banner[] = [
   },
   {
     src: banner4,
-    alt: "Trusted, unbiased admission guidance from DegreeKhojo",
+    alt: "Trusted, unbiased admission guidance from Degreekhojo",
     to: "/contact",
     height: "h-auto",
   },
@@ -52,7 +52,7 @@ const mobileBanners: Banner[] = [
   },
   {
     src: mobile3,
-    alt: "Free, unbiased admission guidance from DegreeKhojo",
+    alt: "Free, unbiased admission guidance from Degreekhojo",
     to: "/contact",
     height: "aspect-[1190/1194]",
   },

@@ -1,7 +1,7 @@
 import type { PostContent } from "@/data/posts";
 import type { Article } from "@/lib/content";
 
-const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, DegreeKhojo" };
+const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, Degreekhojo" };
 const UPDATED = "2026-08-14";
 
 export const lpuOnlineArticles: Article[] = [

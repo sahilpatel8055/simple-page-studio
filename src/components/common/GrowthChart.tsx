@@ -78,7 +78,7 @@ export function GrowthChart() {
         viewBox={`0 0 ${W} ${H}`}
         className="w-full"
         role="img"
-        aria-label="Growth in learners counselled by DegreeKhojo from 2021 to today"
+        aria-label="Growth in learners counselled by Degreekhojo from 2021 to today"
       >
         <defs>
           <linearGradient id="gk-growth-fill" x1="0" y1="0" x2="0" y2="1">

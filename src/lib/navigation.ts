@@ -167,7 +167,7 @@ export const primaryNav: NavItem[] = [
         heading: "About us",
         links: [
           { label: "Authors", href: "/authors" },
-          { label: "About DegreeKhojo", href: "/about" },
+          { label: "About Degreekhojo", href: "/about" },
           { label: "Contact", href: "/contact" },
         ],
       },
@@ -228,10 +228,10 @@ export const footerNav: NavColumn[] = [
   },
 ];
 
-/** DegreeKhojo ecosystem properties shown in the footer. */
+/** Degreekhojo ecosystem properties shown in the footer. */
 export const ecosystemLinks: NavLink[] = [
   {
-    label: "DegreeKhojo Blog",
+    label: "Degreekhojo Blog",
     href: "/blogs",
     description: "Research, guides and admission updates",
   },

@@ -52,7 +52,7 @@ export interface PostContent {
 }
 
 const REVIEWER = "Kartik Ahuja";
-const REVIEWER_ROLE = "Education Research Lead, DegreeKhojo";
+const REVIEWER_ROLE = "Education Research Lead, Degreekhojo";
 
 const base = { reviewer: REVIEWER, reviewerRole: REVIEWER_ROLE };
 

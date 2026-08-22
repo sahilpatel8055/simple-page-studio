@@ -156,7 +156,7 @@ if (live) {
 
 /* ------------------------------- Report ---------------------------------- */
 
-console.log("=== DegreeKhojo SEO audit ===");
+console.log("=== Degreekhojo SEO audit ===");
 console.log(`Production origin : ${SITE_URL}`);
 console.log(`Route files       : ${routeFiles.length}`);
 console.log(`Indexable routes  : ${indexable}`);

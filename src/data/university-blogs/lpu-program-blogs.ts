@@ -18,13 +18,13 @@
 import type { PostBlock, PostContent, PostSection } from "@/data/posts";
 import type { Article } from "@/lib/content";
 
-const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, DegreeKhojo" };
+const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, Degreekhojo" };
 const UPDATED = "2026-08-17";
 const UNI = "/universities/lpu-online";
 
 const courseLinks = (programme: string, slug: string): PostBlock => ({
   kind: "links",
-  title: `LPU ${programme} pages on DegreeKhojo`,
+  title: `LPU ${programme} pages on Degreekhojo`,
   items: [
     { label: `LPU Online ${programme} course page`, href: `${UNI}/courses/${slug}` },
     { label: `${programme} fees at LPU`, href: `${UNI}/courses/${slug}/fees` },

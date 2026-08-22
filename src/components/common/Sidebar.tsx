@@ -56,7 +56,7 @@ export function LeadCaptureCard({ title = "Get free admission guidance" }: { tit
     >
       <p className="text-sm font-bold">{title}</p>
       <p className="text-xs text-muted-foreground">
-        Verified counsellors from the DegreeKhojo network. No cost, no spam.
+        Verified counsellors from the Degreekhojo network. No cost, no spam.
       </p>
       <input
         required
@@ -108,7 +108,7 @@ export function TrustCard() {
           records
         </li>
         <li className="flex gap-2">
-          <Star className="mt-0.5 h-4 w-4 shrink-0 text-highlight" /> Reviewed by the DegreeKhojo
+          <Star className="mt-0.5 h-4 w-4 shrink-0 text-highlight" /> Reviewed by the Degreekhojo
           editorial desk
         </li>
       </ul>

@@ -141,7 +141,7 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
         description,
         path,
         modifiedTime: loaderData.lastUpdated,
-        author: "DegreeKhojo Editorial Desk",
+        author: "Degreekhojo Editorial Desk",
         keywords: ctr?.keywords ?? [
           `${loaderData.universityShort} ${loaderData.programmeName} fees`,
           `${loaderData.universityShort} ${loaderData.programmeName} admission`,

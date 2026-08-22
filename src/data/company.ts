@@ -7,9 +7,9 @@
  */
 
 export const company = {
-  brand: "DegreeKhojo",
-  alternateNames: ["Degree Khojo", "DegreeKhojo.com", "Degreekhojo"],
-  legalName: "DegreeKhojo",
+  brand: "Degreekhojo",
+  alternateNames: ["Degree Khojo", "Degreekhojo.com", "Degreekhojo"],
+  legalName: "Degreekhojo",
   domain: "degreekhojo.com",
   url: "https://degreekhojo.com",
   tagline: "India's online & distance education knowledge platform",

@@ -5,7 +5,7 @@ import { canonical, breadcrumbSchema, jsonLd, pageMeta } from "@/lib/seo";
 
 const title = "Free Online Degree Counselling";
 const description =
-  "Book a free 1-on-1 counselling session with an unbiased DegreeKhojo advisor — verified fees, UGC approvals, scholarships and a shortlist matched to your goal.";
+  "Book a free 1-on-1 counselling session with an unbiased Degreekhojo advisor — verified fees, UGC approvals, scholarships and a shortlist matched to your goal.";
 const path = "/counselling";
 
 export const Route = createFileRoute("/counselling")({

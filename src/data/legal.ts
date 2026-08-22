@@ -18,7 +18,7 @@ export interface LegalDoc {
 }
 
 export const FOOTER_DISCLAIMER =
-  "DegreeKhojo is an independent education information and guidance platform. We do not directly conduct academic programmes or award degrees. University admissions, eligibility, fees, curriculum, examinations, recognition, scholarships and placement policies are determined by the respective institutions and may change. Information on DegreeKhojo is provided for general informational purposes and should be verified with the relevant university or official authority before making an academic or financial decision.";
+  "Degreekhojo is an independent education information and guidance platform. We do not directly conduct academic programmes or award degrees. University admissions, eligibility, fees, curriculum, examinations, recognition, scholarships and placement policies are determined by the respective institutions and may change. Information on Degreekhojo is provided for general informational purposes and should be verified with the relevant university or official authority before making an academic or financial decision.";
 
 export const disclaimerDoc: LegalDoc = {
   slug: "disclaimer",
@@ -27,16 +27,16 @@ export const disclaimerDoc: LegalDoc = {
   title: "Website Disclaimer",
   metaTitle: "Disclaimer",
   description:
-    "How to interpret university, course, fee, ranking and placement information published on DegreeKhojo, and what we do not guarantee.",
+    "How to interpret university, course, fee, ranking and placement information published on Degreekhojo, and what we do not guarantee.",
   updated: "10/08/2026",
   intro: [
-    "DegreeKhojo is an independent education information, comparison and guidance platform designed to help students, working professionals and other learners research and compare universities, colleges, courses, programmes, fees, eligibility requirements, admission information and related educational opportunities.",
-    "DegreeKhojo does not itself conduct academic programmes, teach courses, conduct university examinations, issue degrees, diplomas, certificates or transcripts, or determine admission eligibility. Academic programmes, admissions, examinations, certifications, fee structures, scholarships, curriculum, academic policies and placement policies are determined and administered by the respective universities, institutions and regulatory authorities.",
+    "Degreekhojo is an independent education information, comparison and guidance platform designed to help students, working professionals and other learners research and compare universities, colleges, courses, programmes, fees, eligibility requirements, admission information and related educational opportunities.",
+    "Degreekhojo does not itself conduct academic programmes, teach courses, conduct university examinations, issue degrees, diplomas, certificates or transcripts, or determine admission eligibility. Academic programmes, admissions, examinations, certifications, fee structures, scholarships, curriculum, academic policies and placement policies are determined and administered by the respective universities, institutions and regulatory authorities.",
   ],
   sections: [
     {
       h: "1. Information for General Guidance",
-      p: ["The information published on DegreeKhojo, including:"],
+      p: ["The information published on Degreekhojo, including:"],
       list: [
         "University information",
         "Course information",
@@ -63,8 +63,8 @@ export const disclaimerDoc: LegalDoc = {
     {
       h: "2. University Information",
       p: [
-        "DegreeKhojo may publish information relating to universities and educational institutions for comparison and informational purposes.",
-        "Unless expressly stated otherwise, the appearance of a university, course, programme or institution on DegreeKhojo does not by itself constitute an endorsement, accreditation, partnership, affiliation or representation by that university.",
+        "Degreekhojo may publish information relating to universities and educational institutions for comparison and informational purposes.",
+        "Unless expressly stated otherwise, the appearance of a university, course, programme or institution on Degreekhojo does not by itself constitute an endorsement, accreditation, partnership, affiliation or representation by that university.",
         "Official recognition, accreditation, approval, programme availability and eligibility should always be confirmed from the relevant institution or regulatory authority.",
       ],
     },
@@ -72,14 +72,14 @@ export const disclaimerDoc: LegalDoc = {
       h: "3. Fees and Admission Information",
       p: [
         "Fees, admission dates, eligibility criteria, seat availability, examination schedules, scholarships and other programme-related information may change.",
-        "Any fee displayed on DegreeKhojo should be treated as indicative unless explicitly identified as an official current fee published by the institution.",
+        "Any fee displayed on Degreekhojo should be treated as indicative unless explicitly identified as an official current fee published by the institution.",
         "Users should confirm the final payable amount and applicable admission requirements directly with the university before making payment.",
       ],
     },
     {
       h: "4. Rankings, Comparisons and Recommendations",
       p: [
-        "Any ranking, comparison, rating, recommendation or \u201cbest university/course\u201d statement published on DegreeKhojo is based on the methodology, data and criteria described on the relevant page, where applicable.",
+        "Any ranking, comparison, rating, recommendation or \u201cbest university/course\u201d statement published on Degreekhojo is based on the methodology, data and criteria described on the relevant page, where applicable.",
         "Such information should not be interpreted as an absolute guarantee of academic quality, employment, salary, admission, placement or career outcome.",
         "Individual results may vary depending on the learner's qualifications, skills, experience, location, market conditions and other factors.",
       ],
@@ -94,15 +94,15 @@ export const disclaimerDoc: LegalDoc = {
     {
       h: "6. Third-Party Websites",
       p: [
-        "DegreeKhojo may contain links to university websites, government websites, payment gateways, educational platforms, social media platforms and other third-party websites.",
-        "DegreeKhojo does not control third-party websites and is not responsible for their content, availability, security, privacy practices, policies or transactions.",
+        "Degreekhojo may contain links to university websites, government websites, payment gateways, educational platforms, social media platforms and other third-party websites.",
+        "Degreekhojo does not control third-party websites and is not responsible for their content, availability, security, privacy practices, policies or transactions.",
         "Users should review the terms and privacy policies of third-party websites before using their services.",
       ],
     },
     {
       h: "7. No Guarantee",
       p: [
-        "To the maximum extent permitted by applicable law, DegreeKhojo does not guarantee that information published on the website will always be:",
+        "To the maximum extent permitted by applicable law, Degreekhojo does not guarantee that information published on the website will always be:",
       ],
       list: [
         "Complete",
@@ -119,21 +119,21 @@ export const disclaimerDoc: LegalDoc = {
     {
       h: "8. Intellectual Property",
       p: [
-        "University names, logos, trademarks and other institutional marks appearing on DegreeKhojo belong to their respective owners.",
+        "University names, logos, trademarks and other institutional marks appearing on Degreekhojo belong to their respective owners.",
         "Their use on the platform is intended for identification, informational, editorial and comparative purposes and does not necessarily indicate ownership, affiliation or endorsement.",
-        "DegreeKhojo's original content, branding, design, graphics, text and other proprietary materials remain protected by applicable intellectual-property laws.",
+        "Degreekhojo's original content, branding, design, graphics, text and other proprietary materials remain protected by applicable intellectual-property laws.",
       ],
     },
     {
       h: "9. Changes to Information",
       p: [
-        "DegreeKhojo may update, correct, modify or remove information at any time when new information becomes available or when an error is identified.",
+        "Degreekhojo may update, correct, modify or remove information at any time when new information becomes available or when an error is identified.",
       ],
     },
     {
       h: "10. Contact",
       p: [
-        "For corrections, factual updates, complaints or questions regarding information published on DegreeKhojo:",
+        "For corrections, factual updates, complaints or questions regarding information published on Degreekhojo:",
         "Email: support@degreekhojo.com",
         "Website: https://degreekhojo.com/",
       ],
@@ -148,18 +148,18 @@ export const termsDoc: LegalDoc = {
   title: "Terms & Conditions",
   metaTitle: "Terms and Conditions",
   description:
-    "The terms that govern your access to and use of the DegreeKhojo education information and guidance platform.",
+    "The terms that govern your access to and use of the Degreekhojo education information and guidance platform.",
   updated: "10/08/2026",
   intro: [
-    "Welcome to DegreeKhojo. These Terms & Conditions govern your access to and use of the DegreeKhojo website and its services.",
+    "Welcome to Degreekhojo. These Terms & Conditions govern your access to and use of the Degreekhojo website and its services.",
     "By accessing or using the website, you acknowledge that you have read, understood and agreed to these Terms & Conditions.",
     "If you do not agree with these terms, please discontinue use of the website.",
   ],
   sections: [
     {
-      h: "1. About DegreeKhojo",
+      h: "1. About Degreekhojo",
       p: [
-        "DegreeKhojo operates as an independent education information and guidance platform.",
+        "Degreekhojo operates as an independent education information and guidance platform.",
         "The platform may provide:",
       ],
       list: [
@@ -174,8 +174,8 @@ export const termsDoc: LegalDoc = {
         "Other related informational services",
       ],
       after: [
-        "DegreeKhojo is not a university, college, examination board, accreditation authority or degree-granting institution.",
-        "DegreeKhojo does not independently award academic qualifications.",
+        "Degreekhojo is not a university, college, examination board, accreditation authority or degree-granting institution.",
+        "Degreekhojo does not independently award academic qualifications.",
       ],
     },
     {
@@ -203,7 +203,7 @@ export const termsDoc: LegalDoc = {
     {
       h: "3. User Responsibility",
       p: [
-        "Users agree to provide accurate information when submitting forms, enquiries or requests through DegreeKhojo.",
+        "Users agree to provide accurate information when submitting forms, enquiries or requests through Degreekhojo.",
         "Users must not:",
       ],
       list: [
@@ -229,15 +229,15 @@ export const termsDoc: LegalDoc = {
     {
       h: "5. Third-Party Institutions and Services",
       p: [
-        "DegreeKhojo may facilitate access to information about universities, colleges, education providers or other third parties.",
-        "Unless expressly stated otherwise, DegreeKhojo does not control the independent policies, decisions or services of such third parties.",
+        "Degreekhojo may facilitate access to information about universities, colleges, education providers or other third parties.",
+        "Unless expressly stated otherwise, Degreekhojo does not control the independent policies, decisions or services of such third parties.",
         "Any admission, payment, enrolment or academic relationship ultimately exists between the learner and the relevant institution or service provider.",
       ],
     },
     {
       h: "6. Intellectual Property",
       p: [
-        "Unless otherwise stated, the DegreeKhojo name, logo, website design, original text, graphics, databases, software, layout and other proprietary materials are owned by or licensed to DegreeKhojo.",
+        "Unless otherwise stated, the Degreekhojo name, logo, website design, original text, graphics, databases, software, layout and other proprietary materials are owned by or licensed to Degreekhojo.",
         "Users may not reproduce, redistribute, commercially exploit or republish substantial portions of proprietary content without prior written permission.",
         "University and third-party trademarks remain the property of their respective owners.",
       ],
@@ -246,7 +246,7 @@ export const termsDoc: LegalDoc = {
       h: "7. User-Generated Content",
       p: [
         "Where users are permitted to submit reviews, comments, questions or other content, users are responsible for ensuring that their submissions are lawful, accurate and do not violate another person's rights.",
-        "DegreeKhojo reserves the right to moderate, edit, restrict or remove content that is unlawful, misleading, abusive, defamatory, discriminatory, promotional or otherwise inappropriate.",
+        "Degreekhojo reserves the right to moderate, edit, restrict or remove content that is unlawful, misleading, abusive, defamatory, discriminatory, promotional or otherwise inappropriate.",
       ],
     },
     {
@@ -260,7 +260,7 @@ export const termsDoc: LegalDoc = {
       h: "9. Disclaimer of Warranties",
       p: [
         "To the maximum extent permitted by applicable law, the website and its information are provided on an \u201cas available\u201d and \u201cas is\u201d basis.",
-        "DegreeKhojo does not guarantee:",
+        "Degreekhojo does not guarantee:",
       ],
       list: [
         "Admission to any university",
@@ -277,7 +277,7 @@ export const termsDoc: LegalDoc = {
     {
       h: "10. Limitation of Liability",
       p: [
-        "To the maximum extent permitted by applicable law, DegreeKhojo shall not be responsible for losses arising from reliance on third-party information, university decisions, admission outcomes, changes in fees, changes in eligibility, placement outcomes or the user's independent educational decisions.",
+        "To the maximum extent permitted by applicable law, Degreekhojo shall not be responsible for losses arising from reliance on third-party information, university decisions, admission outcomes, changes in fees, changes in eligibility, placement outcomes or the user's independent educational decisions.",
         "Nothing in these Terms is intended to exclude liability that cannot lawfully be excluded under applicable law.",
       ],
     },
@@ -285,13 +285,13 @@ export const termsDoc: LegalDoc = {
       h: "11. External Links",
       p: [
         "External links are provided for convenience and informational purposes.",
-        "DegreeKhojo does not necessarily endorse or guarantee third-party websites, products or services.",
+        "Degreekhojo does not necessarily endorse or guarantee third-party websites, products or services.",
       ],
     },
     {
       h: "12. Changes to These Terms",
       p: [
-        "DegreeKhojo may update these Terms & Conditions when necessary.",
+        "Degreekhojo may update these Terms & Conditions when necessary.",
         "The updated version will be published on this page with a revised \u201cLast Updated\u201d date.",
         "Continued use of the website after an update constitutes acceptance of the revised terms, subject to applicable law.",
       ],
@@ -300,14 +300,14 @@ export const termsDoc: LegalDoc = {
       h: "13. Governing Law",
       p: [
         "These Terms & Conditions shall be governed by the applicable laws of India.",
-        "Any dispute shall be subject to the jurisdiction of the competent courts having jurisdiction over DegreeKhojo's registered/operational office, subject to applicable law.",
+        "Any dispute shall be subject to the jurisdiction of the competent courts having jurisdiction over Degreekhojo's registered/operational office, subject to applicable law.",
       ],
     },
     {
       h: "14. Contact",
       p: [
         "For questions regarding these Terms:",
-        "DegreeKhojo",
+        "Degreekhojo",
         "Email: Support@degreekhojo.com",
         "Website: https://degreekhojo.com/",
       ],
@@ -322,16 +322,16 @@ export const editorialDoc: LegalDoc = {
   title: "Editorial Policy",
   metaTitle: "Editorial Policy",
   description:
-    "How DegreeKhojo researches, writes, reviews, updates and corrects university, course and admission content.",
+    "How Degreekhojo researches, writes, reviews, updates and corrects university, course and admission content.",
   updated: "10/08/2026",
   intro: [
-    "At DegreeKhojo, our objective is to provide learners with useful, understandable and responsibly presented information about universities, courses, admissions, online education, distance education and career-related topics.",
-    "Our editorial policy explains how we research, create, review, update and correct content published on DegreeKhojo.",
+    "At Degreekhojo, our objective is to provide learners with useful, understandable and responsibly presented information about universities, courses, admissions, online education, distance education and career-related topics.",
+    "Our editorial policy explains how we research, create, review, update and correct content published on Degreekhojo.",
   ],
   sections: [
     {
       h: "1. Our Editorial Purpose",
-      p: ["DegreeKhojo creates educational content to help learners:"],
+      p: ["Degreekhojo creates educational content to help learners:"],
       list: [
         "Understand universities and programmes.",
         "Compare educational options.",
@@ -347,7 +347,7 @@ export const editorialDoc: LegalDoc = {
     {
       h: "2. Independent Educational Information",
       p: [
-        "DegreeKhojo operates as an independent information and guidance platform.",
+        "Degreekhojo operates as an independent information and guidance platform.",
         "Our editorial content should not be interpreted as representing the official position of a university unless the content explicitly identifies an official university source.",
         "Where information is provided by a university or another organisation, we aim to identify or appropriately attribute the source where practical.",
       ],
@@ -394,7 +394,7 @@ export const editorialDoc: LegalDoc = {
     {
       h: "6. Corrections Policy",
       p: [
-        "If you identify an inaccurate, outdated or misleading statement on DegreeKhojo, you can contact our editorial team.",
+        "If you identify an inaccurate, outdated or misleading statement on Degreekhojo, you can contact our editorial team.",
         "Please provide:",
       ],
       list: [
@@ -410,7 +410,7 @@ export const editorialDoc: LegalDoc = {
     {
       h: "7. Sponsored and Commercial Relationships",
       p: [
-        "DegreeKhojo may have commercial relationships with educational institutions, service providers or other organisations.",
+        "Degreekhojo may have commercial relationships with educational institutions, service providers or other organisations.",
         "Where content is sponsored, paid, promotional or commercially influenced, it should be appropriately disclosed in accordance with applicable requirements.",
         "Commercial relationships should not be presented as independent editorial endorsements.",
       ],
@@ -426,7 +426,7 @@ export const editorialDoc: LegalDoc = {
     {
       h: "9. Rankings and Comparisons",
       p: [
-        "DegreeKhojo may publish rankings, comparisons or recommendations.",
+        "Degreekhojo may publish rankings, comparisons or recommendations.",
         "Where a ranking or comparison is presented, we aim to explain the relevant criteria or methodology.",
         "A ranking should not be interpreted as an absolute measure of educational quality or as a guarantee of a particular academic or career outcome.",
       ],
@@ -434,7 +434,7 @@ export const editorialDoc: LegalDoc = {
     {
       h: "10. AI-Assisted Content",
       p: [
-        "DegreeKhojo may use technology, including AI-assisted tools, during certain stages of research, drafting, formatting or content production.",
+        "Degreekhojo may use technology, including AI-assisted tools, during certain stages of research, drafting, formatting or content production.",
         "AI-assisted material is subject to human review and editorial oversight before publication.",
         "We do not intend to publish automatically generated content without appropriate editorial review.",
       ],
@@ -444,7 +444,7 @@ export const editorialDoc: LegalDoc = {
       p: [
         "University names, logos, photographs and trademarks may appear in educational and editorial content for identification and informational purposes.",
         "Ownership of such third-party intellectual property remains with the respective rights holders.",
-        "Where a rights holder believes material has been used incorrectly, they may contact DegreeKhojo for review.",
+        "Where a rights holder believes material has been used incorrectly, they may contact Degreekhojo for review.",
       ],
     },
     {
@@ -488,7 +488,7 @@ export const editorialDoc: LegalDoc = {
       h: "15. Contact the Editorial Team",
       p: [
         "For corrections, source suggestions, factual concerns or editorial questions:",
-        "DegreeKhojo Editorial Team",
+        "Degreekhojo Editorial Team",
         "Email: info@degreekhojo.com",
         "Website: https://degreekhojo.com/",
       ],
@@ -503,18 +503,18 @@ export const privacyDoc: LegalDoc = {
   title: "Privacy Policy",
   metaTitle: "Privacy Policy",
   description:
-    "How DegreeKhojo collects, uses, shares, stores and protects the personal information you share through our website and enquiry forms.",
+    "How Degreekhojo collects, uses, shares, stores and protects the personal information you share through our website and enquiry forms.",
   updated: "10/08/2026",
   intro: [
-    "At DegreeKhojo, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how DegreeKhojo collects, uses, stores, and protects information when you visit or use our website, services, forms, and other digital platforms.",
-    "By accessing or using DegreeKhojo.com, you agree to the practices described in this Privacy Policy. If you do not agree with any part of this policy, please discontinue use of the website.",
+    "At Degreekhojo, we respect your privacy and are committed to protecting the personal information you share with us. This Privacy Policy explains how Degreekhojo collects, uses, stores, and protects information when you visit or use our website, services, forms, and other digital platforms.",
+    "By accessing or using Degreekhojo.com, you agree to the practices described in this Privacy Policy. If you do not agree with any part of this policy, please discontinue use of the website.",
   ],
   sections: [
     {
-      h: "1. About DegreeKhojo",
+      h: "1. About Degreekhojo",
       p: [
-        "DegreeKhojo is an independent education guidance and information platform that helps students and learners research, compare, and understand universities, colleges, online education, distance education, courses, admissions, fees, eligibility, and related educational opportunities.",
-        "DegreeKhojo does not itself provide academic degrees or conduct university programmes unless explicitly stated on a particular page. Academic programmes, admissions, fees, examinations, curriculum, recognition, scholarships, placements, and related academic decisions are governed by the respective university or institution.",
+        "Degreekhojo is an independent education guidance and information platform that helps students and learners research, compare, and understand universities, colleges, online education, distance education, courses, admissions, fees, eligibility, and related educational opportunities.",
+        "Degreekhojo does not itself provide academic degrees or conduct university programmes unless explicitly stated on a particular page. Academic programmes, admissions, fees, examinations, curriculum, recognition, scholarships, placements, and related academic decisions are governed by the respective university or institution.",
       ],
     },
     {
@@ -538,7 +538,7 @@ export const privacyDoc: LegalDoc = {
       after: [
         "You should provide only information that is necessary and accurate for the purpose for which it is submitted.",
         "Information Collected Automatically",
-        "When you visit DegreeKhojo.com, certain technical information may automatically be collected, including IP address, browser type and version, device type, operating system, pages visited, referring pages, date and time of visits, approximate geographic information, and website interaction and usage information.",
+        "When you visit Degreekhojo.com, certain technical information may automatically be collected, including IP address, browser type and version, device type, operating system, pages visited, referring pages, date and time of visits, approximate geographic information, and website interaction and usage information.",
         "This information helps us understand website performance, improve user experience, identify technical issues, and maintain website security.",
       ],
     },
@@ -569,7 +569,7 @@ export const privacyDoc: LegalDoc = {
     {
       h: "4. Enquiry Forms and Counselling Requests",
       p: [
-        "If you submit your information through a DegreeKhojo enquiry or counselling form, your information may be used to respond to your request.",
+        "If you submit your information through a Degreekhojo enquiry or counselling form, your information may be used to respond to your request.",
         "Depending on the nature of your enquiry, we may share relevant information with:",
       ],
       list: [
@@ -585,7 +585,7 @@ export const privacyDoc: LegalDoc = {
     },
     {
       h: "5. Cookies and Similar Technologies",
-      p: ["DegreeKhojo may use cookies and similar technologies to:"],
+      p: ["Degreekhojo may use cookies and similar technologies to:"],
       list: [
         "Operate essential website functions",
         "Remember user preferences",
@@ -605,22 +605,22 @@ export const privacyDoc: LegalDoc = {
         "We may use third-party tools and services for website analytics, performance measurement, advertising, communication, security, and other operational purposes.",
         "These services may collect information about your interaction with our website according to their own privacy policies.",
         "Examples may include analytics, advertising, payment, communication, hosting, CRM, security, or other technology providers.",
-        "DegreeKhojo does not control the privacy practices of independent third-party services. We encourage users to review the privacy policies of such services where appropriate.",
+        "Degreekhojo does not control the privacy practices of independent third-party services. We encourage users to review the privacy policies of such services where appropriate.",
       ],
     },
     {
       h: "7. Advertising",
       p: [
-        "DegreeKhojo may display advertisements provided by third-party advertising platforms.",
+        "Degreekhojo may display advertisements provided by third-party advertising platforms.",
         "Advertising providers may use cookies, identifiers, contextual information, or similar technologies to deliver, measure, and improve advertisements.",
-        "DegreeKhojo does not guarantee or endorse every product, service, advertisement, or third-party website displayed through advertising networks.",
+        "Degreekhojo does not guarantee or endorse every product, service, advertisement, or third-party website displayed through advertising networks.",
         "Users should independently evaluate third-party offers before making any purchase, admission, financial commitment, or other decision.",
       ],
     },
     {
       h: "8. Google Advertising and Analytics",
       p: [
-        "Where Google services are used on DegreeKhojo, information may be processed according to Google's applicable policies.",
+        "Where Google services are used on Degreekhojo, information may be processed according to Google's applicable policies.",
         "Google and other advertising partners may use cookies or similar technologies to understand interactions with websites and provide or measure relevant advertising.",
         "Users may manage certain advertising preferences through the controls provided by the relevant advertising provider and their browser or device.",
       ],
@@ -697,7 +697,7 @@ export const privacyDoc: LegalDoc = {
     {
       h: "14. Children's Privacy",
       p: [
-        "DegreeKhojo is intended primarily for students, learners, parents, working professionals, and other individuals seeking higher-education information.",
+        "Degreekhojo is intended primarily for students, learners, parents, working professionals, and other individuals seeking higher-education information.",
         "We do not knowingly request or intentionally collect personal information from children where such collection is prohibited by applicable law.",
         "If you believe that a child has provided personal information to us in circumstances where such collection should not have occurred, please contact us so that we can review and take appropriate action.",
       ],
@@ -707,14 +707,14 @@ export const privacyDoc: LegalDoc = {
       p: [
         "Our website may contain links to university websites, educational institutions, government websites, third-party services, advertisements, or other external websites.",
         "These websites operate independently and may have their own privacy policies and terms.",
-        "DegreeKhojo is not responsible for the privacy practices, security, content, or policies of external websites.",
+        "Degreekhojo is not responsible for the privacy practices, security, content, or policies of external websites.",
         "We recommend reviewing the privacy policy of any third-party website before submitting personal information.",
       ],
     },
     {
       h: "16. University Information and Educational Content",
       p: [
-        "DegreeKhojo publishes educational information including university profiles, course information, eligibility, fees, admission information, rankings, comparisons, articles, guides, and other educational content.",
+        "Degreekhojo publishes educational information including university profiles, course information, eligibility, fees, admission information, rankings, comparisons, articles, guides, and other educational content.",
         "Such information is provided for general informational and guidance purposes.",
         "University fees, admission dates, eligibility requirements, course structures, recognition, examination schedules, placement information, and other academic details may change.",
         "Users should verify important information with the respective university or official authority before making an admission or financial decision.",
@@ -723,7 +723,7 @@ export const privacyDoc: LegalDoc = {
     {
       h: "17. Data of Existing Users",
       p: [
-        "If you have previously submitted information to DegreeKhojo, this Privacy Policy also applies to the processing of that information, subject to the terms and legal requirements applicable at the time of collection.",
+        "If you have previously submitted information to Degreekhojo, this Privacy Policy also applies to the processing of that information, subject to the terms and legal requirements applicable at the time of collection.",
       ],
     },
     {
@@ -745,8 +745,8 @@ export const privacyDoc: LegalDoc = {
       h: "19. Contact Us",
       p: [
         "If you have questions, concerns, requests, or complaints regarding this Privacy Policy or the handling of your personal information, you can contact us:",
-        "DegreeKhojo",
-        "Website: DegreeKhojo.com",
+        "Degreekhojo",
+        "Website: Degreekhojo.com",
         "Email: Admin@degreekhojo.com",
         "Phone: +91 87700 12496",
         "We will make reasonable efforts to review and respond to privacy-related requests within an appropriate period.",
@@ -755,7 +755,7 @@ export const privacyDoc: LegalDoc = {
     {
       h: "20. Consent",
       p: [
-        "By using DegreeKhojo.com and voluntarily submitting your information through our website, you acknowledge that you have read and understood this Privacy Policy and agree to the collection and use of information as described herein, subject to applicable law.",
+        "By using Degreekhojo.com and voluntarily submitting your information through our website, you acknowledge that you have read and understood this Privacy Policy and agree to the collection and use of information as described herein, subject to applicable law.",
       ],
     },
   ],
