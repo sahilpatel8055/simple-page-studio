@@ -8,7 +8,7 @@
 import { company } from "@/data/company";
 
 
-export const SITE_NAME = "DegreeKhojo";
+export const SITE_NAME = "Degreekhojo";
 export const SITE_TAGLINE = "India's online & distance education knowledge platform";
 export const SITE_LOCALE = "en_IN";
 export const SITE_LANG = "en-IN";

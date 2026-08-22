@@ -1,4 +1,4 @@
-# DegreeKhojo — Remaining Data Gap Research (2026–27)
+# Degreekhojo — Remaining Data Gap Research (2026–27)
 
 ## 1. VERIFIED ESTABLISHED YEARS
 

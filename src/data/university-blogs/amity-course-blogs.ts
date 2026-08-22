@@ -1,7 +1,7 @@
 /**
  * Amity Online course blog blueprint — one shared structure, six programmes.
  *
- * Content is lifted from the DegreeKhojo Amity deep-master source files
+ * Content is lifted from the Degreekhojo Amity deep-master source files
  * (MBA, MCA, M.Com, BBA, BCA, B.Com). Every post follows the same heading
  * order so the reading experience is identical on mobile:
  *
@@ -17,7 +17,7 @@
 import type { PostBlock, PostContent, PostSection } from "@/data/posts";
 import type { Article } from "@/lib/content";
 
-const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, DegreeKhojo" };
+const base = { reviewer: "Kartik Ahuja", reviewerRole: "Education Research Lead, Degreekhojo" };
 const UPDATED = "2026-08-16";
 
 const VERIFY_NOTE =
@@ -64,7 +64,7 @@ interface AmityBlogConfig {
 const enquiryCta = (name: string): PostBlock => ({
   kind: "cta",
   title: `Confirm the live ${name} fee before you pay`,
-  body: "Share your details and an unbiased DegreeKhojo counsellor will send the current fee sheet, EMI plan and scholarship eligibility for your intake — no spam, no pressure.",
+  body: "Share your details and an unbiased Degreekhojo counsellor will send the current fee sheet, EMI plan and scholarship eligibility for your intake — no spam, no pressure.",
   buttonLabel: "Get the 2026 fee sheet",
 });
 
@@ -481,7 +481,7 @@ const configs: AmityBlogConfig[] = [
       "Payment confirmation and application reference number",
     ],
     feeIntro:
-      "The fetched official Amity page currently displays USD pricing, while Indian third-party sources report INR structures that vary by route and cycle. Those values must never be merged. DegreeKhojo publishes the manually researched India-specific payable amount with the research date attached.",
+      "The fetched official Amity page currently displays USD pricing, while Indian third-party sources report INR structures that vary by route and cycle. Those values must never be merged. Degreekhojo publishes the manually researched India-specific payable amount with the research date attached.",
     feeRows: [
       [
         "Programme fee",

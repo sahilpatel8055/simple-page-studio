@@ -14,7 +14,8 @@ import {
 } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
 import { campusImage, universityLogo } from "@/lib/assets";
-import { articleCover } from "@/lib/articleCover";
+import { BlogBanner } from "@/components/common/BrandBanner";
+import { universityByBlogSlug } from "@/data/university-blogs";
 import { Chip } from "@/components/common/Primitives";
 import { formatDate } from "@/lib/content";
 import { expertPhoto } from "@/lib/experts";
@@ -120,20 +121,19 @@ export function ArticleCard({
       </AppLink>
     );
   }
-  const cover = articleCover(item);
+  const universitySlug = universityByBlogSlug[item.slug];
   return (
     <AppLink to={href} className="card-pro hover-lift group flex flex-col overflow-hidden">
-      {cover && (
-        <div className="relative aspect-[16/9] w-full overflow-hidden bg-secondary">
-          <img
-            src={cover}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        </div>
-      )}
+      <div className="relative aspect-[16/9] w-full overflow-hidden bg-secondary transition-transform duration-500 group-hover:scale-[1.03]">
+        <BlogBanner
+          title={item.title}
+          categorySlug={item.categorySlug}
+          slug={item.slug}
+          universitySlug={universitySlug}
+          universityName={item.category}
+          compact
+        />
+      </div>
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <div className="flex flex-wrap items-center gap-2">
           <Chip tone="brand">{item.category}</Chip>
@@ -305,7 +305,7 @@ export function AuthorCard({ item }: { item: Author }) {
       {photo ? (
         <img
           src={photo}
-          alt={`${item.name}, ${item.role} at DegreeKhojo`}
+          alt={`${item.name}, ${item.role} at Degreekhojo`}
           loading="lazy"
           width={96}
           height={96}

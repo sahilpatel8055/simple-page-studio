@@ -2,7 +2,7 @@
   "meta": {
     "phase": 1,
     "title": "Content Gap Audit + Research DB Foundation",
-    "generated_for": "DegreeKhojo / clean-slate",
+    "generated_for": "Degreekhojo / clean-slate",
     "generated_on": "2026-08-13",
     "purpose": "Do not replace good existing content. This file identifies only missing, weak, conflicting or unsafe content/data that should be researched and implemented next.",
     "source_of_truth": "clean-slate-main.zip supplied by user",

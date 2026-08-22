@@ -1,5 +1,5 @@
 /**
- * Photos of the DegreeKhojo editorial team.
+ * Photos of the Degreekhojo editorial team.
  *
  * Kept separate from `src/lib/content.ts` so the author records stay plain
  * data and only the UI layer pulls in the image bundles.

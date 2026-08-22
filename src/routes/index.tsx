@@ -36,9 +36,9 @@ import {
 } from "@/lib/content";
 import { canonical, faqSchema, jsonLd, pageMeta, websiteSchema } from "@/lib/seo";
 
-const title = "Top Online Universities: Compare Fees, Programs and EMI - DegreeKhojo";
+const title = "Top Online Universities: Compare Fees, Programs and EMI - Degreekhojo";
 const description =
-  "Explore and compare top online and distance universities in India based on fees, courses, admissions, approvals, placements and EMI options. Make an informed choice with DegreeKhojo.";
+  "Explore and compare top online and distance universities in India based on fees, courses, admissions, approvals, placements and EMI options. Make an informed choice with Degreekhojo.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -279,7 +279,7 @@ function HomePage() {
         <PromoBanner
           variant="guidance"
           title="Confused between two universities?"
-          subtitle="Get a free 15-minute call with an DegreeKhojo counsellor and a side-by-side comparison on WhatsApp."
+          subtitle="Get a free 15-minute call with an Degreekhojo counsellor and a side-by-side comparison on WhatsApp."
           ctaLabel="Talk to a counsellor"
         />
       </div>

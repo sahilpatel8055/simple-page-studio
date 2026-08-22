@@ -31,10 +31,17 @@ export function splitHeadline(title: string): { lead: string; highlight?: string
   return { lead: m[1]!.trim(), highlight: m[2]!.trim() };
 }
 
-function LogoChip({ src, alt }: { src: string; alt: string }) {
+function LogoChip({ src, alt, compact = false }: { src: string; alt: string; compact?: boolean }) {
   return (
-    <span className="inline-flex items-center rounded-lg bg-white px-2.5 py-1.5 shadow-sm">
-      <img src={src} alt={alt} loading="lazy" className="h-6 w-auto object-contain sm:h-8" />
+    <span
+      className={`inline-flex items-center rounded-lg bg-white shadow-sm ${compact ? "px-1.5 py-1" : "px-2.5 py-1.5"}`}
+    >
+      <img
+        src={src}
+        alt={alt}
+        loading="lazy"
+        className={compact ? "h-4 w-auto object-contain" : "h-6 w-auto object-contain sm:h-8"}
+      />
     </span>
   );
 }
@@ -45,17 +52,19 @@ export interface BrandBannerProps {
   pills?: undefined | string[];
   /** Right-hand photo (campus or student). */
   photo?: undefined | string;
-  /** Optional partner logo shown next to the DegreeKhojo logo. */
+  /** Optional partner logo shown next to the Degreekhojo logo. */
   partnerLogo?: undefined | string;
   partnerName?: undefined | string;
   /** Campus strip used by comparison banners (3–4 images). */
   campusStrip?: undefined | string[];
+  /** Card-sized rendering used in blog listings. */
+  compact?: boolean;
   className?: string;
 }
 
 /**
  * Brand banner used as the hero artwork on blog and comparison pages.
- * Recreates our designed banner concept (navy panel + DegreeKhojo logo +
+ * Recreates our designed banner concept (navy panel + Degreekhojo logo +
  * gold-highlighted headline + pills) with real page data, so every page gets a
  * consistent, on-brand banner.
  */
@@ -66,6 +75,7 @@ export function BrandBanner({
   partnerLogo,
   partnerName,
   campusStrip,
+  compact = false,
   className = "",
 }: BrandBannerProps) {
   const { lead, highlight } = splitHeadline(title);
@@ -73,7 +83,7 @@ export function BrandBanner({
 
   return (
     <div
-      className={`relative isolate overflow-hidden rounded-2xl border border-border bg-[#0b1f4b] ${className}`}
+      className={`relative isolate overflow-hidden ${compact ? "" : "rounded-2xl border border-border"} bg-[#0b1f4b] ${className}`}
     >
       {/* Right-hand imagery */}
       {strip.length > 0 ? (
@@ -94,7 +104,7 @@ export function BrandBanner({
           alt=""
           aria-hidden="true"
           loading="lazy"
-          className="absolute inset-y-0 right-0 hidden h-full w-[58%] object-cover object-[50%_28%] sm:block"
+          className={`absolute inset-y-0 right-0 h-full w-[58%] object-cover object-[50%_28%] ${compact ? "" : "hidden sm:block"}`}
         />
       ) : null}
 
@@ -112,13 +122,25 @@ export function BrandBanner({
         className="absolute -left-16 -top-16 h-56 w-56 rounded-full bg-[#f2b021]/10"
       />
 
-      <div className="relative px-5 py-6 sm:max-w-[62%] sm:px-8 sm:py-9">
+      <div
+        className={
+          compact
+            ? "relative flex h-full max-w-[64%] flex-col justify-center px-4 py-4"
+            : "relative px-5 py-6 sm:max-w-[62%] sm:px-8 sm:py-9"
+        }
+      >
         <div className="flex flex-wrap items-center gap-2">
-          <LogoChip src={brandLogoSrc} alt="DegreeKhojo" />
-          {partnerLogo && <LogoChip src={partnerLogo} alt={partnerName ?? ""} />}
+          <LogoChip src={brandLogoSrc} alt="Degreekhojo" compact={compact} />
+          {partnerLogo && <LogoChip src={partnerLogo} alt={partnerName ?? ""} compact={compact} />}
         </div>
 
-        <h2 className="mt-5 font-display text-xl font-extrabold leading-tight text-white sm:text-3xl">
+        <h2
+          className={
+            compact
+              ? "mt-2.5 line-clamp-3 font-display text-[0.8rem] font-extrabold leading-snug text-white"
+              : "mt-5 font-display text-xl font-extrabold leading-tight text-white sm:text-3xl"
+          }
+        >
           {lead}
           {highlight && (
             <>
@@ -128,7 +150,7 @@ export function BrandBanner({
           )}
         </h2>
 
-        {pills.length > 0 && (
+        {!compact && pills.length > 0 && (
           <ul className="mt-4 flex flex-wrap gap-2">
             {pills.map((p) => (
               <li
@@ -145,6 +167,7 @@ export function BrandBanner({
   );
 }
 
+
 /** Blog-page banner: campus photo when the blog belongs to a university. */
 export function BlogBanner({
   title,
@@ -153,6 +176,7 @@ export function BlogBanner({
   universitySlug,
   universityName,
   pills,
+  compact = false,
 }: {
   title: string;
   categorySlug?: undefined | string;
@@ -160,6 +184,7 @@ export function BlogBanner({
   universitySlug?: undefined | string;
   universityName?: undefined | string;
   pills?: undefined | string[];
+  compact?: boolean;
 }) {
   const campus = universitySlug ? campusImage(universitySlug) : undefined;
   return (
@@ -169,6 +194,8 @@ export function BlogBanner({
       partnerLogo={universitySlug ? universityLogo(universitySlug) : undefined}
       partnerName={universityName}
       pills={pills ?? ["UGC Entitled Degree", "Flexible Learning", "Career Focused"]}
+      compact={compact}
+      className={compact ? "h-full" : ""}
     />
   );
 }

@@ -7,7 +7,7 @@ import { canonical, collectionSchema, jsonLd, pageMeta, breadcrumbSchema } from 
 
 const title = "Browse Content Categories";
 const description =
-  "Explore every topic cluster in the DegreeKhojo knowledge hub, from admission guidance to career growth.";
+  "Explore every topic cluster in the Degreekhojo knowledge hub, from admission guidance to career growth.";
 const path = "/categories";
 
 export const Route = createFileRoute("/categories")({

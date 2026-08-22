@@ -135,7 +135,7 @@ export function LeadChatBot() {
   const [msgs, setMsgs] = useState<Msg[]>([
     {
       from: "bot",
-      text: "Hi 👋 I'm DegreeKhojo Assist. Two quick questions and I'll suggest the right online degree for you.",
+      text: "Hi 👋 I'm Degreekhojo Assist. Two quick questions and I'll suggest the right online degree for you.",
     },
     { from: "bot", text: "Which level are you looking for?" },
   ]);
@@ -258,7 +258,7 @@ export function LeadChatBot() {
           <button
             type="button"
             onClick={() => setOpen(true)}
-            aria-label="Chat with DegreeKhojo Assist"
+            aria-label="Chat with Degreekhojo Assist"
             className="relative grid h-11 w-11 shrink-0 place-items-center overflow-hidden rounded-2xl shadow-[0_14px_30px_-14px_oklch(0_0_0/0.7)] transition-transform hover:-translate-y-0.5 lg:h-12 lg:w-12"
           >
             <img src={BOT_ICON} alt="" className="h-full w-full object-cover" />

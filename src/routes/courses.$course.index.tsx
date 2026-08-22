@@ -374,7 +374,7 @@ function Page() {
         <PromoBanner
           variant="guidance"
           title={`Not sure which university fits your ${p.shortName}?`}
-          subtitle="Talk to an DegreeKhojo counsellor — free, unbiased and 15 minutes is all it takes."
+          subtitle="Talk to an Degreekhojo counsellor — free, unbiased and 15 minutes is all it takes."
           ctaLabel="Get free counselling"
         />
 

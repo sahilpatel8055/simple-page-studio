@@ -1,13 +1,13 @@
 import { AppLink } from "@/components/common/AppLink";
-import { articleCover } from "@/lib/articleCover";
-import { universityLabelByBlogSlug } from "@/data/university-blogs";
+import { BlogBanner } from "@/components/common/BrandBanner";
+import { universityByBlogSlug, universityLabelByBlogSlug } from "@/data/university-blogs";
 import { formatDate, type Article } from "@/lib/content";
 import { ArrowRight, CalendarDays, Clock } from "lucide-react";
 
 
 /** Blog card with an image banner — used on university and course pages. */
 export function BlogBannerCard({ item }: { item: Article }) {
-  const cover = articleCover(item);
+  const universitySlug = universityByBlogSlug[item.slug];
 
   const label = universityLabelByBlogSlug[item.slug];
   return (
@@ -16,19 +16,19 @@ export function BlogBannerCard({ item }: { item: Article }) {
       className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-[0_10px_30px_-24px_oklch(0_0_0/0.6)] transition-all hover:-translate-y-0.5 hover:border-brand/40"
     >
       <div className="relative aspect-[16/9] w-full overflow-hidden bg-secondary">
-        {cover && (
-          <img
-            src={cover}
-            alt=""
-            loading="lazy"
-            decoding="async"
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-        )}
-        <span className="absolute left-3 top-3 rounded-full bg-[#7f1813] px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-white">
+        <BlogBanner
+          title={item.title}
+          categorySlug={item.categorySlug}
+          slug={item.slug}
+          universitySlug={universitySlug}
+          universityName={label ?? item.category}
+          compact
+        />
+        <span className="absolute right-3 top-3 rounded-full bg-[#7f1813] px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-wide text-white">
           {label ?? item.category}
         </span>
       </div>
+
       <div className="flex min-w-0 flex-1 flex-col p-4">
         <h3 className="font-display text-[0.95rem] font-bold leading-snug text-foreground group-hover:text-brand">
           {item.title}
