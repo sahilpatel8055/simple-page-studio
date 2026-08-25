@@ -1,10 +1,12 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/templates/PageShell";
 import { CTASection } from "@/components/common/Primitives";
 import { CourseExplorer } from "@/components/common/Filters";
 import { RelatedLinkGrid } from "@/components/common/Blocks";
 import { courseFamilies } from "@/lib/content";
+import { canonicalProgrammeLinks } from "@/lib/programmeDirectory";
 import { articleLinks, comparisonLinks, scholarshipLinks, universityLinks } from "@/lib/entities";
+
 import {
   breadcrumbSchema,
   canonical,
