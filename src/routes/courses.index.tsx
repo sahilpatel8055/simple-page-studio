@@ -21,6 +21,8 @@ const title = "Online Degree Courses in India: UG & PG Programmes 2026";
 const description =
   "Programme guides for online MBA, MCA, BBA, BCA, B.Com and M.Com — duration, fee range, specialisations, eligibility and every university that offers them.";
 const path = "/courses";
+const allProgrammeLinks = canonicalProgrammeLinks();
+
 
 export const Route = createFileRoute("/courses/")({
   head: () => ({
