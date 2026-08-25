@@ -1,10 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AppLink } from "@/components/common/AppLink";
 import { PageShell } from "@/components/templates/PageShell";
 import { CTASection } from "@/components/common/Primitives";
 import { CourseExplorer } from "@/components/common/Filters";
 import { RelatedLinkGrid } from "@/components/common/Blocks";
 import { courseFamilies } from "@/lib/content";
+import { canonicalProgrammeLinks } from "@/lib/programmeDirectory";
 import { articleLinks, comparisonLinks, scholarshipLinks, universityLinks } from "@/lib/entities";
+
 import {
   breadcrumbSchema,
   canonical,
@@ -19,6 +22,8 @@ const title = "Online Degree Courses in India: UG & PG Programmes 2026";
 const description =
   "Programme guides for online MBA, MCA, BBA, BCA, B.Com and M.Com — duration, fee range, specialisations, eligibility and every university that offers them.";
 const path = "/courses";
+const allProgrammeLinks = canonicalProgrammeLinks();
+
 
 export const Route = createFileRoute("/courses/")({
   head: () => ({
@@ -58,6 +63,27 @@ function Page() {
       description={description}
     >
       <CourseExplorer items={courseFamilies} />
+      <section className="mt-12" aria-labelledby="all-programmes">
+        <h2 id="all-programmes" className="text-lg font-semibold tracking-tight text-foreground">
+          All online programmes A–Z
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Every UG, PG and diploma programme covered on Degreekhojo, with fees, eligibility and the
+          universities that offer it.
+        </p>
+        <ul className="mt-4 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+          {allProgrammeLinks.map((l) => (
+            <li key={l.href}>
+              <AppLink
+                to={l.href}
+                className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+              >
+                {l.label}
+              </AppLink>
+            </li>
+          ))}
+        </ul>
+      </section>
       <div className="mt-12">
         <RelatedLinkGrid
           groups={[
@@ -68,6 +94,7 @@ function Page() {
           ]}
         />
       </div>
+
       <div className="mt-12">
         <CTASection />
       </div>
