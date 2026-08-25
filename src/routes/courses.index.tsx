@@ -58,6 +58,27 @@ function Page() {
       description={description}
     >
       <CourseExplorer items={courseFamilies} />
+      <section className="mt-12" aria-labelledby="all-programmes">
+        <h2 id="all-programmes" className="text-lg font-semibold tracking-tight text-foreground">
+          All online programmes A–Z
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Every UG, PG and diploma programme covered on Degreekhojo, with fees, eligibility and the
+          universities that offer it.
+        </p>
+        <ul className="mt-4 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+          {allProgrammeLinks.map((l) => (
+            <li key={l.href}>
+              <Link
+                to={l.href}
+                className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
+              >
+                {l.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
       <div className="mt-12">
         <RelatedLinkGrid
           groups={[
@@ -68,6 +89,7 @@ function Page() {
           ]}
         />
       </div>
+
       <div className="mt-12">
         <CTASection />
       </div>
