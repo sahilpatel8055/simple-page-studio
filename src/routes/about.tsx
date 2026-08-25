@@ -59,9 +59,9 @@ function Page() {
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#7f1813]">
               Discover Our Story
             </p>
-            <h1 className="mt-4 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
+            <h2 className="mt-4 text-4xl font-extrabold leading-[1.1] sm:text-5xl lg:text-6xl">
               Meet The <span className="text-[#7f1813]">Movers</span>
-            </h1>
+            </h2>
             <p className="mt-6 text-lg leading-relaxed text-white/80">
               Degreekhojo is an independent education research platform. We help working
               professionals and students in India find the right online or distance degree — without
