@@ -1,4 +1,5 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
+import { AppLink } from "@/components/common/AppLink";
 import { PageShell } from "@/components/templates/PageShell";
 import { CTASection } from "@/components/common/Primitives";
 import { CourseExplorer } from "@/components/common/Filters";
@@ -73,12 +74,12 @@ function Page() {
         <ul className="mt-4 grid gap-x-6 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
           {allProgrammeLinks.map((l) => (
             <li key={l.href}>
-              <Link
+              <AppLink
                 to={l.href}
                 className="text-sm text-muted-foreground underline-offset-4 hover:text-foreground hover:underline"
               >
                 {l.label}
-              </Link>
+              </AppLink>
             </li>
           ))}
         </ul>
