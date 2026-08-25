@@ -30,7 +30,7 @@ export function canonicalProgrammeLinks(): ProgrammeLink[] {
   return slugs
     .map((slug) => {
       const family = courseFamilyList().find((f) => f.slug === slug);
-      const label = family?.displayName ?? getProgramme(slug)?.name ?? slug.replace(/-/g, " ");
+      const label = family?.name ?? getProgramme(slug)?.name ?? slug.replace(/-/g, " ");
       return { label, href: `/courses/${slug}` };
     })
     .sort((a, b) => a.label.localeCompare(b.label));
