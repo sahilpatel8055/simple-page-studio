@@ -50,6 +50,9 @@ const ACTIONS = [
   "requested counselling for",
   "downloaded the fee structure of",
   "compared courses at",
+  "got a counselling session for",
+  "shortlisted",
+  "got fee structure of",
 ];
 
 const MAX_PER_SESSION = 6;
@@ -58,7 +61,7 @@ const VISIBLE_MS = 6500;
 const GAP_MIN_MS = 26000;
 const GAP_MAX_MS = 42000;
 
-type Proof = { slug: string; name: string; person: string; city: string; action: string };
+type Proof = { slug: string; name: string; person: string; city: string; action: string; label: string };
 
 const pick = <T,>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)] as T;
 
