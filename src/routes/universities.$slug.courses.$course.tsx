@@ -49,6 +49,7 @@ import { FeeHighlight } from "@/components/university/FeeHighlight";
 import { SampleDegreeSection } from "@/components/university/SampleDegreeSection";
 import { PlacementSupportSection } from "@/components/university/PlacementSupportSection";
 import { SectionBanner } from "@/components/common/SectionBanner";
+import { CourseCampusHero } from "@/components/university/CourseCampusHero";
 import { degreeSample } from "@/lib/assets";
 import { CareerRolePackages } from "@/components/university/CareerRolePackages";
 import { defaultRolesFor } from "@/lib/careerSalaries";
@@ -240,6 +241,7 @@ function Page() {
           { name: u.shortName, href: `/universities/${u.slug}` },
           { name: onlineName(p.shortName), href: profile.path },
         ]}
+        hero={<CourseCampusHero university={u} programmeName={p.name} level={p.level} />}
         eyebrow={`${u.shortName} · ${p.level} programme`}
         title={`${u.shortName} ${p.name}: Fees, Eligibility & Admission 2026`}
         subtitle={`${p.summary} This page covers the ${p.name} exactly as delivered by ${u.name}.`}
