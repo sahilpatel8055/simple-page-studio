@@ -48,6 +48,9 @@ import parulCampus from "@/assets/parul university campus.jpg";
 import shardaCampus from "@/assets/sharda-campus.jpg";
 import kukCampus from "@/assets/kuk-campus.jpg";
 import ycmouCampus from "@/assets/ycmou-campus.jpg";
+import dpuCampus from "@/assets/dy patil.jpg";
+import shooliniCampus from "@/assets/shoolini-university campus.webp";
+import subhartiCampus from "@/assets/shubharti university.jpg";
 
 import ugcIcon from "@/approvals/ugc-icon.png";
 import naacIcon from "@/approvals/naac-icon.png";
@@ -125,6 +128,9 @@ const campuses: Record<string, string> = {
   "sharda-online": shardaCampus,
   "kurukshetra-university": kukCampus,
   ycmou: ycmouCampus,
+  "dpu-online": dpuCampus,
+  "shoolini-online": shooliniCampus,
+  "subharti-university": subhartiCampus,
 };
 
 /** Approval / accreditation body icons. Keys are matched case-insensitively. */
