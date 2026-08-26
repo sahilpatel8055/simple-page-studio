@@ -15,6 +15,7 @@ import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { StickyMobileCTA } from "@/components/common/Blocks";
 import { LeadChatBot } from "@/components/common/LeadChatBot";
+import { SocialProof } from "@/components/common/SocialProof";
 import { PopupProvider } from "@/components/common/PopupManager";
 import { flushLeadQueue } from "@/lib/leads";
 
@@ -177,6 +178,7 @@ function RootComponent() {
           <Footer />
           <StickyMobileCTA />
           <LeadChatBot />
+          <SocialProof />
         </div>
       </PopupProvider>
     </QueryClientProvider>
