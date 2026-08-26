@@ -50,6 +50,9 @@ const ACTIONS = [
   "requested counselling for",
   "downloaded the fee structure of",
   "compared courses at",
+  "got a counselling session for",
+  "shortlisted",
+  "got fee structure of",
 ];
 
 const MAX_PER_SESSION = 6;
