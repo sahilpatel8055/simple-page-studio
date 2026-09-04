@@ -56,7 +56,11 @@ export function serpTitle(title: string, max = 60): string {
     if (i > 20 && i <= max) return t.slice(0, i).trim();
   }
   const cut = t.slice(0, max);
-  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,:–—-]$/, "").trim();
+  return cut
+    .slice(0, cut.lastIndexOf(" "))
+    .replace(/\s+(&|and|with|for|of|the|in|to|,)$/i, "")
+    .replace(/[,:–—-]$/, "")
+    .trim();
 }
 
 /**

@@ -82,7 +82,9 @@ export function uniCourseSectionTitle(
   section: CourseSectionKey,
   year: number,
 ): string {
-  const base = `${uniShort} ${courseName}`;
+  // "LPU Online" + "Online MBA" must not read "LPU Online Online MBA".
+  const short = uniShort.replace(/\s*online\s*$/i, "").trim() || uniShort;
+  const base = `${short} ${courseName}`;
   const map: Record<CourseSectionKey, string> = {
     fees: `${base} Fees ${year}: Total, Semester Fee & EMI`,
     eligibility: `${base} Eligibility ${year}: Criteria & Documents`,
