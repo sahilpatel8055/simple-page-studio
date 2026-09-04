@@ -61,7 +61,7 @@ const VISIBLE_MS = 6500;
 const GAP_MIN_MS = 26000;
 const GAP_MAX_MS = 42000;
 
-type Proof = { slug: string; name: string; person: string; city: string; action: string; label: string };
+type Proof = { slug: string; name: string; person: string; city: string; action: string };
 
 const pick = <T,>(arr: T[]): T => arr[Math.floor(Math.random() * arr.length)] as T;
 

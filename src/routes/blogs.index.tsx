@@ -7,9 +7,10 @@ import { articles } from "@/lib/content";
 import { universityBlogFilterOptions, universityLabelByBlogSlug } from "@/data/university-blogs";
 import { canonical, collectionSchema, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
-const title = "Articles, Guides & Research";
+const title = "Online Degree Guides 2026: Fees, Admission & Reviews";
 const description =
-  "In-depth articles on choosing, funding and finishing an online or distance degree in India.";
+  "Verified guides on online and distance degrees in India — university fees, eligibility, admission dates, UGC-DEB validity and placement reality checks.";
+
 const path = "/blogs";
 
 export const Route = createFileRoute("/blogs/")({
