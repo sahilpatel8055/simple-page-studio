@@ -43,15 +43,15 @@ export function courseSectionTitle(
   year: number,
 ): string {
   const map: Record<CourseSectionKey, string> = {
-    fees: `${courseName} Fees ${year}: University-wise Fee Structure & EMI`,
-    eligibility: `${courseName} Eligibility ${year}: Criteria, Marks & Age Limit`,
-    admission: `${courseName} Admission ${year}: Process, Dates & Documents`,
+    fees: `${courseName} Fees ${year}: University-wise Fees & EMI`,
+    eligibility: `${courseName} Eligibility ${year}: Marks, Age & Criteria`,
+    admission: `${courseName} Admission ${year}: Process, Dates, Documents`,
     syllabus: `${courseName} Syllabus ${year}: Semester-wise Subjects`,
-    specialisations: `${courseName} Specialisations ${year}: Full List & How to Choose`,
-    "exam-pattern": `${courseName} Exam Pattern ${year}: Assessment & Evaluation`,
-    placement: `${courseName} Placement & Career Scope ${year}: Roles & Salary`,
-    scholarships: `${courseName} Scholarships ${year}: Categories & Fee Waivers`,
-    faq: `${courseName} FAQs ${year}: Every Common Question Answered`,
+    specialisations: `${courseName} Specialisations ${year}: Full List`,
+    "exam-pattern": `${courseName} Exam Pattern ${year}: Marks & Mode`,
+    placement: `${courseName} Placement ${year}: Job Roles & Salary`,
+    scholarships: `${courseName} Scholarships ${year}: Fee Waivers`,
+    faq: `${courseName} FAQs ${year}: Fees, Validity, Admission`,
   };
   return map[section];
 }
@@ -84,15 +84,15 @@ export function uniCourseSectionTitle(
 ): string {
   const base = `${uniShort} ${courseName}`;
   const map: Record<CourseSectionKey, string> = {
-    fees: `${base} Fees ${year}: Total Fee, Semester Fee & EMI`,
+    fees: `${base} Fees ${year}: Total, Semester Fee & EMI`,
     eligibility: `${base} Eligibility ${year}: Criteria & Documents`,
-    admission: `${base} Admission ${year}: Process & Important Steps`,
-    syllabus: `${base} Syllabus: Semester-wise Curriculum`,
-    specialisations: `${base} Specialisations: Full List & Electives`,
-    "exam-pattern": `${base} Exam Pattern: Assessment & Evaluation`,
-    placement: `${base} Placement: Job Roles, Packages & Recruiters`,
-    scholarships: `${base} Scholarships ${year}: Categories & Eligibility`,
-    faq: `${base} FAQs: Fees, Admission & Validity`,
+    admission: `${base} Admission ${year}: Steps & Last Date`,
+    syllabus: `${base} Syllabus ${year}: Semester-wise Subjects`,
+    specialisations: `${base} Specialisations ${year}: Full List`,
+    "exam-pattern": `${base} Exam Pattern ${year}: Mode & Marks`,
+    placement: `${base} Placement ${year}: Roles & Packages`,
+    scholarships: `${base} Scholarships ${year}: Fee Waivers`,
+    faq: `${base} FAQs ${year}: Fees, Admission, Validity`,
   };
   return map[section];
 }
