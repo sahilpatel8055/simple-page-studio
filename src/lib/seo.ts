@@ -46,21 +46,51 @@ export interface PageSeo {
 
 type MetaEntry = Record<string, string>;
 
+/** Google renders ~60 characters of the title. Trim on a word boundary. */
+export function serpTitle(title: string, max = 60): string {
+  const t = title.replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  // Drop the trailing clause after the last separator first.
+  for (const sep of [" | ", " — ", " – ", ": "]) {
+    const i = t.lastIndexOf(sep);
+    if (i > 20 && i <= max) return t.slice(0, i).trim();
+  }
+  const cut = t.slice(0, max);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,:–—-]$/, "").trim();
+}
+
+/**
+ * Google renders ~155 characters of the description. Keep the informative part
+ * and append a short action line when it still fits — action-led descriptions
+ * are what lift CTR on research queries.
+ */
+export function serpDescription(description: string, cta = "Compare and apply online."): string {
+  const d = description.replace(/\s+/g, " ").trim();
+  const max = 155;
+  if (d.length + 1 + cta.length <= max) return `${d} ${cta}`;
+  if (d.length <= max) return d;
+  const cut = d.slice(0, max - 1);
+  return `${cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:–—-]$/, "").trim()}…`;
+}
+
 export function pageMeta(seo: PageSeo): MetaEntry[] {
   const fullTitle = seo.title.includes(SITE_NAME) ? seo.title : `${seo.title} | ${SITE_NAME}`;
+  const headTitle = serpTitle(fullTitle);
+  const description = serpDescription(seo.description);
   const meta: MetaEntry[] = [
-    { title: fullTitle },
-    { name: "description", content: seo.description },
-    { property: "og:title", content: fullTitle },
-    { property: "og:description", content: seo.description },
+    { title: headTitle },
+    { name: "description", content: description },
+    { property: "og:title", content: serpTitle(fullTitle, 70) },
+    { property: "og:description", content: description },
     { property: "og:type", content: seo.type ?? "website" },
     { property: "og:url", content: abs(seo.path) },
     { property: "og:site_name", content: SITE_NAME },
     { property: "og:locale", content: SITE_LOCALE },
     { name: "twitter:card", content: "summary_large_image" },
-    { name: "twitter:title", content: fullTitle },
-    { name: "twitter:description", content: seo.description },
+    { name: "twitter:title", content: serpTitle(fullTitle, 70) },
+    { name: "twitter:description", content: description },
   ];
+
   if (seo.keywords?.length) meta.push({ name: "keywords", content: seo.keywords.join(", ") });
   if (seo.author) {
     meta.push({ name: "author", content: seo.author });
