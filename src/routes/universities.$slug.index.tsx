@@ -1,6 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
 import { AnswerFirst } from "@/components/university/AnswerFirst";
+import { getProgramme, listOfferingsByUniversity } from "@/data";
 import {
   AuthorBox,
   ProsCons,
@@ -83,6 +84,7 @@ import {
   breadcrumbSchema,
   canonical,
   collegeSchema,
+  courseSchema,
   faqSchema,
   howToSchema,
   itemListSchema,
