@@ -1,5 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
+import { AnswerFirst } from "@/components/university/AnswerFirst";
+import { getProgramme, listOfferingsByUniversity } from "@/data";
 import {
   AuthorBox,
   ProsCons,
@@ -82,6 +84,7 @@ import {
   breadcrumbSchema,
   canonical,
   collegeSchema,
+  courseSchema,
   faqSchema,
   howToSchema,
   itemListSchema,
@@ -107,6 +110,14 @@ export const Route = createFileRoute("/universities/$slug/")({
       reviewCount: u.reviewCount,
       websiteUrl: u.websiteUrl,
       admissionProcess: u.admissionProcess,
+      feeRangeLabel: u.feeRangeLabel,
+      modes: u.modes,
+      courses: listOfferingsByUniversity(u.slug).slice(0, 12).map((o) => ({
+        slug: o.programmeSlug,
+        name: getProgramme(o.programmeSlug)?.name ?? o.programmeSlug,
+        summary: getProgramme(o.programmeSlug)?.summary ?? u.summary,
+        durationLabel: o.durationLabel,
+      })),
     };
   },
   head: ({ params, loaderData }) => {
@@ -158,6 +169,17 @@ export const Route = createFileRoute("/universities/$slug/")({
             { name: loaderData.shortName, href: path },
           ]),
         ),
+        ...loaderData.courses.map((c) =>
+          jsonLd(
+            courseSchema({
+              name: `${c.name} — ${loaderData.name}`,
+              description: c.summary,
+              provider: loaderData.name,
+              path: `${path}/courses/${c.slug}`,
+              modes: loaderData.modes,
+            }),
+          ),
+        ),
       ],
     };
   },
@@ -193,6 +215,7 @@ function Page() {
   const headings = universityHeadings(u);
   const decisionHeading = universityDecisionHeading(slug);
   const hasFeeValue = Boolean(universityFeeValue(slug));
+  const offeringCount = listOfferingsByUniversity(slug).length;
 
   const faqs = [
     {
@@ -226,6 +249,7 @@ function Page() {
         subtitle={u.summary}
         meta={<UpdatedStamp date={u.lastUpdated} verified={u.verified} />}
         tocSections={[
+          "Quick answer",
           "At a glance",
           "Overview",
           "Approvals & recognition",
@@ -268,6 +292,18 @@ function Page() {
           />
         }
       >
+        <AnswerFirst
+          heading={`${u.shortName} online degrees at a glance`}
+          answer={`${u.name} is a ${[u.type, "university"].filter(Boolean).join(" ")} in ${u.city}, ${u.state} offering ${offeringCount} online / distance programmes across ${u.modes.join(" / ").toLowerCase()} mode. Fees run in the ${u.feeRangeLabel} band and the university holds ${approvalText(u)}. Eligibility follows the standard rule for each level — 10+2 for bachelor's programmes and a bachelor's degree for master's programmes — with admission open through the steps listed below. Our verdict: ${u.verdict ?? `${u.shortName} suits learners who want a recognised online degree with fees that stay predictable across the full programme.`}`}
+          facts={[
+            { label: "Fee range", value: u.feeRangeLabel },
+            { label: "Approvals", value: u.approvals.map((a) => a.body).slice(0, 3).join(", ") || "Listed below" },
+            { label: "Programmes", value: String(offeringCount) },
+            { label: "Mode", value: u.modes.join(" / ") },
+          ]}
+          verifiedOn={u.lastUpdated}
+        />
+
         <ContentSection title="At a glance">
           <UniversityGlance slug={slug} />
         </ContentSection>
