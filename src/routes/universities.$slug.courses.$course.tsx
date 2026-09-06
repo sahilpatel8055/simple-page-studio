@@ -545,8 +545,10 @@ function Page() {
 
         <SectionUrlGrid
           base={`/universities/${u.slug}/courses/${p.slug}`}
+          anchors={UNI_COURSE_SECTION_ANCHORS}
           title={`More on ${u.shortName} ${p.shortName}`}
         />
+
 
         <PromoBanner
           title={`Fee offers & scholarships on ${u.shortName} ${p.shortName}`}

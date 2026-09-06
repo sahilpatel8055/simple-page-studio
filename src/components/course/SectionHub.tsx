@@ -8,25 +8,34 @@ import {
 /**
  * Link grid from a pillar page to each of its section sub-URLs, and the
  * sibling switcher shown on the section pages themselves.
+ *
+ * When `anchors` is passed, the grid links to in-page anchors on the same
+ * pillar instead of separate URLs (Phase A consolidation).
  */
 export function SectionUrlGrid({
   base,
   title = "Explore this course section by section",
   active,
+  anchors,
 }: {
   base: string;
   title?: string;
   active?: CourseSectionKey;
+  anchors?: Record<CourseSectionKey, string>;
 }) {
   return (
     <section className="rounded-3xl border border-brand/20 bg-brand-soft/40 p-5 sm:p-6">
       <h2 className="font-display text-lg font-bold sm:text-xl">{title}</h2>
       <p className="mt-2 text-[0.9rem] leading-relaxed text-muted-foreground">
-        Each section below is a full page of its own — open the one you need.
+        {anchors
+          ? "Jump straight to the part you need — everything is on this page."
+          : "Each section below is a full page of its own — open the one you need."}
       </p>
       <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {COURSE_SECTION_KEYS.map((key) => {
           const isActive = key === active;
+          const className =
+            "box-hover rounded-xl border border-border bg-card px-3.5 py-2.5 text-sm font-bold text-foreground";
           return isActive ? (
             <span
               key={key}
@@ -35,12 +44,12 @@ export function SectionUrlGrid({
             >
               {courseSectionLabels[key]}
             </span>
+          ) : anchors ? (
+            <a key={key} href={`#${anchors[key]}`} className={className}>
+              {courseSectionLabels[key]}
+            </a>
           ) : (
-            <AppLink
-              key={key}
-              to={`${base}/${key}`}
-              className="box-hover rounded-xl border border-border bg-card px-3.5 py-2.5 text-sm font-bold text-foreground"
-            >
+            <AppLink key={key} to={`${base}/${key}`} className={className}>
               {courseSectionLabels[key]}
             </AppLink>
           );
@@ -49,6 +58,7 @@ export function SectionUrlGrid({
     </section>
   );
 }
+
 
 /** Back-link strip shown at the top of every section page. */
 export function BackToPillar({ href, label }: { href: string; label: string }) {
