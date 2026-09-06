@@ -47,6 +47,7 @@ import {
   SpecialisationElectives,
 } from "@/components/university/MasterCourseSections";
 import { FeeHighlight } from "@/components/university/FeeHighlight";
+import { AnswerFirst } from "@/components/university/AnswerFirst";
 import { SampleDegreeSection } from "@/components/university/SampleDegreeSection";
 import { PlacementSupportSection } from "@/components/university/PlacementSupportSection";
 import { SectionBanner } from "@/components/common/SectionBanner";
@@ -258,6 +259,7 @@ function Page() {
           </>
         }
         tocSections={[
+          "Quick answer",
           "Quick facts",
           "Overview",
           "Specialisations",
