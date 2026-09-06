@@ -9,6 +9,7 @@ import {
   Section,
   UniversityTileGrid,
 } from "@/components/course/CourseSections";
+import { SectionDepth } from "@/components/course/SectionDepth";
 import { BackToPillar, SectionUrlGrid } from "@/components/course/SectionHub";
 import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
@@ -108,6 +109,8 @@ function Page() {
           <Section title={`${family.name} ${label.toLowerCase()}`} tone="cream">
             <CourseSectionBody section={key} family={family} content={found.content} />
           </Section>
+
+          <SectionDepth section={key} family={family} />
 
           <Section title={`Universities offering ${family.name}`}>
             <UniversityTileGrid offers={family.offers} />
