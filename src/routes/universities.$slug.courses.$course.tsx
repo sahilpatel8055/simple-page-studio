@@ -295,6 +295,23 @@ function Page() {
           />
         }
       >
+        <AnswerFirst
+          heading={`${u.shortName} ${p.name} at a glance`}
+          answer={`The ${p.name} at ${u.name} runs for ${offering.durationLabel} in ${p.mode.join(" / ").toLowerCase()} mode and sits in the ${p.feeRangeLabel} fee band${
+            offering.fee.total ? ` (₹${offering.fee.total.toLocaleString("en-IN")} total as published)` : ""
+          }. Eligibility: ${p.eligibility} You can pick from ${offering.specialisations.length} specialisation${offering.specialisations.length === 1 ? "" : "s"}, and the award is backed by ${approvalText(u)}. Our verdict: ${
+            u.verdict ??
+            `it suits working learners who want a recognised ${p.level} qualification from ${u.shortName} without leaving their job.`
+          }`}
+          facts={[
+            { label: "Total fee", value: offering.fee.total ? `₹${offering.fee.total.toLocaleString("en-IN")}` : p.feeRangeLabel },
+            { label: "Eligibility", value: p.eligibility.split(".")[0] ?? p.eligibility },
+            { label: "Duration", value: offering.durationLabel },
+            { label: "Specialisations", value: String(offering.specialisations.length) },
+          ]}
+          verifiedOn={offering.lastUpdated}
+        />
+
         <QuickFacts
           items={[
             { label: "Programme", value: p.name },
