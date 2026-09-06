@@ -19,7 +19,6 @@ export const Route = createFileRoute("/universities/$slug/courses/$course/$secti
         UNI_COURSE_SECTION_ANCHORS[params.section]
       }`,
       statusCode: 301,
-れ: undefined,
     });
   },
   component: () => null,
