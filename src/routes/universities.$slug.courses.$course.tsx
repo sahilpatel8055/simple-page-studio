@@ -2,6 +2,7 @@ import { UniversityPackLinks } from "@/components/comparison/PackHeadToHead";
 import { QuickEnquiry } from "@/components/common/QuickEnquiry";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
+import { UNI_COURSE_SECTION_ANCHORS } from "@/lib/uniCourseAnchors";
 import { SectionUrlGrid } from "@/components/course/SectionHub";
 import { PromoBanner } from "@/components/course/PromoBanner";
 import {
