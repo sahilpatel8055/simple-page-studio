@@ -123,11 +123,33 @@ export function sitemapEntries(): SitemapEntry[] {
       changefreq: "monthly" as const,
       priority: "0.7",
     })),
-    ...universityPairs().map((p) => ({
-      path: p.path,
-      changefreq: "monthly" as const,
-      priority: "0.7",
-    })),
+    // Only the curated head-to-heads with real search demand are submitted.
+    // The long tail stays crawlable but noindex, so it never dilutes these.
+    ...universityPairs()
+      .filter((p) => isIndexablePair(p.slug))
+      .map((p) => ({
+        path: p.path,
+        changefreq: "monthly" as const,
+        priority: "0.7",
+      })),
+    ...masterPairs
+      .filter((p) => isIndexablePair(p.comparison_id))
+      .map((p) => ({
+        path: `/compare/${p.comparison_id}`,
+        changefreq: "monthly" as const,
+        priority: "0.7",
+      })),
+    ...masterPairs
+      .filter((p) => isIndexablePair(p.comparison_id))
+      .flatMap((p) =>
+        comparableCourses(p)
+          .filter((c) => isIndexableCoursePair(courseSlug(c), p.comparison_id))
+          .map((c) => ({
+            path: coursePairPath(p, c),
+            changefreq: "monthly" as const,
+            priority: "0.6",
+          })),
+      ),
 
     // Editorial
     ...articles
