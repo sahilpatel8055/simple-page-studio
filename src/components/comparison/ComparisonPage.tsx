@@ -16,6 +16,9 @@ import { packFor } from "@/data/comparison-packs";
 import { EditorialComparison } from "./EditorialComparison";
 import { CompareTable } from "./CompareTable";
 import { PickVerdict } from "./PickVerdict";
+import { DecisionBlock } from "./DecisionBlock";
+import { pairDecision } from "@/lib/comparisonDecision";
+import { courseKeyForProgramme } from "@/lib/courseMaster";
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
