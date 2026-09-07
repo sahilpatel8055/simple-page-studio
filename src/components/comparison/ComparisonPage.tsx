@@ -185,6 +185,18 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         <p>{content.decision_framework}</p>
       </ContentSection>
 
+      <PickVerdict
+        aName={aName}
+        bName={bName}
+        uniA={uniA}
+        uniB={uniB}
+        sa={sa}
+        sb={sb}
+        course={course}
+        aHref={uniA?.slug ? `/universities/${uniA.slug}` : "/universities"}
+        bHref={uniB?.slug ? `/universities/${uniB.slug}` : "/universities"}
+      />
+
       {pack ? (
         <EditorialComparison pack={pack} links={packLinks} />
       ) : (
