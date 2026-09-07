@@ -15,6 +15,7 @@
  */
 
 import { getLeadContext, getPartialLead, markLeadSubmitted } from "@/lib/leadContext";
+import { track } from "@/lib/analytics";
 
 export const LEAD_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbxDCGIr01-dyHzlxSGfWjz9cH0oL9Gqv-V7jODdrgLkJbR3MJY7oH8W5C1XwALG_lF8nQ/exec";
