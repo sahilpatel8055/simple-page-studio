@@ -16,6 +16,9 @@ import { packFor } from "@/data/comparison-packs";
 import { EditorialComparison } from "./EditorialComparison";
 import { CompareTable } from "./CompareTable";
 import { PickVerdict } from "./PickVerdict";
+import { DecisionBlock } from "./DecisionBlock";
+import { pairDecision } from "@/lib/comparisonDecision";
+import { courseKeyForProgramme } from "@/lib/courseMaster";
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
@@ -109,6 +112,24 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         },
   ];
 
+  /** Answer-first decision block — identical shape on every comparison page. */
+  const decision =
+    uniA?.slug && uniB?.slug
+      ? pairDecision(
+          uniA.slug,
+          uniB.slug,
+          course ? (courseKeyForProgramme(courseSlug(course)) ?? undefined) : undefined,
+          course,
+        )
+      : undefined;
+
+  const decisionRelated = relatedPairs(pair, 3).map((p) => ({
+    label: `${p.university_a} vs ${p.university_b}`,
+    href: pairPath(p),
+  }));
+
+
+
   return (
     <DetailLayout
       crumbs={[
@@ -180,6 +201,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           </div>
         </div>
       )}
+
+      {decision && <DecisionBlock decision={decision} related={decisionRelated} />}
 
       <ContentSection title={`${aName} vs ${bName}: Overview`}>
         <p>{content.angle}</p>

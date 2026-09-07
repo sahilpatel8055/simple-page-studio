@@ -18,7 +18,10 @@ import {
   courseComparisonFaqs,
 } from "@/components/comparison/CourseComparisonPage";
 import { getCourseFamily } from "@/lib/courseFamily";
-import { masterPairBySlug } from "@/lib/comparisonMaster";
+import { masterPairBySlug, pairUniversities } from "@/lib/comparisonMaster";
+import { isIndexablePair, robotsForPair } from "@/lib/comparisonIndexing";
+import { pairDecision } from "@/lib/comparisonDecision";
+import { DecisionBlock } from "@/components/comparison/DecisionBlock";
 import { comparisonCtrMeta } from "@/lib/intentMap";
 
 import {
@@ -53,12 +56,15 @@ export const Route = createFileRoute("/compare/$comparison")({
     }
     const mp = masterPairBySlug(params.comparison);
     if (mp) {
+      const { a, b } = pairUniversities(mp);
       return {
         kind: "master" as const,
         leftName: mp.university_a,
         leftShort: mp.university_a,
         rightName: mp.university_b,
         rightShort: mp.university_b,
+        aSlug: a?.slug ?? null,
+        bSlug: b?.slug ?? null,
       };
     }
     const pair = comparisonBySlug(params.comparison);
@@ -69,6 +75,8 @@ export const Route = createFileRoute("/compare/$comparison")({
         leftShort: pair.left.record.shortName,
         rightName: pair.right.record.name,
         rightShort: pair.right.record.shortName,
+        aSlug: pair.left.record.slug,
+        bSlug: pair.right.record.slug,
       };
     }
     const editorial = editorialComparison(params.comparison);
@@ -133,14 +141,36 @@ export const Route = createFileRoute("/compare/$comparison")({
     const title = ctr.title;
     const description = ctr.description;
 
+    const isPairPage = loaderData.kind === "master" || loaderData.kind === "pair";
+    const indexable = !isPairPage || isIndexablePair(params.comparison);
+    const aSlug = isPairPage ? loaderData.aSlug : null;
+    const bSlug = isPairPage ? loaderData.bSlug : null;
+    const decision = aSlug && bSlug ? pairDecision(aSlug, bSlug) : undefined;
+
+    const decisionFaqs = decision
+      ? [
+          {
+            question: `${decision.aName} or ${decision.bName} — which should I pick?`,
+            answer: decision.answer,
+          },
+          ...decision.readers.map((r) => ({
+            question: `${decision.aName} vs ${decision.bName}: which is better if I am ${r.reader.toLowerCase()}?`,
+            answer: `${r.pick}. ${r.why}`,
+          })),
+        ]
+      : [];
+
     return {
-      meta: pageMeta({
-        title,
-        description,
-        path,
-        author: "Degreekhojo Editorial Desk",
-        keywords: ctr.keywords,
-      }),
+      meta: [
+        ...pageMeta({
+          title,
+          description,
+          path,
+          author: "Degreekhojo Editorial Desk",
+          keywords: ctr.keywords,
+        }),
+        ...robotsForPair(indexable),
+      ],
       links: canonical(path),
       scripts: [
         jsonLd(
@@ -150,6 +180,20 @@ export const Route = createFileRoute("/compare/$comparison")({
             { name: `${loaderData.leftShort} vs ${loaderData.rightShort}`, href: path },
           ]),
         ),
+        ...(decisionFaqs.length ? [jsonLd(faqSchema(decisionFaqs))] : []),
+        ...(aSlug && bSlug
+          ? [
+              jsonLd(
+                itemListSchema(
+                  [
+                    { name: loaderData.leftName, href: `/universities/${aSlug}` },
+                    { name: loaderData.rightName, href: `/universities/${bSlug}` },
+                  ],
+                  `${loaderData.leftShort} vs ${loaderData.rightShort}`,
+                ),
+              ),
+            ]
+          : []),
       ],
     };
   },
@@ -283,6 +327,8 @@ function Page() {
           ]}
         />
 
+        <PairDecisionBlock aSlug={a.slug} bSlug={b.slug} />
+
         <ContentSection title="Side-by-side comparison">
           <DataTable
             caption={`${a.name} vs ${b.name}`}
@@ -390,4 +436,12 @@ function Page() {
       />
     </>
   );
+}
+
+/** Shared answer-first verdict block for the entity-driven pair pages. */
+function PairDecisionBlock({ aSlug, bSlug }: { aSlug: string; bSlug: string }) {
+  const decision = pairDecision(aSlug, bSlug);
+  if (!decision) return null;
+  const related = comparisonLinks(aSlug, 3);
+  return <DecisionBlock decision={decision} related={related} />;
 }

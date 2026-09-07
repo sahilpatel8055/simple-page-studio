@@ -10,6 +10,7 @@ import {
 } from "@/lib/comparisonMaster";
 import { packFor } from "@/data/comparison-packs";
 import { breadcrumbSchema, canonical, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
+import { isIndexableCoursePair, robotsForPair } from "@/lib/comparisonIndexing";
 
 export const Route = createFileRoute("/compare/$course/$pair")({
   loader: ({ params }) => {
@@ -43,7 +44,10 @@ export const Route = createFileRoute("/compare/$course/$pair")({
       loaderData.packDescription ??
       loaderData.description.replace(/\{Course\}/g, loaderData.course);
     return {
-      meta: pageMeta({ title, description, path, author: "Degreekhojo Editorial Desk" }),
+      meta: [
+        ...pageMeta({ title, description, path, author: "Degreekhojo Editorial Desk" }),
+        ...robotsForPair(isIndexableCoursePair(params.course, params.pair)),
+      ],
       links: canonical(path),
       scripts: [
         jsonLd(
