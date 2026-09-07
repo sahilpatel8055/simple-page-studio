@@ -104,6 +104,7 @@ export function CounsellingForm({
   onDone?: () => void;
 }) {
   const [sent, setSent] = useState(false);
+  const startedRef = useRef(false);
   const navigate = useNavigate();
 
   if (sent) {
@@ -156,6 +157,11 @@ export function CounsellingForm({
 
       <form
         className="mx-auto mt-4 grid w-full max-w-md gap-2.5 sm:max-w-none sm:grid-cols-2 sm:gap-3"
+        onFocusCapture={() => {
+          if (startedRef.current) return;
+          startedRef.current = true;
+          track("lead_form_start", { form: source });
+        }}
         onChange={(e) => {
           const t = e.target as unknown as { name?: string; value?: string };
           if (t.name) savePartialLead({ [t.name]: t.value ?? "" });
