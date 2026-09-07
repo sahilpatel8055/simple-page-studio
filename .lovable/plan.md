@@ -1,68 +1,60 @@
-# Why our university pages aren't ranking vs CollegeSathi — findings and fix plan
+# Fix ranking + simplify the university page experience
 
-## Evidence gathered
+## What the Search Console file says (19 Aug – 1 Sep)
 
-Live comparison (Semrush, India database, today):
+- 3,357 impressions, 48 clicks, average position 33.8. Google sees the site but almost nobody clicks.
+- Mobile: position 14.9. Desktop: position 51.6. Mobile is where the traffic is; desktop is nearly invisible.
+- India is 2,689 of 3,357 impressions. Everything else is noise.
+- Money queries sit far down: "online mba fees in india" (71), "online ba degree" (95), "lpu online fees" (48), "smu online mba" (83).
+- Queries already close to the first page with zero clicks: "du sol exam pattern" (7.6), "nsou ma english syllabus" (9.5), "course to salary" (4.8), "nsou b.sc chemistry hons" (7.6), "shoolini pay after placement" (10.8).
+- /tools/salary-after-course: 111 impressions, 2 clicks — the single biggest wasted asset.
 
-| Metric | degreekhojo.com | collegesathi.com |
-|---|---|---|
-| Keywords ranking | 41 | 3,504 |
-| Estimated monthly organic visits | ~0 | ~13,785 |
-| Authority score | 0 / 100 | 20 / 100 |
-| Backlinks | 14 | 603 referring domains |
+Read plainly: a handful of pages are almost ranking and the titles/snippets are not earning the click; the big fee/course pages are nowhere yet.
 
-I also read their Amity and Manipal pages and our live Amity page side by side.
+## On UI/UX vs CollegeSathi
 
-**The single biggest reason we don't rank is not the page — it's trust signals off the page.** Our site has 14 links pointing at it and effectively no ranking history; theirs has 600+ sources and two years of accumulated authority. Our content is already longer and better sourced than theirs in most sections. So the plan below is: fix the handful of real on-page gaps, then spend the effort where it actually moves rankings (indexing, brand signals, reviews, links, speed).
+Ours is richer and more honest — more data, real sources, verification notes. But it is harder to use. A university page runs ~25 stacked sections; a student who came for "what is the fee" scrolls through overview, approvals, exam pattern and decision guides before reaching a number. CollegeSathi is thinner on facts but answers fee / eligibility / apply within the first screen and repeats the call to action all the way down.
 
-## What they do better than us
+So: keep our depth, change the order and the density. That is the plan below.
 
-1. **Page address matches the search phrase.** Theirs: `/university/amity-university-online`. Ours: `/universities/amity-online`. People search "Amity University Online", so their address matches the query exactly.
-2. **Visible ratings and real review counts** ("4.6 from 32 reviews") near the top, plus a review-submission box. This wins the star ratings in Google results. Ours has a reviews section but no aggregate rating shown and no way for a student to submit one.
-3. **Offer-led hooks** — "Up to ₹10,000 off", "Early Bird Scholarship ending soon", brochure download, "Apply to university". These lift clicks and time on page, which feeds rankings.
-4. **Named human experts with photos** ("Management experts", "Scholarship & finance experts"). Google's helpful-content signals reward visible authorship of this kind.
-5. **Hiring-partner logos and placement salary blocks** presented visually rather than as text.
-6. **Fewer, punchier sections.** Their page has ~20 headings, ours has 60+. Ours reads like a database dump in places, which hurts engagement even though the facts are better.
-7. **A named comparison tool** (ClikPick) that earns links and brand searches.
+## Plan
 
-## What we do better (keep, don't touch)
+### 1. Answer in the first screen (all university and course pages)
+- Fee, eligibility, duration, approval and "apply" in one compact card above everything else, on mobile first.
+- Sticky bottom bar on mobile with fee + WhatsApp, always reachable.
+- Collapse the long middle sections (exam pattern, learning experience, decision guides) into expandable blocks so the page feels short but keeps all content for Google.
+- Move student reviews and placements up; move editorial/verification blocks down.
 
-Sourced fee tables, honest "not published" labelling, exam patterns, per-programme detail, and a far larger internal link network. This is our defensible advantage — competitors publish estimates, we publish sourced facts.
+### 2. Win the near-miss queries (biggest short-term gain)
+For the seven queries already in the top 20, rewrite the page title and description to match the query wording exactly, put the direct answer in a table at the top, and show a visible "last checked" date:
+du sol exam pattern · nsou ma english syllabus · nsou b.sc chemistry hons · shoolini pay after placement · du sol ma political science syllabus · course to salary · vgu vs chandigarh university.
 
-## Fix list, in the order that matters
+### 3. Rebuild the salary tool
+111 impressions and 2 clicks means the page shows for "course to salary" but doesn't look like the answer. Rebuild it around course→salary: a per-course salary table on landing, separate indexable views per course, and clear links to the matching degree pages.
 
-### P0 — Make Google able to rank us at all
-- Verify the site in Google Search Console and submit the sitemap; check the index-coverage report for every university page. Right now we have no evidence our pages are even indexed.
-- Confirm all 20+ university pages return 200 with a unique title, description and canonical (spot-check found the sitemap does not yet contain Sharda, Kurukshetra and YCMOU — the live build is stale, so publish).
-- Add each university's search-matched address as the primary one: `/universities/amity-university-online`, `/universities/lovely-professional-university-online`, etc., with permanent redirects from the current short addresses so nothing breaks or loses value.
+### 4. Fix why desktop sits at 51 while mobile sits at 15
+Audit what desktop shows that mobile doesn't (heavy sidebars, duplicate link blocks diluting the main content) and cut the desktop page down to the same focused structure.
 
-### P1 — On-page gaps worth closing
-- **Rating block:** show an aggregate rating and review count in the header, backed by real reviews only, with matching review structured data. No invented ratings — reviews collected through a submit form.
-- **Review submission form** on each university page, stored with the leads data, moderated before publishing.
-- **Trim and re-order the page:** merge "Why consider" / "Things to consider" / "Who it suits" / "Who may consider" into one decision block; move "Researched university record" and "What to verify" below the fold. Target ~25 headings, same facts.
-- **Named counsellor/expert strip** with photos and specialisation (the expert images already exist in the project).
-- **Hiring-partner logo strip and placement snapshot** rendered visually on every university that has verified data.
-- **Sample degree image with click-to-zoom** on every university (currently only some).
-- **Offer/scholarship banner** per university, driven by real published scholarships, with an honest deadline.
-- **Comparison relevance:** "Compare universities" on Amity currently suggests open universities — it should suggest same-archetype, similar-fee universities.
+### 5. Fee and course pillar pages
+"online mba fees in india", "online ba fees", "lpu online fees" all rank 48–95. Each needs a real fee comparison table across universities at the top of the page, updated dates, and internal links from every matching university page.
 
-### P2 — Off-page, which is where the ranking actually comes from
-- Get 30–50 quality links over 3 months: education directories, Quora/Reddit answers, guest posts on career blogs, university-comparison data studies, HARO-style quotes, YouTube descriptions.
-- Build brand search volume: name a comparison tool of our own, run small social/YouTube pushes so people search "Degreekhojo Amity fees".
-- Publish 2–3 data-led pieces per month that others cite (e.g. "Online MBA fees across 21 universities, 2026 — sourced table"). These earn the links that lift the university pages.
-- Collect and publish genuine student reviews continuously; review volume is the single strongest engagement signal on this page type.
-
-### P3 — Speed and mobile
-- Measure the university page on PageSpeed Insights; target under 2.5s largest paint on 4G. The page ships a lot of sections — lazy-load below-the-fold blocks and images.
-- Serve modern image formats and correct sizes for logos, campus photos and degree samples.
+### 6. Housekeeping that blocks ranking
+- Confirm the live domain and make every canonical, sitemap and share link point at it consistently.
+- Sitemap should list only the canonical pages, nothing redirected.
+- Replace the placeholder WhatsApp number before pushing conversion changes.
 
 ## Technical notes
 
-- New addresses: add `universities.$slug` alias handling plus a slug alias map so old paths permanently redirect; update `sitemapEntries()` and every internal link generator (`src/lib/entities.ts`).
-- Ratings: extend `collegeSchema()` to only emit `aggregateRating` when real reviews exist; add a reviews table when Cloud is enabled (needed for submission + moderation).
-- Section consolidation happens in `src/routes/universities.$slug.index.tsx` and the `Differentiation`/`Hub` section components — content is reused, not rewritten.
-- Speed work: route-level lazy imports for below-the-fold sections, `loading="lazy"` and width/height on all images.
+- Layout changes land in `src/components/templates/DetailLayout.tsx`, `src/routes/universities.$slug.index.tsx` and the course route; sections become collapsible via a shared wrapper so content stays in the HTML.
+- Title/description rewrites go through `universityHeadings` in `src/lib/pageDifferentiation.ts` and the per-route `head()`.
+- Salary tool: `src/routes/tools.salary-after-course.tsx` plus per-course child routes off `src/lib/salaryData.ts`.
+- Domain constant lives at `src/lib/seo.ts` (`SITE_URL`) and `public/robots.txt`; both need the same value.
 
-## Suggested order
+## Order of work
 
-P0 this week → P1 next → P2 continuous → P3 alongside.
+1. Domain/canonical/sitemap check (small, unblocks everything)
+2. First-screen answer card + mobile sticky bar
+3. Seven near-miss pages
+4. Salary tool rebuild
+5. Fee pillar tables
+6. Desktop parity pass
