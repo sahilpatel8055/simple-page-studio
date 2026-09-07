@@ -158,6 +158,17 @@ function RootShell({ children }: { children: ReactNode }) {
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  const router = useRouter();
+
+  // Analytics: load GTM / GA4 / Clarity, then log every client-side page view.
+  useEffect(() => {
+    initAnalytics();
+    trackPageView(window.location.pathname);
+    const unsub = router.subscribe("onResolved", () => {
+      trackPageView(window.location.pathname);
+    });
+    return unsub;
+  }, [router]);
 
   // Retry any lead that failed to reach the sheet earlier (offline, tab closed).
   useEffect(() => {
