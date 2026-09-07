@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { CheckCircle2, ShieldCheck } from "lucide-react";
 import { universities } from "@/lib/content";
@@ -6,6 +6,7 @@ import { universityLogo } from "@/lib/assets";
 import { markLeadSubmitted } from "@/components/common/PopupManager";
 import { savePartialLead } from "@/lib/leadContext";
 import { submitLead } from "@/lib/leads";
+import { track } from "@/lib/analytics";
 import { ConsentCheck } from "@/components/common/ConsentCheck";
 
 const COURSES = [
@@ -104,6 +105,7 @@ export function CounsellingForm({
   onDone?: () => void;
 }) {
   const [sent, setSent] = useState(false);
+  const startedRef = useRef(false);
   const navigate = useNavigate();
 
   if (sent) {
@@ -156,6 +158,11 @@ export function CounsellingForm({
 
       <form
         className="mx-auto mt-4 grid w-full max-w-md gap-2.5 sm:max-w-none sm:grid-cols-2 sm:gap-3"
+        onFocusCapture={() => {
+          if (startedRef.current) return;
+          startedRef.current = true;
+          track("lead_form_start", { form: source });
+        }}
         onChange={(e) => {
           const t = e.target as unknown as { name?: string; value?: string };
           if (t.name) savePartialLead({ [t.name]: t.value ?? "" });

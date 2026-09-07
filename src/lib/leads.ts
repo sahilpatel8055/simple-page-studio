@@ -15,6 +15,7 @@
  */
 
 import { getLeadContext, getPartialLead, markLeadSubmitted } from "@/lib/leadContext";
+import { track } from "@/lib/analytics";
 
 export const LEAD_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbxDCGIr01-dyHzlxSGfWjz9cH0oL9Gqv-V7jODdrgLkJbR3MJY7oH8W5C1XwALG_lF8nQ/exec";
@@ -140,6 +141,11 @@ export async function submitLead(input: LeadInput): Promise<void> {
   const row = buildRow(input);
   // Any completed form starts the popup cooling period for this visitor.
   if (!/\((WhatsApp|Call)\)/.test(input.form)) markLeadSubmitted();
+  track("lead_submit", {
+    form: input.form,
+    course: row["course"] ?? "",
+    page: window.location.pathname,
+  });
   const ok = await post(row);
   if (!ok) enqueue(row);
 }
@@ -163,5 +169,9 @@ export async function flushLeadQueue(): Promise<void> {
  * whatever details the visitor already typed anywhere on the site.
  */
 export function trackContactClick(channel: "WhatsApp" | "Call", form: string) {
+  track(channel === "WhatsApp" ? "whatsapp_click" : "call_click", {
+    form,
+    page: typeof window === "undefined" ? "" : window.location.pathname,
+  });
   void submitLead({ form: `${form} (${channel})`, note: channel });
 }

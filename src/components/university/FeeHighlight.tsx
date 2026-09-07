@@ -1,4 +1,6 @@
+import { useEffect, useRef } from "react";
 import { Sparkles } from "lucide-react";
+import { track } from "@/lib/analytics";
 import type { Offering } from "@/data/types";
 
 const inr = (n: number) => `₹${n.toLocaleString("en-IN")}`;
@@ -41,6 +43,24 @@ function Cell({
  * on one soft brand panel. Cells with no verified figure are dropped.
  */
 export function FeeHighlight({ fee, duration }: { fee: Offering["fee"]; duration?: string }) {
+  const panelRef = useRef<HTMLDivElement>(null);
+  // Fires once when the fee panel first becomes visible.
+  useEffect(() => {
+    const el = panelRef.current;
+    if (!el || typeof IntersectionObserver === "undefined") return;
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          track("fee_table_view", { page: window.location.pathname });
+          io.disconnect();
+        }
+      },
+      { threshold: 0.3 },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
   const cells: React.ReactNode[] = [];
   if (fee.total) {
     cells.push(
@@ -87,7 +107,7 @@ export function FeeHighlight({ fee, duration }: { fee: Offering["fee"]; duration
   if (!cells.length) return null;
 
   return (
-    <div className="grid gap-3 rounded-3xl border-2 border-brand bg-brand-soft/70 p-4 sm:gap-6 sm:p-7 md:grid-cols-2 lg:grid-cols-4">
+    <div ref={panelRef} className="grid gap-3 rounded-3xl border-2 border-brand bg-brand-soft/70 p-4 sm:gap-6 sm:p-7 md:grid-cols-2 lg:grid-cols-4">
       {cells}
     </div>
   );
