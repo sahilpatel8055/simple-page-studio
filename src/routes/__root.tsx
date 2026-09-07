@@ -18,6 +18,7 @@ import { LeadChatBot } from "@/components/common/LeadChatBot";
 import { SocialProof } from "@/components/common/SocialProof";
 import { PopupProvider } from "@/components/common/PopupManager";
 import { flushLeadQueue } from "@/lib/leads";
+import { initAnalytics, trackPageView } from "@/lib/analytics";
 
 import { jsonLd, organizationSchema, SITE_NAME, SITE_TAGLINE } from "@/lib/seo";
 
