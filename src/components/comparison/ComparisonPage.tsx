@@ -202,6 +202,8 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         </div>
       )}
 
+      {decision && <DecisionBlock decision={decision} related={decisionRelated} />}
+
       <ContentSection title={`${aName} vs ${bName}: Overview`}>
         <p>{content.angle}</p>
         <p>{content.decision_framework}</p>
