@@ -1,90 +1,68 @@
-# Data Integrity + Research Master Plan (17 universities, 175 programmes)
+# Why our university pages aren't ranking vs CollegeSathi — findings and fix plan
 
-## What the audit found
+## Evidence gathered
 
-- The site already has ONE source of truth: `src/data/university-master-data-2026-27.json` (17 universities, 175 programmes). Everything else (`offerings.ts`, `programmes.ts`, `universities.ts`) is a derived view, so nothing has to be recreated per page.
-- Fee verification today: 44 `verified_official`, 3 `secondary_source`, 20 `pending_official_fee_document`, 108 `fee_pending_verification`. 136 of 175 programmes have `total_programme_fee: null`, which is why pages print "Awaiting official confirmation".
-- Curriculum is empty (`curriculum: {}`) for most programmes; specialisations only carry a name + a generic `/programs` link, not a programme-specific source.
-- Salary numbers come from `src/lib/careerSalaries.ts` (indicative market data) but are rendered next to placement sections, so they can read as university outcomes.
-- Root of the repo holds ~30 leftover research/scratch files (`mca_0..6.json`, `result.json`, `results.json`, `final_result*.json`, `report.json`, `minified_results*.json`, `parse_*.py`, `minify_*.py`, `generate_json.py`, `fetch_*.sh`, plus loose `*.md` research dumps). These are duplicates of content already inside `src/data/` and are not imported anywhere.
+Live comparison (Semrush, India database, today):
 
-Nothing published is deleted. No route, slug, canonical or sitemap entry changes anywhere in this plan, so there is no ranking risk.
+| Metric | degreekhojo.com | collegesathi.com |
+|---|---|---|
+| Keywords ranking | 41 | 3,504 |
+| Estimated monthly organic visits | ~0 | ~13,785 |
+| Authority score | 0 / 100 | 20 / 100 |
+| Backlinks | 14 | 603 referring domains |
 
-## Step 0 — Cleanup (safe, no content loss)
+I also read their Amity and Manipal pages and our live Amity page side by side.
 
-- Verify each root scratch file has zero imports, then move the raw research dumps into `research/raw/` (kept, not deleted) and delete only the true duplicates (`result.json` vs `results.json` vs `final_result(s).json`, `minified_results*.json`, the throwaway parse/minify scripts).
-- Add `research/README.md` explaining that `src/data/university-master-data-2026-27.json` is the only file pages read.
+**The single biggest reason we don't rank is not the page — it's trust signals off the page.** Our site has 14 links pointing at it and effectively no ranking history; theirs has 600+ sources and two years of accumulated authority. Our content is already longer and better sourced than theirs in most sections. So the plan below is: fix the handful of real on-page gaps, then spend the effort where it actually moves rankings (indexing, brand signals, reviews, links, speed).
 
-## Step 1 — Extend the research master schema (source traceability)
+## What they do better than us
 
-Add these fields to every fact-bearing block (fees, curriculum, specialisation, admission, scholarship, career, recognition, reviews):
+1. **Page address matches the search phrase.** Theirs: `/university/amity-university-online`. Ours: `/universities/amity-online`. People search "Amity University Online", so their address matches the query exactly.
+2. **Visible ratings and real review counts** ("4.6 from 32 reviews") near the top, plus a review-submission box. This wins the star ratings in Google results. Ours has a reviews section but no aggregate rating shown and no way for a student to submit one.
+3. **Offer-led hooks** — "Up to ₹10,000 off", "Early Bird Scholarship ending soon", brochure download, "Apply to university". These lift clicks and time on page, which feeds rankings.
+4. **Named human experts with photos** ("Management experts", "Scholarship & finance experts"). Google's helpful-content signals reward visible authorship of this kind.
+5. **Hiring-partner logos and placement salary blocks** presented visually rather than as text.
+6. **Fewer, punchier sections.** Their page has ~20 headings, ours has 60+. Ours reads like a database dump in places, which hurts engagement even though the facts are better.
+7. **A named comparison tool** (ClikPick) that earns links and brand searches.
 
-```text
-value            the fact
-status           verified_official | verified_regulator | secondary_source | pending | not_published
-source_url       exact page/PDF the value came from (not a generic /programs link)
-source_type      website | prospectus_pdf | fee_document | notification | regulator
-source_year      2026-27 (or the year printed on the document)
-verified_on      YYYY-MM-DD
-label             e.g. "University-reported", "Indicative market salary", "UGC-DEB entitlement"
-```
+## What we do better (keep, don't touch)
 
-Rules enforced in code: never infer a missing value, never compute discounts/EMI, `pending` renders as an explicit "not published by the university" note instead of a blank or a guess.
+Sourced fee tables, honest "not published" labelling, exam patterns, per-programme detail, and a far larger internal link network. This is our defensible advantage — competitors publish estimates, we publish sourced facts.
 
-## Step 2 — Fee verification sprint (the 136 pending programmes)
+## Fix list, in the order that matters
 
-Worked university-by-university in batches of 3–4 so each batch is reviewable:
+### P0 — Make Google able to rank us at all
+- Verify the site in Google Search Console and submit the sitemap; check the index-coverage report for every university page. Right now we have no evidence our pages are even indexed.
+- Confirm all 20+ university pages return 200 with a unique title, description and canonical (spot-check found the sitemap does not yet contain Sharda, Kurukshetra and YCMOU — the live build is stale, so publish).
+- Add each university's search-matched address as the primary one: `/universities/amity-university-online`, `/universities/lovely-professional-university-online`, etc., with permanent redirects from the current short addresses so nothing breaks or loses value.
 
-1. I fetch the official university online portal, fee page and prospectus/fee PDF for each programme.
-2. Where an official number exists → fill `total_programme_fee`, semester/annual split, registration and exam fee, set `verified_official` + `source_url` + `verified_on`.
-3. Where the university genuinely does not publish it → keep `null`, set `not_published`, and the page shows the labelled note plus a link to the official admission page.
-4. Fee figures you already supplied stay authoritative; I only attach a source and date to them so they stop showing as unverified.
+### P1 — On-page gaps worth closing
+- **Rating block:** show an aggregate rating and review count in the header, backed by real reviews only, with matching review structured data. No invented ratings — reviews collected through a submit form.
+- **Review submission form** on each university page, stored with the leads data, moderated before publishing.
+- **Trim and re-order the page:** merge "Why consider" / "Things to consider" / "Who it suits" / "Who may consider" into one decision block; move "Researched university record" and "What to verify" below the fold. Target ~25 headings, same facts.
+- **Named counsellor/expert strip** with photos and specialisation (the expert images already exist in the project).
+- **Hiring-partner logo strip and placement snapshot** rendered visually on every university that has verified data.
+- **Sample degree image with click-to-zoom** on every university (currently only some).
+- **Offer/scholarship banner** per university, driven by real published scholarships, with an honest deadline.
+- **Comparison relevance:** "Compare universities" on Amity currently suggests open universities — it should suggest same-archetype, similar-fee universities.
 
-You do not need to send PDFs — I can pull them from the official sites. If you already have official fee PDFs, dropping them in `research/raw/` makes a batch faster and stronger.
+### P2 — Off-page, which is where the ranking actually comes from
+- Get 30–50 quality links over 3 months: education directories, Quora/Reddit answers, guest posts on career blogs, university-comparison data studies, HARO-style quotes, YouTube descriptions.
+- Build brand search volume: name a comparison tool of our own, run small social/YouTube pushes so people search "Degreekhojo Amity fees".
+- Publish 2–3 data-led pieces per month that others cite (e.g. "Online MBA fees across 21 universities, 2026 — sourced table"). These earn the links that lift the university pages.
+- Collect and publish genuine student reviews continuously; review volume is the single strongest engagement signal on this page type.
 
-## Step 3 — Curriculum integrity
-
-- Per programme: semester-wise subject list from the university's own curriculum/syllabus page or PDF, with `status: verified | incomplete | pending`.
-- Common curriculum stays shared per programme; specialisation electives are stored separately per university × programme × specialisation, so one university's electives can never leak into another's page.
-- Missing semesters are shown as "not published" rows rather than filled in.
-
-## Step 4 — Claim labelling (salary, placement, reviews)
-
-- Salary: every figure renders with `Indicative market salary · <year> · source`, and university-reported figures render as `University-reported · <source> · <date>`. The two are never mixed in one block.
-- Placement: only university-published support statements; no invented averages/highest packages.
-- Reviews: each review/rating carries `source`, `date`, and one of `verified_learner | user_submitted | external_rating`, displayed as a badge. Unsourced ratings are hidden rather than shown bare.
-
-## Step 5 — Online vs ODL classification
-
-Per programme (not per university): `Online (UGC-DEB entitled)`, `ODL/Distance`, or `Open Learning`, with the entitlement source and validity years. Delivery-mode wording on hero, eligibility and admission blocks is generated from this field, so no page can claim the wrong mode.
-
-## Step 6 — De-templating course pages
-
-- University-level facts stay on course pages but are re-framed in course context (e.g. "How <University> runs the online MBA" instead of the same generic block).
-- Each course page gets genuinely course-specific sections: that programme's curriculum, that programme's specialisation electives, that programme's eligibility rule, that programme's exam pattern, that programme's fee table.
-- Any section with no verified course-specific data is replaced with a short sourced note instead of filler prose.
-
-## Step 7 — UX items (after the data work)
-
-- Mobile comparison: attribute-by-attribute stacked cards with a sticky attribute label, replacing the squeezed desktop table.
-- University cards: grouped/progressive disclosure so all 17 stay scannable on mobile; none removed.
-- Next-step CTAs: one quiet contextual action per major section (compare, fees, curriculum, specialisation) — no ad-style blocks.
-- Blogs/news/articles keep their own intent; where a post duplicates a course page, it is rewritten to an editorial angle and links to the page instead.
-
-## Step 8 — 17-university sync check + SEO safety
-
-Automated check that every university slug appears consistently across listings, course pages, specialisations, comparisons, filters and sitemap; report any orphan or mismatch. Confirm no URL, canonical or redirect changed at any point.
-
-## Suggested execution order
-
-P0: Steps 0 → 1 → 2 (fees) → 3 (curriculum) → 4 (claims)
-P1: Steps 5 → 6
-P2: Step 7 → 8
-
-Each step lands as its own reviewable batch so you can check the sources before the next one starts.
+### P3 — Speed and mobile
+- Measure the university page on PageSpeed Insights; target under 2.5s largest paint on 4G. The page ships a lot of sections — lazy-load below-the-fold blocks and images.
+- Serve modern image formats and correct sizes for logos, campus photos and degree samples.
 
 ## Technical notes
 
-- Schema change is additive; derived readers (`src/data/offerings.ts`, `src/lib/courseMaster.ts`, `src/lib/insightsData.ts`, `src/lib/pubContent.ts`) get optional field support so nothing breaks mid-migration.
-- `src/components/common/Verification.tsx` already renders status badges — it is extended to cover the new statuses and labels instead of adding a second badge system.
-- No new dependencies, no backend, no route files added or removed.
+- New addresses: add `universities.$slug` alias handling plus a slug alias map so old paths permanently redirect; update `sitemapEntries()` and every internal link generator (`src/lib/entities.ts`).
+- Ratings: extend `collegeSchema()` to only emit `aggregateRating` when real reviews exist; add a reviews table when Cloud is enabled (needed for submission + moderation).
+- Section consolidation happens in `src/routes/universities.$slug.index.tsx` and the `Differentiation`/`Hub` section components — content is reused, not rewritten.
+- Speed work: route-level lazy imports for below-the-fold sections, `loading="lazy"` and width/height on all images.
+
+## Suggested order
+
+P0 this week → P1 next → P2 continuous → P3 alongside.
