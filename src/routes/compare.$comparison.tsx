@@ -141,14 +141,36 @@ export const Route = createFileRoute("/compare/$comparison")({
     const title = ctr.title;
     const description = ctr.description;
 
+    const isPairPage = loaderData.kind === "master" || loaderData.kind === "pair";
+    const indexable = !isPairPage || isIndexablePair(params.comparison);
+    const aSlug = isPairPage ? loaderData.aSlug : null;
+    const bSlug = isPairPage ? loaderData.bSlug : null;
+    const decision = aSlug && bSlug ? pairDecision(aSlug, bSlug) : undefined;
+
+    const decisionFaqs = decision
+      ? [
+          {
+            question: `${decision.aName} or ${decision.bName} — which should I pick?`,
+            answer: decision.answer,
+          },
+          ...decision.readers.map((r) => ({
+            question: `${decision.aName} vs ${decision.bName}: which is better if I am ${r.reader.toLowerCase()}?`,
+            answer: `${r.pick}. ${r.why}`,
+          })),
+        ]
+      : [];
+
     return {
-      meta: pageMeta({
-        title,
-        description,
-        path,
-        author: "Degreekhojo Editorial Desk",
-        keywords: ctr.keywords,
-      }),
+      meta: [
+        ...pageMeta({
+          title,
+          description,
+          path,
+          author: "Degreekhojo Editorial Desk",
+          keywords: ctr.keywords,
+        }),
+        ...robotsForPair(indexable),
+      ],
       links: canonical(path),
       scripts: [
         jsonLd(
@@ -158,6 +180,20 @@ export const Route = createFileRoute("/compare/$comparison")({
             { name: `${loaderData.leftShort} vs ${loaderData.rightShort}`, href: path },
           ]),
         ),
+        ...(decisionFaqs.length ? [jsonLd(faqSchema(decisionFaqs))] : []),
+        ...(aSlug && bSlug
+          ? [
+              jsonLd(
+                itemListSchema(
+                  [
+                    { name: loaderData.leftName, href: `/universities/${aSlug}` },
+                    { name: loaderData.rightName, href: `/universities/${bSlug}` },
+                  ],
+                  `${loaderData.leftShort} vs ${loaderData.rightShort}`,
+                ),
+              ),
+            ]
+          : []),
       ],
     };
   },
