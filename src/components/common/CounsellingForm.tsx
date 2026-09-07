@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { useNavigate } from "@tanstack/react-router";
 import { CheckCircle2, ShieldCheck } from "lucide-react";
 import { universities } from "@/lib/content";
@@ -6,6 +6,7 @@ import { universityLogo } from "@/lib/assets";
 import { markLeadSubmitted } from "@/components/common/PopupManager";
 import { savePartialLead } from "@/lib/leadContext";
 import { submitLead } from "@/lib/leads";
+import { track } from "@/lib/analytics";
 import { ConsentCheck } from "@/components/common/ConsentCheck";
 
 const COURSES = [
