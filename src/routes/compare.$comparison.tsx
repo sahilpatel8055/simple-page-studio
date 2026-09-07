@@ -437,3 +437,11 @@ function Page() {
     </>
   );
 }
+
+/** Shared answer-first verdict block for the entity-driven pair pages. */
+function PairDecisionBlock({ aSlug, bSlug }: { aSlug: string; bSlug: string }) {
+  const decision = pairDecision(aSlug, bSlug);
+  if (!decision) return null;
+  const related = comparisonLinks(aSlug, 3);
+  return <DecisionBlock decision={decision} related={related} />;
+}
