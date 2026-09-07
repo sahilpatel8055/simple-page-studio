@@ -1,60 +1,100 @@
-# Fix ranking + simplify the university page experience
+# Can the two existing plans make DegreeKhojo compete with CollegeSathi / CollegeVidya?
 
-## What the Search Console file says (19 Aug – 1 Sep)
+## Short answer
 
-- 3,357 impressions, 48 clicks, average position 33.8. Google sees the site but almost nobody clicks.
-- Mobile: position 14.9. Desktop: position 51.6. Mobile is where the traffic is; desktop is nearly invisible.
-- India is 2,689 of 3,357 impressions. Everything else is noise.
-- Money queries sit far down: "online mba fees in india" (71), "online ba degree" (95), "lpu online fees" (48), "smu online mba" (83).
-- Queries already close to the first page with zero clicks: "du sol exam pattern" (7.6), "nsou ma english syllabus" (9.5), "course to salary" (4.8), "nsou b.sc chemistry hons" (7.6), "shoolini pay after placement" (10.8).
-- /tools/salary-after-course: 111 impressions, 2 clicks — the single biggest wasted asset.
+Doing both plans will materially improve rankings and clicks, but they will **not** be enough to "compete" head-to-head with CollegeSathi or CollegeVidya in the next 3–6 months. The two plans fix on-page UX, intent matching and technical housekeeping — they are **necessary** — but the competitor gap is mainly authority, brand and content volume.
 
-Read plainly: a handful of pages are almost ranking and the titles/snippets are not earning the click; the big fee/course pages are nowhere yet.
+## Why: the numbers
 
-## On UI/UX vs CollegeSathi
+| Site | Organic keywords (India) | Est. organic traffic/mo | Indexed pages | Avg position |
+|---|---|---|---|---|
+| CollegeVidya | 77,645 | ~198,000 | 10,000+ | top 10 on many head terms |
+| CollegeSathi | 3,504 | ~13,800 | 1,000+ | top 10 on long-tail IGNOU / full-form terms |
+| DegreeKhojo (GSC 19 Aug–1 Sep) | not visible yet | ~96 clicks/mo extrapolated | 463 of ~4,400 crawlable | 33.8 avg; mobile 14.9, desktop 51.6 |
 
-Ours is richer and more honest — more data, real sources, verification notes. But it is harder to use. A university page runs ~25 stacked sections; a student who came for "what is the fee" scrolls through overview, approvals, exam pattern and decision guides before reaching a number. CollegeSathi is thinner on facts but answers fee / eligibility / apply within the first screen and repeats the call to action all the way down.
+CollegeVidya alone has **20× the keyword footprint** and a subdomain strategy (`dusol.collegevidya.com`) plus a tool/blog engine. CollegeSathi wins on simple, fast answers and IGNOU long-tail. DegreeKhojo is currently richer on data but weaker on authority, trust signals and content velocity.
 
-So: keep our depth, change the order and the density. That is the plan below.
+## What the two plans *do* fix
 
-## Plan
+1. **Answer-first UX** — puts fee/eligibility/duration above the fold, which should lift CTR on near-miss queries.
+2. **Seven striking-distance queries** — fastest possible traffic win (top-20 terms with zero clicks).
+3. **Salary tool rebuild** — turns a leaking asset into a real course→salary resource.
+4. **Desktop parity** — removes the desktop ranking penalty (mobile pos 14.9 vs desktop 51.6).
+5. **Canonical/sitemap cleanup** — stops Google wasting crawl budget on redirects and mixed signals.
 
-### 1. Answer in the first screen (all university and course pages)
-- Fee, eligibility, duration, approval and "apply" in one compact card above everything else, on mobile first.
-- Sticky bottom bar on mobile with fee + WhatsApp, always reachable.
-- Collapse the long middle sections (exam pattern, learning experience, decision guides) into expandable blocks so the page feels short but keeps all content for Google.
-- Move student reviews and placements up; move editorial/verification blocks down.
+Expected outcome if executed well: **2–5× organic clicks in 60–90 days**, mostly from long-tail university/course queries and the seven near-miss terms. That is meaningful, but it is still not "competing" with CollegeVidya on `online MBA fees in India` or with CollegeSathi on `IGNOU assignment status`.
 
-### 2. Win the near-miss queries (biggest short-term gain)
-For the seven queries already in the top 20, rewrite the page title and description to match the query wording exactly, put the direct answer in a table at the top, and show a visible "last checked" date:
-du sol exam pattern · nsou ma english syllabus · nsou b.sc chemistry hons · shoolini pay after placement · du sol ma political science syllabus · course to salary · vgu vs chandigarh university.
+## What the two plans *do not* fix
 
-### 3. Rebuild the salary tool
-111 impressions and 2 clicks means the page shows for "course to salary" but doesn't look like the answer. Rebuild it around course→salary: a per-course salary table on landing, separate indexable views per course, and clear links to the matching degree pages.
+| Gap | Why it matters |
+|---|---|
+| **Domain authority / backlinks** | CollegeVidya and CollegeSathi have years of link acquisition, PR, citations and brand mentions. Google trusts them first. |
+| **Brand/direct traffic** | A large share of their traffic is branded (`collegevidya`, `collegevidya compare`) and direct. New sites cannot shortcut this. |
+| **Content velocity** | They publish fresh blogs, tools and update pages weekly. DegreeKhojo has ~4,400 crawlable pages but only 463 indexed — a crawl/index quality problem, not just quantity. |
+| **Real user signals** | Reviews, Q&A, student forums, comments and engagement are ranking signals. Editorial placeholder reviews do not substitute. |
+| **Conversion infrastructure** | CollegeSathi captures leads in the first screen and follows up. DegreeKhojo still has a placeholder WhatsApp number and no CRM/admin backend. |
+| **Tool / calculator moat** | CollegeVidya has dozens of tools (`age calculator`, EMI, compare). Tools earn links and repeat visits. |
+| **UGC-DEB verification trust layer** | CollegeVidya markets "check before you pay" / entitlement proof. DegreeKhojo has the data but not the packaged trust UI. |
 
-### 4. Fix why desktop sits at 51 while mobile sits at 15
-Audit what desktop shows that mobile doesn't (heavy sidebars, duplicate link blocks diluting the main content) and cut the desktop page down to the same focused structure.
+## UI/UX verdict vs CollegeSathi
 
-### 5. Fee and course pillar pages
-"online mba fees in india", "online ba fees", "lpu online fees" all rank 48–95. Each needs a real fee comparison table across universities at the top of the page, updated dates, and internal links from every matching university page.
+DegreeKhojo is **more honest and data-dense**. CollegeSathi is **easier to act on**.
 
-### 6. Housekeeping that blocks ranking
-- Confirm the live domain and make every canonical, sitemap and share link point at it consistently.
-- Sitemap should list only the canonical pages, nothing redirected.
-- Replace the placeholder WhatsApp number before pushing conversion changes.
+A student searching "Amity online MBA fees" on CollegeSathi sees the fee, EMI, eligibility and an Apply button within one screen. On DegreeKhojo the same student scrolls through overview, approvals, exam pattern and decision guides before the fee. The fix is not to remove depth — it is to **lead with the answer and fold the depth behind expandable sections**.
 
-## Technical notes
+Recommended UX principle: **"answer in 3 seconds, prove in 30 seconds, decide in 3 minutes."**
 
-- Layout changes land in `src/components/templates/DetailLayout.tsx`, `src/routes/universities.$slug.index.tsx` and the course route; sections become collapsible via a shared wrapper so content stays in the HTML.
-- Title/description rewrites go through `universityHeadings` in `src/lib/pageDifferentiation.ts` and the per-route `head()`.
-- Salary tool: `src/routes/tools.salary-after-course.tsx` plus per-course child routes off `src/lib/salaryData.ts`.
-- Domain constant lives at `src/lib/seo.ts` (`SITE_URL`) and `public/robots.txt`; both need the same value.
+## Realistic 90-day plan to close the gap
 
-## Order of work
+### Phase 1 — Stop the leaks (weeks 1–2)
+- Fix canonical/sitemap/robots to point only at `https://degreekhojo.com/`.
+- Replace placeholder WhatsApp number with the real counselling number.
+- Add GA4 / GTM / Microsoft Clarity for behaviour data.
+- Audit why only 463 of ~4,400 pages are indexed; prune thin/duplicate/redirected URLs.
 
-1. Domain/canonical/sitemap check (small, unblocks everything)
-2. First-screen answer card + mobile sticky bar
-3. Seven near-miss pages
-4. Salary tool rebuild
-5. Fee pillar tables
-6. Desktop parity pass
+### Phase 2 — Execute the two existing plans (weeks 2–5)
+- AnswerFirst block on all 21 university + 248 course pages.
+- Collapse long middle sections into expandable blocks (content stays in HTML for Google).
+- Mobile sticky "Get fees on WhatsApp" bar.
+- Rewrite titles/descriptions for the seven near-miss queries.
+- Rebuild `/tools/salary-after-course` with per-course indexable pages.
+- Fix desktop parity.
+
+### Phase 3 — Build the trust / conversion layer (weeks 4–6)
+- Add real lead capture with backend validation + CRM/webhook (not just Apps Script).
+- Add "last checked" dates and source links on every fee/approval block.
+- Add UGC-DEB entitlement proof badge per university.
+- Replace editorial "verified review" labels with plain student reviews or remove until real reviews exist.
+
+### Phase 4 — Content velocity for topical authority (weeks 6–12)
+- Publish 3 research-backed articles/week targeting the 415-query list.
+- Create one strong pillar page for each head term: `online MBA fees in India`, `online BA fees`, `LPU online fees`, `online MBA fee structure`.
+- Build 5–10 useful tools: fee EMI calculator (already exists, improve), eligibility checker, course duration calculator, university comparator.
+- Add comparison pages with a real verdict and parameter table.
+
+### Phase 5 — Authority building (months 4–12)
+- Digital PR / HARO for backlinks: "Online Degree Fee Index", "State-wise ODL approval tracker".
+- Encourage real student reviews and Q&A on university pages.
+- Guest posts / citations on education portals.
+- Build internal link hub: blogs → university → course → tools → comparison.
+
+## What "compete" realistically looks like
+
+| Timeline | Realistic milestone |
+|---|---|
+| 30 days | 2–3× clicks, seven near-miss queries move to page 1, desktop/mobile parity improved. |
+| 90 days | 5–10× clicks, 50+ page-1 long-tail rankings, real lead flow, indexed page count >2,000. |
+| 6 months | 20–30k monthly organic visits, ranking on page 2–3 for head terms, direct/brand searches begin. |
+| 12–18 months | Genuine challenger on mid-tail; still behind CollegeVidya on head terms unless major authority spend. |
+
+## What I need from you to make this happen
+
+1. **Budget for authority**: are you willing to invest in PR/link-building and content writers, or only dev work?
+2. **Real counselling number / WhatsApp**: what is the actual business number?
+3. **CRM / lead destination**: do you have a CRM, or should Lovable Cloud store leads?
+4. **Content input**: for the 30–40 university scale, can you provide only the official programme homepage URLs and fee PDFs? That is the minimum viable input.
+5. **Reviews / social proof**: do you have real student testimonials, or should we build a review-collection flow first?
+
+## Conclusion
+
+Do the two plans — they are the right first 90 days. But treat them as **Phase 1 of a 12–18 month authority play**, not a complete competitive strategy. The real moat against CollegeSathi / CollegeVidya is a combination of **faster answers + real trust signals + content velocity + backlinks + conversion backend**. Without the last three, the best on-page SEO will plateau.
