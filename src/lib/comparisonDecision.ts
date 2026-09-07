@@ -84,7 +84,19 @@ const recognitionLabel = (u: University) =>
     .slice(0, 3)
     .join(", ") || "Approvals not published";
 
-const publicBody = (u: University) => u.type === "State" || u.type === "Central" || u.type === "Open";
+/** State, central and open universities — the dataset does not always set `type`. */
+const PUBLIC_SLUGS = new Set([
+  "ignou",
+  "du-sol",
+  "nsou",
+  "ksou-mysuru",
+  "baou",
+  "kurukshetra-university",
+  "ycmou",
+]);
+
+const publicBody = (u: University) =>
+  u.type === "State" || u.type === "Central" || u.type === "Open" || PUBLIC_SLUGS.has(u.slug);
 
 /** Everything a learner actually pays, as far as the universities publish it. */
 function ownership(o: Offering | undefined) {
@@ -208,7 +220,7 @@ export function pairDecision(
     readers.push({
       reader: "Government-job aspirant",
       pick: win.shortName,
-      why: `${win.shortName} is a ${win.type?.toLowerCase()} university with ${recognitionLabel(win)} — the paperwork recruitment boards ask for is straightforward.`,
+      why: `${win.shortName} is a ${(win.type ?? "state/open").toLowerCase()} university with ${recognitionLabel(win)} — the paperwork recruitment boards ask for is straightforward.`,
     });
   } else {
     readers.push({
