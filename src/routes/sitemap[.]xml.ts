@@ -10,6 +10,8 @@ import { courseFamilyList, familyForProgrammeSlug } from "@/lib/courseFamily";
 import { courseContentBySlug } from "@/data/course-pages";
 import { canonicalProgrammeSlug } from "@/lib/intentMap";
 import { SITE_URL } from "@/lib/seo";
+import { isIndexableCoursePair, isIndexablePair } from "@/lib/comparisonIndexing";
+import { comparableCourses, coursePairPath, courseSlug, masterPairs } from "@/lib/comparisonMaster";
 
 interface SitemapEntry {
   path: string;
