@@ -327,6 +327,8 @@ function Page() {
           ]}
         />
 
+        <PairDecisionBlock aSlug={a.slug} bSlug={b.slug} />
+
         <ContentSection title="Side-by-side comparison">
           <DataTable
             caption={`${a.name} vs ${b.name}`}
