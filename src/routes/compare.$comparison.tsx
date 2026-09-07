@@ -18,7 +18,10 @@ import {
   courseComparisonFaqs,
 } from "@/components/comparison/CourseComparisonPage";
 import { getCourseFamily } from "@/lib/courseFamily";
-import { masterPairBySlug } from "@/lib/comparisonMaster";
+import { masterPairBySlug, pairUniversities } from "@/lib/comparisonMaster";
+import { isIndexablePair, robotsForPair } from "@/lib/comparisonIndexing";
+import { pairDecision } from "@/lib/comparisonDecision";
+import { DecisionBlock } from "@/components/comparison/DecisionBlock";
 import { comparisonCtrMeta } from "@/lib/intentMap";
 
 import {
