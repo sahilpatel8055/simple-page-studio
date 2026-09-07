@@ -15,6 +15,7 @@ import {
 import { packFor } from "@/data/comparison-packs";
 import { EditorialComparison } from "./EditorialComparison";
 import { CompareTable } from "./CompareTable";
+import { PickVerdict } from "./PickVerdict";
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
@@ -184,6 +185,18 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         <p>{content.angle}</p>
         <p>{content.decision_framework}</p>
       </ContentSection>
+
+      <PickVerdict
+        aName={aName}
+        bName={bName}
+        uniA={uniA}
+        uniB={uniB}
+        sa={sa}
+        sb={sb}
+        course={course}
+        aHref={uniA?.slug ? `/universities/${uniA.slug}` : "/universities"}
+        bHref={uniB?.slug ? `/universities/${uniB.slug}` : "/universities"}
+      />
 
       {pack ? (
         <EditorialComparison pack={pack} links={packLinks} />
