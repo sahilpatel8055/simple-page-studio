@@ -141,6 +141,11 @@ export async function submitLead(input: LeadInput): Promise<void> {
   const row = buildRow(input);
   // Any completed form starts the popup cooling period for this visitor.
   if (!/\((WhatsApp|Call)\)/.test(input.form)) markLeadSubmitted();
+  track("lead_submit", {
+    form: input.form,
+    course: row["course"] ?? "",
+    page: window.location.pathname,
+  });
   const ok = await post(row);
   if (!ok) enqueue(row);
 }
