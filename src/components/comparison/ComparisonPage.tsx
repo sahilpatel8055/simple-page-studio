@@ -112,6 +112,24 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         },
   ];
 
+  /** Answer-first decision block — identical shape on every comparison page. */
+  const decision =
+    uniA?.slug && uniB?.slug
+      ? pairDecision(
+          uniA.slug,
+          uniB.slug,
+          course ? (courseKeyForProgramme(courseSlug(course)) ?? undefined) : undefined,
+          course,
+        )
+      : undefined;
+
+  const decisionRelated = relatedPairs(pair, 3).map((p) => ({
+    label: `${p.university_a} vs ${p.university_b}`,
+    href: pairPath(p),
+  }));
+
+
+
   return (
     <DetailLayout
       crumbs={[
