@@ -53,12 +53,15 @@ export const Route = createFileRoute("/compare/$comparison")({
     }
     const mp = masterPairBySlug(params.comparison);
     if (mp) {
+      const { a, b } = pairUniversities(mp);
       return {
         kind: "master" as const,
         leftName: mp.university_a,
         leftShort: mp.university_a,
         rightName: mp.university_b,
         rightShort: mp.university_b,
+        aSlug: a?.slug ?? null,
+        bSlug: b?.slug ?? null,
       };
     }
     const pair = comparisonBySlug(params.comparison);
@@ -69,6 +72,8 @@ export const Route = createFileRoute("/compare/$comparison")({
         leftShort: pair.left.record.shortName,
         rightName: pair.right.record.name,
         rightShort: pair.right.record.shortName,
+        aSlug: pair.left.record.slug,
+        bSlug: pair.right.record.slug,
       };
     }
     const editorial = editorialComparison(params.comparison);
