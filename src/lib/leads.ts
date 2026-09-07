@@ -169,5 +169,9 @@ export async function flushLeadQueue(): Promise<void> {
  * whatever details the visitor already typed anywhere on the site.
  */
 export function trackContactClick(channel: "WhatsApp" | "Call", form: string) {
+  track(channel === "WhatsApp" ? "whatsapp_click" : "call_click", {
+    form,
+    page: typeof window === "undefined" ? "" : window.location.pathname,
+  });
   void submitLead({ form: `${form} (${channel})`, note: channel });
 }
