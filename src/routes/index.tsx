@@ -97,8 +97,8 @@ function HomePage() {
           </div>
           <div className="mx-auto mt-10 max-w-3xl text-center sm:mt-14">
             <h1 className="font-display text-[2.1rem] font-extrabold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-              <span className="text-shine">Choose the Right Degree.</span> Compare. Research. Decide
-              with Confidence.
+              <span className="text-shine">Top Online &amp; Distance Universities:</span> Compare
+              Fees, Programs and EMI 2026
             </h1>
             <p className="mx-auto mt-5 max-w-2xl text-[0.95rem] leading-relaxed text-muted-foreground sm:text-lg">
               Compare universities, courses, <span className="mark-brand">fees</span>,{" "}

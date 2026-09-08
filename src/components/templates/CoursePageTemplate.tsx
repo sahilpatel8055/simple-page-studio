@@ -4,6 +4,7 @@ import { Faq } from "@/components/common/Faq";
 import { LeadCaptureCard, TrustCard } from "@/components/common/Sidebar";
 import { AppLink } from "@/components/common/AppLink";
 import { QuickEnquiry } from "@/components/common/QuickEnquiry";
+import { WriteReview } from "@/components/common/WriteReview";
 import { SectionBanner } from "@/components/common/SectionBanner";
 import { NextStep } from "@/components/common/NextStep";
 import { BlogStrip } from "@/components/common/UniversityBlogs";
@@ -435,6 +436,9 @@ export function CoursePageTemplate({
 
           <Section title="Reviews">
             <ReviewList reviews={reviews} />
+            <div className="mt-6">
+              <WriteReview />
+            </div>
           </Section>
 
           {blogsForCourse(family.shortName).length > 0 && (
