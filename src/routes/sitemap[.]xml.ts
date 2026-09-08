@@ -204,22 +204,26 @@ export function sitemapEntries(): SitemapEntry[] {
 
   // De-duplicate on path, first entry wins.
   const seen = new Set<string>();
-  return entries.filter((e) => {
+  const unique = entries.filter((e) => {
     const key = e.path.replace(/\/+$/, "") || "/";
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
   });
+  // Highest-value URLs first: crawlers work the file top-down.
+  return unique.sort((a, b) => Number(b.priority ?? 0) - Number(a.priority ?? 0));
 }
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        const lastmod = new Date().toISOString().slice(0, 10);
         const urls = sitemapEntries().map((e) =>
           [
             "  <url>",
             `    <loc>${xmlEscape(`${SITE_URL}${e.path === "/" ? "/" : e.path}`)}</loc>`,
+            `    <lastmod>${lastmod}</lastmod>`,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             "  </url>",
@@ -227,6 +231,7 @@ export const Route = createFileRoute("/sitemap.xml")({
             .filter(Boolean)
             .join("\n"),
         );
+
 
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
