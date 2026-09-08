@@ -4,6 +4,7 @@ import { approvalIcon, campusImage, universityLogo } from "@/lib/assets";
 import type { University } from "@/data";
 import { formatFee, programmesOf } from "@/lib/universityData";
 import { usePopupSurface } from "@/components/common/PopupManager";
+import { ActionRow } from "@/components/common/ActionRow";
 
 /**
  * Decision-first university header: identity, approvals, rating, key facts and
@@ -26,13 +27,24 @@ export function UniversityHero({ university }: { university: University }) {
     return totals.length ? formatFee(Math.min(...totals)) : null;
   })();
 
+  const eligibility =
+    hasUG && hasPG
+      ? "10+2 (UG) / Graduation (PG)"
+      : hasPG
+        ? "Graduation in any stream"
+        : hasUG
+          ? "10+2 from a recognised board"
+          : null;
+
+  // Fee and eligibility lead the grid so both stay above the fold on a phone.
   const facts: Array<{ label: string; value: string }> = [];
+  if (lowestFee) facts.push({ label: "Fee from", value: lowestFee });
+  if (eligibility) facts.push({ label: "Eligibility", value: eligibility });
+  if (programmes.length) facts.push({ label: "Programmes", value: String(programmes.length) });
+  if (u.modes.length) facts.push({ label: "Mode", value: u.modes.join(" / ") });
   if (u.city || u.state)
     facts.push({ label: "Location", value: [u.city, u.state].filter(Boolean).join(", ") });
   if (u.establishedYear) facts.push({ label: "Established", value: String(u.establishedYear) });
-  if (programmes.length) facts.push({ label: "Programmes", value: String(programmes.length) });
-  if (lowestFee) facts.push({ label: "Fee from", value: lowestFee });
-  if (u.modes.length) facts.push({ label: "Mode", value: u.modes.join(" / ") });
   if (u.type) facts.push({ label: "Type", value: u.type });
 
   return (
@@ -133,26 +145,31 @@ export function UniversityHero({ university }: { university: University }) {
           </dl>
         )}
 
-        <div className="mt-5 flex flex-wrap gap-2.5">
-          <a
-            href="#courses-fees"
-            className="inline-flex min-h-11 items-center rounded-xl bg-brand px-4 text-sm font-bold text-brand-foreground hover:opacity-90"
-          >
-            View courses
-          </a>
-          <AppLink
-            to="/compare/universities"
-            className="inline-flex min-h-11 items-center rounded-xl border border-border bg-card px-4 text-sm font-bold text-brand"
-          >
-            Compare
-          </AppLink>
-          <button
-            type="button"
-            onClick={openCounselling}
-            className="inline-flex min-h-11 items-center rounded-xl border border-border bg-card px-4 text-sm font-bold text-brand"
-          >
-            Get guidance
-          </button>
+        <div className="mt-5 space-y-2.5">
+          <ActionRow
+            waMessage={`Hi, please share ${u.shortName} fees, eligibility and EMI options.`}
+          />
+          <div className="flex flex-wrap gap-2.5">
+            <a
+              href="#courses-fees"
+              className="inline-flex min-h-10 items-center rounded-xl border border-border bg-card px-3 text-[0.82rem] font-bold text-brand"
+            >
+              View courses
+            </a>
+            <AppLink
+              to="/compare/universities"
+              className="inline-flex min-h-10 items-center rounded-xl border border-border bg-card px-3 text-[0.82rem] font-bold text-brand"
+            >
+              Compare
+            </AppLink>
+            <button
+              type="button"
+              onClick={openCounselling}
+              className="inline-flex min-h-10 items-center rounded-xl border border-border bg-card px-3 text-[0.82rem] font-bold text-brand"
+            >
+              Get guidance
+            </button>
+          </div>
         </div>
       </div>
     </section>

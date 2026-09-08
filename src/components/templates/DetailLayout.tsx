@@ -84,21 +84,45 @@ export function ContentSection({
   title,
   children,
   tone,
+  collapsible = false,
 }: {
   title: string;
   children: ReactNode;
   tone?: "admission" | "exam";
+  /**
+   * Renders the body inside a <details> block: the content stays in the HTML
+   * for crawlers, but long middle sections start folded for readers.
+   */
+  collapsible?: boolean;
 }) {
   const toned = tone
     ? tone === "admission"
       ? "rounded-2xl bg-tint-admission p-4 sm:p-6"
       : "rounded-2xl bg-tint-exam p-4 sm:p-6"
     : "";
+  const id = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
+  if (collapsible) {
+    return (
+      <section id={id} className={`scroll-mt-36 ${toned || "content-block"}`}>
+        <details className="group">
+          <summary className="flex cursor-pointer list-none items-center justify-between gap-3 border-b border-border pb-3">
+            <h2 className="text-2xl font-bold">
+              <AccentHeadline text={title} words={1} />
+            </h2>
+            <span className="shrink-0 rounded-full border border-border px-3 py-1 text-xs font-bold text-brand">
+              <span className="group-open:hidden">Show</span>
+              <span className="hidden group-open:inline">Hide</span>
+            </span>
+          </summary>
+          <div className="content-prose mt-5 space-y-5">{children}</div>
+        </details>
+      </section>
+    );
+  }
+
   return (
-    <section
-      id={title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}
-      className={`scroll-mt-36 ${toned || "content-block"}`}
-    >
+    <section id={id} className={`scroll-mt-36 ${toned || "content-block"}`}>
       <h2 className="border-b border-border pb-3 text-2xl font-bold">
         <AccentHeadline text={title} words={1} />
       </h2>
