@@ -1,20 +1,19 @@
 import { ActionRow } from "@/components/common/ActionRow";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
-import { SectionNav } from "@/components/common/SectionNav";
+import { SectionTabs, SectionPanel } from "@/components/common/SectionTabs";
 import { Faq } from "@/components/common/Faq";
 import { LeadCaptureCard, TrustCard } from "@/components/common/Sidebar";
 import { AppLink } from "@/components/common/AppLink";
 import { QuickEnquiry } from "@/components/common/QuickEnquiry";
 import { WriteReview } from "@/components/common/WriteReview";
 import { SectionBanner } from "@/components/common/SectionBanner";
-import { NextStep } from "@/components/common/NextStep";
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForCourse } from "@/data/university-blogs";
+import { COURSE_GROUPS } from "@/lib/pageGroups";
 
 import { CompareUniversities } from "@/components/course/CompareUniversities";
 import {
   AudienceCards,
-  CardGrid,
   ChipList,
   FeeSummaryTable,
   FinalCta,
@@ -25,7 +24,6 @@ import {
   PlatformTrust,
   Prose,
   QuickFactGrid,
-  ResponsiveTable,
   ReviewList,
   Section,
   SideBySideTable,
@@ -46,6 +44,9 @@ import type { CourseFamily } from "@/lib/courseFamily";
  * The reusable course page. Everything is driven by `family` (dataset) and
  * `content` (editorial), so MBA, MCA, BBA, BCA, M.Com and MA all render from
  * this one template.
+ *
+ * Sections are grouped into eight tabs (see `COURSE_GROUPS`); every group stays
+ * in the served HTML and inactive ones are hidden with CSS only.
  */
 export function CoursePageTemplate({
   family,
@@ -63,32 +64,6 @@ export function CoursePageTemplate({
   relatedArticles: { label: string; href: string; note?: string | undefined }[];
 }) {
   const h1 = content.seo.h1.replace("{year}", String(year)).replace("{course}", family.name);
-
-  const sections = [
-    "Overview",
-    "Who should consider it",
-    "Universities",
-    "Specialisations",
-    ...(content.syllabus.length ? ["Curriculum"] : []),
-    "Fees",
-    "Eligibility",
-    "Admission",
-    "Documents",
-    "Compare universities",
-    "How it works",
-    "Learning & exams",
-    "Career",
-    "Salary",
-    "Placement support",
-    "Is it worth it",
-    "Advantages & limitations",
-    `${family.name} vs regular`,
-    `${family.name} vs distance`,
-    "Validity",
-    "How to choose",
-    "Reviews",
-    "FAQs",
-  ];
 
   return (
     <>
@@ -133,7 +108,6 @@ export function CoursePageTemplate({
           </div>
 
           <div className="mt-4 flex flex-wrap items-start gap-2.5">
-
             <a href="#universities" className="btn btn-primary">
               Explore universities
             </a>
@@ -168,321 +142,317 @@ export function CoursePageTemplate({
         </div>
       </div>
 
-      <SectionNav sections={sections} />
-
-      <div className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14">
-        <main className="min-w-0 space-y-10">
-          <Section title={`${family.name} at a glance`} tone="cream">
-            <GlanceTable
-              rows={[
-                { parameter: "Course", detail: family.name },
-                {
-                  parameter: "Level",
-                  detail: family.level === "PG" ? "Postgraduate" : "Undergraduate",
-                },
-                { parameter: "Duration", detail: family.durationLabel },
-                {
-                  parameter: "Semesters",
-                  detail: family.semesters ? String(family.semesters) : "University dependent",
-                },
-                { parameter: "Mode", detail: "Online" },
-                {
-                  parameter: "Eligibility",
-                  detail:
-                    family.level === "PG"
-                      ? "Bachelor's degree from a recognised institution"
-                      : "10+2 or equivalent",
-                },
-                {
-                  parameter: "Entrance exam",
-                  detail: family.entranceUniversities.length
-                    ? "University dependent"
-                    : "Not published by the universities tracked here",
-                },
-                { parameter: "Fee range", detail: family.feeRangeLabel },
-                { parameter: "Learning", detail: "Live classes + recorded lectures" },
-                { parameter: "Assessment", detail: "University dependent" },
-                {
-                  parameter: "Specialisations",
-                  detail: family.specialisations.length
-                    ? `${family.specialisations.length} across ${family.offers.length} universities`
-                    : "University dependent",
-                },
-                {
-                  parameter: "Suitable for",
-                  detail:
-                    family.level === "PG"
-                      ? "Graduates and working professionals"
-                      : "Students and early-career learners",
-                },
-              ]}
-            />
-          </Section>
-
-          <Section title="Overview">
-            <Prose paragraphs={content.overview} />
-          </Section>
-
-          <Section title="Who should consider it">
-            <AudienceCards items={content.audience} />
-          </Section>
-
-          <Section
-            title="Universities"
-            intro={`${family.offers.length} universities in our dataset publish ${family.name}. Figures below are what each university states officially — nothing is estimated.`}
-            tone="tint"
-          >
-            <UniversityTileGrid offers={family.offers} />
-          </Section>
-
-          <Section
-            title="Specialisations"
-            intro={
-              family.specialisations.length
-                ? `Specialisations published by the universities offering ${family.name}. Each links to the universities that run it.`
-                : undefined
-            }
-          >
-            {family.specialisations.length ? (
-              <SpecialisationShowcase items={family.specialisations} courseSlug={family.slug} />
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                No specialisation list has been published by the universities tracked for this
-                course yet.
-              </p>
-            )}
-          </Section>
-
-          {content.syllabus.length > 0 && (
-            <Section title="Curriculum" tone="mint">
-              <SyllabusGrid semesters={content.syllabus} />
-              <Note>{content.syllabusNote}</Note>
-            </Section>
-          )}
-
-          {content.syllabus.length > 0 && (
-            <NextStep
-              question="Want to compare curricula and specialisations?"
-              actionLabel="Compare universities"
-              href="#compare-universities"
-            />
-          )}
-
-          <Section title="Fees" intro={content.feeNotes[0]} tone="cream">
-            <ul className="mb-5 space-y-2">
-              {content.feeNotes.slice(1).map((n) => (
-                <li key={n} className="text-[0.86rem] leading-relaxed text-muted-foreground">
-                  • {n}
-                </li>
-              ))}
-            </ul>
-            <FeeSummaryTable offers={family.offers} />
-          </Section>
-
-          <NextStep
-            question="Want to compare fees across universities side by side?"
-            actionLabel="Compare universities"
-            href="#compare-universities"
-          />
-
-          <PromoBanner
-            variant="offer"
-            title="Save big on your dream university"
-            subtitle="Ask us about live scholarship and early-admission fee waivers before you pay the first instalment."
-            ctaLabel="Claim now"
-          />
-
-          <Section title="Eligibility" intro="Check the basic requirements before you apply.">
-            <InfoBoxGrid items={content.eligibility} />
-            <Note>{content.eligibilityNote}</Note>
-          </Section>
-
-          <NextStep
-            question="Want to see which universities offer this course?"
-            actionLabel="Explore universities"
-            href="#universities"
-          />
-
-          <Section title="Admission" tone="cream">
-            <SectionBanner kind="admission" />
-            <StepFlow steps={content.admissionSteps} />
-          </Section>
-
-          <NextStep
-            question="Ready to shortlist from the universities running this course?"
-            actionLabel="Explore universities"
-            href="#universities"
-          />
-
-          <Section title="Documents">
-            <TickList items={content.documents} />
-            <Note>{content.documentsNote}</Note>
-          </Section>
-
-          <Section
-            title="Compare universities"
-            intro="Pick the universities you are shortlisting and compare them field by field."
-            tone="tint"
-          >
-            <CompareUniversities family={family} />
-          </Section>
-
-          <Section title="How it works">
-            <StepFlow steps={content.howItWorks} />
-          </Section>
-
-          <PromoBanner
-            variant="guidance"
-            title={`Not sure which ${family.shortName} fits you?`}
-            subtitle="Get a free shortlist based on your budget, work schedule and career goal — no cost, no obligation."
-            ctaLabel="Talk to a counsellor"
-          />
-
-          <Section title="Learning & exams">
-            <InfoBoxGrid items={content.learningFormat} />
-            <Note>{content.learningNote}</Note>
-            <div className="mt-6">
-              <h3 className="font-display text-base font-bold">Examination pattern</h3>
-              <div className="mt-3">
-                <SectionBanner kind="examination" />
-                <InfoBoxGrid items={content.examPattern} />
-              </div>
-              <Note>{content.examNote}</Note>
-            </div>
-          </Section>
-
-          <Section title="Career" tone="mint">
-            {content.careers.length ? (
-              <InfoBoxGrid items={content.careers} />
-            ) : (
-              <ChipList
-                items={[...new Set(family.offers.flatMap((o) => o.careerRoles))].slice(0, 12)}
-              />
-            )}
-            <div className="mt-6">
-              <h3 className="font-display text-base font-bold">Industries and career areas</h3>
-              <div className="mt-3">
-                <ChipList
-                  items={
-                    content.industries.length
-                      ? content.industries
-                      : [...new Set(family.offers.flatMap((o) => o.industries))]
-                  }
+      <SectionTabs groups={COURSE_GROUPS}>
+        <div className="container-page grid gap-10 py-10 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14">
+          <main className="min-w-0">
+            {/* 1 — Overview */}
+            <SectionPanel id="overview">
+              <Section title={`${family.name} at a glance`} tone="cream">
+                <GlanceTable
+                  rows={[
+                    { parameter: "Course", detail: family.name },
+                    {
+                      parameter: "Level",
+                      detail: family.level === "PG" ? "Postgraduate" : "Undergraduate",
+                    },
+                    { parameter: "Duration", detail: family.durationLabel },
+                    {
+                      parameter: "Semesters",
+                      detail: family.semesters ? String(family.semesters) : "University dependent",
+                    },
+                    { parameter: "Mode", detail: "Online" },
+                    {
+                      parameter: "Eligibility",
+                      detail:
+                        family.level === "PG"
+                          ? "Bachelor's degree from a recognised institution"
+                          : "10+2 or equivalent",
+                    },
+                    {
+                      parameter: "Entrance exam",
+                      detail: family.entranceUniversities.length
+                        ? "University dependent"
+                        : "Not published by the universities tracked here",
+                    },
+                    { parameter: "Fee range", detail: family.feeRangeLabel },
+                    { parameter: "Learning", detail: "Live classes + recorded lectures" },
+                    { parameter: "Assessment", detail: "University dependent" },
+                    {
+                      parameter: "Specialisations",
+                      detail: family.specialisations.length
+                        ? `${family.specialisations.length} across ${family.offers.length} universities`
+                        : "University dependent",
+                    },
+                    {
+                      parameter: "Suitable for",
+                      detail:
+                        family.level === "PG"
+                          ? "Graduates and working professionals"
+                          : "Students and early-career learners",
+                    },
+                  ]}
                 />
-              </div>
-            </div>
-          </Section>
+              </Section>
 
-          <NextStep
-            question="Want to choose a university based on your career goal?"
-            actionLabel="Compare universities"
-            href="#compare-universities"
-          />
+              <Section title="Overview">
+                <Prose paragraphs={content.overview} />
+              </Section>
 
-          <Section title="Salary">
-            <TickList items={content.salaryFactors} />
-            <Note>{content.salaryNote}</Note>
-          </Section>
+              <Section title="Who should consider it">
+                <AudienceCards items={content.audience} />
+              </Section>
 
-          <Section title="Placement support">
-            <SectionBanner kind="placement" />
-            <InfoBoxGrid items={content.placementServices} />
-            <Note>{content.placementNote}</Note>
-          </Section>
+              <Section title="Who it may not suit">
+                <TickList items={content.worthItNo} />
+              </Section>
+            </SectionPanel>
 
-          <Section title="Is it worth it" tone="cream">
-            <TwoColumnLists
-              left={{ title: "It can be worth it when", items: content.worthItYes }}
-              right={{ title: "It may not suit you if", items: content.worthItNo }}
-            />
-          </Section>
+            {/* 2 — Universities & Fees */}
+            <SectionPanel id="universities-fees">
+              <Section
+                title="Universities"
+                intro={`${family.offers.length} universities in our dataset publish ${family.name}. Figures below are what each university states officially — nothing is estimated.`}
+                tone="tint"
+              >
+                <UniversityTileGrid offers={family.offers} />
+              </Section>
 
-          <Section title="Advantages & limitations">
-            <TwoColumnLists
-              left={{ title: "Advantages", items: content.advantages }}
-              right={{ title: "Limitations", items: content.limitations }}
-            />
-          </Section>
+              <Section title="Fees" intro={content.feeNotes[0]} tone="cream">
+                <ul className="mb-5 space-y-2">
+                  {content.feeNotes.slice(1).map((n) => (
+                    <li key={n} className="text-[0.86rem] leading-relaxed text-muted-foreground">
+                      • {n}
+                    </li>
+                  ))}
+                </ul>
+                <FeeSummaryTable offers={family.offers} />
+              </Section>
 
-          <Section title={`${family.name} vs regular`}>
-            <SideBySideTable
-              caption={`${family.name} compared with a regular campus programme`}
-              head={["Factor", family.name, `Regular ${family.shortName}`]}
-              rows={content.vsRegular.map((r) => [r.factor, r.online, r.regular])}
-            />
-          </Section>
-
-          <Section title={`${family.name} vs distance`}>
-            <SideBySideTable
-              caption={`${family.name} compared with the distance mode`}
-              head={["Factor", family.name, `Distance ${family.shortName}`]}
-              rows={content.vsDistance.map((r) => [r.factor, r.online, r.distance])}
-            />
-          </Section>
-
-          <Section title="Validity" tone="cream">
-            <Prose paragraphs={content.recognition} />
-            <div className="mt-5">
-              <h3 className="font-display text-base font-bold">How to verify before you pay</h3>
-              <div className="mt-3">
-                <TickList items={content.verifyChecklist} />
-              </div>
-            </div>
-          </Section>
-
-          <Section title="How to choose" tone="tint">
-            <InfoBoxGrid items={content.selectionGuide} />
-          </Section>
-
-          <Section title={`Why compare ${family.name} here`}>
-            <PlatformTrust family={family} />
-          </Section>
-
-          <Section title="How to compare universities for this course">
-            <PubPillarGuidance familySlug={family.slug} />
-          </Section>
-
-          <Section title="Reviews">
-            <ReviewList reviews={reviews} />
-            <div className="mt-6">
-              <WriteReview />
-            </div>
-          </Section>
-
-          {blogsForCourse(family.shortName).length > 0 && (
-            <Section title={`${family.name} guides & articles`}>
-              <BlogStrip
-                items={blogsForCourse(family.shortName, 6)}
-                title={`${family.shortName} articles`}
-                intro={`University-published research and guides relevant to ${family.name}.`}
+              <PromoBanner
+                variant="offer"
+                title="Save big on your dream university"
+                subtitle="Ask us about live scholarship and early-admission fee waivers before you pay the first instalment."
+                ctaLabel="Claim now"
               />
-            </Section>
-          )}
 
-          <section id="faqs" className="scroll-mt-36">
-            <Faq items={content.faqs} title={`${family.name} FAQs`} />
-          </section>
+              <Section
+                title="Compare universities"
+                intro="Pick the universities you are shortlisting and compare them field by field."
+                tone="tint"
+              >
+                <CompareUniversities family={family} />
+              </Section>
+            </SectionPanel>
 
-          <Section title="Related courses">
-            <LinkTiles links={relatedCourses} />
-            {relatedArticles.length > 0 && (
-              <div className="mt-6">
-                <h3 className="font-display text-base font-bold">Related reading</h3>
-                <div className="mt-3">
-                  <LinkTiles links={relatedArticles} />
+            {/* 3 — Eligibility & Admission */}
+            <SectionPanel id="eligibility-admission">
+              <Section title="Eligibility" intro="Check the basic requirements before you apply.">
+                <InfoBoxGrid items={content.eligibility} />
+                <Note>{content.eligibilityNote}</Note>
+              </Section>
+
+              <Section title="Documents">
+                <TickList items={content.documents} />
+                <Note>{content.documentsNote}</Note>
+              </Section>
+
+              <Section title="Admission" tone="cream">
+                <SectionBanner kind="admission" />
+                <StepFlow steps={content.admissionSteps} />
+              </Section>
+
+              <Section title="How it works">
+                <StepFlow steps={content.howItWorks} />
+              </Section>
+            </SectionPanel>
+
+            {/* 4 — Syllabus & Specialisations */}
+            <SectionPanel id="syllabus-specialisations">
+              <Section
+                title="Specialisations"
+                intro={
+                  family.specialisations.length
+                    ? `Specialisations published by the universities offering ${family.name}. Each links to the universities that run it.`
+                    : undefined
+                }
+              >
+                {family.specialisations.length ? (
+                  <SpecialisationShowcase items={family.specialisations} courseSlug={family.slug} />
+                ) : (
+                  <p className="text-sm text-muted-foreground">
+                    No specialisation list has been published by the universities tracked for this
+                    course yet.
+                  </p>
+                )}
+              </Section>
+
+              {content.syllabus.length > 0 && (
+                <Section title="Curriculum" tone="mint">
+                  <SyllabusGrid semesters={content.syllabus} />
+                  <Note>{content.syllabusNote}</Note>
+                </Section>
+              )}
+
+              <Section title="Learning & exams">
+                <InfoBoxGrid items={content.learningFormat} />
+                <Note>{content.learningNote}</Note>
+                <div className="mt-6">
+                  <h3 className="font-display text-base font-bold">Examination pattern</h3>
+                  <div className="mt-3">
+                    <SectionBanner kind="examination" />
+                    <InfoBoxGrid items={content.examPattern} />
+                  </div>
+                  <Note>{content.examNote}</Note>
                 </div>
-              </div>
-            )}
-          </Section>
+              </Section>
+            </SectionPanel>
 
-          <FinalCta family={family} />
-        </main>
+            {/* 5 — Career & Salary */}
+            <SectionPanel id="career-salary">
+              <Section title="Career" tone="mint">
+                {content.careers.length ? (
+                  <InfoBoxGrid items={content.careers} />
+                ) : (
+                  <ChipList
+                    items={[...new Set(family.offers.flatMap((o) => o.careerRoles))].slice(0, 12)}
+                  />
+                )}
+                <div className="mt-6">
+                  <h3 className="font-display text-base font-bold">Industries and career areas</h3>
+                  <div className="mt-3">
+                    <ChipList
+                      items={
+                        content.industries.length
+                          ? content.industries
+                          : [...new Set(family.offers.flatMap((o) => o.industries))]
+                      }
+                    />
+                  </div>
+                </div>
+              </Section>
 
-        <aside className="min-w-0 space-y-6 lg:sticky lg:top-28 lg:self-start">
-          <LeadCaptureCard title={`Get free ${family.name} guidance`} />
-          <TrustCard />
-        </aside>
-      </div>
+              <Section title="Salary">
+                <TickList items={content.salaryFactors} />
+                <Note>{content.salaryNote}</Note>
+              </Section>
+
+              <Section title="Placement support">
+                <SectionBanner kind="placement" />
+                <InfoBoxGrid items={content.placementServices} />
+                <Note>{content.placementNote}</Note>
+              </Section>
+            </SectionPanel>
+
+            {/* 6 — Validity & Worth It */}
+            <SectionPanel id="validity-worth-it">
+              <Section title="Validity" tone="cream">
+                <Prose paragraphs={content.recognition} />
+                <div className="mt-5">
+                  <h3 className="font-display text-base font-bold">How to verify before you pay</h3>
+                  <div className="mt-3">
+                    <TickList items={content.verifyChecklist} />
+                  </div>
+                </div>
+              </Section>
+
+              <Section title="Advantages & limitations">
+                <TwoColumnLists
+                  left={{ title: "Advantages", items: content.advantages }}
+                  right={{ title: "Limitations", items: content.limitations }}
+                />
+              </Section>
+
+              <Section title="Is it worth it" tone="cream">
+                <TwoColumnLists
+                  left={{ title: "It can be worth it when", items: content.worthItYes }}
+                  right={{ title: "It may not suit you if", items: content.worthItNo }}
+                />
+              </Section>
+
+              <Section title={`${family.name} vs regular`}>
+                <SideBySideTable
+                  caption={`${family.name} compared with a regular campus programme`}
+                  head={["Factor", family.name, `Regular ${family.shortName}`]}
+                  rows={content.vsRegular.map((r) => [r.factor, r.online, r.regular])}
+                />
+              </Section>
+
+              <Section title={`${family.name} vs distance`}>
+                <SideBySideTable
+                  caption={`${family.name} compared with the distance mode`}
+                  head={["Factor", family.name, `Distance ${family.shortName}`]}
+                  rows={content.vsDistance.map((r) => [r.factor, r.online, r.distance])}
+                />
+              </Section>
+
+              <Section title="How to choose" tone="tint">
+                <InfoBoxGrid items={content.selectionGuide} />
+              </Section>
+
+              <Section title={`Why compare ${family.name} here`}>
+                <PlatformTrust family={family} />
+              </Section>
+
+              <Section title="How to compare universities for this course">
+                <PubPillarGuidance familySlug={family.slug} />
+              </Section>
+            </SectionPanel>
+
+            {/* 7 — Reviews */}
+            <SectionPanel id="reviews">
+              <Section title="Reviews">
+                <ReviewList reviews={reviews} />
+                <div className="mt-6">
+                  <WriteReview />
+                </div>
+              </Section>
+            </SectionPanel>
+
+            {/* 8 — FAQs */}
+            <SectionPanel id="faqs">
+              <section id="faqs-block" className="scroll-mt-36">
+                <Faq items={content.faqs} title={`${family.name} FAQs`} />
+              </section>
+
+              {blogsForCourse(family.shortName).length > 0 && (
+                <Section title={`${family.name} guides & articles`}>
+                  <BlogStrip
+                    items={blogsForCourse(family.shortName, 6)}
+                    title={`${family.shortName} articles`}
+                    intro={`University-published research and guides relevant to ${family.name}.`}
+                  />
+                </Section>
+              )}
+
+              <Section title="Related courses">
+                <LinkTiles links={relatedCourses} />
+                {relatedArticles.length > 0 && (
+                  <div className="mt-6">
+                    <h3 className="font-display text-base font-bold">Related reading</h3>
+                    <div className="mt-3">
+                      <LinkTiles links={relatedArticles} />
+                    </div>
+                  </div>
+                )}
+              </Section>
+
+              <PromoBanner
+                variant="guidance"
+                title={`Not sure which ${family.shortName} fits you?`}
+                subtitle="Get a free shortlist based on your budget, work schedule and career goal — no cost, no obligation."
+                ctaLabel="Talk to a counsellor"
+              />
+
+              <FinalCta family={family} />
+            </SectionPanel>
+          </main>
+
+          <aside className="min-w-0 space-y-6 lg:sticky lg:top-28 lg:self-start">
+            <LeadCaptureCard title={`Get free ${family.name} guidance`} />
+            <TrustCard />
+          </aside>
+        </div>
+      </SectionTabs>
     </>
   );
 }
