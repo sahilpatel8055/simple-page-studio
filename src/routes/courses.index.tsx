@@ -62,7 +62,47 @@ function Page() {
       title="Online Degree Courses & Programmes"
       description={description}
     >
+      <section aria-labelledby="most-searched" className="mb-10">
+        <h2 id="most-searched" className="text-lg font-semibold tracking-tight text-foreground">
+          Most searched online programmes
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          Start here — full fee tables, eligibility, syllabus and university lists for the
+          programmes most learners compare.
+        </p>
+        <ul className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {[
+            "online-mba",
+            "online-mca",
+            "online-bba",
+            "online-bca",
+            "online-bcom",
+            "online-ba",
+            "online-mcom",
+            "online-ma",
+            "online-msc",
+          ]
+            .map((slug) => courseFamilies.find((c) => c.slug === slug))
+            .filter((c): c is NonNullable<typeof c> => Boolean(c))
+            .map((c) => (
+              <li key={c.slug}>
+                <AppLink
+                  to={`/courses/${c.slug}`}
+                  className="block rounded-xl border-2 border-brand/25 bg-cream p-4 transition hover:border-brand/60"
+                >
+                  <span className="block text-sm font-bold text-foreground">
+                    {c.displayName || c.name}
+                  </span>
+                  <span className="mt-1 block text-xs text-muted-foreground">
+                    Fees, eligibility, syllabus &amp; {c.universities} universities
+                  </span>
+                </AppLink>
+              </li>
+            ))}
+        </ul>
+      </section>
       <CourseExplorer items={courseFamilies} />
+
       <section className="mt-12" aria-labelledby="all-programmes">
         <h2 id="all-programmes" className="text-lg font-semibold tracking-tight text-foreground">
           All online programmes A–Z
