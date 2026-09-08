@@ -362,7 +362,7 @@ function Page() {
           </div>
         </ContentSection>
 
-        <ContentSection title="Examination pattern" tone="exam">
+        <ContentSection title="Examination pattern" tone="exam" collapsible>
           <SectionBanner kind="examination" />
           <ExaminationPatternSection universitySlug={slug} universityShort={u.shortName} />
         </ContentSection>
@@ -397,7 +397,7 @@ function Page() {
           </div>
         </ContentSection>
 
-        <ContentSection title="Learning experience">
+        <ContentSection title="Learning experience" collapsible>
           <UniversityLearningExperience slug={slug} shortName={u.shortName} />
         </ContentSection>
 
@@ -405,7 +405,7 @@ function Page() {
           <UniversityAdvantages slug={slug} shortName={u.shortName} />
         </ContentSection>
 
-        <ContentSection title="Things to consider">
+        <ContentSection title="Things to consider" collapsible>
           <UniversityConsiderations slug={slug} shortName={u.shortName} />
         </ContentSection>
 
