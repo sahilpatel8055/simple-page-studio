@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
+import { Download, FileText } from "lucide-react";
 import { getLeadContext, whatsappLink } from "@/lib/leadContext";
 import { trackContactClick } from "@/lib/leads";
 import { universities } from "@/lib/content";
+import { usePopupSurface } from "@/components/common/PopupManager";
 
 /** "Lovely Professional University Online" -> "LPU Online" */
 function shortUniLabel(ctx: { universitySlug?: string; universityName?: string }) {
@@ -14,82 +16,54 @@ function shortUniLabel(ctx: { universitySlug?: string; universityName?: string }
 }
 
 /**
- * Sticky mobile bar on fee-heavy pages: one tap to get the exact fee
- * breakdown on WhatsApp, with the university / course already in the message.
+ * Sticky mobile action row on fee-heavy pages — Apply, fees on WhatsApp and
+ * brochure. It stays visible for the whole visit so the primary actions are
+ * always one tap away, mirroring the above-fold action row.
  */
 export function WhatsAppFeeBar() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
-  const [show, setShow] = useState(false);
-  const [done, setDone] = useState(false);
-  const [label, setLabel] = useState("Get fees on WhatsApp");
+  const { openCounselling } = usePopupSurface();
+  const [waLabel, setWaLabel] = useState("Fees on WhatsApp");
 
   const relevant = /^\/(universities|courses|compare|online-courses|university)\//.test(pathname);
 
-  // reset the auto-hide state on every page change
   useEffect(() => {
-    setDone(false);
-    setShow(false);
-  }, [pathname]);
+    if (typeof window === "undefined" || !relevant) return;
+    const short = shortUniLabel(getLeadContext());
+    setWaLabel(short ? `${short} fees` : "Fees on WhatsApp");
+  }, [pathname, relevant]);
 
-  useEffect(() => {
-    if (typeof window === "undefined" || !relevant || done) {
-      setShow(false);
-      return;
-    }
-    const ctx = getLeadContext();
-    const short = shortUniLabel(ctx);
-    setLabel(short ? `Get ${short} fees on WhatsApp` : "Get fees on WhatsApp");
-
-    // Strategy 1: appears after the first scroll, hides again once the visitor
-    // has scrolled roughly two more sections past that point.
-    // Strategy 2: hides automatically 20s after it first became visible.
-    let appearedAt = 0;
-    let hideTimer = 0;
-    const HIDE_AFTER_PX = Math.round(window.innerHeight * 2);
-
-    const finish = () => {
-      window.clearTimeout(hideTimer);
-      setShow(false);
-      setDone(true);
-    };
-
-    const onScroll = () => {
-      const y = window.scrollY;
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      const depth = max <= 0 ? 1 : y / max;
-      if (!appearedAt) {
-        if (depth >= 0.2) {
-          appearedAt = y;
-          setShow(true);
-          hideTimer = window.setTimeout(finish, 20000);
-        }
-        return;
-      }
-      if (y - appearedAt > HIDE_AFTER_PX) finish();
-    };
-
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => {
-      window.clearTimeout(hideTimer);
-      window.removeEventListener("scroll", onScroll);
-    };
-  }, [pathname, relevant, done]);
-
-  if (!relevant || !show) return null;
+  if (!relevant) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-[70] border-t border-border bg-card/95 p-2.5 shadow-[0_-8px_24px_-16px_rgba(0,0,0,0.5)] backdrop-blur md:hidden">
+    <div className="fixed inset-x-0 bottom-0 z-[70] grid grid-cols-[auto_minmax(0,1fr)_auto] gap-2 border-t border-border bg-card/95 p-2 shadow-[0_-8px_24px_-16px_rgba(0,0,0,0.5)] backdrop-blur md:hidden">
+      <button
+        type="button"
+        onClick={openCounselling}
+        className="inline-flex h-11 items-center gap-1.5 rounded-xl bg-brand px-3 text-[0.82rem] font-bold text-brand-foreground"
+      >
+        <FileText className="h-4 w-4" aria-hidden="true" />
+        Apply
+      </button>
       <a
         href={whatsappLink("Hi, please share the full fee structure and EMI options.")}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => trackContactClick("WhatsApp", "Sticky fee bar")}
-        className="flex h-12 items-center justify-center gap-2 rounded-xl bg-[#128C7E] text-[0.92rem] font-bold text-white"
+        onClick={() => trackContactClick("WhatsApp", "Sticky action bar")}
+        className="inline-flex h-11 min-w-0 items-center justify-center gap-1.5 rounded-xl bg-[#128C7E] px-2 text-[0.82rem] font-bold text-white"
       >
-        <img src="/whatsapp-icon.png" alt="" className="h-5 w-5 object-contain" />
-        <span className="truncate">{label}</span>
+        <img src="/whatsapp-icon.png" alt="" aria-hidden="true" className="h-4 w-4 shrink-0 object-contain" />
+        <span className="truncate">{waLabel}</span>
       </a>
+      <button
+        type="button"
+        onClick={openCounselling}
+        aria-label="Download brochure"
+        className="inline-flex h-11 items-center gap-1.5 rounded-xl border border-border bg-card px-3 text-[0.82rem] font-bold text-brand"
+      >
+        <Download className="h-4 w-4" aria-hidden="true" />
+        Brochure
+      </button>
     </div>
   );
 }
