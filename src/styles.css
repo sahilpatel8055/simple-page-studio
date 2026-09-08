@@ -656,3 +656,10 @@
   line-height: 1.6;
   color: var(--color-subtle);
 }
+
+/* Tabbed section groups: printing always shows the whole page. */
+@media print {
+  [data-panel][data-active="false"] {
+    display: block !important;
+  }
+}
