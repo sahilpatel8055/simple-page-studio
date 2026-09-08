@@ -439,7 +439,7 @@ function Page() {
           </div>
         </ContentSection>
 
-        <ContentSection title="Examination pattern">
+        <ContentSection title="Examination pattern" collapsible>
           <div className="rounded-2xl border-2 border-brand p-4 sm:p-5">
             <SectionBanner kind="examination" />
             <ExaminationPatternSection
@@ -503,7 +503,7 @@ function Page() {
           />
         </ContentSection>
 
-        <ContentSection title="Learning experience">
+        <ContentSection title="Learning experience" collapsible>
           <LearningSupport universityShort={u.shortName} />
         </ContentSection>
 
