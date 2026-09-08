@@ -19,6 +19,24 @@ interface SitemapEntry {
   priority?: string;
 }
 
+/**
+ * The head programmes carry the commercial demand. They get top priority and
+ * sort first so crawlers reach them before the long tail of 700+ URLs — the
+ * cause of "Discovered - currently not indexed" on /courses/online-bba.
+ */
+const HEAD_PROGRAMMES = [
+  "online-mba",
+  "online-mca",
+  "online-bba",
+  "online-bca",
+  "online-bcom",
+  "online-ba",
+  "online-mcom",
+  "online-ma",
+  "online-msc",
+];
+
+
 const xmlEscape = (value: string) =>
   value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
