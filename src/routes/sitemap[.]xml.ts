@@ -19,6 +19,24 @@ interface SitemapEntry {
   priority?: string;
 }
 
+/**
+ * The head programmes carry the commercial demand. They get top priority and
+ * sort first so crawlers reach them before the long tail of 700+ URLs — the
+ * cause of "Discovered - currently not indexed" on /courses/online-bba.
+ */
+const HEAD_PROGRAMMES = [
+  "online-mba",
+  "online-mca",
+  "online-bba",
+  "online-bca",
+  "online-bcom",
+  "online-ba",
+  "online-mcom",
+  "online-ma",
+  "online-msc",
+];
+
+
 const xmlEscape = (value: string) =>
   value.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
@@ -96,8 +114,9 @@ export function sitemapEntries(): SitemapEntry[] {
     ...canonicalProgrammes.map((slug) => ({
       path: `/courses/${slug}`,
       changefreq: "weekly" as const,
-      priority: "0.9",
+      priority: HEAD_PROGRAMMES.includes(slug) ? "1.0" : "0.9",
     })),
+
     // Section sub-pages only exist for course families with editorial content.
     ...courseFamilyList()
       .filter((f) => Boolean(courseContentBySlug(f.slug)))
@@ -185,22 +204,26 @@ export function sitemapEntries(): SitemapEntry[] {
 
   // De-duplicate on path, first entry wins.
   const seen = new Set<string>();
-  return entries.filter((e) => {
+  const unique = entries.filter((e) => {
     const key = e.path.replace(/\/+$/, "") || "/";
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
   });
+  // Highest-value URLs first: crawlers work the file top-down.
+  return unique.sort((a, b) => Number(b.priority ?? 0) - Number(a.priority ?? 0));
 }
 
 export const Route = createFileRoute("/sitemap.xml")({
   server: {
     handlers: {
       GET: async () => {
+        const lastmod = new Date().toISOString().slice(0, 10);
         const urls = sitemapEntries().map((e) =>
           [
             "  <url>",
             `    <loc>${xmlEscape(`${SITE_URL}${e.path === "/" ? "/" : e.path}`)}</loc>`,
+            `    <lastmod>${lastmod}</lastmod>`,
             e.changefreq ? `    <changefreq>${e.changefreq}</changefreq>` : null,
             e.priority ? `    <priority>${e.priority}</priority>` : null,
             "  </url>",
@@ -208,6 +231,7 @@ export const Route = createFileRoute("/sitemap.xml")({
             .filter(Boolean)
             .join("\n"),
         );
+
 
         const xml = [
           `<?xml version="1.0" encoding="UTF-8"?>`,
