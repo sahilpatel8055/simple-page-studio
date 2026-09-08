@@ -1,97 +1,60 @@
-# Grouping the course page into a few readable tabs
+# Tabbed, grouped reading experience for course and university pages
 
-Right now the bar under the header lists about 24 names. That is too many to scan on a phone and it is why the page feels endless. CollegeVidya and CollegeSathi show 6-8 names only; each name opens a group that contains several related blocks stacked one under the other, with a "Next" button at the bottom of the group.
+Today a course page stacks ~24 sections in one endless scroll, with a sticky bar of 24 chips under the header. Competitor pages (CollegeVidya, CollegeSathi) show 6-8 names in that bar; tapping one swaps in a short, focused group of related blocks, with a "Next" button at the bottom.
 
-So the rule is: the bar holds groups, not individual blocks. Inside a group the blocks stay in the order a person naturally asks about them.
+This is a presentation change only. No content is removed, no URL changes, no metadata or sitemap changes.
 
-## How each block is assigned
+## What a visitor will see
 
-A block goes into the group that answers the same question the visitor is asking at that moment. The visitor's questions, in order, are: what is this → who runs it and what does it cost → can I get in and how do I apply → what will I study and how am I tested → what job does it lead to → is it genuine and worth it → what do others say → anything left over.
+- The sticky bar becomes the real navigation: 8 group names instead of 24 block names.
+- One group is shown at a time; **Overview** is open by default.
+- At the bottom of each group: a full-width **"Next: <group name>"** button and a small "Back" link.
+- One "Get fees on WhatsApp / Talk to a counsellor" strip after the second group, and one at the end — not on every group.
+- A **"Read the full page"** toggle opens everything for people who prefer scrolling; it is also the default when printing, and the choice is remembered.
+- On a phone the bar stays swipeable and the active chip scrolls into view, as it does now.
+- A link with a section in the address (for example `...#fees`) opens the group that contains it, already scrolled to the right place.
+- The enquiry form and sidebar stay visible on every group, so lead capture is never behind a scroll.
 
-## The proposed groups
+## The eight groups (course pages)
 
-**1. Overview** — the "what is this" group
-- At a glance table
-- Overview
-- Who should consider it
-- Who it may not suit (the "may not suit you if" half of the current worth-it block moves here so the honest answer is up front)
+Blocks are grouped by the question a visitor is asking at that moment.
 
-**2. Universities & Fees** — the "who runs it, what does it cost" group
-- Universities offering it
-- Fee table
-- Fee notes and what is included
-- Scholarships and fee waivers
-- Compare universities tool
+1. **Overview** — at a glance table, overview, who should consider it, who it may not suit (the "may not suit you if" half of the current worth-it block moves up here so the honest answer is early).
+2. **Universities & Fees** — universities offering it, fee table, fee notes, scholarships and waivers, compare-universities tool.
+3. **Eligibility & Admission** — eligibility, documents, admission steps, how it works / intake cycles.
+4. **Syllabus & Specialisations** — specialisations, curriculum, learning format, exam pattern.
+5. **Career & Salary** — career roles, industries, salary, placement support.
+6. **Validity & Worth It** — recognition and validity, how to verify before you pay, advantages and limitations, is it worth it, vs regular, vs distance, how to choose.
+7. **Reviews** — student reviews, write a review.
+8. **FAQs** — FAQs, related courses and guides.
 
-**3. Eligibility & Admission** — the "can I get in" group
-- Eligibility
-- Documents required
-- Admission steps
-- How it works / intake cycles
+## Where it applies
 
-**4. Syllabus & Specialisations** — the "what will I study" group
-- Specialisations
-- Curriculum / semester subjects
-- Learning format (live and recorded)
-- Exam pattern
+- Course pages: Online MBA, MCA, BBA, BCA, B.Com, M.Com, BA, MA, M.Sc.
+- University pages: Overview / Courses & Fees / Admission / Exams & Learning / Placement / Approvals & Validity / Reviews / FAQs.
+- University-course pages: the course grouping above, minus Universities.
+- Unchanged: section sub-pages (fees-only, admission-only — already short and single-topic), blogs, comparisons, tools, policy pages.
 
-**5. Career & Salary** — the "what do I get out of it" group
-- Career roles
-- Industries and career areas
-- Salary
-- Placement support
+## Search safety rules built into the plan
 
-**6. Validity & Worth It** — the "is it genuine" group
-- Recognition and validity
-- How to verify before you pay
-- Advantages and limitations
-- Is it worth it
-- Online vs regular
-- Online vs distance
-- How to choose
-
-**7. Reviews** — the social proof group
-- Student reviews
-- Write a review
-
-**8. FAQs** — kept as its own name because it is the most-clicked item on competitor pages
-- FAQs
-- Related courses and guides
-
-That is 8 names in the bar instead of 24 — the same count the competitor pages use.
-
-## The in-between reading controls
-
-- At the bottom of every group: a full-width **"Next: <group name>"** button, plus a small "Back" link. This is the main way people move through the page, exactly as on CollegeSathi.
-- After the second group there is one **"Get fees on WhatsApp / Talk to a counsellor"** strip, and one more at the end. Not on every group — too many CTAs kill the click rate.
-- The bar itself stays sticky and swipeable, with the current group highlighted and scrolled into view.
-- A **"Read the full page"** toggle opens every group at once for people who prefer scrolling, and it is the default when printing.
-
-## Same treatment on the other page types
-
-- University pages get: Overview / Courses & Fees / Admission / Exams & Learning / Placement / Approvals & Validity / Reviews / FAQs.
-- University-course pages get the course grouping above, minus Universities (there is only one).
-- Section sub-pages (fees-only, admission-only) stay single-topic and unchanged.
-
-## Search safety
-
-- All groups stay in the served HTML at all times; inactive ones are hidden with CSS only. Nothing is removed from what Google reads.
-- Headings, heading levels and section IDs are unchanged, so existing in-page links, structured data and the sitemap keep working.
-- A link that points at a block inside a collapsed group (for example ...#fees) opens that group automatically.
+- Every group stays in the served HTML at all times. Hidden groups use a CSS rule, never conditional rendering — indexed content is identical to today.
+- Headings, heading levels and section IDs are unchanged, so in-page links, the contents list and structured data keep working.
+- No change to titles, descriptions, canonicals, sitemap or internal link targets.
+- The FAQ markup stays in the page on every group view.
 
 ## Technical section
 
-- Add `src/lib/pageGroups.ts` holding the group definitions as data: `{ id, label, blocks: string[] }`. The template maps its existing block list onto these groups; nothing per-course is hardcoded, so all nine course families and every university page use the same map.
-- New `src/components/common/SectionTabs.tsx` provides context + `<SectionGroup>` wrapper. Panels render as `<section id role="tabpanel" data-active>`; a `[data-active="false"]{display:none}` rule in `src/styles.css` hides them, plus `@media print{[data-active]{display:block}}`.
-- `SectionNav.tsx` gains `mode="tabs"` with `active`/`onSelect`, keeping today's scroll-spy behaviour as the default so other pages are unaffected.
-- Group state syncs to `location.hash` via `history.replaceState` (no route change, no scroll jump); on mount, the hash is matched against both group ids and inner block ids so deep links still land correctly.
-- `SectionFooterNav` (Previous / Next) is rendered from the same context at the bottom of each group.
-- `CoursePageTemplate.tsx`, `universities.$slug.index.tsx`, `universities.$slug.courses.$course.tsx` and `DetailLayout` are wrapped; block content itself is not edited. Interstitials (`NextStep`, `PromoBanner`, `SectionBanner`) are attached to the group they belong to.
-- Chips get `role="tab"`, `aria-selected`, `aria-controls`, arrow-key navigation; panels get `aria-labelledby`.
-- Fire the existing analytics helper on each group open (`section_view` with the group name) so engagement is measurable in Clarity/GA.
+- `src/lib/pageGroups.ts` — group definitions as data: `{ id, label, blocks: string[] }` for the course map and the university map. The templates map their existing block list onto these groups; nothing per-course is hardcoded.
+- `src/components/common/SectionTabs.tsx` — context provider plus `<SectionPanel groupId>` wrapper. Panels render as `<section data-active="true|false" role="tabpanel" aria-labelledby=…>`; `src/styles.css` gets `[data-active="false"]{display:none}` and `@media print{[data-active]{display:block}}`.
+- `src/components/common/SectionNav.tsx` — gains optional `mode="tabs"` with `active` / `onSelect`; today's scroll-spy anchor behaviour stays the default so other pages are unaffected. Chips get `role="tab"`, `aria-selected`, `aria-controls`, and arrow-key navigation.
+- Hash handling: on mount and on `hashchange`, match the hash against group ids *and* inner block ids, open the owning group, then scroll to the block. Chip clicks update the hash with `history.replaceState` — no route change, no scroll jump.
+- `SectionFooterNav` (Previous / Next) rendered from the same context at the bottom of each panel.
+- "Read the full page" state persisted in `localStorage`; when on, all panels get `data-active="true"`.
+- Wrapped templates: `src/components/templates/CoursePageTemplate.tsx`, `src/routes/universities.$slug.index.tsx`, `src/routes/universities.$slug.courses.$course.tsx`, and `DetailLayout` where it owns the section list. Block content is not edited. Interstitials (`NextStep`, `PromoBanner`, `SectionBanner`) are attached to the group they belong to so nothing floats outside the tab system; the CTA strips are reduced to two positions as described above.
+- Analytics: fire the existing tracking helper on each group open (`section_view` with the group name), giving a real engagement metric in place of scroll depth.
 
 ## Verification
 
-- Typecheck.
-- Fetch the served HTML of `/courses/online-bba` and confirm text from the last group is still present — proof indexing is unchanged.
+- Typecheck (`bunx tsgo --noEmit`).
+- Fetch the served HTML of `/courses/online-bba` and grep for a phrase from the last group — proof that indexing is unchanged.
 - Phone and desktop pass on one course page and one university page: chip switching, deep link into a collapsed group, Next/Back, "Read the full page", no horizontal overflow, no console errors.
