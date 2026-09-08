@@ -56,7 +56,6 @@ export function Header() {
   const { openCounselling } = usePopupSurface();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
-  const { theme, toggle, mounted } = useTheme();
 
   // Never leave the sheet open behind a resize into the desktop layout.
   useEffect(() => {
@@ -131,18 +130,6 @@ export function Header() {
           </button>
           <button
             type="button"
-            onClick={toggle}
-            aria-label="Toggle colour theme"
-            className="btn-icon hidden sm:grid"
-          >
-            {mounted && theme === "dark" ? (
-              <Sun className="h-4 w-4" />
-            ) : (
-              <Moon className="h-4 w-4" />
-            )}
-          </button>
-          <button
-            type="button"
             onClick={openCounselling}
             className="btn btn-primary hidden sm:inline-flex"
           >
@@ -184,7 +171,7 @@ export function Header() {
                 </li>
               ))}
             </ul>
-            <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <div className="mt-4">
               <button
                 type="button"
                 onClick={() => {
@@ -194,9 +181,6 @@ export function Header() {
                 className="btn btn-primary w-full"
               >
                 Get guidance
-              </button>
-              <button type="button" onClick={toggle} className="btn btn-secondary w-full sm:hidden">
-                {mounted && theme === "dark" ? "Light mode" : "Dark mode"}
               </button>
             </div>
           </nav>
