@@ -114,8 +114,9 @@ export function sitemapEntries(): SitemapEntry[] {
     ...canonicalProgrammes.map((slug) => ({
       path: `/courses/${slug}`,
       changefreq: "weekly" as const,
-      priority: "0.9",
+      priority: HEAD_PROGRAMMES.includes(slug) ? "1.0" : "0.9",
     })),
+
     // Section sub-pages only exist for course families with editorial content.
     ...courseFamilyList()
       .filter((f) => Boolean(courseContentBySlug(f.slug)))
