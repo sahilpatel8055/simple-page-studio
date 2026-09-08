@@ -4,6 +4,7 @@ import { approvalIcon, campusImage, universityLogo } from "@/lib/assets";
 import type { University } from "@/data";
 import { formatFee, programmesOf } from "@/lib/universityData";
 import { usePopupSurface } from "@/components/common/PopupManager";
+import { ActionRow } from "@/components/common/ActionRow";
 
 /**
  * Decision-first university header: identity, approvals, rating, key facts and
@@ -133,26 +134,31 @@ export function UniversityHero({ university }: { university: University }) {
           </dl>
         )}
 
-        <div className="mt-5 flex flex-wrap gap-2.5">
-          <a
-            href="#courses-fees"
-            className="inline-flex min-h-11 items-center rounded-xl bg-brand px-4 text-sm font-bold text-brand-foreground hover:opacity-90"
-          >
-            View courses
-          </a>
-          <AppLink
-            to="/compare/universities"
-            className="inline-flex min-h-11 items-center rounded-xl border border-border bg-card px-4 text-sm font-bold text-brand"
-          >
-            Compare
-          </AppLink>
-          <button
-            type="button"
-            onClick={openCounselling}
-            className="inline-flex min-h-11 items-center rounded-xl border border-border bg-card px-4 text-sm font-bold text-brand"
-          >
-            Get guidance
-          </button>
+        <div className="mt-5 space-y-2.5">
+          <ActionRow
+            waMessage={`Hi, please share ${u.shortName} fees, eligibility and EMI options.`}
+          />
+          <div className="flex flex-wrap gap-2.5">
+            <a
+              href="#courses-fees"
+              className="inline-flex min-h-10 items-center rounded-xl border border-border bg-card px-3 text-[0.82rem] font-bold text-brand"
+            >
+              View courses
+            </a>
+            <AppLink
+              to="/compare/universities"
+              className="inline-flex min-h-10 items-center rounded-xl border border-border bg-card px-3 text-[0.82rem] font-bold text-brand"
+            >
+              Compare
+            </AppLink>
+            <button
+              type="button"
+              onClick={openCounselling}
+              className="inline-flex min-h-10 items-center rounded-xl border border-border bg-card px-3 text-[0.82rem] font-bold text-brand"
+            >
+              Get guidance
+            </button>
+          </div>
         </div>
       </div>
     </section>
