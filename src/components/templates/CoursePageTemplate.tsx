@@ -1,3 +1,4 @@
+import { ActionRow } from "@/components/common/ActionRow";
 import { Breadcrumbs } from "@/components/common/Breadcrumbs";
 import { SectionNav } from "@/components/common/SectionNav";
 import { Faq } from "@/components/common/Faq";
@@ -125,7 +126,14 @@ export function CoursePageTemplate({
             />
           </div>
 
-          <div className="mt-5 flex flex-wrap items-start gap-2.5">
+          <div className="mt-5">
+            <ActionRow
+              waMessage={`Hi, please share ${family.shortName} fees, eligibility and EMI options.`}
+            />
+          </div>
+
+          <div className="mt-4 flex flex-wrap items-start gap-2.5">
+
             <a href="#universities" className="btn btn-primary">
               Explore universities
             </a>
