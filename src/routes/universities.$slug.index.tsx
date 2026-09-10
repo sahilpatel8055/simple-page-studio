@@ -1,5 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
+import { SectionPanel } from "@/components/common/SectionTabs";
+import { UNIVERSITY_GROUPS } from "@/lib/pageGroups";
 import { AnswerFirst } from "@/components/university/AnswerFirst";
 import { getProgramme, listOfferingsByUniversity } from "@/data";
 import {
