@@ -4,6 +4,8 @@ import { AccentHeadline } from "@/components/common/Headline";
 import { Faq, placeholderFaqs, type FaqItem } from "@/components/common/Faq";
 import { LeadCaptureCard, TableOfContents, TrustCard } from "@/components/common/Sidebar";
 import { SectionNav } from "@/components/common/SectionNav";
+import { SectionTabs, SectionPanel } from "@/components/common/SectionTabs";
+import type { PageGroup } from "@/lib/pageGroups";
 import { CTASection } from "@/components/common/Primitives";
 
 /**
@@ -22,6 +24,7 @@ export function DetailLayout({
   related,
   sidebarExtras,
   hideLeadForm = false,
+  groups,
   children,
 }: {
   crumbs: Crumb[];
@@ -35,8 +38,38 @@ export function DetailLayout({
   related?: ReactNode;
   sidebarExtras?: ReactNode;
   hideLeadForm?: boolean;
+  /** When given, sections read as tabs instead of one long scroll. */
+  groups?: readonly PageGroup[] | undefined;
   children: ReactNode;
 }) {
+  const body = (
+    <div className="container-page grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14 lg:py-16">
+      <main className="min-w-0 space-y-12">
+        {children}
+        {groups ? (
+          <SectionPanel id="faqs">
+            <section id="faqs">
+              <Faq items={faqs} />
+            </section>
+          </SectionPanel>
+        ) : (
+          <section id="faqs">
+            <Faq items={faqs} />
+          </section>
+        )}
+        {related}
+        <CTASection />
+      </main>
+
+      <aside className="min-w-0 space-y-6 lg:sticky lg:top-24 lg:self-start">
+        <TableOfContents sections={tocSections} />
+        {!hideLeadForm && <LeadCaptureCard />}
+        {sidebarExtras}
+        <TrustCard />
+      </aside>
+    </div>
+  );
+
   return (
     <>
       <div className="hero-glow border-b border-border">
@@ -56,25 +89,14 @@ export function DetailLayout({
         </div>
       </div>
 
-      {tocSections && tocSections.length > 1 && <SectionNav sections={tocSections} />}
-
-      <div className="container-page grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14 lg:py-16">
-        <main className="min-w-0 space-y-12">
-          {children}
-          <section id="faqs">
-            <Faq items={faqs} />
-          </section>
-          {related}
-          <CTASection />
-        </main>
-
-        <aside className="min-w-0 space-y-6 lg:sticky lg:top-24 lg:self-start">
-          <TableOfContents sections={tocSections} />
-          {!hideLeadForm && <LeadCaptureCard />}
-          {sidebarExtras}
-          <TrustCard />
-        </aside>
-      </div>
+      {groups ? (
+        <SectionTabs groups={groups}>{body}</SectionTabs>
+      ) : (
+        <>
+          {tocSections && tocSections.length > 1 && <SectionNav sections={tocSections} />}
+          {body}
+        </>
+      )}
     </>
   );
 }

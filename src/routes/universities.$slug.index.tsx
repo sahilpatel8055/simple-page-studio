@@ -1,5 +1,7 @@
 import { createFileRoute, notFound } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
+import { SectionPanel } from "@/components/common/SectionTabs";
+import { UNIVERSITY_GROUPS } from "@/lib/pageGroups";
 import { AnswerFirst } from "@/components/university/AnswerFirst";
 import { getProgramme, listOfferingsByUniversity } from "@/data";
 import {
@@ -291,194 +293,213 @@ function Page() {
             ]}
           />
         }
+        groups={UNIVERSITY_GROUPS}
       >
-        <AnswerFirst
-          heading={`${u.shortName} online degrees at a glance`}
-          answer={`${u.name} is a ${[u.type, "university"].filter(Boolean).join(" ")} in ${u.city}, ${u.state} offering ${offeringCount} online / distance programmes across ${u.modes.join(" / ").toLowerCase()} mode. Fees run in the ${u.feeRangeLabel} band and the university holds ${approvalText(u)}. Eligibility follows the standard rule for each level — 10+2 for bachelor's programmes and a bachelor's degree for master's programmes — with admission open through the steps listed below. Our verdict: ${u.verdict ?? `${u.shortName} suits learners who want a recognised online degree with fees that stay predictable across the full programme.`}`}
-          facts={[
-            { label: "Fee range", value: u.feeRangeLabel },
-            { label: "Approvals", value: u.approvals.map((a) => a.body).slice(0, 3).join(", ") || "Listed below" },
-            { label: "Programmes", value: String(offeringCount) },
-            { label: "Mode", value: u.modes.join(" / ") },
-          ]}
-          verifiedOn={u.lastUpdated}
-        />
-
-        <ContentSection title="At a glance">
-          <UniversityGlance slug={slug} />
-        </ContentSection>
-
-        <ContentSection title="Overview">
-          <UniversityResearchIntro slug={slug} />
-          {universityIntro(slug) && <p>{universityIntro(slug)}</p>}
-          {u.verdict && <p>{u.verdict}</p>}
-
-          <ul className="grid gap-2 sm:grid-cols-2">
-            {u.highlights.map((h) => (
-              <li key={h} className="rounded-lg bg-secondary px-3 py-2 text-sm text-foreground">
-                {h}
-              </li>
-            ))}
-          </ul>
-        </ContentSection>
-
-        <ContentSection title="Approvals & recognition">
-          <UniversityVsProgrammeFacts />
-          <ApprovalsSection
-            approvals={u.approvals}
-            shortName={u.shortName}
-            json={json ?? undefined}
-            fallbackRows={u.approvals.map((a) => [a.body, a.status] as [string, string])}
+        <SectionPanel id="overview">
+          <AnswerFirst
+            heading={`${u.shortName} online degrees at a glance`}
+            answer={`${u.name} is a ${[u.type, "university"].filter(Boolean).join(" ")} in ${u.city}, ${u.state} offering ${offeringCount} online / distance programmes across ${u.modes.join(" / ").toLowerCase()} mode. Fees run in the ${u.feeRangeLabel} band and the university holds ${approvalText(u)}. Eligibility follows the standard rule for each level — 10+2 for bachelor's programmes and a bachelor's degree for master's programmes — with admission open through the steps listed below. Our verdict: ${u.verdict ?? `${u.shortName} suits learners who want a recognised online degree with fees that stay predictable across the full programme.`}`}
+            facts={[
+              { label: "Fee range", value: u.feeRangeLabel },
+              {
+                label: "Approvals",
+                value:
+                  u.approvals.map((a) => a.body).slice(0, 3).join(", ") || "Listed below",
+              },
+              { label: "Programmes", value: String(offeringCount) },
+              { label: "Mode", value: u.modes.join(" / ") },
+            ]}
+            verifiedOn={u.lastUpdated}
           />
-        </ContentSection>
 
-        <ContentSection title="Courses & fees">
-          <CourseLevelTabs
-            offerings={profile.offerings}
-            universitySlug={u.slug}
-            feeFallback={u.feeRangeLabel}
-          />
-        </ContentSection>
-
-        {hasFeeTable && (
-          <ContentSection title="Fee structure">
-            <FeeStructureTable universitySlug={slug} universityShort={u.shortName} />
+          <ContentSection title="At a glance">
+            <UniversityGlance slug={slug} />
           </ContentSection>
-        )}
 
-        {hasFeeValue && (
-          <ContentSection title="Fee vs other universities">
-            <UniversityFeeValueAnalysis slug={slug} />
+          <ContentSection title="Overview">
+            <UniversityResearchIntro slug={slug} />
+            {universityIntro(slug) && <p>{universityIntro(slug)}</p>}
+            {u.verdict && <p>{u.verdict}</p>}
+
+            <ul className="grid gap-2 sm:grid-cols-2">
+              {u.highlights.map((h) => (
+                <li key={h} className="rounded-lg bg-secondary px-3 py-2 text-sm text-foreground">
+                  {h}
+                </li>
+              ))}
+            </ul>
           </ContentSection>
-        )}
+        </SectionPanel>
 
-        <ToolsStrip />
-
-        <ContentSection title="Admission process" tone="admission">
-          <div className="space-y-5">
-            <SectionBanner kind="admission" />
-            <AdmissionInsightSection universitySlug={slug} universityShort={u.shortName} />
-            <AdmissionSection admissions={admissionOf(slug)} universitySlug={slug} />
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Examination pattern" tone="exam" collapsible>
-          <SectionBanner kind="examination" />
-          <ExaminationPatternSection universitySlug={slug} universityShort={u.shortName} />
-        </ContentSection>
-
-        <ContentSection title="Specialisations">
-          <UniversitySpecialisations slug={slug} />
-        </ContentSection>
-
-        {hasDegreeSample && (
-          <ContentSection title="Degree & certificate">
-            <div className="space-y-5">
-              <SampleDegreeSection universityName={u.name} universitySlug={slug} />
-              <UniversityDegreeFacts slug={slug} />
-            </div>
-          </ContentSection>
-        )}
-
-        <ContentSection title="Placement & career">
-          <div className="space-y-5">
-            <SectionBanner kind="placement" />
-            <UniversityCareerSupport slug={slug} shortName={u.shortName} />
-            <HiringPartners universitySlug={slug} universityShort={u.shortName} />
-            <CareerOpportunitiesSection universitySlug={slug} universityShort={u.shortName} />
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Scholarships">
-          <div className="space-y-5">
-            <ScholarshipInsightSection universitySlug={slug} universityShort={u.shortName} />
-            <ScholarshipList items={scholarshipsOf(slug)} />
-            <UniversityScholarshipCTA slug={slug} shortName={u.shortName} />
-          </div>
-        </ContentSection>
-
-        <ContentSection title="Learning experience" collapsible>
-          <UniversityLearningExperience slug={slug} shortName={u.shortName} />
-        </ContentSection>
-
-        <ContentSection title="Why consider">
-          <UniversityAdvantages slug={slug} shortName={u.shortName} />
-        </ContentSection>
-
-        <ContentSection title="Things to consider" collapsible>
-          <UniversityConsiderations slug={slug} shortName={u.shortName} />
-        </ContentSection>
-
-        <ContentSection title="Who it suits">
-          <UniversitySuitability slug={slug} />
-        </ContentSection>
-
-        <ContentSection title="Student reviews">
-          <UniversityReviews
-            rating={u.rating}
-            reviewCount={u.reviewCount}
-            shortName={u.shortName}
-          />
-        </ContentSection>
-
-        <ContentSection title="Compare universities">
-          <UniversityComparison slug={slug} shortName={u.shortName} />
-        </ContentSection>
-
-        <ContentSection title={decisionHeading ?? "Who may consider this university"}>
-          {decisionHeading ? (
-            <UniversityDecisionGuide slug={slug} />
-          ) : (
-            <WhoMayConsiderUniversity shortName={u.shortName} />
-          )}
-        </ContentSection>
-
-        <ContentSection title="What to verify before applying">
-          <StudentsShouldVerify
-            lastVerified={u.lastUpdated}
-            status={
-              json?.data_status ?? (u.verified ? "verified_official" : "partial_verification")
-            }
-          />
-        </ContentSection>
-
-        <ContentSection title="Researched university record">
-          <PubUniversityResearch slug={slug} />
-        </ContentSection>
-
-        {blogsForUniversity(slug).length > 0 && (
-          <ContentSection title={`${u.shortName} guides & articles`}>
-            <BlogStrip
-              items={blogsForUniversity(slug).slice(0, 6)}
-              title={`${u.shortName} articles`}
-              intro={`Research reads on ${u.name} — admissions, fees, placements and student experience.`}
+        <SectionPanel id="courses-fees">
+          <ContentSection title="Courses & fees">
+            <CourseLevelTabs
+              offerings={profile.offerings}
+              universitySlug={u.slug}
+              feeFallback={u.feeRangeLabel}
             />
           </ContentSection>
-        )}
 
-        <RelatedPageLinks
-          title={`${u.shortName} guides`}
-          links={universitySectionPages(slug).map((sec) => ({
-            label: `${u.shortName} ${sectionLabels[sec].toLowerCase()}`,
-            href: `/universities/${slug}/${sec}`,
-          }))}
-        />
+          {hasFeeTable && (
+            <ContentSection title="Fee structure">
+              <FeeStructureTable universitySlug={slug} universityShort={u.shortName} />
+            </ContentSection>
+          )}
 
-        {u.pros.length > 0 && u.cons.length > 0 && (
-          <ContentSection title="Pros and cons">
-            <ProsCons pros={u.pros} cons={u.cons} />
+          {hasFeeValue && (
+            <ContentSection title="Fee vs other universities">
+              <UniversityFeeValueAnalysis slug={slug} />
+            </ContentSection>
+          )}
+
+          <ContentSection title="Specialisations">
+            <UniversitySpecialisations slug={slug} />
           </ContentSection>
-        )}
 
-        {json && <SourceInformation sources={sourcesForUniversity(json)} />}
+          <ToolsStrip />
+        </SectionPanel>
 
-        <AuthorBox />
-        <References
-          items={[
-            { label: "UGC-DEB entitled institutions list", href: "https://deb.ugc.ac.in/" },
-            { label: "NAAC accreditation status", href: "https://www.naac.gov.in/" },
-          ]}
-        />
+        <SectionPanel id="admission">
+          <ContentSection title="Admission process" tone="admission">
+            <div className="space-y-5">
+              <SectionBanner kind="admission" />
+              <AdmissionInsightSection universitySlug={slug} universityShort={u.shortName} />
+              <AdmissionSection admissions={admissionOf(slug)} universitySlug={slug} />
+            </div>
+          </ContentSection>
+
+          <ContentSection title="Scholarships">
+            <div className="space-y-5">
+              <ScholarshipInsightSection universitySlug={slug} universityShort={u.shortName} />
+              <ScholarshipList items={scholarshipsOf(slug)} />
+              <UniversityScholarshipCTA slug={slug} shortName={u.shortName} />
+            </div>
+          </ContentSection>
+        </SectionPanel>
+
+        <SectionPanel id="exams-learning">
+          <ContentSection title="Examination pattern" tone="exam">
+            <SectionBanner kind="examination" />
+            <ExaminationPatternSection universitySlug={slug} universityShort={u.shortName} />
+          </ContentSection>
+
+          <ContentSection title="Learning experience">
+            <UniversityLearningExperience slug={slug} shortName={u.shortName} />
+          </ContentSection>
+
+          {hasDegreeSample && (
+            <ContentSection title="Degree & certificate">
+              <div className="space-y-5">
+                <SampleDegreeSection universityName={u.name} universitySlug={slug} />
+                <UniversityDegreeFacts slug={slug} />
+              </div>
+            </ContentSection>
+          )}
+        </SectionPanel>
+
+        <SectionPanel id="placement">
+          <ContentSection title="Placement & career">
+            <div className="space-y-5">
+              <SectionBanner kind="placement" />
+              <UniversityCareerSupport slug={slug} shortName={u.shortName} />
+              <HiringPartners universitySlug={slug} universityShort={u.shortName} />
+              <CareerOpportunitiesSection universitySlug={slug} universityShort={u.shortName} />
+            </div>
+          </ContentSection>
+        </SectionPanel>
+
+        <SectionPanel id="approvals-validity">
+          <ContentSection title="Approvals & recognition">
+            <UniversityVsProgrammeFacts />
+            <ApprovalsSection
+              approvals={u.approvals}
+              shortName={u.shortName}
+              json={json ?? undefined}
+              fallbackRows={u.approvals.map((a) => [a.body, a.status] as [string, string])}
+            />
+          </ContentSection>
+
+          <ContentSection title="Why consider">
+            <UniversityAdvantages slug={slug} shortName={u.shortName} />
+          </ContentSection>
+
+          <ContentSection title="Things to consider">
+            <UniversityConsiderations slug={slug} shortName={u.shortName} />
+          </ContentSection>
+
+          <ContentSection title="Who it suits">
+            <UniversitySuitability slug={slug} />
+          </ContentSection>
+
+          <ContentSection title={decisionHeading ?? "Who may consider this university"}>
+            {decisionHeading ? (
+              <UniversityDecisionGuide slug={slug} />
+            ) : (
+              <WhoMayConsiderUniversity shortName={u.shortName} />
+            )}
+          </ContentSection>
+
+          <ContentSection title="What to verify before applying">
+            <StudentsShouldVerify
+              lastVerified={u.lastUpdated}
+              status={
+                json?.data_status ?? (u.verified ? "verified_official" : "partial_verification")
+              }
+            />
+          </ContentSection>
+
+          <ContentSection title="Researched university record">
+            <PubUniversityResearch slug={slug} />
+          </ContentSection>
+
+          {u.pros.length > 0 && u.cons.length > 0 && (
+            <ContentSection title="Pros and cons">
+              <ProsCons pros={u.pros} cons={u.cons} />
+            </ContentSection>
+          )}
+
+          {json && <SourceInformation sources={sourcesForUniversity(json)} />}
+        </SectionPanel>
+
+        <SectionPanel id="reviews">
+          <ContentSection title="Student reviews">
+            <UniversityReviews
+              rating={u.rating}
+              reviewCount={u.reviewCount}
+              shortName={u.shortName}
+            />
+          </ContentSection>
+
+          <ContentSection title="Compare universities">
+            <UniversityComparison slug={slug} shortName={u.shortName} />
+          </ContentSection>
+
+          {blogsForUniversity(slug).length > 0 && (
+            <ContentSection title={`${u.shortName} guides & articles`}>
+              <BlogStrip
+                items={blogsForUniversity(slug).slice(0, 6)}
+                title={`${u.shortName} articles`}
+                intro={`Research reads on ${u.name} — admissions, fees, placements and student experience.`}
+              />
+            </ContentSection>
+          )}
+
+          <RelatedPageLinks
+            title={`${u.shortName} guides`}
+            links={universitySectionPages(slug).map((sec) => ({
+              label: `${u.shortName} ${sectionLabels[sec].toLowerCase()}`,
+              href: `/universities/${slug}/${sec}`,
+            }))}
+          />
+
+          <AuthorBox />
+          <References
+            items={[
+              { label: "UGC-DEB entitled institutions list", href: "https://deb.ugc.ac.in/" },
+              { label: "NAAC accreditation status", href: "https://www.naac.gov.in/" },
+            ]}
+          />
+        </SectionPanel>
       </DetailLayout>
       <script
         type="application/ld+json"
