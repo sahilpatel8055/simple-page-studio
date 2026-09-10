@@ -71,6 +71,9 @@ import {
 import { specLandingPath } from "@/lib/courseFamily";
 import { offeringCtrMeta } from "@/lib/intentMap";
 import { offeringNarrative } from "@/lib/pageNarrative";
+import { offeringQuestions, offeringTitleIntent, offeringVerdict } from "@/lib/pageVerdict";
+import { QuestionBlock } from "@/components/common/QuestionBlock";
+
 
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForUniversity } from "@/data/university-blogs";
