@@ -4,6 +4,8 @@ import { AccentHeadline } from "@/components/common/Headline";
 import { Faq, placeholderFaqs, type FaqItem } from "@/components/common/Faq";
 import { LeadCaptureCard, TableOfContents, TrustCard } from "@/components/common/Sidebar";
 import { SectionNav } from "@/components/common/SectionNav";
+import { SectionTabs } from "@/components/common/SectionTabs";
+import type { PageGroup } from "@/lib/pageGroups";
 import { CTASection } from "@/components/common/Primitives";
 
 /**
