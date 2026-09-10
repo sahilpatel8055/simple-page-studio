@@ -127,9 +127,14 @@ export const Route = createFileRoute("/universities/$slug/")({
     if (!loaderData) {
       return { meta: [{ title: "University not found" }, { name: "robots", content: "noindex" }] };
     }
+    // One title, one intent — chosen from this university's own catalogue
+    // (fee-spread led, breadth led, or recognition led) so 21 hub pages stop
+    // competing on the same "fees, courses, admission" phrasing.
+    const record = universityProfile(params.slug)?.record;
+    const intent = record ? universityTitleIntent(record) : null;
     const headings = universityHeadings(loaderData);
-    const title = headings.title;
-    const description = headings.description;
+    const title = intent?.title ?? headings.title;
+    const description = intent?.description ?? headings.description;
     return {
       meta: pageMeta({
         title,
@@ -137,7 +142,7 @@ export const Route = createFileRoute("/universities/$slug/")({
         path,
         modifiedTime: loaderData.lastUpdated,
         author: "Degreekhojo Editorial Desk",
-        keywords: [
+        keywords: intent?.keywords ?? [
           `${loaderData.shortName} fees`,
           `${loaderData.shortName} admission`,
           `${loaderData.shortName} review`,
