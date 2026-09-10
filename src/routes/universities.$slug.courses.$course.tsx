@@ -242,6 +242,17 @@ function Page() {
     },
   ];
 
+  // Query-expansion layer: the question shapes this page previously could not
+  // match. Rendered visibly and folded into the FAQPage schema below.
+  const rivals = providerLinks(p.slug)
+    .filter((l) => !l.href.includes(`/universities/${u.slug}/`))
+    .slice(0, 3)
+    .map((l) => ({ shortName: l.label.replace(/\s*\(.*\)$/, ""), slug: l.href }));
+  const questions = offeringQuestions({ offering, university: u, programme: p, path: profile.path }, rivals);
+  const allFaqs = [...faqs, ...questions];
+  const verdict = offeringVerdict({ offering, university: u, programme: p, path: profile.path });
+
+
   return (
     <>
       <DetailLayout
