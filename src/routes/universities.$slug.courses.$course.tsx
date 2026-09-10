@@ -369,7 +369,22 @@ function Page() {
           <ApprovalMarquee approvals={u.approvals} />
         </ContentSection>
 
+        <ContentSection title="Specialisations at a glance">
+          <SpecialisationBoxes
+            label={`${p.name} specialisations at ${u.shortName}`}
+            items={offering.specialisations.map((s) => {
+              const spec = getSpecialisation(p.slug, s);
+              return {
+                name: spec?.name ?? s,
+                href: specLandingPath(p.slug, spec?.name ?? s),
+                meta: spec?.careerPaths.slice(0, 2).join(", ") || undefined,
+              };
+            })}
+          />
+        </ContentSection>
+
         </SectionPanel>
+
 
         <SectionPanel id="syllabus-specialisations" footer={false}>
         <ContentSection title="Specialisations">

@@ -349,7 +349,31 @@ function Page() {
               ))}
             </ul>
           </ContentSection>
+
+          <ContentSection title="Approvals at a glance">
+            <ApprovalsSection
+              approvals={u.approvals}
+              shortName={u.shortName}
+              json={json ?? undefined}
+              fallbackRows={u.approvals.map((a) => [a.body, a.status] as [string, string])}
+            />
+          </ContentSection>
+
+          {hasDegreeSample && (
+            <ContentSection title="Sample degree">
+              <SampleDegreeSection universityName={u.name} universitySlug={slug} />
+            </ContentSection>
+          )}
+
+          <ContentSection title="Course-wise fees">
+            <CourseLevelTabs
+              offerings={profile.offerings}
+              universitySlug={u.slug}
+              feeFallback={u.feeRangeLabel}
+            />
+          </ContentSection>
         </SectionPanel>
+
 
         <SectionPanel id="courses-fees">
           <ContentSection title="Courses & fees">

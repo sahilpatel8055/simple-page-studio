@@ -236,7 +236,7 @@ export function SectionPanel({
   );
 }
 
-/** Previous / Next controls at the bottom of a group. */
+/** Guided "what to read next" controls at the bottom of a group. */
 function SectionFooterNav({ id }: { id: string }) {
   const { groups, active, showAll, open } = useTabs();
   if (showAll) return null;
@@ -246,21 +246,59 @@ function SectionFooterNav({ id }: { id: string }) {
   const next = index < groups.length - 1 ? groups[index + 1] : undefined;
   if (!prev && !next) return null;
   return (
-    <div className="space-y-3 pt-2 print:hidden">
+    <div className="rounded-2xl border border-brand/30 bg-brand-soft/40 p-4 sm:p-5 print:hidden">
+      <p className="text-xs font-bold uppercase tracking-[0.14em] text-brand">
+        Part {index + 1} of {groups.length} · You just finished “{groups[index]?.label}”
+      </p>
+
       {next && (
-        <button
-          type="button"
-          onClick={() => open(next.id)}
-          className="btn btn-primary w-full justify-center"
-        >
-          Next: {next.label}
-        </button>
+        <>
+          <p className="mt-2 text-base font-bold text-foreground">
+            Next: {next.label}
+          </p>
+          <p className="mt-1 text-sm text-muted-foreground">
+            Tap the button below to continue reading. Nothing is lost — you can come back any time.
+          </p>
+          <button
+            type="button"
+            onClick={() => open(next.id)}
+            className="btn btn-primary mt-4 w-full justify-center"
+          >
+            Continue to {next.label} →
+          </button>
+        </>
       )}
+
+      {!next && (
+        <p className="mt-2 text-sm text-muted-foreground">
+          That’s the last part of this page. Use the buttons below to revisit any section.
+        </p>
+      )}
+
+      <div className="mt-4 border-t border-brand/20 pt-3">
+        <p className="text-xs font-semibold text-muted-foreground">Or jump straight to:</p>
+        <ul className="mt-2 flex flex-wrap gap-2">
+          {groups
+            .filter((g) => g.id !== id && g.id !== next?.id)
+            .map((g) => (
+              <li key={g.id}>
+                <button
+                  type="button"
+                  onClick={() => open(g.id)}
+                  className="rounded-lg border border-border bg-card px-3 py-1.5 text-xs font-bold text-brand hover:bg-brand-soft"
+                >
+                  {g.label}
+                </button>
+              </li>
+            ))}
+        </ul>
+      </div>
+
       {prev && (
         <button
           type="button"
           onClick={() => open(prev.id)}
-          className="text-sm font-bold text-brand underline underline-offset-4"
+          className="mt-3 text-sm font-bold text-brand underline underline-offset-4"
         >
           ← Back to {prev.label}
         </button>
@@ -268,3 +306,4 @@ function SectionFooterNav({ id }: { id: string }) {
     </div>
   );
 }
+
