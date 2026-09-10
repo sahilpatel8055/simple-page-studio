@@ -125,6 +125,14 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
       admissionProcess: profile.university.record.admissionProcess,
       summary: profile.programme.record.summary,
       modes: offeringModes(params.slug, params.course),
+      // One title, one intent: chosen from this programme's strongest
+      // attribute so 248 pages stop competing on the same phrasing.
+      intent: offeringTitleIntent({
+        offering: profile.offering,
+        university: profile.university.record,
+        programme: profile.programme.record,
+        path: profile.path,
+      }),
     };
   },
   head: ({ params, loaderData }) => {
@@ -135,12 +143,8 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
     // This page owns every "<University> <Course> + fees/eligibility/syllabus"
     // query (see src/lib/intentMap.ts); the pillar and comparison pages defer.
     const ctr = offeringCtrMeta(params.slug, params.course);
-    const title =
-      ctr?.title ??
-      `${loaderData.universityShort} ${loaderData.programmeName}: Fees, Eligibility & Admission 2026`;
-    const description =
-      ctr?.description ??
-      `${loaderData.programmeName} at ${loaderData.universityName} — ${loaderData.duration} duration, ${loaderData.feeRange} fee range, specialisations, eligibility, admission steps and placement support.`;
+    const title = ctr?.title ?? loaderData.intent.title;
+    const description = ctr?.description ?? loaderData.intent.description;
     return {
       meta: pageMeta({
         title,
@@ -148,12 +152,9 @@ export const Route = createFileRoute("/universities/$slug/courses/$course")({
         path,
         modifiedTime: loaderData.lastUpdated,
         author: "Degreekhojo Editorial Desk",
-        keywords: ctr?.keywords ?? [
-          `${loaderData.universityShort} ${loaderData.programmeName} fees`,
-          `${loaderData.universityShort} ${loaderData.programmeName} admission`,
-          `${loaderData.programmeName} eligibility`,
-        ],
+        keywords: ctr?.keywords ?? loaderData.intent.keywords,
       }),
+
       links: canonical(path),
       scripts: [
         jsonLd(
