@@ -313,7 +313,7 @@ function Page() {
         <SectionPanel id="overview">
           <AnswerFirst
             heading={`${u.shortName} online degrees at a glance`}
-            answer={verdict
+            answer={verdict}
             facts={[
               { label: "Fee range", value: u.feeRangeLabel },
               {
