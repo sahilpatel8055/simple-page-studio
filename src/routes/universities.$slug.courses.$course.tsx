@@ -301,7 +301,9 @@ function Page() {
           "Learning experience",
           "Who should choose it",
           `${u.shortName} ${p.shortName} guides`,
+          "Common questions",
           "FAQs",
+
           "Related links",
         ]}
         faqs={faqs}
