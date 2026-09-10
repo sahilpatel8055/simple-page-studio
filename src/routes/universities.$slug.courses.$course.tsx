@@ -652,7 +652,7 @@ function Page() {
       </DetailLayout>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(allFaqs)) }}
       />
     </>
   );
