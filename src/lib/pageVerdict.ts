@@ -18,6 +18,7 @@
  */
 import type { Offering, Programme, University } from "@/data/types";
 import { offerings } from "@/data/offerings";
+import { programmes } from "@/data/programmes";
 import { approvalText } from "@/lib/entities";
 import { averagePackageFor, defaultRolesFor } from "@/lib/careerSalaries";
 
@@ -252,5 +253,289 @@ export function offeringTitleIntent(facts: OfferingFacts): {
       `${u.shortName} ${p.name} eligibility`,
       `${p.name} online`,
     ],
+  };
+}
+
+/* -------------------------------------------------------------------------
+ * University hub layer
+ *
+ * The university pages average position 41 for the same reason the programme
+ * pages did: one shared skeleton, one shared sentence pattern, and a title
+ * that carries three intents at once. Everything below is assembled from the
+ * university's own offerings, so two universities with different economics
+ * read differently.
+ * ---------------------------------------------------------------------- */
+
+export interface UniversityFacts {
+  count: number;
+  cheapest: { name: string; total: number } | null;
+  dearest: { name: string; total: number } | null;
+  minEmi: number | null;
+  pg: number;
+  ug: number;
+  specialisations: number;
+}
+
+export function universityFacts(slug: string): UniversityFacts {
+  const own = offerings.filter((o) => o.universitySlug === slug);
+  const named = own
+    .filter((o) => o.fee.total)
+    .map((o) => ({
+      name: programmes.find((p) => p.slug === o.programmeSlug)?.name ?? o.programmeSlug,
+      total: o.fee.total as number,
+      level: programmes.find((p) => p.slug === o.programmeSlug)?.level,
+    }))
+    .sort((a, b) => a.total - b.total);
+  const emis = own.map((o) => o.fee.emiFrom).filter((n): n is number => Boolean(n));
+  return {
+    count: own.length,
+    cheapest: named[0] ? { name: named[0].name, total: named[0].total } : null,
+    dearest: named.length > 1 ? { name: named[named.length - 1]!.name, total: named[named.length - 1]!.total } : null,
+    minEmi: emis.length ? Math.min(...emis) : null,
+    pg: own.filter((o) => programmes.find((p) => p.slug === o.programmeSlug)?.level === "PG").length,
+    ug: own.filter((o) => programmes.find((p) => p.slug === o.programmeSlug)?.level === "UG").length,
+    specialisations: new Set(own.flatMap((o) => o.specialisations)).size,
+  };
+}
+
+/** Opening paragraph shaped by the university's own catalogue, not a template. */
+export function universityVerdict(u: University): string {
+  const f = universityFacts(u.slug);
+  const open = u.type === "Open" || u.type === "State" || u.type === "Central";
+  const parts: string[] = [];
+
+  if (f.cheapest && f.dearest) {
+    parts.push(
+      `${u.name} publishes ${f.count} online and distance programmes, priced from ${inr(f.cheapest.total)} for the ${f.cheapest.name} up to ${inr(f.dearest.total)} for the ${f.dearest.name} — so what you pay at ${u.shortName} depends far more on which degree you pick than on the university itself.`,
+    );
+  } else if (f.cheapest) {
+    parts.push(
+      `${u.name} runs ${f.count} online and distance programmes, with the ${f.cheapest.name} published at ${inr(f.cheapest.total)} for the full course.`,
+    );
+  } else {
+    parts.push(
+      `${u.name} runs ${f.count} online and distance programmes in the ${u.feeRangeLabel} band; programme-wise totals are published on each course page below.`,
+    );
+  }
+
+  if (open) {
+    parts.push(
+      `It is a ${(u.type ?? "state").toLowerCase()} university based in ${u.city}, ${u.state}, holding ${approvalText(u)} — the recognition that matters if you plan to sit government or public-sector exams on this degree.`,
+    );
+  } else {
+    parts.push(
+      `Based in ${u.city}, ${u.state}, it holds ${approvalText(u)}, so the online award is treated the same as the campus degree by employers and by universities you apply to later.`,
+    );
+  }
+
+  if (f.pg && f.ug) {
+    parts.push(
+      `The catalogue splits ${f.ug} bachelor's and ${f.pg} master's programmes across ${f.specialisations} specialisations, which is wide enough to move from a UG to a PG here without changing university.`,
+    );
+  } else if (f.specialisations > 0) {
+    parts.push(`Between them the programmes carry ${f.specialisations} specialisations.`);
+  }
+
+  if (f.minEmi) parts.push(`EMI starts at ${inr(f.minEmi)} a month on the programmes that publish one.`);
+  if (u.verdict) parts.push(u.verdict);
+
+  return parts.join(" ");
+}
+
+export function universityQuestions(
+  u: University,
+  rivals: { shortName: string }[] = [],
+): PageQuestion[] {
+  const f = universityFacts(u.slug);
+  const out: PageQuestion[] = [];
+
+  out.push({
+    question: `Is a ${u.shortName} online degree valid for government jobs?`,
+    answer: `Yes. ${u.name} holds ${approvalText(u)}, and a degree from an entitled university carries the same legal standing as the campus version for government recruitment, PSU applications and further study. Confirm the entitlement covers your intake year before you pay any fee.`,
+  });
+
+  if (f.cheapest) {
+    out.push({
+      question: `What is the total fee for ${u.shortName} online courses?`,
+      answer: `Totals run from ${inr(f.cheapest.total)} for the ${f.cheapest.name}${f.dearest ? ` to ${inr(f.dearest.total)} for the ${f.dearest.name}` : ""}, covering the complete programme rather than a single year.${f.minEmi ? ` EMI from ${inr(f.minEmi)} a month is published on some programmes.` : ""} Each course page carries the semester-wise split.`,
+    });
+  }
+
+  if (rivals.length) {
+    out.push({
+      question: `${u.shortName} vs ${rivals[0]!.shortName} — which should you choose?`,
+      answer: `Compare them on four things only: total published fee, approval status, whether your specialisation exists, and the support you actually get during the programme. Our side-by-side page puts ${u.shortName} and ${rivals.map((r) => r.shortName).join(", ")} in one table so the difference is visible instead of implied.`,
+    });
+  }
+
+  out.push({
+    question: `What is the placement support at ${u.shortName}?`,
+    answer: `Online learners at ${u.shortName} get career-services access rather than a campus placement guarantee — resume support, job boards and recruiter drives where the university runs them. Treat any package figure as a description of the whole learner base, not a promise attached to your enrolment.`,
+  });
+
+  out.push({
+    question: `Are scholarships or EMI available at ${u.shortName}?`,
+    answer: `${f.minEmi ? `EMI is published from ${inr(f.minEmi)} per month, so the fee can be spread across the programme.` : `Fee concessions are handled per intake rather than as a standing scheme.`} Category concessions for defence personnel, divyangjan learners, women and merit applicants are common in Indian online programmes — confirm the current scheme with ${u.shortName} before applying.`,
+  });
+
+  if (u.examPattern) {
+    out.push({
+      question: `What is the exam pattern at ${u.shortName}?`,
+      answer: `${firstSentence(u.examPattern)} Assessment normally combines continuous internal work with an end-of-semester examination, and the weighting is set out in the university's academic regulations for your intake year.`,
+    });
+  }
+
+  out.push({
+    question: `How do you take admission at ${u.shortName}?`,
+    answer: `${u.admissionProcess.slice(0, 4).join(" → ")}. Keep ${u.documentsRequired.slice(0, 3).join(", ").toLowerCase()} ready as scans before you begin, because the application usually times out if documents are collected mid-form.`,
+  });
+
+  return out;
+}
+
+/** One title, one intent — chosen from what this university is strongest on. */
+export function universityTitleIntent(u: University): {
+  title: string;
+  description: string;
+  keywords: string[];
+} {
+  const f = universityFacts(u.slug);
+  const year = new Date().getFullYear() + (new Date().getMonth() >= 8 ? 1 : 0);
+
+  if (f.cheapest && f.dearest) {
+    return {
+      title: `${u.shortName} Online Fees ${year}: ${inr(f.cheapest.total)}–${inr(f.dearest.total)} by Course`,
+      description: `Course-wise fees at ${u.name} — ${inr(f.cheapest.total)} for the ${f.cheapest.name} up to ${inr(f.dearest.total)}, with ${approvalText(u)}, eligibility and admission steps.`,
+      keywords: [`${u.shortName} online fees`, `${u.shortName} course fees`, `${u.shortName} fee structure ${year}`],
+    };
+  }
+  if (f.count > 8) {
+    return {
+      title: `${u.shortName} Online: ${f.count} Courses, Fees & Approval ${year}`,
+      description: `All ${f.count} online and distance programmes at ${u.name}, with fee band ${u.feeRangeLabel}, ${approvalText(u)}, eligibility and admission process.`,
+      keywords: [`${u.shortName} online courses`, `${u.shortName} distance education`, `${u.shortName} admission ${year}`],
+    };
+  }
+  return {
+    title: `${u.shortName} Online ${year}: Courses, Fees & Approval Status`,
+    description: `${u.name} online degrees — ${u.feeRangeLabel} fee band, ${approvalText(u)}, eligibility, admission steps and what to verify before you apply.`,
+    keywords: [`${u.shortName} online`, `${u.shortName} admission`, `${u.shortName} approval`],
+  };
+}
+
+/* -------------------------------------------------------------------------
+ * Course pillar layer
+ * ---------------------------------------------------------------------- */
+
+export interface FamilyLike {
+  name: string;
+  shortName: string;
+  degreeName: string;
+  level: "UG" | "PG";
+  durationLabel: string;
+  feeMin: number | null;
+  feeMax: number | null;
+  feeRangeLabel: string;
+  offers: { universityShortName: string; fees: { total: number | null } }[];
+  specialisations: { name: string }[];
+}
+
+export function familyVerdict(f: FamilyLike): string {
+  const parts: string[] = [];
+  const cheapest = f.offers
+    .filter((o) => o.fees.total)
+    .sort((a, b) => (a.fees.total as number) - (b.fees.total as number))[0];
+
+  if (f.feeMin && f.feeMax) {
+    parts.push(
+      `An ${f.shortName} online in India costs anywhere from ${inr(f.feeMin)} to ${inr(f.feeMax)} for the full ${f.durationLabel} — a spread of roughly ${Math.round(f.feeMax / Math.max(f.feeMin, 1))}x for the same UGC-entitled qualification, which is the single most useful thing to know before you shortlist.`,
+    );
+  } else {
+    parts.push(
+      `An ${f.shortName} online in India sits in the ${f.feeRangeLabel} band for the full ${f.durationLabel}, and the published totals vary widely between state and private universities.`,
+    );
+  }
+
+  parts.push(
+    `We track ${f.offers.length} universities offering the ${f.degreeName} in online or distance mode${cheapest ? `, the lowest published total being ${cheapest.universityShortName} at ${inr(cheapest.fees.total as number)}` : ""}.`,
+  );
+
+  if (f.specialisations.length) {
+    parts.push(
+      `Across them there are ${f.specialisations.length} distinct specialisations, so the real decision is not "which university" but "which specialisation, at a fee I can finish paying".`,
+    );
+  }
+
+  parts.push(
+    f.level === "PG"
+      ? `Eligibility is a bachelor's degree in any stream for most universities; a few add a minimum aggregate or an entrance step, and those are flagged per university below.`
+      : `Eligibility is 10+2 from any recognised board for almost every university here, with no entrance test in the majority of cases.`,
+  );
+
+  return parts.join(" ");
+}
+
+export function familyQuestions(f: FamilyLike): PageQuestion[] {
+  const sorted = f.offers
+    .filter((o) => o.fees.total)
+    .sort((a, b) => (a.fees.total as number) - (b.fees.total as number));
+  const cheapest = sorted[0];
+  const out: PageQuestion[] = [];
+
+  out.push({
+    question: `Is an online ${f.shortName} valid for government jobs in India?`,
+    answer: `Yes, provided the university is UGC-entitled for that programme in your intake year. An entitled online ${f.shortName} is treated as equivalent to the campus degree for government recruitment, PSU roles and further study. The approval status of every university on this page is stated on its own profile.`,
+  });
+
+  if (cheapest) {
+    out.push({
+      question: `Which is the cheapest online ${f.shortName} in India?`,
+      answer: `Of the ${f.offers.length} universities tracked here, the lowest published total is ${cheapest.universityShortName} at ${inr(cheapest.fees.total as number)} for the complete ${f.durationLabel}. Cheapest is not automatically best — check approval status, specialisation fit and learner support before deciding on price alone.`,
+    });
+  }
+
+  out.push({
+    question: `What is the total fee for an online ${f.shortName}?`,
+    answer: `${f.feeMin && f.feeMax ? `Published totals run from ${inr(f.feeMin)} to ${inr(f.feeMax)}` : `Published totals sit in the ${f.feeRangeLabel} band`} for the full ${f.durationLabel}, before examination and registration charges. Always compare the total rather than the per-semester figure, because semester counts differ between universities.`,
+  });
+
+  out.push({
+    question: `What salary can you expect after an online ${f.shortName}?`,
+    answer: `Pay is set by the role you move into, not by the mode of study. Our role-wise table shows entry, mid-career and senior bands for every role this degree commonly feeds, so you can check a fee against a realistic outcome before enrolling.`,
+  });
+
+  if (f.specialisations.length) {
+    out.push({
+      question: `Which specialisation should you pick in an online ${f.shortName}?`,
+      answer: `There are ${f.specialisations.length} specialisations across the universities listed here, including ${f.specialisations.slice(0, 4).map((s) => s.name).join(", ")}. Pick the one that matches the job title you want next, then check which universities actually run it — several are offered by only one or two.`,
+    });
+  }
+
+  out.push({
+    question: `How long does an online ${f.shortName} take?`,
+    answer: `The standard duration is ${f.durationLabel}. Most Indian universities allow a maximum period of roughly double that, so a working professional can pause a semester without losing credits already earned.`,
+  });
+
+  out.push({
+    question: `Online ${f.shortName} vs regular ${f.shortName} — what is the difference?`,
+    answer: `The degree certificate and its legal standing are the same when the university is entitled. What differs is delivery and campus placement: online learners study asynchronously and get career services rather than a campus placement channel, which suits people already working and suits fresh graduates less well.`,
+  });
+
+  return out;
+}
+
+export function familyTitleIntent(f: FamilyLike): { title: string; description: string; keywords: string[] } {
+  const year = new Date().getFullYear() + (new Date().getMonth() >= 8 ? 1 : 0);
+  if (f.feeMin && f.feeMax) {
+    return {
+      title: `${f.name} in India ${year}: Fees ${inr(f.feeMin)}–${inr(f.feeMax)}, Best Universities`,
+      description: `${f.name} fees compared across ${f.offers.length} UGC-entitled universities — ${inr(f.feeMin)} to ${inr(f.feeMax)} total, ${f.durationLabel}, ${f.specialisations.length} specialisations, eligibility and admission dates.`,
+      keywords: [`${f.name} fees`, `cheapest ${f.name}`, `${f.name} in india`, `best universities for ${f.name}`],
+    };
+  }
+  return {
+    title: `${f.name} in India ${year}: Fees, Eligibility & Best Universities`,
+    description: `${f.name} compared across ${f.offers.length} universities — ${f.feeRangeLabel} fee band, ${f.durationLabel}, eligibility, specialisations and how to choose.`,
+    keywords: [`${f.name} fees`, `${f.name} eligibility`, `${f.name} in india`],
   };
 }

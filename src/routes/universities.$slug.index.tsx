@@ -72,6 +72,8 @@ import {
   universityDecisionHeading,
 } from "@/components/university/DifferentiationSections";
 import { universityFeeValue, universityHeadings } from "@/lib/pageDifferentiation";
+import { universityQuestions, universityTitleIntent, universityVerdict } from "@/lib/pageVerdict";
+import { QuestionBlock } from "@/components/common/QuestionBlock";
 import { universityIntro } from "@/lib/pageNarrative";
 
 import {
@@ -127,9 +129,14 @@ export const Route = createFileRoute("/universities/$slug/")({
     if (!loaderData) {
       return { meta: [{ title: "University not found" }, { name: "robots", content: "noindex" }] };
     }
+    // One title, one intent — chosen from this university's own catalogue
+    // (fee-spread led, breadth led, or recognition led) so 21 hub pages stop
+    // competing on the same "fees, courses, admission" phrasing.
+    const record = universityProfile(params.slug)?.record;
+    const intent = record ? universityTitleIntent(record) : null;
     const headings = universityHeadings(loaderData);
-    const title = headings.title;
-    const description = headings.description;
+    const title = intent?.title ?? headings.title;
+    const description = intent?.description ?? headings.description;
     return {
       meta: pageMeta({
         title,
@@ -137,7 +144,7 @@ export const Route = createFileRoute("/universities/$slug/")({
         path,
         modifiedTime: loaderData.lastUpdated,
         author: "Degreekhojo Editorial Desk",
-        keywords: [
+        keywords: intent?.keywords ?? [
           `${loaderData.shortName} fees`,
           `${loaderData.shortName} admission`,
           `${loaderData.shortName} review`,
@@ -219,6 +226,13 @@ function Page() {
   const hasFeeValue = Boolean(universityFeeValue(slug));
   const offeringCount = listOfferingsByUniversity(slug).length;
 
+  // De-templating + query-expansion layer (see src/lib/pageVerdict.ts).
+  const verdict = universityVerdict(u);
+  const questions = universityQuestions(
+    u,
+    universityLinks(u.slug).slice(0, 3).map((l) => ({ shortName: l.label.replace(/\s*\(.*\)$/, "") })),
+  );
+
   const faqs = [
     {
       question: `Is a degree from ${u.shortName} valid for jobs and higher studies?`,
@@ -269,6 +283,7 @@ function Page() {
           "Things to consider",
           "Who it suits",
           "Student reviews",
+          "Common questions",
           "Compare universities",
           ...(decisionHeading ? [decisionHeading] : ["Who may consider this university"]),
           "What to verify before applying",
@@ -298,7 +313,7 @@ function Page() {
         <SectionPanel id="overview">
           <AnswerFirst
             heading={`${u.shortName} online degrees at a glance`}
-            answer={`${u.name} is a ${[u.type, "university"].filter(Boolean).join(" ")} in ${u.city}, ${u.state} offering ${offeringCount} online / distance programmes across ${u.modes.join(" / ").toLowerCase()} mode. Fees run in the ${u.feeRangeLabel} band and the university holds ${approvalText(u)}. Eligibility follows the standard rule for each level — 10+2 for bachelor's programmes and a bachelor's degree for master's programmes — with admission open through the steps listed below. Our verdict: ${u.verdict ?? `${u.shortName} suits learners who want a recognised online degree with fees that stay predictable across the full programme.`}`}
+            answer={verdict
             facts={[
               { label: "Fee range", value: u.feeRangeLabel },
               {
@@ -310,6 +325,11 @@ function Page() {
               { label: "Mode", value: u.modes.join(" / ") },
             ]}
             verifiedOn={u.lastUpdated}
+          />
+
+          <QuestionBlock
+            heading={`${u.shortName}: the questions people actually ask`}
+            questions={questions}
           />
 
           <ContentSection title="At a glance">
@@ -503,7 +523,7 @@ function Page() {
       </DetailLayout>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema([...faqs, ...questions])) }}
       />
       <script
         type="application/ld+json"
