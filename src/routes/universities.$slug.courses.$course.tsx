@@ -353,7 +353,7 @@ function Page() {
 
         </SectionPanel>
 
-        <SectionPanel id="syllabus-specialisations">
+        <SectionPanel id="syllabus-specialisations" footer={false}>
         <ContentSection title="Specialisations">
           <SpecialisationBoxes
             scrolling
@@ -378,7 +378,7 @@ function Page() {
 
         </SectionPanel>
 
-        <SectionPanel id="fees">
+        <SectionPanel id="fees" footer={false}>
         <ContentSection title="Fee structure">
           <FeeHighlight fee={offering.fee} duration={offering.durationLabel} />
           <FeeComponents fee={offering.fee} />
@@ -516,7 +516,7 @@ function Page() {
 
         </SectionPanel>
 
-        <SectionPanel id="fees" footer={false}>
+        <SectionPanel id="fees">
         <ContentSection title="Scholarships">
           <ScholarshipCategories
             scholarships={master.scholarships}
@@ -533,7 +533,7 @@ function Page() {
 
         </SectionPanel>
 
-        <SectionPanel id="syllabus-specialisations" footer={false}>
+        <SectionPanel id="syllabus-specialisations">
         <ContentSection title="Learning experience" collapsible>
           <LearningSupport universityShort={u.shortName} />
         </ContentSection>

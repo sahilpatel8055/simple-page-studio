@@ -218,11 +218,14 @@ export function SectionPanel({
 }) {
   const { active, showAll } = useTabs();
   const isActive = showAll || active === id;
+  // A group can be split into several panels when its sections are interleaved
+  // with other groups; only the panel that owns the footer carries the DOM id
+  // so `panel-<id>` stays unique.
   return (
     <div
       data-panel={id}
       data-active={isActive ? "true" : "false"}
-      id={`panel-${id}`}
+      {...(footer ? { id: `panel-${id}` } : {})}
       role="tabpanel"
       aria-labelledby={`tab-${id}`}
       className="space-y-10 data-[active=false]:hidden"
