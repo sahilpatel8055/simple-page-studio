@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 /**
  * Lightweight, client-only lead intelligence.
  *
@@ -85,6 +87,22 @@ export function whatsappLink(intent?: string) {
     lead.name ? `Name: ${lead.name}` : "",
   ].filter(Boolean);
   return `https://wa.me/${DK_WA}?text=${encodeURIComponent(bits.join("\n"))}`;
+}
+
+/**
+ * SSR-safe version of `whatsappLink`: the first render matches the server
+ * (plain intent text), then the stored university/course context is folded in
+ * after hydration.
+ */
+export function useWhatsappLink(intent?: string) {
+  const base = `https://wa.me/${DK_WA}?text=${encodeURIComponent(
+    intent || "Hi, I want admission guidance for an online degree.",
+  )}`;
+  const [href, setHref] = useState(base);
+  useEffect(() => {
+    setHref(whatsappLink(intent));
+  }, [intent]);
+  return href;
 }
 
 /** Callback slots offered in lead forms. */

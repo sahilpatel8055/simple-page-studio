@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouterState } from "@tanstack/react-router";
 import { Download, FileText } from "lucide-react";
-import { getLeadContext, whatsappLink } from "@/lib/leadContext";
+import { getLeadContext, useWhatsappLink } from "@/lib/leadContext";
 import { trackContactClick } from "@/lib/leads";
 import { universities } from "@/lib/content";
 import { usePopupSurface } from "@/components/common/PopupManager";
@@ -24,6 +24,7 @@ export function WhatsAppFeeBar() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { openCounselling } = usePopupSurface();
   const [waLabel, setWaLabel] = useState("Fees on WhatsApp");
+  const waHref = useWhatsappLink("Hi, please share the full fee structure and EMI options.");
 
   const relevant = /^\/(universities|courses|compare|online-courses|university)\//.test(pathname);
 
@@ -46,7 +47,7 @@ export function WhatsAppFeeBar() {
         Apply
       </button>
       <a
-        href={whatsappLink("Hi, please share the full fee structure and EMI options.")}
+        href={waHref}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackContactClick("WhatsApp", "Sticky action bar")}

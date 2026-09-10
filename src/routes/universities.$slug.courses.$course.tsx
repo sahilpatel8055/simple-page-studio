@@ -2,6 +2,8 @@ import { UniversityPackLinks } from "@/components/comparison/PackHeadToHead";
 import { QuickEnquiry } from "@/components/common/QuickEnquiry";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
+import { SectionPanel } from "@/components/common/SectionTabs";
+import { UNI_COURSE_GROUPS } from "@/lib/pageGroups";
 import { UNI_COURSE_SECTION_ANCHORS } from "@/lib/uniCourseAnchors";
 import { SectionUrlGrid } from "@/components/course/SectionHub";
 import { PromoBanner } from "@/components/course/PromoBanner";
@@ -304,7 +306,9 @@ function Page() {
             ]}
           />
         }
+        groups={UNI_COURSE_GROUPS}
       >
+        <SectionPanel id="overview">
         <AnswerFirst
           heading={`${u.shortName} ${p.name} at a glance`}
           answer={`The ${p.name} at ${u.name} runs for ${offering.durationLabel} in ${p.mode.join(" / ").toLowerCase()} mode and sits in the ${p.feeRangeLabel} fee band${
@@ -347,6 +351,9 @@ function Page() {
           <ApprovalMarquee approvals={u.approvals} />
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="syllabus-specialisations" footer={false}>
         <ContentSection title="Specialisations">
           <SpecialisationBoxes
             scrolling
@@ -369,6 +376,9 @@ function Page() {
           )}
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="fees" footer={false}>
         <ContentSection title="Fee structure">
           <FeeHighlight fee={offering.fee} duration={offering.durationLabel} />
           <FeeComponents fee={offering.fee} />
@@ -389,6 +399,9 @@ function Page() {
           />
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="syllabus-specialisations" footer={false}>
         {master.course ? (
           <ContentSection title="Curriculum">
             <CurriculumSection
@@ -407,12 +420,18 @@ function Page() {
           </ContentSection>
         ) : null}
 
+        </SectionPanel>
+
+        <SectionPanel id="validity-worth-it" footer={false}>
         {degreeSample(u.slug) && (
           <ContentSection title="Sample degree">
             <SampleDegreeSection universityName={u.name} universitySlug={u.slug} />
           </ContentSection>
         )}
 
+        </SectionPanel>
+
+        <SectionPanel id="eligibility-admission">
         <ContentSection title="Eligibility">
           <p>{p.eligibility}</p>
           {master.eligibility && <p>{master.eligibility}</p>}
@@ -439,6 +458,9 @@ function Page() {
           </div>
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="syllabus-specialisations" footer={false}>
         <ContentSection title="Examination pattern" collapsible>
           <div className="rounded-2xl border-2 border-brand p-4 sm:p-5">
             <SectionBanner kind="examination" />
@@ -451,6 +473,9 @@ function Page() {
           </div>
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="career-placement">
         <ContentSection title="Placement support">
           <PlacementSupportSection universitySlug={u.slug} universityShort={u.shortName} />
         </ContentSection>
@@ -489,6 +514,9 @@ function Page() {
           />
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="fees">
         <ContentSection title="Scholarships">
           <ScholarshipCategories
             scholarships={master.scholarships}
@@ -503,10 +531,16 @@ function Page() {
           />
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="syllabus-specialisations">
         <ContentSection title="Learning experience" collapsible>
           <LearningSupport universityShort={u.shortName} />
         </ContentSection>
 
+        </SectionPanel>
+
+        <SectionPanel id="validity-worth-it">
         <ContentSection title="Who should choose it">
           <ProgrammeDecision
             programmeName={p.name}
@@ -599,6 +633,7 @@ function Page() {
         <References
           items={[{ label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" }]}
         />
+        </SectionPanel>
       </DetailLayout>
       <script
         type="application/ld+json"

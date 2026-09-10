@@ -1,5 +1,5 @@
 import { Download, FileText } from "lucide-react";
-import { whatsappLink } from "@/lib/leadContext";
+import { useWhatsappLink } from "@/lib/leadContext";
 import { trackContactClick } from "@/lib/leads";
 import { usePopupSurface } from "@/components/common/PopupManager";
 
@@ -16,6 +16,7 @@ export function ActionRow({
   compact?: boolean;
 }) {
   const { openCounselling } = usePopupSurface();
+  const waHref = useWhatsappLink(waMessage);
   const size = compact ? "min-h-10 px-3 text-[0.82rem]" : "min-h-11 px-4 text-sm";
 
   return (
@@ -29,7 +30,7 @@ export function ActionRow({
         Apply now
       </button>
       <a
-        href={whatsappLink(waMessage)}
+        href={waHref}
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackContactClick("WhatsApp", "Above-fold action row")}

@@ -31,3 +31,16 @@ export const UNIVERSITY_GROUPS = [
   { id: "reviews", label: "Reviews" },
   { id: "faqs", label: "FAQs" },
 ] as const satisfies readonly PageGroup[];
+
+export type UniversityGroupId = (typeof UNIVERSITY_GROUPS)[number]["id"];
+
+/** University × course pages: same reading order, minus the universities list. */
+export const UNI_COURSE_GROUPS = [
+  { id: "overview", label: "Overview" },
+  { id: "fees", label: "Fees & Scholarships" },
+  { id: "eligibility-admission", label: "Eligibility & Admission" },
+  { id: "syllabus-specialisations", label: "Syllabus & Exams" },
+  { id: "career-placement", label: "Career & Placement" },
+  { id: "validity-worth-it", label: "Validity & Worth It" },
+  { id: "faqs", label: "FAQs" },
+] as const satisfies readonly PageGroup[];
