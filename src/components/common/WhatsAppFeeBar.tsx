@@ -24,6 +24,7 @@ export function WhatsAppFeeBar() {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const { openCounselling } = usePopupSurface();
   const [waLabel, setWaLabel] = useState("Fees on WhatsApp");
+  const waHref = useWhatsappLink("Hi, please share the full fee structure and EMI options.");
 
   const relevant = /^\/(universities|courses|compare|online-courses|university)\//.test(pathname);
 
