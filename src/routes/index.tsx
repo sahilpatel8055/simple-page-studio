@@ -36,7 +36,7 @@ import {
 } from "@/lib/content";
 import { canonical, faqSchema, jsonLd, pageMeta, websiteSchema } from "@/lib/seo";
 
-const title = "Top Online Universities: Compare Fees, Programs and EMI - Degreekhojo";
+const title = "Top Online & Distance Universities: Compare Fees, Programs and EMI 2026 - Degreekhojo";
 const description =
   "Explore and compare top online and distance universities in India based on fees, courses, admissions, approvals, placements and EMI options. Make an informed choice with Degreekhojo.";
 
