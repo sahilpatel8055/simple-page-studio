@@ -89,25 +89,14 @@ export function DetailLayout({
         </div>
       </div>
 
-      {tocSections && tocSections.length > 1 && <SectionNav sections={tocSections} />}
-
-      <div className="container-page grid gap-10 py-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-14 lg:py-16">
-        <main className="min-w-0 space-y-12">
-          {children}
-          <section id="faqs">
-            <Faq items={faqs} />
-          </section>
-          {related}
-          <CTASection />
-        </main>
-
-        <aside className="min-w-0 space-y-6 lg:sticky lg:top-24 lg:self-start">
-          <TableOfContents sections={tocSections} />
-          {!hideLeadForm && <LeadCaptureCard />}
-          {sidebarExtras}
-          <TrustCard />
-        </aside>
-      </div>
+      {groups ? (
+        <SectionTabs groups={groups}>{body}</SectionTabs>
+      ) : (
+        <>
+          {tocSections && tocSections.length > 1 && <SectionNav sections={tocSections} />}
+          {body}
+        </>
+      )}
     </>
   );
 }
