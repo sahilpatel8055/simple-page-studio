@@ -84,7 +84,7 @@ export const Route = createFileRoute("/courses/$course/")({
       const { family, content } = found;
       // One primary intent per pillar: fee-led when the dataset publishes real
       // totals, otherwise the editorial title.
-      const intent = familyTitleIntent(family);
+      const intent = familyTitleIntent(family, ADMISSION_YEAR);
       const title = serpTitle(
         intent.title || content.seo.title.replace("{year}", String(ADMISSION_YEAR)),
       );
