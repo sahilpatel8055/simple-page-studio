@@ -10,6 +10,11 @@ import { SectionBanner } from "@/components/common/SectionBanner";
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForCourse } from "@/data/university-blogs";
 import { COURSE_GROUPS } from "@/lib/pageGroups";
+import { AnswerFirst } from "@/components/university/AnswerFirst";
+import { QuestionBlock } from "@/components/common/QuestionBlock";
+import { TopFeeSnapshot } from "@/components/course/TopFeeSnapshot";
+import { familyQuestions, familyVerdict } from "@/lib/pageVerdict";
+
 
 import { CompareUniversities } from "@/components/course/CompareUniversities";
 import {
