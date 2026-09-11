@@ -1,4 +1,5 @@
 import { AppLink } from "@/components/common/AppLink";
+import { LeadHeadline } from "@/components/common/Headline";
 
 export type AnswerFirstFact = { label: string; value: string; href?: string };
 
