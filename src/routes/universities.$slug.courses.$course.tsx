@@ -68,7 +68,7 @@ import {
   onlineName,
   providerLinks,
 } from "@/lib/entities";
-import { specLandingPath } from "@/lib/courseFamily";
+import { familyForProgrammeSlug, specLandingPath } from "@/lib/courseFamily";
 import { offeringCtrMeta } from "@/lib/intentMap";
 import { offeringNarrative } from "@/lib/pageNarrative";
 import { offeringQuestions, offeringTitleIntent, offeringVerdict } from "@/lib/pageVerdict";
