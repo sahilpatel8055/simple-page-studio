@@ -251,6 +251,10 @@ function Page() {
   const questions = offeringQuestions({ offering, university: u, programme: p, path: profile.path }, rivals);
   const allFaqs = [...faqs, ...questions];
   const verdict = offeringVerdict({ offering, university: u, programme: p, path: profile.path });
+  // Upward link to the programme pillar, so the 250+ university-course pages
+  // point strength back at the page that should rank for the generic term.
+  const pillar = familyForProgrammeSlug(p.slug);
+
 
 
   return (
