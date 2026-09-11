@@ -3,7 +3,9 @@ import { CoursePageTemplate } from "@/components/templates/CoursePageTemplate";
 import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
 import { courseFamilyList, familyForProgrammeSlug } from "@/lib/courseFamily";
-import { webPageSchema } from "@/lib/seo";
+import { serpDescription, serpTitle, webPageSchema } from "@/lib/seo";
+import { familyQuestions, familyTitleIntent } from "@/lib/pageVerdict";
+
 import { familyModes, programmeModes } from "@/lib/deliveryMode";
 import { canonicalProgrammeSlug, pillarCtrMeta } from "@/lib/intentMap";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
@@ -80,10 +82,23 @@ export const Route = createFileRoute("/courses/$course/")({
     const found = courseContentBySlug(params.course);
     if (found) {
       const { family, content } = found;
-      const title = content.seo.title.replace("{year}", String(ADMISSION_YEAR));
-      const description = content.seo.description.replace("{year}", String(ADMISSION_YEAR));
+      // One primary intent per pillar: fee-led when the dataset publishes real
+      // totals, otherwise the editorial title.
+      const intent = familyTitleIntent(family, ADMISSION_YEAR);
+      const title = serpTitle(
+        intent.title || content.seo.title.replace("{year}", String(ADMISSION_YEAR)),
+      );
+      const description = serpDescription(
+        intent.description || content.seo.description.replace("{year}", String(ADMISSION_YEAR)),
+      );
+      const pillarQuestions = familyQuestions(family);
       return {
-        meta: pageMeta({ title, description, path, keywords: content.seo.keywords }),
+        meta: pageMeta({
+          title,
+          description,
+          path,
+          keywords: [...intent.keywords, ...content.seo.keywords],
+        }),
         links: canonical(path),
         scripts: [
           jsonLd(webPageSchema({ name: title, description, path })),
@@ -96,7 +111,13 @@ export const Route = createFileRoute("/courses/$course/")({
               level: family.level === "PG" ? "Postgraduate" : "Undergraduate",
             }),
           ),
-          jsonLd(faqSchema(content.faqs.map((f) => ({ question: f.question, answer: f.answer })))),
+          jsonLd(
+            faqSchema([
+              ...pillarQuestions.map((q) => ({ question: q.question, answer: q.answer })),
+              ...content.faqs.map((f) => ({ question: f.question, answer: f.answer })),
+            ]),
+          ),
+
           jsonLd(
             itemListSchema(
               family.offers.map((o) => ({

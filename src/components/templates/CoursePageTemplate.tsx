@@ -10,6 +10,11 @@ import { SectionBanner } from "@/components/common/SectionBanner";
 import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForCourse } from "@/data/university-blogs";
 import { COURSE_GROUPS } from "@/lib/pageGroups";
+import { AnswerFirst } from "@/components/university/AnswerFirst";
+import { QuestionBlock } from "@/components/common/QuestionBlock";
+import { TopFeeSnapshot } from "@/components/course/TopFeeSnapshot";
+import { familyQuestions, familyVerdict } from "@/lib/pageVerdict";
+
 
 import { CompareUniversities } from "@/components/course/CompareUniversities";
 import {
@@ -147,7 +152,34 @@ export function CoursePageTemplate({
           <main className="min-w-0">
             {/* 1 — Overview */}
             <SectionPanel id="overview">
+              <AnswerFirst
+                heading={`${family.name}: the short answer`}
+                answer={familyVerdict(family)}
+                facts={[
+                  { label: "Fee range", value: family.feeRangeLabel },
+                  { label: "Duration", value: family.durationLabel },
+                  {
+                    label: "Eligibility",
+                    value: family.level === "PG" ? "Bachelor's degree" : "10+2 or equivalent",
+                  },
+                  { label: "Universities", value: String(family.offers.length) },
+                ]}
+                {...(family.lastVerified ? { verifiedOn: family.lastVerified } : {})}
+              />
+
+              <TopFeeSnapshot
+                offers={family.offers}
+                courseName={family.name}
+                feesHref={`${family.path}/fees`}
+              />
+
+              <QuestionBlock
+                heading={`${family.name}: the questions people actually ask`}
+                questions={familyQuestions(family)}
+              />
+
               <Section title={`${family.name} at a glance`} tone="cream">
+
                 <GlanceTable
                   rows={[
                     { parameter: "Course", detail: family.name },

@@ -68,7 +68,7 @@ import {
   onlineName,
   providerLinks,
 } from "@/lib/entities";
-import { specLandingPath } from "@/lib/courseFamily";
+import { familyForProgrammeSlug, specLandingPath } from "@/lib/courseFamily";
 import { offeringCtrMeta } from "@/lib/intentMap";
 import { offeringNarrative } from "@/lib/pageNarrative";
 import { offeringQuestions, offeringTitleIntent, offeringVerdict } from "@/lib/pageVerdict";
@@ -251,6 +251,10 @@ function Page() {
   const questions = offeringQuestions({ offering, university: u, programme: p, path: profile.path }, rivals);
   const allFaqs = [...faqs, ...questions];
   const verdict = offeringVerdict({ offering, university: u, programme: p, path: profile.path });
+  // Upward link to the programme pillar, so the 250+ university-course pages
+  // point strength back at the page that should rank for the generic term.
+  const pillar = familyForProgrammeSlug(p.slug);
+
 
 
   return (
@@ -316,6 +320,24 @@ function Page() {
         related={
           <RelatedLinkGrid
             groups={[
+              ...(pillar
+                ? [
+                    {
+                      title: `All ${pillar.name} universities`,
+                      links: [
+                        {
+                          label: `${pillar.name}: fees, eligibility & all universities`,
+                          href: pillar.path,
+                        },
+                        { label: `${pillar.name} fees compared`, href: `${pillar.path}/fees` },
+                        {
+                          label: `${pillar.name} eligibility`,
+                          href: `${pillar.path}/eligibility`,
+                        },
+                      ],
+                    },
+                  ]
+                : []),
               { title: `${p.name} elsewhere`, links: providerLinks(p.slug) },
               { title: `More from ${u.shortName}`, links: offeringLinks(u.slug) },
               { title: "Comparisons", links: comparisonLinks(u.slug) },
@@ -323,6 +345,7 @@ function Page() {
             ]}
           />
         }
+
         groups={UNI_COURSE_GROUPS}
       >
         <SectionPanel id="overview">
@@ -367,7 +390,16 @@ function Page() {
           ))}
           <p>{u.verdict}</p>
           <ApprovalMarquee approvals={u.approvals} />
+          {pillar && (
+            <p className="rounded-xl border border-brand/30 bg-brand-soft/40 px-4 py-3 text-sm">
+              Comparing universities?{" "}
+              <AppLink to={pillar.path} className="font-bold text-brand hover:underline">
+                See {pillar.name} fees, eligibility and every university offering it →
+              </AppLink>
+            </p>
+          )}
         </ContentSection>
+
 
         <ContentSection title="Specialisations at a glance">
           <SpecialisationBoxes
