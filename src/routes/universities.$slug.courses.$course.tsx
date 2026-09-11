@@ -320,6 +320,24 @@ function Page() {
         related={
           <RelatedLinkGrid
             groups={[
+              ...(pillar
+                ? [
+                    {
+                      title: `All ${pillar.name} universities`,
+                      links: [
+                        {
+                          label: `${pillar.name}: fees, eligibility & all universities`,
+                          href: pillar.path,
+                        },
+                        { label: `${pillar.name} fees compared`, href: `${pillar.path}/fees` },
+                        {
+                          label: `${pillar.name} eligibility`,
+                          href: `${pillar.path}/eligibility`,
+                        },
+                      ],
+                    },
+                  ]
+                : []),
               { title: `${p.name} elsewhere`, links: providerLinks(p.slug) },
               { title: `More from ${u.shortName}`, links: offeringLinks(u.slug) },
               { title: "Comparisons", links: comparisonLinks(u.slug) },
@@ -327,6 +345,7 @@ function Page() {
             ]}
           />
         }
+
         groups={UNI_COURSE_GROUPS}
       >
         <SectionPanel id="overview">
