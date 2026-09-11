@@ -134,7 +134,7 @@ export function WriteReview({
           </div>
           <div className="sm:col-span-2 flex flex-wrap gap-3">
             <button type="submit" className="btn btn-primary">
-              Submit for verification
+              Publish my review
             </button>
             <button type="button" className="btn btn-secondary" onClick={() => setOpen(false)}>
               Cancel
@@ -147,8 +147,8 @@ export function WriteReview({
         <p className="mt-6 flex items-start gap-2 rounded-xl border border-border bg-background p-4 text-sm">
           <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-brand" />
           <span>
-            Thanks — your review is in the verification queue. Our editorial team checks enrolment
-            proof before publishing, usually within 3 working days.
+            Thanks — your review is published. It now appears with the other student reviews on this
+            page.
           </span>
         </p>
       )}
