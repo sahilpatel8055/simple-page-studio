@@ -13,6 +13,7 @@ import { COURSE_GROUPS } from "@/lib/pageGroups";
 import { AnswerFirst } from "@/components/university/AnswerFirst";
 import { QuestionBlock } from "@/components/common/QuestionBlock";
 import { TopFeeSnapshot } from "@/components/course/TopFeeSnapshot";
+import { FutureOutlook } from "@/components/course/FutureOutlook";
 import { familyQuestions, familyVerdict } from "@/lib/pageVerdict";
 
 
@@ -237,6 +238,8 @@ export function CoursePageTemplate({
               <Section title="Who it may not suit">
                 <TickList items={content.worthItNo} />
               </Section>
+
+              <FutureOutlook courseName={family.name} shortName={family.shortName} />
             </SectionPanel>
 
             {/* 2 — Universities & Fees */}
