@@ -1,4 +1,5 @@
 import { AppLink } from "@/components/common/AppLink";
+import { onSectionAnchorClick } from "@/lib/scrollToSection";
 import {
   COURSE_SECTION_KEYS,
   courseSectionLabels,
@@ -45,7 +46,12 @@ export function SectionUrlGrid({
               {courseSectionLabels[key]}
             </span>
           ) : anchors ? (
-            <a key={key} href={`#${anchors[key]}`} className={className}>
+            <a
+              key={key}
+              href={`#${anchors[key]}`}
+              onClick={(e) => onSectionAnchorClick(e, anchors[key])}
+              className={className}
+            >
               {courseSectionLabels[key]}
             </a>
           ) : (

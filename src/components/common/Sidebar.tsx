@@ -3,6 +3,7 @@ import { Phone, ShieldCheck, Star } from "lucide-react";
 import { submitLead } from "@/lib/leads";
 import { savePartialLead } from "@/lib/leadContext";
 import { AppLink } from "./AppLink";
+import { onSectionAnchorClick } from "@/lib/scrollToSection";
 
 /** Sticky table of contents placeholder — headings come from CMS content later. */
 export function TableOfContents({
@@ -17,10 +18,13 @@ export function TableOfContents({
         On this page
       </p>
       <ol className="space-y-2 border-l border-border pl-4">
-        {sections.map((s, i) => (
+        {sections.map((s, i) => {
+          const id = s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+          return (
           <li key={s}>
             <a
-              href={`#${s.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+              href={`#${id}`}
+              onClick={(e) => onSectionAnchorClick(e, id)}
               className={
                 i === 0
                   ? "-ml-4 block border-l-2 border-brand pl-4 text-sm font-semibold text-brand"
@@ -30,7 +34,8 @@ export function TableOfContents({
               {s}
             </a>
           </li>
-        ))}
+          );
+        })}
       </ol>
     </nav>
   );

@@ -15,6 +15,7 @@ import {
   UserRound,
 } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
+import { onSectionAnchorClick } from "@/lib/scrollToSection";
 import { DataTable } from "@/components/common/Blocks";
 import { ContentSection } from "@/components/templates/DetailLayout";
 import type { PostBlock, PostContent } from "@/data/posts";
@@ -100,6 +101,7 @@ export function MobileToc({ sections }: { sections: string[] }) {
             <span className="w-5 shrink-0 tabular-nums text-xs font-bold text-brand">{i + 1}.</span>
             <a
               href={`#${anchor(s)}`}
+              onClick={(e) => onSectionAnchorClick(e, anchor(s))}
               className="min-h-[1.75rem] text-muted-foreground hover:text-brand"
             >
               {s}
