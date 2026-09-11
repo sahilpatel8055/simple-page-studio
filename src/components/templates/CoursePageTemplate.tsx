@@ -147,7 +147,34 @@ export function CoursePageTemplate({
           <main className="min-w-0">
             {/* 1 — Overview */}
             <SectionPanel id="overview">
+              <AnswerFirst
+                heading={`${family.name}: the short answer`}
+                answer={familyVerdict(family)}
+                facts={[
+                  { label: "Fee range", value: family.feeRangeLabel },
+                  { label: "Duration", value: family.durationLabel },
+                  {
+                    label: "Eligibility",
+                    value: family.level === "PG" ? "Bachelor's degree" : "10+2 or equivalent",
+                  },
+                  { label: "Universities", value: String(family.offers.length) },
+                ]}
+                {...(family.lastVerified ? { verifiedOn: family.lastVerified } : {})}
+              />
+
+              <TopFeeSnapshot
+                offers={family.offers}
+                courseName={family.name}
+                feesHref={`${family.path}/fees`}
+              />
+
+              <QuestionBlock
+                heading={`${family.name}: the questions people actually ask`}
+                questions={familyQuestions(family)}
+              />
+
               <Section title={`${family.name} at a glance`} tone="cream">
+
                 <GlanceTable
                   rows={[
                     { parameter: "Course", detail: family.name },
