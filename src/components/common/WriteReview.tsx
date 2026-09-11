@@ -10,7 +10,13 @@ const label = "mb-1.5 block text-[0.7rem] font-bold uppercase tracking-wide text
  * Learner review submission. Reviews are queued for manual verification before
  * they are published — we only publish reviews traceable to an enrolled learner.
  */
-export function WriteReview() {
+export function WriteReview({
+  universitySlug,
+  universityName,
+}: {
+  universitySlug?: string;
+  universityName?: string;
+} = {}) {
   const [open, setOpen] = useState(false);
   const [sent, setSent] = useState(false);
   const [rating, setRating] = useState(5);
@@ -19,10 +25,12 @@ export function WriteReview() {
     <section className="rounded-2xl border border-border bg-secondary/40 p-5 sm:p-6">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <h2 className="font-display text-lg font-bold">Studied online? Write a review</h2>
+          <h2 className="font-display text-lg font-bold">
+            {universityName ? `Studied at ${universityName}? Write a review` : "Studied online? Write a review"}
+          </h2>
           <p className="mt-1 max-w-xl text-sm text-muted-foreground">
-            Share your experience of fees, faculty, LMS and exams. Every submission is verified
-            against enrolment proof before it goes live.
+            Share your experience of fees, faculty, LMS and exams. Your review is published straight
+            away so other students can read it.
           </p>
         </div>
         {!open && (
