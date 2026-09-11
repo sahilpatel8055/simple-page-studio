@@ -3,7 +3,9 @@ import { CoursePageTemplate } from "@/components/templates/CoursePageTemplate";
 import { courseContentBySlug } from "@/data/course-pages";
 import { ADMISSION_YEAR } from "@/data/course-pages/types";
 import { courseFamilyList, familyForProgrammeSlug } from "@/lib/courseFamily";
-import { webPageSchema } from "@/lib/seo";
+import { serpDescription, serpTitle, webPageSchema } from "@/lib/seo";
+import { familyQuestions, familyTitleIntent } from "@/lib/pageVerdict";
+
 import { familyModes, programmeModes } from "@/lib/deliveryMode";
 import { canonicalProgrammeSlug, pillarCtrMeta } from "@/lib/intentMap";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
