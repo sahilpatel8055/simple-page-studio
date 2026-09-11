@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
+import { onSectionAnchorClick } from "@/lib/scrollToSection";
 
 const slugify = (s: string) =>
   s
@@ -65,6 +66,7 @@ export function SectionNav({ sections }: { sections: string[] }) {
               <li key={s}>
                 <a
                   href={`#${id}`}
+                  onClick={(e) => onSectionAnchorClick(e, id)}
                   data-chip={id}
                   aria-current={active === id ? "true" : undefined}
                   className={cn(

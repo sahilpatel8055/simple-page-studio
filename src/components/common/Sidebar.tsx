@@ -3,6 +3,7 @@ import { Phone, ShieldCheck, Star } from "lucide-react";
 import { submitLead } from "@/lib/leads";
 import { savePartialLead } from "@/lib/leadContext";
 import { AppLink } from "./AppLink";
+import { onSectionAnchorClick } from "@/lib/scrollToSection";
 
 /** Sticky table of contents placeholder — headings come from CMS content later. */
 export function TableOfContents({
