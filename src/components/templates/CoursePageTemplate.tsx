@@ -154,7 +154,7 @@ export function CoursePageTemplate({
             {/* 1 — Overview */}
             <SectionPanel id="overview">
               <AnswerFirst
-                heading={`${family.name}: the short answer`}
+                heading={`All about ${family.name}: fees, eligibility, admission, syllabus, specialisations and placements`}
                 answer={familyVerdict(family)}
                 facts={[
                   { label: "Fee range", value: family.feeRangeLabel },
@@ -228,7 +228,7 @@ export function CoursePageTemplate({
               </Section>
 
               <Section title="Overview">
-                <Prose paragraphs={content.overview} />
+                <CollapsibleProse paragraphs={content.overview} visible={2} />
               </Section>
 
               <Section title="Who should consider it">
