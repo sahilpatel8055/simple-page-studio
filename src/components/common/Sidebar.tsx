@@ -18,10 +18,13 @@ export function TableOfContents({
         On this page
       </p>
       <ol className="space-y-2 border-l border-border pl-4">
-        {sections.map((s, i) => (
+        {sections.map((s, i) => {
+          const id = s.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+          return (
           <li key={s}>
             <a
-              href={`#${s.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`}
+              href={`#${id}`}
+              onClick={(e) => onSectionAnchorClick(e, id)}
               className={
                 i === 0
                   ? "-ml-4 block border-l-2 border-brand pl-4 text-sm font-semibold text-brand"

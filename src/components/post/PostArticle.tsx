@@ -15,6 +15,7 @@ import {
   UserRound,
 } from "lucide-react";
 import { AppLink } from "@/components/common/AppLink";
+import { onSectionAnchorClick } from "@/lib/scrollToSection";
 import { DataTable } from "@/components/common/Blocks";
 import { ContentSection } from "@/components/templates/DetailLayout";
 import type { PostBlock, PostContent } from "@/data/posts";
