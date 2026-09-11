@@ -52,7 +52,10 @@ import { feeTableFor } from "@/data/university-fee-tables";
 import { degreeSample } from "@/lib/assets";
 import { FeeStructureTable } from "@/components/university/FeeStructureTable";
 import { SampleDegreeSection } from "@/components/university/SampleDegreeSection";
-import { UniversityOnlineFacts } from "@/components/university/UniversityOnlineFacts";
+import {
+  hasUniversityOnlineFacts,
+  UniversityOnlineFacts,
+} from "@/components/university/UniversityOnlineFacts";
 import { SectionBanner } from "@/components/common/SectionBanner";
 import { HiringPartners } from "@/components/university/HiringPartners";
 import { sectionLabels, universitySectionPages } from "@/lib/insightsData";
@@ -367,9 +370,11 @@ function Page() {
             </ContentSection>
           )}
 
-          <ContentSection title="Online facts">
-            <UniversityOnlineFacts universitySlug={slug} universityShort={u.shortName} />
-          </ContentSection>
+          {hasUniversityOnlineFacts(slug) && (
+            <ContentSection title="Online facts">
+              <UniversityOnlineFacts universitySlug={slug} universityShort={u.shortName} />
+            </ContentSection>
+          )}
 
           {hasDegreeSample && (
             <ContentSection title="Sample degree">

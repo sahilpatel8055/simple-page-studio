@@ -68,6 +68,10 @@ const onlineFacts: Record<string, string[]> = {
   ],
 };
 
+export function hasUniversityOnlineFacts(universitySlug: string) {
+  return Boolean(onlineFacts[universitySlug]?.length);
+}
+
 export function UniversityOnlineFacts({
   universitySlug,
   universityShort,
