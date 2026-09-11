@@ -390,7 +390,16 @@ function Page() {
           ))}
           <p>{u.verdict}</p>
           <ApprovalMarquee approvals={u.approvals} />
+          {pillar && (
+            <p className="rounded-xl border border-brand/30 bg-brand-soft/40 px-4 py-3 text-sm">
+              Comparing universities?{" "}
+              <AppLink to={pillar.path} className="font-bold text-brand hover:underline">
+                See {pillar.name} fees, eligibility and every university offering it →
+              </AppLink>
+            </p>
+          )}
         </ContentSection>
+
 
         <ContentSection title="Specialisations at a glance">
           <SpecialisationBoxes
