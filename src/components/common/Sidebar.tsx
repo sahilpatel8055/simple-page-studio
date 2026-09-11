@@ -34,7 +34,8 @@ export function TableOfContents({
               {s}
             </a>
           </li>
-        ))}
+          );
+        })}
       </ol>
     </nav>
   );
