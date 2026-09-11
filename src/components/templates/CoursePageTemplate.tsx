@@ -11,6 +11,7 @@ import { BlogStrip } from "@/components/common/UniversityBlogs";
 import { blogsForCourse } from "@/data/university-blogs";
 import { COURSE_GROUPS } from "@/lib/pageGroups";
 import { AnswerFirst } from "@/components/university/AnswerFirst";
+import { CollapsibleProse } from "@/components/common/CollapsibleProse";
 import { QuestionBlock } from "@/components/common/QuestionBlock";
 import { TopFeeSnapshot } from "@/components/course/TopFeeSnapshot";
 import { FutureOutlook } from "@/components/course/FutureOutlook";

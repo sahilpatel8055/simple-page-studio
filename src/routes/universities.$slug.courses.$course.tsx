@@ -386,9 +386,9 @@ function Page() {
             {p.summary} At {u.name}, it runs for {offering.durationLabel} and is delivered{" "}
             {p.mode.join(" / ")}, with {approvalText(u)} backing the award.
           </p>
-          {narrative?.paragraphs.map((text) => (
-            <p key={text.slice(0, 40)}>{text}</p>
-          ))}
+          {narrative?.paragraphs.length ? (
+            <CollapsibleProse paragraphs={narrative.paragraphs} visible={1} />
+          ) : null}
           <p>{u.verdict}</p>
           <ApprovalMarquee approvals={u.approvals} />
           {pillar && (
