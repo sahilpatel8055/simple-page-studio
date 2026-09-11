@@ -24,7 +24,9 @@ export function AnswerFirst({
       id="quick-answer"
       className="scroll-mt-36 rounded-2xl border-2 border-brand/30 bg-cream p-4 sm:p-6"
     >
-      <h2 className="font-display text-lg font-bold text-foreground sm:text-xl">{heading}</h2>
+      <h2 className="font-display text-lg font-bold text-foreground sm:text-xl">
+        <LeadHeadline text={heading} />
+      </h2>
       <p className="mt-2 text-[0.95rem] leading-relaxed text-muted-foreground">{answer}</p>
       <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {facts.map((f) => (

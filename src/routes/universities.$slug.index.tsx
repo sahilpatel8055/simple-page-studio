@@ -512,6 +512,9 @@ function Page() {
               reviewCount={u.reviewCount}
               shortName={u.shortName}
             />
+            <div className="mt-6">
+              <WriteReview universitySlug={u.slug} universityName={u.shortName} />
+            </div>
           </ContentSection>
 
           <ContentSection title="Compare universities">
