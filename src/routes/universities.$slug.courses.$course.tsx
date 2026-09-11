@@ -17,6 +17,7 @@ import {
   UpdatedStamp,
 } from "@/components/common/Blocks";
 import { AppLink } from "@/components/common/AppLink";
+import { FutureOutlook } from "@/components/course/FutureOutlook";
 import { OfferingValueCheck } from "@/components/university/DifferentiationSections";
 import { ApprovalMarquee, SpecialisationBoxes } from "@/components/common/BoxMarquee";
 import { getSpecialisation, listOfferingsByUniversity } from "@/data";
@@ -440,6 +441,8 @@ function Page() {
             />
           )}
         </ContentSection>
+
+        <FutureOutlook courseName={p.name} shortName={p.shortName} />
 
         </SectionPanel>
 
