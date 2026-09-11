@@ -1,12 +1,15 @@
+import { useState } from "react";
+import { ChevronDown } from "lucide-react";
+import { LeadHeadline } from "@/components/common/Headline";
 import type { PageQuestion } from "@/lib/pageVerdict";
 
 /**
- * Visible question-and-answer block for the query shapes the page previously
- * could not match ("is X valid", "X vs Y", "X placement salary", …).
+ * Question-and-answer block for the query shapes the page previously could not
+ * match ("is X valid", "X vs Y", "X placement salary", …).
  *
- * Rendered as real headings and paragraphs — not an accordion that hides the
- * answer behind JavaScript — so the text is in the served HTML and matches the
- * FAQPage schema emitted by the route.
+ * One answer is expanded at a time so the block stays scannable, but every
+ * answer stays in the served HTML (only visually collapsed), so it still
+ * matches the FAQPage schema emitted by the route.
  */
 export function QuestionBlock({
   id = "common-questions",
@@ -17,20 +20,47 @@ export function QuestionBlock({
   heading: string;
   questions: PageQuestion[];
 }) {
+  const [open, setOpen] = useState(0);
   if (!questions.length) return null;
   return (
     <section id={id} className="scroll-mt-36">
-      <h2 className="font-display text-xl font-bold text-foreground sm:text-2xl">{heading}</h2>
-      <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        {questions.map((q) => (
-          <article
-            key={q.question}
-            className="rounded-2xl border border-border bg-background p-4 sm:p-5"
-          >
-            <h3 className="text-[0.95rem] font-bold leading-snug text-foreground">{q.question}</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{q.answer}</p>
-          </article>
-        ))}
+      <h2 className="font-display text-xl font-bold text-foreground sm:text-2xl">
+        <LeadHeadline text={heading} />
+      </h2>
+      <div className="mt-4 divide-y divide-border overflow-hidden rounded-2xl border border-border bg-background">
+        {questions.map((q, i) => {
+          const isOpen = open === i;
+          return (
+            <article key={q.question}>
+              <h3>
+                <button
+                  type="button"
+                  aria-expanded={isOpen}
+                  onClick={() => setOpen(isOpen ? -1 : i)}
+                  className="flex w-full items-center justify-between gap-4 px-4 py-3.5 text-left text-[0.95rem] font-bold leading-snug text-foreground sm:px-5"
+                >
+                  <span className="min-w-0">{q.question}</span>
+                  <ChevronDown
+                    className={`h-4 w-4 shrink-0 text-brand transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              </h3>
+              <div
+                className={`grid transition-all duration-300 ${
+                  isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                }`}
+              >
+                <div className="overflow-hidden">
+                  <p className="px-4 pb-4 text-sm leading-relaxed text-muted-foreground sm:px-5">
+                    {q.answer}
+                  </p>
+                </div>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

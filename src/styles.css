@@ -186,6 +186,16 @@
   html {
     /* No page-level horizontal scroll on any viewport. */
     overflow-x: clip;
+    /* Anchor jumps stop below the sticky header + section chip bar, so a
+       section always starts at the top of the readable area. */
+    scroll-behavior: smooth;
+    scroll-padding-top: 9.5rem;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 
   body {

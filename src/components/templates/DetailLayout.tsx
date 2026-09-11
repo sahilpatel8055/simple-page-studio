@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import { Breadcrumbs, type Crumb } from "@/components/common/Breadcrumbs";
-import { AccentHeadline } from "@/components/common/Headline";
+import { AccentHeadline, LeadHeadline } from "@/components/common/Headline";
 import { Faq, placeholderFaqs, type FaqItem } from "@/components/common/Faq";
 import { LeadCaptureCard, TableOfContents, TrustCard } from "@/components/common/Sidebar";
 import { SectionNav } from "@/components/common/SectionNav";
@@ -130,7 +130,7 @@ export function ContentSection({
         <details className="group">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-3 border-b border-border pb-3">
             <h2 className="text-2xl font-bold">
-              <AccentHeadline text={title} words={1} />
+              <LeadHeadline text={title} />
             </h2>
             <span className="shrink-0 rounded-full border border-border px-3 py-1 text-xs font-bold text-brand">
               <span className="group-open:hidden">Show</span>
@@ -146,7 +146,7 @@ export function ContentSection({
   return (
     <section id={id} className={`scroll-mt-36 ${toned || "content-block"}`}>
       <h2 className="border-b border-border pb-3 text-2xl font-bold">
-        <AccentHeadline text={title} words={1} />
+        <LeadHeadline text={title} />
       </h2>
       <div className="content-prose mt-5 space-y-5">{children}</div>
     </section>

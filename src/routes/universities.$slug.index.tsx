@@ -3,6 +3,7 @@ import { ContentSection, DetailLayout } from "@/components/templates/DetailLayou
 import { SectionPanel } from "@/components/common/SectionTabs";
 import { UNIVERSITY_GROUPS } from "@/lib/pageGroups";
 import { AnswerFirst } from "@/components/university/AnswerFirst";
+import { WriteReview } from "@/components/common/WriteReview";
 import { getProgramme, listOfferingsByUniversity } from "@/data";
 import {
   AuthorBox,
@@ -512,6 +513,9 @@ function Page() {
               reviewCount={u.reviewCount}
               shortName={u.shortName}
             />
+            <div className="mt-6">
+              <WriteReview universitySlug={u.slug} universityName={u.shortName} />
+            </div>
           </ContentSection>
 
           <ContentSection title="Compare universities">
