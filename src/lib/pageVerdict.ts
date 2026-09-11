@@ -531,14 +531,16 @@ export function familyTitleIntent(
 
   if (f.feeMin && f.feeMax) {
     return {
-      title: `${f.name} in India ${year}: Fees ${inr(f.feeMin)}–${inr(f.feeMax)}, Best Universities`,
+      // Fee-led and short enough to survive intact in the SERP.
+      title: `${f.name} Fees ${year}: ${inr(f.feeMin)}–${inr(f.feeMax)}`,
       description: `${f.name} fees compared across ${f.offers.length} UGC-entitled universities — ${inr(f.feeMin)} to ${inr(f.feeMax)} total, ${f.durationLabel}, ${f.specialisations.length} specialisations, eligibility and admission dates.`,
       keywords: [`${f.name} fees`, `cheapest ${f.name}`, `${f.name} in india`, `best universities for ${f.name}`],
     };
   }
   return {
-    title: `${f.name} in India ${year}: Fees, Eligibility & Best Universities`,
+    title: `${f.name} ${year}: Admission, Eligibility & Fees`,
     description: `${f.name} compared across ${f.offers.length} universities — ${f.feeRangeLabel} fee band, ${f.durationLabel}, eligibility, specialisations and how to choose.`,
     keywords: [`${f.name} fees`, `${f.name} eligibility`, `${f.name} in india`],
   };
+
 }
