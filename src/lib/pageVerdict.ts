@@ -524,8 +524,11 @@ export function familyQuestions(f: FamilyLike): PageQuestion[] {
   return out;
 }
 
-export function familyTitleIntent(f: FamilyLike): { title: string; description: string; keywords: string[] } {
-  const year = new Date().getFullYear() + (new Date().getMonth() >= 8 ? 1 : 0);
+export function familyTitleIntent(
+  f: FamilyLike,
+  year = new Date().getFullYear() + (new Date().getMonth() >= 8 ? 1 : 0),
+): { title: string; description: string; keywords: string[] } {
+
   if (f.feeMin && f.feeMax) {
     return {
       title: `${f.name} in India ${year}: Fees ${inr(f.feeMin)}–${inr(f.feeMax)}, Best Universities`,
