@@ -441,6 +441,8 @@ function Page() {
           )}
         </ContentSection>
 
+        <FutureOutlook courseName={p.name} shortName={p.shortName} />
+
         </SectionPanel>
 
         <SectionPanel id="fees" footer={false}>
