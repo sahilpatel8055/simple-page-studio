@@ -77,7 +77,7 @@ export function WriteReview({
             <label className={label} htmlFor="rv-uni">
               University
             </label>
-            <select id="rv-uni" required className={field} defaultValue="">
+            <select id="rv-uni" required className={field} defaultValue={universitySlug ?? ""}>
               <option value="" disabled>
                 Select your university
               </option>
