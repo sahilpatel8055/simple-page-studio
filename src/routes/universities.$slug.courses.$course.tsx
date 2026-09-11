@@ -1,5 +1,6 @@
 import { UniversityPackLinks } from "@/components/comparison/PackHeadToHead";
 import { QuickEnquiry } from "@/components/common/QuickEnquiry";
+import { CollapsibleProse } from "@/components/common/CollapsibleProse";
 import { createFileRoute, notFound, redirect } from "@tanstack/react-router";
 import { ContentSection, DetailLayout } from "@/components/templates/DetailLayout";
 import { SectionPanel } from "@/components/common/SectionTabs";

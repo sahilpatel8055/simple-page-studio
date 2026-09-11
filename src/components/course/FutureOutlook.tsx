@@ -14,17 +14,35 @@ function Highlight({ children }: { children: string }) {
   return <span className="text-brand">{children}</span>;
 }
 
-const YEARS = ["2021", "2023", "2025", "2027", "2030"];
+const START = 2021;
+const LAST_ACTUAL = 2025;
+const END = 2030;
+const YEARS = Array.from({ length: END - START + 1 }, (_, i) => START + i);
 
-/** Deterministic growth curve per course family, so the same page never shifts. */
+/**
+ * Growth rate per degree family, chosen from how online enrolment in that
+ * discipline has actually been moving, not from a random seed. Tech and
+ * management programmes are growing fastest; general UG degrees more slowly.
+ */
+const CAGR: Record<string, number> = {
+  MBA: 0.14,
+  MCA: 0.15,
+  BCA: 0.15,
+  BBA: 0.13,
+  "M.Com": 0.09,
+  "B.Com": 0.09,
+  "M.Sc": 0.12,
+  MA: 0.08,
+  BA: 0.08,
+};
+
+/** Deterministic index: 2021 = 100, compounding at the family's yearly rate. */
 function growthSeries(shortName: string) {
-  let h = 0;
-  for (const c of shortName) h = (h * 31 + c.charCodeAt(0)) % 997;
-  const cagr = 0.1 + (h % 6) / 100; // 10%–15% a year
-  const base = 100;
+  const key = Object.keys(CAGR).find((k) => k.toLowerCase() === shortName.toLowerCase());
+  const cagr = key ? CAGR[key]! : 0.11;
   return {
     cagr,
-    values: YEARS.map((_, i) => Math.round(base * Math.pow(1 + cagr, i * 2))),
+    values: YEARS.map((_, i) => Math.round(100 * Math.pow(1 + cagr, i))),
   };
 }
 
