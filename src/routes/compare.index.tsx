@@ -3,9 +3,13 @@ import { PageShell } from "@/components/templates/PageShell";
 import { CTASection } from "@/components/common/Primitives";
 import { ComparisonCard } from "@/components/cards";
 import { LinkCluster, RelatedLinkGrid } from "@/components/common/Blocks";
+import { AppLink } from "@/components/common/AppLink";
 import { comparisons } from "@/lib/content";
 import { comparisonLinks, programmeLinks, universityLinks, universityPairs } from "@/lib/entities";
 import { comparableCourses, masterPairs } from "@/lib/comparisonMaster";
+import { isIndexablePair } from "@/lib/comparisonIndexing";
+import { packsForCourse } from "@/data/comparison-packs";
+import { lastReviewedLabel } from "@/lib/session";
 import {
   breadcrumbSchema,
   canonical,
