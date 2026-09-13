@@ -131,11 +131,8 @@ export function MatchupHeader({
         {specWinner && <Chip label="More specialisations" value={specWinner} />}
       </ul>
 
-      {decision?.answer && (
-        <p className="mt-4 rounded-2xl border-2 border-brand/25 bg-brand-soft/40 p-4 text-sm leading-relaxed text-foreground sm:text-base">
-          {decision.answer}
-        </p>
-      )}
+      {/* The one-paragraph answer lives in the DecisionBlock directly below,
+          so it is stated once per page (no repeated verdict). */}
 
       <div className="mt-4 flex flex-wrap justify-center gap-2">
         <a
