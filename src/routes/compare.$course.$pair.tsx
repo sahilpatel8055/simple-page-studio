@@ -11,6 +11,7 @@ import {
 import { packFor } from "@/data/comparison-packs";
 import { breadcrumbSchema, canonical, faqSchema, jsonLd, pageMeta } from "@/lib/seo";
 import { isIndexableCoursePair, robotsForPair } from "@/lib/comparisonIndexing";
+import { pairTitle } from "@/lib/comparisonLabels";
 
 export const Route = createFileRoute("/compare/$course/$pair")({
   loader: ({ params }) => {
@@ -37,9 +38,8 @@ export const Route = createFileRoute("/compare/$course/$pair")({
     if (!loaderData) {
       return { meta: [{ title: "Comparison not found" }, { name: "robots", content: "noindex" }] };
     }
-    const title =
-      loaderData.packTitle ??
-      `${loaderData.a} vs ${loaderData.b} Online ${loaderData.course} – Fees, Eligibility & Comparison 2026-27`;
+    // One orientation everywhere: the master pair order owns URL, H1 and title.
+    const title = pairTitle(loaderData.a, loaderData.b, loaderData.course);
     const description =
       loaderData.packDescription ??
       loaderData.description.replace(/\{Course\}/g, loaderData.course);
