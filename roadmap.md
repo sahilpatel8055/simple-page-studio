@@ -39,3 +39,13 @@ Each: exact-match H1, answer table above fold, last-updated date, 3–5 internal
 - [ ] Lead form above the fold on fee/eligibility pages only
 - [ ] Syllabus pages → PDF download gate
 - [ ] Track lead source page → conversion by template
+
+## Comparison system (from "University A vs B" plan)
+- [x] Visual matchup header (logos, VS, winner chips) on all pair + course-pair pages
+- [x] One shared decision centre (answer once, cheaper/recognised cards, learner-type table, cost break-up, gaps)
+- [x] "How this comparison was checked" evidence block with real review date
+- [x] 26 curated pairs indexable; long tail noindex,follow and out of sitemap
+- [x] FAQ + ItemList schema from route head; duplicate body JSON-LD removed
+- [x] Rebuilt /compare hub (picker, researched head-to-heads, course groups, open-university set)
+- [ ] Placement facts: swap gap notes for verified figures (waiting on user's data)
+- [ ] Research remaining course packs beyond the 15 done (MBA/MCA first)
