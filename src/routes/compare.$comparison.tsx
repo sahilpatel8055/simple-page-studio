@@ -283,39 +283,38 @@ function Page() {
   ];
 
   return (
-    <>
-      <DetailLayout
-        crumbs={[
-          { name: "Compare", href: "/compare" },
-          { name: `${a.shortName} vs ${b.shortName}`, href: pair.path },
-        ]}
-        eyebrow="University comparison"
-        title={`${a.shortName} vs ${b.shortName}: Fees, Approvals & Which Is Better`}
-        subtitle={`An objective, parameter-by-parameter comparison of ${a.name} and ${b.name} for online learners.`}
-        meta={<UpdatedStamp date={a.lastUpdated} verified={false} />}
-        tocSections={[
-          "Quick facts",
-          "Side-by-side comparison",
-          "Fee comparison",
-          "Common programmes",
-          "Strengths and trade-offs",
-          "Which should you choose",
-          "FAQs",
-          "Related links",
-        ]}
-        faqs={faqs}
-        sidebarExtras={<LinkCluster title="More comparisons" links={comparisonLinks(a.slug, 6)} />}
-        related={
-          <RelatedLinkGrid
-            groups={[
-              { title: `${a.shortName} programmes`, links: offeringLinks(a.slug) },
-              { title: `${b.shortName} programmes`, links: offeringLinks(b.slug) },
-              { title: "Other comparisons", links: comparisonLinks(undefined, 8) },
-              { title: "All universities", links: universityLinks(undefined, 6) },
-            ]}
-          />
-        }
-      >
+    <DetailLayout
+      crumbs={[
+        { name: "Compare", href: "/compare" },
+        { name: `${a.shortName} vs ${b.shortName}`, href: pair.path },
+      ]}
+      eyebrow="University comparison"
+      title={`${a.shortName} vs ${b.shortName}: Fees, Approvals & Which Is Better`}
+      subtitle={`An objective, parameter-by-parameter comparison of ${a.name} and ${b.name} for online learners.`}
+      meta={<UpdatedStamp date={a.lastUpdated} verified={false} />}
+      tocSections={[
+        "Quick facts",
+        "Side-by-side comparison",
+        "Fee comparison",
+        "Common programmes",
+        "Strengths and trade-offs",
+        "Which should you choose",
+        "FAQs",
+        "Related links",
+      ]}
+      faqs={faqs}
+      sidebarExtras={<LinkCluster title="More comparisons" links={comparisonLinks(a.slug, 6)} />}
+      related={
+        <RelatedLinkGrid
+          groups={[
+            { title: `${a.shortName} programmes`, links: offeringLinks(a.slug) },
+            { title: `${b.shortName} programmes`, links: offeringLinks(b.slug) },
+            { title: "Other comparisons", links: comparisonLinks(undefined, 8) },
+            { title: "All universities", links: universityLinks(undefined, 6) },
+          ]}
+        />
+      }
+    >
         <QuickFacts
           items={[
             { label: a.shortName, value: `${a.city}, ${a.state}` },
@@ -415,26 +414,7 @@ function Page() {
             { label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" },
           ]}
         />
-      </DetailLayout>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            itemListSchema(
-              [
-                { name: a.name, href: `/universities/${a.slug}` },
-                { name: b.name, href: `/universities/${b.slug}` },
-              ],
-              `${a.shortName} vs ${b.shortName}`,
-            ),
-          ),
-        }}
-      />
-    </>
+    </DetailLayout>
   );
 }
 
