@@ -414,26 +414,7 @@ function Page() {
             { label: "UGC-DEB entitled programme list", href: "https://deb.ugc.ac.in/" },
           ]}
         />
-      </DetailLayout>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            itemListSchema(
-              [
-                { name: a.name, href: `/universities/${a.slug}` },
-                { name: b.name, href: `/universities/${b.slug}` },
-              ],
-              `${a.shortName} vs ${b.shortName}`,
-            ),
-          ),
-        }}
-      />
-    </>
+    </DetailLayout>
   );
 }
 
