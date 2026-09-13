@@ -15,10 +15,12 @@ import {
 import { packFor } from "@/data/comparison-packs";
 import { EditorialComparison } from "./EditorialComparison";
 import { CompareTable } from "./CompareTable";
-import { PickVerdict } from "./PickVerdict";
+import { MatchupHeader } from "./MatchupHeader";
 import { DecisionBlock } from "./DecisionBlock";
 import { pairDecision } from "@/lib/comparisonDecision";
 import { courseKeyForProgramme } from "@/lib/courseMaster";
+import { onlineCourseLabel, pairTitle } from "@/lib/comparisonLabels";
+import { lastReviewedISO, lastReviewedLabel } from "@/lib/session";
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
