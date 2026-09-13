@@ -146,7 +146,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       eyebrow={course ? `${onlineCourseLabel(course)} comparison` : "University comparison"}
       title={title}
       subtitle={content.intro}
-      meta={<UpdatedStamp date={lastReviewedISO()} verified />}
+      meta={<UpdatedStamp date={lastReviewedISO().slice(0, 10)} verified />}
       tocSections={(pair.comparison_sections ?? []).map((s) => s.heading)}
       faqs={faqs}
       related={
