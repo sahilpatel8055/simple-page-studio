@@ -174,6 +174,17 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         />
       }
     >
+      <MatchupHeader
+        aName={aName}
+        bName={bName}
+        uniA={uniA}
+        uniB={uniB}
+        course={course}
+        decision={decision}
+        verified={lastReviewedLabel()}
+        specWinner={specWinner}
+      />
+
       {/* Course selector */}
       {courses.length > 0 && (
         <div className="mb-6 rounded-xl border border-border bg-secondary/60 p-3">
