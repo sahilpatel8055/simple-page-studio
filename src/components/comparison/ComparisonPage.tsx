@@ -3,6 +3,7 @@ import { AuthorBox, References, RelatedLinkGrid, UpdatedStamp } from "@/componen
 import { AppLink } from "@/components/common/AppLink";
 import {
   comparableCourses,
+  comparisonSession,
   coursePairPath,
   courseSlug,
   feeLabel,
@@ -655,7 +656,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           ]}
         />
         <p className="mt-2 text-sm text-muted-foreground">
-          Last updated: August 2026 (2026-27 session).
+          Last updated: {lastReviewedLabel()} ({comparisonSession} session).
         </p>
       </ContentSection>
     </DetailLayout>
