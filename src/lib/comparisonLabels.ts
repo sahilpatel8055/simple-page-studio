@@ -19,7 +19,10 @@ export function bareCourseLabel(course: string | undefined): string | undefined 
 
 /** Canonical page title for a pair, with or without a course. */
 export function pairTitle(aName: string, bName: string, course?: string, session = "2026-27") {
-  return course
-    ? `${aName} vs ${bName} ${onlineCourseLabel(course)}: Fees, Eligibility & Comparison ${session}`
-    : `${aName} vs ${bName}: Online University Comparison ${session}`;
+  if (!course) return `${aName} vs ${bName}: Online University Comparison ${session}`;
+  // "LPU Online" + "Online MBA" must never read "LPU Online Online MBA".
+  const label = /online$/i.test(bName.trim())
+    ? bareCourseLabel(course)
+    : onlineCourseLabel(course);
+  return `${aName} vs ${bName} ${label}: Fees, Eligibility & Comparison ${session}`;
 }
