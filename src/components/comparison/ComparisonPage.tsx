@@ -15,10 +15,12 @@ import {
 import { packFor } from "@/data/comparison-packs";
 import { EditorialComparison } from "./EditorialComparison";
 import { CompareTable } from "./CompareTable";
-import { PickVerdict } from "./PickVerdict";
+import { MatchupHeader } from "./MatchupHeader";
 import { DecisionBlock } from "./DecisionBlock";
 import { pairDecision } from "@/lib/comparisonDecision";
 import { courseKeyForProgramme } from "@/lib/courseMaster";
+import { onlineCourseLabel, pairTitle } from "@/lib/comparisonLabels";
+import { lastReviewedISO, lastReviewedLabel } from "@/lib/session";
 
 type Row = { label: string; a: React.ReactNode; b: React.ReactNode };
 
@@ -86,9 +88,13 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
     fit_statement: `${aName} suits learners who want its programme mix, while ${bName} works better if its fee band and specialisations match your plan.`,
   };
 
-  const title = course
-    ? `${aName} vs ${bName} Online ${course}: Fees, Eligibility & Full Comparison`
-    : `${aName} vs ${bName}: Online University Comparison ${"2026-27"}`;
+  const title = pairTitle(aName, bName, course);
+  const specWinner =
+    (sa?.specialisations?.length ?? 0) === (sb?.specialisations?.length ?? 0)
+      ? undefined
+      : (sa?.specialisations?.length ?? 0) > (sb?.specialisations?.length ?? 0)
+        ? aName
+        : bName;
 
   const faqs = [
     ...(pack?.faqs ?? []),
@@ -137,10 +143,10 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         { name: `${aName} vs ${bName}`, href: pairPath(pair) },
         ...(course ? [{ name: course, href: coursePairPath(pair, course) }] : []),
       ]}
-      eyebrow={course ? `Online ${course} comparison` : "University comparison"}
+      eyebrow={course ? `${onlineCourseLabel(course)} comparison` : "University comparison"}
       title={title}
       subtitle={content.intro}
-      meta={<UpdatedStamp date="2026-08-12" verified={false} />}
+      meta={<UpdatedStamp date={lastReviewedISO().slice(0, 10)} verified />}
       tocSections={(pair.comparison_sections ?? []).map((s) => s.heading)}
       faqs={faqs}
       related={
@@ -168,6 +174,17 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         />
       }
     >
+      <MatchupHeader
+        aName={aName}
+        bName={bName}
+        uniA={uniA}
+        uniB={uniB}
+        course={course}
+        decision={decision}
+        verified={lastReviewedLabel()}
+        specWinner={specWinner}
+      />
+
       {/* Course selector */}
       {courses.length > 0 && (
         <div className="mb-6 rounded-xl border border-border bg-secondary/60 p-3">
@@ -209,17 +226,6 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         <p>{content.decision_framework}</p>
       </ContentSection>
 
-      <PickVerdict
-        aName={aName}
-        bName={bName}
-        uniA={uniA}
-        uniB={uniB}
-        sa={sa}
-        sb={sb}
-        course={course}
-        aHref={uniA?.slug ? `/universities/${uniA.slug}` : "/universities"}
-        bHref={uniB?.slug ? `/universities/${uniB.slug}` : "/universities"}
-      />
 
       {pack ? (
         <EditorialComparison pack={pack} links={packLinks} />
