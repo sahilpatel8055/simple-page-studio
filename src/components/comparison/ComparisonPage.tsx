@@ -3,6 +3,7 @@ import { AuthorBox, References, RelatedLinkGrid, UpdatedStamp } from "@/componen
 import { AppLink } from "@/components/common/AppLink";
 import {
   comparableCourses,
+  comparisonSession,
   coursePairPath,
   courseSlug,
   feeLabel,
@@ -18,6 +19,7 @@ import { CompareTable } from "./CompareTable";
 import { MatchupHeader } from "./MatchupHeader";
 import { DecisionBlock } from "./DecisionBlock";
 import { pairDecision } from "@/lib/comparisonDecision";
+import { EvidenceModule, SectionAnswer, WhatThisMeans } from "./EvidenceModule";
 import { courseKeyForProgramme } from "@/lib/courseMaster";
 import { onlineCourseLabel, pairTitle } from "@/lib/comparisonLabels";
 import { lastReviewedISO, lastReviewedLabel } from "@/lib/session";
@@ -221,6 +223,22 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
 
       {decision && <DecisionBlock decision={decision} related={decisionRelated} />}
 
+      <EvidenceModule
+        aName={aName}
+        bName={bName}
+        reviewed={lastReviewedLabel()}
+        gaps={decision?.gaps ?? []}
+        sources={[
+          ...(sa?.official_source?.programme_url
+            ? [{ label: `${aName} official page`, href: sa.official_source.programme_url }]
+            : []),
+          ...(sb?.official_source?.programme_url
+            ? [{ label: `${bName} official page`, href: sb.official_source.programme_url }]
+            : []),
+          { label: "UGC-DEB entitled list", href: "https://deb.ugc.ac.in/" },
+        ]}
+      />
+
       <ContentSection title={`${aName} vs ${bName}: Overview`}>
         <p>{content.angle}</p>
         <p>{content.decision_framework}</p>
@@ -265,6 +283,11 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       )}
 
       <ContentSection title="Courses Offered by Both Universities">
+        <SectionAnswer>
+          {courses.length > 0
+            ? `${aName} and ${bName} both publish ${courses.length} overlapping programme${courses.length === 1 ? "" : "s"}, so a like-for-like comparison is possible on ${courses.slice(0, 3).join(", ")}.`
+            : `${aName} and ${bName} publish no overlapping programmes in the verified dataset, so compare them on recognition and fee band instead.`}
+        </SectionAnswer>
         <CompareRows
           caption="Degrees available"
           aName={aName}
@@ -274,6 +297,11 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
               label: "Degrees published",
               a: list(uniA?.degrees_available, "Not published"),
               b: list(uniB?.degrees_available, "Not published"),
+            },
+            {
+              label: "Programmes tracked",
+              a: val(uniA?.programme_count),
+              b: val(uniB?.programme_count),
             },
           ]}
         />
@@ -291,9 +319,18 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
             ))}
           </ul>
         )}
+        <WhatThisMeans>
+          Shortlist on the programme you actually want. A university with a wider catalogue only
+          helps if your course and specialisation are running this session.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Recognition, Accreditation & Mode">
+        <SectionAnswer>
+          {decision?.recognised?.name === "Both"
+            ? `Recognition is comparable: ${decision?.recognised?.detail}`
+            : `${decision?.recognised?.name ?? "Neither university"} carries the stronger published approval stack${decision?.recognised?.detail ? ` — ${decision.recognised.detail}` : ""}.`}
+        </SectionAnswer>
         <CompareRows
           caption="Recognition"
           aName={aName}
@@ -310,9 +347,18 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
             b: val(uniB?.recognition?.[k], "Not published"),
           }))}
         />
+        <WhatThisMeans>
+          For jobs, higher study and government recruitment, UGC entitlement for your admission year
+          is the fact that matters. Rankings and grades are secondary signals.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Fees & Payment Considerations">
+        <SectionAnswer>
+          {decision?.cheaper
+            ? `${decision.cheaper.name} is cheaper on published figures — ${decision.cheaper.detail}`
+            : "Neither university publishes a complete, comparable fee for this comparison, so cost cannot be decided here — ask both for a written break-up."}
+        </SectionAnswer>
         {course ? (
           <CompareRows
             caption={`${course} fees`}
@@ -347,6 +393,20 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
             }))}
           />
         )}
+        {decision?.cost && decision.cost.length > 0 && (
+          <div className="mt-4">
+            <CompareRows
+              caption="Total cost of ownership"
+              aName={aName}
+              bName={bName}
+              rows={decision.cost.map((c) => ({ label: c.label, a: c.a, b: c.b }))}
+            />
+          </div>
+        )}
+        <WhatThisMeans>
+          Compare the total outgo, not the sticker fee: registration and examination charges and the
+          EMI plan decide what leaves your account each month.
+        </WhatThisMeans>
         <p className="mt-3 text-sm text-muted-foreground">
           Fees are shown only where the university publishes them. Every figure is manually
           researched from the official university website — confirm on the official page linked
@@ -355,6 +415,11 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       </ContentSection>
 
       <ContentSection title="Eligibility & Admission Requirements">
+        <SectionAnswer>
+          {course
+            ? `${aName} asks for ${val(sa?.eligibility, "eligibility it has not published")}; ${bName} asks for ${val(sb?.eligibility, "eligibility it has not published")}.`
+            : "Eligibility is set per programme, so pick a course below to see the exact requirement for each university."}
+        </SectionAnswer>
         {course ? (
           <CompareRows
             caption="Eligibility"
@@ -368,6 +433,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
                 b: val(sb?.entrance_exam, "No entrance exam listed"),
               },
               { label: "Mode", a: val(sa?.mode), b: val(sb?.mode) },
+              { label: "Duration", a: val(sa?.duration), b: val(sb?.duration) },
             ]}
           />
         ) : (
@@ -376,9 +442,20 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
             entrance-exam requirement and duration published by each university.
           </p>
         )}
+        <WhatThisMeans>
+          If one university lists an entrance test and the other does not, your admission timeline
+          changes — factor that in before you pay any registration fee.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Specialisations & Curriculum">
+        <SectionAnswer>
+          {specWinner
+            ? `${specWinner} publishes the wider specialisation list for this programme.`
+            : course
+              ? "Both universities publish a comparable specialisation range for this programme."
+              : "Specialisation depth differs by programme — choose a course to compare the actual lists."}
+        </SectionAnswer>
         {course ? (
           <CompareRows
             caption="Specialisations"
@@ -396,6 +473,10 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
         ) : (
           <p>Choose a course to see the university-specific specialisations for that programme.</p>
         )}
+        <WhatThisMeans>
+          A longer list only helps if the one specialisation you want is running. Confirm your
+          specialisation is open for this intake before you apply.
+        </WhatThisMeans>
         <p className="mt-3 text-sm text-muted-foreground">
           Where a university does not publish a detailed syllabus, treat the common course
           curriculum as a reference structure rather than that university's official syllabus.
@@ -403,6 +484,10 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       </ContentSection>
 
       <ContentSection title="Admission Process">
+        <SectionAnswer>
+          Both universities run a fully online admission flow; the practical difference is the
+          document check and how quickly LMS access is released.
+        </SectionAnswer>
         <ol className="ml-5 list-decimal space-y-1.5">
           <li>Shortlist the exact programme and specialisation on the official university page.</li>
           <li>Check eligibility and keep 10th, 12th, graduation marksheets, ID and photo ready.</li>
@@ -410,51 +495,95 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           <li>Upload documents and pay the applicable registration or first-semester fee.</li>
           <li>Wait for verification and enrolment confirmation with LMS access.</li>
         </ol>
+        <WhatThisMeans>
+          Apply early in the intake window: late applications are the usual reason a preferred
+          specialisation is no longer available.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Examination Pattern & Assessment">
+        <SectionAnswer>
+          Both run online proctored end-semester examinations with internal assessment weightage;
+          neither publishes a full weightage break-up in this dataset.
+        </SectionAnswer>
         <p>
           Both universities assess online learners through a mix of internal assignments/quizzes and
           end-semester examinations conducted online under proctoring. Exact weightage, proctoring
           method and re-appear rules are set by each university for each session — confirm in the
           current student handbook.
         </p>
+        <WhatThisMeans>
+          If you travel or work shifts, ask whether examinations are slot-based or fixed-date before
+          you choose.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Scholarships & Financial Support">
+        <SectionAnswer>
+          Fee concessions exist at both, but neither publishes a guaranteed amount — treat every
+          waiver as conditional until confirmed in writing.
+        </SectionAnswer>
         <p>
           Fee support typically appears as merit waivers, defence-personnel and divyangjan
           concessions, single-girl-child or women's scholarships, alumni discounts and no-cost EMI
           plans. Amounts and eligibility change every session, so only the university's current
           published scholarship page should be treated as final.
         </p>
+        <WhatThisMeans>
+          Ask for the waiver on your written fee quotation. A verbal discount is not a fee
+          reduction.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Learning Experience & Student Support">
+        <SectionAnswer>
+          Both deliver through a self-paced LMS; the real difference is live-session frequency and
+          how fast the support desk responds.
+        </SectionAnswer>
         <p>
           Expect a self-paced LMS with recorded lectures, live doubt sessions, e-library access,
           discussion forums and a student-support desk. The practical difference between {aName} and{" "}
           {bName} usually lies in live-session frequency, mentor access and how responsive the
           support team is.
         </p>
+        <WhatThisMeans>
+          Ask for a demo login before paying. Fifteen minutes inside the LMS tells you more than any
+          brochure.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Degree & Academic Value">
+        <SectionAnswer>
+          Both degrees are UGC-entitled online degrees and are treated on par with on-campus degrees
+          for employment and higher study.
+        </SectionAnswer>
         <p>
           Online degrees from UGC-entitled universities carry the same academic value as their
           on-campus counterparts and are accepted for higher study and employment. The degree
           certificate does not state "online" as a lower-value qualification, though it may record
           the mode of study.
         </p>
+        <WhatThisMeans>
+          Keep the UGC-DEB entitlement notification for your admission year with your documents —
+          that is what recruitment boards and foreign evaluators ask for.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Career Opportunities & Placement Support">
+        <SectionAnswer>
+          Both publish career assistance, not a placement guarantee, and neither publishes
+          online-cohort placement percentages in this dataset.
+        </SectionAnswer>
         <p>
           Both universities offer placement or career assistance — resume support, interview
           preparation and access to hiring drives. Career assistance is not a placement guarantee,
           and neither university publishes salary or placement percentages for online cohorts in
           this dataset.
         </p>
+        <WhatThisMeans>
+          Ask specifically for last session's online-cohort numbers. Institution-wide campus
+          placement data does not describe an online programme.
+        </WhatThisMeans>
       </ContentSection>
 
       <ContentSection title="Strengths, Limitations & Fit">
@@ -468,6 +597,14 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
                 : ""}
               . Recognition: {val(uniA?.recognition?.["UGC_status"])}.
             </p>
+            {decision?.aHref && (
+              <AppLink
+                to={decision.aHref}
+                className="mt-2 inline-block text-sm font-semibold text-brand hover:underline"
+              >
+                View {aName} profile →
+              </AppLink>
+            )}
           </div>
           <div className="rounded-xl border border-border bg-card p-4">
             <h3 className="text-base font-bold text-foreground">{bName}</h3>
@@ -478,6 +615,14 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
                 : ""}
               . Recognition: {val(uniB?.recognition?.["UGC_status"])}.
             </p>
+            {decision?.bHref && (
+              <AppLink
+                to={decision.bHref}
+                className="mt-2 inline-block text-sm font-semibold text-brand hover:underline"
+              >
+                View {bName} profile →
+              </AppLink>
+            )}
           </div>
         </div>
       </ContentSection>
@@ -511,7 +656,7 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
           ]}
         />
         <p className="mt-2 text-sm text-muted-foreground">
-          Last updated: August 2026 (2026-27 session).
+          Last updated: {lastReviewedLabel()} ({comparisonSession} session).
         </p>
       </ContentSection>
     </DetailLayout>

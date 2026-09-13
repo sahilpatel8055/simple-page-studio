@@ -55,6 +55,19 @@ export const Route = createFileRoute("/compare/")({
 
 function Page() {
   const pairs = universityPairs();
+
+  /** Only curated/indexable pairs become crawlable cards; the rest live behind the picker. */
+  const indexable = masterPairs.filter((p) => isIndexablePair(p.comparison_id));
+  const openUniversity = indexable.filter((p) =>
+    /ignou|sol|nsou|ksou|baou|ycmou|kurukshetra/i.test(p.comparison_id),
+  );
+  const headToHead = indexable.filter((p) => !openUniversity.includes(p));
+
+  const courseGroups = ["mba", "mca", "bca"].map((c) => ({
+    course: c,
+    packs: packsForCourse(c),
+  }));
+
   return (
     <PageShell
       crumbs={[{ name: "Compare", href: path }]}
@@ -62,11 +75,24 @@ function Page() {
       title="University & Course Comparisons"
       description={description}
     >
-      <h2 className="mb-4 text-xl font-bold sm:text-2xl">
-        University vs university (2026-27 dataset)
-      </h2>
+      {/* Picker tool — the route for every combination we do not index */}
+      <section className="mb-10 rounded-2xl border-2 border-brand/25 bg-brand-soft/30 p-5">
+        <h2 className="text-lg font-bold sm:text-xl">Choose any universities</h2>
+        <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+          Pick up to four universities and compare published fees, UGC approvals, programme range,
+          specialisations, admission process and career support in one table.
+        </p>
+        <AppLink
+          to="/compare/universities"
+          className="mt-3 inline-flex min-h-11 items-center rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-brand-foreground"
+        >
+          Open the comparison tool →
+        </AppLink>
+      </section>
+
+      <h2 className="mb-4 text-xl font-bold sm:text-2xl">Popular researched head-to-heads</h2>
       <div className="grid gap-3 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
-        {masterPairs.map((p) => (
+        {headToHead.map((p) => (
           <ComparisonCard
             key={p.comparison_id}
             item={{
@@ -80,6 +106,58 @@ function Page() {
           />
         ))}
       </div>
+
+      {courseGroups.some((g) => g.packs.length > 0) && (
+        <>
+          <h2 className="mb-4 mt-12 text-xl font-bold sm:text-2xl">
+            Course-specific comparison guides
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {courseGroups
+              .filter((g) => g.packs.length > 0)
+              .map((g) => (
+                <div key={g.course} className="rounded-2xl border border-border bg-card p-4">
+                  <h3 className="text-base font-bold uppercase">Online {g.course}</h3>
+                  <ul className="mt-2 space-y-1.5 text-sm">
+                    {g.packs.map((pk) => (
+                      <li key={`${pk.aSlug}-${pk.bSlug}`}>
+                        <AppLink
+                          to={`/compare/${g.course}/${pk.aSlug}-vs-${pk.bSlug}`}
+                          className="font-semibold text-brand hover:underline"
+                        >
+                          {pk.aLabel} vs {pk.bLabel}
+                        </AppLink>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+          </div>
+        </>
+      )}
+
+      {openUniversity.length > 0 && (
+        <>
+          <h2 className="mb-4 mt-12 text-xl font-bold sm:text-2xl">
+            Open & state university comparisons
+          </h2>
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
+            {openUniversity.map((p) => (
+              <ComparisonCard
+                key={p.comparison_id}
+                item={{
+                  slug: p.comparison_id,
+                  title: `${p.university_a} vs ${p.university_b}`,
+                  left: p.university_a,
+                  right: p.university_b,
+                  category: "University",
+                  summary: `Public and open-university fees, recognition and study support compared for ${p.university_a} and ${p.university_b}.`,
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
 
       <h2 className="mb-4 mt-12 text-xl font-bold sm:text-2xl">Editorial university pairs</h2>
       <div className="grid gap-3 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
@@ -104,6 +182,12 @@ function Page() {
           <ComparisonCard key={c.slug} item={c} />
         ))}
       </div>
+
+      <p className="mt-8 text-sm text-muted-foreground">
+        All comparisons last reviewed {lastReviewedLabel()} for the 2026-27 session. Figures are
+        manually researched from official university sources; unpublished values are shown as "Not
+        published".
+      </p>
 
       <div className="mt-12">
         <LinkCluster title="Popular comparisons" links={comparisonLinks(undefined, 12)} />
