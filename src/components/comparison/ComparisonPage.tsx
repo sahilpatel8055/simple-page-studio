@@ -18,6 +18,7 @@ import { CompareTable } from "./CompareTable";
 import { MatchupHeader } from "./MatchupHeader";
 import { DecisionBlock } from "./DecisionBlock";
 import { pairDecision } from "@/lib/comparisonDecision";
+import { EvidenceModule, SectionAnswer, WhatThisMeans } from "./EvidenceModule";
 import { courseKeyForProgramme } from "@/lib/courseMaster";
 import { onlineCourseLabel, pairTitle } from "@/lib/comparisonLabels";
 import { lastReviewedISO, lastReviewedLabel } from "@/lib/session";
@@ -220,6 +221,22 @@ export function ComparisonPage({ pair, course }: { pair: PairComparison; course?
       )}
 
       {decision && <DecisionBlock decision={decision} related={decisionRelated} />}
+
+      <EvidenceModule
+        aName={aName}
+        bName={bName}
+        reviewed={lastReviewedLabel()}
+        gaps={decision?.gaps ?? []}
+        sources={[
+          ...(sa?.official_source?.programme_url
+            ? [{ label: `${aName} official page`, href: sa.official_source.programme_url }]
+            : []),
+          ...(sb?.official_source?.programme_url
+            ? [{ label: `${bName} official page`, href: sb.official_source.programme_url }]
+            : []),
+          { label: "UGC-DEB entitled list", href: "https://deb.ugc.ac.in/" },
+        ]}
+      />
 
       <ContentSection title={`${aName} vs ${bName}: Overview`}>
         <p>{content.angle}</p>
