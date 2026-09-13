@@ -15,6 +15,7 @@ Turn every important comparison into a decision page where visitors instantly re
 ## 1. Create one canonical comparison experience
 - Use one shared presentation for overall university pairs and course-specific pairs.
 - Keep the compare-any-universities tool as a utility page, not a substitute for indexable pair pages.
+- Merge the three current pair sources into one canonical registry and remove the thin fallback that currently serves a one-row “See guide below” table.
 - Resolve university order once and reuse it everywhere: URL, breadcrumb, title, H1, logos, tables, verdicts, metadata, schema, and related links.
 - Fix duplicated course wording and eliminate duplicate/reversed pair entries from the comparison hub.
 - Preserve the existing curated `index/noindex` rules; do not submit all generated combinations.
@@ -47,6 +48,7 @@ Replace the overlapping verdict blocks with one authoritative decision centre:
 - **Best for learner type:** budget learner, working professional, fresher, government-job aspirant, and placement-support seeker.
 - **Tie / insufficient evidence:** explicitly show “Comparable” or “Not decidable from published data.”
 - Every winner must expose the exact factual reason; no score should be created from missing or incomparable fields.
+- Correct the current cost-answer fallback so a university is never named as cheaper when comparable fees are unavailable.
 
 ## 4. Build criterion-specific comparison sections
 Use focused side-by-side sections instead of one long generic table:
@@ -90,6 +92,7 @@ Rules:
 - Course-pair pages own course-specific intent.
 - University and university-course pillars retain their own fee/admission depth and link contextually to comparisons.
 - No new indexable URL is created unless it has demand, two valid offerings, materially different content, and sufficient verified facts.
+- Course-pair pages must also have a completed researched pack before they become indexable; a course allow-list alone is not enough.
 
 ## 7. Introduce a stronger researched comparison data model
 Extend each researched pack with structured fields rather than additional generic prose:
@@ -122,6 +125,7 @@ Prioritise research in this order:
 - Add WebPage/Article and ItemList relationships for the two compared institutions where supported; do not add unsupported review/rating markup.
 - Ensure canonical, robots, sitemap inclusion, and internal-link targets all follow the same indexability decision.
 - Remove duplicate body-level JSON-LD where route-head markup already owns it.
+- Replace the hardcoded update date with the real pair/course verification date in both visible content and structured data.
 
 ## 10. Rebuild the comparison hub and internal pathways
 - Make `/compare` a decision hub with:
@@ -130,6 +134,7 @@ Prioritise research in this order:
   - course-specific comparison groups;
   - public/open-university comparisons;
   - recently verified comparisons.
+- Show only curated/indexable pairs as crawlable cards; route the remaining generated combinations through the picker instead of listing 100+ `noindex` destinations.
 - Every university page should link to its strongest researched comparisons.
 - Every course pillar should link to relevant course-specific pair guides.
 - Comparison pages should link back to both university profiles, both matching course pages, the course pillar, and 3–5 genuinely related comparisons.
