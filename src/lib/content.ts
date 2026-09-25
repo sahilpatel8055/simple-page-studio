@@ -344,9 +344,9 @@ export const articles: Article[] = [
 
   {
     slug: "ugc-entitled-vs-deb-approved",
-    title: "UGC entitled vs DEB approved: what actually matters in 2026",
+    title: "UGC Entitled vs DEB Approved: Which Online Degree Is Valid? (2026)",
     excerpt:
-      "A plain-language breakdown of the approvals that decide whether your online degree is valid for jobs and higher study.",
+      "Short answer: an online degree is valid only if the university is UGC-entitled for that exact programme and listed on the UGC-DEB portal for the current session. Here is how to check both in two minutes.",
     category: "Admission Guidance",
     categorySlug: "admission-guidance",
     tags: ["ugc", "approvals", "online-degree"],
