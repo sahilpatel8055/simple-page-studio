@@ -18,7 +18,7 @@ import { courseSalaryBaselines, projectedBand, INR } from "@/lib/calculators";
 import { universityPlacementFacts } from "@/data/university-placement-facts";
 import { canonical, faqSchema, jsonLd, pageMeta, breadcrumbSchema } from "@/lib/seo";
 
-const title = "Salary After Online Degree in India — Role-Wise Pay 2026";
+const title = "Course Salary 2026: Course to Salary Table for Online Degrees";
 const description =
   "Role-wise salary after an online MBA, MCA, BBA, BCA, B.Com, M.Com, BA, MA or M.Sc in India: entry, mid and senior pay bands for 45 roles, city-wise pay, hiring industries and a personalised projection.";
 const path = "/tools/salary-after-course";
@@ -164,8 +164,8 @@ function Page() {
         { name: "Tools", href: "/tools" },
         { name: "Salary after course", href: path },
       ]}
-      eyebrow="Role-wise salary data · 2026"
-      title="Salary After an Online Degree in India"
+      eyebrow="Course salary table · 2026"
+      title="Course to Salary 2026: What Each Online Degree Pays"
       description={description}
     >
       <p className="max-w-3xl text-sm leading-relaxed text-muted-foreground">
@@ -175,24 +175,10 @@ function Page() {
         Filter by your course, then use the projection panel to test your own city and career move.
       </p>
 
-      {/* 1 — Role-wise explorer, the primary utility */}
-      <section aria-labelledby="role-wise" className="mt-10">
-        <h2 id="role-wise" className={h2}>
-          Role-wise salary after an online degree
-        </h2>
-        <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
-          Bands are Indian market averages for the role, compiled from public salary aggregators for
-          the 2025-26 hiring year. They describe the role, not any single university's placements.
-        </p>
-        <div className="mt-4">
-          <RoleSalaryExplorer />
-        </div>
-      </section>
-
       {/* 2 — Course-wise comparison */}
-      <section aria-labelledby="course-wise" className="mt-14">
+      <section aria-labelledby="course-wise" className="mt-6">
         <h2 id="course-wise" className={h2}>
-          Which online course pays what
+          Course to salary table: pay after each online degree
         </h2>
         <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
           The spread below is the full range across every role that course commonly feeds, so the
@@ -243,6 +229,20 @@ function Page() {
               ))}
             </tbody>
           </table>
+        </div>
+      </section>
+
+      {/* 1 — Role-wise explorer, the primary utility */}
+      <section aria-labelledby="role-wise" className="mt-14">
+        <h2 id="role-wise" className={h2}>
+          Role-wise salary after an online degree
+        </h2>
+        <p className="mt-2 max-w-3xl text-sm text-muted-foreground">
+          Bands are Indian market averages for the role, compiled from public salary aggregators for
+          the 2025-26 hiring year. They describe the role, not any single university's placements.
+        </p>
+        <div className="mt-4">
+          <RoleSalaryExplorer />
         </div>
       </section>
 
