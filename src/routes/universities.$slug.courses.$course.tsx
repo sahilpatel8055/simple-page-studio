@@ -363,6 +363,7 @@ function Page() {
           verifiedOn={offering.lastUpdated}
         />
 
+        {/* qName */}
         <QuestionBlock
           heading={`${u.shortName} ${p.shortName}: the questions people actually ask`}
           questions={questions}
@@ -448,7 +449,7 @@ function Page() {
         </SectionPanel>
 
         <SectionPanel id="fees" footer={false}>
-        <ContentSection title="Fee structure">
+        <ContentSection anchor="fee-structure" title={`${qName} Fees`}>
           <FeeHighlight fee={offering.fee} duration={offering.durationLabel} />
           <FeeComponents fee={offering.fee} />
           <OfferingValueCheck
@@ -472,7 +473,7 @@ function Page() {
 
         <SectionPanel id="syllabus-specialisations" footer={false}>
         {master.course ? (
-          <ContentSection title="Curriculum">
+          <ContentSection anchor="curriculum" title={`${qName} Syllabus`}>
             <CurriculumSection
               course={master.course}
               universityShort={u.shortName}
@@ -480,7 +481,7 @@ function Page() {
             />
           </ContentSection>
         ) : hasPubCurriculum(u.slug, p.slug) ? (
-          <ContentSection title="Curriculum">
+          <ContentSection anchor="curriculum" title={`${qName} Syllabus`}>
             <PubCourseCurriculum
               universitySlug={u.slug}
               programmeSlug={p.slug}
@@ -501,7 +502,7 @@ function Page() {
         </SectionPanel>
 
         <SectionPanel id="eligibility-admission">
-        <ContentSection title="Eligibility">
+        <ContentSection anchor="eligibility" title={`${qName} Eligibility`}>
           <p>{p.eligibility}</p>
           {master.eligibility && <p>{master.eligibility}</p>}
           <NextStep
@@ -515,7 +516,7 @@ function Page() {
           <RequiredDocuments documents={u.documentsRequired} />
         </ContentSection>
 
-        <ContentSection title="Admission process">
+        <ContentSection anchor="admission-process" title={`${qName} Admission Process`}>
           <div className="rounded-2xl border-2 border-brand p-4 sm:p-5">
             <SectionBanner kind="admission" />
             <AdmissionInsightSection
@@ -530,7 +531,7 @@ function Page() {
         </SectionPanel>
 
         <SectionPanel id="syllabus-specialisations" footer={false}>
-        <ContentSection title="Examination pattern" collapsible>
+        <ContentSection anchor="examination-pattern" title={`${qName} Exam Pattern`} collapsible>
           <div className="rounded-2xl border-2 border-brand p-4 sm:p-5">
             <SectionBanner kind="examination" />
             <ExaminationPatternSection
@@ -545,7 +546,7 @@ function Page() {
         </SectionPanel>
 
         <SectionPanel id="career-placement">
-        <ContentSection title="Placement support">
+        <ContentSection anchor="placement-support" title={`${qName} Placement & Salary`}>
           <PlacementSupportSection universitySlug={u.slug} universityShort={u.shortName} />
         </ContentSection>
 
@@ -586,7 +587,7 @@ function Page() {
         </SectionPanel>
 
         <SectionPanel id="fees">
-        <ContentSection title="Scholarships">
+        <ContentSection anchor="scholarships" title={`${qName} Scholarships`}>
           <ScholarshipCategories
             scholarships={master.scholarships}
             note={master.scholarshipNote}

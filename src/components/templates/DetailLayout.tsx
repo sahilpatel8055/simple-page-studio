@@ -107,8 +107,11 @@ export function ContentSection({
   children,
   tone,
   collapsible = false,
+  anchor,
 }: {
   title: string;
+  /** Stable anchor id, so query-shaped headings keep the old section URL. */
+  anchor?: string;
   children: ReactNode;
   tone?: "admission" | "exam";
   /**
@@ -122,7 +125,7 @@ export function ContentSection({
       ? "rounded-2xl bg-tint-admission p-4 sm:p-6"
       : "rounded-2xl bg-tint-exam p-4 sm:p-6"
     : "";
-  const id = title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+  const id = anchor ?? title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
 
   if (collapsible) {
     return (
