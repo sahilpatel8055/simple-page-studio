@@ -209,6 +209,8 @@ function Page() {
   const { offering, university, programme } = profile;
   const u = university.record;
   const p = programme.record;
+  // Query-shaped heading prefix, e.g. "LPU Online MCA" (avoids "Online Online").
+  const qName = `${u.shortName.replace(/\s*online\s*$/i, "").trim() || u.shortName} ${/^online/i.test(p.shortName) ? p.shortName : `Online ${p.shortName}`}`;
   const master = getUniversityCourse(u.slug, p.slug);
   const narrative = offeringNarrative(u.slug, p.slug);
 
@@ -363,7 +365,6 @@ function Page() {
           verifiedOn={offering.lastUpdated}
         />
 
-        {/* qName */}
         <QuestionBlock
           heading={`${u.shortName} ${p.shortName}: the questions people actually ask`}
           questions={questions}
